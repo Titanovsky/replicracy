@@ -234,6 +234,23 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "2bbad706-e4ed-4d0e-8021-3439ffa76ed2",
+          "__enabled": true,
+          "AutoScreenScale": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
+          "ZIndex": 100
         }
       ],
       "Children": []
@@ -243,8 +260,8 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Player \uD83D\uDE08",
-      "Position": "155.3013,-273.9974,30.93614",
-      "Rotation": "0,0,0,1",
+      "Position": "10.54971,-273.9974,30.93614",
+      "Rotation": "0,0,0.7071067,0.7071068",
       "Scale": "1,1,1",
       "Tags": "",
       "Enabled": true,
@@ -274,7 +291,7 @@
           "BodyMass": 500,
           "BodyRadius": 16,
           "BrakePower": 1,
-          "CameraOffset": "256,0,12",
+          "CameraOffset": "139.2,35.10001,-3.899998",
           "ColliderObject": {
             "_type": "gameobject",
             "go": "d871c345-a950-4732-ad0b-71e2bcb948fc"

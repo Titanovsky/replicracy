@@ -1,0 +1,24 @@
+Hud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	//background-color: #444;
+	justify-content: flex-start;
+	align-items: flex-end;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	gap: 32px;
+
+	.bottom {
+		text-stroke: 8px black;
+		font-size: 60px;
+		font-family: Poppins;
+		color: #fff;
+		justify-content: flex-start;
+		align-items: flex-start;
+		//background-color: red;
+	}
+}
