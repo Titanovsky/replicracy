@@ -441,6 +441,30 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.Dresser",
+          "__guid": "81d41f12-62a8-4bbb-8181-9bafedbb7099",
+          "__enabled": true,
+          "ApplyHeightScale": true,
+          "BodyTarget": {
+            "_type": "component",
+            "component_id": "a5bfb91e-b8e8-4776-9f2d-b2cb065fd03e",
+            "go": "3119922b-cb34-4720-adad-f3fcd01fa7de",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "Clothing": [],
+          "ManualAge": 0.5,
+          "ManualHeight": 0.5,
+          "ManualTint": 0.5,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Source": "LocalUser",
+          "WorkshopItems": []
         }
       ],
       "Children": [
@@ -468,7 +492,7 @@
               "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
-              "MaterialGroup": null,
+              "MaterialGroup": "default",
               "MaterialOverride": null,
               "Model": "models/citizen/citizen.vmdl",
               "Morphs": {},
@@ -568,6 +592,83 @@
           "Children": []
         }
       ]
+    },
+    {
+      "__guid": "27ef9ee1-bcbc-4fcd-9389-028f393176cb",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Pickup: Dna small",
+      "Position": "7.298981,9.17691,41.16871",
+      "Rotation": "0,0,0,1",
+      "Scale": "0.259176,0.259176,0.259176",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "4f097cfe-da75-4947-885d-14706f8395d4",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "0.41679,0.83721,0.22196,1"
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "631f5a6a-00b6-441e-aadc-50ff53c789de",
+          "__enabled": true,
+          "Friction": null,
+          "IsTrigger": true,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "PickupDna",
+          "__guid": "9a589126-a2a8-4d3b-b713-d05096b3d5f0",
+          "__enabled": true,
+          "Amplitude": 6,
+          "Frequency": 5.43,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SpeedRotate": 0.25
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
