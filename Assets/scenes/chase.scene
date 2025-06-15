@@ -153,7 +153,7 @@
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
           "MaterialGroup": null,
-          "MaterialOverride": "materials/default.vmat",
+          "MaterialOverride": "materials/dark/dev_grid_dark.vmat",
           "Model": "models/dev/plane.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -167,7 +167,7 @@
             "BloomLayer": false,
             "AfterUILayer": false
           },
-          "RenderType": "On",
+          "RenderType": "Off",
           "Tint": "0.26998,0.69573,0.89302,1"
         },
         {
@@ -545,6 +545,8 @@
   "ResourceVersion": 3,
   "Title": "chase",
   "Description": null,
-  "__references": [],
+  "__references": [
+    "matek.dev_grid_dark#46449"
+  ],
   "__version": 3
 }
