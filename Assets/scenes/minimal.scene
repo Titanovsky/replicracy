@@ -234,23 +234,6 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
-        },
-        {
-          "__type": "Sandbox.ScreenPanel",
-          "__guid": "2bbad706-e4ed-4d0e-8021-3439ffa76ed2",
-          "__enabled": true,
-          "AutoScreenScale": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Opacity": 1,
-          "Scale": 1,
-          "ScaleStrategy": "ConsistentHeight",
-          "TargetCamera": null,
-          "ZIndex": 100
         }
       ],
       "Children": []
@@ -410,6 +393,54 @@
           "OnComponentUpdate": null,
           "Priority": 5,
           "Speed": 1
+        },
+        {
+          "__type": "Player",
+          "__guid": "2e67302b-c25b-485a-9e7c-8cac46247c52",
+          "__enabled": true,
+          "Dna": 0,
+          "Health": 0,
+          "MaxHealth": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "86f321d5-49b7-456e-92b4-33f20390520d",
+          "__enabled": true,
+          "AutoScreenScale": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
+          "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.Hud",
+          "__guid": "a5a4fb05-1d7e-456f-abe4-aa36c73e341f",
+          "__enabled": true,
+          "_player": {
+            "_type": "component",
+            "component_id": "2e67302b-c25b-485a-9e7c-8cac46247c52",
+            "go": "3449b304-2225-4a6e-ac99-ac8922206107",
+            "component_type": "Player"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ],
       "Children": [

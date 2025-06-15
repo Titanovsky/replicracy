@@ -4,17 +4,19 @@
 @namespace Sandbox
 
 <root>
-	<div class="bottom">💖 100</div>
-	<div class="bottom">🧬 14</div>
+	<div class="bottom">💖 @_player.Health</div>
+	<div class="bottom">🧬 @_player.Dna</div>
 </root>
 
 @code
 {
+	[Property] private Player _player;
 
-	[Property, TextArea] public string MyStringValue { get; set; } = "Hello World!";
+	protected override int BuildHash() => System.HashCode.Combine(_player.Dna, _player.Health);
 
-	/// <summary>
-	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
-	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
+	protected override void OnStart()
+	{
+		if (_player is null)
+			_player = GetComponent<Player>();
+	}
 }
