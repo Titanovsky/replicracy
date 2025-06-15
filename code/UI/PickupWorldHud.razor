@@ -11,6 +11,5 @@
 {
 	[Property] public string MyStringValue { get; set; } = "Hello World!";
 
-
 	protected override int BuildHash() => System.HashCode.Combine( MyStringValue );
 }
