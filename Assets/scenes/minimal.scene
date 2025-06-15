@@ -656,7 +656,7 @@
               "IdValue": "2eb53d3c-4002-4d99-80e3-4cad8d618ad1"
             },
             "Property": "Position",
-            "Value": "-3.089731,161.3819,23.93933"
+            "Value": "-3.089731,161.3819,34.93827"
           }
         ],
         "MovedObjects": []
@@ -693,7 +693,7 @@
               "IdValue": "2eb53d3c-4002-4d99-80e3-4cad8d618ad1"
             },
             "Property": "Position",
-            "Value": "68.88975,102.0747,23.93932"
+            "Value": "68.88975,102.0747,34.93826"
           }
         ],
         "MovedObjects": []
@@ -730,7 +730,7 @@
               "IdValue": "2eb53d3c-4002-4d99-80e3-4cad8d618ad1"
             },
             "Property": "Position",
-            "Value": "-88.45512,95.76724,23.93933"
+            "Value": "-88.45512,95.76724,34.93827"
           }
         ],
         "MovedObjects": []
@@ -749,7 +749,7 @@
       "__guid": "dac3e200-98ac-49af-a781-1ad82cf3bf1d",
       "__version": 1,
       "Flags": 0,
-      "Name": "Cube",
+      "Name": "Way",
       "Position": "-17.14272,1161.76,-19.97615",
       "Rotation": "0,0,0,1",
       "Scale": "5.345165,114.2936,1",
@@ -783,6 +783,28 @@
           },
           "RenderType": "On",
           "Tint": "0.04186,0.04186,0.04186,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "2a665e95-4536-4dd3-8675-c9bd43de441f",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
         }
       ],
       "Children": []
