@@ -669,6 +669,43 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "a0f583af-195b-4f0f-b92e-6d173b80ce41",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "\uD83D\uDCC3 CORE",
+      "Position": "105.062,130.0053,-25.18412",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "PickupManager",
+          "__guid": "8dbfb35f-eec4-48b2-8437-b71801146b65",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Pickups": [
+            {
+              "_type": "component",
+              "component_id": "9a589126-a2a8-4d3b-b713-d05096b3d5f0",
+              "go": "27ef9ee1-bcbc-4fcd-9389-028f393176cb",
+              "component_type": "PickupDna"
+            }
+          ]
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
