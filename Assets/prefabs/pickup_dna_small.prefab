@@ -76,7 +76,61 @@
         "SurfaceVelocity": "0,0,0"
       }
     ],
-    "Children": [],
+    "Children": [
+      {
+        "__guid": "f4c53353-c16f-4bad-a219-1ba9c3b9a81a",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Object",
+        "Position": "0,0,61.55476",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "a3462b19-6c96-4b97-b4ab-5f53d68efddd",
+            "__enabled": true,
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "2100,700",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.PickupWorldHud",
+            "__guid": "dc41d498-069d-4bd0-88fb-c2774574df2a",
+            "__enabled": true,
+            "MyStringValue": "\uD83E\uDDEC DNA (Small)",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      }
+    ],
     "__properties": {
       "NetworkInterpolation": true,
       "TimeScale": 1,

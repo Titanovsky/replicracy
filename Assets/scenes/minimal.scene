@@ -619,8 +619,24 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "Pickups": [
-            null,
-            null
+            {
+              "_type": "component",
+              "component_id": "dfcc169b-016f-4e67-9801-64df1f49770c",
+              "go": "cd89aa17-7552-4bf6-845a-04c1773531b2",
+              "component_type": "PickupDna"
+            },
+            {
+              "_type": "component",
+              "component_id": "cc905d0c-573c-49d9-83cf-c320fa26f256",
+              "go": "8e47ad41-3e3f-42e2-98b2-bf82b7bdcb55",
+              "component_type": "PickupDna"
+            },
+            {
+              "_type": "component",
+              "component_id": "51f78833-0a94-4121-b1d5-411faa493310",
+              "go": "e28e33ea-4930-41a1-9514-32301aadcae3",
+              "component_type": "PickupDna"
+            }
           ]
         }
       ],
@@ -649,7 +665,10 @@
         "2eb53d3c-4002-4d99-80e3-4cad8d618ad1": "cd89aa17-7552-4bf6-845a-04c1773531b2",
         "4d9571bd-e18c-4cf2-a5fb-05163736a7cb": "42de43ad-292b-4e6d-ae9d-69aa2c3183d4",
         "2c7b060e-8795-4bc2-b14c-19aa1f376655": "dfcc169b-016f-4e67-9801-64df1f49770c",
-        "f250ff5c-389a-417f-a264-31828404af6b": "9ad957de-91a4-4d25-a406-a6a05d517a6b"
+        "f250ff5c-389a-417f-a264-31828404af6b": "9ad957de-91a4-4d25-a406-a6a05d517a6b",
+        "f4c53353-c16f-4bad-a219-1ba9c3b9a81a": "58df4532-a32b-44a9-85bb-72851d244e2d",
+        "a3462b19-6c96-4b97-b4ab-5f53d68efddd": "cd11bf30-ea39-43b6-8c28-35eb4db483f6",
+        "dc41d498-069d-4bd0-88fb-c2774574df2a": "da5bc3c1-7851-4503-a2ef-b60482670d01"
       }
     },
     {
@@ -683,7 +702,10 @@
         "2eb53d3c-4002-4d99-80e3-4cad8d618ad1": "8e47ad41-3e3f-42e2-98b2-bf82b7bdcb55",
         "4d9571bd-e18c-4cf2-a5fb-05163736a7cb": "c28149e2-7422-4ba0-8fca-2b298b2d98b9",
         "2c7b060e-8795-4bc2-b14c-19aa1f376655": "cc905d0c-573c-49d9-83cf-c320fa26f256",
-        "f250ff5c-389a-417f-a264-31828404af6b": "95068661-0835-43f4-8a55-485943c5b2e7"
+        "f250ff5c-389a-417f-a264-31828404af6b": "95068661-0835-43f4-8a55-485943c5b2e7",
+        "f4c53353-c16f-4bad-a219-1ba9c3b9a81a": "4f5e9108-5ef1-4ac5-a01a-b96334bfa31b",
+        "a3462b19-6c96-4b97-b4ab-5f53d68efddd": "a95363e7-c335-4126-a60a-5434d2783e50",
+        "dc41d498-069d-4bd0-88fb-c2774574df2a": "31aced7a-0d8e-4909-8b78-e407878472c4"
       }
     },
     {
@@ -717,8 +739,53 @@
         "2eb53d3c-4002-4d99-80e3-4cad8d618ad1": "e28e33ea-4930-41a1-9514-32301aadcae3",
         "4d9571bd-e18c-4cf2-a5fb-05163736a7cb": "57f0b260-a0a7-406f-b8de-ca6d479ab7b1",
         "2c7b060e-8795-4bc2-b14c-19aa1f376655": "51f78833-0a94-4121-b1d5-411faa493310",
-        "f250ff5c-389a-417f-a264-31828404af6b": "f673f3ec-c44b-47a8-a328-a5da2f45b17e"
+        "f250ff5c-389a-417f-a264-31828404af6b": "f673f3ec-c44b-47a8-a328-a5da2f45b17e",
+        "f4c53353-c16f-4bad-a219-1ba9c3b9a81a": "d101a57d-b181-410b-b796-d0e93c937399",
+        "a3462b19-6c96-4b97-b4ab-5f53d68efddd": "8af3ea4f-7135-432d-bde9-2db79f7c9a80",
+        "dc41d498-069d-4bd0-88fb-c2774574df2a": "4c8534fc-2a67-4d3b-beb1-e363b77a580e"
       }
+    },
+    {
+      "__guid": "dac3e200-98ac-49af-a781-1ad82cf3bf1d",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "-17.14272,1161.76,-19.97615",
+      "Rotation": "0,0,0,1",
+      "Scale": "5.345165,114.2936,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "82336ab6-a046-4522-b806-94a2b33f5c63",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "0.04186,0.04186,0.04186,1"
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
