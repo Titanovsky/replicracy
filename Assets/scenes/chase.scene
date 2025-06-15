@@ -168,7 +168,7 @@
             "AfterUILayer": false
           },
           "RenderType": "Off",
-          "Tint": "0.26998,0.69573,0.89302,1"
+          "Tint": "1,1,1,1"
         },
         {
           "__type": "Sandbox.BoxCollider",
@@ -243,7 +243,7 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Player \uD83D\uDE08",
-      "Position": "155.3013,-273.9974,30.93614",
+      "Position": "0,0,30.93614",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -520,6 +520,70 @@
           "Children": []
         }
       ]
+    },
+    {
+      "__guid": "c407b274-dff0-4d0a-8d16-dc0b92643797",
+      "__version": 1,
+      "__Prefab": "prefabs/unit.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [],
+        "RemovedObjects": [],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "d1c7ad0e-8e50-4772-8442-ac84e923c23f"
+            },
+            "Property": "Position",
+            "Value": "72.73833,75.78993,6.608837"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "d1c7ad0e-8e50-4772-8442-ac84e923c23f": "c407b274-dff0-4d0a-8d16-dc0b92643797",
+        "fdb50e3f-2449-44eb-94ca-ec3e8428c212": "70849841-2a93-45d5-a918-7cd97f775614",
+        "3e82156c-eb77-4d32-982e-cf2636ff1d20": "345ce611-d383-4fdb-a2d6-23daeadea10e",
+        "2a029ac5-eb65-4c80-b64c-10b09ae7d4a7": "0fa9cc73-a299-4618-8b67-0d4414ef923f",
+        "75e02b87-5569-4c7d-a329-4fd7dd62afd3": "b8499036-075c-4fd8-b5eb-6218e35ee4fa",
+        "7e974db0-7b0b-4bfd-8eeb-2a6c3defa1f5": "85058fd8-d94b-44a6-81aa-be0951213170",
+        "058fc198-2b37-4fb5-82bc-420903592ae0": "5456f323-828f-4132-8aea-e2ee5ef08426",
+        "797a3995-9b0b-4591-9570-744bb1b357c0": "62075042-9295-4fef-9e0e-9640b677b798",
+        "f4b03efd-6b99-4bff-8502-31969ac365e0": "582670fa-9396-4d1a-829e-371164065ac2"
+      }
+    },
+    {
+      "__guid": "b802e872-6e04-4ed8-9311-e55d0d3db557",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Navigator",
+      "Position": "98.79367,-2.847656,23.19036",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.NavMeshLink",
+          "__guid": "c2e6ee31-cea3-4fad-840b-46bb1c411151",
+          "__enabled": true,
+          "ConnectionRadius": 19.79998,
+          "IsBiDirectional": true,
+          "LocalEndPosition": "27.1052,-79.11816,22.49218",
+          "LocalStartPosition": "-27.1052,79.11816,-22.49218",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
@@ -530,7 +594,7 @@
       "Title": "chase"
     },
     "NavMesh": {
-      "Enabled": false,
+      "Enabled": true,
       "IncludeStaticBodies": true,
       "IncludeKeyframedBodies": true,
       "EditorAutoUpdate": true,
