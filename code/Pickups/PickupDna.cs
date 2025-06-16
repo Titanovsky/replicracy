@@ -7,6 +7,7 @@ public sealed class PickupDna : Component, Component.ITriggerListener
     [Property] public float Amplitude { get; set; } = 6f;
     [Property] public float SpeedRotate { get; set; } = .25f;
     [Property] public int Dna { get; set; } = 2;
+    [Property] public SoundFile PickupSound { get; set; }
 
     private void PreparePickupManager()
     {
@@ -28,6 +29,14 @@ public sealed class PickupDna : Component, Component.ITriggerListener
 
         ply.Dna += Dna;
 
+        PlaySound();
+
         DestroyGameObject();
+    }
+
+    private void PlaySound()
+    {
+        if (PickupSound != null)
+            Sound.PlayFile(PickupSound);
     }
 }

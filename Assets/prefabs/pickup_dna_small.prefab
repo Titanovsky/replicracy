@@ -51,6 +51,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "PickupSound": "pickupdna.vsnd",
         "SpeedRotate": 0.25
       },
       {
@@ -156,6 +157,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [],
+  "__references": [
+    "chase.pickup#106652"
+  ],
   "__version": 2
 }
