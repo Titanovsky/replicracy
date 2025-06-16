@@ -1,4 +1,4 @@
-using Sandbox;
+п»їusing Sandbox;
 using System;
 
 public sealed class Player : Component
@@ -8,8 +8,8 @@ public sealed class Player : Component
     [Property] public float MaxHealth { get; set; } = 0f;
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
-    [Property] public CameraComponent Camera { get; set; }
-    [Property] public GameObject Body { get; set; }
+    [Property] public PlayerController PlayerController { get; set; }
+    [Property] public GameObject Hui { get; set; }
 
     public Action<Vector3> OnSpecified { get; set; }
 
@@ -19,7 +19,8 @@ public sealed class Player : Component
         Health = MaxHealth;
         Dna = 0;
 
-        Camera = Scene.Camera;
+        if (!PlayerController.IsValid())
+            PlayerController = GetComponent<PlayerController>();
     }
 
     private void CreateSingleton()
@@ -30,8 +31,9 @@ public sealed class Player : Component
 
     public void Specify()
     {
-        var tr = Scene.Trace.Ray(ray: Camera.WorldTransform.ForwardRay, 10000f)
-            .Size(BBox.FromPositionAndSize(-6, 6))
+        var tr = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
+            .Size(BBox.FromPositionAndSize(-8, 8))
+            .IgnoreGameObject(GameObject)
             .Run();
 
         if (!tr.Hit) return;
@@ -39,15 +41,6 @@ public sealed class Player : Component
         OnSpecified?.Invoke(tr.HitPosition);
 
         WorldPosition = tr.HitPosition;
-        Log.Info($"{tr.Collider.GameObject}");
-    }
-
-    protected override void DrawGizmos()
-    {
-        Gizmo.Transform = global::Transform.Zero; // вот из-за этой хуйни гизмо не правильно позиционировался
-
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Arrow(Body.WorldPosition, WorldPosition, 10f, 3f);
     }
 
     private void CheckSpecify()
@@ -70,5 +63,18 @@ public sealed class Player : Component
     protected override void OnUpdate()
     {
         CheckSpecify();
+
+        Gizmo.Draw.Color = Color.Red;
+        //Gizmo.Draw.LineCapsule(new(WorldPosition * new Vector3(1,1,-36f), Camera.WorldTransform.ForwardRay.Forward, 12f));
+
+        var tr = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
+            .Size(BBox.FromPositionAndSize(-8, 8))
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        Gizmo.Draw.Arrow(tr.StartPosition, tr.EndPosition, 10f, 6f);
+
+        //Log.Info($"{Camera.LocalTransform}  | {Camera.WorldTransform}");
+        //Log.Info($">>>> {Camera.WorldTransform.}");
     }
 }
