@@ -183,7 +183,7 @@
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
           "MaterialGroup": null,
-          "MaterialOverride": "materials/default.vmat",
+          "MaterialOverride": "materials/street/grass_01a.vmat",
           "Model": "models/dev/plane.vmdl",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -2952,7 +2952,7 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Box",
-      "Position": "-320,-48,62.69818",
+      "Position": "-320,-64,62.69818",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -2973,7 +2973,7 @@
           "IsTrigger": false,
           "Mesh": {
             "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-            "Position": "-320,-48,62.69818",
+            "Position": "-320,-64,62.69818",
             "Rotation": "0,0,0,1",
             "Positions": [
               "-64.00003,-208,225.3018",
@@ -2987,9 +2987,9 @@
             ],
             "TextureCoord": [
               "-1,2.625",
-              "-2.5,-1.76017",
+              "0,0",
               "-1,-0.1249999",
-              "-1.625,-1.76017",
+              "0,0",
               "-2.5,-0.1249999",
               "2,-1.76017",
               "-2.5,2.625",
@@ -2997,59 +2997,59 @@
               "-1,-0.125",
               "3.5,0.4999999",
               "-1,2.625",
-              "1.125,0.4999999",
+              "1,1",
               "-2.5,2.625",
-              "-1,0.4999998",
+              "1,1",
               "-2.5,-0.125",
               "2.625,0.4999998",
               "2.625,-1.76017",
-              "-2.5,0.4999998",
+              "0,1",
               "-0.1249999,0.4999999",
               "3.5,-1.76017",
-              "-1.625,0.4999998",
-              "-1,-1.76017",
-              "1.125,-1.76017",
+              "0,0.9999999",
+              "1,0",
+              "1,0",
               "2,0.4999999"
             ],
             "TextureUAxis": [
               "1,0,0",
-              "1,0,0",
-              "-0.00000008669767,-1,0",
-              "0.0000001300465,1,0",
+              "1,-0,0",
+              "-0.00000008669766,-1,0",
+              "0,1,0",
               "-1,0,0",
               "1,-0,0"
             ],
             "TextureVAxis": [
-              "-0,-1,0.00000006502324",
+              "-0,-1,-0",
               "0,-1,0.00000005418604",
               "0,0,-1",
-              "0,0,-1",
+              "-0,0,-1",
               "0,0,-1",
               "-0,0,-1"
             ],
             "TextureScale": [
               "0.25,0.25",
               "0.25,0.25",
-              "0.25,0.25",
-              "0.25,0.25",
-              "0.25,0.25",
-              "0.25,0.25"
+              "0.25,0.2500001",
+              "0.34375,0.2825213",
+              "0.25,0.2500001",
+              "0.1875,0.2825213"
             ],
             "TextureOffset": [
-              "256,320",
-              "256,320",
-              "319.9999,250.7927",
-              "192.0001,250.7927",
+              "255.9999,256",
+              "255.9999,256",
+              "255.9999,250.7927",
+              "791.2727,1019.392",
               "256,250.7927",
-              "256,250.7927"
+              "1024,1019.392"
             ],
             "MaterialIndex": [
               0,
               0,
               0,
+              1,
               0,
-              0,
-              0
+              1
             ],
             "EdgeFlags": [
               0,
@@ -3078,7 +3078,8 @@
               0
             ],
             "Materials": [
-              "materials/dev/reflectivity_30.vmat"
+              "materials/dev/reflectivity_30.vmat",
+              "materials/mats/building_facade/building_facade.vmat"
             ]
           },
           "OnComponentDestroy": null,
@@ -3124,6 +3125,9 @@
   "ResourceVersion": 3,
   "Title": "minimal",
   "Description": null,
-  "__references": [],
+  "__references": [
+    "apetavern.grass_01a#102401",
+    "thefirm.building_facade#26333"
+  ],
   "__version": 3
 }
