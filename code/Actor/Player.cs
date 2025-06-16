@@ -11,6 +11,8 @@ public sealed class Player : Component
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public GameObject Hui { get; set; }
 
+    private SceneTraceResult _traceResult;
+
     public Action<Vector3> OnSpecified { get; set; }
 
     private void Prepare()
@@ -31,20 +33,30 @@ public sealed class Player : Component
 
     public void Specify()
     {
-        var tr = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
+        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
             .Size(BBox.FromPositionAndSize(-8, 8))
             .IgnoreGameObject(GameObject)
             .Run();
 
-        if (!tr.Hit) return;
+        if (!_traceResult.Hit) return;
 
-        OnSpecified?.Invoke(tr.HitPosition);
+        OnSpecified?.Invoke(_traceResult.HitPosition);
     }
 
     private void CheckSpecify()
     {
         if (Input.Pressed("Use"))
             Specify();
+    }
+
+    private void DrawSpecified()
+    {
+        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
+        Gizmo.Draw.LineThickness = 4;
+        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
+
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
     protected override void OnStart()
@@ -61,6 +73,8 @@ public sealed class Player : Component
     protected override void OnUpdate()
     {
         CheckSpecify();
+
+        DrawSpecified();
     }
 
     protected override void OnDestroy()

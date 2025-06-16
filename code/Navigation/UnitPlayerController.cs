@@ -5,9 +5,7 @@ public sealed class UnitPlayerController : Component
 {
     [Property] public Player Player { get; set; } = null;
 
-    [Property]
-    [Required]
-    private NavMeshAgent Agent { get; set; } = null;
+    [Property] [Required] private NavMeshAgent Agent { get; set; } = null;
 
     protected override void OnStart()
     {
