@@ -2,6 +2,55 @@
   "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
   "GameObjects": [
     {
+      "__guid": "a0f583af-195b-4f0f-b92e-6d173b80ce41",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "\uD83D\uDCC3 CORE",
+      "Position": "105.062,130.0053,-25.18412",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "PickupManager",
+          "__guid": "8dbfb35f-eec4-48b2-8437-b71801146b65",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Pickups": [
+            {
+              "_type": "component",
+              "component_id": "dfcc169b-016f-4e67-9801-64df1f49770c",
+              "go": "cd89aa17-7552-4bf6-845a-04c1773531b2",
+              "component_type": "PickupDna"
+            },
+            {
+              "_type": "component",
+              "component_id": "cc905d0c-573c-49d9-83cf-c320fa26f256",
+              "go": "8e47ad41-3e3f-42e2-98b2-bf82b7bdcb55",
+              "component_type": "PickupDna"
+            },
+            {
+              "_type": "component",
+              "component_id": "51f78833-0a94-4121-b1d5-411faa493310",
+              "go": "e28e33ea-4930-41a1-9514-32301aadcae3",
+              "component_type": "PickupDna"
+            }
+          ]
+        }
+      ],
+      "Children": []
+    },
+    {
       "__guid": "0180dc8f-34e9-4f1f-b7da-e7c99689991a",
       "__version": 1,
       "Flags": 0,
@@ -921,80 +970,31 @@
         "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "d871c345-a950-4732-ad0b-71e2bcb948fc",
         "b869b7df-ac57-4084-a7c4-1a89571001a4": "a6113833-d10c-4a09-9566-3a5b83002e3f",
         "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "fec7c80d-a0b8-4e38-be64-cbd7400f3def",
-        "0fc7710c-d869-409a-8385-8ccffe305bc7": "1aada56a-fa1f-4a08-b047-5b21a3b4df65",
+        "0fc7710c-d869-409a-8385-8ccffe305bc7": "3ace3324-e3ca-48cc-8cda-2d3220427dd7",
         "a35590fc-74b9-4c51-b20e-388a0306e5f9": "1758015f-4115-43d8-bce0-aa2e47bce05f",
         "b32305f4-d21b-4bc6-8e39-bb15ee70a0aa": "7758a571-70f3-450f-bfc8-804c4fb055fa",
         "681c5a72-d6cf-4f2c-a04a-349909e92a37": "4d059133-4d4a-47fe-afba-fef2b197e6e3",
         "80445111-f98b-4437-adf2-ab9bb241b25c": "921b3626-4fda-4089-864a-eb25a01bbab2",
-        "0e115454-15d8-42a1-ab4c-f7655a28cccf": "23e6c630-36d7-4874-93f8-1a3866019144",
-        "ddb416fc-1495-4551-946b-afe531c5824d": "d13579f9-32c8-410e-8aa0-047bd1056661",
-        "2ee4cf3f-05aa-4dd5-8d30-6e614aba4aa2": "c5b777bf-a40d-4fa1-b31b-5f4080c12924",
+        "0e115454-15d8-42a1-ab4c-f7655a28cccf": "96977ac3-04d9-4126-8144-298e4e724512",
+        "ddb416fc-1495-4551-946b-afe531c5824d": "40650458-4714-45bd-91c2-f65ac0f3989e",
+        "2ee4cf3f-05aa-4dd5-8d30-6e614aba4aa2": "87ac1ae0-8a8f-45aa-aac0-b493c2577134",
         "39844f88-a86d-4d3b-a981-4b4e498cc500": "9f15e2a2-62f5-44d9-bdd8-4ac0b4cfd5ab",
         "e2ba90b5-71fc-4afa-b625-0ab8d8805ce8": "5498be3d-9e16-4107-a061-0323e8e8487c",
-        "6255a22a-9ea7-4392-84c8-18feba96c643": "740631d9-3c7b-4d73-9cf8-72debde96b2b",
-        "9c0e116c-f315-43e4-906b-e1ae0962ddee": "a453c9fb-c90b-4f8b-98de-a41ad6f3ceba",
-        "09a73179-579a-41cf-b922-45fb744eea26": "c631653d-2b5f-4304-ae55-a3aa0a40924f",
-        "10e9501d-7a3e-43e5-893e-5ff4df7b2058": "83388588-825a-4bb8-9a31-1a63fe126cc4",
-        "3cca945b-4cb4-4a01-98c3-7a5ee6c6a748": "6b1ca3ed-b5a0-46bd-9ad3-894db0b09fc5",
-        "242739ec-4b99-4cd2-b4b8-275032a32772": "f69d0491-227f-4040-aab0-c9e271f586d2",
-        "3c6640aa-6137-430c-a25f-8c9d107679e3": "9372df6c-7e72-431e-9815-94b4d504b9e1",
+        "6255a22a-9ea7-4392-84c8-18feba96c643": "404b08ef-198d-4c5b-ae1e-e123d289e00b",
+        "9c0e116c-f315-43e4-906b-e1ae0962ddee": "505666b6-b467-4866-a81f-2511dd47a41b",
+        "09a73179-579a-41cf-b922-45fb744eea26": "4eb70b9a-7701-4f75-941c-2364becfa1b9",
+        "10e9501d-7a3e-43e5-893e-5ff4df7b2058": "bf40cd3d-beb1-4925-b6c3-36259d65428e",
+        "3cca945b-4cb4-4a01-98c3-7a5ee6c6a748": "8845d19c-4e36-40a8-bf7b-2f4bf07c946d",
+        "242739ec-4b99-4cd2-b4b8-275032a32772": "dd9f8a6e-fda0-46ed-8361-59dd5716a003",
+        "3c6640aa-6137-430c-a25f-8c9d107679e3": "0c8521ef-5659-4507-aca8-74f361b47432",
         "e1df14f4-8604-4007-a55e-2d2114ce5a8f": "de8baae4-a525-44f7-afaf-365a11dae7a0",
         "3fd49b94-522a-4494-996a-13e08434d004": "efeaee4c-69e6-4063-936a-3605616f837a",
         "5490b759-96c6-4e18-b7b8-f397271bf600": "b65da6ee-09a9-4880-8ff0-93e2a0974bf5",
         "2d54cf43-66ad-42fe-a87f-84feaf47098b": "a48b0de5-2508-46d3-85a5-48432734f924",
         "cde5fb90-75ee-446f-85ad-6534b8ec2708": "cf94c0e5-5129-4b12-ae4d-6f335f415c7b",
         "34ca9c0d-b18e-44d1-b68f-073eaebf8684": "8388d81b-85aa-4789-8b04-07c404ae8aad",
-        "33f0bd66-123b-4638-bd15-20ed3f6bc5bf": "c6bdf614-8705-44ba-a32e-5ff353d2e190"
+        "33f0bd66-123b-4638-bd15-20ed3f6bc5bf": "d166431c-bd45-4ade-97b7-976ada58dc31"
       }
-    },
-    {
-      "__guid": "a0f583af-195b-4f0f-b92e-6d173b80ce41",
-      "__version": 1,
-      "Flags": 0,
-      "Name": "\uD83D\uDCC3 CORE",
-      "Position": "105.062,130.0053,-25.18412",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "PickupManager",
-          "__guid": "8dbfb35f-eec4-48b2-8437-b71801146b65",
-          "__enabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Pickups": [
-            {
-              "_type": "component",
-              "component_id": "dfcc169b-016f-4e67-9801-64df1f49770c",
-              "go": "cd89aa17-7552-4bf6-845a-04c1773531b2",
-              "component_type": "PickupDna"
-            },
-            {
-              "_type": "component",
-              "component_id": "cc905d0c-573c-49d9-83cf-c320fa26f256",
-              "go": "8e47ad41-3e3f-42e2-98b2-bf82b7bdcb55",
-              "component_type": "PickupDna"
-            },
-            {
-              "_type": "component",
-              "component_id": "51f78833-0a94-4121-b1d5-411faa493310",
-              "go": "e28e33ea-4930-41a1-9514-32301aadcae3",
-              "component_type": "PickupDna"
-            }
-          ]
-        }
-      ],
-      "Children": []
     },
     {
       "__guid": "cd89aa17-7552-4bf6-845a-04c1773531b2",
@@ -2931,7 +2931,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "White",
-          "Position": "0,0,25.07005",
+          "Position": "0,0,24.04941",
           "Rotation": "0,0,0,1",
           "Scale": "0.01518492,1,0.03888121",
           "Tags": "",
@@ -2963,7 +2963,7 @@
                 "AfterUILayer": false
               },
               "RenderType": "On",
-              "Tint": "0.70698,0.70698,0.70698,1"
+              "Tint": "0.71163,0.71163,0.71163,1"
             }
           ],
           "Children": []

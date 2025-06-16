@@ -1,8 +1,9 @@
-using Sandbox;
 using System;
 
 public sealed class PickupManager : Component
 {
+    public static PickupManager Instance { get; private set; }
+
     [Property] public List<PickupDna> Pickups { get; set; } = new();
 
     private List<Vector3> _cachePos = new();
@@ -29,6 +30,12 @@ public sealed class PickupManager : Component
         }
     }
 
+    private void CreateSingleton()
+    {
+        if (Instance is null)
+            Instance = this;
+    }
+
     protected override void OnStart()
     {
         Prepare();
@@ -37,5 +44,11 @@ public sealed class PickupManager : Component
     protected override void OnFixedUpdate()
     {
         MovingAndRotating();
+    }
+
+    protected override void OnAwake()
+    {
+        CreateSingleton();
+
     }
 }
