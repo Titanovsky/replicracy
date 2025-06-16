@@ -8,14 +8,24 @@ public sealed class PickupManager : Component
 
     private List<Vector3> _cachePos = new();
 
+    public void Add(PickupDna pickup)
+    {
+        if (Pickups.Contains(pickup)) return;
+
+        _cachePos.Add(pickup.WorldPosition);
+        Pickups.Add(pickup);
+
+        Log.Info($"Added {pickup.GameObject}");
+    }
+
     private void Prepare()
     {
-        foreach (var pickup in Pickups)
-        {
-            if (!pickup.IsValid()) continue;
+        //foreach (var pickup in Pickups)
+        //{
+        //    if (!pickup.IsValid()) continue;
 
-            _cachePos.Add(pickup.WorldPosition);
-        }
+        //    _cachePos.Add(pickup.WorldPosition);
+        //}
     }
 
     private void MovingAndRotating()
@@ -36,6 +46,12 @@ public sealed class PickupManager : Component
             Instance = this;
     }
 
+    private void DestroySingleton()
+    {
+        if (Instance is not null)
+            Instance = null;
+    }
+
     protected override void OnStart()
     {
         Prepare();
@@ -49,6 +65,10 @@ public sealed class PickupManager : Component
     protected override void OnAwake()
     {
         CreateSingleton();
+    }
 
+    protected override void OnDestroy()
+    {
+        DestroySingleton(); // fix: pick up dna
     }
 }
