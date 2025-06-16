@@ -39,8 +39,6 @@ public sealed class Player : Component
         if (!tr.Hit) return;
 
         OnSpecified?.Invoke(tr.HitPosition);
-
-        WorldPosition = tr.HitPosition;
     }
 
     private void CheckSpecify()
@@ -63,18 +61,5 @@ public sealed class Player : Component
     protected override void OnUpdate()
     {
         CheckSpecify();
-
-        Gizmo.Draw.Color = Color.Red;
-        //Gizmo.Draw.LineCapsule(new(WorldPosition * new Vector3(1,1,-36f), Camera.WorldTransform.ForwardRay.Forward, 12f));
-
-        var tr = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
-            .Size(BBox.FromPositionAndSize(-8, 8))
-            .IgnoreGameObject(GameObject)
-            .Run();
-
-        Gizmo.Draw.Arrow(tr.StartPosition, tr.EndPosition, 10f, 6f);
-
-        //Log.Info($"{Camera.LocalTransform}  | {Camera.WorldTransform}");
-        //Log.Info($">>>> {Camera.WorldTransform.}");
     }
 }
