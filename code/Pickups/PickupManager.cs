@@ -34,7 +34,7 @@ public sealed class PickupManager : Component
         Prepare();
     }
 
-    protected override void OnUpdate()
+    protected override void OnFixedUpdate()
     {
         MovingAndRotating();
     }
