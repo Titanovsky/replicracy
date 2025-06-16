@@ -9,6 +9,7 @@ public sealed class Player : Component
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
     [Property] public CameraComponent Camera { get; set; }
+    [Property] public GameObject Body { get; set; }
 
     public Action<Vector3> OnSpecified { get; set; }
 
@@ -29,9 +30,8 @@ public sealed class Player : Component
 
     public void Specify()
     {
-        var tr = Scene.Trace.Ray(Camera.WorldPosition, Camera.WorldTransform.Forward * 10000f)
-            .UseHitboxes(true)
-            .Size(BBox.FromPositionAndSize(-5, 5))
+        var tr = Scene.Trace.Ray(ray: Camera.WorldTransform.ForwardRay, 10000f)
+            .Size(BBox.FromPositionAndSize(-6, 6))
             .Run();
 
         if (!tr.Hit) return;
@@ -39,6 +39,15 @@ public sealed class Player : Component
         OnSpecified?.Invoke(tr.HitPosition);
 
         WorldPosition = tr.HitPosition;
+        Log.Info($"{tr.Collider.GameObject}");
+    }
+
+    protected override void DrawGizmos()
+    {
+        Gizmo.Transform = global::Transform.Zero; // вот из-за этой хуйни гизмо не правильно позиционировался
+
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Arrow(Body.WorldPosition, WorldPosition, 10f, 3f);
     }
 
     private void CheckSpecify()
