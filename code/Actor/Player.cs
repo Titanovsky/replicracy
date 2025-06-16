@@ -62,4 +62,9 @@ public sealed class Player : Component
     {
         CheckSpecify();
     }
+
+    protected override void OnDestroy()
+    {
+        Instance = null;
+    }
 }

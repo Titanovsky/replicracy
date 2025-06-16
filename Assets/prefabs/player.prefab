@@ -3,7 +3,7 @@
     "__guid": "70251006-11e7-43cf-81d9-58eab51d5fe1",
     "__version": 1,
     "Flags": 0,
-    "Name": "Player \uD83D\uDE08",
+    "Name": "player",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -291,10 +291,10 @@
         ],
         "Children": [
           {
-            "__guid": "34ca9c0d-b18e-44d1-b68f-073eaebf8684",
+            "__guid": "ad286611-917f-426c-9c4f-ac2e09e16224",
             "__version": 1,
             "Flags": 0,
-            "Name": "Clothing - polo_shirt",
+            "Name": "Clothing - santajacket",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
@@ -307,7 +307,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "e2ba90b5-71fc-4afa-b625-0ab8d8805ce8",
+                "__guid": "5c2db0df-d464-4077-8841-f5ec96010aa1",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -321,7 +321,7 @@
                 "CreateBoneObjects": false,
                 "MaterialGroup": null,
                 "MaterialOverride": null,
-                "Model": "models/citizen_clothes/shirt/polo_shirt/models/polo_shirt.vmdl",
+                "Model": "models/citizen_clothes/seasonal/2024/santa/santa_jacket/models/santa_jacket.vmdl",
                 "Morphs": {},
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
@@ -356,10 +356,10 @@
             "Children": []
           },
           {
-            "__guid": "cde5fb90-75ee-446f-85ad-6534b8ec2708",
+            "__guid": "cf55957e-c2c8-4e2c-bc51-0f579d32ccd1",
             "__version": 1,
             "Flags": 0,
-            "Name": "Clothing - eyebrows_bushy",
+            "Name": "Clothing - santahat",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
@@ -372,7 +372,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "681c5a72-d6cf-4f2c-a04a-349909e92a37",
+                "__guid": "e6f04bdb-3465-45d6-8156-18d179dd716e",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -386,72 +386,7 @@
                 "CreateBoneObjects": false,
                 "MaterialGroup": null,
                 "MaterialOverride": null,
-                "Model": "models/citizen_clothes/hair/eyebrows_bushy/models/eyebrows_bushy.vmdl",
-                "Morphs": {},
-                "OnComponentDestroy": null,
-                "OnComponentDisabled": null,
-                "OnComponentEnabled": null,
-                "OnComponentFixedUpdate": null,
-                "OnComponentStart": null,
-                "OnComponentUpdate": null,
-                "Parameters": {
-                  "bools": {},
-                  "ints": {},
-                  "floats": {},
-                  "vectors": {},
-                  "rotations": {}
-                },
-                "PlaybackRate": 1,
-                "RenderOptions": {
-                  "GameLayer": true,
-                  "OverlayLayer": false,
-                  "BloomLayer": false,
-                  "AfterUILayer": false
-                },
-                "RenderType": "On",
-                "Sequence": {
-                  "Name": null,
-                  "Looping": true,
-                  "Blending": false
-                },
-                "Tint": "0.26339,0.15966,0.1038,1",
-                "UseAnimGraph": true
-              }
-            ],
-            "Children": []
-          },
-          {
-            "__guid": "2d54cf43-66ad-42fe-a87f-84feaf47098b",
-            "__version": 1,
-            "Flags": 0,
-            "Name": "Clothing - trackie_bottoms",
-            "Position": "0,0,0",
-            "Rotation": "0,0,0,1",
-            "Scale": "1,1,1",
-            "Tags": "clothing",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "NetworkOrphaned": 0,
-            "OwnerTransfer": 1,
-            "Components": [
-              {
-                "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "b32305f4-d21b-4bc6-8e39-bb15ee70a0aa",
-                "__enabled": true,
-                "AnimationGraph": null,
-                "BodyGroups": 18446744073709551615,
-                "BoneMergeTarget": {
-                  "_type": "component",
-                  "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
-                  "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
-                  "component_type": "SkinnedModelRenderer"
-                },
-                "CreateAttachments": false,
-                "CreateBoneObjects": false,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/citizen_clothes/trousers/trackiebottoms/models/trackie_bottoms.vmdl",
+                "Model": "models/citizen_clothes/seasonal/2024/santa/santa_hat/models/santa_hat.vmdl",
                 "Morphs": {},
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
@@ -486,10 +421,10 @@
             "Children": []
           },
           {
-            "__guid": "5490b759-96c6-4e18-b7b8-f397271bf600",
+            "__guid": "b57f9f4b-1a87-4736-8bf8-6fa8c156905b",
             "__version": 1,
             "Flags": 0,
-            "Name": "Clothing - hair_bobcut",
+            "Name": "Clothing - santatrousers",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
@@ -502,7 +437,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "a35590fc-74b9-4c51-b20e-388a0306e5f9",
+                "__guid": "4485f270-35c0-4c9c-9f5f-ff64bf5cea84",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -516,72 +451,7 @@
                 "CreateBoneObjects": false,
                 "MaterialGroup": null,
                 "MaterialOverride": null,
-                "Model": "models/citizen_clothes/hair/hair_bobcut/models/hair_bobcut.vmdl",
-                "Morphs": {},
-                "OnComponentDestroy": null,
-                "OnComponentDisabled": null,
-                "OnComponentEnabled": null,
-                "OnComponentFixedUpdate": null,
-                "OnComponentStart": null,
-                "OnComponentUpdate": null,
-                "Parameters": {
-                  "bools": {},
-                  "ints": {},
-                  "floats": {},
-                  "vectors": {},
-                  "rotations": {}
-                },
-                "PlaybackRate": 1,
-                "RenderOptions": {
-                  "GameLayer": true,
-                  "OverlayLayer": false,
-                  "BloomLayer": false,
-                  "AfterUILayer": false
-                },
-                "RenderType": "On",
-                "Sequence": {
-                  "Name": null,
-                  "Looping": true,
-                  "Blending": false
-                },
-                "Tint": "0.17927,0.12101,0.08964,1",
-                "UseAnimGraph": true
-              }
-            ],
-            "Children": []
-          },
-          {
-            "__guid": "3fd49b94-522a-4494-996a-13e08434d004",
-            "__version": 1,
-            "Flags": 0,
-            "Name": "Clothing - blue_sneakers",
-            "Position": "0,0,0",
-            "Rotation": "0,0,0,1",
-            "Scale": "1,1,1",
-            "Tags": "clothing",
-            "Enabled": true,
-            "NetworkMode": 2,
-            "NetworkInterpolation": true,
-            "NetworkOrphaned": 0,
-            "OwnerTransfer": 1,
-            "Components": [
-              {
-                "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "39844f88-a86d-4d3b-a981-4b4e498cc500",
-                "__enabled": true,
-                "AnimationGraph": null,
-                "BodyGroups": 18446744073709551615,
-                "BoneMergeTarget": {
-                  "_type": "component",
-                  "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
-                  "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
-                  "component_type": "SkinnedModelRenderer"
-                },
-                "CreateAttachments": false,
-                "CreateBoneObjects": false,
-                "MaterialGroup": null,
-                "MaterialOverride": null,
-                "Model": "models/citizen_clothes/shoes/sneakers/models/blue_sneakers.vmdl",
+                "Model": "models/citizen_clothes/seasonal/2024/santa/santa_trousers/models/santa_trousers.vmdl",
                 "Morphs": {},
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
@@ -616,10 +486,10 @@
             "Children": []
           },
           {
-            "__guid": "e1df14f4-8604-4007-a55e-2d2114ce5a8f",
+            "__guid": "9bd583cc-e2ce-48d1-a43c-cf8a80eb32ca",
             "__version": 1,
             "Flags": 0,
-            "Name": "Clothing - moustache",
+            "Name": "Clothing - eyebrows",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
@@ -632,7 +502,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "80445111-f98b-4437-adf2-ab9bb241b25c",
+                "__guid": "423d638c-07bf-4cd8-bff5-18bf4fdf427f",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -646,7 +516,7 @@
                 "CreateBoneObjects": false,
                 "MaterialGroup": null,
                 "MaterialOverride": null,
-                "Model": "models/citizen_clothes/hair/moustache/models/moustache.vmdl",
+                "Model": "models/citizen_clothes/hair/eyebrows/models/eyebrows.vmdl",
                 "Morphs": {},
                 "OnComponentDestroy": null,
                 "OnComponentDisabled": null,
@@ -674,7 +544,7 @@
                   "Looping": true,
                   "Blending": false
                 },
-                "Tint": "0.19912,0.13441,0.09957,1",
+                "Tint": "0.86557,0.67997,0.50108,1",
                 "UseAnimGraph": true
               }
             ],
