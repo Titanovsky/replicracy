@@ -20,12 +20,12 @@ public sealed class PickupManager : Component
 
     private void Prepare()
     {
-        //foreach (var pickup in Pickups)
-        //{
-        //    if (!pickup.IsValid()) continue;
+        foreach (var pickup in Pickups)
+        {
+            if (!pickup.IsValid()) continue;
 
-        //    _cachePos.Add(pickup.WorldPosition);
-        //}
+            _cachePos.Add(pickup.WorldPosition);
+        }
     }
 
     private void MovingAndRotating()
