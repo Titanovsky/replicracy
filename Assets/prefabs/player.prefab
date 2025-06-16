@@ -228,6 +228,19 @@
         "OnComponentUpdate": null,
         "Source": "LocalUser",
         "WorkshopItems": []
+      },
+      {
+        "__type": "UnitPlayerController",
+        "__guid": "8a2cc7bf-740d-415d-addc-791603ae710e",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Player": null,
+        "Units": []
       }
     ],
     "Children": [
@@ -291,7 +304,7 @@
         ],
         "Children": [
           {
-            "__guid": "ad286611-917f-426c-9c4f-ac2e09e16224",
+            "__guid": "ccff6bc9-0149-45f1-9f35-cc067afd41c5",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - santajacket",
@@ -307,7 +320,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "5c2db0df-d464-4077-8841-f5ec96010aa1",
+                "__guid": "d29186c5-2199-4620-ae9c-7ef755638d57",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -356,7 +369,7 @@
             "Children": []
           },
           {
-            "__guid": "cf55957e-c2c8-4e2c-bc51-0f579d32ccd1",
+            "__guid": "d020d52f-19d4-4ca4-b5ff-d78b832611aa",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - santahat",
@@ -372,7 +385,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "e6f04bdb-3465-45d6-8156-18d179dd716e",
+                "__guid": "ec56222d-86b8-4c40-9e91-665fd6b6ef11",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -421,7 +434,7 @@
             "Children": []
           },
           {
-            "__guid": "b57f9f4b-1a87-4736-8bf8-6fa8c156905b",
+            "__guid": "ac94da30-41a6-42d8-9f5b-7392b0a88a4b",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - santatrousers",
@@ -437,7 +450,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "4485f270-35c0-4c9c-9f5f-ff64bf5cea84",
+                "__guid": "60fcd12f-edcc-4f21-872b-d1a31dcae827",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -486,7 +499,7 @@
             "Children": []
           },
           {
-            "__guid": "9bd583cc-e2ce-48d1-a43c-cf8a80eb32ca",
+            "__guid": "79340fe9-b85e-43ae-a7e7-65e864b20435",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - eyebrows",
@@ -502,7 +515,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "423d638c-07bf-4cd8-bff5-18bf4fdf427f",
+                "__guid": "d786e709-1e14-4b6b-9065-3075ee3a027c",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
