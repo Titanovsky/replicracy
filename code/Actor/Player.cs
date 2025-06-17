@@ -6,7 +6,7 @@ public sealed class Player : Component
 {
     public static Player Instance { get; private set; }
 
-    [Property] public float MaxHealth { get; set; } = 0f;
+    [Property] public float MaxHealth { get; set; } = 100f;
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
     [Property] public PlayerController PlayerController { get; set; }
@@ -16,9 +16,10 @@ public sealed class Player : Component
 
     public Action<Vector3> OnSpecified { get; set; }
 
+    [Property] public GameObject PosBullet { get; set; }
+
     private void Prepare()
     {
-        MaxHealth = 100f;
         Health = MaxHealth;
         Dna = 0;
 
@@ -53,6 +54,16 @@ public sealed class Player : Component
             Specify();
     }
 
+    private void Shot()
+    {
+
+    }
+
+    private void InputShot()
+    {
+
+    }
+
     private void DrawSpecified()
     {
         Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
@@ -84,6 +95,7 @@ public sealed class Player : Component
     {
         CheckSpecify();
         DrawSpecified();
+        InputShot();
     }
 
     protected override void OnDestroy()
