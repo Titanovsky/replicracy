@@ -35,7 +35,7 @@ public sealed class PickupManager : Component
             var pickup = Pickups[i];
             if (!pickup.IsValid()) continue;
 
-            pickup.WorldRotation *= new Angles(0, 1f * pickup.SpeedRotate, 0);
+            pickup.WorldRotation *= new Angles(0f, 1f * pickup.SpeedRotate, 0f);
             pickup.WorldPosition = _cachePos[i] + new Vector3(1f, 1f, MathF.Sin(Time.Now * pickup.Frequency) * pickup.Amplitude);
         }
     }
