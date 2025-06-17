@@ -38,7 +38,10 @@
         "__guid": "5c02a357-4ec2-4683-8fcc-cc2daf241ff6",
         "__enabled": true,
         "BodyWeight": 1,
-        "EyeSource": null,
+        "EyeSource": {
+          "_type": "gameobject",
+          "go": "61aa38ce-53d3-400a-9ea9-7d097c38301d"
+        },
         "EyesWeight": 1,
         "HeadWeight": 1,
         "Height": null,
@@ -60,6 +63,25 @@
           "go": "3e82156c-eb77-4d32-982e-cf2636ff1d20",
           "component_type": "SkinnedModelRenderer"
         }
+      },
+      {
+        "__type": "Sandbox.CharacterController",
+        "__guid": "c04df881-f12f-43f4-bd0a-2419a56c9a8b",
+        "__enabled": true,
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 45,
+        "Height": 64,
+        "IgnoreLayers": "",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 16,
+        "StepHeight": 18,
+        "UseCollisionRules": false
       }
     ],
     "Children": [
@@ -172,6 +194,23 @@
             "StartAsleep": false
           }
         ],
+        "Children": []
+      },
+      {
+        "__guid": "61aa38ce-53d3-400a-9ea9-7d097c38301d",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Eye",
+        "Position": "5.268586,0,62.39284",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
         "Children": []
       }
     ],

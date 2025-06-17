@@ -1,4 +1,5 @@
 using Sandbox;
+using Sandbox.Citizen;
 using System;
 
 public sealed class UnitPlayerController : Component
@@ -62,6 +63,11 @@ public sealed class UnitPlayerController : Component
 
             // Посылаем юнита в рассчитанную точку
             Units[i].MoveTo(dest);
+
+            var testAnimate = Units[i].GameObject.Components.Get<CitizenAnimationHelper>();
+            testAnimate.DuckLevel = 0f;
+            testAnimate.IsNoclipping = false;
+            testAnimate.IsGrounded = !false;
         }
     }
 
