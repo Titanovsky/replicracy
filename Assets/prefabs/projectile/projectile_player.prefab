@@ -6,7 +6,7 @@
     "Name": "projectile_player",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "0.25,0.25,0.25",
+    "Scale": "0.1,0.1,0.1",
     "Tags": "light_point,light",
     "Enabled": true,
     "NetworkMode": 2,
@@ -14,6 +14,19 @@
     "NetworkOrphaned": 0,
     "OwnerTransfer": 1,
     "Components": [
+      {
+        "__type": "Bullet",
+        "__guid": "f190fcf5-421b-41dc-9c2a-e3fc3608b487",
+        "__enabled": true,
+        "MoveSpeed": 16,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "TimeDie": 1
+      },
       {
         "__type": "Sandbox.ModelRenderer",
         "__guid": "b2cce30e-cf5c-4c1a-9d1e-9f78b3db95fa",
@@ -76,17 +89,6 @@
         "OnComponentUpdate": null,
         "Radius": 400,
         "Shadows": true
-      },
-      {
-        "__type": "Bullet",
-        "__guid": "ce8d406d-4519-4564-baa7-02f9bccf393a",
-        "__enabled": true,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null
       }
     ],
     "Children": [],
