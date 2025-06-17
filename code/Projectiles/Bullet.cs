@@ -1,45 +1,46 @@
 using Sandbox;
-using System.Threading.Tasks;
+using Sandbox.Movement;
 
 public sealed class Bullet : Component, Component.ITriggerListener
 {
-    [Property] public float MyProperty { get; set; } = 10;
+    [Property] public float TimeDie { get; set; } = 2f;
+    [Property] public float MoveSpeed { get; set; } = 1.2f;
+
+    private TimeUntil _TimeDieDelay { get; set; }
 
     private void Prepare()
-	{
-        Log.Info($"Prepare {GameObject}");
-        DieDelay(2f).Start();
+    {
+        Log.Info($"[Projectile] Spawn player bullet {GameObject}");
+
+        _TimeDieDelay = TimeDie;
     }
 
-    private async Task DieDelay(float delay)
+    private void Move()
     {
-        Log.Info($"Remove {GameObject}");
-        await Task.DelaySeconds(delay);
-        //if (!this.IsValid()) return;
+        WorldPosition += WorldTransform.Forward * MoveSpeed;
+    }
 
-        Log.Info($"Remove {GameObject}");
+    private void DieDelay()
+    {
+        if (!_TimeDieDelay) return;
+
         DestroyGameObject();
     }
 
-	private void Move()
-	{
-
-	}
-
     protected override void OnStart()
     {
-        Log.Info($"Remove {GameObject}");
         Prepare();
     }
 
     protected override void OnFixedUpdate()
 	{
-		Move();
-        Log.Info($"Remove {GameObject}");
+        DieDelay();
+        Move();
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        Destroy();
+        Log.Info("dsa");
+        DestroyGameObject();
     }
 }
