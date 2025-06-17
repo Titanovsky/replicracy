@@ -17,6 +17,7 @@ public sealed class Player : Component
     public Action<Vector3> OnSpecified { get; set; }
 
     [Property] public GameObject PosBullet { get; set; }
+    [Property] public GameObject BulletPrefab { get; set; }
 
     private void Prepare()
     {
@@ -56,12 +57,13 @@ public sealed class Player : Component
 
     private void Shot()
     {
-
+        var projectile = BulletPrefab.Clone(PosBullet.WorldPosition);
     }
 
     private void InputShot()
     {
-
+        if (Input.Pressed("Attack1"))
+            Shot();
     }
 
     private void DrawSpecified()
