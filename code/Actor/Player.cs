@@ -14,7 +14,7 @@ public sealed class Player : Component
 
     private SceneTraceResult _traceResult;
 
-    public Action<Vector3> OnSpecified { get; set; }
+    public Action<SceneTraceResult> OnSpecified { get; set; }
 
     [Property] public GameObject PosBullet { get; set; }
     [Property] public GameObject BulletPrefab { get; set; }
@@ -43,7 +43,7 @@ public sealed class Player : Component
 
         if (!_traceResult.Hit) return;
 
-        OnSpecified?.Invoke(_traceResult.HitPosition);
+        OnSpecified?.Invoke(_traceResult);
 
         //todo Remove
         DrawAvatar();

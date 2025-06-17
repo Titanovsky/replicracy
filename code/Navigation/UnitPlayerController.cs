@@ -1,12 +1,14 @@
-using Sandbox;
 using Sandbox.Citizen;
-using Sandbox.Utility;
 using System;
+using static Sandbox.PhysicsContact;
 
 public sealed class UnitPlayerController : Component
 {
     [Property] public Player Player { get; set; }
     [Property] private List<NavMeshAgent> Units { get; set; } = new();
+
+    private Vector3 _targetPoint;
+    private GameObject _targeObject;
 
     protected override void OnStart()
     {
@@ -22,12 +24,73 @@ public sealed class UnitPlayerController : Component
         Player = null;
     }
 
-    private void MoveToPlayerSpecify(Vector3 targetPoint)
+    private void PlayerSpecifie(SceneTraceResult traceResult)
+    {
+        DisableHightlights();
+
+        _targetPoint = traceResult.HitPosition;
+        _targeObject = traceResult.GameObject;
+
+        if (_targeObject.Tags.Has("enemy"))
+        {
+            MoveToEnemy();
+
+            return;
+        }
+
+        if (_targeObject.Tags.Has("building"))
+        {
+            MoveToBuilding();
+
+            return;
+        }
+
+        MoveToPoint();
+    }
+
+    private void MoveToEnemy()
+    {
+        ActiveHightlights();
+
+        MoveAroundTarget();
+    }
+
+    private void MoveToBuilding()
+    {
+        ActiveHightlights();
+
+        MoveAroundTarget();
+    }
+
+    private void MoveToPoint()
+    {
+        MoveAroundPoint();
+    }
+
+    private void MoveAroundTarget()
+    {
+        int numUnits = Units.Count;
+        float radius = 5.0f; // Радиус окружения
+        float angleStep = 360.0f / numUnits; // Угол между юнитами
+
+        for (int i = 0; i < numUnits; i++)
+        {
+            float angle = angleStep * i * ((float)Math.PI / 180); // Перевод в радианы
+            float x = _targeObject.WorldPosition.x + radius * (float)Math.Cos(angle);
+            float y = _targeObject.WorldPosition.y + radius * (float)Math.Sin(angle);
+
+            Vector3 targetPosition = new Vector3(x, y, _targeObject.WorldPosition.z);
+
+            Units[i].MoveTo(targetPosition);
+        }
+    }
+
+    private void MoveAroundPoint()
     {
         int count = Units.Count;
         if (count == 0) return;
 
-        var extraSpacing = 0.1f; // Дополнительное расстояние между юнитами
+        var extraSpacing = 0.2f; // Дополнительное расстояние между юнитами
 
         // Собираем радиусы агентов (предполагается, что они уже прописаны в NavMeshAgent.radius)
         List<float> radii = Units.Select(a => a.Radius).ToList();
@@ -48,7 +111,7 @@ public sealed class UnitPlayerController : Component
             // Рассчитываем позицию на окружности
             float angle = i * MathF.PI * 2f / count;
             Vector3 offset = new Vector3(MathF.Cos(angle), 0, MathF.Sin(angle)) * formationRadius;
-            Vector3 dest = targetPoint + offset;
+            Vector3 dest = _targetPoint + offset;
 
             // Трассируем вниз, чтобы скорректировать высоту
             {
@@ -64,11 +127,25 @@ public sealed class UnitPlayerController : Component
 
             // Посылаем юнита в рассчитанную точку
             Units[i].MoveTo(dest);
+        }
+    }
 
-            var testAnimate = Units[i].GameObject.Components.Get<CitizenAnimationHelper>();
-            testAnimate.DuckLevel = 0f;
-            testAnimate.IsNoclipping = false;
-            testAnimate.IsGrounded = !false;
+    private void ActiveHightlights()
+    {
+        var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
+
+        if (targerHightlight != null)
+            targerHightlight.Color = Color.Red.WithAlphaMultiplied(1f);
+    }
+
+    private void DisableHightlights()
+    {
+        if (_targeObject != null && _targeObject.IsValid())
+        {
+            var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
+
+            if (targerHightlight != null)
+                targerHightlight.Color = targerHightlight.Color.WithAlphaMultiplied(0f);
         }
     }
 
@@ -90,11 +167,11 @@ public sealed class UnitPlayerController : Component
 
     private void Subribe()
     {
-        Player.OnSpecified += MoveToPlayerSpecify;
+        Player.OnSpecified += PlayerSpecifie;
     }
 
     private void Unsubscribe()
     {
-        Player.OnSpecified -= MoveToPlayerSpecify;
+        Player.OnSpecified -= PlayerSpecifie;
     }
 }
