@@ -34,14 +34,12 @@ public sealed class UnitPlayerController : Component
         if (_targeObject.Tags.Has("enemy"))
         {
             MoveToEnemy();
-
             return;
         }
 
         if (_targeObject.Tags.Has("building"))
         {
             MoveToBuilding();
-
             return;
         }
 
