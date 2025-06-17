@@ -54,6 +54,16 @@ public sealed class Player : Component
             Specify();
     }
 
+    private void DrawSpecified()
+    {
+        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
+        Gizmo.Draw.LineThickness = 4;
+        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
+
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
+    }
+
     protected override void OnStart()
     {
         Prepare();
@@ -68,8 +78,8 @@ public sealed class Player : Component
     protected override void OnUpdate()
     {
         CheckSpecify();
-
         DrawSpecified();
+        CustomAnim();
     }
 
     protected override void OnDestroy()
