@@ -84,7 +84,6 @@ public sealed class Player : Component
     {
         CheckSpecify();
         DrawSpecified();
-        CustomAnim();
     }
 
     protected override void OnDestroy()
