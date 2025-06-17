@@ -138,13 +138,13 @@ public sealed class UnitPlayerController : Component
 
     private void DisableHightlights()
     {
-        if (_targeObject != null && _targeObject.IsValid())
-        {
-            var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
+        if (_targeObject == null || !_targeObject.IsValid())
+            return;
 
-            if (targerHightlight != null)
-                targerHightlight.Color = targerHightlight.Color.WithAlphaMultiplied(0f);
-        }
+        var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
+
+        if (targerHightlight != null)
+            targerHightlight.Color = targerHightlight.Color.WithAlphaMultiplied(0f);
     }
 
     public void AddUnit(NavMeshAgent agent)
