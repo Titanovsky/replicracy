@@ -86,7 +86,7 @@
       {
         "__type": "Sandbox.CapsuleCollider",
         "__guid": "054a90f2-ed70-4ee5-bbcf-1e3ff86c9469",
-        "__enabled": false,
+        "__enabled": true,
         "End": "0,0,19.20001",
         "Friction": null,
         "IsTrigger": false,
@@ -131,7 +131,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "OverrideMassCenter": false,
-        "RigidbodyFlags": 0,
+        "RigidbodyFlags": "DisableCollisionSounds",
         "StartAsleep": false
       }
     ],
