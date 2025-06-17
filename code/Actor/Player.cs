@@ -1,5 +1,7 @@
 ﻿using Sandbox;
+using Sandbox.Utility;
 using System;
+using System.Numerics;
 
 public sealed class Player : Component
 {
@@ -41,22 +43,15 @@ public sealed class Player : Component
         if (!_traceResult.Hit) return;
 
         OnSpecified?.Invoke(_traceResult.HitPosition);
+
+        //todo Remove
+        DrawAvatar();
     }
 
     private void CheckSpecify()
     {
         if (Input.Pressed("Use"))
             Specify();
-    }
-
-    private void DrawSpecified()
-    {
-        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
-        Gizmo.Draw.LineThickness = 4;
-        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
-
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
     protected override void OnStart()
@@ -80,5 +75,28 @@ public sealed class Player : Component
     protected override void OnDestroy()
     {
         Instance = null;
+    }
+
+
+    //todo Remove
+    private void DrawSpecified()
+    {
+        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
+        Gizmo.Draw.LineThickness = 4;
+        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
+
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
+    }
+
+    private void DrawAvatar()
+    {
+        GameObject avatarObject = new GameObject(true, "Avatar");
+
+        avatarObject.WorldPosition = _traceResult.HitPosition;
+        avatarObject.WorldRotation = Rotation.FromToRotation(Vector3.Forward, -_traceResult.Normal);
+
+        DecalAvatar decalAvatar = avatarObject.AddComponent<DecalAvatar>();
+        decalAvatar.DrawAvatarDecal(Steam.SteamId.ToString());
     }
 }

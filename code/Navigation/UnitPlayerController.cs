@@ -1,5 +1,6 @@
 using Sandbox;
 using Sandbox.Citizen;
+using Sandbox.Utility;
 using System;
 
 public sealed class UnitPlayerController : Component
@@ -69,6 +70,15 @@ public sealed class UnitPlayerController : Component
             testAnimate.IsNoclipping = false;
             testAnimate.IsGrounded = !false;
         }
+
+        //todo Remove
+        GameObject avatarObject = new GameObject(true, "Avatar");
+
+        avatarObject.WorldPosition = targetPoint;
+        avatarObject.WorldRotation = Rotation.FromToRotation(Vector3.Forward, -targetPoint.Normal);
+
+        DecalAvatar decalAvatar = avatarObject.AddComponent<DecalAvatar>();
+        decalAvatar.DrawAvatarDecal(Steam.SteamId.ToString());
     }
 
     public void AddUnit(NavMeshAgent agent)

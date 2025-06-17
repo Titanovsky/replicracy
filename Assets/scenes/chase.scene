@@ -1687,6 +1687,192 @@
           "Children": []
         },
         {
+          "__guid": "0389d939-123b-4a76-81f7-f3fc44236cba",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "Decal",
+          "Position": "76.92261,-481.223,-23.96247",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.Decal",
+              "__guid": "072c069c-db31-43be-bfdd-1cbef7c806e1",
+              "__enabled": true,
+              "__version": 1,
+              "AttenuationAngle": 1,
+              "ColorTexture": null,
+              "ColorTint": "203,61,61,255",
+              "NormalTexture": "materials/for_text.vtex",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RMOTexture": null,
+              "SequenceId": 0,
+              "SheetSequence": false,
+              "Size": "7.799992,50,50",
+              "SortLayer": 0
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "a84382ea-f1fa-4e11-b260-8673009cf1ba",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "Decal",
+          "Position": "-11.89026,-481.2229,-81.35889",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.Decal",
+              "__guid": "4c5be884-7a92-45c4-b546-469a266e7f52",
+              "__enabled": true,
+              "__version": 1,
+              "AttenuationAngle": 1,
+              "ColorTexture": {
+                "$compiler": "texture",
+                "$source": "imagefile",
+                "data": {
+                  "FilePath": "materials/chrome_dz8rhnemmf.png",
+                  "MaxSize": 4096,
+                  "ConvertHeightToNormals": false,
+                  "NormalScale": 1,
+                  "Rotate": 0,
+                  "FlipVertical": false,
+                  "FlipHorizontal": false,
+                  "Padding": {
+                    "Size": "0,0",
+                    "EdgeSize": "0,0"
+                  },
+                  "Sharpen": 0,
+                  "InvertColor": false,
+                  "Blur": 0,
+                  "Brightness": 1,
+                  "Contrast": 1,
+                  "Saturation": 1,
+                  "Hue": 0,
+                  "Colorize": false,
+                  "TargetColor": "0,1,0,1",
+                  "CacheToDisk": true
+                },
+                "compiled": null
+              },
+              "ColorTint": "255,255,255,255",
+              "NormalTexture": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RMOTexture": null,
+              "SequenceId": 0,
+              "SheetSequence": false,
+              "Size": "7.799992,65,65",
+              "SortLayer": 0
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "55267f49-654f-4d95-bce3-50e69e84bad1",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "AVT",
+          "Position": "65.71494,-481.2229,-87.87835",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "Sandbox.Decal",
+              "__guid": "3b7560bc-64e4-4abf-bb37-41851095b66e",
+              "__enabled": true,
+              "__version": 1,
+              "AttenuationAngle": 1,
+              "ColorTexture": null,
+              "ColorTint": "255,255,255,255",
+              "NormalTexture": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RMOTexture": null,
+              "SequenceId": 0,
+              "SheetSequence": false,
+              "Size": "32,32,32",
+              "SortLayer": 0
+            },
+            {
+              "__type": "DecalAvatar",
+              "__guid": "6aa4fc46-4904-4f00-9001-8daf049f4066",
+              "__enabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "SteamId": "76561198086321085"
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "a844b96b-7cce-4e9a-85fa-8849dab9e678",
+          "__version": 1,
+          "Flags": 0,
+          "Name": "AVC",
+          "Position": "-2.09745,-481.2229,-21.69967",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "NetworkOrphaned": 0,
+          "OwnerTransfer": 1,
+          "Components": [
+            {
+              "__type": "DecalAvatar",
+              "__guid": "2fc3e50f-287d-476c-a5f5-37c0a932cbc4",
+              "__enabled": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "SteamId": "76561198150872383"
+            }
+          ],
+          "Children": []
+        },
+        {
           "__guid": "da2f8c18-0cce-4560-ba43-883fa4678424",
           "__version": 1,
           "Flags": 0,
@@ -3063,7 +3249,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "a21bfbab-1fed-4fe8-a48c-d18e56427515"
+              "IdValue": "0258e204-c0e5-4269-8e2a-1b08ce252ff7"
             },
             "Parent": {
               "Type": "GameObject",
@@ -3073,7 +3259,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "a21bfbab-1fed-4fe8-a48c-d18e56427515",
+              "__guid": "0258e204-c0e5-4269-8e2a-1b08ce252ff7",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - santajacket",
@@ -3093,18 +3279,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "5df80d18-c4c4-42f0-88b9-26257ca2e6f3"
+              "IdValue": "200ca7ec-a473-491b-aab6-0ae9df8aa317"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "a21bfbab-1fed-4fe8-a48c-d18e56427515"
+              "IdValue": "0258e204-c0e5-4269-8e2a-1b08ce252ff7"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "5df80d18-c4c4-42f0-88b9-26257ca2e6f3",
+              "__guid": "200ca7ec-a473-491b-aab6-0ae9df8aa317",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -3153,7 +3339,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "4908461a-6409-46a5-9478-51723f670b32"
+              "IdValue": "0de11c58-044c-4ea8-b9ed-4c637e30cd46"
             },
             "Parent": {
               "Type": "GameObject",
@@ -3161,12 +3347,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "a21bfbab-1fed-4fe8-a48c-d18e56427515"
+              "IdValue": "0258e204-c0e5-4269-8e2a-1b08ce252ff7"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "4908461a-6409-46a5-9478-51723f670b32",
+              "__guid": "0de11c58-044c-4ea8-b9ed-4c637e30cd46",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - santahat",
@@ -3186,18 +3372,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "a4289434-edab-4cd0-83a4-4a48f39d1b8d"
+              "IdValue": "b3359439-6e32-409f-8dfe-249fb8c7fcb7"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "4908461a-6409-46a5-9478-51723f670b32"
+              "IdValue": "0de11c58-044c-4ea8-b9ed-4c637e30cd46"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "a4289434-edab-4cd0-83a4-4a48f39d1b8d",
+              "__guid": "b3359439-6e32-409f-8dfe-249fb8c7fcb7",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -3246,7 +3432,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "ed64b7ef-3290-4214-b0a7-17fe22d94522"
+              "IdValue": "ef4e616e-06c6-4916-944d-45071839a639"
             },
             "Parent": {
               "Type": "GameObject",
@@ -3254,12 +3440,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "4908461a-6409-46a5-9478-51723f670b32"
+              "IdValue": "0de11c58-044c-4ea8-b9ed-4c637e30cd46"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "ed64b7ef-3290-4214-b0a7-17fe22d94522",
+              "__guid": "ef4e616e-06c6-4916-944d-45071839a639",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - santatrousers",
@@ -3279,18 +3465,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "d74cc2b3-7c82-4e01-af9f-58e7bf971c95"
+              "IdValue": "d17bda4b-d8c6-470f-a102-619c6e80ec57"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "ed64b7ef-3290-4214-b0a7-17fe22d94522"
+              "IdValue": "ef4e616e-06c6-4916-944d-45071839a639"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "d74cc2b3-7c82-4e01-af9f-58e7bf971c95",
+              "__guid": "d17bda4b-d8c6-470f-a102-619c6e80ec57",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -3339,7 +3525,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "9d33e26a-fdbe-43b3-9144-c1ca9a24bfeb"
+              "IdValue": "04f88fc4-1bf9-4d5a-971c-e308f24e93fc"
             },
             "Parent": {
               "Type": "GameObject",
@@ -3347,12 +3533,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "ed64b7ef-3290-4214-b0a7-17fe22d94522"
+              "IdValue": "ef4e616e-06c6-4916-944d-45071839a639"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "9d33e26a-fdbe-43b3-9144-c1ca9a24bfeb",
+              "__guid": "04f88fc4-1bf9-4d5a-971c-e308f24e93fc",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - eyebrows",
@@ -3372,18 +3558,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "8f4e62fa-6f45-471e-873d-fd3ad84f9732"
+              "IdValue": "bbf05377-c989-4c15-a163-a93e524eb0f8"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "9d33e26a-fdbe-43b3-9144-c1ca9a24bfeb"
+              "IdValue": "04f88fc4-1bf9-4d5a-971c-e308f24e93fc"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "8f4e62fa-6f45-471e-873d-fd3ad84f9732",
+              "__guid": "bbf05377-c989-4c15-a163-a93e524eb0f8",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -3434,49 +3620,49 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "de43b15a-788b-4f5f-8e08-9f61b43249b9"
+              "IdValue": "d7d0e475-cdc3-4350-805a-c12b8679e8bc"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "0bca8ac8-8edf-443e-a804-82207aecd5a0"
+              "IdValue": "a56c3afe-0d7d-458c-8a98-0b2fed647090"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "0ff407ce-ccc3-4a2f-8cab-4bc2212d77dc"
+              "IdValue": "993cf8ac-ddd6-46e3-8dfd-28a44a8027e5"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "6dc2dd6b-156a-4c99-ba96-55c197e77108"
+              "IdValue": "864a3d5f-19f1-4202-b5cd-6b41374c757f"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "c3b6ac79-4709-4db4-b83c-9f91aa52d3f5"
+              "IdValue": "86504555-dbab-4d3a-be5c-31f8e01b1275"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "cfb154ca-e3e6-465c-96d3-6bff97ecc613"
+              "IdValue": "243b4d34-f3f1-45a8-83e9-95efdd7644bc"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "644fa119-37b4-435e-9efe-fc3b0134d4fb"
+              "IdValue": "36b54ed9-fc6c-4192-a376-43cf8aeed220"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "8d29aecc-3e91-4b82-8373-f3c5f3585df3"
+              "IdValue": "6332ae96-a0d9-46a6-a8da-f9660fbd760f"
             }
           }
         ],
@@ -3531,9 +3717,9 @@
         "e7d04219-229d-4594-905b-655c56e0c8a7": "06d6259c-de40-4ce9-9ce3-94e7aea5e5e9",
         "23f8050f-1377-434e-a1aa-2f82d6912ff8": "702ae69c-21cb-406f-805b-db509b25fb2c",
         "8a2cc7bf-740d-415d-addc-791603ae710e": "52cadfe0-5a6d-4c50-883c-356f7daaf26b",
-        "8d29aecc-3e91-4b82-8373-f3c5f3585df3": "da1d066a-f294-4ea1-ab90-bd31c40e4842",
-        "6dc2dd6b-156a-4c99-ba96-55c197e77108": "264017ee-8908-41d2-b121-a738e617f4fc",
-        "0bca8ac8-8edf-443e-a804-82207aecd5a0": "9677a60e-ab96-45b5-8292-c4d51fe54539",
+        "6332ae96-a0d9-46a6-a8da-f9660fbd760f": "b72972c2-bdee-41e3-91a9-c9cda4c1be0f",
+        "243b4d34-f3f1-45a8-83e9-95efdd7644bc": "82e4c1ee-d05b-4d7b-b4f4-9385b69a9de1",
+        "864a3d5f-19f1-4202-b5cd-6b41374c757f": "e4c01e3a-f3f2-4d41-a34a-0c443550dded",
         "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "29328d41-b0d1-4477-9a6f-70f7ee09108c",
         "b869b7df-ac57-4084-a7c4-1a89571001a4": "d637071e-9ab0-4893-b7c5-ad1dc27ac6c7",
         "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "4ffb9b74-92d6-45f2-b683-a39760712850",
@@ -3541,15 +3727,15 @@
         "60fcd12f-edcc-4f21-872b-d1a31dcae827": "49adcb1d-f244-4c41-95e2-38ae47a3e390",
         "ec56222d-86b8-4c40-9e91-665fd6b6ef11": "7696523e-c123-4bb8-a1b0-894cdd971797",
         "d29186c5-2199-4620-ae9c-7ef755638d57": "f35e49dd-97eb-431d-8e5c-66928e40c083",
-        "cfb154ca-e3e6-465c-96d3-6bff97ecc613": "b7d65ff5-653b-480e-bdd9-2e5706d5326a",
-        "644fa119-37b4-435e-9efe-fc3b0134d4fb": "9e55810b-09a5-4b60-af31-e284eee34d68",
-        "c3b6ac79-4709-4db4-b83c-9f91aa52d3f5": "b8bfc62f-2207-40f9-b231-d9faf22d6730",
-        "0ff407ce-ccc3-4a2f-8cab-4bc2212d77dc": "d601353c-c082-46d7-8b2a-066ad2f56fdc",
+        "a56c3afe-0d7d-458c-8a98-0b2fed647090": "14ef5599-5965-469b-930b-7f7c7fc71a6f",
+        "36b54ed9-fc6c-4192-a376-43cf8aeed220": "7a81c0d9-40db-4184-8d87-8c179da5cc66",
+        "86504555-dbab-4d3a-be5c-31f8e01b1275": "4be62bbe-c3ad-440d-bcf3-c04705f6bef3",
+        "993cf8ac-ddd6-46e3-8dfd-28a44a8027e5": "d743dc25-0e79-4119-8a05-d909feaa1c5a",
         "79340fe9-b85e-43ae-a7e7-65e864b20435": "e9150c67-35f3-439d-ac48-51bc456979be",
         "ac94da30-41a6-42d8-9f5b-7392b0a88a4b": "8753c062-3efd-4d0a-9290-629e5d83df75",
         "d020d52f-19d4-4ca4-b5ff-d78b832611aa": "6779cc15-a30e-4e56-a16d-03530f31fc1f",
         "ccff6bc9-0149-45f1-9f35-cc067afd41c5": "6ed76711-f2f0-4151-a546-19e1c8016244",
-        "de43b15a-788b-4f5f-8e08-9f61b43249b9": "06441313-2788-42f7-9e04-675e0b02a808"
+        "d7d0e475-cdc3-4350-805a-c12b8679e8bc": "bb14eae4-958d-4eec-81f6-d30599485333"
       }
     },
     {
@@ -3577,8 +3763,10 @@
         "3e82156c-eb77-4d32-982e-cf2636ff1d20": "90b70847-fcd8-4414-ad3d-6f886c550d9a",
         "53a623e6-b43a-4546-835e-ee0b53212f7a": "cc42e0d2-22d1-4900-b384-2476d3a5e397",
         "5c02a357-4ec2-4683-8fcc-cc2daf241ff6": "fd1cd3b1-4897-4914-ae7e-26fd9eb1fdd3",
-        "e45ab7ad-b30c-4284-9610-8e700f3b70a5": "c5fd9062-b566-43ce-8e89-d23ceae5b294",
-        "474562a5-c4a0-456a-be0d-a96d39828452": "6cb5b656-f8af-44ea-8174-ede6c72576d3"
+        "7edbbe9a-8736-4f2b-ae33-854ac7a21b74": "8a9507d1-28bc-46a2-9be4-9a1a1eda9950",
+        "054a90f2-ed70-4ee5-bbcf-1e3ff86c9469": "17dce41b-b44b-4247-8924-161af748dec3",
+        "61aa38ce-53d3-400a-9ea9-7d097c38301d": "bdfd669c-14e9-4ccc-85db-924df988e2bc",
+        "c04df881-f12f-43f4-bd0a-2419a56c9a8b": "7a34ca2f-8f5c-42ee-9bb3-e4eeab0a2d17"
       }
     },
     {
@@ -3614,8 +3802,10 @@
         "3e82156c-eb77-4d32-982e-cf2636ff1d20": "02714d04-3eae-4258-a257-76d236df80ac",
         "53a623e6-b43a-4546-835e-ee0b53212f7a": "c8b99428-96a0-431e-917d-5f4f20377874",
         "5c02a357-4ec2-4683-8fcc-cc2daf241ff6": "270e793b-e5fd-4ef9-9fef-fbbd1e31a54b",
-        "e45ab7ad-b30c-4284-9610-8e700f3b70a5": "50a13df0-1f62-4da8-8642-44db32e3488e",
-        "474562a5-c4a0-456a-be0d-a96d39828452": "1216193f-f449-4a66-b6ac-d7a51b94e84d"
+        "7edbbe9a-8736-4f2b-ae33-854ac7a21b74": "9db20315-b6f0-4285-a8f9-9011ec3e0d4e",
+        "054a90f2-ed70-4ee5-bbcf-1e3ff86c9469": "33293586-2977-4ebd-8999-c40aaf1d366f",
+        "61aa38ce-53d3-400a-9ea9-7d097c38301d": "44f9740b-73c2-4596-98e1-961543313c50",
+        "c04df881-f12f-43f4-bd0a-2419a56c9a8b": "390e0966-0937-4023-8903-cafa220d4029"
       }
     },
     {
@@ -3651,8 +3841,10 @@
         "3e82156c-eb77-4d32-982e-cf2636ff1d20": "ac444f8c-b741-41a3-90b3-d36e4ff84374",
         "53a623e6-b43a-4546-835e-ee0b53212f7a": "7ba5c287-e297-4344-b6f1-3bc34079d020",
         "5c02a357-4ec2-4683-8fcc-cc2daf241ff6": "4951f168-68f9-4890-8662-c4e60093f53d",
-        "e45ab7ad-b30c-4284-9610-8e700f3b70a5": "ecb1600d-7307-4a3f-894b-984e7672daa8",
-        "474562a5-c4a0-456a-be0d-a96d39828452": "dcf506d6-0f2e-4acc-8002-1d857262d07b"
+        "7edbbe9a-8736-4f2b-ae33-854ac7a21b74": "0660fc17-7d01-44e3-9a20-a2d9634024d8",
+        "054a90f2-ed70-4ee5-bbcf-1e3ff86c9469": "38d0c808-4d3d-4d21-b8ad-adb28aa54a09",
+        "61aa38ce-53d3-400a-9ea9-7d097c38301d": "d04ef49f-f7c2-4a23-a7fb-7ac6654f7b4f",
+        "c04df881-f12f-43f4-bd0a-2419a56c9a8b": "c28a48e0-d33c-4957-b4c7-f37cf428768d"
       }
     },
     {
@@ -3677,7 +3869,7 @@
               "IdValue": "d1c7ad0e-8e50-4772-8442-ac84e923c23f"
             },
             "Property": "Position",
-            "Value": "-72.67778,144.8873,2.451447"
+            "Value": "-17.96667,265.9408,2.451651"
           }
         ],
         "MovedObjects": []
@@ -3688,8 +3880,10 @@
         "3e82156c-eb77-4d32-982e-cf2636ff1d20": "bcde6159-66fe-4643-b35a-ac97b88cb4ff",
         "53a623e6-b43a-4546-835e-ee0b53212f7a": "351323d0-6cfa-4824-bd70-ce10876f0155",
         "5c02a357-4ec2-4683-8fcc-cc2daf241ff6": "5c94caa0-1dd6-4e46-8568-10df3e42e97d",
-        "e45ab7ad-b30c-4284-9610-8e700f3b70a5": "264fb156-33e2-4821-961a-08c6d106be06",
-        "474562a5-c4a0-456a-be0d-a96d39828452": "c78060f3-9b7c-424e-a343-ef638389cadc"
+        "7edbbe9a-8736-4f2b-ae33-854ac7a21b74": "9893eb8d-e252-4dd4-8fdd-fa6dcba7504f",
+        "054a90f2-ed70-4ee5-bbcf-1e3ff86c9469": "d35d63df-a69c-48f6-aa79-19308d432ae8",
+        "61aa38ce-53d3-400a-9ea9-7d097c38301d": "8534eccd-8486-4dd7-b86b-13f823ca0df2",
+        "c04df881-f12f-43f4-bd0a-2419a56c9a8b": "be6f5469-06a5-4d22-bb43-ace80b171463"
       }
     },
     {
@@ -3777,14 +3971,6 @@
             },
             "Property": "Position",
             "Value": "-95.76309,-309.1924,176.0533"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "2eb53d3c-4002-4d99-80e3-4cad8d618ad1"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,0.9999999"
           }
         ],
         "MovedObjects": []
@@ -3822,14 +4008,6 @@
             },
             "Property": "Position",
             "Value": "236.8738,117.9107,48.93933"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "2eb53d3c-4002-4d99-80e3-4cad8d618ad1"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,0.9999999"
           }
         ],
         "MovedObjects": []
