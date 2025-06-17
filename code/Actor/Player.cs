@@ -90,19 +90,6 @@ public sealed class Player : Component
     {
         Instance = null;
     }
-
-
-    //todo Remove
-    private void DrawSpecified()
-    {
-        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
-        Gizmo.Draw.LineThickness = 4;
-        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
-
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
-    }
-
     private void DrawAvatar()
     {
         GameObject avatarObject = new GameObject(true, "Avatar");
