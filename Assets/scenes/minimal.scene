@@ -3942,7 +3942,10 @@
               "bools": {
                 "b_attack": true
               },
-              "ints": {},
+              "ints": {
+                "holdtype_handedness": 1,
+                "holdtype": 1
+              },
               "floats": {},
               "vectors": {},
               "rotations": {}
