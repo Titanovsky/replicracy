@@ -1,7 +1,6 @@
 ﻿using Sandbox;
 using Sandbox.Utility;
 using System;
-using System.Numerics;
 
 public sealed class Player : Component
 {
@@ -62,6 +61,12 @@ public sealed class Player : Component
 
         Gizmo.Draw.Color = Color.Green;
         Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
+    }
+
+    private void CustomAnim()
+    {
+        var renderer = PlayerController.Renderer;
+        renderer.Set("b_swim", true); // here
     }
 
     protected override void OnStart()
