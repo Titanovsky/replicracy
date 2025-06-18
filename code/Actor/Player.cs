@@ -63,7 +63,9 @@ public sealed class Player : Component
     {
         if (!_blasterShotDelay) return;
 
-        var projectile = BlasterProjectilePrefab.Clone(BlasterProjectileSpawner.WorldPosition, BlasterProjectileSpawner.Parent.WorldRotation);
+        var pos = BlasterProjectileSpawner.WorldPosition;
+        var rot = PlayerController.EyeAngles.ToRotation();
+        var projectile = BlasterProjectilePrefab.Clone(pos, rot);
 
         Sound.Play(BlasterShotSound, BlasterProjectileSpawner.WorldPosition);
 
