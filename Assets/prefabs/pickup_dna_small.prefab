@@ -52,7 +52,7 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "PickupSound": "sounds/pickup/pickup.sound",
-        "SpeedRotate": 0.25
+        "SpeedRotate": 6
       },
       {
         "__type": "Sandbox.BoxCollider",
@@ -83,7 +83,7 @@
         "__version": 1,
         "Flags": 0,
         "Name": "Object",
-        "Position": "0,0,43.55992",
+        "Position": "0,0,26.03002",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
         "Tags": "",
@@ -106,7 +106,7 @@
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "PanelSize": "2100,700",
+            "PanelSize": "2100,300",
             "RenderOptions": {
               "GameLayer": true,
               "OverlayLayer": false,
