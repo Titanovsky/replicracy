@@ -1,0 +1,79 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+
+    @if (Called)
+    {
+        <div class="title">@HintText</div> }
+    }
+
+</root>
+
+@code
+{
+    public static Hint Instance { get; private set; }
+
+    [Property] string HintText { get; set; }
+    [Property] public float HintTime { get; set; } = 10f;
+
+    public bool Called {
+        get
+        {
+            return _called;
+        } 
+
+        set
+        {
+            _called = value;
+
+            if (value)
+            {
+                StateHasChanged();
+                _hintTimer = HintTime;
+            }
+        } 
+    }
+
+    private bool _called;
+    private RealTimeUntil _hintTimer;
+
+    protected override void OnAwake()
+    {
+        CreateSingleton();
+    }
+
+    protected override void OnUpdate()
+    {
+        CheckTimer();
+    }
+
+    protected override void OnDestroy()
+    {
+        Instance = null;
+    }
+
+    private void CheckTimer()
+    {
+        if (!Called) return;
+
+        if (_hintTimer)
+        {
+            Called = false;
+            StateHasChanged();
+        }
+    }
+
+    public void SetHintText( string hint)
+    {
+        HintText = hint;
+    }
+
+    private void CreateSingleton()
+    {
+        if (Instance is null)
+            Instance = this;
+    }
+}
