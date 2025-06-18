@@ -1,18 +1,25 @@
 using System;
 
-public sealed class UnitPlayerController : Component
+public sealed class PlayerUnitController : Component
 {
     [Property] public Player Player { get; set; }
-    [Property] private List<NavMeshAgent> Units { get; set; } = new();
+    [Property] private List<PlayerUnit> Units { get; set; } = new();
 
     private Vector3 _targetPoint;
     private GameObject _targeObject;
+
+    private Vector3 _targetObjectPosition;
 
     protected override void OnStart()
     {
         Player = Player.Instance;
 
         Subribe();
+    }
+
+    protected override void OnUpdate()
+    {
+        UpdateTargetObjectPosition();
     }
 
     protected override void OnDestroy()
@@ -25,18 +32,23 @@ public sealed class UnitPlayerController : Component
     private void PlayerSpecifie(SceneTraceResult traceResult)
     {
         DisableHightlights();
+        _targeObject = null;
 
         _targetPoint = traceResult.HitPosition;
-        _targeObject = traceResult.GameObject;
+        var traceObject = traceResult.GameObject;
 
-        if (_targeObject.Tags.Has("enemy"))
+        if (traceObject.Tags.Has("enemy"))
         {
+            _targeObject = traceObject;
+
             MoveToEnemy();
             return;
         }
 
-        if (_targeObject.Tags.Has("building"))
+        if (traceObject.Tags.Has("building"))
         {
+            _targeObject = traceObject;
+
             MoveToBuilding();
             return;
         }
@@ -48,6 +60,11 @@ public sealed class UnitPlayerController : Component
     {
         ActiveHightlights();
 
+        foreach (var unit in Units)
+        {
+            unit.SetTargetObject(_targeObject);
+        }
+
         MoveAroundTarget();
     }
 
@@ -55,18 +72,43 @@ public sealed class UnitPlayerController : Component
     {
         ActiveHightlights();
 
+        foreach (var unit in Units)
+        {
+            unit.SetTargetObject(_targeObject);
+        }
+
         MoveAroundTarget();
     }
 
     private void MoveToPoint()
     {
+        foreach (var unit in Units)
+        {
+            unit.SetTargetPoint(_targetPoint);
+        }
+
         MoveAroundPoint();
+    }
+
+    private void UpdateTargetObjectPosition()
+    {
+        if (_targeObject == null)
+            return;
+
+        var currentTargerPosition = _targeObject.WorldPosition;
+
+        if (currentTargerPosition == _targetObjectPosition)
+            return;
+
+        _targetObjectPosition = _targeObject.WorldPosition;
+
+        MoveAroundTarget();
     }
 
     private void MoveAroundTarget()
     {
         int numUnits = Units.Count;
-        float radius = 5.0f; // Радиус окружения
+        float radius = 50.0f; // Радиус окружения
         float angleStep = 360.0f / numUnits; // Угол между юнитами
 
         for (int i = 0; i < numUnits; i++)
@@ -77,7 +119,7 @@ public sealed class UnitPlayerController : Component
 
             Vector3 targetPosition = new Vector3(x, y, _targeObject.WorldPosition.z);
 
-            Units[i].MoveTo(targetPosition);
+            Units[i].MoveToPoint(targetPosition);
         }
     }
 
@@ -89,7 +131,7 @@ public sealed class UnitPlayerController : Component
         var extraSpacing = 0.2f; // Дополнительное расстояние между юнитами
 
         // Собираем радиусы агентов (предполагается, что они уже прописаны в NavMeshAgent.radius)
-        List<float> radii = Units.Select(a => a.Radius).ToList();
+        List<float> radii = Units.Select(a => a.GetRadius()).ToList();
         float maxDiameter = radii.Max() * 2f;
 
         // Для одного юнита просто идём в точку
@@ -122,8 +164,9 @@ public sealed class UnitPlayerController : Component
             }
 
             // Посылаем юнита в рассчитанную точку
-            Units[i].MoveTo(dest);
+            Units[i].MoveToPoint(dest);
         }
+
     }
 
     private void ActiveHightlights()
@@ -145,7 +188,7 @@ public sealed class UnitPlayerController : Component
             targerHightlight.Color = targerHightlight.Color.WithAlphaMultiplied(0f);
     }
 
-    public void AddUnit(NavMeshAgent agent)
+    public void AddUnit(PlayerUnit agent)
     {
         if (agent is null) return;
         if (Units.Contains(agent)) return;
@@ -153,7 +196,7 @@ public sealed class UnitPlayerController : Component
         Units.Add(agent);
     }
 
-    public void RemoveUnit(NavMeshAgent agent)
+    public void RemoveUnit(PlayerUnit agent)
     {
         if (agent is null) return;
         if (!Units.Contains(agent)) return;

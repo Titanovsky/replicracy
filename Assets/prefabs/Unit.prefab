@@ -4,7 +4,7 @@
     "__version": 1,
     "Flags": 0,
     "Name": "unit",
-    "Position": "0,0,5.654285",
+    "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
     "Tags": "",
@@ -31,7 +31,7 @@
         "Radius": 15.7,
         "Separation": 0.5,
         "UpdatePosition": true,
-        "UpdateRotation": true
+        "UpdateRotation": false
       },
       {
         "__type": "Sandbox.Citizen.CitizenAnimationHelper",
@@ -133,6 +133,28 @@
         "OverrideMassCenter": false,
         "RigidbodyFlags": "DisableCollisionSounds",
         "StartAsleep": false
+      },
+      {
+        "__type": "PlayerUnit",
+        "__guid": "9f9a5419-edf5-4a6e-82f0-965d256a1292",
+        "__enabled": true,
+        "eye": {
+          "_type": "gameobject",
+          "go": "61aa38ce-53d3-400a-9ea9-7d097c38301d"
+        },
+        "NavMeshAgent": {
+          "_type": "component",
+          "component_id": "058fc198-2b37-4fb5-82bc-420903592ae0",
+          "go": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
+          "component_type": "NavMeshAgent"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RotationSpeed": 4
       }
     ],
     "Children": [
