@@ -6,7 +6,7 @@
     "Name": "pickup_dna_small",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "0.259176,0.259176,0.259176",
+    "Scale": "1,1,1",
     "Tags": "",
     "Enabled": true,
     "NetworkMode": 2,
@@ -22,7 +22,7 @@
         "CreateAttachments": false,
         "MaterialGroup": null,
         "MaterialOverride": null,
-        "Model": "models/dev/box.vmdl",
+        "Model": "models/pickups/dna/dna.vmdl",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -36,7 +36,7 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
-        "Tint": "0.41679,0.83721,0.22196,1"
+        "Tint": "1,1,1,1"
       },
       {
         "__type": "PickupDna",
@@ -58,7 +58,7 @@
         "__type": "Sandbox.BoxCollider",
         "__guid": "f250ff5c-389a-417f-a264-31828404af6b",
         "__enabled": true,
-        "Center": "0,0,0",
+        "Center": "0,0,6",
         "Friction": null,
         "IsTrigger": true,
         "OnComponentDestroy": null,
@@ -71,7 +71,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Scale": "100,100,100",
+        "Scale": "32,32,32",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
@@ -83,7 +83,7 @@
         "__version": 1,
         "Flags": 0,
         "Name": "Object",
-        "Position": "0,0,61.55476",
+        "Position": "0,0,43.55992",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
         "Tags": "",
