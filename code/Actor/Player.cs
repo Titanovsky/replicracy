@@ -18,6 +18,7 @@ public sealed class Player : Component
 
     [Property] public GameObject PosBullet { get; set; }
     [Property] public GameObject BulletPrefab { get; set; }
+    [Property] public SoundEvent BulletShotSound { get; set; }
 
     private void Prepare()
     {
@@ -58,6 +59,8 @@ public sealed class Player : Component
     private void Shot()
     {
         var projectile = BulletPrefab.Clone(PosBullet.WorldPosition, PosBullet.Parent.WorldRotation);
+
+        Sound.Play(BulletShotSound, PosBullet.WorldPosition);
     }
 
     private void InputShot()

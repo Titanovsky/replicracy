@@ -163,6 +163,7 @@
           "_type": "gameobject",
           "prefab": "prefabs/projectile/projectile_player.prefab"
         },
+        "BulletShotSound": "sounds/guns/player_gun_shot.sound",
         "Dna": 0,
         "Health": 0,
         "Hui": null,
@@ -179,10 +180,7 @@
           "go": "70251006-11e7-43cf-81d9-58eab51d5fe1",
           "component_type": "PlayerController"
         },
-        "PosBullet": {
-          "_type": "gameobject",
-          "go": "83b8cfef-c3c1-49e4-8f28-86dd1c3ab660"
-        }
+        "PosBullet": null
       },
       {
         "__type": "Sandbox.ScreenPanel",
@@ -2680,7 +2678,7 @@
             "Children": []
           },
           {
-            "__guid": "245df901-d345-45b1-b2f2-831f58c7c358",
+            "__guid": "3f18e57a-8f8a-4908-ab9e-083b206b2232",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - polo_shirt",
@@ -2696,7 +2694,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "a99c7e5c-3149-4d80-9ee1-218604900aa4",
+                "__guid": "546502a3-effb-4104-a2f2-16d47710c019",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -2745,7 +2743,7 @@
             "Children": []
           },
           {
-            "__guid": "cf1fde2e-f993-4411-837e-e2dd75496522",
+            "__guid": "07f2d774-c5c5-436b-8ead-1411d06e4c02",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - eyebrows_bushy",
@@ -2761,7 +2759,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "c7c9be87-637c-453d-9da7-f18e6ed7ea03",
+                "__guid": "cb9328f1-9c5d-4160-9234-13eb75ac104f",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -2810,7 +2808,7 @@
             "Children": []
           },
           {
-            "__guid": "cecec4e5-c67b-4f6f-b6cb-bcdaec16ec0f",
+            "__guid": "0a48472e-3530-43b2-81fb-0d20f955e0d8",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - trackie_bottoms",
@@ -2826,7 +2824,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "bd0af3ea-951d-4aca-a318-db0d06d094ac",
+                "__guid": "120f5d2f-f6af-4f08-b799-8841cc486f05",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -2875,7 +2873,7 @@
             "Children": []
           },
           {
-            "__guid": "2fd30627-c5c7-4aca-b6ca-6ac23016312c",
+            "__guid": "7e226cae-2e45-452c-8e1d-f13c1dc5b489",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - hair_bobcut",
@@ -2891,7 +2889,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "338dda5b-c2c4-4212-9e0a-55737a1bda8b",
+                "__guid": "126268d6-7882-472f-a176-390bb5aa894d",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -2940,7 +2938,7 @@
             "Children": []
           },
           {
-            "__guid": "538cd621-1ff1-4ab2-8c48-178b4fa970af",
+            "__guid": "4d94b666-603b-4dd4-bae7-76965c66dbd7",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - blue_sneakers",
@@ -2956,7 +2954,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "f1df6e86-f439-4998-ab50-1cf296be96c9",
+                "__guid": "71102768-fab3-4169-a030-86899efb639c",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
@@ -3005,7 +3003,7 @@
             "Children": []
           },
           {
-            "__guid": "30b73fa9-a8c4-4ea1-a689-774074b47bf4",
+            "__guid": "33f13888-36b1-4864-9db2-10d491a0417c",
             "__version": 1,
             "Flags": 0,
             "Name": "Clothing - moustache",
@@ -3021,7 +3019,7 @@
             "Components": [
               {
                 "__type": "Sandbox.SkinnedModelRenderer",
-                "__guid": "a45243a6-fc74-4416-a120-26aa854576e5",
+                "__guid": "0bab4195-3dbe-48c1-95f5-7a4ad78b85ed",
                 "__enabled": true,
                 "AnimationGraph": null,
                 "BodyGroups": 18446744073709551615,
