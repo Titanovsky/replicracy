@@ -19,8 +19,9 @@ public sealed class PickupDna : PickupBase
         PreparePickupManager();
     }
 
-    public void OnTriggerEnter(Collider other)
+    public override void OnTouch(Collider other)
     {
+        Log.Info("dsa");
         var ply = other.Components.GetInAncestorsOrSelf<Player>();
         if (!ply.IsValid()) return;
 
@@ -33,7 +34,7 @@ public sealed class PickupDna : PickupBase
 
     private void PlaySound()
     {
-        //if (PickupSound != null)
-            //Sound.Play(PickupSound);
+        if (PickupSound != null)
+            Sound.Play(PickupSound, WorldPosition);
     }
 }
