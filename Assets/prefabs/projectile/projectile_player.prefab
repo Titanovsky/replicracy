@@ -6,7 +6,7 @@
     "Name": "projectile_player",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "0.05,0.05,0.05",
+    "Scale": "0.025,0.025,0.025",
     "Tags": "light_point,light",
     "Enabled": true,
     "NetworkMode": 2,
@@ -68,7 +68,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 46,
+        "Radius": 72,
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
@@ -77,7 +77,7 @@
         "__type": "Sandbox.PointLight",
         "__guid": "659dfbba-8ebd-4b33-92c6-21ab636e421a",
         "__enabled": true,
-        "Attenuation": 7.08,
+        "Attenuation": 1,
         "FogMode": "Disabled",
         "FogStrength": 1,
         "LightColor": "0.25674,1,0.05116,1",
@@ -87,8 +87,8 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Radius": 1024,
-        "Shadows": true
+        "Radius": 2048,
+        "Shadows": false
       }
     ],
     "Children": [],
