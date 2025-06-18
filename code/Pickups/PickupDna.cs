@@ -1,7 +1,7 @@
 using Sandbox;
 using System;
 
-public sealed class PickupDna : Component, Component.ITriggerListener
+public sealed class PickupDna : Component, Component.ITriggerListener, IPickup
 {
     [Property] public float Frequency { get; set; } = 5.43f;
     [Property] public float Amplitude { get; set; } = 6f;
