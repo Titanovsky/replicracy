@@ -1,6 +1,4 @@
-using Sandbox.Citizen;
 using System;
-using static Sandbox.PhysicsContact;
 
 public sealed class UnitPlayerController : Component
 {
