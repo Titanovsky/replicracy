@@ -16,9 +16,12 @@ public sealed class Player : Component
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
 
-    [Property] public GameObject PosBullet { get; set; }
-    [Property] public GameObject BulletPrefab { get; set; }
-    [Property] public SoundEvent BulletShotSound { get; set; }
+    //todo: move to class PlayerBlaster
+    [Property] public GameObject BlasterProjectileSpawner { get; set; }
+    [Property] public GameObject BlasterProjectilePrefab { get; set; }
+    [Property] public SoundEvent BlasterShotSound { get; set; }
+    [Property] public float BlasterShotDelay { get; set; } = .64f;
+    private TimeUntil _blasterShotDelay;
 
     private void Prepare()
     {
@@ -58,14 +61,20 @@ public sealed class Player : Component
 
     private void Shot()
     {
-        var projectile = BulletPrefab.Clone(PosBullet.WorldPosition, PosBullet.Parent.WorldRotation);
+        if (!_blasterShotDelay) return;
 
-        Sound.Play(BulletShotSound, PosBullet.WorldPosition);
+        var projectile = BlasterProjectilePrefab.Clone(BlasterProjectileSpawner.WorldPosition, BlasterProjectileSpawner.Parent.WorldRotation);
+
+        Sound.Play(BlasterShotSound, BlasterProjectileSpawner.WorldPosition);
+
+        _blasterShotDelay = BlasterShotDelay;
+
+        PlayerController.Renderer.Set("b_attack", true);
     }
 
     private void InputShot()
     {
-        if (Input.Pressed("Attack1"))
+        if (Input.Down("Attack1"))
             Shot();
     }
 
