@@ -4,7 +4,7 @@ public sealed class PickupManager : Component
 {
     public static PickupManager Instance { get; private set; }
 
-    [Property] public List<PickupDna> Pickups { get; set; } = new();
+    [Property] public List<PickupBase> Pickups { get; set; } = new();
 
     private List<Vector3> _cachePos = new();
 

@@ -1,13 +1,10 @@
-using Sandbox;
-using System;
-
-public sealed class PickupDna : Component, Component.ITriggerListener, IPickup
+public sealed class PickupDna : PickupBase
 {
-    [Property] public float Frequency { get; set; } = 5.43f;
-    [Property] public float Amplitude { get; set; } = 6f;
-    [Property] public float SpeedRotate { get; set; } = .25f;
+    //[Property] public float Frequency { get; set; } = 5.43f;
+    //[Property] public float Amplitude { get; set; } = 6f;
+    //[Property] public float SpeedRotate { get; set; } = .25f;
     [Property] public int Dna { get; set; } = 2;
-    [Property] public SoundFile PickupSound { get; set; }
+    [Property] public SoundEvent PickupSound { get; set; }
 
     private void PreparePickupManager()
     {
@@ -36,7 +33,7 @@ public sealed class PickupDna : Component, Component.ITriggerListener, IPickup
 
     private void PlaySound()
     {
-        if (PickupSound != null)
-            Sound.PlayFile(PickupSound);
+        //if (PickupSound != null)
+            //Sound.Play(PickupSound);
     }
 }
