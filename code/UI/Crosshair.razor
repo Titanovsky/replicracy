@@ -1,0 +1,14 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<img class="image" src="materials/crosshairs/crosshair1.png" />
+</root>
+
+@code
+{
+	private bool _changed = false;
+	protected override int BuildHash() => System.HashCode.Combine(_changed);
+}
