@@ -57,7 +57,7 @@ public sealed class Player : Component
 
     private void Shot()
     {
-        var projectile = BulletPrefab.Clone(PosBullet.WorldPosition, PlayerController.EyeTransform.Rotation);
+        var projectile = BulletPrefab.Clone(PosBullet.WorldPosition, PosBullet.Parent.WorldRotation);
     }
 
     private void InputShot()

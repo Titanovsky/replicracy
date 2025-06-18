@@ -3390,9 +3390,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "ankle_R",
-              "Position": "10.68713,-5.042053,3.805941",
-              "Rotation": "0.695556,0.1290359,-0.410291,0.5755109",
-              "Scale": "0.9999982,0.9999982,0.9999982",
+              "Position": "10.68707,-5.042084,3.805914",
+              "Rotation": "0.6955557,0.1290363,-0.4102907,0.5755114",
+              "Scale": "0.9999984,0.9999984,0.9999984",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3423,9 +3423,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "ankle_L",
-              "Position": "-9.769989,5.535004,3.80858",
-              "Rotation": "0.6385096,0.3045272,-0.2475727,0.6620246",
-              "Scale": "0.9999992,0.9999992,0.9999992",
+              "Position": "-9.769989,5.534943,3.80855",
+              "Rotation": "0.6385086,0.3045292,-0.24757,0.6620256",
+              "Scale": "0.9999983,0.9999983,0.9999983",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3456,9 +3456,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "arm_lower_R",
-              "Position": "18.22083,-4.020538,54.9947",
-              "Rotation": "-0.3898191,0.05181515,-0.1479656,-0.9074483",
-              "Scale": "1,1,1",
+              "Position": "18.27316,-3.960953,54.9028",
+              "Rotation": "-0.390363,0.04981846,-0.1428725,-0.9081422",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3489,9 +3489,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "arm_lower_L",
-              "Position": "-11.07578,5.22403,46.46635",
-              "Rotation": "0.444131,0.6971053,-0.1934265,0.5285621",
-              "Scale": "1,1,1",
+              "Position": "-11.03668,5.268311,46.38289",
+              "Rotation": "0.435883,0.7008626,-0.2001672,0.5279496",
+              "Scale": "0.9999992,0.9999992,0.9999992",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3522,9 +3522,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "hand_R",
-              "Position": "26.36287,-2.06694,56.78777",
-              "Rotation": "0.6106747,-0.1231685,-0.08756316,0.777328",
-              "Scale": "1,1,1",
+              "Position": "26.44398,-2.071899,56.63277",
+              "Rotation": "0.610674,-0.1231678,-0.08756709,0.7773281",
+              "Scale": "0.9999992,0.9999992,0.9999992",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3552,9 +3552,9 @@
               "__version": 1,
               "Flags": 0,
               "Name": "Pistol",
-              "Position": "5.50738,1.772746,-0.07707971",
-              "Rotation": "0.0000008940697,0.00000166893,0.000003278255,0.9999999",
-              "Scale": "0.136356,0.136356,0.136356",
+              "Position": "7.576023,4.554889,-1.474146",
+              "Rotation": "-0.6035672,0.07895207,0.1034654,0.786618",
+              "Scale": "0.2541088,0.2541088,0.2541088",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3585,7 +3585,7 @@
               "CreateAttachments": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
-              "Model": "models/dev/box.vmdl",
+              "Model": "models/guns/python/python.vmdl",
               "OnComponentDestroy": null,
               "OnComponentDisabled": null,
               "OnComponentEnabled": null,
@@ -3605,7 +3605,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "8ec352a0-1825-46a0-af8e-dc0e39a53970"
+              "IdValue": "11aa1e50-4f6c-4e0d-ac4a-8fa9b8037bd5"
             },
             "Parent": {
               "Type": "GameObject",
@@ -3615,13 +3615,13 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "8ec352a0-1825-46a0-af8e-dc0e39a53970",
+              "__guid": "11aa1e50-4f6c-4e0d-ac4a-8fa9b8037bd5",
               "__version": 1,
               "Flags": 0,
-              "Name": "Bullet Spawner",
-              "Position": "61.11055,-4.6928,-4.363715",
-              "Rotation": "-0.00006295741,0.0004631877,-0.0002229512,0.9999999",
-              "Scale": "1,1,1",
+              "Name": "Pos Bullets",
+              "Position": "28.38656,-1.374573,7.337458",
+              "Rotation": "0.00005037896,0.0006671697,0.0007531047,0.9999993",
+              "Scale": "0.1218731,0.1218731,0.1218731",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3630,6 +3630,43 @@
               "OwnerTransfer": 1,
               "Components": [],
               "Children": []
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "f35c2165-33d8-474c-8572-2ea36caa2df1"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "11aa1e50-4f6c-4e0d-ac4a-8fa9b8037bd5"
+            },
+            "PreviousElement": null,
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f35c2165-33d8-474c-8572-2ea36caa2df1",
+              "__enabled": false,
+              "BodyGroups": 18446744073709551615,
+              "CreateAttachments": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/dev/box.vmdl",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
             }
           },
           {
@@ -3652,9 +3689,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "hand_L",
-              "Position": "-11.47705,8.784088,38.66581",
-              "Rotation": "0.4461082,0.7244864,-0.1577167,0.501231",
-              "Scale": "1.000001,1.000001,1.000001",
+              "Position": "-11.5737,8.698792,38.53262",
+              "Rotation": "0.438228,0.7283454,-0.1647965,0.5003111",
+              "Scale": "0.9999987,0.9999987,0.9999987",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3685,9 +3722,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "hold_R",
-              "Position": "31.53976,-1.544128,58.83231",
-              "Rotation": "-0.01353637,-0.00003840076,-0.00003820658,-0.9999084",
-              "Scale": "0.9999996,0.9999996,0.9999996",
+              "Position": "31.62091,-1.549103,58.67726",
+              "Rotation": "-0.01353625,-0.00004142523,-0.00003576279,-0.9999084",
+              "Scale": "0.9999987,0.9999987,0.9999987",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3718,9 +3755,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "hold_L",
-              "Position": "-9.522644,9.451416,32.63373",
-              "Rotation": "0.4031745,-0.6172342,-0.1403442,-0.6608901",
-              "Scale": "1,1,1",
+              "Position": "-9.70874,9.282837,32.46375",
+              "Rotation": "0.4097993,-0.6214468,-0.1406531,-0.6527519",
+              "Scale": "0.9999982,0.9999982,0.9999982",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3817,9 +3854,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "leg_lower_R",
-              "Position": "11.82431,-4.158997,18.76106",
-              "Rotation": "0.4776237,0.4906002,-0.5451202,0.4837676",
-              "Scale": "0.9999987,0.9999987,0.9999987",
+              "Position": "11.83597,-4.138428,18.75889",
+              "Rotation": "0.4771488,0.490334,-0.5457154,0.483835",
+              "Scale": "0.9999997,0.9999997,0.9999997",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3850,9 +3887,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "leg_lower_L",
-              "Position": "-3.064636,5.511475,17.25351",
-              "Rotation": "0.3317173,0.6610348,-0.5349632,0.4084252",
-              "Scale": "0.9999989,0.9999989,0.9999989",
+              "Position": "-2.967468,5.55191,17.20458",
+              "Rotation": "0.3291634,0.6617002,-0.5371561,0.4065312",
+              "Scale": "0.9999999,0.9999999,0.9999999",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3883,9 +3920,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "middle_of_both_hands",
-              "Position": "9.630402,3.874817,45.72447",
-              "Rotation": "0.07750322,-0.3633752,-0.1027867,-0.9227061",
-              "Scale": "1,1,1",
+              "Position": "9.582275,3.791718,45.56436",
+              "Rotation": "0.08050026,-0.3685946,-0.1007304,-0.9206036",
+              "Scale": "0.999999,0.999999,0.999999",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3916,9 +3953,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_arm_upper_R_twist1",
-              "Position": "12.634,-3.590149,55.79401",
+              "Position": "12.68906,-3.517242,55.71387",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "1,1,1",
+              "Scale": "0.9999995,0.9999995,0.9999995",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3949,9 +3986,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_arm_lower_R_twist1",
-              "Position": "22.29184,-3.043762,55.89124",
+              "Position": "22.35857,-3.016434,55.76778",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "1,1,1",
+              "Scale": "0.9999993,0.9999993,0.9999993",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -3982,9 +4019,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_elbow_R_position",
-              "Position": "18.16504,-4.093384,54.86242",
-              "Rotation": "0.2679174,0.2513087,-0.6121679,0.7002248",
-              "Scale": "1,1,1",
+              "Position": "18.21661,-4.032318,54.7725",
+              "Rotation": "0.2676493,0.2523001,-0.6138376,0.6985069",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4015,9 +4052,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_elbow_L_position",
-              "Position": "-11.28564,5.030945,46.55698",
-              "Rotation": "-0.2951698,0.7519981,-0.5540016,0.2011371",
-              "Scale": "1.000001,1.000001,1.000001",
+              "Position": "-11.23169,5.08667,46.4753",
+              "Rotation": "-0.2998678,0.7493135,-0.5565029,0.1972642",
+              "Scale": "0.9999989,0.9999989,0.9999989",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4048,9 +4085,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_arm_upper_L_twist1",
-              "Position": "-8.12439,5.087006,51.29449",
+              "Position": "-8.085297,5.159149,51.21169",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "1,1,1",
+              "Scale": "0.9999992,0.9999992,0.9999992",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4081,9 +4118,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_arm_lower_L_twist1",
-              "Position": "-11.2764,7.004089,42.56609",
+              "Position": "-11.30521,6.983582,42.45775",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "1,1,1",
+              "Scale": "0.9999989,0.9999989,0.9999989",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4114,9 +4151,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_leg_upper_R_twist1",
-              "Position": "7.898254,-3.508881,26.00655",
+              "Position": "7.887024,-3.478424,25.99102",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "0.9999992,0.9999992,0.9999992",
+              "Scale": "0.9999999,0.9999999,0.9999999",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4147,9 +4184,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_leg_upper_L_twist1",
-              "Position": "-2.122925,4.921509,25.44489",
+              "Position": "-2.090027,4.963104,25.40317",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "0.999999,0.999999,0.999999",
+              "Scale": "0.9999998,0.9999998,0.9999998",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4180,9 +4217,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_kneecap_R_position",
-              "Position": "12.58755,-4.180084,19.02817",
-              "Rotation": "0.5306369,0.4200056,-0.4690632,0.5674499",
-              "Scale": "0.9999983,0.9999983,0.9999983",
+              "Position": "12.60425,-4.159149,19.028",
+              "Rotation": "0.5304038,0.4193238,-0.4690613,0.5681733",
+              "Scale": "0.9999995,0.9999995,0.9999995",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4213,9 +4250,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_kneecap_L_position",
-              "Position": "-2.562012,5.607056,17.21525",
-              "Rotation": "0.7181683,0.1739876,-0.02502522,0.6733025",
-              "Scale": "0.9999985,0.9999985,0.9999985",
+              "Position": "-2.444672,5.651306,17.16031",
+              "Rotation": "0.7175629,0.1735047,-0.02543133,0.6740571",
+              "Scale": "0.9999996,0.9999996,0.9999996",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4246,9 +4283,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_leg_lower_R_twist1",
-              "Position": "11.25571,-4.600525,11.2835",
+              "Position": "11.26154,-4.590271,11.28237",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "0.999998,0.999998,0.999998",
+              "Scale": "0.9999995,0.9999995,0.9999995",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4279,9 +4316,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "driver_leg_lower_L_twist1",
-              "Position": "-6.417297,5.523224,10.53105",
+              "Position": "-6.368713,5.543427,10.50654",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "0.9999987,0.9999987,0.9999987",
+              "Scale": "0.9999996,0.9999996,0.9999996",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4312,9 +4349,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "forward_reference_modelspace",
-              "Position": "0.2344666,0.4581909,47.61255",
+              "Position": "0.2446594,0.5222778,47.58423",
               "Rotation": "0,0,-0.7071066,0.7071069",
-              "Scale": "1,1,1",
+              "Scale": "0.9999997,0.9999997,0.9999997",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4345,9 +4382,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "eyes",
-              "Position": "6.306793,1.288757,68.20719",
-              "Rotation": "0.0005434209,-0.00686237,-0.04592264,-0.9989213",
-              "Scale": "1,1,1",
+              "Position": "6.368011,1.375275,68.17047",
+              "Rotation": "0.000604871,-0.007520831,-0.04590428,-0.9989173",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4378,9 +4415,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "eye_R_forward",
-              "Position": "6.613831,-2.043549,68.20872",
-              "Rotation": "0.0005434209,-0.00686237,-0.04592264,-0.9989213",
-              "Scale": "1,1,1",
+              "Position": "6.674957,-1.957062,68.17221",
+              "Rotation": "0.000604871,-0.007520831,-0.04590428,-0.9989173",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4411,9 +4448,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "eye_L_forward",
-              "Position": "5.999725,4.621124,68.20567",
-              "Rotation": "0.0005434209,-0.00686237,-0.04592264,-0.9989213",
-              "Scale": "1,1,1",
+              "Position": "6.061066,4.707611,68.16875",
+              "Rotation": "0.000604871,-0.007520831,-0.04590428,-0.9989173",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4444,9 +4481,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "forward_reference",
-              "Position": "0.9206238,0.7893677,61.39124",
-              "Rotation": "0.0005434209,-0.00686237,-0.04592264,-0.9989213",
-              "Scale": "1,1,1",
+              "Position": "0.9729309,0.8748169,61.36168",
+              "Rotation": "0.000604871,-0.007520831,-0.04590428,-0.9989173",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4477,9 +4514,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "foot_R",
-              "Position": "12.06693,-5.963501,0.1873569",
-              "Rotation": "0.0004742363,0.00006684495,-0.2162332,0.9763416",
-              "Scale": "0.9999966,0.9999966,0.9999966",
+              "Position": "12.06693,-5.963531,0.1872959",
+              "Rotation": "0.0004737938,0.0000673297,-0.2162324,0.9763418",
+              "Scale": "0.9999977,0.9999977,0.9999977",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4510,9 +4547,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "foot_L",
-              "Position": "-8.16272,5.934814,1.059572",
-              "Rotation": "0.0434269,-0.9990565,-0.0003275082,-0.00008801756",
-              "Scale": "0.999997,0.999997,0.999997",
+              "Position": "-8.16272,5.934753,1.059521",
+              "Rotation": "0.04343054,-0.9990563,-0.000328014,-0.00008873406",
+              "Scale": "0.9999974,0.9999974,0.9999974",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4543,9 +4580,9 @@
               "__version": 1,
               "Flags": 8,
               "Name": "hat",
-              "Position": "1.421661,0.842926,76.54317",
-              "Rotation": "0.0005434209,-0.00686237,-0.04592264,-0.9989213",
-              "Scale": "1,1,1",
+              "Position": "1.493835,0.9310913,76.51293",
+              "Rotation": "0.000604871,-0.007520831,-0.04590428,-0.9989173",
+              "Scale": "0.9999994,0.9999994,0.9999994",
               "Tags": "",
               "Enabled": true,
               "NetworkMode": 2,
@@ -4559,7 +4596,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "3d282c5e-2f93-4ba1-9b8a-dc63589a6add"
+              "IdValue": "02ae3044-23c4-4873-b711-65a5a0bac8a4"
             },
             "Parent": {
               "Type": "GameObject",
@@ -4572,7 +4609,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "3d282c5e-2f93-4ba1-9b8a-dc63589a6add",
+              "__guid": "02ae3044-23c4-4873-b711-65a5a0bac8a4",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - polo_shirt",
@@ -4592,18 +4629,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "ff306bf8-91a5-444c-bd19-f5466bd02086"
+              "IdValue": "86e44542-95e7-43ea-9b0a-7091e2301102"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "3d282c5e-2f93-4ba1-9b8a-dc63589a6add"
+              "IdValue": "02ae3044-23c4-4873-b711-65a5a0bac8a4"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "ff306bf8-91a5-444c-bd19-f5466bd02086",
+              "__guid": "86e44542-95e7-43ea-9b0a-7091e2301102",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -4652,7 +4689,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "20909126-8a74-4595-a3a9-5bafe2d29505"
+              "IdValue": "922d44a3-ae08-445c-9453-c5f24f55cdb0"
             },
             "Parent": {
               "Type": "GameObject",
@@ -4660,12 +4697,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "3d282c5e-2f93-4ba1-9b8a-dc63589a6add"
+              "IdValue": "02ae3044-23c4-4873-b711-65a5a0bac8a4"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "20909126-8a74-4595-a3a9-5bafe2d29505",
+              "__guid": "922d44a3-ae08-445c-9453-c5f24f55cdb0",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - eyebrows_bushy",
@@ -4685,18 +4722,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "390cbc1e-22c1-4bc7-b314-f7624b16b737"
+              "IdValue": "7d437625-fbb5-4bd8-bfc2-ccc6fed74695"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "20909126-8a74-4595-a3a9-5bafe2d29505"
+              "IdValue": "922d44a3-ae08-445c-9453-c5f24f55cdb0"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "390cbc1e-22c1-4bc7-b314-f7624b16b737",
+              "__guid": "7d437625-fbb5-4bd8-bfc2-ccc6fed74695",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -4745,7 +4782,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "7bc09b32-8d8a-4442-9c01-9373c649699f"
+              "IdValue": "179331cb-f916-46df-b6e6-8da98634cb9f"
             },
             "Parent": {
               "Type": "GameObject",
@@ -4753,12 +4790,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "20909126-8a74-4595-a3a9-5bafe2d29505"
+              "IdValue": "922d44a3-ae08-445c-9453-c5f24f55cdb0"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "7bc09b32-8d8a-4442-9c01-9373c649699f",
+              "__guid": "179331cb-f916-46df-b6e6-8da98634cb9f",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - trackie_bottoms",
@@ -4778,18 +4815,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "9e5990dd-a24d-4fa0-ad2c-b7d815c6f4df"
+              "IdValue": "06528c2a-dfac-4c99-b82e-e07b753a82d3"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "7bc09b32-8d8a-4442-9c01-9373c649699f"
+              "IdValue": "179331cb-f916-46df-b6e6-8da98634cb9f"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "9e5990dd-a24d-4fa0-ad2c-b7d815c6f4df",
+              "__guid": "06528c2a-dfac-4c99-b82e-e07b753a82d3",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -4838,7 +4875,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "53c27bfd-72f7-48f9-ade9-86417f4eb05b"
+              "IdValue": "4b3b60fa-fcfc-4677-b9e7-69571bc02869"
             },
             "Parent": {
               "Type": "GameObject",
@@ -4846,12 +4883,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "7bc09b32-8d8a-4442-9c01-9373c649699f"
+              "IdValue": "179331cb-f916-46df-b6e6-8da98634cb9f"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "53c27bfd-72f7-48f9-ade9-86417f4eb05b",
+              "__guid": "4b3b60fa-fcfc-4677-b9e7-69571bc02869",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - hair_bobcut",
@@ -4871,18 +4908,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "fb8a72d3-5f60-4005-a0cb-262e6ca9618c"
+              "IdValue": "b0acd51b-dd1b-4f4d-83fe-d714fef597e1"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "53c27bfd-72f7-48f9-ade9-86417f4eb05b"
+              "IdValue": "4b3b60fa-fcfc-4677-b9e7-69571bc02869"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "fb8a72d3-5f60-4005-a0cb-262e6ca9618c",
+              "__guid": "b0acd51b-dd1b-4f4d-83fe-d714fef597e1",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -4931,7 +4968,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "01c45413-7e33-43de-afb2-85bf0b7b2333"
+              "IdValue": "51f739c6-0959-4425-860f-0a499ea720c2"
             },
             "Parent": {
               "Type": "GameObject",
@@ -4939,12 +4976,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "53c27bfd-72f7-48f9-ade9-86417f4eb05b"
+              "IdValue": "4b3b60fa-fcfc-4677-b9e7-69571bc02869"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "01c45413-7e33-43de-afb2-85bf0b7b2333",
+              "__guid": "51f739c6-0959-4425-860f-0a499ea720c2",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - blue_sneakers",
@@ -4964,18 +5001,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "922920f6-9b08-445f-b10a-7b1f4209e6ba"
+              "IdValue": "c1c1e5da-9fa3-438c-977b-b96e3ebb4d54"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "01c45413-7e33-43de-afb2-85bf0b7b2333"
+              "IdValue": "51f739c6-0959-4425-860f-0a499ea720c2"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "922920f6-9b08-445f-b10a-7b1f4209e6ba",
+              "__guid": "c1c1e5da-9fa3-438c-977b-b96e3ebb4d54",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -5024,7 +5061,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "f6f42fcc-0694-44fa-81e5-f181abdaa57c"
+              "IdValue": "220b6098-2235-4e95-8405-fdf5c188b7f3"
             },
             "Parent": {
               "Type": "GameObject",
@@ -5032,12 +5069,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "01c45413-7e33-43de-afb2-85bf0b7b2333"
+              "IdValue": "51f739c6-0959-4425-860f-0a499ea720c2"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "f6f42fcc-0694-44fa-81e5-f181abdaa57c",
+              "__guid": "220b6098-2235-4e95-8405-fdf5c188b7f3",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - moustache",
@@ -5057,18 +5094,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "8c642356-da40-4a12-b32a-8d14f43df563"
+              "IdValue": "3b210d8e-ac0b-4cb6-800d-f472cbcdefb7"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "f6f42fcc-0694-44fa-81e5-f181abdaa57c"
+              "IdValue": "220b6098-2235-4e95-8405-fdf5c188b7f3"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "8c642356-da40-4a12-b32a-8d14f43df563",
+              "__guid": "3b210d8e-ac0b-4cb6-800d-f472cbcdefb7",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -5917,73 +5954,73 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "78194469-bdb9-4bfb-a10d-683de392ff21"
+              "IdValue": "8b8cbe72-ae91-4efb-b082-3cfab772e15c"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "b450c009-15d8-4edf-aebe-4fb81ddb1c59"
+              "IdValue": "f49a7c53-e12a-4746-ab34-239780aecfb6"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "77837362-ac7d-4437-9c76-facb547eed33"
+              "IdValue": "b7095aeb-a32d-43e5-a579-2f1b74c8eea2"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "3dae3588-a09a-4f6f-aa5f-124ccf301c58"
+              "IdValue": "1720713b-4714-4d92-b55b-d3dd29802e2a"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "6706ed1c-bee3-4c4d-8fbb-baa7247abd5c"
+              "IdValue": "73c87fbb-7fbc-4c9e-bdf0-d70bc6f0f794"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "b0ce9e75-fe61-42f9-945b-82374a2e58bb"
+              "IdValue": "6749ee37-bbba-4a29-8f81-baf39475aa93"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "126591a4-5524-4fdc-8f4f-56b13a2c6744"
+              "IdValue": "678ae9b9-e574-4bdd-87ef-62581d707e37"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "005b0dce-8995-4a38-8334-44c41df0418b"
+              "IdValue": "4a5f5225-1ccd-4c58-b687-0abf36f01a89"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "e2ab6017-4baf-4dca-b832-3f78ec7104a3"
+              "IdValue": "9ea92d2b-d87f-49ef-9324-b5d1536edcbb"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "dbd55524-950f-4e34-a5a6-0dac064896f7"
+              "IdValue": "2c964547-aee2-4ef2-aad5-5a1a3ccd4133"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "47218857-32ec-44d6-b52f-bd9d1fd44d5d"
+              "IdValue": "bdc20dba-c85b-4a54-a6e3-1531adafe0f5"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "dd701aba-5172-491e-9e8c-6a5a2bbbda91"
+              "IdValue": "9a857183-3006-4cc4-9492-da90817a7ccb"
             }
           }
         ],
@@ -6020,10 +6057,23 @@
               "Type": "Component",
               "IdValue": "51514ea3-f704-46b1-baea-47a314da58cc"
             },
+            "Property": "PlayerController",
+            "Value": {
+              "_type": "component",
+              "component_id": "ab91d3a8-1eb1-4516-996d-1f281a699956",
+              "go": "70251006-11e7-43cf-81d9-58eab51d5fe1",
+              "component_type": "PlayerController"
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "51514ea3-f704-46b1-baea-47a314da58cc"
+            },
             "Property": "PosBullet",
             "Value": {
               "_type": "gameobject",
-              "go": "8ec352a0-1825-46a0-af8e-dc0e39a53970"
+              "go": "11aa1e50-4f6c-4e0d-ac4a-8fa9b8037bd5"
             }
           }
         ],
@@ -6141,8 +6191,8 @@
         "2be34418-119e-47ab-8bc6-4705616f0a23": "81ee2e29-31c5-4bc6-b34e-40dfe19d7969",
         "a1c2eaa0-fc11-4c63-9528-9a47eb3f656b": "7787d83f-4697-4d49-95b2-bb017306fa65",
         "e6b9097f-0a22-424d-a6d1-b4d060b37563": "2d20dde5-2001-492b-b28e-9a0ad1f43592",
-        "dd701aba-5172-491e-9e8c-6a5a2bbbda91": "76264ae9-98f1-4cd6-a334-59a6277e7bd9",
-        "dbd55524-950f-4e34-a5a6-0dac064896f7": "06b74b1e-4412-4881-9e87-1193fa78fd5a",
+        "9a857183-3006-4cc4-9492-da90817a7ccb": "9e255e8e-329b-4a6f-a227-9f585ac2e2e4",
+        "2c964547-aee2-4ef2-aad5-5a1a3ccd4133": "65c1a1a6-3e71-4e5d-adfe-f44025e45fb5",
         "69997fbc-a0bb-4020-b21f-2e594cf75f89": "6ce0f15d-7a9f-42b7-8062-325ff8e28f4a",
         "4762a3f4-b97d-4769-8e86-e86814e85b4f": "2977fa51-dbe1-4212-b37c-f326e9d0491e",
         "ec13f324-fefd-4517-9882-b3e030b6a1b2": "78cb54a7-414c-41f9-8702-d729e99ad525",
@@ -6180,20 +6230,20 @@
         "dc64495f-6751-4069-8ba2-e526d213993c": "9cad137b-928e-4161-8a75-58d0ebce0d54",
         "d1566dd5-9eed-4a98-bb3c-fca824c6474e": "f194ea05-e8d8-42c0-9783-3f2e144c0080",
         "f33ca48e-4ddd-49d1-ab19-3d0deac75396": "0642b143-ef37-4d24-96f8-ea7ec11ce95d",
-        "005b0dce-8995-4a38-8334-44c41df0418b": "2a313255-d7c3-4eab-8aac-159b19559b11",
-        "b0ce9e75-fe61-42f9-945b-82374a2e58bb": "292aada5-3d96-4918-882f-d3bed16e9970",
-        "3dae3588-a09a-4f6f-aa5f-124ccf301c58": "539f4d78-69c2-45ad-a9e4-c9fcfac26ff3",
-        "b450c009-15d8-4edf-aebe-4fb81ddb1c59": "b8285fc3-39ee-448a-85c8-f0b06a691c6b",
+        "4a5f5225-1ccd-4c58-b687-0abf36f01a89": "9e99cd2e-60e0-4455-8a1a-92fa12033362",
+        "6749ee37-bbba-4a29-8f81-baf39475aa93": "9a7b9a04-0364-4800-bce1-8c20a575337b",
+        "1720713b-4714-4d92-b55b-d3dd29802e2a": "f050b85a-f298-478f-9f08-11023b2377b6",
+        "f49a7c53-e12a-4746-ab34-239780aecfb6": "cfafaae0-13b5-4eb9-8b50-f7f551b9185e",
         "1c7a69a1-09e5-4d10-8875-ebc520442c62": "6589941c-5b9b-4e3f-b63d-311783905313",
         "12bc805b-c141-47e3-8366-3d476d305267": "1250c3fb-2d31-4db5-8ecb-ad50aba23f5a",
         "f373182c-edd4-43f7-aa7d-861ef47ba6d7": "9689f185-75e5-4ba5-900a-96570f55c417",
         "27ac3b7c-750a-4bd6-ab18-8f5e2a9b42ce": "659acdcc-0fd2-4fe5-b91c-0150e5660f47",
-        "47218857-32ec-44d6-b52f-bd9d1fd44d5d": "c8a84af9-f2a0-405f-8c39-f13db93b6338",
-        "e2ab6017-4baf-4dca-b832-3f78ec7104a3": "db6b061d-4d1a-4dad-9f33-ae6f404d129c",
-        "126591a4-5524-4fdc-8f4f-56b13a2c6744": "c6ce1d5a-f938-4707-bd7f-3920337c1c50",
-        "6706ed1c-bee3-4c4d-8fbb-baa7247abd5c": "7fbb11a4-abb7-49e5-8ffb-de2a61fdc437",
-        "77837362-ac7d-4437-9c76-facb547eed33": "8a76fbdd-7e38-49f1-bd50-05705573cbe6",
-        "78194469-bdb9-4bfb-a10d-683de392ff21": "a1fbfea0-3aad-45ef-a0d6-f9d81f177370",
+        "bdc20dba-c85b-4a54-a6e3-1531adafe0f5": "facfb2b7-d217-474b-bc90-30e31abfb780",
+        "9ea92d2b-d87f-49ef-9324-b5d1536edcbb": "73709fa7-0796-45bf-ad23-c1d09026dd44",
+        "678ae9b9-e574-4bdd-87ef-62581d707e37": "1d1d5e23-ebfe-4413-a50c-195d208867ab",
+        "73c87fbb-7fbc-4c9e-bdf0-d70bc6f0f794": "3c67dae2-24f5-4ba8-a2e7-c2d9a10bc956",
+        "b7095aeb-a32d-43e5-a579-2f1b74c8eea2": "85c1eae5-18c7-4fc0-a4af-0396008a8a4c",
+        "8b8cbe72-ae91-4efb-b082-3cfab772e15c": "b1cf600f-3c9b-4c4b-be76-cb8688ce2151",
         "bf592f4d-8a90-492a-b0f6-5c7f5f4562af": "61949ca6-4f4a-4ae5-88a8-af4254c802e7",
         "00d70637-8421-44ac-806a-e98f2c87416c": "489beb45-1cb1-43f1-bd13-45300fdde96a",
         "d760e799-6f65-4941-9c4f-39238ddb4f2f": "58ebb2ec-d465-40e6-bc6a-623d79609d81",
