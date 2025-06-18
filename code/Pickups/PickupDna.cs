@@ -21,7 +21,6 @@ public sealed class PickupDna : PickupBase
 
     public override void OnTouch(Collider other)
     {
-        Log.Info("dsa");
         var ply = other.Components.GetInAncestorsOrSelf<Player>();
         if (!ply.IsValid()) return;
 
