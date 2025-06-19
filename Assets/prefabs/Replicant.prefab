@@ -3,7 +3,7 @@
     "__guid": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
     "__version": 1,
     "Flags": 0,
-    "Name": "unit",
+    "Name": "Replicant",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -135,9 +135,11 @@
         "StartAsleep": false
       },
       {
-        "__type": "PlayerUnit",
-        "__guid": "9f9a5419-edf5-4a6e-82f0-965d256a1292",
+        "__type": "Replicant",
+        "__guid": "faabb689-f052-464e-bf5b-0fc4c90c4461",
         "__enabled": true,
+        "AttackDamage": 5,
+        "AttackDelay": 1,
         "eye": {
           "_type": "gameobject",
           "go": "61aa38ce-53d3-400a-9ea9-7d097c38301d"
@@ -154,7 +156,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "RotationSpeed": 4
+        "RotationSpeed": 2.5
       }
     ],
     "Children": [

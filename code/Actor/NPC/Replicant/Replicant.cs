@@ -1,9 +1,6 @@
 using Sandbox;
-using Sandbox.Navigation;
-using Sandbox.VR;
-using System;
 
-public sealed class PlayerUnit : Component
+public sealed class Replicant : Component
 {
     [Property] float RotationSpeed { get; set; } = 2.5f;
     [Property] float AttackDelay { get; set; } = 1f;
