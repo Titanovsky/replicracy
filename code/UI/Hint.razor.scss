@@ -1,20 +1,45 @@
-Hint
-{
+Hint {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #444;
 	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	border-radius: 20px;
+	align-items: flex-start;
+	margin-top: 5%;
 
-	.title
-	{
+	.background {
+		justify-content: center;
+		align-items: center;
+		height: 230px;
+		width: 650px;
+		background-color: black;
+		opacity: 0.8;
+		border-radius: 20px;
+	}
+
+	.contentContainer {
+		height: 100px;
+		width: 100px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.head {
+		height: 100%;
+		width: 100%;
+		background: url(texture/head.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		transform: rotate(-15deg);
+		opacity: 0.8;
+	}
+
+	.text {
 		font-size: 25px;
 		font-family: Poppins;
-		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		color: greenyellow;
 	}
 }

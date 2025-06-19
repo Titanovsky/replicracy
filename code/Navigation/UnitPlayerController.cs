@@ -31,6 +31,8 @@ public sealed class PlayerUnitController : Component
 
     private void PlayerSpecifie(SceneTraceResult traceResult)
     {
+        Hint.Instance.Called = true;
+
         DisableHightlights();
         _targeObject = null;
 

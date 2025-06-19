@@ -7,8 +7,22 @@
 
     @if (Called)
     {
-        <div class="title">@HintText</div> }
+        <div class="background">
+
+            <div class="contentContainer" style="width: 32%; height: 90%;">
+
+                <div class="head"></div>
+
+            </div>
+
+
+            <div class="contentContainer" style="width: 65%; height: 90%;">
+                <div class="text">@HintText</div>
+            </div>
+
+        </div>
     }
+
 
 </root>
 
@@ -19,11 +33,12 @@
     [Property] string HintText { get; set; }
     [Property] public float HintTime { get; set; } = 10f;
 
-    public bool Called {
+    public bool Called
+    {
         get
         {
             return _called;
-        } 
+        }
 
         set
         {
@@ -34,7 +49,7 @@
                 StateHasChanged();
                 _hintTimer = HintTime;
             }
-        } 
+        }
     }
 
     private bool _called;
@@ -66,7 +81,7 @@
         }
     }
 
-    public void SetHintText( string hint)
+    public void SetHintText(string hint)
     {
         HintText = hint;
     }
