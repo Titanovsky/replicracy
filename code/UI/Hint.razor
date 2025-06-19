@@ -91,4 +91,14 @@
         if (Instance is null)
             Instance = this;
     }
+
+    public void Call(string text = default, float time = default)
+    {
+        if (text == default) text = HintText;
+        if (time == default) time = HintTime;
+
+        HintText = text;
+        HintTime = time;
+        Called = true;
+    }
 }
