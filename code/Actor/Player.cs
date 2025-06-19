@@ -12,6 +12,7 @@ public sealed class Player : Component
     [Property] public int Dna { get; set; } = 0;
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public Hint Hint { get; set; }
+    [Property] public HeaderLevel HeaderLevel { get; set; }
 
     private SceneTraceResult _traceResult;
     private IUsable _playerViewedObject;

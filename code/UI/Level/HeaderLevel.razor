@@ -1,0 +1,49 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	@if (_changed) 
+	{
+		<div class="title">@str</div>
+	}
+</root>
+
+@code
+{
+	[Property] public float Time { get; set; } = 6f;
+
+	private string str = "🧬 0/0  💀 0/0";
+	private bool _changed = false;
+	private TimeUntil _timer;
+
+	public void Show()
+	{
+		_changed = true;
+		_timer = Time;
+
+		var dna = Player.Instance.Dna;
+		var levelDna = 0; //todo
+
+		var frags = 0; //todo
+		var levelFrags = 0; //todo
+
+		str = $"🧬 {dna}/{levelDna}  💀 {frags}/{levelFrags}";
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine(_changed);
+	protected override void OnStart()
+	{
+
+	}
+	protected override void OnUpdate()
+	{
+		if (!_changed) return;
+
+		if (_timer) 
+		{
+			_changed = false;
+		}
+	}
+}

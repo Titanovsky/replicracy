@@ -1,0 +1,19 @@
+HeaderLevel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: flex-start;
+	font-weight: bold;
+
+	.title {
+		border-radius: 20px;
+		background-color: rgba(0,0,0,.9);
+		font-size: 40px;
+		font-family: Poppins;
+		color: #fff;
+		margin-top: 20px;
+	}
+}
