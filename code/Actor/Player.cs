@@ -63,7 +63,7 @@ public sealed class Player : Component
 
     private void CheckInput()
     {
-        if (Input.Pressed("Use"))
+        if (Input.Pressed("Specify"))
             Specify();
     }
 
