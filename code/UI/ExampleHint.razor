@@ -1,0 +1,44 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	@if (!string.IsNullOrEmpty(MyStringValue))
+	{
+		<div class="title">@MyStringValue</div>
+	}
+</root>
+
+@code
+{
+	[Property, TextArea] public string MyStringValue { get; set; } = "";
+	private TimeUntil _delay = 5f;
+	private bool _changed = false;
+
+	public void Start(string str)
+	{
+		MyStringValue = str;
+
+		_delay = 5f;
+
+		_changed = true;
+	}
+
+	protected override void OnStart()
+	{
+		Start("Hello");
+	}
+
+	protected override int BuildHash() => System.HashCode.Combine(_changed);
+	protected override void OnUpdate()
+	{
+		if (!_changed) return;
+
+		if (_delay)
+		{
+			_changed = false;
+			MyStringValue = string.Empty;
+		}
+	}
+}
