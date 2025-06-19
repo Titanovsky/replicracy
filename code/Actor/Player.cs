@@ -92,7 +92,10 @@ public sealed class Player : Component
 
         var pos = BlasterProjectileSpawner.WorldPosition;
         var rot = PlayerController.EyeAngles.ToRotation();
-        var projectile = BlasterProjectilePrefab.Clone(pos, rot);
+        var obj = BlasterProjectilePrefab.Clone(pos, rot);
+        var projectile = obj.GetComponent<Bullet>();
+        projectile.Owner = GameObject;
+        projectile.Weapon = BlasterProjectileSpawner.Parent;
 
         Sound.Play(BlasterShotSound, BlasterProjectileSpawner.WorldPosition);
 
