@@ -40,7 +40,6 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     public void OnTriggerEnter(Collider other)
     {
-        Log.Info("dsa");
         DestroyGameObject();
     }
 }
