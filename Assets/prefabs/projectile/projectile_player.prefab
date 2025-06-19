@@ -18,14 +18,14 @@
         "__type": "Bullet",
         "__guid": "f190fcf5-421b-41dc-9c2a-e3fc3608b487",
         "__enabled": true,
-        "MoveSpeed": 64,
+        "MoveSpeed": 150,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "TimeDie": 1
+        "TimeDie": 0.75
       },
       {
         "__type": "Sandbox.ModelRenderer",
