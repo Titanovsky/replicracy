@@ -10,7 +10,7 @@ public sealed class Player : Component
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
     [Property] public PlayerController PlayerController { get; set; }
-    [Property] public GameObject Hui { get; set; }
+    [Property] public Hint Hint { get; set; }
 
     private SceneTraceResult _traceResult;
 
@@ -23,6 +23,17 @@ public sealed class Player : Component
     [Property] public float BlasterShotDelay { get; set; } = .64f;
     private TimeUntil _blasterShotDelay;
 
+    private void CreateSingleton()
+    {
+        if (Instance is null)
+            Instance = this;
+    }
+
+    private void DestroySingleton()
+    {
+        Instance = null;
+    }
+
     private void Prepare()
     {
         Health = MaxHealth;
@@ -30,12 +41,9 @@ public sealed class Player : Component
 
         if (!PlayerController.IsValid())
             PlayerController = GetComponent<PlayerController>();
-    }
 
-    private void CreateSingleton()
-    {
-        if (Instance is null)
-            Instance = this;
+        if (!Hint.IsValid())
+            Hint = GetComponent<Hint>();
     }
 
     public void Specify()
@@ -90,12 +98,6 @@ public sealed class Player : Component
         Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
-    private void CustomAnim()
-    {
-        var renderer = PlayerController.Renderer;
-        renderer.Set("b_swim", true); // here
-    }
-
     protected override void OnStart()
     {
         Prepare();
@@ -116,8 +118,9 @@ public sealed class Player : Component
 
     protected override void OnDestroy()
     {
-        Instance = null;
+        DestroySingleton();
     }
+
     private void DrawAvatar()
     {
         GameObject avatarObject = new GameObject(true, "Avatar");
