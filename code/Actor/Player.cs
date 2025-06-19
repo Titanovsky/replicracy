@@ -14,6 +14,8 @@ public sealed class Player : Component
     [Property] public Hint Hint { get; set; }
 
     private SceneTraceResult _traceResult;
+    private IUsable _playerViewedObject;
+    private PrefabFile _panelComponent;
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
 
@@ -61,20 +63,37 @@ public sealed class Player : Component
         //todo Remove
         DrawAvatar();
     }
-    
+
     public void Use()
     {
-        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, PlayerUseRay)
-            .Size(BBox.FromPositionAndSize(-8, 8))
-            .IgnoreGameObject(GameObject)
-            .Run();
+        if (_playerViewedObject == null) return;
 
-        if (!_traceResult.Hit) return;
+        _playerViewedObject.Use();
+    }
+
+    private void PlayerView()
+    {
+        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, PlayerUseRay)
+        .Size(BBox.FromPositionAndSize(-8, 8))
+        .IgnoreGameObject(GameObject)
+        .Run();
+
+        if (!_traceResult.Hit)
+        {
+            if (_playerViewedObject != null)
+            {
+                _playerViewedObject.DisableHightlight();
+                _playerViewedObject = null;
+            }
+
+            return;
+        }
 
         IUsable usable = _traceResult.GameObject.Components.Get<IUsable>();
         if (usable == null) return;
 
-        usable.Use();
+        _playerViewedObject = usable;
+        _playerViewedObject.EnableHightlight();
     }
 
     private void CheckInput()
@@ -133,6 +152,7 @@ public sealed class Player : Component
 
     protected override void OnUpdate()
     {
+        PlayerView();
         CheckInput();
         DrawSpecified();
         InputShot();
