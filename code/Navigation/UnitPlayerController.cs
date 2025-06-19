@@ -31,7 +31,7 @@ public sealed class PlayerUnitController : Component
 
     private void PlayerSpecifie(SceneTraceResult traceResult)
     {
-        Hint.Instance.Called = true;
+        Player.Instance.Hint.Call("Hello my furer");
 
         DisableHightlights();
         _targeObject = null;

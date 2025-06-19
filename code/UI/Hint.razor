@@ -28,8 +28,6 @@
 
 @code
 {
-    public static Hint Instance { get; private set; }
-
     [Property] string HintText { get; set; }
     [Property] public float HintTime { get; set; } = 10f;
 
@@ -55,19 +53,9 @@
     private bool _called;
     private RealTimeUntil _hintTimer;
 
-    protected override void OnAwake()
-    {
-        CreateSingleton();
-    }
-
     protected override void OnUpdate()
     {
         CheckTimer();
-    }
-
-    protected override void OnDestroy()
-    {
-        Instance = null;
     }
 
     private void CheckTimer()
@@ -84,12 +72,6 @@
     public void SetHintText(string hint)
     {
         HintText = hint;
-    }
-
-    private void CreateSingleton()
-    {
-        if (Instance is null)
-            Instance = this;
     }
 
     public void Call(string text = default, float time = default)
