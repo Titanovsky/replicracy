@@ -48,6 +48,9 @@ public sealed class Player : Component
 
         if (!Hint.IsValid())
             Hint = GetComponent<Hint>();
+
+        if (!HeaderLevel.IsValid())
+            HeaderLevel = GetComponent<HeaderLevel>();
     }
 
     public void Specify()

@@ -32,7 +32,7 @@
 		str = $"🧬 {dna}/{levelDna}  💀 {frags}/{levelFrags}";
 	}
 
-	protected override int BuildHash() => System.HashCode.Combine(_changed);
+	protected override int BuildHash() => System.HashCode.Combine(_changed, str);
 	protected override void OnStart()
 	{
 
