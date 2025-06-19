@@ -71,7 +71,10 @@ public sealed class Player : Component
 
         if (!_traceResult.Hit) return;
 
-        
+        IUsable usable = _traceResult.GameObject.Components.Get<IUsable>();
+        if (usable == null) return;
+
+        usable.Use();
     }
 
     private void CheckInput()
