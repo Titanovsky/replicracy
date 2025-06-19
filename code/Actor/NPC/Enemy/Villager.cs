@@ -11,4 +11,14 @@ public sealed class Villager : EnemyBase
 	{
 
 	}
+
+    public override void OnTriggerEnter(Collider other)
+    {
+        
+    }
+
+    public override void OnDamage(in DamageInfo damage)
+    {
+
+    }
 }
