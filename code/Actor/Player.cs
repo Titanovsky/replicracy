@@ -61,7 +61,7 @@ public sealed class Player : Component
         DrawAvatar();
     }
 
-    private void CheckSpecify()
+    private void CheckInput()
     {
         if (Input.Pressed("Use"))
             Specify();
@@ -111,7 +111,7 @@ public sealed class Player : Component
 
     protected override void OnUpdate()
     {
-        CheckSpecify();
+        CheckInput();
         DrawSpecified();
         InputShot();
     }
