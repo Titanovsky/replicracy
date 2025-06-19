@@ -6,6 +6,7 @@ public sealed class Player : Component
 {
     public static Player Instance { get; private set; }
 
+    [Property] public float PlayerUseRay { get; set; } = 100f;
     [Property] public float MaxHealth { get; set; } = 100f;
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
@@ -60,11 +61,26 @@ public sealed class Player : Component
         //todo Remove
         DrawAvatar();
     }
+    
+    public void Use()
+    {
+        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, PlayerUseRay)
+            .Size(BBox.FromPositionAndSize(-8, 8))
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (!_traceResult.Hit) return;
+
+        
+    }
 
     private void CheckInput()
     {
         if (Input.Pressed("Specify"))
             Specify();
+
+        if (Input.Pressed("Use"))
+            Use();
     }
 
     private void Shot()
