@@ -2,6 +2,8 @@
 {
     public static LevelManager Instance { get; private set; }
 
+    public LevelBase CurrentLevel { get; private set; }
+
     public void Finish(bool force = false)
     {
 
