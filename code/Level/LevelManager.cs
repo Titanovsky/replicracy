@@ -2,11 +2,18 @@
 {
     public static LevelManager Instance { get; private set; }
 
-    public LevelBase CurrentLevel { get; private set; }
+    [Property] public LevelBase CurrentLevel { get; private set; }
 
     public void Finish(bool force = false)
     {
 
+    }
+
+    public void Start()
+    {
+        if (!CurrentLevel.IsValid()) return;
+
+        CurrentLevel.Act(1);
     }
 
     private void CreateSingleton()
@@ -20,11 +27,6 @@
         Instance = null;
     }
 
-    private void Prepare()
-    {
-        //
-    }
-
     protected override void OnAwake()
     {
         CreateSingleton();
@@ -33,5 +35,10 @@
     protected override void OnDestroy()
     {
         DestroySingleton();
+    }
+
+    protected override void OnStart()
+    {
+        Start();
     }
 }
