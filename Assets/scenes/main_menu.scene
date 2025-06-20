@@ -76,10 +76,28 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
-        },
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "aa73f499-87d1-4cca-be0a-b8af90a2047a",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "MainMenu",
+      "Position": "63.42374,-120.2426,98.46533",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
         {
           "__type": "Sandbox.ScreenPanel",
-          "__guid": "a61bb4a9-2c33-42cd-a683-fc7ca98102db",
+          "__guid": "85b34565-1cbf-4391-839a-5bb45de17097",
           "__enabled": true,
           "AutoScreenScale": true,
           "OnComponentDestroy": null,
