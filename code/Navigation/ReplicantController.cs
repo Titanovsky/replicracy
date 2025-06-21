@@ -176,7 +176,7 @@ public sealed class ReplicantController : Component
         var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
 
         if (targerHightlight != null)
-            targerHightlight.Color = Color.Red.WithAlphaMultiplied(1f);
+            targerHightlight.Color = targerHightlight.Color.WithAlpha(1f);
     }
 
     private void DisableHightlights()
@@ -187,7 +187,7 @@ public sealed class ReplicantController : Component
         var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
 
         if (targerHightlight != null)
-            targerHightlight.Color = targerHightlight.Color.WithAlphaMultiplied(0f);
+            targerHightlight.Color = targerHightlight.Color.WithAlpha(0f);
     }
 
     public void AddReplicant(Replicant agent)
