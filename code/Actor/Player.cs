@@ -13,7 +13,8 @@ public sealed class Player : Component
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public Hint Hint { get; set; }
     [Property] public HeaderLevel HeaderLevel { get; set; }
-    [Property] private UsableUI _usablePanel { get; set; }
+    [Property] public UsableUI UsablePanel { get; set; }
+    [Property] public Fade Fade { get; set; }
 
     private SceneTraceResult _traceResult { get; set; }
     private IUsable _playerViewedObject {  get; set; }
@@ -91,7 +92,7 @@ public sealed class Player : Component
         _playerViewedObject = newTarget;
 
         _playerViewedObject?.EnableHightlight();
-        _usablePanel.UsableMessage = _playerViewedObject?.GetUsableText();
+        UsablePanel.UsableMessage = _playerViewedObject?.GetUsableText();
     }
 
     private void CheckInput()

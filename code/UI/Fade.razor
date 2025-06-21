@@ -1,0 +1,43 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System.Threading.Tasks;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="fadePanel" style="opacity: @FadeOpacity;"></div>
+</root>
+
+
+@code
+{
+    [Property] float FadeOpacity { get; set; } = 0f;
+
+    private RealTimeUntil _timer;
+
+    [Button]
+    public async Task DoFade(float opacity = 0.6f, float doTimer = 3f, float fadeTimer = 5f, float outTimer = 1f)
+    {
+        _timer = doTimer;
+
+        while (!_timer)
+        {
+            FadeOpacity = 0 + (opacity - 0) * ((float)_timer.Passed / doTimer);
+
+            await Task.Yield();
+        }
+
+        await Task.DelaySeconds(fadeTimer);
+
+        _timer = outTimer;
+
+        while (!_timer)
+        {
+            FadeOpacity = opacity + (0 - opacity) * ((float)_timer.Passed / outTimer);
+
+            await Task.Yield();
+        }
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(FadeOpacity);
+}

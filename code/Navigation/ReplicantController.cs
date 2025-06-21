@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 
 public sealed class ReplicantController : Component
 {
@@ -213,6 +214,7 @@ public sealed class ReplicantController : Component
 
     private void Unsubscribe()
     {
+        if (Player != null)
         Player.OnSpecified -= PlayerSpecifie;
     }
 }
