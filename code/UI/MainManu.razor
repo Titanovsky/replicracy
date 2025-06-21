@@ -1,0 +1,42 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="buttonContainer">
+
+		<div class="button" onclick="@Start">
+			<div class="text">Start</div>
+		</div>
+		
+		<div class="button" onclick="@LoadSession">
+			<div class="text">Load session</div>
+		</div>
+		
+		<div class="button" onclick="@BackToSbox">
+			<div class="text">Back to s&box</div>
+		</div>
+
+	</div>
+</root>
+
+@code
+{
+
+	void Start()
+	{
+		Log.Info("Start");
+	}
+	
+	void LoadSession()
+	{
+		Log.Info("LoadSession");
+	}
+	
+	void BackToSbox()
+	{
+		Log.Info("BackToSbox");
+	}
+
+}

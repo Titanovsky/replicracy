@@ -42,7 +42,7 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Camera",
-      "Position": "149.3263,149.3264,-211.1794",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "maincamera",
@@ -109,8 +109,25 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
-          "TargetCamera": null,
+          "TargetCamera": {
+            "_type": "component",
+            "component_id": "7861c37d-09c3-4744-b5f3-85ee71b7f93f",
+            "go": "449f2292-2f42-4579-b227-5b80d5105a94",
+            "component_type": "CameraComponent"
+          },
           "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.MainManu",
+          "__guid": "3455798a-acee-4938-b359-e7b5a4a4e76d",
+          "__enabled": true,
+          "MyStringValue": "Hello World!",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ],
       "Children": []

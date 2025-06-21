@@ -1,0 +1,44 @@
+MainManu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1E1E1E;
+	justify-content: center;
+	align-items: center;
+	pointer-events: all;
+
+	.buttonContainer {
+		background-color: #2F2B25;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 30%;
+		max-width: 500px;
+		padding: 1%;
+	}
+
+	.button {
+		background-color: black;
+		opacity: 0.98;
+		display: flex;
+		width: 300px;
+		padding: 4%;
+		margin-bottom: 20px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 32px;
+	}
+
+	.text {
+		font-size: 27px;
+		font-family: Poppins;
+		font-weight: bold;
+		text-align: center;
+		color: greenyellow;
+		text-shadow: 1px 1px 1px black;
+		text-overflow: ellipsis;
+	}
+}
