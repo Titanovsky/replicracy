@@ -116,8 +116,11 @@ public sealed class Player : Component
         var screenCenter = new Vector2(Screen.Width, Screen.Height) * 0.5f;
         var ray = Scene.Camera.ScreenPixelToRay(screenCenter);
 
-        var distance = 2048f; //todo move to constant property
+        var distance = 4096f; //todo move to constant property
         var tr = Scene.Trace.Ray(ray.Position, ray.Position + ray.Forward * distance).Run();
+
+        if (tr.Hit)
+            Log.Info(tr.Collider.GameObject);
 
         var shootDir = (tr.Hit ? (tr.EndPosition - BlasterProjectileSpawner.WorldPosition) : ray.Forward).Normal;
         var spawnPos = BlasterProjectileSpawner.WorldPosition;

@@ -11,7 +11,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     private void Prepare()
     {
-        Log.Info($"[Projectile] Spawn player bullet {GameObject}");
+        //Log.Info($"[Projectile] Spawn player bullet {GameObject}");
 
         _TimeDieDelay = TimeDie;
     }
@@ -41,7 +41,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     public void OnTriggerEnter(Collider other)
     {
-        Log.Info($"{other.GameObject}");
+        Log.Info($"Trigger {other.GameObject}"); // for debug
         DestroyGameObject();
 
         var damagable = other.GetComponent<IDamageable>();

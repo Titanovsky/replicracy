@@ -19,14 +19,14 @@
         "__guid": "f190fcf5-421b-41dc-9c2a-e3fc3608b487",
         "__enabled": true,
         "Damage": 2,
-        "MoveSpeed": 120,
+        "MoveSpeed": 180,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "TimeDie": 0.75
+        "TimeDie": 1
       },
       {
         "__type": "Sandbox.ModelRenderer",
@@ -69,7 +69,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 72,
+        "Radius": 32,
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
@@ -78,7 +78,7 @@
         "__type": "Sandbox.PointLight",
         "__guid": "659dfbba-8ebd-4b33-92c6-21ab636e421a",
         "__enabled": true,
-        "Attenuation": 1,
+        "Attenuation": 0.7,
         "FogMode": "Disabled",
         "FogStrength": 1,
         "LightColor": "0.25674,1,0.05116,1",
@@ -88,7 +88,7 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Radius": 2048,
+        "Radius": 3048,
         "Shadows": false
       }
     ],
