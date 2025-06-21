@@ -41,6 +41,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     public void OnTriggerEnter(Collider other)
     {
+        Log.Info($"{other.GameObject}");
         DestroyGameObject();
 
         var damagable = other.GetComponent<IDamageable>();

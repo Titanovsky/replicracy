@@ -113,9 +113,17 @@ public sealed class Player : Component
     {
         if (!_blasterShotDelay) return;
 
-        var pos = BlasterProjectileSpawner.WorldPosition;
-        var rot = PlayerController.EyeAngles.ToRotation();
-        var obj = BlasterProjectilePrefab.Clone(pos, rot);
+        var screenCenter = new Vector2(Screen.Width, Screen.Height) * 0.5f;
+        var ray = Scene.Camera.ScreenPixelToRay(screenCenter);
+
+        var distance = 2048f; //todo move to constant property
+        var tr = Scene.Trace.Ray(ray.Position, ray.Position + ray.Forward * distance).Run();
+
+        var shootDir = (tr.Hit ? (tr.EndPosition - BlasterProjectileSpawner.WorldPosition) : ray.Forward).Normal;
+        var spawnPos = BlasterProjectileSpawner.WorldPosition;
+        var spawnRot = Rotation.LookAt(shootDir);
+
+        var obj = BlasterProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
         projectile.Owner = GameObject;
         projectile.Weapon = BlasterProjectileSpawner.Parent;
@@ -135,12 +143,12 @@ public sealed class Player : Component
 
     private void DrawSpecified()
     {
-        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
-        Gizmo.Draw.LineThickness = 4;
-        Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
+        //Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
+        //Gizmo.Draw.LineThickness = 4;
+        //Gizmo.Draw.Line(_traceResult.StartPosition, _traceResult.EndPosition);
 
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
+        //Gizmo.Draw.Color = Color.Green;
+        //Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
     protected override void OnStart()
