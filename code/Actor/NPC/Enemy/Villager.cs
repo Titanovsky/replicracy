@@ -2,11 +2,18 @@
 
 public sealed class Villager : EnemyBase
 {
-    public NavMeshAgent Agent { get; set; }
+    [Property] public NavMeshAgent Agent { get; set; }
+    [Property] public ModelRenderer Renderer { get; set; }
+    [Property, Category("Stats")] public override float Health { get; set; } = 10f; 
+
     private TimeUntil _delay;
 
     private Vector3 _up = new Vector3(0, 0, 50f);
     private Vector3 _targetPos;
+
+    private Color32 _white = Color.White;
+    private Color32 _red = Color.Red;
+    private TimeUntil _delayColor;
 
     private void Prepare()
     {
@@ -41,7 +48,14 @@ public sealed class Villager : EnemyBase
             _targetPos = point.Value;
         }
 
-        _delay = .75f;
+        _delay = 1f;
+    }
+
+    private void ResetColor()
+    {
+        if (!_delayColor) return;
+
+        Renderer.Tint = _white;
     }
 
     protected override void OnStart()
@@ -52,10 +66,16 @@ public sealed class Villager : EnemyBase
 	protected override void OnUpdate()
 	{
         Move();
+        ResetColor();
     }
 
-    public override void OnDamage(in DamageInfo damage)
+    public override void OnDamage(in DamageInfo dmgInfo)
     {
-        Log.Info($"Hit ");
+        Health -= dmgInfo.Damage;
+        Renderer.Tint = _red;
+        _delayColor = 1f;
+
+        if (Health <= 0)
+            DestroyGameObject();
     }
 }
