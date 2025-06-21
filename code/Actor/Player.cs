@@ -13,10 +13,10 @@ public sealed class Player : Component
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public Hint Hint { get; set; }
     [Property] public HeaderLevel HeaderLevel { get; set; }
+    [Property] private UsableUI _usablePanel { get; set; }
 
-    private SceneTraceResult _traceResult;
-    private IUsable _playerViewedObject;
-    private PrefabFile _panelComponent;
+    private SceneTraceResult _traceResult { get; set; }
+    private IUsable _playerViewedObject {  get; set; }
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
 
@@ -63,9 +63,6 @@ public sealed class Player : Component
         if (!_traceResult.Hit) return;
 
         OnSpecified?.Invoke(_traceResult);
-
-        //todo Remove
-        DrawAvatar();
     }
 
     public void Use()
@@ -82,22 +79,19 @@ public sealed class Player : Component
         .IgnoreGameObject(GameObject)
         .Run();
 
-        if (!_traceResult.Hit)
-        {
-            if (_playerViewedObject != null)
-            {
-                _playerViewedObject.DisableHightlight();
-                _playerViewedObject = null;
-            }
+        IUsable newTarget = _traceResult.Hit
+                           ? _traceResult.GameObject.Components.Get<IUsable>()
+                           : null;
 
+        if (newTarget == _playerViewedObject)
             return;
-        }
 
-        IUsable usable = _traceResult.GameObject.Components.Get<IUsable>();
-        if (usable == null) return;
+        _playerViewedObject?.DisableHightlight();
 
-        _playerViewedObject = usable;
-        _playerViewedObject.EnableHightlight();
+        _playerViewedObject = newTarget;
+
+        _playerViewedObject?.EnableHightlight();
+        _usablePanel.UsableMessage = _playerViewedObject?.GetUsableText();
     }
 
     private void CheckInput()
@@ -176,16 +170,5 @@ public sealed class Player : Component
     protected override void OnDestroy()
     {
         DestroySingleton();
-    }
-
-    private void DrawAvatar()
-    {
-        GameObject avatarObject = new GameObject(true, "Avatar");
-
-        avatarObject.WorldPosition = _traceResult.HitPosition;
-        avatarObject.WorldRotation = Rotation.FromToRotation(Vector3.Forward, -_traceResult.Normal);
-
-        DecalAvatar decalAvatar = avatarObject.AddComponent<DecalAvatar>();
-        decalAvatar.DrawAvatarDecal(Steam.SteamId.ToString());
     }
 }

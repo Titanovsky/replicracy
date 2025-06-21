@@ -1,0 +1,37 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	@if (!IsShow)
+		return;
+	
+		<div class="title">
+		@UsableMessage
+		</div>
+	
+
+</root>
+
+@code
+{
+	[Property] public string UsableMessage { 
+		get { return _usableMessage; } 
+		set 
+		{
+			_usableMessage = value;
+
+			if (string.IsNullOrEmpty(value))
+				IsShow = false;
+			else
+				IsShow = true;
+		} 
+	}
+
+
+	private string _usableMessage;
+	private bool IsShow = false;
+
+	protected override int BuildHash() => System.HashCode.Combine(UsableMessage);
+}

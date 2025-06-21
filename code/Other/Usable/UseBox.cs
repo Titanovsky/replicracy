@@ -2,6 +2,7 @@ using Sandbox;
 
 public sealed class UseBox : Component, IUsable
 {
+    [Property] string UsableText { get; set; }
     [Property] ModelRenderer boxModel { get; set; }
     [Property] HighlightOutline outline {  get; set; }
 
@@ -24,4 +25,6 @@ public sealed class UseBox : Component, IUsable
         else
             boxModel.Tint = Color.Red;
     }
+
+    public string GetUsableText() => UsableText;
 }
