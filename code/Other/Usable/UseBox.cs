@@ -2,9 +2,10 @@ using Sandbox;
 
 public sealed class UseBox : Component, IUsable
 {
-    [Property] string UsableText { get; set; }
+    [Property] public string UsableText { get; set; }
+    [Property] public bool IsUsed { get; set; } = false;
     [Property] ModelRenderer boxModel { get; set; }
-    [Property] HighlightOutline outline {  get; set; }
+    [Property] HighlightOutline outline { get; set; }
 
     public void EnableHightlight()
     {
@@ -20,10 +21,17 @@ public sealed class UseBox : Component, IUsable
     {
         if (boxModel == null) return;
 
-        if (boxModel.Tint == Color.Red)
-            boxModel.Tint = Color.White;
-        else
+        IsUsed = !IsUsed;
+
+        ChangeColor();
+    }
+
+    private void ChangeColor()
+    {
+        if (IsUsed)
             boxModel.Tint = Color.Red;
+        else
+            boxModel.Tint = Color.White;
     }
 
     public string GetUsableText() => UsableText;
