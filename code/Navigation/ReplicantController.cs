@@ -32,8 +32,6 @@ public sealed class ReplicantController : Component
 
     private void PlayerSpecifie(SceneTraceResult traceResult)
     {
-        Player.Instance.Hint.Call("Hello my furer");
-
         DisableHightlights();
         _targeObject = null;
 
