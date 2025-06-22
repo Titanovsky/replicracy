@@ -5,7 +5,7 @@
 @namespace Sandbox
 
 <root>
-    <div class="fadePanel" style="opacity: @FadeOpacity;"></div>
+    <div class="fadePanel" style="background: radial-gradient(rgba(0, 0, 0, @FadeOpacity) 0%, rgba(0, 0, 0, @FadeOpacity) 100% );"></div>
 </root>
 
 
@@ -16,7 +16,7 @@
     private RealTimeUntil _timer;
 
     [Button]
-    public async Task DoFade(float opacity = 0.6f, float doTimer = 3f, float fadeTimer = 5f, float outTimer = 1f)
+    public async Task DoFade(float opacity = 0.9f, float doTimer = 3f, float fadeTimer = 3f, float outTimer = 1f)
     {
         _timer = doTimer;
 
@@ -37,6 +37,8 @@
 
             await Task.Yield();
         }
+
+        FadeOpacity = 0;
     }
 
     protected override int BuildHash() => System.HashCode.Combine(FadeOpacity);
