@@ -13,7 +13,7 @@ public sealed class Villager : EnemyBase
 
     private Color32 _white = Color.White;
     private Color32 _red = Color.Red;
-    private TimeUntil _delayColor;
+    private TimeUntil _delayBlockDamage;
 
     private void Prepare()
     {
@@ -22,6 +22,8 @@ public sealed class Villager : EnemyBase
         Agent = GetComponent<NavMeshAgent>();
 
         _delay = 0f;
+
+        //Player.Instance.PlayerController.
     }
 
     private void Move()
@@ -53,7 +55,7 @@ public sealed class Villager : EnemyBase
 
     private void ResetColor()
     {
-        if (!_delayColor) return;
+        if (!_delayBlockDamage) return;
 
         Renderer.Tint = _white;
     }
@@ -73,7 +75,7 @@ public sealed class Villager : EnemyBase
     {
         Health -= dmgInfo.Damage;
         Renderer.Tint = _red;
-        _delayColor = 1f;
+        _delayBlockDamage = 1f;
 
         if (Health <= 0)
             DestroyGameObject();

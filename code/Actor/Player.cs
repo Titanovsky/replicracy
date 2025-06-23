@@ -2,7 +2,7 @@
 using Sandbox.Utility;
 using System;
 
-public sealed class Player : Component
+public sealed class Player : Component, PlayerController.IEvents
 {
     public static Player Instance { get; private set; }
 
@@ -20,6 +20,12 @@ public sealed class Player : Component
     private IUsable _playerViewedObject {  get; set; }
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
+
+    //todo: fix after, it's not important fuckup
+    //public void PostCameraSetup(CameraComponent cam)
+    //{
+    //    Log.Info($"{Scene.Camera.WorldPosition}");
+    //}
 
     private void CreateSingleton()
     {
