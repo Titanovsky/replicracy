@@ -19,14 +19,15 @@
         "__guid": "f190fcf5-421b-41dc-9c2a-e3fc3608b487",
         "__enabled": true,
         "Damage": 2,
-        "MoveSpeed": 240,
+        "Direction": "0,0,0",
+        "MoveSpeed": 300,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "TimeDie": 1
+        "TimeDie": 2
       },
       {
         "__type": "Sandbox.ModelRenderer",
@@ -69,7 +70,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Radius": 32,
+        "Radius": 128,
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"

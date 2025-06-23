@@ -10,14 +10,17 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     private TimeUntil _TimeDieDelay { get; set; }
 
+    private Vector3 _spawn;
+
     private void Prepare()
     {
         //Log.Info($"[Projectile] Spawn player bullet {GameObject}");
 
         _TimeDieDelay = TimeDie;
+        _spawn = WorldPosition;
 
-        if (Direction == Vector3.Zero)
-            Direction = WorldTransform.Forward;
+        //if (Direction == Vector3.Zero)
+        //    Direction = WorldTransform.Forward;
     }
 
     private void Move()
@@ -32,26 +35,30 @@ public sealed class Bullet : Component, Component.ITriggerListener
         DestroyGameObject();
     }
 
+    private void Show()
+    {
+        if (_spawn.IsNaN) return;
+
+        Gizmo.Draw.Color = Color.Blue;
+        Gizmo.Draw.LineThickness = 1f;
+        Gizmo.Draw.Arrow(_spawn, WorldPosition, 6, 5);
+    }
+
     protected override void OnStart()
     {
         Prepare();
     }
 
-    protected override void OnFixedUpdate()
+    protected override void OnUpdate()
 	{
         DieDelay();
         Move();
+        Show();
     }
 
     public void OnTriggerEnter(Collider other)
     {
         Log.Info($"[Bullet] trigger {other.GameObject}"); // for debug
         DestroyGameObject();
-
-        var damagable = other.GetComponent<IDamageable>();
-        if (damagable is not null)
-        {
-            damagable.OnDamage(new(Damage, Owner, Weapon));
-        }
     }
 }
