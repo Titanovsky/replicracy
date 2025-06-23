@@ -1,14 +1,67 @@
 @using Sandbox;
 @using Sandbox.UI;
+@using System;
 @inherits PanelComponent
 @namespace Sandbox
 
 <root>
-	<div class="title"></div>
+    <div class="newspaper" style="height:@Size%; width:@Size%; transform: rotate(@RotationAngel deg); "></div>
 </root>
 
 @code
 {
+    [Property] private float Size { get; set; } = 0;
+    [Property] private float RotationAngel { get; set; } = 0;
+    [Property] private float SpinSpeed { get; set; } = 5f;
+    [Property] private float ShowTime { get; set; } = 1;
 
+    private RealTimeUntil timer;
 
+    protected override void OnFixedUpdate()
+    {
+        RotateNewspaper();
+        SizeNewsPaper();
+    }
+
+    public void Show()
+    {
+        Restore();
+
+        timer = ShowTime;
+    }
+
+    private void SizeNewsPaper()
+    {
+        if (timer)
+            return;
+
+        Size = (float)Math.Round( 100 * ((float)timer.Passed / ShowTime), 10) ;
+    }
+
+    private void RotateNewspaper()
+    {
+        if (timer && RotationAngel <= 15)
+            return;
+        
+        if (RotationAngel >= 360)
+            RotationAngel = 0;
+
+        RotationAngel += SpinSpeed * Time.Delta;
+
+        StateHasChanged();
+    }
+
+    private void Restore()
+    {
+        Size = 0;
+        RotationAngel = 0;
+    }
+
+    [Button]
+    private void ShowButton()
+    {
+        Show();
+    }
+
+    protected override int BuildHash() => System.HashCode.Combine(Size);
 }

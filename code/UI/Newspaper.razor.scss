@@ -1,20 +1,27 @@
-Newspaper
-{
+Newspaper {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #444;
 	justify-content: center;
 	align-items: center;
-	font-weight: bold;
-	border-radius: 20px;
 
-	.title
-	{
+	.newspaper {
+		background: url(texture/paper.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.text {
 		font-size: 25px;
 		font-family: Poppins;
-		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		text-stroke: 5px black;
+		text-shadow: 1px 1px 3px black;
+		text-overflow: ellipsis;
+		color: greenyellow;
 	}
 }
