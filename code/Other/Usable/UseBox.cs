@@ -9,11 +9,15 @@ public sealed class UseBox : Component, IUsable
 
     public void EnableHightlight()
     {
+        if (!outline.IsValid()) return;
+
         outline.Color = outline.Color.WithAlpha(1);
     }
 
     public void DisableHightlight()
     {
+        if (!outline.IsValid()) return;
+
         outline.Color = outline.Color.WithAlpha(0);
     }
 
