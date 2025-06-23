@@ -49,7 +49,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
         Prepare();
     }
 
-    protected override void OnUpdate()
+    protected override void OnFixedUpdate()
 	{
         DieDelay();
         Move();
