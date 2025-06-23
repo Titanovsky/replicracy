@@ -9,4 +9,9 @@
     public virtual void OnTriggerEnter(Collider other)
     {
     }
+
+    public virtual bool IsFriend(GameObject target)
+    {
+        return false;
+    }  
 }

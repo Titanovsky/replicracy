@@ -78,4 +78,12 @@ public sealed class Villager : EnemyBase
         if (Health <= 0)
             DestroyGameObject();
     }
+
+    public override bool IsFriend(GameObject target)
+    {
+        if (target.Tags.Has("villager"))
+            return true;
+
+        return base.IsFriend(target);
+    }
 }
