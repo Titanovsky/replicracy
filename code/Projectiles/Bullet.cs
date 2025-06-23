@@ -3,7 +3,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
     [Property] public float Damage { get; set; } = 2f;
     [Property] public float TimeDie { get; set; } = 2f;
     [Property] public float MoveSpeed { get; set; } = 1.2f;
-    [Property] public Vector3 Direction { get; set; }
+    [Property] public Vector3 Direction { get; set; } = Vector3.Zero;
 
     public GameObject Weapon { get; set; }
     public GameObject Owner { get; set; }
@@ -16,7 +16,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
         _TimeDieDelay = TimeDie;
 
-        if (Direction.IsNaN)
+        if (Direction == Vector3.Zero)
             Direction = WorldTransform.Forward;
     }
 
@@ -45,7 +45,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     public void OnTriggerEnter(Collider other)
     {
-        Log.Info($"Trigger {other.GameObject}"); // for debug
+        Log.Info($"[Bullet] trigger {other.GameObject}"); // for debug
         DestroyGameObject();
 
         var damagable = other.GetComponent<IDamageable>();
