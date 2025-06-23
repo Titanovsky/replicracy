@@ -21,13 +21,6 @@ public sealed class Player : Component
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
 
-    //todo: move to class PlayerBlaster
-    [Property] public GameObject BlasterProjectileSpawner { get; set; }
-    [Property] public GameObject BlasterProjectilePrefab { get; set; }
-    [Property] public SoundEvent BlasterShotSound { get; set; }
-    [Property] public float BlasterShotDelay { get; set; } = .64f;
-    private TimeUntil _blasterShotDelay;
-
     private void CreateSingleton()
     {
         if (Instance is null)
@@ -104,41 +97,6 @@ public sealed class Player : Component
             Use();
     }
 
-    private void Shot()
-    {
-        if (!_blasterShotDelay) return;
-
-        var screenCenter = new Vector2(Screen.Width, Screen.Height) * 0.5f;
-        var ray = Scene.Camera.ScreenPixelToRay(screenCenter);
-
-        var distance = 4096f; //todo move to constant property
-        var tr = Scene.Trace.Ray(ray.Position, ray.Position + ray.Forward * distance).Run();
-
-        if (tr.Hit)
-            Log.Info(tr.Collider.GameObject);
-
-        var shootDir = (tr.Hit ? (tr.EndPosition - BlasterProjectileSpawner.WorldPosition) : ray.Forward).Normal;
-        var spawnPos = BlasterProjectileSpawner.WorldPosition;
-        var spawnRot = Rotation.LookAt(shootDir);
-
-        var obj = BlasterProjectilePrefab.Clone(spawnPos, spawnRot);
-        var projectile = obj.GetComponent<Bullet>();
-        projectile.Owner = GameObject;
-        projectile.Weapon = BlasterProjectileSpawner.Parent;
-
-        Sound.Play(BlasterShotSound, BlasterProjectileSpawner.WorldPosition);
-
-        _blasterShotDelay = BlasterShotDelay;
-
-        PlayerController.Renderer.Set("b_attack", true);
-    }
-
-    private void InputShot()
-    {
-        if (Input.Down("Attack1"))
-            Shot();
-    }
-
     private void DrawSpecified()
     {
         //Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
@@ -165,7 +123,6 @@ public sealed class Player : Component
         PlayerView();
         CheckInput();
         DrawSpecified();
-        InputShot();
     }
 
     protected override void OnDestroy()
