@@ -48,7 +48,7 @@
 
     private void Show()
     {
-        if (!_tr.Hit) return;
+        if (!GlobalSettings.IsDebug || !_tr.Hit) return;
 
         Gizmo.Draw.Color = Color.Red;
         Gizmo.Draw.LineThickness = 1f;

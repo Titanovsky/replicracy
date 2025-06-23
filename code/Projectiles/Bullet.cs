@@ -37,7 +37,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
 
     private void Show()
     {
-        if (_spawn.IsNaN) return;
+        if (!GlobalSettings.IsDebug || _spawn.IsNaN) return;
 
         Gizmo.Draw.Color = Color.Blue;
         Gizmo.Draw.LineThickness = 1f;
