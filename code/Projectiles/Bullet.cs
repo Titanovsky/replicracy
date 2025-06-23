@@ -3,6 +3,7 @@ public sealed class Bullet : Component, Component.ITriggerListener
     [Property] public float Damage { get; set; } = 2f;
     [Property] public float TimeDie { get; set; } = 2f;
     [Property] public float MoveSpeed { get; set; } = 1.2f;
+    [Property] public Vector3 Direction { get; set; }
 
     public GameObject Weapon { get; set; }
     public GameObject Owner { get; set; }
@@ -14,11 +15,14 @@ public sealed class Bullet : Component, Component.ITriggerListener
         //Log.Info($"[Projectile] Spawn player bullet {GameObject}");
 
         _TimeDieDelay = TimeDie;
+
+        if (Direction.IsNaN)
+            Direction = WorldTransform.Forward;
     }
 
     private void Move()
     {
-        WorldPosition += WorldTransform.Forward * MoveSpeed;
+        WorldPosition += Direction * MoveSpeed;
     }
 
     private void DieDelay()
