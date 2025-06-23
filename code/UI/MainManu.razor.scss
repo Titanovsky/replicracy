@@ -4,10 +4,17 @@ MainManu {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #1E1E1E;
 	justify-content: center;
 	align-items: center;
 	pointer-events: all;
+
+	.Header {
+		justify-content: center;
+		align-items: center;
+		background: url(texture/head.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 
 	.buttonContainer {
 		background-color: #2F2B25;
