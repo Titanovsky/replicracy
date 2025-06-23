@@ -1,9 +1,13 @@
-@using Sandbox;
+﻿@using Sandbox;
 @using Sandbox.UI;
+@using System;
 @inherits PanelComponent
 @namespace Sandbox
 
 <root>
+
+	.<div class="Logo"></div>
+		
 		<div class="buttonContainer">
 
 			<div class="button" onclick="@Start">
@@ -24,6 +28,32 @@
 
 @code
 {
+	private CameraComponent _camera;
+
+	private Angles initialRotation;
+	private Random random;
+
+	protected override void OnStart()
+	{
+		random = new();
+		_camera = Scene.Camera;
+		initialRotation = _camera.WorldRotation;
+	}
+
+	protected override void OnFixedUpdate()
+	{
+		RotateCamera();
+	}
+
+	private void RotateCamera()
+	{
+		float offset = 1 * (float)Math.Sin(1f * Time.Now); // Смещение
+
+		float desiredPitch = initialRotation.pitch + offset; // Желаемый pitch
+		float desiredYaw = initialRotation.yaw + offset; // Желаемый yaw
+
+		_camera.WorldRotation = new Angles(desiredPitch, desiredYaw, initialRotation.roll).ToRotation(); // Устанавливаем вращение
+	}
 
 	void Start()
 	{
@@ -39,5 +69,4 @@
 	{
 		Log.Info("BackToSbox");
 	}
-
 }
