@@ -28,11 +28,11 @@ public sealed class Villager : EnemyBase
     {
         var startPos = WorldPosition;
 
-        if (!_targetPos.IsNaN)
+        if (GlobalSettings.IsDebug && !_targetPos.IsNaN)
         {
-            //Gizmo.Draw.Color = Color.Orange;
-            //Gizmo.Draw.LineThickness = 4;
-            //Gizmo.Draw.Arrow(startPos + _up, _targetPos);
+            Gizmo.Draw.Color = Color.Orange;
+            Gizmo.Draw.LineThickness = 4;
+            Gizmo.Draw.Arrow(startPos + _up, _targetPos);
         }
 
         if (!_delay) return;

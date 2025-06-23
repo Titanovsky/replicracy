@@ -6,7 +6,7 @@
     "Name": "villager",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "1,1,1",
+    "Scale": "0.9238818,0.9238818,0.9238818",
     "Tags": "",
     "Enabled": true,
     "NetworkMode": 2,
@@ -14,6 +14,30 @@
     "NetworkOrphaned": 0,
     "OwnerTransfer": 1,
     "Components": [
+      {
+        "__type": "Villager",
+        "__guid": "b05a6373-c4d4-4eec-b1ab-88f288b3105d",
+        "__enabled": true,
+        "Agent": {
+          "_type": "component",
+          "component_id": "16d4fc3a-80ed-4b1c-9534-cce05e910aba",
+          "go": "3ca8f170-b87c-4216-a7b6-8f7144ef9afe",
+          "component_type": "NavMeshAgent"
+        },
+        "Health": 16,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Renderer": {
+          "_type": "component",
+          "component_id": "77c700f5-765c-4ac6-887f-5f3b41092900",
+          "go": "13ef76d6-c4e8-4e89-ac21-e5a787a56d8c",
+          "component_type": "ModelRenderer"
+        }
+      },
       {
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "16d4fc3a-80ed-4b1c-9534-cce05e910aba",
@@ -34,30 +58,6 @@
         "UpdateRotation": true
       },
       {
-        "__type": "Villager",
-        "__guid": "b05a6373-c4d4-4eec-b1ab-88f288b3105d",
-        "__enabled": true,
-        "Agent": {
-          "_type": "component",
-          "component_id": "16d4fc3a-80ed-4b1c-9534-cce05e910aba",
-          "go": "3ca8f170-b87c-4216-a7b6-8f7144ef9afe",
-          "component_type": "NavMeshAgent"
-        },
-        "Health": 10,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "Renderer": {
-          "_type": "component",
-          "component_id": "77c700f5-765c-4ac6-887f-5f3b41092900",
-          "go": "13ef76d6-c4e8-4e89-ac21-e5a787a56d8c",
-          "component_type": "ModelRenderer"
-        }
-      },
-      {
         "__type": "Sandbox.BoxCollider",
         "__guid": "67e9b7bc-0903-4214-8c6d-bb783b1e1b06",
         "__enabled": true,
@@ -74,7 +74,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Scale": "26.3,31.60001,77.89986",
+        "Scale": "25.3,27.00002,67.49989",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
@@ -88,7 +88,7 @@
         "Name": "Body",
         "Position": "0,0,0",
         "Rotation": "0,0,0,1",
-        "Scale": "1,1,1",
+        "Scale": "0.9171659,0.9171659,0.9171659",
         "Tags": "",
         "Enabled": true,
         "NetworkMode": 2,
@@ -128,7 +128,7 @@
         "__version": 1,
         "Flags": 0,
         "Name": "3D Text",
-        "Position": "0,0,77.21226",
+        "Position": "0,0,71.78728",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
         "Tags": "",
@@ -181,7 +181,26 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,
