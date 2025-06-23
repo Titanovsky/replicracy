@@ -6,7 +6,7 @@ public sealed class Player : Component, PlayerController.IEvents
 {
     public static Player Instance { get; private set; }
 
-    [Property] public float PlayerUseRay { get; set; } = 100f;
+    [Property] public float PlayerUseRay { get; set; } = 130f;
     [Property] public float MaxHealth { get; set; } = 100f;
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
@@ -74,10 +74,16 @@ public sealed class Player : Component, PlayerController.IEvents
 
     private void PlayerView()
     {
-        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, PlayerUseRay)
-        .Size(BBox.FromPositionAndSize(-8, 8))
+        _traceResult = Scene.Trace.Ray(Scene.Camera.WorldPosition, Scene.Camera.WorldPosition + PlayerController.EyeAngles.Forward * PlayerUseRay)
         .IgnoreGameObject(GameObject)
         .Run();
+
+        if (GlobalSettings.IsDebug && _traceResult.Hit)
+        {
+            Gizmo.Draw.Color = Color.Yellow;
+            Gizmo.Draw.LineThickness = 4;
+            Gizmo.Draw.Line(_traceResult.StartPosition - new Vector3(0, 0, 1f), _traceResult.HitPosition);
+        }
 
         IUsable newTarget = _traceResult.Hit
                            ? _traceResult.GameObject.Components.Get<IUsable>()
