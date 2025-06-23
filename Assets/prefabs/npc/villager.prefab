@@ -1,0 +1,193 @@
+{
+  "RootObject": {
+    "__guid": "3ca8f170-b87c-4216-a7b6-8f7144ef9afe",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "villager",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.NavMeshAgent",
+        "__guid": "16d4fc3a-80ed-4b1c-9534-cce05e910aba",
+        "__enabled": true,
+        "Acceleration": 1000,
+        "AutoTraverseLinks": true,
+        "Height": 58.499973,
+        "MaxSpeed": 120,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 16,
+        "Separation": 0.25,
+        "UpdatePosition": true,
+        "UpdateRotation": true
+      },
+      {
+        "__type": "Villager",
+        "__guid": "b05a6373-c4d4-4eec-b1ab-88f288b3105d",
+        "__enabled": true,
+        "Agent": {
+          "_type": "component",
+          "component_id": "16d4fc3a-80ed-4b1c-9534-cce05e910aba",
+          "go": "3ca8f170-b87c-4216-a7b6-8f7144ef9afe",
+          "component_type": "NavMeshAgent"
+        },
+        "Health": 10,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Renderer": {
+          "_type": "component",
+          "component_id": "77c700f5-765c-4ac6-887f-5f3b41092900",
+          "go": "13ef76d6-c4e8-4e89-ac21-e5a787a56d8c",
+          "component_type": "ModelRenderer"
+        }
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "67e9b7bc-0903-4214-8c6d-bb783b1e1b06",
+        "__enabled": true,
+        "Center": "0,0,36.49999",
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "26.3,31.60001,77.89986",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "13ef76d6-c4e8-4e89-ac21-e5a787a56d8c",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Body",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "77c700f5-765c-4ac6-887f-5f3b41092900",
+            "__enabled": true,
+            "BodyGroups": 1365,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/npc/example/bolvan2/bolvan.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "447c6d12-d9c6-4dc7-b3a9-7aa0ae6bcfc8",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "3D Text",
+        "Position": "0,0,77.21226",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "b5f3d3da-d856-44f6-be47-541a81d5bf1e",
+            "__enabled": true,
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "569.0996,195.5999",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.EnemyHealthBar",
+            "__guid": "07fce9f5-3780-4469-abe3-20a2d37c5cd7",
+            "__enabled": true,
+            "Enemy": {
+              "_type": "component",
+              "component_id": "b05a6373-c4d4-4eec-b1ab-88f288b3105d",
+              "go": "3ca8f170-b87c-4216-a7b6-8f7144ef9afe",
+              "component_type": "Villager"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      }
+    ]
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}
