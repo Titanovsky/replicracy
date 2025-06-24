@@ -8,7 +8,7 @@ public sealed class Cutscene : Component
     [Property, Feature("Stats")] public List<CutscenePoint> Points { get; set; } = new();
     [Property, Feature("Stats")] public Action OnPlay { get; set; }
     [Property, Feature("Stats")] public Action OnFinish { get; set; }
-    public bool IsPlaying { get; set; } = false;
+    public bool IsPlaying { get; private set; } = false;
 
     public void Play()
     {
