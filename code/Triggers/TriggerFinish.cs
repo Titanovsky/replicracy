@@ -1,10 +1,7 @@
-﻿public class TriggerFinish : Component, Component.ITriggerListener
+﻿public class TriggerFinish : TriggerBase
 {
-    public void OnTriggerEnter(Collider other)
+    public override void OnTouch(Player ply)
     {
-        var ply = other.Components.GetInAncestorsOrSelf<Player>();
-        if (!ply.IsValid()) return;
-
         if (!LevelManager.Instance.CurrentLevel.CheckFinish())
         {
             //todo sound error
