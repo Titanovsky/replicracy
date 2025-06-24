@@ -2,6 +2,11 @@
 {
     [Property, Category("Stats")] public virtual float Health { get; set; } = 0f;
 
+    public virtual void Die()
+    {
+
+    }
+
     public virtual void OnDamage(in DamageInfo damage)
     {
     }

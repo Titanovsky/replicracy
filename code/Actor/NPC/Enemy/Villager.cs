@@ -6,7 +6,7 @@ public sealed class Villager : EnemyBase
     [Property] public ModelRenderer Renderer { get; set; }
     [Property, Category("Stats")] public override float Health { get; set; } = 10f; 
 
-    private TimeUntil _delay;
+    private TimeUntil _delayMoving;
 
     private Vector3 _up = new Vector3(0, 0, 50f);
     private Vector3 _targetPos;
@@ -15,13 +15,28 @@ public sealed class Villager : EnemyBase
     private Color32 _red = Color.Red;
     private TimeUntil _delayBlockDamage;
 
+    private GameObject _lastAttacker;
+
+    public override void Die()
+    {
+        if (_lastAttacker == Player.Instance.GameObject)
+        {
+            var ply = Player.Instance;
+
+            ply.Frags += 1;
+            ply.HeaderLevel.Show();
+        }
+
+        DestroyGameObject();
+    }
+
     private void Prepare()
     {
         GameObject.Name = $"😈 Enemy - {GameObject.Name}";
 
         Agent = GetComponent<NavMeshAgent>();
 
-        _delay = 0f;
+        _delayMoving = 0f;
 
         //Player.Instance.PlayerController.
     }
@@ -37,7 +52,7 @@ public sealed class Villager : EnemyBase
             Gizmo.Draw.Arrow(startPos + _up, _targetPos);
         }
 
-        if (!_delay) return;
+        if (!_delayMoving) return;
 
         var point = Scene.NavMesh.GetRandomPoint(startPos, 256f);
 
@@ -50,7 +65,7 @@ public sealed class Villager : EnemyBase
             _targetPos = point.Value;
         }
 
-        _delay = 1f;
+        _delayMoving = 1f;
     }
 
     private void ResetColor()
@@ -76,9 +91,10 @@ public sealed class Villager : EnemyBase
         Health -= dmgInfo.Damage;
         Renderer.Tint = _red;
         _delayBlockDamage = 1f;
+        _lastAttacker = dmgInfo.Attacker;
 
         if (Health <= 0)
-            DestroyGameObject();
+            Die();
     }
 
     public override bool IsFriend(GameObject target)

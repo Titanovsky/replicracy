@@ -27,7 +27,7 @@
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
         projectile.Direction = tr.Direction;
-        projectile.Owner = GameObject;
+        projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = ProjectileSpawner.Parent;
 
         Sound.Play(ShotSound, ProjectileSpawner.WorldPosition);
