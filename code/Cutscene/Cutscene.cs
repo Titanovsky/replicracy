@@ -40,6 +40,8 @@ public sealed class Cutscene : Component
     private void Move()
     {
         if (!IsPlaying) return;
+
+        //
     }
 
     protected override void OnFixedUpdate()
