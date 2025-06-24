@@ -2,7 +2,7 @@
 using Sandbox.Utility;
 using System;
 
-public sealed class Player : Component, PlayerController.IEvents
+public sealed class Player : Component, Component.IDamageable, PlayerController.IEvents
 {
     public static Player Instance { get; private set; }
 
@@ -144,5 +144,10 @@ public sealed class Player : Component, PlayerController.IEvents
     protected override void OnDestroy()
     {
         DestroySingleton();
+    }
+
+    public void OnDamage(in DamageInfo damage)
+    {
+        //todo TakeDamage(in dm)
     }
 }
