@@ -33,9 +33,9 @@
         "OnComponentUpdate": null,
         "Renderer": {
           "_type": "component",
-          "component_id": "77c700f5-765c-4ac6-887f-5f3b41092900",
+          "component_id": "ec0a283b-07cd-4cf3-aebc-54063af3537d",
           "go": "13ef76d6-c4e8-4e89-ac21-e5a787a56d8c",
-          "component_type": "ModelRenderer"
+          "component_type": "SkinnedModelRenderer"
         }
       },
       {
@@ -97,20 +97,38 @@
         "OwnerTransfer": 1,
         "Components": [
           {
-            "__type": "Sandbox.ModelRenderer",
-            "__guid": "77c700f5-765c-4ac6-887f-5f3b41092900",
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "ec0a283b-07cd-4cf3-aebc-54063af3537d",
             "__enabled": true,
-            "BodyGroups": 1365,
+            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": null,
             "CreateAttachments": false,
+            "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
-            "Model": "models/npc/example/bolvan2/bolvan.vmdl",
+            "Model": "bolvan1.1/bolvan_n.vmdl",
+            "Morphs": {},
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {
+                "move_x": 0,
+                "duck": 0,
+                "move_y": 0
+              },
+              "vectors": {
+                "aim_head": "0,0,0"
+              },
+              "rotations": {}
+            },
+            "PlaybackRate": 1,
             "RenderOptions": {
               "GameLayer": true,
               "OverlayLayer": false,
@@ -118,7 +136,13 @@
               "AfterUILayer": false
             },
             "RenderType": "On",
-            "Tint": "1,1,1,1"
+            "Sequence": {
+              "Name": null,
+              "Looping": true,
+              "Blending": false
+            },
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
           }
         ],
         "Children": []
