@@ -24,10 +24,10 @@
 		_timer = Time;
 
 		var dna = Player.Instance.Dna;
-		var levelDna = 0; //todo
+		var levelDna = LevelManager.Instance.CurrentLevel.NextDna;
 
-		var frags = 0; //todo
-		var levelFrags = 0; //todo
+		var frags = Player.Instance.Frags;
+		var levelFrags = LevelManager.Instance.CurrentLevel.NextFrags;
 
 		str = $" 🧬 {dna}/{levelDna}   💀 {frags}/{levelFrags} ";
 	}
