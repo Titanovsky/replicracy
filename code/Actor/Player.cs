@@ -7,9 +7,13 @@ public sealed class Player : Component, PlayerController.IEvents
     public static Player Instance { get; private set; }
 
     [Property] public float PlayerUseRay { get; set; } = 130f;
+
     [Property] public float MaxHealth { get; set; } = 100f;
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
+    [Property] public int Frags { get; set; } = 0;
+    public int CollectDna { get; set; } = 0;
+
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public Hint Hint { get; set; }
     [Property] public HeaderLevel HeaderLevel { get; set; }
