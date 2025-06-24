@@ -1,4 +1,6 @@
-﻿public abstract class LevelBase : Component
+﻿using Sandbox.Diagnostics;
+
+public abstract class LevelBase : Component
 {
     [Property, Group("Base")] public virtual string Class { get; set; } = "1";
     [Property, Group("Base")] public virtual string Name { get; set; } = "None";
@@ -9,5 +11,11 @@
 
     public virtual void Act(int act) { }
 
-    public virtual bool CheckFinish() { return false; }
+    public virtual bool CheckFinish() 
+    {
+        if (Player.Instance.CollectDna < NextDna) return false;
+        if (Player.Instance.Frags < NextFrags) return false;
+
+        return true;
+    }
 }
