@@ -4,9 +4,17 @@
 
     [Property] public LevelBase CurrentLevel { get; private set; }
 
+    private string _sceneCredits = "scenes/credits.scene";
+
     public void Finish(bool force = false)
     {
+        if (!CurrentLevel.IsValid()) return;
+        if (!force && !CurrentLevel.CheckFinish()) return;
 
+        if (CurrentLevel.NextLevelScene is not null)
+            Scene.Load(CurrentLevel.NextLevelScene);
+        else
+            Scene.LoadFromFile(_sceneCredits);
     }
 
     public void Start()

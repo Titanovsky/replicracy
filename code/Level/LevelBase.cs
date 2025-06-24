@@ -1,8 +1,10 @@
 ﻿public abstract class LevelBase : Component
 {
-    public virtual string Class { get; set; } = "1";
-    public virtual string Name { get; set; } = "None";
-    public virtual LevelBase NextLevel { get; set; }
+    [Property] public virtual string Class { get; set; } = "1";
+    [Property] public virtual string Name { get; set; } = "None";
+    [Property] public virtual SceneFile NextLevelScene { get; set; }
 
     public virtual void Act(int act) { }
+
+    public virtual bool CheckFinish() { return false; }
 }

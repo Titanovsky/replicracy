@@ -1,8 +1,8 @@
 ﻿public class LevelDowntown : LevelBase
 {
-    public override string Class { get; set; } = "level1";
-    public override string Name { get; set; } = "Downtown";
-    public override LevelBase NextLevel { get; set; }
+    [Property] public override string Class { get; set; } = "level1";
+    [Property] public override string Name { get; set; } = "Downtown";
+    [Property] public override SceneFile NextLevelScene { get; set; }
 
     public override void Act(int act)
     {
