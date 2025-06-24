@@ -2,9 +2,12 @@ using Sandbox;
 
 public sealed class Replicant : Component
 {
-    [Property] float RotationSpeed { get; set; } = 2.5f;
-    [Property] float AttackDelay { get; set; } = 1f;
-    [Property] int AttackDamage { get; set; } = 5;
+    [Property][Category("Movement")] float RotationSpeed { get; set; } = 2.5f;
+    [Property][Category("Movement")] float MovementSpeed { get; set; } = 140;
+    [Property][Category("Attack")] float AttackDelay { get; set; } = 1f;
+    [Property][Category("Attack")] int AttackDamage { get; set; } = 5;
+    [Property][Category("Health")] float Health { get; set; } = 100;
+    [Property][Category("Health")] float MaxHealth { get; set; } = 100;
     [Property] GameObject eye { get; set; }
 
     [Property]
@@ -163,12 +166,23 @@ public sealed class Replicant : Component
 
     }
 
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+
+        if (Health <= 0)
+        {
+            Log.Info("Replicant is dead");
+            GameObject.Destroy();
+        }
+    }
+
     private void DrawSpecified()
     {
         Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
         Gizmo.Draw.LineThickness = 4;
         Gizmo.Draw.Line(tr.StartPosition, tr.EndPosition);
-         
+
         Gizmo.Draw.Color = Color.Green;
         Gizmo.Draw.Line(tr.EndPosition, tr.EndPosition + tr.Normal * 1.0f);
     }
