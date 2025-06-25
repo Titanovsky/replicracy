@@ -10,6 +10,7 @@ public sealed class Villager : EnemyBase
 
     private Vector3 _up = new Vector3(0, 0, 50f);
     private Vector3 _targetPos;
+    private float _animWorkaround = .5f; //! fuck anim move_x and move_y
 
     private Color32 _white = Color.White;
     private Color32 _red = Color.Red;
@@ -49,8 +50,8 @@ public sealed class Villager : EnemyBase
 
         //todo aim_head
         //Renderer.Set("aim_head", (forward - _targetPos).Normal);
-        Renderer.Set("move_y", sideward);
-        Renderer.Set("move_x", forward);
+        Renderer.Set("move_y", sideward * _animWorkaround);
+        Renderer.Set("move_x", forward * _animWorkaround);
     }
 
     private void Move()
