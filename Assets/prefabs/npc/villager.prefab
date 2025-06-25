@@ -99,7 +99,7 @@
           {
             "__type": "Sandbox.SkinnedModelRenderer",
             "__guid": "ec0a283b-07cd-4cf3-aebc-54063af3537d",
-            "__enabled": false,
+            "__enabled": true,
             "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
             "BodyGroups": 1239132151937,
             "BoneMergeTarget": null,
@@ -118,8 +118,14 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {},
-              "vectors": {},
+              "floats": {
+                "duck": 0,
+                "move_x": 0,
+                "move_y": 0
+              },
+              "vectors": {
+                "aim_head": "0,0,0"
+              },
               "rotations": {}
             },
             "PlaybackRate": 1,
@@ -137,76 +143,6 @@
             },
             "Tint": "1,1,1,1",
             "UseAnimGraph": true
-          },
-          {
-            "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "29d787b0-f1ee-4a55-ab89-b1ec6324ce7e",
-            "__enabled": true,
-            "AnimationGraph": null,
-            "BodyGroups": 341,
-            "BoneMergeTarget": null,
-            "CreateAttachments": false,
-            "CreateBoneObjects": false,
-            "MaterialGroup": null,
-            "MaterialOverride": null,
-            "Model": "models/citizen/citizen.vmdl",
-            "Morphs": {},
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "Parameters": {
-              "bools": {},
-              "ints": {},
-              "floats": {},
-              "vectors": {},
-              "rotations": {}
-            },
-            "PlaybackRate": 1,
-            "RenderOptions": {
-              "GameLayer": true,
-              "OverlayLayer": false,
-              "BloomLayer": false,
-              "AfterUILayer": false
-            },
-            "RenderType": "On",
-            "Sequence": {
-              "Name": null,
-              "Looping": true,
-              "Blending": false
-            },
-            "Tint": "1,1,1,1",
-            "UseAnimGraph": true
-          },
-          {
-            "__type": "Sandbox.Rigidbody",
-            "__guid": "6fcdaa57-7f7e-41b1-8e5d-90f0b6bf0fc4",
-            "__enabled": true,
-            "AngularDamping": 0,
-            "Gravity": true,
-            "LinearDamping": 0,
-            "Locking": {
-              "X": false,
-              "Y": false,
-              "Z": false,
-              "Pitch": false,
-              "Yaw": false,
-              "Roll": false
-            },
-            "MassCenterOverride": "0,0,0",
-            "MassOverride": 0,
-            "MotionEnabled": true,
-            "OnComponentDestroy": null,
-            "OnComponentDisabled": null,
-            "OnComponentEnabled": null,
-            "OnComponentFixedUpdate": null,
-            "OnComponentStart": null,
-            "OnComponentUpdate": null,
-            "OverrideMassCenter": false,
-            "RigidbodyFlags": 0,
-            "StartAsleep": false
           }
         ],
         "Children": []
