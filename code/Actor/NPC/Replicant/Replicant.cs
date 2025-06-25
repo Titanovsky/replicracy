@@ -1,169 +1,39 @@
-using Sandbox;
-
 public sealed class Replicant : Component
 {
-    [Property][Category("Movement")] float RotationSpeed { get; set; } = 2.5f;
-    [Property][Category("Movement")] float MovementSpeed { get; set; } = 140;
-    [Property][Category("Attack")] float AttackDelay { get; set; } = 1f;
-    [Property][Category("Attack")] int AttackDamage { get; set; } = 5;
-    [Property][Category("Health")] float Health { get; set; } = 100;
-    [Property][Category("Health")] float MaxHealth { get; set; } = 100;
-    [Property] GameObject eye { get; set; }
+    [Property][Category("Movement")] public float RotationSpeed { get; private set; } = 2.5f;
+    [Property][Category("Movement")] public float MovementSpeed { get; private set; } = 140;
+    [Property][Category("Attack")] public float AttackDelay { get; private set; } = 1f;
+    [Property][Category("Attack")] public int AttackDamage { get; private set; } = 5;
+    [Property][Category("Health")] public float Health { get; private set; } = 100;
+    [Property][Category("Health")] public float MaxHealth { get; private set; } = 100;
+    [Property][Category("Other")] GameObject eye { get; set; }
 
-    [Property]
-    [RequireComponent]
-    private NavMeshAgent NavMeshAgent { get; set; }
+    [RequireComponent] NavMeshAgent NavMeshAgent { get; set; }
 
-    private GameObject _targetObject;
     private Vector3 _targerPoint;
-    private Vector3 _targerPlayer;
 
-    SceneTraceResult tr;
-
-    private RealTimeUntil _timeUntil;
-
-    private Player Player { get; set; }
-    private Vector3 oldPlayerPos;
+    private RealTimeUntil _attackTimer;
+    public ReplicantFSM replicantFSM;
 
     protected override void OnAwake()
     {
-        _timeUntil = AttackDelay;
+        replicantFSM = new();
+        _attackTimer = AttackDelay;
+
+        replicantFSM.AddState(new ReturnToPlayer(this));
+        replicantFSM.AddState(new MoveToPoint(this));
+        replicantFSM.AddState(new AttackBuilding(this));
+        replicantFSM.AddState(new Idle(this));
     }
 
     protected override void OnStart()
     {
-        Player = Player.Instance;
-
-        ReturnToPlayer();
+        replicantFSM.SetState<ReturnToPlayer>();
     }
 
     protected override void OnUpdate()
     {
-        UpdatedRotation();
-
-        UpdateTargetPointBehaviours();
-        UpdateTargetObjectBehaviours();
-        UpdateNoBehaviours();
-
-        DrawSpecified();
-    }
-
-    protected override void OnDestroy()
-    {
-        Player = null;
-    }
-
-    public void MoveToPoint(Vector3 point)
-    {
-        NavMeshAgent.MoveTo(point);
-    }
-
-    public void SetTargetPoint(Vector3 point)
-    {
-        _targetObject = null;
-
-        _targerPoint = point;
-
-        NavMeshAgent.MoveTo(point);
-    }
-
-    public void SetTargetObject(GameObject targerObject)
-    {
-        _targerPoint = Vector3.Zero;
-
-        _targetObject = targerObject;
-    }
-
-    public void AttackEnemy()
-    {
-        if (!_timeUntil) return;
-
-        Log.Info("AttackEnemy");
-
-        ReseTimer();
-    }
-
-    public void AttackBuilding()
-    {
-        if (!_timeUntil) return;
-
-        var building = _targetObject.Components.Get<Building>();
-
-        building.TakeDamage(AttackDamage);
-
-        if (building.IsDead)
-        {
-            _targetObject = null;
-            ReturnToPlayer();
-        }
-
-        ReseTimer();
-    }
-
-    private void UpdateTargetPointBehaviours()
-    {
-        if (_targerPoint == Vector3.Zero) return;
-
-    }
-
-    private void UpdateNoBehaviours()
-    {
-        if (_targerPoint != Vector3.Zero) return;
-        if (_targetObject != null) return;
-        if (oldPlayerPos == Player.GameObject.WorldPosition) return;
-
-        ReturnToPlayer();
-    }
-
-    private void UpdateTargetObjectBehaviours()
-    {
-        if (_targetObject == null) return;
-
-        tr = Scene.Trace.Ray(new Ray(eye.WorldPosition, eye.WorldRotation.Forward), 30)
-                .IgnoreGameObject(GameObject)
-                .Run();
-
-        if (!tr.Hit) return;
-
-        var hitObject = tr.GameObject;
-
-        if (hitObject.Tags.Has("enemy"))
-        {
-            AttackEnemy();
-        }
-
-        if (hitObject.Tags.Has("building"))
-        {
-            AttackBuilding();
-        }
-    }
-
-    private void ReturnToPlayer()
-    {
-        _targerPlayer = (Vector3)Scene.NavMesh.GetRandomPoint(Player.GameObject.WorldPosition, 300);
-
-        oldPlayerPos = Player.GameObject.WorldPosition;
-
-        MoveToPoint(_targerPlayer);
-    }
-
-    private void UpdatedRotation()
-    {
-        Vector3 rotatiobPoint = _targetObject?.WorldPosition == null
-            ? _targerPoint
-            : _targetObject.WorldPosition;
-
-        if (rotatiobPoint == Vector3.Zero)
-            rotatiobPoint = _targerPlayer;
-
-        // Рассчитываем направление
-        Vector3 direction = (rotatiobPoint - WorldPosition).Normal;
-
-        // Целевой поворот
-        Rotation rotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0));
-
-        WorldRotation = Rotation.Lerp(WorldRotation, rotate, RotationSpeed * Time.Delta);
-
+        replicantFSM.CurrentState?.Update();
     }
 
     public void TakeDamage(int damage)
@@ -172,21 +42,16 @@ public sealed class Replicant : Component
 
         if (Health <= 0)
         {
-            Log.Info("Replicant is dead");
             GameObject.Destroy();
         }
     }
 
-    private void DrawSpecified()
-    {
-        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
-        Gizmo.Draw.LineThickness = 4;
-        Gizmo.Draw.Line(tr.StartPosition, tr.EndPosition);
-
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(tr.EndPosition, tr.EndPosition + tr.Normal * 1.0f);
-    }
+    public void SetTargetPoint(Vector3 point) => _targerPoint = point;
+    public void MoveToPoint(Vector3 point) => NavMeshAgent.MoveTo(point);
 
     public float GetRadius() => NavMeshAgent.Radius;
-    private void ReseTimer() => _timeUntil = AttackDelay;
+    public GameObject GetEye() => eye;
+    public Vector3 GetTargetPoint() => _targerPoint;
+    public void ReseAttackTimer() => _attackTimer = AttackDelay;
+    public bool IsAttackAllowed() => _attackTimer;
 }

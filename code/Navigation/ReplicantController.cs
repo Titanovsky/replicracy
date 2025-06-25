@@ -5,7 +5,7 @@ public sealed class ReplicantController : Component
 {
     [Property] public Player Player { get; set; }
     [Property] private List<Replicant> Replicants { get; set; } = new();
-    
+
     private Vector3 _targetPoint;
     private GameObject _targeObject;
 
@@ -61,24 +61,14 @@ public sealed class ReplicantController : Component
     {
         ActiveHightlights();
 
-        foreach (var unit in Replicants)
-        {
-            unit.SetTargetObject(_targeObject);
-        }
 
-        MoveAroundTarget();
     }
 
     private void MoveToBuilding()
     {
         ActiveHightlights();
 
-        foreach (var unit in Replicants)
-        {
-            unit.SetTargetObject(_targeObject);
-        }
-
-        MoveAroundTarget();
+        MoveAroundBuilding();
     }
 
     private void MoveToPoint()
@@ -86,9 +76,9 @@ public sealed class ReplicantController : Component
         foreach (var unit in Replicants)
         {
             unit.SetTargetPoint(_targetPoint);
-        }
 
-        MoveAroundPoint();
+            unit.replicantFSM.SetState<MoveToPoint>();
+        }
     }
 
     private void UpdateTargetObjectPosition()
@@ -103,10 +93,10 @@ public sealed class ReplicantController : Component
 
         _targetObjectPosition = _targeObject.WorldPosition;
 
-        MoveAroundTarget();
+        MoveAroundBuilding();
     }
 
-    private void MoveAroundTarget()
+    private void MoveAroundBuilding()
     {
         int numUnits = Replicants.Count;
         float radius = 50.0f; // Радиус окружения
@@ -120,54 +110,9 @@ public sealed class ReplicantController : Component
 
             Vector3 targetPosition = new Vector3(x, y, _targeObject.WorldPosition.z);
 
-            Replicants[i].MoveToPoint(targetPosition);
+            Replicants[i].SetTargetPoint(targetPosition);
+            Replicants[i].replicantFSM.SetState<AttackBuilding>();
         }
-    }
-
-    private void MoveAroundPoint()
-    {
-        int count = Replicants.Count;
-        if (count == 0) return;
-
-        var extraSpacing = 0.2f; // Дополнительное расстояние между юнитами
-
-        // Собираем радиусы агентов (предполагается, что они уже прописаны в NavMeshAgent.radius)
-        List<float> radii = Replicants.Select(a => a.GetRadius()).ToList();
-        float maxDiameter = radii.Max() * 2f;
-
-        // Для одного юнита просто идём в точку
-        float formationRadius = 0f;
-        if (count > 1)
-        {
-            // Минимальный радиус окружности, чтобы между соседями был хотя бы maxDiameter + extraSpacing
-            float minChord = maxDiameter + extraSpacing;
-            float angleStep = (float)Math.PI * 2f / count;
-            formationRadius = minChord / (2f * (float)Math.Sin(angleStep / 2f));
-        }
-
-        for (int i = 0; i < count; i++)
-        {
-            // Рассчитываем позицию на окружности
-            float angle = i * MathF.PI * 2f / count;
-            Vector3 offset = new Vector3(MathF.Cos(angle), 0, MathF.Sin(angle)) * formationRadius;
-            Vector3 dest = _targetPoint + offset;
-
-            // Трассируем вниз, чтобы скорректировать высоту
-            {
-                var start = dest + Vector3.Up * 100f;
-                var end = dest + Vector3.Down * 100f;
-                var tr = Scene.Trace.Ray(start, end)
-                                 .IgnoreGameObject(Replicants[i].GameObject)  // не зацепить сам юнит
-                                 .Run();
-
-                if (tr.Hit)
-                    dest = tr.HitPosition;
-            }
-
-            // Посылаем юнита в рассчитанную точку
-            Replicants[i].MoveToPoint(dest);
-        }
-
     }
 
     private void ActiveHightlights()
@@ -213,6 +158,6 @@ public sealed class ReplicantController : Component
     private void Unsubscribe()
     {
         if (Player != null)
-        Player.OnSpecified -= PlayerSpecifie;
+            Player.OnSpecified -= PlayerSpecifie;
     }
 }
