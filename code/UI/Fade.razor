@@ -18,22 +18,38 @@
     [Button]
     public async Task DoFade(float opacity = 0.9f, float doTimer = 3f, float fadeTimer = 3f, float outTimer = 1f)
     {
+        await InFade(opacity, doTimer);
+
+        await Task.DelaySeconds(fadeTimer);
+
+        await OutFade(outTimer);
+    }
+
+    public async Task InFade(float opacity = 0.9f, float doTimer = 3f)
+    {
         _timer = doTimer;
+
+        var startOpacity = FadeOpacity;
 
         while (!_timer)
         {
-            FadeOpacity = 0 + (opacity - 0) * ((float)_timer.Passed / doTimer);
+            FadeOpacity = startOpacity + (opacity - startOpacity) * ((float)_timer.Passed / doTimer);
 
             await Task.Yield();
         }
 
-        await Task.DelaySeconds(fadeTimer);
-
+        FadeOpacity = opacity;
+    }
+    
+    public async Task OutFade(float outTimer = 3f)
+    {
         _timer = outTimer;
+
+        var startOpacity = FadeOpacity;
 
         while (!_timer)
         {
-            FadeOpacity = opacity + (0 - opacity) * ((float)_timer.Passed / outTimer);
+            FadeOpacity = startOpacity + (0 - startOpacity) * ((float)_timer.Passed / outTimer);
 
             await Task.Yield();
         }
