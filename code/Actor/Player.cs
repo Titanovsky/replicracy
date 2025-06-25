@@ -123,15 +123,19 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         //Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
-    protected override void OnStart()
-    {
-        Prepare();
-    }
-
     protected override void OnAwake()
     {
         CreateSingleton();
+    }
 
+    protected override void OnDestroy()
+    {
+        DestroySingleton();
+    }
+
+    protected override void OnStart()
+    {
+        Prepare();
     }
 
     protected override void OnUpdate()
@@ -139,11 +143,6 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         PlayerView();
         CheckInput();
         DrawSpecified();
-    }
-
-    protected override void OnDestroy()
-    {
-        DestroySingleton();
     }
 
     public void OnDamage(in DamageInfo damage)
