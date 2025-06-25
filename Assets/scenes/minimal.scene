@@ -38,6 +38,17 @@
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
           "OnComponentUpdate": null
+        },
+        {
+          "__type": "LabInfo",
+          "__guid": "75be241e-1cfe-4b98-8ede-c931080f8b6a",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
         }
       ],
       "Children": []
@@ -827,22 +838,6 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "70251006-11e7-43cf-81d9-58eab51d5fe1"
-            },
-            "Property": "Enabled",
-            "Value": false
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
             },
             "Property": "Position",
@@ -863,14 +858,6 @@
             },
             "Property": "Scale",
             "Value": "0.9999989,0.9999989,0.9999989"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
-            },
-            "Property": "Flags",
-            "Value": 0
           },
           {
             "Target": {
@@ -901,14 +888,6 @@
               "Type": "GameObject",
               "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
-            },
             "Property": "Position",
             "Value": "10.41577,0.7812347,9.84251"
           },
@@ -933,16 +912,8 @@
               "Type": "GameObject",
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
-            },
             "Property": "Position",
-            "Value": "9.750153,-4.987747,3.806057"
+            "Value": "9.749969,-4.987549,3.805885"
           },
           {
             "Target": {
@@ -950,7 +921,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "0.6955557,0.1290365,-0.4102915,0.5755109"
+            "Value": "0.6955565,0.1290361,-0.4102971,0.575506"
           },
           {
             "Target": {
@@ -965,16 +936,8 @@
               "Type": "GameObject",
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
-            },
             "Property": "Position",
-            "Value": "-8.846619,5.432404,3.808533"
+            "Value": "-8.846405,5.432297,3.808296"
           },
           {
             "Target": {
@@ -982,7 +945,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "0.6385092,0.3045295,-0.2475627,0.6620277"
+            "Value": "0.6385083,0.3045323,-0.2475559,0.6620297"
           },
           {
             "Target": {
@@ -990,15 +953,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -1006,7 +961,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.70624,-4.22805,48.44607"
+            "Value": "16.8779,-3.40416,48.52361"
           },
           {
             "Target": {
@@ -1014,7 +969,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "0.391543,-0.05708525,0.1349083,0.9084246"
+            "Value": "0.3909649,-0.04881236,0.1384261,0.9086265"
           },
           {
             "Target": {
@@ -1022,15 +977,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1038,7 +985,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.61716,5.331497,40.65599"
+            "Value": "-10.20395,5.60228,41.0463"
           },
           {
             "Target": {
@@ -1046,7 +993,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "0.4438337,0.7032162,-0.2046968,0.5163311"
+            "Value": "0.4324249,0.7044929,-0.2072506,0.5232071"
           },
           {
             "Target": {
@@ -1054,15 +1001,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999974,0.9999974,0.9999974"
           },
           {
             "Target": {
@@ -1070,7 +1009,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "24.08224,-2.683586,50.05956"
+            "Value": "24.25253,-1.759613,50.0414"
           },
           {
             "Target": {
@@ -1078,7 +1017,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "0.6106751,-0.1231696,-0.08755904,0.7773278"
+            "Value": "0.6106753,-0.1231695,-0.08755903,0.7773277"
           },
           {
             "Target": {
@@ -1086,15 +1025,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999973,0.9999973,0.9999973"
           },
           {
             "Target": {
@@ -1102,7 +1033,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-11.17844,8.513107,33.6592"
+            "Value": "-10.80917,8.626465,33.9837"
           },
           {
             "Target": {
@@ -1110,7 +1041,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "0.4465975,0.7301723,-0.1689167,0.4887396"
+            "Value": "0.4352182,0.7318649,-0.1719938,0.4953555"
           },
           {
             "Target": {
@@ -1118,15 +1049,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999975,0.9999975,0.9999975"
           },
           {
             "Target": {
@@ -1134,7 +1057,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.25912,-2.160721,52.10413"
+            "Value": "29.42944,-1.236755,52.08597"
           },
           {
             "Target": {
@@ -1142,7 +1065,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "0.01353627,0.00003497105,0.00004098564,0.9999084"
+            "Value": "0.0135365,0.00003499468,0.00004110485,0.9999084"
           },
           {
             "Target": {
@@ -1150,15 +1073,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999965,0.9999965,0.9999965"
           },
           {
             "Target": {
@@ -1166,7 +1081,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-9.421112,9.143417,27.56288"
+            "Value": "-9.053314,9.159378,27.87769"
           },
           {
             "Target": {
@@ -1174,7 +1089,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "-0.3983416,0.6306273,0.1426693,0.6505987"
+            "Value": "-0.410695,0.6281465,0.1414136,0.6455725"
           },
           {
             "Target": {
@@ -1182,15 +1097,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999971,0.9999971,0.9999971"
           },
           {
             "Target": {
@@ -1221,14 +1128,6 @@
               "Type": "GameObject",
               "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
-            },
             "Property": "Position",
             "Value": "-11.15137,8.593781,33.76192"
           },
@@ -1253,16 +1152,8 @@
               "Type": "GameObject",
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
             "Property": "Position",
-            "Value": "10.95218,-4.234245,16.24097"
+            "Value": "10.73199,-4.151932,16.25486"
           },
           {
             "Target": {
@@ -1270,7 +1161,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Rotation",
-            "Value": "0.4751702,0.4910893,-0.5539402,0.4755994"
+            "Value": "0.479359,0.4840221,-0.5522262,0.4806076"
           },
           {
             "Target": {
@@ -1278,15 +1169,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
-            "Value": "0.9999999,0.9999999,0.9999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999998,0.9999998,0.9999998"
           },
           {
             "Target": {
@@ -1294,7 +1177,7 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Position",
-            "Value": "-2.438538,5.41835,14.55915"
+            "Value": "-2.225372,5.494598,14.42895"
           },
           {
             "Target": {
@@ -1302,204 +1185,12 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Rotation",
-            "Value": "0.3153149,0.670015,-0.5541505,0.3802284"
+            "Value": "0.31102,0.6678669,-0.5643268,0.3724991"
           },
           {
             "Target": {
               "Type": "GameObject",
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Position",
-            "Value": "8.578369,3.427902,39.86317"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Rotation",
-            "Value": "0.4582038,-0.664382,0.5718577,0.147054"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Position",
-            "Value": "11.76962,-3.611404,49.13631"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.113398,0.9935496"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Position",
-            "Value": "20.39423,-3.455811,49.25282"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.113398,0.9935496"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Position",
-            "Value": "16.71939,-4.34005,48.30901"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Rotation",
-            "Value": "0.2706054,0.2594357,-0.6170342,0.6919066"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Position",
-            "Value": "-10.85779,5.149414,40.69237"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Rotation",
-            "Value": "-0.3180736,0.764818,-0.5218413,0.2038734"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Position",
-            "Value": "-7.889496,5.15892,44.86988"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0.113398,0.9935496"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Scale",
             "Value": "0.9999995,0.9999995,0.9999995"
@@ -1507,10 +1198,146 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
-            "Property": "Flags",
-            "Value": 0
+            "Property": "Position",
+            "Value": "8.830139,3.894257,39.99031"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Rotation",
+            "Value": "0.4701999,-0.6593515,0.5706408,0.1361499"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Scale",
+            "Value": "0.999997,0.999997,0.999997"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Position",
+            "Value": "11.92734,-2.978889,49.25686"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0.113398,0.9935496"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Scale",
+            "Value": "0.9999977,0.9999977,0.9999977"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Position",
+            "Value": "20.56525,-2.581886,49.2825"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0.113398,0.9935496"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999974,0.9999974,0.9999974"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Position",
+            "Value": "16.89066,-3.483849,48.3833"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Rotation",
+            "Value": "0.2636502,0.2632213,-0.6112487,0.698268"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Scale",
+            "Value": "0.9999976,0.9999976,0.9999976"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Position",
+            "Value": "-10.42731,5.43013,41.08084"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Rotation",
+            "Value": "-0.3220878,0.757782,-0.5283108,0.2071561"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Scale",
+            "Value": "0.9999975,0.9999975,0.9999975"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Position",
+            "Value": "-7.545868,5.49649,45.30656"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0.113398,0.9935496"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999977,0.9999977,0.9999977"
           },
           {
             "Target": {
@@ -1518,7 +1345,7 @@
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Position",
-            "Value": "-10.89783,6.922302,37.15759"
+            "Value": "-10.50653,7.114365,37.515"
           },
           {
             "Target": {
@@ -1534,15 +1361,7 @@
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999974,0.9999974,0.9999974"
           },
           {
             "Target": {
@@ -1550,7 +1369,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Position",
-            "Value": "7.525055,-3.623795,22.58369"
+            "Value": "7.373444,-3.516953,22.63178"
           },
           {
             "Target": {
@@ -1563,10 +1382,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
-            "Property": "Flags",
-            "Value": 0
+            "Property": "Scale",
+            "Value": "0.9999997,0.9999997,0.9999997"
           },
           {
             "Target": {
@@ -1574,7 +1393,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Position",
-            "Value": "-1.71994,4.822037,21.73384"
+            "Value": "-1.643066,4.932739,21.61875"
           },
           {
             "Target": {
@@ -1587,10 +1406,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
-            "Property": "Flags",
-            "Value": 0
+            "Property": "Scale",
+            "Value": "0.9999993,0.9999993,0.9999993"
           },
           {
             "Target": {
@@ -1598,7 +1417,7 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Position",
-            "Value": "11.80484,-4.271973,16.39214"
+            "Value": "11.54446,-4.185081,16.4006"
           },
           {
             "Target": {
@@ -1606,7 +1425,7 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Rotation",
-            "Value": "0.5271471,0.4234974,-0.4718197,0.5658199"
+            "Value": "0.5263098,0.4215419,-0.4718587,0.5680228"
           },
           {
             "Target": {
@@ -1621,16 +1440,8 @@
               "Type": "GameObject",
               "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
             "Property": "Position",
-            "Value": "-1.831665,5.54039,14.33909"
+            "Value": "-1.565155,5.618515,14.19042"
           },
           {
             "Target": {
@@ -1638,15 +1449,15 @@
               "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Rotation",
-            "Value": "0.7393299,0.1835169,-0.0431934,0.6464109"
+            "Value": "0.7406182,0.1806018,-0.04826362,0.6453978"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
-            "Property": "Flags",
-            "Value": 0
+            "Property": "Scale",
+            "Value": "0.9999991,0.9999991,0.9999991"
           },
           {
             "Target": {
@@ -1654,7 +1465,7 @@
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Position",
-            "Value": "10.35123,-4.610985,10.02351"
+            "Value": "10.24097,-4.569756,10.03037"
           },
           {
             "Target": {
@@ -1677,16 +1488,8 @@
               "Type": "GameObject",
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
-            "Property": "Flags",
-            "Value": 0
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
-            },
             "Property": "Position",
-            "Value": "-5.642548,5.425385,9.18383"
+            "Value": "-5.535889,5.463425,9.118645"
           },
           {
             "Target": {
@@ -1699,10 +1502,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+              "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
-            "Property": "Flags",
-            "Value": 0
+            "Property": "Scale",
+            "Value": "0.9999992,0.9999992,0.9999992"
           },
           {
             "Target": {
@@ -1710,7 +1513,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Position",
-            "Value": "0.2406006,0.3999634,41.85014"
+            "Value": "0.3311462,0.7085876,41.84568"
           },
           {
             "Target": {
@@ -1726,15 +1529,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999987,0.9999987,0.9999987"
           },
           {
             "Target": {
@@ -1742,7 +1537,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.247833,1.26796,61.35077"
+            "Value": "6.413086,1.730362,61.42162"
           },
           {
             "Target": {
@@ -1750,7 +1545,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "-0.001164065,0.01435427,0.04551655,0.9988598"
+            "Value": "-0.001009519,0.007797448,0.04518659,0.9989477"
           },
           {
             "Target": {
@@ -1758,15 +1553,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1774,7 +1561,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.552246,-2.064606,61.35418"
+            "Value": "6.71524,-1.602417,61.426"
           },
           {
             "Target": {
@@ -1782,7 +1569,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "-0.001164065,0.01435427,0.04551655,0.9988598"
+            "Value": "-0.001009519,0.007797448,0.04518659,0.9989477"
           },
           {
             "Target": {
@@ -1790,15 +1577,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1806,7 +1585,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "5.943481,4.60054,61.34737"
+            "Value": "6.110931,5.063126,61.41723"
           },
           {
             "Target": {
@@ -1814,7 +1593,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "-0.001164065,0.01435427,0.04551655,0.9988598"
+            "Value": "-0.001009519,0.007797448,0.04518659,0.9989477"
           },
           {
             "Target": {
@@ -1822,15 +1601,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1838,7 +1609,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.7603149,0.7598267,54.61687"
+            "Value": "1.013824,1.231888,54.61603"
           },
           {
             "Target": {
@@ -1846,7 +1617,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "-0.001164065,0.01435427,0.04551655,0.9988598"
+            "Value": "-0.001009519,0.007797448,0.04518659,0.9989477"
           },
           {
             "Target": {
@@ -1854,15 +1625,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1870,7 +1633,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.12997,-5.909172,0.1874962"
+            "Value": "11.12973,-5.908966,0.1872559"
           },
           {
             "Target": {
@@ -1878,7 +1641,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "0.0004742668,0.00006725323,-0.2162333,0.9763416"
+            "Value": "0.0004762716,0.0000720264,-0.2162383,0.9763405"
           },
           {
             "Target": {
@@ -1886,15 +1649,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Scale",
-            "Value": "0.9999967,0.9999967,0.9999967"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999984,0.9999984,0.9999984"
           },
           {
             "Target": {
@@ -1902,7 +1657,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239319,5.832245,1.059547"
+            "Value": "-7.239136,5.832153,1.059361"
           },
           {
             "Target": {
@@ -1910,7 +1665,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "-0.04343596,0.9990561,0.0003291134,0.0000940818"
+            "Value": "-0.04344358,0.9990558,0.000330072,0.00009748571"
           },
           {
             "Target": {
@@ -1918,15 +1673,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.9999971,0.9999971,0.9999971"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
-            },
-            "Property": "Flags",
-            "Value": 0
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -1934,7 +1681,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.487244,0.8421783,69.75951"
+            "Value": "1.542572,1.300217,69.76693"
           },
           {
             "Target": {
@@ -1942,7 +1689,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "-0.001164065,0.01435427,0.04551655,0.9988598"
+            "Value": "-0.001009519,0.007797448,0.04518659,0.9989477"
           },
           {
             "Target": {
@@ -1950,7 +1697,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999976,0.9999976,0.9999976"
           }
         ],
         "MovedObjects": []
@@ -3173,7 +2920,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-              "Position": "715.5218,82.62257,23.36232",
+              "Position": "715.5219,82.62257,23.36232",
               "Rotation": "0,0,-0.6755902,0.7372773",
               "Positions": [
                 "-36,-24,24",
@@ -3236,12 +2983,12 @@
                 "0.25,0.25"
               ],
               "TextureOffset": [
-                "79.78529,63.9978",
-                "79.78529,319.998",
-                "320.002,93.44926",
-                "192.002,93.44926",
+                "79.78528,63.99805",
+                "79.78526,319.9983",
+                "320.0022,93.44926",
+                "192.0017,93.44926",
                 "432.2163,93.44926",
-                "79.78644,93.44926"
+                "79.78642,93.44926"
               ],
               "MaterialIndex": [
                 1,
@@ -3404,12 +3151,2796 @@
           {
             "Target": {
               "Type": "Component",
+              "IdValue": "740e066b-b1f2-495b-9a48-4fc69c291574"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "676.4894,109.3223,34.73218",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715162,-0.9961951,0.000001964904",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4281838,-0.03746026,-0.9029149",
+                "0.4281835,0.0374609,0.9029151",
+                "-0.08715096,0.9961951,0.0000001282059",
+                "0.08715919,-0.9961944,-0.0000004464869"
+              ],
+              "TextureVAxis": [
+                "-0.428184,-0.03745905,-0.9029149",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8994794,0.07868995,-0.4298194",
+                "0.8994817,0.07869778,-0.4298133",
+                "0.8994795,0.07868966,-0.4298193",
+                "0.8994797,0.07869645,-0.4298174"
+              ],
+              "TextureScale": [
+                "0.2500002,0.2500004",
+                "0.25,0.2499998",
+                "0.2500004,0.2499988",
+                "0.2499997,0.2499987",
+                "0.2499999,0.2499988",
+                "0.2500003,0.2499987"
+              ],
+              "TextureOffset": [
+                "199.7963,276.4672",
+                "72,2.642366",
+                "276.4673,151.3391",
+                "235.5302,151.3276",
+                "312.2014,151.3391",
+                "199.7758,151.334"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "45bf062b-45a7-45e7-ab86-98090eaf13ed"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "674.6905,109.1649,35.59181",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717397,-0.9961931,-0.00002373651",
+                "1,-0.00001012205,-0",
+                "-0.001948402,0.9843633,0.1761393",
+                "0.1654166,0.8491134,0.5016411",
+                "0.3075922,0.5846016,0.7507516",
+                "0.4029435,0.2310878,0.8855704",
+                "0.4369508,-0.1576082,0.8855696",
+                "0.4044335,-0.5223048,0.7507538",
+                "0.3103451,-0.807493,0.5016384",
+                "0.1690138,-0.9697461,0.1761442",
+                "0.001951061,-0.9843631,-0.1761406",
+                "-0.1654249,-0.8491141,-0.5016371",
+                "-0.3075975,-0.5845988,-0.7507517",
+                "-0.4029441,-0.2310944,-0.8855684",
+                "-0.4369508,0.157613,-0.8855688",
+                "-0.4044326,0.5223103,-0.7507505",
+                "-0.3103496,0.8074947,-0.5016329",
+                "-0.1690135,0.9697462,-0.1761444"
+              ],
+              "TextureVAxis": [
+                "-0.4282291,-0.03766671,-0.9028849",
+                "0.0002273641,-1,0",
+                "0.8994838,0.07870489,-0.4298074",
+                "0.8994809,0.07867423,-0.4298192",
+                "0.8994802,0.07869116,-0.4298176",
+                "0.89947,0.0786895,-0.429839",
+                "0.8994758,0.07869979,-0.429825",
+                "0.8994696,0.07870795,-0.4298367",
+                "0.8994833,0.0786911,-0.4298111",
+                "0.8994833,0.07869289,-0.4298108",
+                "0.8994818,0.07870563,-0.4298115",
+                "0.8994781,0.07867783,-0.4298243",
+                "0.8994823,0.07868638,-0.4298141",
+                "0.8994855,0.07869044,-0.4298065",
+                "0.8994761,0.07869973,-0.4298247",
+                "0.8994838,0.07868946,-0.4298102",
+                "0.899484,0.07869544,-0.4298089",
+                "0.899484,0.07869325,-0.4298092"
+              ],
+              "TextureScale": [
+                "0.2500031,0.2498983",
+                "0.2500082,0.2500163",
+                "0.2548952,0.2500031",
+                "0.3006724,0.2500031",
+                "0.300675,0.2500033",
+                "0.2548997,0.2500031",
+                "0.2548954,0.2500031",
+                "0.3006759,0.2500031",
+                "0.3006724,0.2500032",
+                "0.2548952,0.2500033",
+                "0.2548971,0.2500035",
+                "0.3006767,0.2500037",
+                "0.3007106,0.250003",
+                "0.2548894,0.250003",
+                "0.2548944,0.2500031",
+                "0.3006747,0.250003",
+                "0.3006842,0.2500033",
+                "0.2548876,0.2500033"
+              ],
+              "TextureOffset": [
+                "199.7365,277.2026",
+                "191.9895,64.07086",
+                "69.45483,159.3603",
+                "280.7877,159.3835",
+                "37.02945,159.3795",
+                "248.3654,159.4084",
+                "321.7355,159.3866",
+                "212.8892,159.402",
+                "53.75861,159.3688",
+                "456.8836,159.37",
+                "439.4738,159.37",
+                "222.5017,159.3957",
+                "483.5823,159.3727",
+                "266.7526,159.3608",
+                "187.2056,159.3862",
+                "290.3911,159.3661",
+                "466.9505,159.3659",
+                "58.17825,159.3668"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "d8926b5a-86f7-4963-8d44-48246bb17d55"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "677.5353,97.36795,34.73218",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715162,-0.9961951,0.000001964904",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4281838,-0.03746026,-0.9029149",
+                "0.4281835,0.0374609,0.9029151",
+                "-0.08715096,0.9961951,0.0000001282059",
+                "0.08715919,-0.9961944,-0.0000004464869"
+              ],
+              "TextureVAxis": [
+                "-0.428184,-0.03745905,-0.9029149",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8994794,0.07868995,-0.4298194",
+                "0.8994817,0.07869778,-0.4298133",
+                "0.8994795,0.07868966,-0.4298193",
+                "0.8994797,0.07869645,-0.4298174"
+              ],
+              "TextureScale": [
+                "0.2500002,0.2500004",
+                "0.25,0.2499998",
+                "0.2500004,0.2499988",
+                "0.2499997,0.2499987",
+                "0.2499999,0.2499988",
+                "0.2500003,0.2499987"
+              ],
+              "TextureOffset": [
+                "151.7963,276.4674",
+                "72,2.642366",
+                "276.4673,151.3386",
+                "235.53,151.3279",
+                "360.2015,151.3389",
+                "151.7758,151.3342"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "343be2a2-3a73-4a91-ae8f-1baf48e25f1e"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "675.7364,97.21056,35.59181",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717397,-0.9961931,-0.00002373651",
+                "1,-0.00001012205,-0",
+                "-0.001948402,0.9843633,0.1761393",
+                "0.1654166,0.8491134,0.5016411",
+                "0.3075922,0.5846016,0.7507516",
+                "0.4029435,0.2310878,0.8855704",
+                "0.4369508,-0.1576082,0.8855696",
+                "0.4044335,-0.5223048,0.7507538",
+                "0.3103451,-0.807493,0.5016384",
+                "0.1690138,-0.9697461,0.1761442",
+                "0.001951061,-0.9843631,-0.1761406",
+                "-0.1654249,-0.8491141,-0.5016371",
+                "-0.3075975,-0.5845988,-0.7507517",
+                "-0.4029441,-0.2310944,-0.8855684",
+                "-0.4369508,0.157613,-0.8855688",
+                "-0.4044326,0.5223103,-0.7507505",
+                "-0.3103496,0.8074947,-0.5016329",
+                "-0.1690135,0.9697462,-0.1761444"
+              ],
+              "TextureVAxis": [
+                "-0.4282291,-0.03766671,-0.9028849",
+                "0.0002273641,-1,0",
+                "0.8994838,0.07870489,-0.4298074",
+                "0.8994809,0.07867423,-0.4298192",
+                "0.8994802,0.07869116,-0.4298176",
+                "0.89947,0.0786895,-0.429839",
+                "0.8994758,0.07869979,-0.429825",
+                "0.8994696,0.07870795,-0.4298367",
+                "0.8994833,0.0786911,-0.4298111",
+                "0.8994833,0.07869289,-0.4298108",
+                "0.8994818,0.07870563,-0.4298115",
+                "0.8994781,0.07867783,-0.4298243",
+                "0.8994823,0.07868638,-0.4298141",
+                "0.8994855,0.07869044,-0.4298065",
+                "0.8994761,0.07869973,-0.4298247",
+                "0.8994838,0.07868946,-0.4298102",
+                "0.899484,0.07869544,-0.4298089",
+                "0.899484,0.07869325,-0.4298092"
+              ],
+              "TextureScale": [
+                "0.2500031,0.2498983",
+                "0.2500082,0.2500163",
+                "0.2548952,0.2500031",
+                "0.3006724,0.2500031",
+                "0.300675,0.2500033",
+                "0.2548997,0.2500031",
+                "0.2548954,0.2500031",
+                "0.3006759,0.2500031",
+                "0.3006724,0.2500032",
+                "0.2548952,0.2500033",
+                "0.2548971,0.2500035",
+                "0.3006767,0.2500037",
+                "0.3007106,0.250003",
+                "0.2548894,0.250003",
+                "0.2548944,0.2500031",
+                "0.3006747,0.250003",
+                "0.3006842,0.2500033",
+                "0.2548876,0.2500033"
+              ],
+              "TextureOffset": [
+                "151.737,277.1931",
+                "191.9895,64.07086",
+                "115.6285,159.3607",
+                "313.9719,159.3822",
+                "59.20236,159.379",
+                "257.5498,159.4081",
+                "312.5511,159.3871",
+                "190.7164,159.4023",
+                "20.57416,159.3686",
+                "410.71,159.37",
+                "393.3004,159.3702",
+                "189.3179,159.3947",
+                "461.4122,159.3722",
+                "257.5677,159.3603",
+                "196.3904,159.3862",
+                "312.5642,159.3658",
+                "500.1336,159.3659",
+                "104.3533,159.3668"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "1b08db83-ebcd-4d3b-8376-a531ca8706e2"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "672.2076,108.9477,25.70301",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715162,-0.9961951,0.000001964904",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4281838,-0.03746026,-0.9029149",
+                "0.4281835,0.0374609,0.9029151",
+                "-0.08715096,0.9961951,0.0000001282059",
+                "0.08715919,-0.9961944,-0.0000004464869"
+              ],
+              "TextureVAxis": [
+                "-0.428184,-0.03745905,-0.9029149",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8994794,0.07868995,-0.4298194",
+                "0.8994817,0.07869778,-0.4298133",
+                "0.8994795,0.07868966,-0.4298193",
+                "0.8994797,0.07869645,-0.4298174"
+              ],
+              "TextureScale": [
+                "0.2500002,0.2500004",
+                "0.25,0.2499998",
+                "0.2500004,0.2499988",
+                "0.2499997,0.2499987",
+                "0.2499999,0.2499988",
+                "0.2500003,0.2499987"
+              ],
+              "TextureOffset": [
+                "199.7963,236.4673",
+                "72,2.642366",
+                "236.4674,151.3389",
+                "275.5303,151.3279",
+                "312.2015,151.3389",
+                "199.7758,151.3342"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "78a31ee1-f87e-4406-b6dd-78b311001673"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "670.4087,108.7903,26.56265",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717372,-0.9961931,-0.0000236195",
+                "1,-0.00001012205,-0",
+                "-0.001948099,0.9843633,0.1761391",
+                "0.1654178,0.8491129,0.5016414",
+                "0.3075924,0.5846012,0.7507519",
+                "0.4029467,0.2310881,0.8855689",
+                "0.4369512,-0.1576129,0.8855686",
+                "0.4044337,-0.5223042,0.7507541",
+                "0.3103451,-0.807493,0.5016384",
+                "0.1690142,-0.9697459,0.1761452",
+                "0.001958003,-0.9843623,-0.1761451",
+                "-0.1654197,-0.8491151,-0.5016372",
+                "-0.3075989,-0.5845984,-0.7507514",
+                "-0.4029456,-0.2310945,-0.8855678",
+                "-0.4369524,0.1576128,-0.8855681",
+                "-0.4044327,0.5223097,-0.7507508",
+                "-0.3103507,0.807494,-0.5016332",
+                "-0.1690138,0.9697461,-0.1761442"
+              ],
+              "TextureVAxis": [
+                "-0.4282278,-0.03766716,-0.9028854",
+                "0.0002273641,-1,0",
+                "0.8994831,0.07870515,-0.4298089",
+                "0.8994804,0.07867543,-0.42982",
+                "0.8994803,0.07869147,-0.4298172",
+                "0.8994713,0.07868259,-0.4298378",
+                "0.8994761,0.07869196,-0.4298261",
+                "0.8994697,0.07870767,-0.4298363",
+                "0.8994833,0.0786911,-0.4298111",
+                "0.8994834,0.07869238,-0.4298107",
+                "0.8994827,0.0787058,-0.4298095",
+                "0.8994809,0.07867392,-0.4298194",
+                "0.8994821,0.07868748,-0.4298142",
+                "0.8994855,0.07869076,-0.4298065",
+                "0.8994761,0.07869939,-0.4298247",
+                "0.899484,0.07868918,-0.4298098",
+                "0.8994836,0.07869416,-0.4298097",
+                "0.8994833,0.07869286,-0.4298107"
+              ],
+              "TextureScale": [
+                "0.250003,0.249899",
+                "0.2500082,0.2500163",
+                "0.2548952,0.2500033",
+                "0.3006725,0.2500033",
+                "0.3006753,0.2500033",
+                "0.2548997,0.2500032",
+                "0.2548957,0.2500032",
+                "0.3006761,0.2500031",
+                "0.3006724,0.2500032",
+                "0.2548952,0.2500033",
+                "0.2548971,0.2500032",
+                "0.300678,0.2500031",
+                "0.3007109,0.2500032",
+                "0.2548894,0.2500032",
+                "0.2548944,0.2500033",
+                "0.300675,0.250003",
+                "0.3006844,0.2500035",
+                "0.2548875,0.2500035"
+              ],
+              "TextureOffset": [
+                "199.7366,237.1795",
+                "191.9895,64.07086",
+                "77.10733,159.3647",
+                "299.2632,159.3861",
+                "64.68356,159.3785",
+                "286.8347,159.4077",
+                "360.2155,159.39",
+                "240.5427,159.4003",
+                "72.23627,159.3693",
+                "464.5358,159.37",
+                "431.8022,159.3651",
+                "204.0099,159.3837",
+                "455.9342,159.3749",
+                "228.2779,159.363",
+                "148.7317,159.3879",
+                "262.7375,159.3656",
+                "448.4763,159.3698",
+                "50.52528,159.3712"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "74600edd-833a-4e6b-a8ef-cfd2dfefd42f"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "673.2535,96.99334,25.70302",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715162,-0.9961951,0.000001964904",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4281838,-0.03746026,-0.9029149",
+                "0.4281835,0.0374609,0.9029151",
+                "-0.08715096,0.9961951,0.0000001282059",
+                "0.08715919,-0.9961944,-0.0000004464869"
+              ],
+              "TextureVAxis": [
+                "-0.428184,-0.03745905,-0.9029149",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8994794,0.07868995,-0.4298194",
+                "0.8994817,0.07869778,-0.4298133",
+                "0.8994795,0.07868966,-0.4298193",
+                "0.8994797,0.07869645,-0.4298174"
+              ],
+              "TextureScale": [
+                "0.2500002,0.2500004",
+                "0.25,0.2499998",
+                "0.2500004,0.2499988",
+                "0.2499997,0.2499987",
+                "0.2499999,0.2499988",
+                "0.2500003,0.2499987"
+              ],
+              "TextureOffset": [
+                "151.7963,236.4674",
+                "72,2.642366",
+                "236.4675,151.3384",
+                "275.5302,151.3279",
+                "360.2016,151.3386",
+                "151.7758,151.3342"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "a369cd34-b063-4ff6-a47e-215dbc6c2e2d"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "671.4546,96.83595,26.56265",
+              "Rotation": "0.393662,-0.3607248,-0.5712267,0.6233846",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717465,-0.9961931,-0.00002406455",
+                "1,-0.00001012205,-0",
+                "-0.0019481,0.9843633,0.1761391",
+                "0.1654166,0.8491134,0.5016411",
+                "0.3075924,0.5846012,0.7507519",
+                "0.4029467,0.2310881,0.8855689",
+                "0.4369512,-0.1576129,0.8855686",
+                "0.4044349,-0.5223047,0.7507532",
+                "0.3103463,-0.8074923,0.5016386",
+                "0.1690138,-0.9697461,0.1761442",
+                "0.001958172,-0.9843625,-0.176144",
+                "-0.1654197,-0.8491151,-0.5016372",
+                "-0.3075989,-0.5845984,-0.7507514",
+                "-0.4029456,-0.2310945,-0.8855678",
+                "-0.4369524,0.1576128,-0.8855681",
+                "-0.4044327,0.5223097,-0.7507508",
+                "-0.3103496,0.8074947,-0.5016329",
+                "-0.1690071,0.9697467,-0.1761474"
+              ],
+              "TextureVAxis": [
+                "-0.4282302,-0.03766519,-0.9028844",
+                "0.0002273641,-1,0",
+                "0.8994831,0.07870515,-0.4298089",
+                "0.8994809,0.07867423,-0.4298192",
+                "0.8994803,0.07869147,-0.4298172",
+                "0.8994713,0.07868259,-0.4298378",
+                "0.8994761,0.07869196,-0.4298261",
+                "0.8994694,0.07870712,-0.4298372",
+                "0.899483,0.07868984,-0.429812",
+                "0.8994833,0.07869289,-0.4298108",
+                "0.899482,0.07870555,-0.4298111",
+                "0.8994809,0.07867392,-0.4298194",
+                "0.8994821,0.07868748,-0.4298142",
+                "0.8994855,0.07869076,-0.4298065",
+                "0.8994761,0.07869939,-0.4298247",
+                "0.899484,0.07868918,-0.4298098",
+                "0.899484,0.07869544,-0.4298089",
+                "0.8994825,0.07869246,-0.4298123"
+              ],
+              "TextureScale": [
+                "0.250003,0.2498976",
+                "0.2500082,0.2500163",
+                "0.2548926,0.2500033",
+                "0.3006724,0.2500031",
+                "0.3006753,0.2500033",
+                "0.2548997,0.2500032",
+                "0.2548957,0.2500032",
+                "0.3006758,0.2500033",
+                "0.3006725,0.2500034",
+                "0.2548952,0.2500033",
+                "0.2548971,0.2500035",
+                "0.300678,0.2500031",
+                "0.3007109,0.2500032",
+                "0.2548894,0.2500032",
+                "0.2548944,0.2500033",
+                "0.300675,0.250003",
+                "0.3006842,0.2500033",
+                "0.2548875,0.2500033"
+              ],
+              "TextureOffset": [
+                "151.7346,237.1824",
+                "191.9895,64.07086",
+                "123.2773,159.3651",
+                "332.4497,159.3822",
+                "86.85635,159.3783",
+                "296.0189,159.4069",
+                "351.0307,159.3897",
+                "218.3668,159.4042",
+                "39.04935,159.3722",
+                "418.3635,159.3702",
+                "385.6284,159.37",
+                "170.8262,159.3825",
+                "433.7642,159.3744",
+                "219.093,159.363",
+                "157.9165,159.3879",
+                "284.9104,159.3656",
+                "481.6569,159.3661",
+                "96.68274,159.3722"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "f20f1b3d-ac1d-4ba5-921a-615aac581e54"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "667.9258,108.5731,16.67384",
+              "Rotation": "0.3689731,-0.3381015,-0.5849013,0.6383078",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715784,-0.9961945,-0.00000086504",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4971803,-0.04349697,-0.8665563",
+                "0.4971817,0.04349644,0.8665555",
+                "-0.08715299,0.996195,-0.000003087276",
+                "0.0871511,-0.9961951,-0.0000002005361"
+              ],
+              "TextureVAxis": [
+                "-0.4971927,-0.04350003,-0.866549",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8632519,0.07552081,-0.499092",
+                "0.8632485,0.0755205,-0.4990979",
+                "0.8632578,0.07552753,-0.4990807",
+                "0.8632592,0.07552093,-0.4990793"
+              ],
+              "TextureScale": [
+                "0.2500001,0.2499997",
+                "0.25,0.2499998",
+                "0.2499998,0.2500064",
+                "0.2500009,0.2500064",
+                "0.2499999,0.2500064",
+                "0.2499999,0.2500064"
+              ],
+              "TextureOffset": [
+                "199.7797,381.0394",
+                "72,2.642366",
+                "381.0052,254.1953",
+                "130.9973,254.2048",
+                "312.2073,254.1755",
+                "199.798,254.1753"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "eb86dea0-6945-4f93-a623-012c8eb3a216"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "666.1993,108.422,17.67202",
+              "Rotation": "0.3689731,-0.3381015,-0.5849013,0.6383078",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717756,-0.9961928,-0.00002164958",
+                "1,-0.00001012205,-0",
+                "0.01149763,0.9855399,0.1690532",
+                "0.2037469,0.8524748,0.481429",
+                "0.3649727,0.5896171,0.7205183",
+                "0.4706246,0.2370123,0.8499045",
+                "0.5046304,-0.1516872,0.8499054",
+                "0.4618123,-0.5172808,0.7205205",
+                "0.3487025,-0.8041374,0.4814245",
+                "0.1824794,-0.968568,0.1690476",
+                "-0.01150821,-0.9855406,-0.1690479",
+                "-0.2037536,-0.8524745,-0.4814267",
+                "-0.3649725,-0.5896204,-0.7205157",
+                "-0.4706253,-0.2370078,-0.8499053",
+                "-0.5046304,0.151687,-0.8499054",
+                "-0.4618123,0.5172813,-0.7205203",
+                "-0.348703,0.8041373,-0.4814245",
+                "-0.1824807,0.9685677,-0.1690482"
+              ],
+              "TextureVAxis": [
+                "-0.4972414,-0.04379508,-0.8665062",
+                "0.0002273641,-1,0",
+                "0.8632588,0.07553454,-0.4990779",
+                "0.86326,0.07552756,-0.499077",
+                "0.863254,0.0755133,-0.4990894",
+                "0.863249,0.07551721,-0.4990975",
+                "0.8632546,0.0755233,-0.499087",
+                "0.8632398,0.07554326,-0.4991095",
+                "0.8632477,0.0755168,-0.4990999",
+                "0.8632468,0.0755187,-0.4991011",
+                "0.8632587,0.07553495,-0.4990781",
+                "0.8632584,0.07552907,-0.4990795",
+                "0.8632535,0.07551382,-0.4990901",
+                "0.8632489,0.07551713,-0.4990977",
+                "0.8632549,0.07552321,-0.4990864",
+                "0.8632395,0.07554357,-0.49911",
+                "0.8632465,0.07551798,-0.4991017",
+                "0.8632445,0.07551794,-0.4991051"
+              ],
+              "TextureScale": [
+                "0.2500026,0.2499473",
+                "0.2500082,0.2500163",
+                "0.2548925,0.2500067",
+                "0.300671,0.2500066",
+                "0.3006742,0.2500064",
+                "0.254898,0.2500065",
+                "0.2548929,0.2500065",
+                "0.300676,0.2500066",
+                "0.3006737,0.2499923",
+                "0.2548952,0.2499921",
+                "0.2548964,0.2500065",
+                "0.3006757,0.2500067",
+                "0.3007116,0.2500065",
+                "0.2548911,0.2500065",
+                "0.254892,0.2500065",
+                "0.3006794,0.2500064",
+                "0.3006846,0.2499934",
+                "0.2548864,0.2499934"
+              ],
+              "TextureOffset": [
+                "199.7256,381.5894",
+                "191.9895,64.07086",
+                "49.48514,262.1717",
+                "232.4985,262.1713",
+                "476.7327,262.192",
+                "147.7722,262.2052",
+                "221.1425,262.187",
+                "140.5969,262.2213",
+                "5.416931,262.0783",
+                "436.868,262.0787",
+                "459.4744,262.1713",
+                "270.7855,262.1756",
+                "43.85388,262.1946",
+                "367.3272,262.2062",
+                "287.8011,262.1862",
+                "362.675,262.2199",
+                "3.284424,262.0917",
+                "78.1993,262.0971"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "a784be2b-3c4c-45d7-b191-6d36d60a1d3d"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACl2QCQ4CMQwDB7rAct/H/z9aNMKVIipVVWPHcTwDH2DN7yyBKf8Z2AEH4AQscuXUcwVWqbf0U7iP1Ft4/7PepWdTdFu4t3Dt3cZT771P8XgvnvfxKy5f7itaah+zi7h8uc9oq3GOprh8uZeys7ta9+8rpubo14saIwu9D8x5ztKjmPmYje/IzyxqVnp359GvLzWty1XvC8YUFhrEAQAA",
+              "Position": "668.9717,96.61873,16.67384",
+              "Rotation": "0.3689731,-0.3381015,-0.5849013,0.6383078",
+              "Positions": [
+                "-4.000111,-3.999992,0.5",
+                "3.999874,-3.999992,0.5",
+                "3.999882,4,0.5",
+                "-4.000103,4,0.5",
+                "-4.000103,4,-0.5",
+                "3.999882,4,-0.500001",
+                "3.999874,-3.999992,-0.500001",
+                "-4.000111,-3.999992,-0.5"
+              ],
+              "TextureCoord": [
+                "0.03124902,1.03125",
+                "-0.03125086,-0.00390625",
+                "0.03124908,0.96875",
+                "-0.03124994,-0.00390625",
+                "-0.0312508,0.96875",
+                "0.968751,-0.00390625",
+                "-0.03125086,1.03125",
+                "0.96875,-0.00390625",
+                "0.03124908,0.96875",
+                "1.031251,0.00390625",
+                "0.03124902,1.03125",
+                "0.03125,0.003906257",
+                "-0.03125086,1.03125",
+                "0.03124902,0.003906257",
+                "-0.0312508,0.96875",
+                "1.03125,0.00390625",
+                "1.03125,-0.00390625",
+                "-0.03125086,0.00390625",
+                "0.96875,0.00390625",
+                "1.031251,-0.00390625",
+                "-0.03124994,0.003906257",
+                "0.03124902,-0.00390625",
+                "0.03125,-0.00390625",
+                "0.968751,0.003906257"
+              ],
+              "TextureUAxis": [
+                "0.08715784,-0.9961945,-0.00000086504",
+                "1,0.00000003633562,-0.00000001235582",
+                "-0.4971803,-0.04349697,-0.8665563",
+                "0.4971817,0.04349644,0.8665555",
+                "-0.08715299,0.996195,-0.000003087276",
+                "0.0871511,-0.9961951,-0.0000002005361"
+              ],
+              "TextureVAxis": [
+                "-0.4971927,-0.04350003,-0.866549",
+                "-0.0000001128626,-0.3219454,-0.9467583",
+                "0.8632519,0.07552081,-0.499092",
+                "0.8632485,0.0755205,-0.4990979",
+                "0.8632578,0.07552753,-0.4990807",
+                "0.8632592,0.07552093,-0.4990793"
+              ],
+              "TextureScale": [
+                "0.2500001,0.2499997",
+                "0.25,0.2499998",
+                "0.2499998,0.2500064",
+                "0.2500009,0.2500064",
+                "0.2499999,0.2500064",
+                "0.2499999,0.2500064"
+              ],
+              "TextureOffset": [
+                "151.7797,381.0394",
+                "72,2.642366",
+                "381.0052,254.1953",
+                "130.9973,254.2043",
+                "360.2074,254.1755",
+                "151.798,254.1748"
+              ],
+              "MaterialIndex": [
+                2,
+                0,
+                2,
+                2,
+                2,
+                2
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat",
+                "materials/dev/primary_red.vmat",
+                "materials/dev/primary_blue.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "8e92d7d3-2a5e-4524-8f7f-4ca72b4b23b6"
+            },
+            "Property": "Mesh",
+            "Value": {
+              "Topology": "H4sIAAAAAAAACk2Uh1IVURAF2wiKCkgGMWPOOWfMOWf9/5/A6rKpWqq2ePPmvL0z02fufuAvsJv/fxuBzcBWYBTYDuwAdgET6aaBWWAeWAT2AHuB/cBB4DBwBDgGnABOAWeAc8AF4BJwBbgG3ABuAXeADT3WMPz73dl+v6n6GGh/AuPltlT7sJfv1e/nkfoivdqvwM5+u62eSa/2czNQO9Zn0qv92PcjvcezSK/2fbrR6rQX0qt927k+kwMWo2lfD1hMNX/Sq33Zu6xhJjakV/t8UMtc3Eiv9mm9WPtCTEmv9nGzsNaleJNe7aNmaW/LeYH0au8NmO4bcB1P+7C+fQ7kobW1tbWJPPWg39vrofxlfjLt/c53Nit5z/zutKvV7yyO5kvzU2mf1L+zO55nzU+nfdb8nNXJ/Gx+Ju2L5u9sT+d187NpX8XPWZ5tD8zPpX0TS2d/vh0xP5/2XSyd9cX2x/xC2g+xlM3ldsv8YtpPsZTF1fbO/FLaL7GU3fV20vyetN9iKaub7av55bQ/Yinb2+2y+b1pf+Vjn7sxNb8v7Z8B//t5YGNn6p2lgb/0ynL5ibxxd7A3q3lkUz3pzYX4T8V6pXhH3p6L/3SsjxaPtRsz8Z+J9fHi7e3WVPxnY32yeFu7ORn/uVifLh5tt8fTzsf6bPFId8POzlqI9fnird0tYz2Lsb5YbA/eTb7LXp2jrPWIsTPwblu/t+Qtaz1i7Ay9G32PLJy7rPWIsQy8W9fZyFvWesTY+9m72f+ykres9cj6Hejd7vfOyN/rC5nqA1nKSybO3dk6P2fkHOzVfqzZujzb9/8DLrZO2tQGAAA=",
+              "Position": "667.2452,96.46768,17.67202",
+              "Rotation": "0.3689731,-0.3381015,-0.5849013,0.6383078",
+              "Positions": [
+                "-1.525158,3.682068,-0.5036411",
+                "-2.81813,2.81813,-0.5036411",
+                "-3.68206,1.525162,-0.5036411",
+                "-3.985439,0,-0.5036411",
+                "-3.68206,-1.525162,-0.5036411",
+                "-2.818134,-2.81813,-0.5036411",
+                "-1.525158,-3.682068,-0.5036411",
+                "0,-3.985435,-0.5036411",
+                "1.525158,-3.682076,-0.5036411",
+                "2.818134,-2.81813,-0.5036411",
+                "3.68206,-1.525162,-0.5036411",
+                "3.985439,0,-0.5036411",
+                "3.68206,1.525162,-0.5036411",
+                "2.818134,2.81813,-0.5036411",
+                "1.525158,3.682068,-0.5036411",
+                "0,3.985435,-0.5036411",
+                "0,3.985435,-1.496359",
+                "1.525162,3.682068,-1.496359",
+                "2.818134,2.81813,-1.496359",
+                "3.68206,1.525162,-1.496359",
+                "3.985439,0,-1.496359",
+                "3.68206,-1.525162,-1.496359",
+                "2.818134,-2.81813,-1.496359",
+                "1.525162,-3.682068,-1.496359",
+                "0,-3.985435,-1.496359",
+                "-1.525162,-3.682068,-1.496359",
+                "-2.818134,-2.81813,-1.496359",
+                "-3.68206,-1.525162,-1.496359",
+                "-3.985439,0,-1.496359",
+                "-3.68206,1.525162,-1.496359",
+                "-2.81813,2.81813,-1.496359",
+                "-1.525162,3.682068,-1.496359"
+              ],
+              "TextureCoord": [
+                "-0.02201676,0.9779624",
+                "1.003464,0.003934696",
+                "-0.02876613,0.9880669",
+                "0.9864355,0.003934711",
+                "-0.03113618,0.9999871",
+                "0.9910524,0.003934711",
+                "-0.02876604,1.011908",
+                "0.9970323,0.003934711",
+                "-0.02201661,1.022015",
+                "1.003464,0.003934652",
+                "-0.0119153,1.028769",
+                "0.9864354,0.003934696",
+                "-0.0000001192093,1.031143",
+                "-0.008947372,0.003934711",
+                "0.01191509,1.028774",
+                "-0.002968132,0.003934681",
+                "0.02201635,1.022023",
+                "0.003463387,0.003934696",
+                "0.02876565,1.011919",
+                "-0.01356447,0.003934696",
+                "0.03113574,0.9999987",
+                "-0.008947551,0.003934711",
+                "0.02876556,0.9880778",
+                "-0.002967894,0.003934711",
+                "0.02201617,0.9779707",
+                "0.003463537,0.003934696",
+                "0.01191485,0.9712163",
+                "-0.01356469,0.003934696",
+                "-0.0000003874302,0.968843",
+                "0.9910525,0.003934696",
+                "-0.01191553,0.9712118",
+                "0.9970312,0.003934696",
+                "0.005935907,0.9856693",
+                "1.002968,0.0116903",
+                "0.01096812,0.9890317",
+                "-0.003463313,0.0116903",
+                "0.01433051,0.9940639",
+                "0.01356477,0.0116903",
+                "0.01551127,0.9999997",
+                "0.008947492,0.01169032",
+                "0.01433063,1.005935",
+                "0.002967954,0.01169032",
+                "0.0109683,1.010967",
+                "-0.003463149,0.0116903",
+                "0.005936146,1.01433",
+                "0.01356477,0.0116903",
+                "0.0000002980232,1.01551",
+                "0.008947313,0.01169029",
+                "-0.00593552,1.01433",
+                "0.002967954,0.01169032",
+                "-0.01096773,1.010967",
+                "0.9965366,0.0116903",
+                "-0.01433012,1.005935",
+                "1.013564,0.01169026",
+                "-0.01551089,0.9999991",
+                "1.008948,0.01169032",
+                "-0.01433024,0.9940633",
+                "1.002968,0.01169032",
+                "-0.01096788,0.9890313",
+                "0.9965367,0.01169032",
+                "-0.005935758,0.985669",
+                "1.013565,0.0116903",
+                "0.00000002980232,0.9844885",
+                "1.008947,0.0116903",
+                "0.9910524,0.0116903",
+                "-0.003463283,0.003934696",
+                "1.002968,0.003934696",
+                "0.9970312,0.0116903",
+                "-0.01356469,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463537,0.0116903",
+                "0.008947492,0.003934711",
+                "-0.002967894,0.01169032",
+                "0.002967954,0.003934711",
+                "-0.008947551,0.01169032",
+                "-0.003463149,0.003934696",
+                "-0.01356447,0.0116903",
+                "0.01356477,0.003934696",
+                "0.003463447,0.0116903",
+                "0.008947253,0.003934681",
+                "-0.002968132,0.01169029",
+                "0.002967954,0.003934711",
+                "-0.008947402,0.01169032",
+                "0.9965367,0.003934696",
+                "0.9864354,0.0116903",
+                "1.013564,0.003934652",
+                "1.003464,0.01169026",
+                "1.008948,0.003934711",
+                "0.9970323,0.01169032",
+                "1.002968,0.003934711",
+                "0.9910524,0.01169032",
+                "0.9965367,0.003934711",
+                "0.9864355,0.01169032",
+                "1.013565,0.003934696",
+                "1.003464,0.0116903",
+                "1.008947,0.003934696"
+              ],
+              "TextureUAxis": [
+                "0.08717756,-0.9961928,-0.00002164958",
+                "1,-0.00001012205,-0",
+                "0.01149763,0.9855399,0.1690532",
+                "0.2037469,0.8524748,0.481429",
+                "0.3649727,0.5896171,0.7205183",
+                "0.4706246,0.2370123,0.8499045",
+                "0.5046304,-0.1516872,0.8499054",
+                "0.4618123,-0.5172808,0.7205205",
+                "0.3487025,-0.8041374,0.4814245",
+                "0.1824794,-0.968568,0.1690476",
+                "-0.01150821,-0.9855406,-0.1690479",
+                "-0.2037536,-0.8524745,-0.4814267",
+                "-0.3649725,-0.5896204,-0.7205157",
+                "-0.4706253,-0.2370078,-0.8499053",
+                "-0.5046304,0.151687,-0.8499054",
+                "-0.4618123,0.5172813,-0.7205203",
+                "-0.348703,0.8041373,-0.4814245",
+                "-0.1824807,0.9685677,-0.1690482"
+              ],
+              "TextureVAxis": [
+                "-0.4972414,-0.04379508,-0.8665062",
+                "0.0002273641,-1,0",
+                "0.8632588,0.07553454,-0.4990779",
+                "0.86326,0.07552756,-0.499077",
+                "0.863254,0.0755133,-0.4990894",
+                "0.863249,0.07551721,-0.4990975",
+                "0.8632546,0.0755233,-0.499087",
+                "0.8632398,0.07554326,-0.4991095",
+                "0.8632477,0.0755168,-0.4990999",
+                "0.8632468,0.0755187,-0.4991011",
+                "0.8632587,0.07553495,-0.4990781",
+                "0.8632584,0.07552907,-0.4990795",
+                "0.8632535,0.07551382,-0.4990901",
+                "0.8632489,0.07551713,-0.4990977",
+                "0.8632549,0.07552321,-0.4990864",
+                "0.8632395,0.07554357,-0.49911",
+                "0.8632465,0.07551798,-0.4991017",
+                "0.8632445,0.07551794,-0.4991051"
+              ],
+              "TextureScale": [
+                "0.2500026,0.2499473",
+                "0.2500082,0.2500163",
+                "0.2548925,0.2500067",
+                "0.300671,0.2500066",
+                "0.3006742,0.2500064",
+                "0.254898,0.2500065",
+                "0.2548929,0.2500065",
+                "0.300676,0.2500066",
+                "0.3006737,0.2499923",
+                "0.2548952,0.2499921",
+                "0.2548964,0.2500065",
+                "0.3006757,0.2500067",
+                "0.3007116,0.2500065",
+                "0.2548911,0.2500065",
+                "0.254892,0.2500065",
+                "0.3006794,0.2500064",
+                "0.3006846,0.2499934",
+                "0.2548864,0.2499934"
+              ],
+              "TextureOffset": [
+                "151.7261,381.5754",
+                "191.9895,64.07086",
+                "95.65933,262.1722",
+                "265.6832,262.1713",
+                "498.9055,262.1913",
+                "156.9568,262.2047",
+                "211.9577,262.1867",
+                "118.4244,262.222",
+                "484.2327,262.0778",
+                "390.6943,262.0782",
+                "413.3009,262.1716",
+                "237.6014,262.1756",
+                "21.68396,262.1939",
+                "358.1426,262.2057",
+                "296.9858,262.186",
+                "384.8474,262.2206",
+                "36.46759,262.0912",
+                "124.3746,262.0966"
+              ],
+              "MaterialIndex": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "EdgeFlags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "Materials": [
+                "materials/dev/reflectivity_30.vmat"
+              ]
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
               "IdValue": "4b30bd59-840f-4f70-b50d-48978cd79fc8"
             },
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
-              "Position": "672.9337,18.66741,23.36232",
+              "Position": "672.9338,18.66741,23.36232",
               "Rotation": "0,0,-0.6755902,0.7372773",
               "Positions": [
                 "-32,16,16",
@@ -3472,12 +6003,12 @@
                 "0.2749716,0.3407758"
               ],
               "TextureOffset": [
-                "86.79149,32.00485",
-                "352.2662,127.9069",
-                "128.0396,93.44942",
-                "389.682,104.8697",
-                "129.9877,93.44925",
-                "203.5062,34.88806"
+                "86.79148,32.00491",
+                "352.2661,127.9071",
+                "128.0398,93.44942",
+                "389.6818,104.8697",
+                "129.9878,93.44925",
+                "203.5062,34.88818"
               ],
               "MaterialIndex": [
                 1,
@@ -3541,29 +6072,13 @@
             },
             "NewParent": {
               "Type": "GameObject",
-              "IdValue": "0a759435-e0ae-41b7-adbb-61c8719fd972"
-            },
-            "NewContainerProperty": "Children",
-            "IsNewContainerArray": true,
-            "NewPreviousElement": {
-              "Type": "GameObject",
               "IdValue": "8248d39b-ac71-4d11-b8c3-93fc876db13b"
-            }
-          },
-          {
-            "Id": {
-              "Type": "GameObject",
-              "IdValue": "e6d01b65-1972-40d3-97a9-697564a3f22e"
-            },
-            "NewParent": {
-              "Type": "GameObject",
-              "IdValue": "0a759435-e0ae-41b7-adbb-61c8719fd972"
             },
             "NewContainerProperty": "Children",
             "IsNewContainerArray": true,
             "NewPreviousElement": {
               "Type": "GameObject",
-              "IdValue": "d0a21871-9efe-41f0-b5b4-b15394646d23"
+              "IdValue": "c9cc7b22-25f5-4162-b08f-0215e371c49f"
             }
           }
         ]
@@ -3602,69 +6117,7 @@
         "217f6321-4ebb-4746-b230-af1cfd38abf4": "d9fc8c90-3b0b-4a71-a3c8-59d7011773dc",
         "f8416838-81ee-49ad-886d-246e7da37a0c": "f5b8ffa8-6386-43e5-ae97-a806270bd7d1",
         "f420609d-e306-445a-835b-af7686bde27e": "6947db23-7fc4-4c5f-8eda-3056cd289eba",
-        "aedab314-863f-432b-8891-ee94dbd56534": "485a22a7-5d3c-4fe2-9b92-3018fe40e056",
-        "5526f623-eb51-4914-b367-020ac9ffd4fe": "e09b8fb7-2320-486f-9fd0-f03aaae899bc",
-        "4bd70e26-e7fb-4a22-a9bf-a09c688ccefb": "c6cf0e22-0124-4165-bd91-8188135398dc",
-        "5242bd69-d689-4ffc-8a5d-aff041a4a917": "4914567d-095e-486d-b523-d6dd3a5814c4",
-        "faccba28-9c20-4f03-a110-70b971bfd5bc": "4961281e-ce1a-42b5-af1d-316acb942753",
-        "c9b1936d-61c5-47f4-a690-883259f2018a": "9456ae81-2135-42d7-be7c-afc20223c89b",
-        "6f347e6d-0d0c-465c-b62b-e86c9397fcb2": "02251135-7410-40cd-9783-c7ddcde7b3cd",
-        "6599e66e-7bcd-4334-9563-53960ba5de52": "5289af5e-474f-446e-800c-7c5a3cb05b2c",
-        "78cb9bfb-21a2-4a96-a8d3-32a9014a94b4": "0ae14300-c65c-4824-b064-9f4bff063d64",
-        "1b5a78ff-a9cf-49a9-aa8c-b37ff26c7d4a": "33b16ef0-acb0-411d-8a07-f540abb175ba",
-        "24294bb3-69ed-48c4-bb7a-4521fbd49ba0": "7eddc561-4c72-4f6e-a42b-9da2d85ac2c1",
-        "9f607a83-5060-4a21-8357-6e96da47b52a": "fb8f2e4a-636b-49ac-a729-019e753e9cdc",
-        "2b24d2e6-5a82-4924-a75f-394b4292f104": "4c023efd-4004-4694-9523-7aaee6e43003",
-        "7fd04848-2c11-4648-a956-1c01d8af537b": "7b27a694-1593-4428-b99c-787ec722cc0f",
-        "11abd85a-77c1-4a81-8f10-7fcd1956e635": "d47add8d-c678-4acd-95ea-1e257cfec547",
-        "166ac568-61c0-4481-99d9-f102b60de654": "8de6c000-d962-4171-b218-b8f9d32b4706",
-        "d441c304-4b2b-419d-9f5d-de8fe34c2c8d": "a9ebec57-62b5-447f-b54e-cd41a7f0b91c",
-        "203ffad1-507a-4387-be2a-915fba5fb7dc": "4c9f9eb6-df16-48df-92cd-5f5494468936",
-        "33068bb1-f884-497d-a030-5b05f80ee6d0": "d6996f71-d14e-4b70-8ed8-c6251242684a",
-        "0dbae55d-d0cc-4b95-afff-ac8b7554c28d": "802d786e-3c42-46ef-bad9-04f631181a21",
-        "92eef500-917d-449a-a185-d1c61a0e73f8": "59dcffda-ccd4-48b6-964c-f08b18f73a19",
-        "b7d81bbf-554e-4232-ba2e-b355781948d4": "3848feb0-16cc-4fcd-babe-acbc6a474787",
-        "eeb0ae3d-ceee-4f89-b33f-d8b04ba5da2a": "cf86f12f-a302-4eda-ac10-5f5dbe6c706a",
-        "66d96193-ad44-439c-b59b-5186d9032b07": "f80483e1-e900-413b-8dfc-9b9729fef393",
-        "d0267c5d-7e82-4b00-9564-f9574a25a02e": "b35f0292-e583-4035-bb28-e97ddbb9a80d",
-        "6617dafd-2e20-4fc2-975d-8b419a4abea8": "d30a2dec-8894-4318-87f3-bdb7a4188ab4",
-        "a169120b-baff-425c-8437-9bd9258a27c8": "1611de03-19fd-459e-bb57-b6c8c21ad3f6",
-        "4de39355-4072-4a2c-9fff-da2488a7f03c": "f04be940-a7d9-4025-b5c1-1330e23d952b",
-        "a0d93b20-0472-4e85-886d-9bd7f8a0972a": "a74e36d8-20a8-44cf-bee1-01ea482c0d6f",
-        "f88f51ee-f4d6-4385-938b-41a8ba27490c": "794db996-5089-4011-8474-29d1ae4a5393",
-        "b35fd27c-d5c1-4894-8b95-642e04ff19c7": "4e21ed4e-510d-40b9-b478-c722297d5ebd",
-        "267071e7-e80a-4a56-bead-24b61cd91c4b": "0dfbc490-9087-45a2-b284-b08fd127f7a1",
         "557e96cc-1b2c-4654-83e2-c97b44b6059a": "f88b5585-dd56-49ad-8295-ba0c1fa2d9dc",
-        "b46d6b90-cc86-405a-8fa2-f56038bdfe15": "f77b7c4d-6181-4bf5-8ad8-5e8f29c3ba33",
-        "2324e7e3-854c-4310-99f1-2a11dbaf1103": "274221d3-6a18-4ac7-a0b5-67c76e20602e",
-        "a625e9d1-b426-4098-9048-e29ef46b1703": "d7f6bd15-219e-406a-8691-cfda41fd9615",
-        "602ce656-cd62-4a4e-8119-cea7715e38df": "3d745cee-009c-47ba-b3eb-c40384bbacbd",
-        "1a3f6594-e5a8-4365-9062-2b7119cd0521": "234ceb93-f07b-4f18-94ff-22133c8b8ed5",
-        "c034886b-a516-48c5-926b-8bb062010d12": "75d9e86e-14a8-46b8-b473-2733efba5cb1",
-        "5e8440c9-1e73-443a-9ef1-914867ff624f": "9cce8884-3b98-4dc4-9b7a-c0392e5ec2d0",
-        "62318e2d-2948-4f5b-800c-a0280c413c0f": "942cae3f-ebc4-4477-a958-27a474b54e34",
-        "36b52ae8-7fd3-40f4-9ee6-ae2520e8441c": "624ecc1a-1fc9-4955-bfb7-bf3079244b19",
-        "5a63a5bb-bbd2-4c62-8404-30efda86a6a1": "773e6dc0-c069-476e-bc9b-6884d08c4a1e",
-        "d4e1f4de-d08e-4abe-bcc9-c487c7dd8de9": "a9b64c2f-697b-471a-8994-07fabd9a8e68",
-        "de70ec3b-d830-4e28-b1d3-4b8d091bc830": "47b52bd5-121d-45cf-8e97-c7adb70f9a8c",
-        "c4134dfe-3ddc-4f98-ae53-83a8f0374fe2": "62b33ce7-827c-40fd-87e9-41d31b8255cd",
-        "da01188b-81c1-48fe-9447-83397e5ec745": "56969e1f-54b1-420c-964e-c66323ba26dc",
-        "7ede9b39-c2e0-4fe2-b8b7-75ae09874abf": "1711e0a6-ca46-4907-b647-29dee5925e50",
-        "3391a26e-6d39-487d-9e74-73795ac511d4": "57b8d596-8db5-4827-87cf-297de0d2fea9",
-        "eb8f9931-8217-4422-afd3-3d7b842c0462": "200f17db-c3b6-4f1f-8e1b-201cf6eef1ba",
-        "2b54d909-68b1-4440-aa43-972e452b305a": "e8e68013-0b5b-4253-b7d4-e75f70718f33",
-        "2ad49d8b-97bc-4bf7-a545-9c3a016a79d2": "4d0c6e73-782b-49dd-a0c5-4325827136f2",
-        "88804e13-eb0d-4f73-8377-7a2bd0c036ab": "8d276e4b-834e-4d9c-a79b-ce1508c751a3",
-        "b7527624-dd7c-4f7c-9cd4-535246002449": "edcae94e-4b4a-4262-8aa5-d416e0245679",
-        "5bd3acf0-f759-4a8d-82fc-c1847daa4794": "557e30cb-ac75-4668-b32a-bf883aec22b1",
-        "f4b731b0-96e7-4710-a003-9e79197803db": "f67d18b3-595d-4eff-ad20-822760c861b2",
-        "a17bfa94-b5c5-4c85-9e6c-f87a94224e83": "46752408-d3f1-41b9-8fa5-111168bce8fa",
-        "b4d4f5d8-d155-4e23-9e3e-0e449cf994b4": "e18cd8e6-3354-43b8-8e53-62262e2d8e49",
-        "b1c31a3b-7a36-404a-962f-0008b5008c52": "e33deb4a-3678-4972-924f-24e7fb9cb977",
-        "7d0e7095-db78-473e-b4f5-d8a4d78700e5": "60c604a5-b5e8-41c7-b73b-cf795c742553",
-        "dcb59a4a-ebf9-447f-8eed-5784a6dc33f1": "32e91cbc-2454-483f-b957-be436c19e2fd",
-        "25d220f1-169c-450a-9740-0da608643677": "f67393c7-8758-4fd3-b6c1-a04f423ab336",
-        "3c6c39a1-6dff-4a76-bd05-add414897e76": "7181a324-6cba-4b44-8476-22b56f9a31bb",
         "d0a21871-9efe-41f0-b5b4-b15394646d23": "fa01aa23-973c-4203-a252-4d78e0d0d10f",
         "b4fbe445-579c-49c6-859c-baaf20156023": "0f3c9e83-629b-4c56-bc44-2d3e8c5073d6",
         "e6d01b65-1972-40d3-97a9-697564a3f22e": "ce7091b3-878b-4c07-8d9a-1ffa8826a812",
@@ -3699,291 +6152,68 @@
         "1ea64015-410a-483a-bc85-ef6536d3819d": "9a1f0f73-0fb6-4aeb-b0e1-a9cdd86bedac",
         "dc50a13d-c82a-46b8-b63f-53e004d2557d": "bf0b7e04-4682-4731-8205-b5cec602a546",
         "350b48d7-3e57-45da-8137-180f1265c782": "89cb74f4-336c-47a7-b404-c7ce4e6cc0a2",
-        "6a044502-6c2d-4090-ba18-9d5da1eb13d6": "48d63ffd-238f-43db-b419-8df44935fe21"
+        "6a044502-6c2d-4090-ba18-9d5da1eb13d6": "48d63ffd-238f-43db-b419-8df44935fe21",
+        "9b9e53b2-3ece-4a3d-8ff8-7eff45f889ab": "33141b22-a035-49ad-8761-1df531f98c91",
+        "740e066b-b1f2-495b-9a48-4fc69c291574": "9ec7425b-26cb-498d-8e3f-ed7cc894c2d2",
+        "69dd9e0d-f91d-43ec-b717-52bfdd3baaa0": "e293c333-e729-4d18-9ed5-cd86b8f59aff",
+        "45bf062b-45a7-45e7-ab86-98090eaf13ed": "5877f04a-8905-4bfa-9762-f2fef49f425b",
+        "4d789c7a-534a-4542-bcf4-08f89eab027c": "e3250214-9f54-425b-97b2-8e0d04a11cd6",
+        "7ed7768e-5023-465a-ab83-45c3aeaf5cca": "89d941ec-904c-4386-a3bc-56a5eea4d89a",
+        "0723954c-7816-4de2-975e-d3a8c1ca45ee": "0cb198af-e828-4017-b969-e037c3648623",
+        "343be2a2-3a73-4a91-ae8f-1baf48e25f1e": "2b3d83ce-ce95-4b0f-b3e4-4c328b4664cf",
+        "d8926b5a-86f7-4963-8d44-48246bb17d55": "3051b428-cf67-471a-9d8b-f8b9025497a9",
+        "a533497d-f75d-4840-b2a7-babef09dfab7": "95fa235a-1743-4e54-8215-70fa3836d45b",
+        "21abb901-bab6-4b3e-8b08-6a4005c32cd9": "a895267f-c2e1-46cd-9592-63f3d9e5bcbc",
+        "a1802377-22c7-4235-9460-d04a638a6826": "c51653ff-e748-4a5d-8105-39bec5c214b8",
+        "7cef12e7-7db7-45eb-b73a-127b202ffbc6": "a725b264-8c2f-44ce-a8e9-d4a63c064247",
+        "78a31ee1-f87e-4406-b6dd-78b311001673": "436bb752-4ef5-45dc-a515-f8aafd30d6a4",
+        "1b08db83-ebcd-4d3b-8376-a531ca8706e2": "5611da13-100d-489d-8599-24da567ed35f",
+        "39865b44-28be-425e-9859-c2009dc063a9": "ccff67f8-d848-4c47-bde4-659ef2d26a0c",
+        "18cc652e-5362-44bd-84e1-d3c4fadc50db": "79fae3fe-699c-4e85-97f8-8b39e593bf10",
+        "74600edd-833a-4e6b-a8ef-cfd2dfefd42f": "a7925e12-2a23-4f46-bf34-07adfbd738cf",
+        "a369cd34-b063-4ff6-a47e-215dbc6c2e2d": "3a382ef6-6a85-4afd-9ee6-e77f0536d218",
+        "12e5273d-59b5-4bd6-9647-e93855a7d54d": "fa496fd6-bf49-4a72-aa95-ec9fae5430aa",
+        "7897a8c2-3154-40a0-9930-5d9cb81dd76a": "57372fa7-2f12-4840-a319-b98a45f10d71",
+        "f3d5a96e-228e-412c-bac3-1707b77b9cf5": "76fc031c-b169-4316-8166-4ae58a070d7e",
+        "f20f1b3d-ac1d-4ba5-921a-615aac581e54": "115444a3-a7e7-45db-8287-197a93ef969a",
+        "0923ad0d-1a21-43a2-ad91-8ddf57f88808": "4eded934-a6b8-4919-9484-981e05f3369b",
+        "eb86dea0-6945-4f93-a623-012c8eb3a216": "cdfc9826-39f6-4271-a13f-8076d7303401",
+        "8c84f1a7-8353-4e45-ace4-46ff50944718": "23724c1b-9b78-481a-a8c4-872647f1f65e",
+        "56cb834d-e2ac-47de-a28f-fe171940820d": "93f9e7d5-2736-4940-a6b0-9076eb54b070",
+        "8e92d7d3-2a5e-4524-8f7f-4ca72b4b23b6": "dda848b7-7f01-4e57-93a9-9fa3998aa9d4",
+        "a784be2b-3c4c-45d7-b191-6d36d60a1d3d": "b861981d-bea0-4579-8a95-ae81d9e3291f",
+        "d464ed63-4dca-4475-a4bc-6f25bbe60aa7": "195bb988-f240-4a2d-be81-12e589db0714",
+        "cfb1035a-63c8-4390-8dae-939c90f9983e": "1e69d91a-84f4-47c8-91bf-89633e72e5ab",
+        "4449d620-f3a3-4aba-a3ef-1577db88293f": "57877ab0-ebf0-4ae5-9be7-0c4bfd8da486",
+        "b774581e-a1b2-4925-b9bb-dec734bc0001": "d85148fc-8793-4c35-b644-8b2f7bf417b3",
+        "ad275b55-519b-425c-8758-a98071e7c61c": "36fcb1fd-027f-4d07-9913-2d7abf7ed235",
+        "4d4c17c7-3119-4983-a5c1-f3832cb862af": "aba1b04c-6f43-42b1-8221-81ed470b46a8",
+        "5c91bbc5-9f42-4599-9d2c-29c34baae925": "3911c606-2b6d-408f-9980-bab5227b250d",
+        "1f5c0a67-80d1-419d-926e-f696e10560a1": "739a3554-c4be-46fb-bd6d-b58b6dfa699f",
+        "f285badf-923f-41de-9206-b204b6efc3ec": "602591de-2419-494a-ad41-bd27447c8170",
+        "5401ffc1-330f-4104-ae67-796a420673b0": "5aeae497-7bb1-4d4e-bd94-b28d4cb07027",
+        "f53118fa-c7f7-4604-9290-721de79392b4": "8b587bae-0bbf-48f5-8f49-c19af725c72b",
+        "8df1834e-93d2-430a-89c0-0ed55d58517e": "912232fd-cb74-4349-919e-2e8171c6359a",
+        "d4d14064-0c53-464a-89a3-7bf17092ac98": "c5b230b2-de63-449d-b794-dbd67e432f35",
+        "a949f96f-5f6d-4206-bfe3-82b11effb1b7": "2d3c8e71-3829-40a3-bc1a-ed1ce3ee2b5d",
+        "691809e8-e929-4247-8ecf-e38900d26c76": "acef24a7-f271-4324-9414-d01158eb7b7b",
+        "1a2f92f3-3ee8-4e68-92dc-f875ca73a907": "f7580c12-366b-47ab-8371-2f3a102ca021",
+        "a8649e99-f0e0-4e36-91f0-8fddef585540": "7ca602f5-2c03-44fc-bd94-0afbd4645723",
+        "5f9d5aed-3b56-441b-ba55-119ac26ea47b": "1e9b338a-eb4f-4b7d-9187-7a848fee5796",
+        "2274e585-5fbb-47c5-95c5-fc9f3e5c19af": "1eaab5ce-59c6-4448-9f21-5e8381b78781",
+        "69d2ace7-c183-480a-9a80-c14a40a547e6": "1aebbd9d-1b96-4360-91d6-271575eb45e4",
+        "e2eb1569-9f61-45f5-9df8-7437b7b80077": "20af9cf3-932d-4b10-a758-0be561a841f1",
+        "fc551128-f841-4471-9a3f-cf1f1bd1be2e": "bb9f402d-328c-4afc-9c5f-9e91401c8208",
+        "cc9665b9-f63c-48d1-8374-63f8e8c949b3": "e31bb0f7-bf40-4bc6-8f7c-6042e7a9c6d1",
+        "be4299ac-6894-44d1-a250-e67a9659733c": "ed334214-b550-4500-8700-f68575077c8a",
+        "eb359b83-902c-4e36-94bc-f9caed4d19ba": "e4f59aec-1061-4e6a-a5a3-2cd942ff1b26",
+        "4a27e0c2-2bca-4973-957a-6c692d3dbf81": "6135bf0a-b243-4fa6-a86c-a3af6cb7bbc6",
+        "9a34dfda-8d46-42de-97fa-f733e24677d2": "b24b906b-ca58-4849-8c1c-6e177d1d7b9f",
+        "9c2d5c07-1fb9-458b-98d5-7ffc6ee52a08": "9bb00433-a73e-4250-b828-71022c861600",
+        "0f1fa4dd-5195-4ca2-9fa9-eb1ae12151a4": "9dc0e1df-725e-4511-84fa-294a55ff6f6c",
+        "56d7d761-dab2-4624-96b8-47ed3b6a2dd9": "190cfbd9-7a0d-44c7-884b-1491c856b3b8",
+        "0d6d4cab-c4c1-4abb-829b-dde421421324": "60b9af58-f7b4-465f-b05b-29538a3de4dc"
       }
-    },
-    {
-      "__guid": "5d918e69-a0a3-4ec5-8b99-9f70eaaf5cf9",
-      "__version": 1,
-      "Flags": 0,
-      "Name": "Player Controller",
-      "Position": "85.18504,155.58,13.50966",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "OwnerTransfer": 1,
-      "Components": [
-        {
-          "__type": "Sandbox.PlayerController",
-          "__guid": "76ee2584-327d-4531-8a7d-5781bd62215f",
-          "__enabled": true,
-          "AccelerationTime": 0,
-          "AimStrengthBody": 1,
-          "AimStrengthEyes": 1,
-          "AimStrengthHead": 1,
-          "AirFriction": 0.1,
-          "AltMoveButton": "run",
-          "Body": {
-            "_type": "component",
-            "component_id": "7e02b8d6-96dc-4d35-862e-e43d991bc2a6",
-            "go": "5d918e69-a0a3-4ec5-8b99-9f70eaaf5cf9",
-            "component_type": "Rigidbody"
-          },
-          "BodyCollisionTags": null,
-          "BodyHeight": 72,
-          "BodyMass": 500,
-          "BodyRadius": 16,
-          "BrakePower": 1,
-          "CameraOffset": "256,0,12",
-          "ColliderObject": {
-            "_type": "gameobject",
-            "go": "d6313a76-65c5-41b5-8bcb-3fa7b6dd4ad6"
-          },
-          "DeaccelerationTime": 0,
-          "DuckedHeight": 36,
-          "DuckedSpeed": 70,
-          "EnableFootstepSounds": true,
-          "EnablePressing": true,
-          "EyeDistanceFromTop": 8,
-          "FootstepMixer": {
-            "Name": "unknown",
-            "Id": "00000000-0000-0000-0000-000000000000"
-          },
-          "FootstepVolume": 1,
-          "HideBodyInFirstPerson": true,
-          "JumpSpeed": 300,
-          "LookSensitivity": 1,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "PitchClamp": 90,
-          "ReachLength": 130,
-          "Renderer": {
-            "_type": "component",
-            "component_id": "aad4de75-7972-49df-a97b-85d3596f0902",
-            "go": "05d0a7b3-5025-41ff-b15c-0134bd36d5f4",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "RotateWithGround": true,
-          "RotationAngleLimit": 45,
-          "RotationSpeed": 1,
-          "RunByDefault": false,
-          "RunSpeed": 320,
-          "ShowColliderComponents": false,
-          "ShowRigidbodyComponent": false,
-          "ThirdPerson": true,
-          "ToggleCameraModeButton": "view",
-          "UseAnimatorControls": true,
-          "UseButton": "use",
-          "UseCameraControls": true,
-          "UseFovFromPreferences": true,
-          "UseInputControls": true,
-          "UseLookControls": true,
-          "WalkSpeed": 110
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "7e02b8d6-96dc-4d35-862e-e43d991bc2a6",
-          "__enabled": true,
-          "AngularDamping": 1,
-          "Gravity": true,
-          "LinearDamping": 0.1,
-          "Locking": {
-            "X": false,
-            "Y": false,
-            "Z": false,
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
-          "MassCenterOverride": "0,0,36",
-          "MassOverride": 500,
-          "MotionEnabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "OverrideMassCenter": true,
-          "RigidbodyFlags": "DisableCollisionSounds",
-          "StartAsleep": false
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeWalk",
-          "__guid": "798c0f03-697b-49bf-aa1c-805fd92e6141",
-          "__enabled": true,
-          "GroundAngle": 45,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 0,
-          "StepDownHeight": 18,
-          "StepUpHeight": 18
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeSwim",
-          "__guid": "3826b5d2-ebae-4e6a-9cb0-47a0054b0ecd",
-          "__enabled": true,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 10,
-          "SwimLevel": 0.7
-        },
-        {
-          "__type": "Sandbox.Movement.MoveModeLadder",
-          "__guid": "2f0f3068-1712-4434-a45d-37043f7edc7c",
-          "__enabled": true,
-          "ClimbableTags": "ladder",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "Priority": 5,
-          "Speed": 1
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "05d0a7b3-5025-41ff-b15c-0134bd36d5f4",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "Body",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "aad4de75-7972-49df-a97b-85d3596f0902",
-              "__enabled": true,
-              "AnimationGraph": null,
-              "BodyGroups": 1239132151937,
-              "BoneMergeTarget": null,
-              "CreateAttachments": false,
-              "CreateBoneObjects": false,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/npc/bolvan/bolvan_n.vmdl",
-              "Morphs": {},
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "Parameters": {
-                "bools": {},
-                "ints": {},
-                "floats": {},
-                "vectors": {},
-                "rotations": {}
-              },
-              "PlaybackRate": 1,
-              "RenderOptions": {
-                "GameLayer": true,
-                "OverlayLayer": false,
-                "BloomLayer": false,
-                "AfterUILayer": false
-              },
-              "RenderType": "On",
-              "Sequence": {
-                "Name": null,
-                "Looping": true,
-                "Blending": false
-              },
-              "Tint": "1,1,1,1",
-              "UseAnimGraph": true
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "d6313a76-65c5-41b5-8bcb-3fa7b6dd4ad6",
-          "__version": 1,
-          "Flags": 1,
-          "Name": "Colliders",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "OwnerTransfer": 1,
-          "Components": [
-            {
-              "__type": "Sandbox.CapsuleCollider",
-              "__guid": "26c2472a-0703-4d9f-a38e-735f7fd694f8",
-              "__enabled": true,
-              "End": "0,0,45.05097",
-              "Friction": 0,
-              "IsTrigger": false,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Radius": 11.313708,
-              "Start": "0,0,60.68629",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "a3233cff-dffc-4ac3-990c-504117afb08a",
-              "__enabled": true,
-              "Center": "0,0,18",
-              "Friction": 0,
-              "IsTrigger": false,
-              "OnComponentDestroy": null,
-              "OnComponentDisabled": null,
-              "OnComponentEnabled": null,
-              "OnComponentFixedUpdate": null,
-              "OnComponentStart": null,
-              "OnComponentUpdate": null,
-              "OnObjectTriggerEnter": null,
-              "OnObjectTriggerExit": null,
-              "OnTriggerEnter": null,
-              "OnTriggerExit": null,
-              "Scale": "16,16,36",
-              "Static": false,
-              "Surface": null,
-              "SurfaceVelocity": "0,0,0"
-            }
-          ],
-          "Children": []
-        }
-      ]
     }
   ],
   "SceneProperties": {
