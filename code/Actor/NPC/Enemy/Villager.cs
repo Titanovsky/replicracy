@@ -41,10 +41,24 @@ public sealed class Villager : EnemyBase
         //Player.Instance.PlayerController.
     }
 
+    private void PlayAnimation()
+    {
+        var dir = Agent.Velocity;
+        var forward = WorldRotation.Forward.Dot(dir);
+        var sideward = WorldRotation.Right.Dot(dir);
+
+        //todo aim_head
+        //Renderer.Set("aim_head", (forward - _targetPos).Normal);
+        Renderer.Set("move_y", sideward);
+        Renderer.Set("move_x", forward);
+    }
+
     private void Move()
     {
-        var startPos = WorldPosition;
+        PlayAnimation();
 
+        var startPos = WorldPosition;
+        
         if (GlobalSettings.IsDebug && !_targetPos.IsNaN)
         {
             Gizmo.Draw.Color = Color.Orange;
