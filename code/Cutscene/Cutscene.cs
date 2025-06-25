@@ -20,6 +20,7 @@ public sealed class Cutscene : Component
 
     private bool IsAttainCurrentPoint = false;
 
+    [Button("Start Test Scene")]
     private void StartTest()
     {
         _ = Play();
@@ -144,8 +145,6 @@ public sealed class Cutscene : Component
     protected override void OnStart()
     {
         _player = Player.Instance;
-
-        StartTest();
     }
 
     protected override void OnDestroy()
