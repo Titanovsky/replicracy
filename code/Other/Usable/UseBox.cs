@@ -2,7 +2,7 @@ using Sandbox;
 
 public sealed class UseBox : Component, IUsable
 {
-    [Property] public string UsableText { get; set; }
+    [Property, TextArea] public string UsableText { get; set; }
     [Property] public bool IsUsed { get; set; } = false;
     [Property] ModelRenderer boxModel { get; set; }
     [Property] HighlightOutline outline { get; set; }
@@ -23,8 +23,6 @@ public sealed class UseBox : Component, IUsable
 
     public void Use()
     {
-        if (boxModel == null) return;
-
         IsUsed = !IsUsed;
 
         ChangeColor();
@@ -32,6 +30,8 @@ public sealed class UseBox : Component, IUsable
 
     private void ChangeColor()
     {
+        if (!boxModel.IsValid()) return;
+
         if (IsUsed)
             boxModel.Tint = Color.Red;
         else
