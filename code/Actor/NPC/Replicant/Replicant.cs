@@ -1,11 +1,11 @@
 public sealed class Replicant : Component
 {
-    [Property][Category("Movement")] public float RotationSpeed { get; private set; } = 2.5f;
-    [Property][Category("Movement")] public float MovementSpeed { get; private set; } = 140;
-    [Property][Category("Attack")] public float AttackDelay { get; private set; } = 1f;
-    [Property][Category("Attack")] public int AttackDamage { get; private set; } = 5;
-    [Property][Category("Health")] public float Health { get; private set; } = 100;
-    [Property][Category("Health")] public float MaxHealth { get; private set; } = 100;
+    [Property][Category("Movement")] public float RotationSpeed { get;  set; } = 2.5f;
+    [Property][Category("Movement")] public float MovementSpeed { get; set; } = 140;
+    [Property][Category("Attack")] public float AttackDelay { get; set; } = 1f;
+    [Property][Category("Attack")] public int AttackDamage { get; set; } = 5;
+    [Property][Category("Health")] public float Health { get; set; } = 100;
+    [Property][Category("Health")] public float MaxHealth { get; set; } = 100;
     [Property][Category("Other")] GameObject eye { get; set; }
 
     [RequireComponent] NavMeshAgent NavMeshAgent { get; set; }
