@@ -1,5 +1,9 @@
+using Replicracy.Common;
+
 public sealed class Replicant : Component, Component.IDamageable
 {
+    private static readonly Logger Log = new("Replicant");
+
     [Property][Category("Movement")] public float RotationSpeed { get;  set; } = 2.5f;
     [Property][Category("Movement")] public float MovementSpeed { get; set; } = 140;
     [Property][Category("Attack")] public float AttackDelay { get; set; } = 1f;
@@ -42,6 +46,8 @@ public sealed class Replicant : Component, Component.IDamageable
 
         Health -= damage;
 
+        Log.Info($"{GameObject} take damage {damage}f by {dmgInfo.Attacker}");
+
         if (Health <= 0)
             Die();
     }
@@ -55,6 +61,8 @@ public sealed class Replicant : Component, Component.IDamageable
         var hasLive = repController.Replicants.Contains(this);
         if (hasLive)
             repController.RemoveReplicant(this);
+
+        Log.Info($"{GameObject} died");
 
         DestroyGameObject();
     }

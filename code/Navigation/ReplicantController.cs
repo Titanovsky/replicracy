@@ -1,9 +1,10 @@
+using Replicracy.Common;
 using System;
-using System.Threading.Tasks;
 
 public sealed class ReplicantController : Component
 {
-    [Property] public Player Player { get; set; }
+    private static readonly Logger Log = new("ReplicantController");
+
     [Property] public List<Replicant> Replicants { get; set; } = new();
 
     private Vector3 _targetPoint;
@@ -13,8 +14,6 @@ public sealed class ReplicantController : Component
 
     protected override void OnStart()
     {
-        Player = Player.Instance;
-
         Subribe();
     }
 
@@ -26,8 +25,6 @@ public sealed class ReplicantController : Component
     protected override void OnDestroy()
     {
         Unsubscribe();
-
-        Player = null;
     }
 
     private void PlayerSpecifie(SceneTraceResult traceResult)
@@ -140,12 +137,16 @@ public sealed class ReplicantController : Component
         if (Replicants.Contains(agent)) return;
 
         Replicants.Add(agent);
+
+        Log.Info($"{agent} added ({Replicants.IndexOf(agent)})");
     }
 
     public void RemoveReplicant(Replicant agent)
     {
         if (agent is null) return;
         if (!Replicants.Contains(agent)) return;
+
+        Log.Info($"{agent} removed ({Replicants.IndexOf(agent)})");
 
         Replicants.Remove(agent);
     }
@@ -157,12 +158,15 @@ public sealed class ReplicantController : Component
 
     private void Subribe()
     {
-        Player.OnSpecified += PlayerSpecifie;
+        Player.Instance.OnSpecified += PlayerSpecifie;
+
+        Log.Info($"Subscrube");
     }
 
     private void Unsubscribe()
     {
-        if (Player != null)
-            Player.OnSpecified -= PlayerSpecifie;
+        Player.Instance.OnSpecified -= PlayerSpecifie;
+
+        Log.Info($"Unsubscribe");
     }
 }
