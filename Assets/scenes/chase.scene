@@ -3973,12 +3973,6 @@
               "__type": "Sandbox.ErrorMessage",
               "__guid": "11cf09ed-0694-4340-9d2f-59b74a6d0f46",
               "__enabled": true,
-              "_showTimer": {
-                "Absolute": 0,
-                "Relative": -109908536,
-                "Passed": 109908535.9526204,
-                "Fraction": 1
-              },
               "errorSound": null,
               "Message": "",
               "OnComponentDestroy": null,
@@ -3987,6 +3981,42 @@
               "OnComponentFixedUpdate": null,
               "OnComponentStart": null,
               "OnComponentUpdate": null
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "ae3c37b5-1b81-4c0d-b274-c5347d89ddb8"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "70251006-11e7-43cf-81d9-58eab51d5fe1"
+            },
+            "PreviousElement": {
+              "Type": "Component",
+              "IdValue": "11cf09ed-0694-4340-9d2f-59b74a6d0f46"
+            },
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.Wipmessage",
+              "__guid": "ae3c37b5-1b81-4c0d-b274-c5347d89ddb8",
+              "__enabled": true,
+              "_showTimer": {
+                "Absolute": 0,
+                "Relative": -109911520,
+                "Passed": 109911521.8411164,
+                "Fraction": 1
+              },
+              "BottomText": "Press SPACE to closed!",
+              "Message": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "ShowBottomTextDelay": 3
             }
           },
           {
@@ -4432,6 +4462,14 @@
           {
             "Target": {
               "Type": "Component",
+              "IdValue": "51514ea3-f704-46b1-baea-47a314da58cc"
+            },
+            "Property": "ErrorMessage",
+            "Value": null
+          },
+          {
+            "Target": {
+              "Type": "Component",
               "IdValue": "d6cb63fa-6c93-44c7-b89f-b35515e9298b"
             },
             "Property": "Replicants",
@@ -4540,7 +4578,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Position",
-            "Value": "9.750336,-4.987823,3.806107"
+            "Value": "9.750061,-4.987396,3.805832"
           },
           {
             "Target": {
@@ -4548,7 +4586,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "-0.6955556,-0.1290367,0.4102882,-0.5755134"
+            "Value": "-0.6955587,-0.129034,0.4102986,-0.5755028"
           },
           {
             "Target": {
@@ -4556,7 +4594,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
+            "Value": "0.9999982,0.9999982,0.9999982"
           },
           {
             "Target": {
@@ -4564,7 +4602,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Position",
-            "Value": "-8.846893,5.432739,3.808624"
+            "Value": "-8.846466,5.432327,3.808212"
           },
           {
             "Target": {
@@ -4572,15 +4610,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "-0.6385106,-0.3045233,0.247577,-0.6620237"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
-            },
-            "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "-0.6385089,-0.3045318,0.2475571,-0.662029"
           },
           {
             "Target": {
@@ -4588,7 +4618,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.69281,-4.076874,48.82376"
+            "Value": "16.77103,-3.327972,48.65083"
           },
           {
             "Target": {
@@ -4596,7 +4626,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "-0.3891694,0.05805144,-0.1545518,-0.9062511"
+            "Value": "-0.3902099,0.05108248,-0.1467721,-0.9075157"
           },
           {
             "Target": {
@@ -4604,7 +4634,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "0.9999981,0.9999981,0.9999981"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4612,7 +4642,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.41623,5.055115,41.13948"
+            "Value": "-10.28189,5.667191,41.2532"
           },
           {
             "Target": {
@@ -4620,7 +4650,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "-0.46163,-0.6907287,0.1828238,-0.5257064"
+            "Value": "-0.444987,-0.6994817,0.196655,-0.5234872"
           },
           {
             "Target": {
@@ -4628,7 +4658,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -4636,7 +4666,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "23.97937,-2.26622,50.56172"
+            "Value": "24.1055,-1.582169,50.24814"
           },
           {
             "Target": {
@@ -4644,7 +4674,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "-0.6106753,0.1231697,0.08755881,-0.7773278"
+            "Value": "-0.6106751,0.1231695,0.08755899,-0.7773279"
           },
           {
             "Target": {
@@ -4652,7 +4682,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "0.9999974,0.9999974,0.9999974"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4660,7 +4690,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-10.57861,8.488434,34.24181"
+            "Value": "-10.71271,8.877975,34.26047"
           },
           {
             "Target": {
@@ -4668,7 +4698,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "-0.4630858,-0.7177469,0.1463744,-0.4989645"
+            "Value": "-0.4472165,-0.7266592,0.160872,-0.4960685"
           },
           {
             "Target": {
@@ -4676,7 +4706,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -4684,7 +4714,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.15625,-1.743362,52.60629"
+            "Value": "29.28241,-1.059341,52.29269"
           },
           {
             "Target": {
@@ -4692,15 +4722,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "-0.01353625,-0.00003474834,-0.00004115253,-0.9999084"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
-            },
-            "Property": "Scale",
-            "Value": "0.9999964,0.9999964,0.9999964"
+            "Value": "-0.01353633,-0.00003502202,-0.0000410704,-0.9999084"
           },
           {
             "Target": {
@@ -4708,7 +4730,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-8.495605,9.315628,28.2729"
+            "Value": "-8.828613,9.547791,28.20628"
           },
           {
             "Target": {
@@ -4716,7 +4738,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "0.3872302,-0.6125121,-0.1401895,-0.6747063"
+            "Value": "0.4003342,-0.6219978,-0.1418768,-0.6578162"
           },
           {
             "Target": {
@@ -4724,7 +4746,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "1.000003,1.000003,1.000003"
           },
           {
             "Target": {
@@ -4780,7 +4802,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Position",
-            "Value": "10.99603,-4.203079,16.23476"
+            "Value": "10.58029,-4.116501,16.26343"
           },
           {
             "Target": {
@@ -4788,7 +4810,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Rotation",
-            "Value": "-0.4705539,-0.4947623,0.5522481,-0.4783424"
+            "Value": "-0.4818953,-0.4804587,0.549845,-0.4843625"
           },
           {
             "Target": {
@@ -4796,39 +4818,39 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
-            "Value": "0.9999987,0.9999987,0.9999987"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Position",
-            "Value": "-3.019318,5.353012,14.88435"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Rotation",
-            "Value": "-0.3272621,-0.6665081,0.5371971,-0.4001075"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Scale",
             "Value": "0.9999998,0.9999998,0.9999998"
           },
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Position",
+            "Value": "-2.286957,5.520187,14.46681"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Rotation",
+            "Value": "-0.311988,-0.6664339,0.5638434,-0.3749802"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Scale",
+            "Value": "0.9999999,0.9999999,0.9999999"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Position",
-            "Value": "8.955292,3.705139,40.43825"
+            "Value": "8.86264,4.169403,40.25749"
           },
           {
             "Target": {
@@ -4836,7 +4858,7 @@
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Rotation",
-            "Value": "0.07077132,-0.4069888,-0.01490596,-0.9105654"
+            "Value": "0.07739052,-0.4189268,-0.006165933,-0.904695"
           },
           {
             "Target": {
@@ -4844,7 +4866,7 @@
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Scale",
-            "Value": "0.9999982,0.9999982,0.9999982"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -4852,7 +4874,7 @@
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Position",
-            "Value": "11.73578,-3.637924,49.5033"
+            "Value": "11.81604,-2.940033,49.37503"
           },
           {
             "Target": {
@@ -4868,7 +4890,7 @@
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Scale",
-            "Value": "0.9999981,0.9999981,0.9999981"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4876,7 +4898,7 @@
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
             },
             "Property": "Position",
-            "Value": "20.33609,-3.171539,49.69275"
+            "Value": "20.43826,-2.455078,49.44948"
           },
           {
             "Target": {
@@ -4892,7 +4914,7 @@
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
             },
             "Property": "Scale",
-            "Value": "0.9999976,0.9999976,0.9999976"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4900,7 +4922,7 @@
               "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Position",
-            "Value": "16.70871,-4.169983,48.67934"
+            "Value": "16.78485,-3.406708,48.50685"
           },
           {
             "Target": {
@@ -4908,7 +4930,7 @@
               "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Rotation",
-            "Value": "-0.2774231,-0.2935464,0.5908585,-0.6983933"
+            "Value": "-0.2736184,-0.2968772,0.5917134,-0.6977623"
           },
           {
             "Target": {
@@ -4916,7 +4938,7 @@
               "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Scale",
-            "Value": "0.9999977,0.9999977,0.9999977"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4924,7 +4946,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Position",
-            "Value": "-10.69406,4.843323,41.16714"
+            "Value": "-10.52734,5.478546,41.28537"
           },
           {
             "Target": {
@@ -4932,7 +4954,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Rotation",
-            "Value": "0.3381113,-0.8288156,0.4115965,-0.1712711"
+            "Value": "0.3475953,-0.8227038,0.4190732,-0.163443"
           },
           {
             "Target": {
@@ -4940,7 +4962,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -4948,7 +4970,7 @@
               "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Position",
-            "Value": "-7.759003,4.86731,45.39746"
+            "Value": "-7.620239,5.517303,45.50993"
           },
           {
             "Target": {
@@ -4964,7 +4986,7 @@
               "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -4972,7 +4994,7 @@
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Position",
-            "Value": "-10.49741,6.771774,37.69066"
+            "Value": "-10.49728,7.272583,37.75684"
           },
           {
             "Target": {
@@ -4988,7 +5010,7 @@
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -4996,7 +5018,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Position",
-            "Value": "7.50351,-3.584854,22.54095"
+            "Value": "7.27243,-3.463608,22.66498"
           },
           {
             "Target": {
@@ -5012,7 +5034,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "0.9999997,0.9999997,0.9999997"
           },
           {
             "Target": {
@@ -5020,7 +5042,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Position",
-            "Value": "-2.080383,4.78981,22.03621"
+            "Value": "-1.697205,4.982178,21.65784"
           },
           {
             "Target": {
@@ -5036,7 +5058,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
+            "Value": "0.9999997,0.9999997,0.9999997"
           },
           {
             "Target": {
@@ -5044,7 +5066,7 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Position",
-            "Value": "11.86743,-4.238739,16.39278"
+            "Value": "11.36438,-4.1492,16.40508"
           },
           {
             "Target": {
@@ -5052,36 +5074,12 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Rotation",
-            "Value": "-0.5307979,-0.4173935,0.4752615,-0.5640593"
+            "Value": "-0.5301089,-0.4154109,0.4756862,-0.5658101"
           },
           {
             "Target": {
               "Type": "GameObject",
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
-            },
-            "Property": "Scale",
-            "Value": "0.9999984,0.9999984,0.9999984"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Position",
-            "Value": "-2.526642,5.460434,14.70735"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Rotation",
-            "Value": "-0.7214028,-0.1793826,0.03280714,-0.6680746"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Scale",
             "Value": "0.9999996,0.9999996,0.9999996"
@@ -5089,10 +5087,34 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Position",
+            "Value": "-1.635529,5.642151,14.23248"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Rotation",
+            "Value": "-0.7175499,-0.1722113,0.04765086,-0.6731975"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999993,0.9999993,0.9999993"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Position",
-            "Value": "10.37317,-4.595459,10.02043"
+            "Value": "10.16513,-4.551971,10.03462"
           },
           {
             "Target": {
@@ -5108,7 +5130,7 @@
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Scale",
-            "Value": "0.9999984,0.9999984,0.9999984"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -5116,7 +5138,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Position",
-            "Value": "-5.933105,5.392883,9.346481"
+            "Value": "-5.566681,5.476242,9.137527"
           },
           {
             "Target": {
@@ -5140,7 +5162,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Position",
-            "Value": "0.1958313,0.3121338,41.94212"
+            "Value": "0.2624817,0.7446289,41.89185"
           },
           {
             "Target": {
@@ -5153,18 +5175,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
-            },
-            "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.162903,1.076584,61.53191"
+            "Value": "6.306641,1.722427,61.4863"
           },
           {
             "Target": {
@@ -5172,7 +5186,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "0.001019283,-0.006839185,-0.04592529,-0.998921"
+            "Value": "0.0005431461,-0.006412685,-0.04515923,-0.9989591"
           },
           {
             "Target": {
@@ -5180,7 +5194,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -5188,7 +5202,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.470001,-2.255722,61.53662"
+            "Value": "6.608582,-1.610367,61.48799"
           },
           {
             "Target": {
@@ -5196,7 +5210,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "0.001019283,-0.006839185,-0.04592529,-0.998921"
+            "Value": "0.0005431461,-0.006412685,-0.04515923,-0.9989591"
           },
           {
             "Target": {
@@ -5204,7 +5218,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -5212,7 +5226,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "5.855804,4.408905,61.52721"
+            "Value": "6.004669,5.055222,61.48462"
           },
           {
             "Target": {
@@ -5220,7 +5234,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "0.001019283,-0.006839185,-0.04592529,-0.998921"
+            "Value": "0.0005431461,-0.006412685,-0.04515923,-0.9989591"
           },
           {
             "Target": {
@@ -5228,7 +5242,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -5236,7 +5250,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.7773743,0.5706482,54.71596"
+            "Value": "0.9258423,1.231445,54.66548"
           },
           {
             "Target": {
@@ -5244,7 +5258,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "0.001019283,-0.006839185,-0.04592529,-0.998921"
+            "Value": "0.0005431461,-0.006412685,-0.04515923,-0.9989591"
           },
           {
             "Target": {
@@ -5252,7 +5266,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -5260,7 +5274,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.13016,-5.909256,0.1875"
+            "Value": "11.12976,-5.908859,0.1872101"
           },
           {
             "Target": {
@@ -5268,7 +5282,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "-0.0004732609,-0.00006486465,0.2162299,-0.9763424"
+            "Value": "-0.0004783571,-0.00007246427,0.2162417,-0.9763398"
           },
           {
             "Target": {
@@ -5276,7 +5290,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Scale",
-            "Value": "0.9999985,0.9999985,0.9999985"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -5284,7 +5298,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239624,5.83252,1.059631"
+            "Value": "-7.239136,5.832169,1.059296"
           },
           {
             "Target": {
@@ -5292,7 +5306,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "0.04342035,-0.9990569,-0.0003269348,-0.00008755184"
+            "Value": "0.04344259,-0.9990559,-0.0003302727,-0.00009660988"
           },
           {
             "Target": {
@@ -5300,7 +5314,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.9999985,0.9999985,0.9999985"
+            "Value": "0.999997,0.999997,0.999997"
           },
           {
             "Target": {
@@ -5308,7 +5322,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.277039,0.6385651,69.86787"
+            "Value": "1.4133,1.283768,69.81789"
           },
           {
             "Target": {
@@ -5316,7 +5330,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "0.001019283,-0.006839185,-0.04592529,-0.998921"
+            "Value": "0.0005431461,-0.006412685,-0.04515923,-0.9989591"
           },
           {
             "Target": {
@@ -5324,7 +5338,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "1.000001,1.000001,1.000001"
           }
         ],
         "MovedObjects": []

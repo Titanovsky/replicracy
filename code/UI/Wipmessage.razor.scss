@@ -1,0 +1,42 @@
+Wipmessage {
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.98);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        flex: 0;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .bottom-container {
+        background-color: rgb(0, 0, 0, 0) !important;
+        flex: 0;
+        max-width: 50%;
+        max-height: 25%;
+    }
+
+    .text {
+        font-size: 30px;
+        font-family: Patsy Sans, Popins;
+        text-align: center;
+        color: greenyellow;
+        text-shadow: 1px 1px 1px black;
+        text-overflow: ellipsis;
+        margin: 10px;
+    }
+}

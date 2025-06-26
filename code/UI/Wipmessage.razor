@@ -1,0 +1,86 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+
+<root>
+
+    @if (!isShow) return;
+
+    <div class="background">
+
+        <div class="container">
+            <div class="text">@Message</div>
+        </div>
+
+        @if (!IsBottomTextVisible) return;
+
+        <div class="container bottom-container">
+            <div class="text">@BottomText</div>
+        </div>
+
+    </div>
+
+</root>
+
+@code
+{
+    [Property] private string Message { get; set; }
+    [Property] private string BottomText { get; set; } = "Press SPACE to closed!";
+
+    [Property] private float ShowBottomTextDelay { get; set; } = 3f;
+
+    [Property] private RealTimeUntil _showTimer;
+    private bool IsBottomTextVisible;
+
+    private bool isShow;
+
+    [Button("TestWIPMessage")]
+    private void TestErrorMessage()
+    {
+        Show("This is a test error message!");
+    }
+
+    protected override void OnUpdate()
+    {
+        CheckTimer();
+
+        CheckInput();
+    }
+
+    public void Show(string message, float timer = 3f)
+    {
+        _showTimer = timer;
+
+        IsBottomTextVisible = false;
+
+        Message = message;
+
+        isShow = true;
+
+        StateHasChanged();
+    }
+
+    private void CheckTimer()
+    {
+        if (IsBottomTextVisible) return;
+
+        if (!_showTimer) return;
+
+        IsBottomTextVisible = true;
+
+        StateHasChanged();
+    }
+
+    private void CheckInput()
+    {
+        if (!IsBottomTextVisible) return;
+
+        if (!Input.Pressed("jump")) return;
+
+        isShow = false;
+
+        StateHasChanged();
+    }
+}

@@ -20,7 +20,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     [Property] public HeaderLevel HeaderLevel { get; set; }
     [Property] public UsableUI UsablePanel { get; set; }
     [Property] public Fade Fade { get; set; }
-    [Property] public ErrorMessage ErrorMessage { get; set; }
+    [Property] public ErrorMessage ErroreMessage { get; set; }
+    [Property] public Wipmessage WIPMessage { get; set; }
 
     private SceneTraceResult _traceResult { get; set; }
     private IUsable _playerViewedObject {  get; set; }
@@ -64,8 +65,11 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         if (!Fade.IsValid())
             Fade = GetComponent<Fade>();
 
-        if (!ErrorMessage.IsValid())
-            ErrorMessage = GetComponent<ErrorMessage>();
+        if (!ErroreMessage.IsValid())
+            ErroreMessage = GetComponent<ErrorMessage>();
+
+        if (!WIPMessage.IsValid())
+            WIPMessage = GetComponent<Wipmessage>();
     }
 
     public void Specify()

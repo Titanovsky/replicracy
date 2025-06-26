@@ -20,7 +20,7 @@
     [Property] private string Message { get; set; }
     [Property] private SoundEvent errorSound { get; set; }
 
-    [Property] private RealTimeUntil _showTimer;
+    private RealTimeUntil _showTimer;
 
     [Button("TestErrorMessage")]
     private void TestErrorMessage()
