@@ -1,0 +1,55 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+
+    @if (string.IsNullOrEmpty(Message)) return;
+
+    <div class="container">
+
+        <div class="text">@Message</div>
+
+    </div>
+
+</root>
+
+@code
+{
+    [Property] private string Message { get; set; }
+    [Property] private SoundEvent errorSound { get; set; }
+
+    [Property] private RealTimeUntil _showTimer;
+
+    [Button("TestErrorMessage")]
+    private void TestErrorMessage()
+    {
+        Show("This is a test error message!");
+    }
+
+    protected override void OnUpdate()
+    {
+        CheckTimer();
+    }
+
+    public void Show(string message, float timer = 3f)
+    {
+        Message = "😵‍💫 " + message;
+
+        Sound.Play(errorSound, WorldPosition);
+
+        _showTimer = timer;
+    }
+
+    private void CheckTimer()
+    {
+        if (string.IsNullOrEmpty(Message)) return;
+
+        if (!_showTimer) return;
+
+        Message = string.Empty;
+    }
+   
+    protected override int BuildHash() => System.HashCode.Combine(Message);
+}

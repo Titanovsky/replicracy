@@ -1,0 +1,30 @@
+ErrorMessage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
+
+    .container {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.93);
+        justify-content: center;
+        align-items: center;
+        flex: 0;
+        max-width: 50%;
+        max-height: 30%;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-size: 30px;
+        font-family: Patsy Sans, Popins;
+        text-align: center;
+        color: greenyellow;
+        text-shadow: 1px 1px 1px black;
+        text-overflow: ellipsis;
+        margin: 10px;
+    }
+}
