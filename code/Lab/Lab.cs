@@ -6,7 +6,8 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Props")] public GameObject Spawn { get; set; }
 
     [Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
-    [Property, Feature("Buttons")] public UseBox ButtonHeal { get; set; } = new();
+    [Property, Feature("Buttons")] public UseBox ButtonBuy { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonHeal { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyHead { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyLeftHand { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyRightHand { get; set; }
@@ -32,6 +33,12 @@ public sealed class Lab : Component, IDisposable
         }
 
         Subscribe();
+        Sync();
+    }
+
+    private void Sync()
+    {
+        var info = LabInfo.Instance;
     }
 
     private void Subscribe()

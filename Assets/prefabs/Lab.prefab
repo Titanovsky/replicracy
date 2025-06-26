@@ -48,48 +48,25 @@
           "go": "4a27e0c2-2bca-4973-957a-6c692d3dbf81",
           "component_type": "UseBox"
         },
+        "ButtonBuy": {
+          "_type": "component",
+          "component_id": "223987c2-a0f2-46bc-80e7-43820af7db3a",
+          "go": "135b15b7-f048-4ad1-82e7-3a156c33e376",
+          "component_type": "UseBox"
+        },
+        "ButtonHeal": {
+          "_type": "component",
+          "component_id": "05059839-08eb-409b-9324-edd3bed9d3d4",
+          "go": "5392127c-460c-4162-8f22-954933b1ff32",
+          "component_type": "UseBox"
+        },
         "ButtonReplicate": {
           "_type": "component",
           "component_id": "50d02f78-d3c8-41d5-8338-82cd72db370f",
           "go": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
           "component_type": "UseBox"
         },
-        "ButtonsAbilities": [
-          {
-            "_type": "gameobject",
-            "go": "9b9e53b2-3ece-4a3d-8ff8-7eff45f889ab"
-          },
-          {
-            "_type": "gameobject",
-            "go": "7ed7768e-5023-465a-ab83-45c3aeaf5cca"
-          },
-          {
-            "_type": "gameobject",
-            "go": "21abb901-bab6-4b3e-8b08-6a4005c32cd9"
-          },
-          {
-            "_type": "gameobject",
-            "go": "39865b44-28be-425e-9859-c2009dc063a9"
-          },
-          {
-            "_type": "gameobject",
-            "go": "7897a8c2-3154-40a0-9930-5d9cb81dd76a"
-          },
-          {
-            "_type": "gameobject",
-            "go": "8c84f1a7-8353-4e45-ace4-46ff50944718"
-          }
-        ],
-        "ButtonsCancel": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
+        "ButtonsAbilities": [],
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -4969,7 +4946,7 @@
                                 },
                                 "TextFlags": "CenterHorizontally, CenterVertically, DontClip",
                                 "TextScope": {
-                                  "Text": "Renegate",
+                                  "Text": "Replicate",
                                   "TextColor": "1,1,1,1",
                                   "FontName": "Patsy Sans",
                                   "FontSize": 29.78,
@@ -4979,9 +4956,193 @@
                                   "LetterSpacing": 0,
                                   "WordSpacing": 0,
                                   "Outline": {
+                                    "Enabled": true,
+                                    "Size": 3,
+                                    "Color": "0,0,0,1"
+                                  },
+                                  "Shadow": {
                                     "Enabled": false,
                                     "Size": 4,
-                                    "Color": "0,0,1,1"
+                                    "Color": "0,0,0,1",
+                                    "Offset": "4,4"
+                                  },
+                                  "OutlineUnder": {
+                                    "Enabled": false,
+                                    "Size": 4,
+                                    "Color": "0,1,0,1"
+                                  },
+                                  "ShadowUnder": {
+                                    "Enabled": false,
+                                    "Size": 4,
+                                    "Color": "0,0,0,1",
+                                    "Offset": "4,4"
+                                  }
+                                }
+                              },
+                              "compiled": null
+                            },
+                            "ColorTint": "255,255,255,255",
+                            "NormalTexture": null,
+                            "OnComponentDestroy": null,
+                            "OnComponentDisabled": null,
+                            "OnComponentEnabled": null,
+                            "OnComponentFixedUpdate": null,
+                            "OnComponentStart": null,
+                            "OnComponentUpdate": null,
+                            "RMOTexture": null,
+                            "SequenceId": 0,
+                            "SheetSequence": false,
+                            "Size": "9.600007,34,34.70001",
+                            "SortLayer": 0
+                          }
+                        ],
+                        "Children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "__guid": "cbcd2c54-1339-49ac-bcfc-fe6a6188ba28",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Button Buy",
+                "Position": "-14.43845,-4.789421,0.02844429",
+                "Rotation": "0.5956275,-0.1417473,-0.08073228,0.7865224",
+                "Scale": "0.4573529,0.4233646,0.6725275",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [],
+                "Children": [
+                  {
+                    "__guid": "135b15b7-f048-4ad1-82e7-3a156c33e376",
+                    "__version": 1,
+                    "Flags": 0,
+                    "Name": "Buy",
+                    "Position": "-4.917705,0.1860836,-2.59482",
+                    "Rotation": "-0.1014446,-0.06464067,-0.05653139,0.9911279",
+                    "Scale": "0.7907672,0.2765422,0.1",
+                    "Tags": "",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true,
+                    "NetworkOrphaned": 0,
+                    "OwnerTransfer": 1,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.ModelRenderer",
+                        "__guid": "a483070a-872f-4898-a2d0-d313b01ef406",
+                        "__enabled": true,
+                        "BodyGroups": 18446744073709551615,
+                        "CreateAttachments": false,
+                        "MaterialGroup": null,
+                        "MaterialOverride": null,
+                        "Model": "models/dev/box.vmdl",
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "RenderOptions": {
+                          "GameLayer": true,
+                          "OverlayLayer": false,
+                          "BloomLayer": false,
+                          "AfterUILayer": false
+                        },
+                        "RenderType": "On",
+                        "Tint": "0.22949,0.42132,0.94884,1"
+                      },
+                      {
+                        "__type": "Sandbox.BoxCollider",
+                        "__guid": "4f08779a-73c3-4d98-a838-faa1065b6f10",
+                        "__enabled": true,
+                        "Center": "0,0,0",
+                        "Friction": null,
+                        "IsTrigger": false,
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "OnObjectTriggerEnter": null,
+                        "OnObjectTriggerExit": null,
+                        "OnTriggerEnter": null,
+                        "OnTriggerExit": null,
+                        "Scale": "50,50,50",
+                        "Static": true,
+                        "Surface": null,
+                        "SurfaceVelocity": "0,0,0"
+                      },
+                      {
+                        "__type": "UseBox",
+                        "__guid": "223987c2-a0f2-46bc-80e7-43820af7db3a",
+                        "__enabled": true,
+                        "boxModel": null,
+                        "Delay": 0.75,
+                        "IsUsed": false,
+                        "OnCallback": null,
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "outline": null,
+                        "UsableText": "\uD83D\uDC8A Heal\n\n\uD83D\uDCC3 Healing your all replicants\n\n\uD83E\uDDEC 15"
+                      }
+                    ],
+                    "Children": [
+                      {
+                        "__guid": "ea093a82-a87e-4928-8e49-654c2ade2d86",
+                        "__version": 1,
+                        "Flags": 0,
+                        "Name": "Decal (1)",
+                        "Position": "0.02983004,22.88884,-55.07655",
+                        "Rotation": "-0.3626228,0.3928621,0.5815831,0.6131284",
+                        "Scale": "4.672006,4.087906,5.610993",
+                        "Tags": "",
+                        "Enabled": true,
+                        "NetworkMode": 2,
+                        "NetworkInterpolation": true,
+                        "NetworkOrphaned": 0,
+                        "OwnerTransfer": 1,
+                        "Components": [
+                          {
+                            "__type": "Sandbox.Decal",
+                            "__guid": "7ab9baf8-f68b-4ddf-bc48-20ae716a72fa",
+                            "__enabled": true,
+                            "__version": 1,
+                            "AttenuationAngle": 0,
+                            "ColorTexture": {
+                              "$compiler": "texture",
+                              "$source": "text",
+                              "data": {
+                                "Size": "137,128",
+                                "Margin": {
+                                  "Size": "0,0",
+                                  "EdgeSize": "0,0"
+                                },
+                                "TextFlags": "CenterHorizontally, CenterVertically, DontClip",
+                                "TextScope": {
+                                  "Text": "Buy",
+                                  "TextColor": "1,1,1,1",
+                                  "FontName": "Patsy Sans",
+                                  "FontSize": 29.78,
+                                  "FontWeight": 400,
+                                  "FontItalic": false,
+                                  "LineHeight": 1,
+                                  "LetterSpacing": 0,
+                                  "WordSpacing": 0,
+                                  "Outline": {
+                                    "Enabled": true,
+                                    "Size": 3,
+                                    "Color": "0,0,0,1"
                                   },
                                   "Shadow": {
                                     "Enabled": false,
@@ -5030,7 +5191,7 @@
                 "__version": 1,
                 "Flags": 0,
                 "Name": "Button Heal",
-                "Position": "-14.35473,-5.344261,-1.891231",
+                "Position": "-14.35473,-5.344261,-1.891227",
                 "Rotation": "0.5956275,-0.1417473,-0.08073228,0.7865224",
                 "Scale": "0.4573529,0.4233646,0.6725275",
                 "Tags": "",
@@ -5046,7 +5207,7 @@
                     "__version": 1,
                     "Flags": 0,
                     "Name": "Heal",
-                    "Position": "-4.917705,0.1860836,-2.59482",
+                    "Position": "-6.502862,-13.12511,-0.9260067",
                     "Rotation": "-0.1014446,-0.06464067,-0.05653139,0.9911279",
                     "Scale": "0.7907672,0.2765422,0.1",
                     "Tags": "",
@@ -5163,9 +5324,9 @@
                                   "LetterSpacing": 0,
                                   "WordSpacing": 0,
                                   "Outline": {
-                                    "Enabled": false,
-                                    "Size": 4,
-                                    "Color": "0,0,1,1"
+                                    "Enabled": true,
+                                    "Size": 3,
+                                    "Color": "0,0,0,1"
                                   },
                                   "Shadow": {
                                     "Enabled": false,
