@@ -12,6 +12,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     [Property] public float Health { get; set; } = 0f;
     [Property] public int Dna { get; set; } = 0;
     [Property] public int Frags { get; set; } = 0;
+    [Property] public bool GodMode { get; set; } = false;
     public int CollectDna { get; set; } = 0;
 
     [Property] public PlayerController PlayerController { get; set; }

@@ -62,7 +62,7 @@
 
     private void InputShot()
     {
-        if (Input.Down("Attack1"))
+        if (Input.Down("Attack1") && Player.Instance.PlayerController.UseInputControls == true)
             Shot();
     }
 

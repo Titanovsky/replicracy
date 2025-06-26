@@ -50,7 +50,8 @@ public sealed class Cutscene : Component
 
         await InFadePlayer();
 
-        SetUsePlayerCameraControl(true);
+        _player.GodMode = false;
+        SetUsePlayerControll(true);
         _playerCamera = null;
 
         await OutFadePlayer();
@@ -62,13 +63,13 @@ public sealed class Cutscene : Component
 
     private async Task PreparePlay()
     {
-        //todo godmode player
+        _player.GodMode = true;
 
         await InFadePlayer();
 
         _playerCamera = Scene.Camera;
 
-        SetUsePlayerCameraControl(false);
+        SetUsePlayerControll(false);
     }
 
     private async Task SetStartPosition()
@@ -140,7 +141,12 @@ public sealed class Cutscene : Component
         _currentPoint = Points[index];
     }
 
-    private void SetUsePlayerCameraControl(bool isControll) => _player.PlayerController.UseCameraControls = isControll;
+    private void SetUsePlayerControll(bool isControll)
+    {
+        _player.PlayerController.UseInputControls = isControll;
+        _player.PlayerController.UseLookControls = isControll;
+        _player.PlayerController.UseCameraControls = isControll;
+    }
 
     protected override void OnStart()
     {
