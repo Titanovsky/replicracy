@@ -6,13 +6,13 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Props")] public GameObject Spawn { get; set; }
 
     [Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
-    [Property, Feature("Buttons")] public List<GameObject> ButtonsCancel { get; set; } = new();
-    [Property, Feature("Buttons")] public List<GameObject> ButtonsAbilities { get; set; } = new();
+    [Property, Feature("Buttons")] public UseBox ButtonHeal { get; set; } = new();
     [Property, Feature("Buttons")] public UseBox ButtonBodyHead { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyLeftHand { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyRightHand { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyLeftLeg { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyRightLeg { get; set; }
+    [Property, Feature("Buttons")] public List<UseBox> ButtonsAbilities { get; set; } = new();
 
     [Property, Feature("Prefabs")] public GameObject ReplicantPrefab { get; set; }
 
@@ -36,17 +36,19 @@ public sealed class Lab : Component, IDisposable
     private void Subscribe()
     {
         ButtonReplicate.OnCallback += BuyReplicate;
+        ButtonHeal.OnCallback += BuyHeal;
     }
 
     private void Unscribe()
     {
         ButtonReplicate.OnCallback -= BuyReplicate;
+        ButtonHeal.OnCallback -= BuyHeal;
     }
 
     private bool CheckGameObjects()
     {
         var a = ButtonReplicate.IsValid();
-        var b = (ButtonsCancel.Count > 0);
+        var b = ButtonHeal.IsValid();
         var c = (ButtonsAbilities.Count > 0);
         var d = ReplicantPrefab.IsValid();
         var bh = ButtonBodyHead.IsValid();
@@ -94,6 +96,41 @@ public sealed class Lab : Component, IDisposable
         //todo particle
 
         Player.Instance.ReplicantController.AddReplicant(repli);
+    }
+
+    private void BuyHeal()
+    {
+        var ply = Player.Instance;
+        if (ply.ReplicantController.GetCountReplicants() == 0)
+        {
+            //todo Player.Error
+            //todo sound.Error
+
+            return;
+        }
+
+        var dna = ply.Dna;
+        var cost = GlobalSettings.CostHeal;
+
+        if (!CanBuy(cost))
+        {
+            //todo Player.Error
+            //todo sound.Error
+
+            return;
+        }
+
+        ply.Dna -= cost;
+
+        HealReplicators();
+    }
+
+    private void HealReplicators()
+    {
+        foreach (var replicant in Player.Instance.ReplicantController.Replicants)
+        {
+            replicant.Health = replicant.MaxHealth;
+        }
     }
     
     private bool CanBuy(int cost)
