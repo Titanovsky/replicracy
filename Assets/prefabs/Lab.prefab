@@ -18,8 +18,102 @@
         "__type": "Lab",
         "__guid": "29c2eff2-df71-4b1b-b981-6dcc70453e8a",
         "__enabled": true,
-        "ButtonBuy": null,
-        "ButtonsCancel": [],
+        "ButtonBodyHead": {
+          "_type": "component",
+          "component_id": "5c91bbc5-9f42-4599-9d2c-29c34baae925",
+          "go": "cfb1035a-63c8-4390-8dae-939c90f9983e",
+          "component_type": "UseBox"
+        },
+        "ButtonBodyLeftHand": {
+          "_type": "component",
+          "component_id": "8df1834e-93d2-430a-89c0-0ed55d58517e",
+          "go": "1f5c0a67-80d1-419d-926e-f696e10560a1",
+          "component_type": "UseBox"
+        },
+        "ButtonBodyLeftLeg": {
+          "_type": "component",
+          "component_id": "eb359b83-902c-4e36-94bc-f9caed4d19ba",
+          "go": "69d2ace7-c183-480a-9a80-c14a40a547e6",
+          "component_type": "UseBox"
+        },
+        "ButtonBodyRightHand": {
+          "_type": "component",
+          "component_id": "1a2f92f3-3ee8-4e68-92dc-f875ca73a907",
+          "go": "a949f96f-5f6d-4206-bfe3-82b11effb1b7",
+          "component_type": "UseBox"
+        },
+        "ButtonBodyRightLeg": {
+          "_type": "component",
+          "component_id": "0d6d4cab-c4c1-4abb-829b-dde421421324",
+          "go": "4a27e0c2-2bca-4973-957a-6c692d3dbf81",
+          "component_type": "UseBox"
+        },
+        "ButtonReplicate": {
+          "_type": "component",
+          "component_id": "50d02f78-d3c8-41d5-8338-82cd72db370f",
+          "go": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
+          "component_type": "UseBox"
+        },
+        "ButtonsAbilities": [
+          {
+            "_type": "gameobject",
+            "go": "9b9e53b2-3ece-4a3d-8ff8-7eff45f889ab"
+          },
+          {
+            "_type": "gameobject",
+            "go": "7ed7768e-5023-465a-ab83-45c3aeaf5cca"
+          },
+          {
+            "_type": "gameobject",
+            "go": "21abb901-bab6-4b3e-8b08-6a4005c32cd9"
+          },
+          {
+            "_type": "gameobject",
+            "go": "39865b44-28be-425e-9859-c2009dc063a9"
+          },
+          {
+            "_type": "gameobject",
+            "go": "7897a8c2-3154-40a0-9930-5d9cb81dd76a"
+          },
+          {
+            "_type": "gameobject",
+            "go": "8c84f1a7-8353-4e45-ace4-46ff50944718"
+          }
+        ],
+        "ButtonsCancel": [
+          {
+            "_type": "gameobject",
+            "go": "32cf01c9-5264-4df1-b55f-083acd85074a"
+          },
+          {
+            "_type": "gameobject",
+            "go": "b6059bb0-04f6-438a-97c0-afc205e1e48a"
+          },
+          {
+            "_type": "gameobject",
+            "go": "6c64e87a-7a17-4274-bce0-781fccce0a2d"
+          },
+          {
+            "_type": "gameobject",
+            "go": "fa60a4be-d24a-4159-a3a6-e0bac17960ea"
+          },
+          {
+            "_type": "gameobject",
+            "go": "095d0c44-6029-4784-8a6f-79dff97fcc03"
+          },
+          {
+            "_type": "gameobject",
+            "go": "723785b1-7371-4b62-9b23-320752abcd67"
+          },
+          {
+            "_type": "gameobject",
+            "go": "4750389d-04c4-40f3-bcc6-58a1596a7a9b"
+          },
+          {
+            "_type": "gameobject",
+            "go": "1ea64015-410a-483a-bc85-ef6536d3819d"
+          }
+        ],
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -29,6 +123,14 @@
         "Replicant": {
           "_type": "gameobject",
           "go": "826207b6-06f9-4769-bf63-55d10d8526a2"
+        },
+        "ReplicantPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/replicant.prefab"
+        },
+        "Spawn": {
+          "_type": "gameobject",
+          "go": "8d0c2025-72fa-4eb7-a448-f5e5f5817ba0"
         }
       }
     ],
@@ -476,7 +578,7 @@
                 "__guid": "f420609d-e306-445a-835b-af7686bde27e",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "AbilityButtons",
+                "Name": "Buttons Ability",
                 "Position": "-48,-64,0",
                 "Rotation": "0,0,0,1",
                 "Scale": "1,1,1",
@@ -646,6 +748,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -1198,6 +1301,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -1750,6 +1854,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -2302,6 +2407,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -2854,6 +2960,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -3406,6 +3513,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -3806,7 +3914,7 @@
                 "__guid": "557e96cc-1b2c-4654-83e2-c97b44b6059a",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "ReplicantBodyButtons",
+                "Name": "Buttons Change Body",
                 "Position": "6,7.612385,6.041809",
                 "Rotation": "0.5196799,0,0,0.8543611",
                 "Scale": "1,1,1",
@@ -3885,6 +3993,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4007,6 +4116,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4129,6 +4239,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4251,6 +4362,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4373,6 +4485,7 @@
                         "__enabled": true,
                         "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4745,7 +4858,7 @@
                 "__guid": "d4998ce8-188b-4626-9b3c-9ef9c050135f",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "DeteleReplicantsButtons",
+                "Name": "Buttons Delete",
                 "Position": "-20.29302,-2.244179,-4.123087",
                 "Rotation": "0.433133,-0.1802383,-0.1200329,0.8749299",
                 "Scale": "0.6694056,0.6694056,0.6694056",
@@ -4829,6 +4942,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4913,6 +5027,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -4997,6 +5112,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5081,6 +5197,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5165,6 +5282,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5249,6 +5367,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5333,6 +5452,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5417,6 +5537,7 @@
                           "component_type": "ModelRenderer"
                         },
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5435,7 +5556,7 @@
                 "__guid": "c9cc7b22-25f5-4162-b08f-0215e371c49f",
                 "__version": 1,
                 "Flags": 0,
-                "Name": "BuyButton",
+                "Name": "Button Replicate",
                 "Position": "-11.20619,-1.193661,8.238676",
                 "Rotation": "0.5956275,-0.1417473,-0.08073228,0.7865224",
                 "Scale": "0.6725275,0.6725275,0.6725275",
@@ -5451,7 +5572,7 @@
                     "__guid": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
                     "__version": 1,
                     "Flags": 0,
-                    "Name": "Buy",
+                    "Name": "Replicate",
                     "Position": "0.2553052,-0.5003181,-2.699846",
                     "Rotation": "-0.1047245,-0.0591796,-0.003982484,0.9927309",
                     "Scale": "0.7907672,0.2765422,0.1",
@@ -5512,13 +5633,9 @@
                         "__type": "UseBox",
                         "__guid": "50d02f78-d3c8-41d5-8338-82cd72db370f",
                         "__enabled": true,
-                        "boxModel": {
-                          "_type": "component",
-                          "component_id": "6bb68e8b-a43a-4ce0-92b8-4bdbebe133b7",
-                          "go": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
-                          "component_type": "ModelRenderer"
-                        },
+                        "boxModel": null,
                         "IsUsed": false,
+                        "OnCallback": null,
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5526,7 +5643,7 @@
                         "OnComponentStart": null,
                         "OnComponentUpdate": null,
                         "outline": null,
-                        "UsableText": "Buy"
+                        "UsableText": "\uD83D\uDC9A Replicate\n\n\uD83D\uDCC3 Start process of replication new your personal monster\n\n\uD83E\uDDEC 5"
                       }
                     ],
                     "Children": []
@@ -5541,7 +5658,7 @@
         "__guid": "cbfd0063-feca-41ce-b946-e9f42fe02d27",
         "__version": 1,
         "Flags": 0,
-        "Name": "Part: Teleport",
+        "Name": "Part: Left",
         "Position": "-80,-56,-8",
         "Rotation": "0,0,0,1",
         "Scale": "1,1,1",
@@ -5557,7 +5674,7 @@
             "__guid": "b2ee2ded-3d9c-46a8-8002-9108bd2360ab",
             "__version": 1,
             "Flags": 0,
-            "Name": "Spawn Point",
+            "Name": "Spawn Teleport",
             "Position": "0,0,0",
             "Rotation": "0,0,0,1",
             "Scale": "1,1,1",
@@ -5932,7 +6049,25 @@
                 "SurfaceVelocity": "0,0,0"
               }
             ],
-            "Children": []
+            "Children": [
+              {
+                "__guid": "8d0c2025-72fa-4eb7-a448-f5e5f5817ba0",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Spawn Point",
+                "Position": "0,0,23",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [],
+                "Children": []
+              }
+            ]
           },
           {
             "__guid": "ffa25756-cac5-4548-af59-4e6b8522d940",

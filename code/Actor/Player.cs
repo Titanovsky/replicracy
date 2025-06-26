@@ -15,6 +15,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     public int CollectDna { get; set; } = 0;
 
     [Property] public PlayerController PlayerController { get; set; }
+    [Property] public ReplicantController ReplicantController { get; set; }
     [Property] public Hint Hint { get; set; }
     [Property] public HeaderLevel HeaderLevel { get; set; }
     [Property] public UsableUI UsablePanel { get; set; }
