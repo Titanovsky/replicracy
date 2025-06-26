@@ -66,7 +66,44 @@
           "go": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
           "component_type": "UseBox"
         },
-        "ButtonsAbilities": [],
+        "ButtonsAbilities": [
+          {
+            "_type": "component",
+            "component_id": "4d789c7a-534a-4542-bcf4-08f89eab027c",
+            "go": "9b9e53b2-3ece-4a3d-8ff8-7eff45f889ab",
+            "component_type": "UseBox"
+          },
+          {
+            "_type": "component",
+            "component_id": "a533497d-f75d-4840-b2a7-babef09dfab7",
+            "go": "7ed7768e-5023-465a-ab83-45c3aeaf5cca",
+            "component_type": "UseBox"
+          },
+          {
+            "_type": "component",
+            "component_id": "7cef12e7-7db7-45eb-b73a-127b202ffbc6",
+            "go": "21abb901-bab6-4b3e-8b08-6a4005c32cd9",
+            "component_type": "UseBox"
+          },
+          {
+            "_type": "component",
+            "component_id": "12e5273d-59b5-4bd6-9647-e93855a7d54d",
+            "go": "39865b44-28be-425e-9859-c2009dc063a9",
+            "component_type": "UseBox"
+          },
+          {
+            "_type": "component",
+            "component_id": "0923ad0d-1a21-43a2-ad91-8ddf57f88808",
+            "go": "7897a8c2-3154-40a0-9930-5d9cb81dd76a",
+            "component_type": "UseBox"
+          },
+          {
+            "_type": "component",
+            "component_id": "d464ed63-4dca-4475-a4bc-6f25bbe60aa7",
+            "go": "8c84f1a7-8353-4e45-ace4-46ff50944718",
+            "component_type": "UseBox"
+          }
+        ],
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,

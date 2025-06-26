@@ -3,7 +3,7 @@
     "__guid": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
     "__version": 1,
     "Flags": 0,
-    "Name": "Replicant",
+    "Name": "replicant",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -144,12 +144,9 @@
           "_type": "gameobject",
           "go": "61aa38ce-53d3-400a-9ea9-7d097c38301d"
         },
-        "NavMeshAgent": {
-          "_type": "component",
-          "component_id": "058fc198-2b37-4fb5-82bc-420903592ae0",
-          "go": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
-          "component_type": "NavMeshAgent"
-        },
+        "Health": 20,
+        "MaxHealth": 20,
+        "MovementSpeed": 140,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -157,6 +154,18 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "RotationSpeed": 2.5
+      },
+      {
+        "__type": "Sandbox.ReplicantHealthBar",
+        "__guid": "f7e8f230-2519-43a1-92e7-93d72a1cb563",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Replicant": null
       }
     ],
     "Children": [
@@ -235,6 +244,64 @@
         "NetworkOrphaned": 0,
         "OwnerTransfer": 1,
         "Components": [],
+        "Children": []
+      },
+      {
+        "__guid": "e1af0604-c13e-4981-b128-e499bd064c30",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "3D Text",
+        "Position": "0,0,78",
+        "Rotation": "0,0,0,1",
+        "Scale": "1.250042,1.037412,0.981379",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "71aa64cc-c399-4ad5-ad3d-3822976839f6",
+            "__enabled": true,
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "608.4995,224.8999",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.ReplicantHealthBar",
+            "__guid": "60cc54ec-ec22-4e57-a80d-9db9e6403731",
+            "__enabled": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Replicant": {
+              "_type": "component",
+              "component_id": "faabb689-f052-464e-bf5b-0fc4c90c4461",
+              "go": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
+              "component_type": "Replicant"
+            }
+          }
+        ],
         "Children": []
       }
     ],
