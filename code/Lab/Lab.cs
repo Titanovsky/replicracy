@@ -39,6 +39,22 @@ public sealed class Lab : Component, IDisposable
     private void Sync()
     {
         var info = LabInfo.Instance;
+
+        SetupBodygroups();
+    }
+
+    private void SetupBodygroups(int head = 0, int lHand = 0, int rHand = 0, int lLeg = 0, int rLeg = 0)
+    {
+        if (!Replicant.IsValid()) return;
+
+        var model = Replicant.GetComponent<ModelRenderer>();
+        if (!model.IsValid()) return;
+
+        model.SetBodyGroup("head", head);
+        model.SetBodyGroup("l_hand", lHand);
+        model.SetBodyGroup("r_hand", rHand);
+        model.SetBodyGroup("l_leg", lLeg);
+        model.SetBodyGroup("r_leg", rLeg);
     }
 
     private void Subscribe()
