@@ -5,16 +5,16 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Props")] public GameObject Replicant { get; set; }
     [Property, Feature("Props")] public GameObject Spawn { get; set; }
 
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonReplicate { get; set; }
-    [Property, Feature("Props"), Group("Buttons")] public List<GameObject> ButtonsCancel { get; set; } = new();
-    [Property, Feature("Props"), Group("Buttons")] public List<GameObject> ButtonsAbilities { get; set; } = new();
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonBodyHead { get; set; }
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonBodyLeftHand { get; set; }
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonBodyRightHand { get; set; }
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonBodyLeftLeg { get; set; }
-    [Property, Feature("Props"), Group("Buttons")] public UseBox ButtonBodyRightLeg { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
+    [Property, Feature("Buttons")] public List<GameObject> ButtonsCancel { get; set; } = new();
+    [Property, Feature("Buttons")] public List<GameObject> ButtonsAbilities { get; set; } = new();
+    [Property, Feature("Buttons")] public UseBox ButtonBodyHead { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonBodyLeftHand { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonBodyRightHand { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonBodyLeftLeg { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonBodyRightLeg { get; set; }
 
-    [Property, Feature("Props"), Group("Prefabs")] public GameObject ReplicantPrefab { get; set; }
+    [Property, Feature("Prefabs")] public GameObject ReplicantPrefab { get; set; }
 
     public void Dispose()
     {
