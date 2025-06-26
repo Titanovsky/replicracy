@@ -6,11 +6,43 @@
 
     public static int CostReplicate { get; set; } = 5;
     public static int CostHeal { get; set; } = 2;
-    public static int CostBodyHead { get; set; } = 5;
-    public static int CostBodyLeftHand { get; set; } = 1;
-    public static int CostBodyRightHand { get; set; } = 1;
-    public static int CostBodyLeftLeg { get; set; } = 2;
-    public static int CostBodyRightLeg { get; set; } = 2;
+    public static List<int> CostBodyHead { get; set; } = new()
+    {
+        1,
+        10,
+        15,
+        20
+    };
+
+    public static List<int> CostBodyLeftHand { get; set; } = new()
+    {
+        1,
+        10,
+        15,
+        20
+    };
+    public static List<int> CostBodyRightHand { get; set; } = new()
+    {
+        1,
+        10,
+        15,
+        20
+    };
+    public static List<int> CostBodyLeftLeg { get; set; } = new()
+    {
+        1,
+        10,
+        15,
+        20
+    };
+    public static List<int> CostBodyRightLeg { get; set; } = new()
+    {
+        1,
+        10,
+        15,
+        20
+    };
+
     public static List<int> CostAbility { get; set; } = new()
     {
         5,
