@@ -1,11 +1,11 @@
-public sealed class Replicant : Component
+public sealed class Replicant : Component, Component.IDamageable
 {
     [Property][Category("Movement")] public float RotationSpeed { get;  set; } = 2.5f;
     [Property][Category("Movement")] public float MovementSpeed { get; set; } = 140;
     [Property][Category("Attack")] public float AttackDelay { get; set; } = 1f;
     [Property][Category("Attack")] public int AttackDamage { get; set; } = 5;
-    [Property][Category("Health")] public float Health { get; set; } = 100;
-    [Property][Category("Health")] public float MaxHealth { get; set; } = 100;
+    [Property][Category("Health")] public float Health { get; set; } = 20;
+    [Property][Category("Health")] public float MaxHealth { get; set; } = 20;
     [Property][Category("Other")] GameObject eye { get; set; }
 
     [RequireComponent] NavMeshAgent NavMeshAgent { get; set; }
@@ -36,14 +36,27 @@ public sealed class Replicant : Component
         replicantFSM.CurrentState?.Update();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(in DamageInfo dmgInfo)
     {
+        var damage = dmgInfo.Damage;
+
         Health -= damage;
 
         if (Health <= 0)
-        {
-            GameObject.Destroy();
-        }
+            Die();
+    }
+
+    public void Die()
+    {
+        //todo sound.replicant.die
+        //todo particle
+
+        var repController = Player.Instance.ReplicantController;
+        var hasLive = repController.Replicants.Contains(this);
+        if (hasLive)
+            repController.RemoveReplicant(this);
+
+        DestroyGameObject();
     }
 
     public void SetTargetPoint(Vector3 point) => _targerPoint = point;
@@ -54,4 +67,9 @@ public sealed class Replicant : Component
     public Vector3 GetTargetPoint() => _targerPoint;
     public void ReseAttackTimer() => _attackTimer = AttackDelay;
     public bool IsAttackAllowed() => _attackTimer;
+
+    public void OnDamage(in DamageInfo dmgInfo)
+    {
+        TakeDamage(dmgInfo);
+    }
 }
