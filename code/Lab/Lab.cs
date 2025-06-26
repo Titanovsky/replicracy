@@ -18,7 +18,8 @@ public sealed class Lab : Component, IDisposable
 
     public void Dispose()
     {
-        Unscribe();
+        //Unscribe();
+        //? he auto collect OnCallbackes and unscribe them
     }
 
     private void Prepare()
