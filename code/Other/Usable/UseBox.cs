@@ -1,4 +1,5 @@
 using Sandbox;
+using System;
 
 public sealed class UseBox : Component, IUsable
 {
@@ -6,6 +7,8 @@ public sealed class UseBox : Component, IUsable
     [Property] public bool IsUsed { get; set; } = false;
     [Property] ModelRenderer boxModel { get; set; }
     [Property] HighlightOutline outline { get; set; }
+
+    [Property] public Action OnCallback { get; set; }
 
     public void EnableHightlight()
     {
@@ -26,6 +29,8 @@ public sealed class UseBox : Component, IUsable
         IsUsed = !IsUsed;
 
         ChangeColor();
+
+        OnCallback?.Invoke();
     }
 
     private void ChangeColor()
