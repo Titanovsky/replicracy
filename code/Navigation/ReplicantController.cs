@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 public sealed class ReplicantController : Component
 {
     [Property] public Player Player { get; set; }
-    [Property] private List<Replicant> Replicants { get; set; } = new();
+    [Property] public List<Replicant> Replicants { get; set; } = new();
 
     private Vector3 _targetPoint;
     private GameObject _targeObject;
