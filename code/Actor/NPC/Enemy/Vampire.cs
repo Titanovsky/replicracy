@@ -10,6 +10,7 @@ public sealed class Vampire : EnemyBase
     [Property] public float MovingRadius { get; set; } = 150f;
     [Property] public float AttackDamage { get; set; } = 10f;
     [Property] public float AttackDelay { get; set; } = 6f;
+    [Property] public SoundEvent AttackSound { get; set; }
     [Property] public GameObject AttackPosition { get; set; }
     [Property] public GameObject ProjectilePrefab { get; set; }
 
@@ -111,6 +112,8 @@ public sealed class Vampire : EnemyBase
         projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = AttackPosition.Parent;
 
+        Sound.Play(AttackSound, AttackPosition.WorldPosition);
+
         if (tr.Hit)
         {
             Log.Info($"[Vampire] hit {tr.Collider.GameObject}");
@@ -133,7 +136,7 @@ public sealed class Vampire : EnemyBase
 
         foreach (var item in objectInSphere)
         {
-            if (item.Tags.Has("player"))
+            if (!IsFriend(item))
                 SetTarget(item);
         }
     }
@@ -199,8 +202,17 @@ public sealed class Vampire : EnemyBase
 
     public override bool IsFriend(GameObject target)
     {
-        if (target.Tags.Has("undead"))
-            return true;
+        if (target.Tags.Has("player"))
+            return false;
+        
+        if (target.Tags.Has("replicant"))
+            return false;
+        
+        if (target.Tags.Has("villager"))
+            return false;
+        
+        if (target.Tags.Has("allien"))
+            return false;
 
         return base.IsFriend(target);
     }
