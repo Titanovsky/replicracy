@@ -150,6 +150,11 @@ public sealed class ReplicantController : Component
         Replicants.Remove(agent);
     }
 
+    public int GetCountReplicants()
+    {
+        return Replicants.Count;
+    }
+
     private void Subribe()
     {
         Player.OnSpecified += PlayerSpecifie;
