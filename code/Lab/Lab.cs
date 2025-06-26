@@ -37,6 +37,7 @@ public sealed class Lab : Component, IDisposable
     {
         ButtonReplicate.OnCallback += BuyReplicate;
         ButtonHeal.OnCallback += BuyHeal;
+        //start work
     }
 
     private void Unscribe()
