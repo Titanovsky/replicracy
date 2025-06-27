@@ -1,9 +1,9 @@
 using Sandbox;
 
-public sealed class Building : Component
+public sealed class Loot : Component
 {
     [Property] private int Health { get; set; } = 100;
-    [Property] public Color Color { get; set; } = Color.Red;
+    [Property] public Color DamageColor { get; set; } = Color.Red;
     public bool IsDead { get; set; }
 
     private int MaxHealth { get; set; }
@@ -16,7 +16,6 @@ public sealed class Building : Component
         MaxHealth = Health;
 
         GetModelComponent();
-
     }
 
     public void TakeDamage(int damage)
@@ -25,13 +24,7 @@ public sealed class Building : Component
 
         Health -= damage;
 
-        float t = (MaxHealth - Health) / (float)MaxHealth;
-
-        if (MeshComponent != null)
-            MeshComponent.Color = MeshComponent.Color.LerpTo(Color, t);
-
-        if (ModelRenderer != null)
-            ModelRenderer.Tint = ModelRenderer.Tint.LerpTo(Color, t);
+        LerpColor();
 
         CheckDead();
     }
@@ -50,5 +43,16 @@ public sealed class Building : Component
 
         if (MeshComponent == null)
             ModelRenderer = Components.Get<ModelRenderer>();
+    }
+
+    private void LerpColor()
+    {
+        float t = (MaxHealth - Health) / (float)MaxHealth;
+
+        if (MeshComponent != null)
+            MeshComponent.Color = MeshComponent.Color.LerpTo(DamageColor, t);
+
+        if (ModelRenderer != null)
+            ModelRenderer.Tint = ModelRenderer.Tint.LerpTo(DamageColor, t);
     }
 }

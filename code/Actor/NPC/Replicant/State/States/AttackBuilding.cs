@@ -40,7 +40,7 @@ public class AttackBuilding : MovableState
     {
         if (!Replicant.IsAttackAllowed()) return;
 
-        var building = _targetObject.Components.Get<Building>();
+        var building = _targetObject.Components.Get<Loot>();
 
         building.TakeDamage(Replicant.AttackDamage);
 
