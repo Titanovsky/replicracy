@@ -1,0 +1,335 @@
+{
+  "RootObject": {
+    "__guid": "c78fdc7e-9b90-4945-84bb-14ebcf780318",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "Solder",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "enemy,villager,npc",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Police",
+        "__guid": "dec2bf0e-5f2b-4d07-b224-ce2af93d8e15",
+        "__enabled": true,
+        "AttackPosition": {
+          "_type": "gameobject",
+          "go": "8249f124-d8b5-4640-b8ac-ee16957c2ea7"
+        },
+        "BulletDamage": 3,
+        "EmotionsController": {
+          "_type": "component",
+          "component_id": "abf693cb-e586-4195-8b0c-1737a994d5f8",
+          "go": "c78fdc7e-9b90-4945-84bb-14ebcf780318",
+          "component_type": "EmotionsController"
+        },
+        "Health": 25,
+        "LostRadius": 1000,
+        "MagazineAmount": 15,
+        "MoveDelay": 6,
+        "MovingRadius": 200,
+        "NavMeshAgent": {
+          "_type": "component",
+          "component_id": "5a4bce27-8f01-401f-9e2f-ee18a7a257e3",
+          "go": "c78fdc7e-9b90-4945-84bb-14ebcf780318",
+          "component_type": "NavMeshAgent"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "ProjectilePrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/projectile/projectile_bullet.prefab"
+        },
+        "ReloadDelay": 7,
+        "Renderer": {
+          "_type": "component",
+          "component_id": "f30bb3ee-0138-4c1e-a6a2-967892c839cd",
+          "go": "937c4c1a-fc54-4286-be2f-5ce88953c14c",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "SearchRadius": 800,
+        "ShootDelay": 0.2,
+        "ShootSound": null
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "a921a1bc-e591-4a5c-bd19-307d25f4e7ce",
+        "__enabled": true,
+        "Center": "0,0,36.49999",
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "25.3,27.00002,67.49989",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
+      },
+      {
+        "__type": "EmotionsController",
+        "__guid": "abf693cb-e586-4195-8b0c-1737a994d5f8",
+        "__enabled": true,
+        "CurrentEmotion": "Idle",
+        "EmotionDecal": {
+          "_type": "component",
+          "component_id": "e90c091d-4a0a-4c02-8fa5-e4c48a3c5e0d",
+          "go": "0e09a7b2-38af-4ab7-92f5-24e44b5535cd",
+          "component_type": "Decal"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
+        "__type": "Sandbox.NavMeshAgent",
+        "__guid": "5a4bce27-8f01-401f-9e2f-ee18a7a257e3",
+        "__enabled": true,
+        "Acceleration": 120,
+        "AutoTraverseLinks": false,
+        "Height": 64,
+        "MaxSpeed": 120,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 15.600007,
+        "Separation": 0.25,
+        "UpdatePosition": true,
+        "UpdateRotation": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "937c4c1a-fc54-4286-be2f-5ce88953c14c",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Body",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "0.9171659,0.9171659,0.9171659",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "f30bb3ee-0138-4c1e-a6a2-967892c839cd",
+            "__enabled": true,
+            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 1365,
+            "BoneMergeTarget": null,
+            "CreateAttachments": false,
+            "CreateBoneObjects": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/npc/example/bolvan/bolvan.vmdl",
+            "Morphs": {},
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "PlaybackRate": 1,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Sequence": {
+              "Name": null,
+              "Looping": true,
+              "Blending": false
+            },
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": false
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "65ea74bd-4678-4b27-850a-2449652c9577",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "3D Text",
+        "Position": "0,0,71.78728",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "72a38a71-bcb1-413d-bf22-ca4a910a5102",
+            "__enabled": true,
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "700,195.5999",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.EnemyHealthBar",
+            "__guid": "c22d28e7-c401-4e99-bfbd-cc7b4daa2d09",
+            "__enabled": true,
+            "Enemy": {
+              "_type": "component",
+              "component_id": "dec2bf0e-5f2b-4d07-b224-ce2af93d8e15",
+              "go": "c78fdc7e-9b90-4945-84bb-14ebcf780318",
+              "component_type": "Police"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "8249f124-d8b5-4640-b8ac-ee16957c2ea7",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "AttackPosition",
+        "Position": "17.31823,0,34.63646",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": []
+      },
+      {
+        "__guid": "0e09a7b2-38af-4ab7-92f5-24e44b5535cd",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Emotion",
+        "Position": "3.200627,0,57.86422",
+        "Rotation": "0,0,0,1",
+        "Scale": "1.082389,1.082389,1.082389",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.Decal",
+            "__guid": "e90c091d-4a0a-4c02-8fa5-e4c48a3c5e0d",
+            "__enabled": true,
+            "__version": 1,
+            "AttenuationAngle": 0,
+            "ColorTexture": {
+              "$compiler": "texture",
+              "$source": "imagefile",
+              "data": {
+                "FilePath": "texture/emotions/idle.png",
+                "MaxSize": 4096,
+                "ConvertHeightToNormals": false,
+                "NormalScale": 1,
+                "Rotate": 0,
+                "FlipVertical": false,
+                "FlipHorizontal": false,
+                "Padding": {
+                  "Size": "0,0",
+                  "EdgeSize": "0,0"
+                },
+                "Sharpen": 0,
+                "InvertColor": false,
+                "Blur": 0,
+                "Brightness": 1,
+                "Contrast": 1,
+                "Saturation": 1,
+                "Hue": 0,
+                "Colorize": false,
+                "TargetColor": "0,1,0,1",
+                "CacheToDisk": true
+              },
+              "compiled": "textures/generated/imagefile/c353984e97782abf.vtex"
+            },
+            "ColorTint": "255,255,255,255",
+            "NormalTexture": null,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RMOTexture": null,
+            "SequenceId": 0,
+            "SheetSequence": false,
+            "Size": "4.199995,5.2,10.6",
+            "SortLayer": 0
+          }
+        ],
+        "Children": []
+      }
+    ]
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}
