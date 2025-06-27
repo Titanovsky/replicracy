@@ -35,14 +35,14 @@ public sealed class EmotionsController: Component
     {
         return emotion switch
         {
-            Emotions.Idle => "texture/emotions/idle.png",
-            Emotions.Angry => "texture/emotions/angry.png",
-            Emotions.Scared1 => "texture/emotions/scared_1.png",
-            Emotions.Scared2 => "texture/emotions/scared_2.png",
-            Emotions.Confused => "texture/emotions/confused.png",
-            Emotions.Vampire => "texture/emotions/vampire.png",
-            Emotions.Demon => "texture/emotions/demon.png",
-            _ => "texture/emotions/idle.png"
+            Emotions.Idle => "texture/emotions/idle.vtex",
+            Emotions.Angry => "texture/emotions/angry.vtex",
+            Emotions.Scared1 => "texture/emotions/scared_1.vtex",
+            Emotions.Scared2 => "texture/emotions/scared_2.vtex",
+            Emotions.Confused => "texture/emotions/confused.vtex",
+            Emotions.Vampire => "texture/emotions/vampire.vtex",
+            Emotions.Demon => "texture/emotions/demon.vtex",
+            _ => "texture/emotions/idle.vtex"
         };
     }
 }
