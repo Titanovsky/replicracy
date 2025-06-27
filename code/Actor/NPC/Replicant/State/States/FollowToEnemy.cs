@@ -4,24 +4,14 @@ public class FollowToEnemy : MovableState
 
     private SceneTraceResult tr;
 
-    public override void Enter()
-    {
-
-        Log.Info("Enter FollowToEnemy State");
-
-    }
-
     public override void Update()
     {
         GoToEnemy();
         SearchEnemy();
 
         DrawSpecified();
-    }
 
-    public override void Exit()
-    {
-        Log.Info("Exit FollowToEnemy State");
+        CheckTargetObjectIsDead();
     }
 
     private void GoToEnemy()
@@ -40,6 +30,7 @@ public class FollowToEnemy : MovableState
         tr = Game.ActiveScene.Trace.Ray(new Ray(Replicant.GetEye().WorldPosition, Replicant.GetEye().WorldRotation.Forward), Replicant.AttackDistance)
         .IgnoreGameObject(Replicant.GameObject)
         .Run();
+
         if (!tr.Hit) return;
 
         var targetObject = tr.GameObject;
@@ -53,6 +44,16 @@ public class FollowToEnemy : MovableState
                 Replicant.replicantFSM.SetState<HandleAttackEnemy>();
             }
         }
+    }
+
+    private void CheckTargetObjectIsDead()
+    {
+       var target = Replicant.GetTargetObject();
+        
+        var enemy = target?.Components.Get<EnemyBase>();
+
+        if (enemy == null)     
+            Replicant.replicantFSM.SetState<ReturnToPlayer>();    
     }
 
     private void DrawSpecified()
