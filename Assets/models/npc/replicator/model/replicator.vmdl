@@ -307,11 +307,81 @@
 						weights = 
 						[
 							{
-								bone = "upper_arm_L"
+								bone = "forearm_L"
 								weight = 1.0
 							},
 							{
+								bone = "forearm_R"
+								weight = 1.0
+							},
+							{
+								bone = "hand_L"
+								weight = 1.0
+							},
+							{
+								bone = "hand_R"
+								weight = 1.0
+							},
+							{
+								bone = "shoulder_L"
+								weight = 0.0
+							},
+							{
+								bone = "shoulder_R"
+								weight = 0.0
+							},
+							{
+								bone = "spine"
+								weight = 0.0
+							},
+							{
+								bone = "spine_001"
+								weight = 0.0
+							},
+							{
+								bone = "spine_002"
+								weight = 0.0
+							},
+							{
+								bone = "spine_003"
+								weight = 0.0
+							},
+							{
+								bone = "spine_004"
+								weight = 0.0
+							},
+							{
+								bone = "spine_005"
+								weight = 1.0
+							},
+							{
+								bone = "spine_006"
+								weight = 1.0
+							},
+							{
+								bone = "upper_arm_L"
+								weight = 0.0
+							},
+							{
 								bone = "upper_arm_R"
+								weight = 0.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "Legs"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "thigh_L"
+								weight = 1.0
+							},
+							{
+								bone = "thigh_R"
 								weight = 1.0
 							},
 						]
@@ -334,11 +404,11 @@
 							[
 								{
 									name = "spine_006"
-									weight = 0.0
+									weight = 1.0
 								},
 								{
-									name = "spine_005"
-									weight = 0.0
+									name = "spine_003"
+									weight = 0.589
 								},
 							]
 						}
@@ -489,7 +559,7 @@
 						[
 							{
 								from = "material.005.vmat"
-								to = "models/npc/replicator/material/base_colarv2.vmat"
+								to = "models/npc/replicator/material/base_colar.vmat"
 							},
 							{
 								from = "demon_attributes.vmat"
@@ -2127,8 +2197,322 @@
 						take = 0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "Melee_Punch_AimMatrix_Standing_01"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/Attack.fbx"
+						start_frame = 334
+						end_frame = 344
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Melee_Punch_Attack_Left"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "Melee_Punch_AimMatrix_Standing_01"
+								frame = 4
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/Attack.fbx"
+						start_frame = 345
+						end_frame = 375
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Melee_Punch_Attack_Right"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "Melee_Punch_AimMatrix_Standing_01"
+								frame = 4
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/Attack.fbx"
+						start_frame = 376
+						end_frame = 406
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Melee_Punch_Pose_Standing_01"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/Attack.fbx"
+						start_frame = 407
+						end_frame = 437
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Melee_Punch_Pose_Standing_Block_01"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/Attack.fbx"
+						start_frame = 438
+						end_frame = 468
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Aim_Matrix"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "Melee_Punch_AimMatrix_Standing_01"
+								frame = 4
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/idle.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "eyes"
+						parent_bone = "spine_006"
+						relative_origin = [ -15.704614, 6.220534, 55.232044 ]
+						relative_angles = [ -74.99958, 99.999519, 169.996521 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "Melee_forward"
+						parent_bone = "hand_R"
+						relative_origin = [ -11.47715, 85.667503, -27.534491 ]
+						relative_angles = [ 15.703994, 67.51532, -16.889179 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "foot_R"
+						parent_bone = "foot_R"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "foot_L"
+						parent_bone = "foot_L"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "IKData"
+				children = 
+				[
+					{
+						_class = "IKChain"
+						name = "IK_Foot_R"
+						children = 
+						[
+							{
+								_class = "IKChainJoint"
+								name = "thigh_R"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "shin_R"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "foot_R"
+												bone = "foot_R"
+											},
+										]
+										bone = "shin_R"
+									},
+								]
+								bone = "thigh_R"
+							},
+						]
+						m_bDoBonesOrientAlongPositiveX = true
+						"m_DefaultSolverSettings.m_nNumIterations" = 6
+						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+						"m_DefaultTargetSettings.m_Bone" = 
+						{
+							m_Name = "foot_R"
+						}
+						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+						{
+							m_id = 4294967295
+						}
+						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+						{
+							m_Name = ""
+						}
+						"m_Data.m_bParentJointRequiresAlignment" = true
+					},
+					{
+						_class = "IKChain"
+						name = "IK_Foot_L"
+						children = 
+						[
+							{
+								_class = "IKChainJoint"
+								name = "thigh_L"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "shin_L"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "foot_L"
+												bone = "foot_L"
+											},
+										]
+										bone = "shin_L"
+									},
+								]
+								bone = "thigh_L"
+							},
+						]
+						m_bDoBonesOrientAlongPositiveX = true
+						"m_DefaultSolverSettings.m_nNumIterations" = 6
+						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+						"m_DefaultTargetSettings.m_Bone" = 
+						{
+							m_Name = "foot_L"
+						}
+						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+						{
+							m_id = 4294967295
+						}
+						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+						{
+							m_Name = ""
+						}
+						"m_Data.m_bParentJointRequiresAlignment" = true
+					},
+				]
+			},
+			{
+				_class = "BoneMarkupList"
+				children = 
+				[
+					{
+						_class = "BoneMarkup"
+						target_bone = "foot_L"
+						ignore_Translation = false
+						ignore_rotation = false
+						do_not_discard = true
+					},
+				]
+				bone_cull_type = "Aggressive"
 			},
 		]
 		model_archetype = ""

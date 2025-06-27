@@ -211,15 +211,21 @@
             "OnComponentStart": null,
             "OnComponentUpdate": null,
             "Parameters": {
-              "bools": {},
+              "bools": {
+                "b_attack": false
+              },
               "ints": {},
               "floats": {
-                "duck": 0,
+                "move_y": 0,
                 "move_x": 0,
-                "move_y": 0
+                "holdtype_attack": 0,
+                "duck": 0,
+                "aim_body_yaw": 0,
+                "aim_body_weight": 0,
+                "aim_body_pitch": 0
               },
               "vectors": {
-                "Aim": "0,0,0"
+                "aim_head": "0,0,0"
               },
               "rotations": {}
             },
