@@ -115,6 +115,7 @@ public sealed class Vampire : EnemyBase
 
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
+        projectile.Damage = AttackDamage;
         projectile.Direction = tr.Direction;
         projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = AttackPosition.Parent;
