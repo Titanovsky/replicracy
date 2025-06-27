@@ -10,16 +10,9 @@ public sealed class ReplicantController : Component
     private Vector3 _targetPoint;
     private GameObject _targeObject;
 
-    private Vector3 _targetObjectPosition;
-
     protected override void OnStart()
     {
         Subribe();
-    }
-
-    protected override void OnUpdate()
-    {
-        UpdateTargetObjectPosition();
     }
 
     protected override void OnDestroy()
@@ -43,7 +36,7 @@ public sealed class ReplicantController : Component
 
             ActiveHightlights();
 
-            MoveToEnemy();
+            AttackEnemy();
             return;
         }
 
@@ -53,14 +46,14 @@ public sealed class ReplicantController : Component
             
             ActiveHightlights();
 
-            MoveToBuilding();
+            AttackBuilding();
             return;
         }
 
         MoveToPoint();
     }
 
-    private void MoveToEnemy()
+    private void AttackEnemy()
     {
         if (Replicants.Count == 0) return;
 
@@ -68,12 +61,12 @@ public sealed class ReplicantController : Component
         {
             if (!replicant.IsValid()) continue;
 
-            //replicant.SetAttackBuilding(_targeObject.WorldPosition);
+            replicant.SetAttackEnemy(_targeObject);
         }
 
     }
 
-    private void MoveToBuilding()
+    private void AttackBuilding()
     {
         if (Replicants.Count == 0) return;
 
@@ -95,21 +88,6 @@ public sealed class ReplicantController : Component
 
             replicant.SetMoveToPoint(_targetPoint);
         }
-    }
-
-    private void UpdateTargetObjectPosition()
-    {
-        if (_targeObject == null)
-            return;
-
-        var currentTargerPosition = _targeObject.WorldPosition;
-
-        if (currentTargerPosition == _targetObjectPosition)
-            return;
-
-        _targetObjectPosition = _targeObject.WorldPosition;
-
-        MoveToBuilding();
     }
 
     private void ActiveHightlights()

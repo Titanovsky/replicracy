@@ -21,8 +21,6 @@ public class AttackBuilding : MovableState
     {
         UpdatedRotation(Replicant.GetTargetPoint());
 
-        DrawSpecified();
-
         SearchLoot();
 
         Attack();
@@ -83,15 +81,4 @@ public class AttackBuilding : MovableState
         attackLoot = null;
         Replicant.ShowReplicant();
     }
-
-    private void DrawSpecified()
-    {
-        Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
-        Gizmo.Draw.LineThickness = 4;
-        Gizmo.Draw.Line(tr.StartPosition, tr.EndPosition);
-
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(tr.EndPosition, tr.EndPosition + tr.Normal * 1.0f);
-    }
-
 }
