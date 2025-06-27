@@ -80,7 +80,10 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     {
         if (ReplicantController.Replicants.Count == 0) return;
 
-        _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
+        var screenCenter = new Vector2(Screen.Width, Screen.Height) * .5f;
+        var ray = Scene.Camera.ScreenPixelToRay(screenCenter);
+
+        _traceResult = Scene.Trace.Ray(ray.Position, ray.Position + ray.Forward * 10000f)
             .Size(BBox.FromPositionAndSize(-8, 8))
             .IgnoreGameObject(GameObject)
             .Run();
@@ -99,9 +102,12 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
     private void PlayerView()
     {
-        _traceResult = Scene.Trace.Ray(Scene.Camera.WorldPosition, Scene.Camera.WorldPosition + PlayerController.EyeAngles.Forward * PlayerUseRay)
-        .IgnoreGameObject(GameObject)
-        .Run();
+        var screenCenter = new Vector2(Screen.Width, Screen.Height) * .5f;
+        var ray = Scene.Camera.ScreenPixelToRay(screenCenter);
+
+        _traceResult = Scene.Trace.Ray(ray.Position, ray.Position + ray.Forward * PlayerUseRay)
+            .IgnoreGameObject(GameObject)
+            .Run();
 
         if (GlobalSettings.IsDebug && _traceResult.Hit)
         {
