@@ -29,6 +29,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
     public Action<SceneTraceResult> OnSpecified { get; set; }
 
+    private Vector3 _spawnPos;
+
     //todo: fix after, it's not important fuckup
     //public void PostCameraSetup(CameraComponent cam)
     //{
@@ -48,6 +50,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
     private void Prepare()
     {
+        _spawnPos = WorldPosition;
+
         Health = MaxHealth;
 
         if (!PlayerController.IsValid())
@@ -130,6 +134,12 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
             Use();
     }
 
+    private void CheckFlyDown()
+    {
+        if (WorldPosition.z <= LevelManager.Instance.CurrentLevel.MinDangerousZ)
+            WorldPosition = _spawnPos;
+    }
+
     private void DrawSpecified()
     {
         //Gizmo.Draw.Color = Color.White.WithAlpha(0.1f);
@@ -160,6 +170,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         PlayerView();
         CheckInput();
         DrawSpecified();
+        CheckFlyDown();
     }
 
     public void OnDamage(in DamageInfo damage)
