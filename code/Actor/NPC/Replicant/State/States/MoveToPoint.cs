@@ -34,7 +34,6 @@ public class MoveToPoint : MovableState
 
         if (distance < 100)
         {
-            Log.Info("SetIdle");
             Replicant.replicantFSM.SetState<Idle>();
         }
     }

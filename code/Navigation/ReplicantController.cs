@@ -165,8 +165,6 @@ public sealed class ReplicantController : Component
     private void Subribe()
     {
         Player.Instance.OnSpecified += PlayerSpecifie;
-
-        Log.Info($"Subscrube");
     }
 
     private void Unsubscribe()
@@ -175,7 +173,5 @@ public sealed class ReplicantController : Component
         if (Player.Instance.OnSpecified is null) return;
 
         Player.Instance.OnSpecified -= PlayerSpecifie;
-
-        Log.Info($"Unsubscribe");
     }
 }
