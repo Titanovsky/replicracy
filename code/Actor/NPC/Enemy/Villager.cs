@@ -4,6 +4,7 @@ public sealed class Villager : EnemyBase
 {
     [Property] public NavMeshAgent Agent { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
+    [Property] public EmotionsController EmotionsController { get; set; }
     [Property, Category("Stats")] public override float Health { get; set; } = 10f; 
 
     private TimeUntil _delayMoving;
