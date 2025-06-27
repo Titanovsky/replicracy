@@ -11,8 +11,9 @@ public sealed class Replicant : Component, Component.IDamageable
     [Property][Category("Health")] public float Health { get; set; } = 20;
     [Property][Category("Health")] public float MaxHealth { get; set; } = 20;
     [Property][Category("Other")] GameObject eye { get; set; }
+    [Property][Category("Other")] public SkinnedModelRenderer Renderer { get; set; }
 
-    [RequireComponent] NavMeshAgent NavMeshAgent { get; set; }
+    [RequireComponent] public NavMeshAgent Agent { get; set; }
 
     private Vector3 _targerPoint;
 
@@ -68,9 +69,9 @@ public sealed class Replicant : Component, Component.IDamageable
     }
 
     public void SetTargetPoint(Vector3 point) => _targerPoint = point;
-    public void MoveToPoint(Vector3 point) => NavMeshAgent.MoveTo(point);
+    public void MoveToPoint(Vector3 point) => Agent.MoveTo(point);
 
-    public float GetRadius() => NavMeshAgent.Radius;
+    public float GetRadius() => Agent.Radius;
     public GameObject GetEye() => eye;
     public Vector3 GetTargetPoint() => _targerPoint;
     public void ReseAttackTimer() => _attackTimer = AttackDelay;

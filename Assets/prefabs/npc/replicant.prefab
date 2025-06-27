@@ -148,6 +148,12 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
+        "Renderer": {
+          "_type": "component",
+          "component_id": "0d2d8866-cf71-40c9-ac6b-cd1723009549",
+          "go": "3e82156c-eb77-4d32-982e-cf2636ff1d20",
+          "component_type": "SkinnedModelRenderer"
+        },
         "RotationSpeed": 2.5
       },
       {
@@ -160,7 +166,12 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Replicant": null
+        "Replicant": {
+          "_type": "component",
+          "component_id": "faabb689-f052-464e-bf5b-0fc4c90c4461",
+          "go": "d1c7ad0e-8e50-4772-8442-ac84e923c23f",
+          "component_type": "Replicant"
+        }
       }
     ],
     "Children": [
