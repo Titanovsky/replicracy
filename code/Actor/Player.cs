@@ -122,7 +122,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
     private void CheckInput()
     {
-        if (Input.Pressed("Specify"))
+        if (Input.Pressed("Attack2"))
             Specify();
 
         if (Input.Pressed("Use"))
