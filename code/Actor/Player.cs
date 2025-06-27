@@ -74,6 +74,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
     public void Specify()
     {
+        if (ReplicantController.Replicants.Count == 0) return;
+
         _traceResult = Scene.Trace.Ray(ray: PlayerController.EyeTransform.ForwardRay, 10000f)
             .Size(BBox.FromPositionAndSize(-8, 8))
             .IgnoreGameObject(GameObject)

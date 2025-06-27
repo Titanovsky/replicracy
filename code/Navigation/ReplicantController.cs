@@ -24,11 +24,13 @@ public sealed class ReplicantController : Component
 
     protected override void OnDestroy()
     {
-        //Unsubscribe();
+        Unsubscribe();
     }
 
     private void PlayerSpecifie(SceneTraceResult traceResult)
     {
+        if (Replicants.Count == 0) return;
+
         DisableHightlights();
         _targeObject = null;
 
@@ -70,11 +72,15 @@ public sealed class ReplicantController : Component
 
     private void MoveToPoint()
     {
-        foreach (var unit in Replicants)
-        {
-            unit.SetTargetPoint(_targetPoint);
+        if (Replicants.Count == 0) return;
 
-            unit.replicantFSM.SetState<MoveToPoint>();
+        foreach (var replicant in Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            replicant.SetTargetPoint(_targetPoint);
+
+            replicant.replicantFSM.SetState<MoveToPoint>();
         }
     }
 
