@@ -37,7 +37,7 @@ public class FollowToEnemy : MovableState
 
     private void SearchEnemy()
     {
-        tr = Game.ActiveScene.Trace.Ray(new Ray(Replicant.GetEye().WorldPosition, Replicant.GetEye().WorldRotation.Forward), 40)
+        tr = Game.ActiveScene.Trace.Ray(new Ray(Replicant.GetEye().WorldPosition, Replicant.GetEye().WorldRotation.Forward), Replicant.AttackDistance)
         .IgnoreGameObject(Replicant.GameObject)
         .Run();
         if (!tr.Hit) return;
