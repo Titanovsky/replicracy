@@ -12,13 +12,13 @@ public sealed class ColorGameManager : Component
 
     private int[] _answers;
     
-    private float _currentRound = 1f;
+    private float _currentRound { get; set; } = 1f;
     private bool _isPlaying = false;
 
-    private bool _isFinished = false;
+    private bool _isFinished { get; set; } = false;
 
-    private RealTimeUntil _changeColorTimer;
-    private RealTimeUntil _waitingAnswerTimer;
+    private RealTimeUntil _changeColorTimer { get; set; }
+    private RealTimeUntil _waitingAnswerTimer { get; set; }
 
     private Random rnd;
 
