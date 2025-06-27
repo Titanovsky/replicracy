@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "__guid": "fa5ff07a-705e-4bd8-b486-7d25d313bc17",
+    "__guid": "cc3f1f2b-6ff8-41e8-a0f8-6b746d2e116a",
     "__version": 1,
     "Flags": 0,
     "Name": "Zombie",
@@ -8,7 +8,7 @@
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
     "Tags": "enemy,villager,npc",
-    "Enabled": true,
+    "Enabled": false,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
@@ -16,7 +16,7 @@
     "Components": [
       {
         "__type": "Sandbox.BoxCollider",
-        "__guid": "b77015b1-dfe3-4736-ae69-4a0ab72922a8",
+        "__guid": "71441517-2d82-4c12-b901-98e33211c6c2",
         "__enabled": true,
         "Center": "0,0,36.49999",
         "Friction": null,
@@ -38,24 +38,29 @@
       },
       {
         "__type": "Zombie",
-        "__guid": "23e601b6-6ba0-493e-b44f-56d024eabdd9",
+        "__guid": "35e42578-d220-40e4-99bb-4ccb23ac871e",
         "__enabled": true,
         "AttackDamage": 3,
-        "AttackDelay": 1,
+        "AttackDelay": 5,
+        "AttackDistance": 30,
+        "AttackPosition": {
+          "_type": "gameobject",
+          "go": "f3184296-ed93-4f20-8d3d-dddac35b23ae"
+        },
         "EmotionsController": {
           "_type": "component",
-          "component_id": "ac03bc23-06d6-4a8c-8ccc-864711f4a26a",
-          "go": "fa5ff07a-705e-4bd8-b486-7d25d313bc17",
+          "component_id": "52404624-8f17-4c1d-ae73-00e3d2f943eb",
+          "go": "cc3f1f2b-6ff8-41e8-a0f8-6b746d2e116a",
           "component_type": "EmotionsController"
         },
-        "Health": 0,
+        "Health": 50,
         "LostRadius": 700,
         "MoveDelay": 10,
-        "MovingRadius": 150,
+        "MovingStartPosRadius": 150,
         "NavMeshAgent": {
           "_type": "component",
-          "component_id": "65925968-596a-48fb-841f-3bd79521ad4d",
-          "go": "fa5ff07a-705e-4bd8-b486-7d25d313bc17",
+          "component_id": "0e2e5873-f83e-445d-8686-646e414e1bdf",
+          "go": "cc3f1f2b-6ff8-41e8-a0f8-6b746d2e116a",
           "component_type": "NavMeshAgent"
         },
         "OnComponentDestroy": null,
@@ -66,21 +71,21 @@
         "OnComponentUpdate": null,
         "Renderer": {
           "_type": "component",
-          "component_id": "69db7a09-4ab7-41f6-b2ce-ef73f594ab82",
-          "go": "99e85bfc-9240-49e3-ba5b-49e4533dddaf",
+          "component_id": "8c171c6d-b544-4259-94da-44934830f7ef",
+          "go": "32b15c0c-16ed-41ac-bcd9-aa96bd8c29b3",
           "component_type": "SkinnedModelRenderer"
         },
         "SearchRadius": 500
       },
       {
         "__type": "EmotionsController",
-        "__guid": "ac03bc23-06d6-4a8c-8ccc-864711f4a26a",
+        "__guid": "52404624-8f17-4c1d-ae73-00e3d2f943eb",
         "__enabled": true,
         "CurrentEmotion": "Angry",
         "EmotionDecal": {
           "_type": "component",
-          "component_id": "0e6c325f-4c5a-4d07-a6b3-c43774a71c6f",
-          "go": "6c79cc57-ec5e-4611-bb25-34fa233b09d9",
+          "component_id": "390041c5-17e8-4bea-afd9-ded3740a405c",
+          "go": "a0d617bd-73cd-43d3-a4a8-f8b50a2f12dc",
           "component_type": "Decal"
         },
         "OnComponentDestroy": null,
@@ -92,7 +97,7 @@
       },
       {
         "__type": "Sandbox.NavMeshAgent",
-        "__guid": "65925968-596a-48fb-841f-3bd79521ad4d",
+        "__guid": "0e2e5873-f83e-445d-8686-646e414e1bdf",
         "__enabled": true,
         "Acceleration": 120,
         "AutoTraverseLinks": false,
@@ -112,7 +117,7 @@
     ],
     "Children": [
       {
-        "__guid": "99e85bfc-9240-49e3-ba5b-49e4533dddaf",
+        "__guid": "32b15c0c-16ed-41ac-bcd9-aa96bd8c29b3",
         "__version": 1,
         "Flags": 0,
         "Name": "Body",
@@ -128,7 +133,7 @@
         "Components": [
           {
             "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "69db7a09-4ab7-41f6-b2ce-ef73f594ab82",
+            "__guid": "8c171c6d-b544-4259-94da-44934830f7ef",
             "__enabled": true,
             "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
             "BodyGroups": 1365,
@@ -172,7 +177,7 @@
         "Children": []
       },
       {
-        "__guid": "82f00cea-40ad-43d7-ac47-52e7b5c00a7c",
+        "__guid": "c4e32e76-1d00-415c-a583-cdf75525247c",
         "__version": 1,
         "Flags": 0,
         "Name": "3D Text",
@@ -188,7 +193,7 @@
         "Components": [
           {
             "__type": "Sandbox.WorldPanel",
-            "__guid": "8c01fd4a-bb47-467d-92b8-80d471e73057",
+            "__guid": "b7de0d6b-51b5-4d56-8ef7-35016b96e26e",
             "__enabled": true,
             "HorizontalAlign": "Center",
             "InteractionRange": 1000,
@@ -211,12 +216,12 @@
           },
           {
             "__type": "Sandbox.EnemyHealthBar",
-            "__guid": "59738dbe-56e5-4fbe-aeda-cc5c062b5f25",
+            "__guid": "4a3c74c7-b030-4eff-a900-4aae8fbd7881",
             "__enabled": true,
             "Enemy": {
               "_type": "component",
-              "component_id": "23e601b6-6ba0-493e-b44f-56d024eabdd9",
-              "go": "fa5ff07a-705e-4bd8-b486-7d25d313bc17",
+              "component_id": "35e42578-d220-40e4-99bb-4ccb23ac871e",
+              "go": "cc3f1f2b-6ff8-41e8-a0f8-6b746d2e116a",
               "component_type": "Zombie"
             },
             "OnComponentDestroy": null,
@@ -230,7 +235,7 @@
         "Children": []
       },
       {
-        "__guid": "38e8506c-9198-4a8e-b578-b021d9a0f18a",
+        "__guid": "f3184296-ed93-4f20-8d3d-dddac35b23ae",
         "__version": 1,
         "Flags": 0,
         "Name": "AttackPosition",
@@ -247,7 +252,7 @@
         "Children": []
       },
       {
-        "__guid": "6c79cc57-ec5e-4611-bb25-34fa233b09d9",
+        "__guid": "a0d617bd-73cd-43d3-a4a8-f8b50a2f12dc",
         "__version": 1,
         "Flags": 0,
         "Name": "Emotion",
@@ -263,7 +268,7 @@
         "Components": [
           {
             "__type": "Sandbox.Decal",
-            "__guid": "0e6c325f-4c5a-4d07-a6b3-c43774a71c6f",
+            "__guid": "390041c5-17e8-4bea-afd9-ded3740a405c",
             "__enabled": true,
             "__version": 1,
             "AttenuationAngle": 0,

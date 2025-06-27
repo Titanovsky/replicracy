@@ -7,11 +7,13 @@ public sealed class Zombie : EnemyBase
     [Property] public NavMeshAgent NavMeshAgent { get; set; }
     [Property] public float SearchRadius { get; set; } = 500f;
     [Property] public float LostRadius { get; set; } = 700f;
-    [Property] public float MovingRadius { get; set; } = 150f;
+    [Property] public float MovingStartPosRadius { get; set; } = 150f;
     [Property] public float MoveDelay { get; set; } = 10f;
 
+    [Property][Category("Weapon")] public GameObject AttackPosition { get; set; }
     [Property][Category("Weapon")] public float AttackDamage { get; set; } = 3f;
     [Property][Category("Weapon")] public float AttackDelay { get; set; } = 1f;
+    [Property][Category("Weapon")] public float AttackDistance { get; set; } = 50f;
 
     private ZombieState CurrentState { get; set; }
 
@@ -25,6 +27,7 @@ public sealed class Zombie : EnemyBase
     private GameObject _lastAttacker;
 
     private Sphere searchSphere;
+    private SceneTraceResult _attackTrace;
 
 
     public enum ZombieState
@@ -46,6 +49,8 @@ public sealed class Zombie : EnemyBase
         RotateToMovingPoint();
 
         Attack();
+        FollowToTarger();
+
         Moving();
 
         CheckDistanceToTarget();
@@ -54,9 +59,11 @@ public sealed class Zombie : EnemyBase
 
     private void Moving()
     {
+        if (CurrentState != ZombieState.Idle) return;
+
         if (!_delayMovingTimer) return;
 
-        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingRadius);
+        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius);
 
         NavMeshAgent.MoveTo(_randomPointMoving);
 
@@ -91,9 +98,38 @@ public sealed class Zombie : EnemyBase
     {
         if (CurrentState != ZombieState.Attack) return;
 
-        //if (!_delayReloadTimer) return;
+        if (!_delayAttackTimer) return;
 
+        var origin = AttackPosition.WorldPosition;
+        var endPos = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+
+        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
+
+        _attackTrace = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (!_attackTrace.Hit)       
+            return;
         
+        var hitObject = _attackTrace.GameObject;
+
+        if (hitObject == _attackTarget)
+            {
+            Log.Info("Attack Target");
+            }     
+
+        ResetAttackTimer();
+    }
+
+    private void FollowToTarger()
+    {
+        if (CurrentState != ZombieState.Attack) return;
+
+        var postion = _attackTarget.WorldPosition - new Vector3(20, 20, 0);
+
+        NavMeshAgent.MoveTo(postion);
     }
 
     private void CheckDistanceToTarget()
@@ -116,7 +152,7 @@ public sealed class Zombie : EnemyBase
 
     private void RotateToTarget()
     {
-        //if (CurrentState != PoliceState.Attack) return;
+        if (_attackTarget == null) return;
 
         Vector3 direction = (_attackTarget.WorldPosition - WorldPosition).Normal;
 
@@ -176,17 +212,11 @@ public sealed class Zombie : EnemyBase
     public void SetIdleState()
     {
         CurrentState = ZombieState.Idle;
-        EmotionsController.SetEmotion(EmotionsController.Emotions.Idle);
-
-        MoveDelay = MoveDelay * 2f;
     }
 
     public void SetAttackState()
     {
         CurrentState = ZombieState.Attack;
-        EmotionsController.SetEmotion(EmotionsController.Emotions.Angry);
-
-        MoveDelay = MoveDelay / 2f;
     }
 
     public void SetTarget(GameObject target)
