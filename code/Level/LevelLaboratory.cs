@@ -3,6 +3,7 @@
     [Property, Group("Base")] public override string Class { get; set; } = "level2";
     [Property, Group("Base")] public override string Name { get; set; } = "Laboratory";
     [Property, Group("Base")] public override SceneFile NextLevelScene { get; set; }
+    [Property, Group("Base")] public override SceneFile CurrentLevelScene { get; set; }
     [Property, Group("Base")] public override float MinDangerousZ { get; set; } = -310;
 
     [Property, Group("Stats")] public override int NextDna { get; set; } = 15;
