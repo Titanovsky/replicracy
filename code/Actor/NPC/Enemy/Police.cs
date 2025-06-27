@@ -32,6 +32,7 @@ public class Police : EnemyBase
     private GameObject _lastAttacker;
 
     private Sphere searchSphere;
+    private SceneTraceResult tr;
 
     private int shootCount = 0;
 
@@ -131,8 +132,6 @@ public class Police : EnemyBase
         RotateTo(direction);
     }
 
-    SceneTraceResult tr;
-
     private void Shoot()
     {
         if (!_delayShootTimer) return;
@@ -140,9 +139,10 @@ public class Police : EnemyBase
         shootCount++;
 
         var origin = AttackPosition.WorldPosition;
-        var endPos = _attackTarget.WorldPosition + new Vector3(0, 0, 40);
+        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
 
-        tr = Scene.Trace.Ray(origin, endPos)
+        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
             .Run();
 

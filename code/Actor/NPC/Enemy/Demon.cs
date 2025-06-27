@@ -1,21 +1,24 @@
 using Sandbox;
+using System;
+using static Zombie;
 
-public sealed class Zombie : EnemyBase
+public sealed class Demon : EnemyBase
 {
-    [Property] public EmotionsController EmotionsController { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
     [Property] public NavMeshAgent NavMeshAgent { get; set; }
     [Property] public float SearchRadius { get; set; } = 500f;
     [Property] public float LostRadius { get; set; } = 700f;
+    [Property] public float MovingDelay { get; set; } = 5f;
     [Property] public float MovingStartPosRadius { get; set; } = 150f;
-    [Property] public float MoveDelay { get; set; } = 10f;
 
+    [Property][Category("Weapon")] public float AttackDamage { get; set; } = 10f;
+    [Property][Category("Weapon")] public float AttackDelay { get; set; } = 6f;
+    [Property][Category("Weapon")] public float AttackDistance { get; set; } = 200f;
+    [Property][Category("Weapon")] public SoundEvent AttackSound { get; set; }
     [Property][Category("Weapon")] public GameObject AttackPosition { get; set; }
-    [Property][Category("Weapon")] public float AttackDamage { get; set; } = 3f;
-    [Property][Category("Weapon")] public float AttackDelay { get; set; } = 1f;
-    [Property][Category("Weapon")] public float AttackDistance { get; set; } = 50f;
+    [Property][Category("Weapon")] public GameObject ProjectilePrefab { get; set; }
 
-    private ZombieState CurrentState { get; set; }
+    private DemonState CurrentState { get; set; }
 
     private Vector3 _spawnPosition;
     private Vector3 _randomPointMoving;
@@ -29,7 +32,7 @@ public sealed class Zombie : EnemyBase
     private Sphere searchSphere;
     private SceneTraceResult tr;
 
-    public enum ZombieState
+    public enum DemonState
     {
         Idle,
         Attack
@@ -58,7 +61,7 @@ public sealed class Zombie : EnemyBase
 
     private void Moving()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != DemonState.Idle) return;
 
         if (!_delayMovingTimer) return;
 
@@ -71,7 +74,7 @@ public sealed class Zombie : EnemyBase
 
     private void SearchTarget()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != DemonState.Idle) return;
 
         searchSphere = new Sphere(WorldPosition, SearchRadius);
 
@@ -86,7 +89,7 @@ public sealed class Zombie : EnemyBase
 
     private void RotateToMovingPoint()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != DemonState.Idle) return;
 
         Vector3 direction = (_randomPointMoving - WorldPosition).Normal;
 
@@ -95,7 +98,7 @@ public sealed class Zombie : EnemyBase
 
     private void Attack()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != DemonState.Attack) return;
 
         if (!_delayAttackTimer) return;
 
@@ -107,22 +110,34 @@ public sealed class Zombie : EnemyBase
             .IgnoreGameObject(GameObject)
             .Run();
 
-        if (!tr.Hit)       
-            return;
-        
-        var hitObject = tr.GameObject;
+        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
+        var spawnPos = AttackPosition.WorldPosition;
+        var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
 
-        if (hitObject == _attackTarget)
+        var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
+        var projectile = obj.GetComponent<Bullet>();
+        projectile.Damage = AttackDamage;
+        projectile.Direction = tr.Direction;
+        projectile.Owner = Player.Instance.GameObject;
+        projectile.Weapon = AttackPosition.Parent;
+
+        Sound.Play(AttackSound, AttackPosition.WorldPosition);
+
+        if (tr.Hit)
+        {
+            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+            if (damagable is not null)
             {
-            Log.Info("Attack Target");
-            }     
+                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+            }
+        }
 
         ResetAttackTimer();
     }
 
     private void FollowToTarger()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != DemonState.Attack) return;
 
         var distanceForAttack = AttackDistance / 2;
         var postion = _attackTarget.WorldPosition - new Vector3(distanceForAttack, distanceForAttack, 0);
@@ -132,7 +147,7 @@ public sealed class Zombie : EnemyBase
 
     private void CheckDistanceToTarget()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != DemonState.Attack) return;
 
         if (_attackTarget == null || !_attackTarget.IsValid())
         {
@@ -177,7 +192,7 @@ public sealed class Zombie : EnemyBase
 
     public override void Die()
     {
-        Log.Info($"[Zombie] Die from {_lastAttacker}");
+        Log.Info($"[Demon] Die from {_lastAttacker}");
 
         if (_lastAttacker == Player.Instance.GameObject)
         {
@@ -209,12 +224,12 @@ public sealed class Zombie : EnemyBase
 
     public void SetIdleState()
     {
-        CurrentState = ZombieState.Idle;
+        CurrentState = DemonState.Idle;
     }
 
     public void SetAttackState()
     {
-        CurrentState = ZombieState.Attack;
+        CurrentState = DemonState.Attack;
     }
 
     public void SetTarget(GameObject target)
@@ -224,6 +239,6 @@ public sealed class Zombie : EnemyBase
         SetAttackState();
     }
 
-    private void ResetMovingTimer() => _delayMovingTimer = MoveDelay;
+    private void ResetMovingTimer() => _delayMovingTimer = MovingDelay;
     private void ResetAttackTimer() => _delayAttackTimer = AttackDelay;
 }

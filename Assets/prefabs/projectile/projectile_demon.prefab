@@ -1,12 +1,12 @@
 {
   "RootObject": {
-    "__guid": "a4e55a05-6e88-4192-b1a4-982b9bd646be",
+    "__guid": "69abc176-d2a8-4c23-978f-8c2f2a27869c",
     "__version": 1,
     "Flags": 0,
-    "Name": "projectile_vampire",
+    "Name": "projectile_demon",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
-    "Scale": "0.025,0.025,0.025",
+    "Scale": "0.25,0.25,0.25",
     "Tags": "light_point,light",
     "Enabled": true,
     "NetworkMode": 2,
@@ -16,7 +16,7 @@
     "Components": [
       {
         "__type": "Bullet",
-        "__guid": "4f23c231-04c5-4110-9131-10f31539c7a1",
+        "__guid": "c9be8e01-36a2-439d-bbd6-54bfc7af6313",
         "__enabled": true,
         "Damage": 5,
         "Direction": "0,0,0",
@@ -31,7 +31,7 @@
       },
       {
         "__type": "Sandbox.ModelRenderer",
-        "__guid": "759361d6-15ef-49bb-84a9-a9a075065501",
+        "__guid": "904da4f7-0408-4dd5-b22e-4864a3e78c2a",
         "__enabled": true,
         "BodyGroups": 18446744073709551615,
         "CreateAttachments": false,
@@ -51,11 +51,11 @@
           "AfterUILayer": false
         },
         "RenderType": "Off",
-        "Tint": "1,0,0,1"
+        "Tint": "0.96744,0.3386,0,1"
       },
       {
         "__type": "Sandbox.SphereCollider",
-        "__guid": "7d587e19-228c-42a1-b8fa-15d80fa235d6",
+        "__guid": "367baf66-3d91-48b5-b14c-3ae442064bee",
         "__enabled": true,
         "Center": "0,0,0",
         "Friction": null,
@@ -77,20 +77,20 @@
       },
       {
         "__type": "Sandbox.PointLight",
-        "__guid": "79dc05c9-c3dd-4a2a-856e-8be0f1b53012",
+        "__guid": "b6662c45-e3ec-42d5-9249-f439d04b1aa6",
         "__enabled": true,
-        "Attenuation": 0.7,
+        "Attenuation": 0,
         "FogMode": "Disabled",
         "FogStrength": 1,
-        "LightColor": "1,0,0,1",
+        "LightColor": "0.96863,0.33725,0,1",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Radius": 336.0005,
-        "Shadows": false
+        "Radius": 500,
+        "Shadows": true
       }
     ],
     "Children": [],

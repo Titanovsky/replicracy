@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class Zombie : EnemyBase
+public sealed class Cultist : EnemyBase
 {
     [Property] public EmotionsController EmotionsController { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
@@ -11,11 +11,11 @@ public sealed class Zombie : EnemyBase
     [Property] public float MoveDelay { get; set; } = 10f;
 
     [Property][Category("Weapon")] public GameObject AttackPosition { get; set; }
-    [Property][Category("Weapon")] public float AttackDamage { get; set; } = 3f;
+    [Property][Category("Weapon")] public float AttackDamage { get; set; } = 6f;
     [Property][Category("Weapon")] public float AttackDelay { get; set; } = 1f;
-    [Property][Category("Weapon")] public float AttackDistance { get; set; } = 50f;
+    [Property][Category("Weapon")] public float AttackDistance { get; set; } = 30f;
 
-    private ZombieState CurrentState { get; set; }
+    private CultistState CurrentState { get; set; }
 
     private Vector3 _spawnPosition;
     private Vector3 _randomPointMoving;
@@ -29,7 +29,7 @@ public sealed class Zombie : EnemyBase
     private Sphere searchSphere;
     private SceneTraceResult tr;
 
-    public enum ZombieState
+    public enum CultistState
     {
         Idle,
         Attack
@@ -58,7 +58,7 @@ public sealed class Zombie : EnemyBase
 
     private void Moving()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != CultistState.Idle) return;
 
         if (!_delayMovingTimer) return;
 
@@ -71,7 +71,7 @@ public sealed class Zombie : EnemyBase
 
     private void SearchTarget()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != CultistState.Idle) return;
 
         searchSphere = new Sphere(WorldPosition, SearchRadius);
 
@@ -86,7 +86,7 @@ public sealed class Zombie : EnemyBase
 
     private void RotateToMovingPoint()
     {
-        if (CurrentState != ZombieState.Idle) return;
+        if (CurrentState != CultistState.Idle) return;
 
         Vector3 direction = (_randomPointMoving - WorldPosition).Normal;
 
@@ -95,7 +95,7 @@ public sealed class Zombie : EnemyBase
 
     private void Attack()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != CultistState.Attack) return;
 
         if (!_delayAttackTimer) return;
 
@@ -107,22 +107,22 @@ public sealed class Zombie : EnemyBase
             .IgnoreGameObject(GameObject)
             .Run();
 
-        if (!tr.Hit)       
+        if (!tr.Hit)
             return;
-        
+
         var hitObject = tr.GameObject;
 
         if (hitObject == _attackTarget)
-            {
+        {
             Log.Info("Attack Target");
-            }     
+        }
 
         ResetAttackTimer();
     }
 
     private void FollowToTarger()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != CultistState.Attack) return;
 
         var distanceForAttack = AttackDistance / 2;
         var postion = _attackTarget.WorldPosition - new Vector3(distanceForAttack, distanceForAttack, 0);
@@ -132,7 +132,7 @@ public sealed class Zombie : EnemyBase
 
     private void CheckDistanceToTarget()
     {
-        if (CurrentState != ZombieState.Attack) return;
+        if (CurrentState != CultistState.Attack) return;
 
         if (_attackTarget == null || !_attackTarget.IsValid())
         {
@@ -177,7 +177,7 @@ public sealed class Zombie : EnemyBase
 
     public override void Die()
     {
-        Log.Info($"[Zombie] Die from {_lastAttacker}");
+        Log.Info($"[Cultist] Die from {_lastAttacker}");
 
         if (_lastAttacker == Player.Instance.GameObject)
         {
@@ -209,12 +209,14 @@ public sealed class Zombie : EnemyBase
 
     public void SetIdleState()
     {
-        CurrentState = ZombieState.Idle;
+        CurrentState = CultistState.Idle;
+        EmotionsController.SetEmotion(EmotionsController.Emotions.Idle);
     }
 
     public void SetAttackState()
     {
-        CurrentState = ZombieState.Attack;
+        CurrentState = CultistState.Attack;
+        EmotionsController.SetEmotion(EmotionsController.Emotions.Angry);
     }
 
     public void SetTarget(GameObject target)

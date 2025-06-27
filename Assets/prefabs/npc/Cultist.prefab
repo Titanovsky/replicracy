@@ -1,14 +1,14 @@
 {
   "RootObject": {
-    "__guid": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
+    "__guid": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
     "__version": 1,
     "Flags": 0,
-    "Name": "Zombie",
+    "Name": "Cultist",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
-    "Tags": "enemy,undead,npc",
-    "Enabled": false,
+    "Tags": "enemy,demon,npc",
+    "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
@@ -16,7 +16,7 @@
     "Components": [
       {
         "__type": "Sandbox.BoxCollider",
-        "__guid": "877a715c-356f-4926-b439-7e18018b8a7e",
+        "__guid": "a19e44db-a30a-49a4-93ce-334b815a4a29",
         "__enabled": true,
         "Center": "0,0,36.49999",
         "Friction": null,
@@ -37,55 +37,14 @@
         "SurfaceVelocity": "0,0,0"
       },
       {
-        "__type": "Zombie",
-        "__guid": "e1ac7854-0f07-478a-ab05-766674aa78e9",
-        "__enabled": true,
-        "AttackDamage": 3,
-        "AttackDelay": 5,
-        "AttackDistance": 30,
-        "AttackPosition": {
-          "_type": "gameobject",
-          "go": "0806e1d2-b1ec-4c63-a969-43d6d3843155"
-        },
-        "EmotionsController": {
-          "_type": "component",
-          "component_id": "e540f417-3715-496c-a91b-7b5f33dfd133",
-          "go": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
-          "component_type": "EmotionsController"
-        },
-        "Health": 50,
-        "LostRadius": 700,
-        "MoveDelay": 10,
-        "MovingStartPosRadius": 150,
-        "NavMeshAgent": {
-          "_type": "component",
-          "component_id": "3856f7d1-2b15-4e1f-a481-9efad1e47bd5",
-          "go": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
-          "component_type": "NavMeshAgent"
-        },
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "Renderer": {
-          "_type": "component",
-          "component_id": "74d5894e-30ec-4dc7-be7c-464468e6ea3e",
-          "go": "ff5b001a-ff62-4761-87f2-f62edb98b2d9",
-          "component_type": "SkinnedModelRenderer"
-        },
-        "SearchRadius": 500
-      },
-      {
         "__type": "EmotionsController",
-        "__guid": "e540f417-3715-496c-a91b-7b5f33dfd133",
+        "__guid": "f6958a6c-05f0-4f7d-a84f-24a252ace95a",
         "__enabled": true,
-        "CurrentEmotion": "Angry",
+        "CurrentEmotion": "Idle",
         "EmotionDecal": {
           "_type": "component",
-          "component_id": "d390fda7-1b12-424b-b32b-922c7240532c",
-          "go": "f651b076-d0aa-4437-8df5-b1169e9b0155",
+          "component_id": "22d17509-633e-4d77-b095-4cbb7e37f9c5",
+          "go": "43dc6a3a-77aa-4846-a8b0-203cdbc60ea0",
           "component_type": "Decal"
         },
         "OnComponentDestroy": null,
@@ -97,7 +56,7 @@
       },
       {
         "__type": "Sandbox.NavMeshAgent",
-        "__guid": "3856f7d1-2b15-4e1f-a481-9efad1e47bd5",
+        "__guid": "a2337e3c-7c3b-4d0d-b0b6-aeee278afd6f",
         "__enabled": true,
         "Acceleration": 120,
         "AutoTraverseLinks": false,
@@ -113,11 +72,52 @@
         "Separation": 0.25,
         "UpdatePosition": true,
         "UpdateRotation": false
+      },
+      {
+        "__type": "Cultist",
+        "__guid": "75d441d8-f35f-4f90-8f57-f4b01748e720",
+        "__enabled": true,
+        "AttackDamage": 3,
+        "AttackDelay": 1,
+        "AttackDistance": 50,
+        "AttackPosition": {
+          "_type": "gameobject",
+          "go": "fbfd3265-5492-41f2-a62a-6616ea4832d0"
+        },
+        "EmotionsController": {
+          "_type": "component",
+          "component_id": "f6958a6c-05f0-4f7d-a84f-24a252ace95a",
+          "go": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
+          "component_type": "EmotionsController"
+        },
+        "Health": 50,
+        "LostRadius": 700,
+        "MoveDelay": 10,
+        "MovingStartPosRadius": 150,
+        "NavMeshAgent": {
+          "_type": "component",
+          "component_id": "a2337e3c-7c3b-4d0d-b0b6-aeee278afd6f",
+          "go": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
+          "component_type": "NavMeshAgent"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Renderer": {
+          "_type": "component",
+          "component_id": "2ead29f4-27ff-4d17-96a9-0485c927d5bf",
+          "go": "758e2be0-0108-487e-9bea-52761c299dd9",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "SearchRadius": 500
       }
     ],
     "Children": [
       {
-        "__guid": "ff5b001a-ff62-4761-87f2-f62edb98b2d9",
+        "__guid": "758e2be0-0108-487e-9bea-52761c299dd9",
         "__version": 1,
         "Flags": 0,
         "Name": "Body",
@@ -133,7 +133,7 @@
         "Components": [
           {
             "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "74d5894e-30ec-4dc7-be7c-464468e6ea3e",
+            "__guid": "2ead29f4-27ff-4d17-96a9-0485c927d5bf",
             "__enabled": true,
             "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
             "BodyGroups": 1365,
@@ -177,7 +177,7 @@
         "Children": []
       },
       {
-        "__guid": "9838d564-3df5-4c2e-bfeb-e6ce35e27eeb",
+        "__guid": "0b7cd4a9-b403-40b1-89e6-2e99869ab7ab",
         "__version": 1,
         "Flags": 0,
         "Name": "3D Text",
@@ -193,7 +193,7 @@
         "Components": [
           {
             "__type": "Sandbox.WorldPanel",
-            "__guid": "84feeaf6-c0fe-42c4-a205-58e1d7bc4b56",
+            "__guid": "08e4e305-4bcf-49b7-b2ed-4a15443247d9",
             "__enabled": true,
             "HorizontalAlign": "Center",
             "InteractionRange": 1000,
@@ -216,13 +216,13 @@
           },
           {
             "__type": "Sandbox.EnemyHealthBar",
-            "__guid": "c13f20ff-1908-4e98-8397-a840c70418fd",
+            "__guid": "56731dca-bc99-48ee-8eba-47fdbd1771cc",
             "__enabled": true,
             "Enemy": {
               "_type": "component",
-              "component_id": "e1ac7854-0f07-478a-ab05-766674aa78e9",
-              "go": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
-              "component_type": "Zombie"
+              "component_id": "75d441d8-f35f-4f90-8f57-f4b01748e720",
+              "go": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
+              "component_type": "Cultist"
             },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -235,7 +235,7 @@
         "Children": []
       },
       {
-        "__guid": "0806e1d2-b1ec-4c63-a969-43d6d3843155",
+        "__guid": "fbfd3265-5492-41f2-a62a-6616ea4832d0",
         "__version": 1,
         "Flags": 0,
         "Name": "AttackPosition",
@@ -252,7 +252,7 @@
         "Children": []
       },
       {
-        "__guid": "f651b076-d0aa-4437-8df5-b1169e9b0155",
+        "__guid": "43dc6a3a-77aa-4846-a8b0-203cdbc60ea0",
         "__version": 1,
         "Flags": 0,
         "Name": "Emotion",
@@ -268,12 +268,12 @@
         "Components": [
           {
             "__type": "Sandbox.Decal",
-            "__guid": "d390fda7-1b12-424b-b32b-922c7240532c",
+            "__guid": "22d17509-633e-4d77-b095-4cbb7e37f9c5",
             "__enabled": true,
             "__version": 1,
             "AttenuationAngle": 0,
-            "ColorTexture": "texture/emotions/angry.vtex",
-            "ColorTint": "168,186,76,255",
+            "ColorTexture": "texture/emotions/idle.vtex",
+            "ColorTint": "255,255,255,255",
             "NormalTexture": null,
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,

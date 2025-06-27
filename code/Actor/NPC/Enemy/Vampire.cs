@@ -24,6 +24,7 @@ public sealed class Vampire : EnemyBase
     private GameObject _lastAttacker;
 
     Sphere searchSphere;
+    SceneTraceResult tr;
 
     public enum VampireState
     {
@@ -93,19 +94,21 @@ public sealed class Vampire : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
-    SceneTraceResult tr;
-
     private void Attack()
     {
         if (CurrentState != VampireState.Attack) return;
-
+        
         if (!_delayAttackTimer) return;
         ResetAttackTimer();
 
-        var origin = AttackPosition.WorldPosition;
-        var endPos = _attackTarget.WorldPosition + new Vector3(0, 0, 40);
 
-        tr = Scene.Trace.Ray(origin, endPos)
+        var origin = AttackPosition.WorldPosition;
+        var endPos = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+
+        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
+
+        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
             .Run();
 
