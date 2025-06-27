@@ -1,0 +1,2139 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Replicator_v1"
+						children = 
+						[
+							{
+								_class = "RenderMeshFile"
+								name = "Head"
+								filename = "models/npc/replicator/model/Head.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+							{
+								_class = "RenderMeshFile"
+								name = "Arm"
+								filename = "models/npc/replicator/model/Arm.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+							{
+								_class = "RenderMeshFile"
+								name = "Chest"
+								filename = "models/npc/replicator/model/Chest.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+							{
+								_class = "RenderMeshFile"
+								name = "Feet"
+								filename = "models/npc/replicator/model/Feet.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+							{
+								_class = "RenderMeshFile"
+								name = "Hand"
+								filename = "models/npc/replicator/model/Hand.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+							{
+								_class = "RenderMeshFile"
+								name = "Legs"
+								filename = "models/npc/replicator/model/Legs.fbx"
+								import_translation = [ 0.0, 0.0, 0.0 ]
+								import_rotation = [ 0.0, 0.0, 0.0 ]
+								import_scale = 1.0
+								align_origin_x_type = "None"
+								align_origin_y_type = "None"
+								align_origin_z_type = "None"
+								parent_bone = ""
+								import_filter = 
+								{
+									exclude_by_default = false
+									exception_list = [  ]
+								}
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Attribute"
+						children = 
+						[
+							{
+								_class = "Folder"
+								name = "Demon"
+								children = 
+								[
+									{
+										_class = "RenderMeshFile"
+										name = "Dem_Chest_Horn"
+										filename = "models/npc/replicator/model/attributes/Demon/Chest_Horn.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Dem_Arm_Claw"
+										filename = "models/npc/replicator/model/attributes/Demon/Claw_Arm.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Dem_Feet_Claw"
+										filename = "models/npc/replicator/model/attributes/Demon/Claw_Legs.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Dem_Head_Horn"
+										filename = "models/npc/replicator/model/attributes/Demon/Head_Horn.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "Sea"
+								children = 
+								[
+									{
+										_class = "RenderMeshFile"
+										name = "Sea_Arm_Fins"
+										filename = "models/npc/replicator/model/attributes/Sea/Arm_Fins.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Sea_Chest_Fins"
+										filename = "models/npc/replicator/model/attributes/Sea/Chest_Fins.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Sea_Feet_Fins"
+										filename = "models/npc/replicator/model/attributes/Sea/Feet_Fins.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Sea_Head_Fins"
+										filename = "models/npc/replicator/model/attributes/Sea/Head_Fins.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "Robot"
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "ModelModifierList"
+				children = 
+				[
+					{
+						_class = "ModelModifier_ScaleAndMirror"
+						scale = 0.3937
+						mirror_x = false
+						mirror_y = false
+						mirror_z = false
+						flip_bone_forward = false
+						swap_left_and_right_bones = false
+					},
+				]
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "Upper_body"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "upper_arm_L"
+								weight = 1.0
+							},
+							{
+								bone = "upper_arm_R"
+								weight = 1.0
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "LookAtChain"
+						name = "Aim"
+						lookat_chain = 
+						{
+							name = ""
+							bones = 
+							[
+								{
+									name = "spine_006"
+									weight = 0.0
+								},
+								{
+									name = "spine_005"
+									weight = 0.0
+								},
+							]
+						}
+					},
+				]
+			},
+			{
+				_class = "BodyGroupList"
+				children = 
+				[
+					{
+						_class = "BodyGroup"
+						name = "Attribute_Head"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Dem_Head_Horn",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Sea_Head_Fins",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "Attribute_Chest"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Dem_Chest_Horn",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Sea_Chest_Fins",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "Attribute_Arm"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Dem_Arm_Claw",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Sea_Arm_Fins",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "Attribute_Feet"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Dem_Feet_Claw",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Sea_Feet_Fins",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+					{
+						_class = "BodyGroup"
+						name = "Body"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Head",
+									"Chest",
+									"Arm",
+									"Hand",
+									"Legs",
+									"Feet",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+						]
+						hidden_in_tools = false
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "material.005.vmat"
+								to = "models/npc/replicator/material/base_colar.vmat"
+							},
+							{
+								from = "demon_attributes.vmat"
+								to = "models/npc/replicator/material/anamy_demon_attributes.vmat"
+							},
+							{
+								from = "sea_attributes.vmat"
+								to = "models/npc/replicator/material/anamy_sea_attributes.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine"
+						child_body = "spine_001"
+						anchor_origin = [ 0.000001, 3.508823, -0.00002 ]
+						anchor_angles = [ 2.479599, -90.524834, -90.036018 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine_001"
+						child_body = "spine_003"
+						anchor_origin = [ 0.00014, 14.236145, -0.21782 ]
+						anchor_angles = [ 13.224826, -89.99147, -89.828857 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine_003"
+						child_body = "spine_005"
+						anchor_origin = [ 0.001592, 9.573952, 0.673591 ]
+						anchor_angles = [ 35.488651, -90.095749, -90.164795 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine_005"
+						child_body = "spine_006"
+						anchor_origin = [ -0.000006, 5.419437, -0.000187 ]
+						anchor_angles = [ 33.721577, 89.999954, -88.003082 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine_003"
+						child_body = "shoulder_L"
+						anchor_origin = [ 2.456353, 7.483906, 0.823045 ]
+						anchor_angles = [ 2.408886, 166.286423, 30.688452 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 10.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "shoulder_L"
+						child_body = "upper_arm_L"
+						anchor_origin = [ 0.000013, 8.143551, -0.000088 ]
+						anchor_angles = [ -45.640572, -47.315887, -179.389053 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "upper_arm_L"
+						child_body = "forearm_L"
+						anchor_origin = [ -0.000078, 12.068947, -0.000093 ]
+						anchor_angles = [ -19.030544, 65.256645, -92.141129 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "forearm_L"
+						child_body = "hand_L"
+						anchor_origin = [ -0.000087, 14.185982, 0.0 ]
+						anchor_angles = [ 21.86235, 80.402496, -93.769821 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine_003"
+						child_body = "shoulder_R"
+						anchor_origin = [ -2.388165, 7.483917, 0.834376 ]
+						anchor_angles = [ 2.669478, 13.716302, 149.375214 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 10.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "shoulder_R"
+						child_body = "upper_arm_R"
+						anchor_origin = [ -0.000028, 8.143546, -0.000015 ]
+						anchor_angles = [ 45.640606, 47.315868, -179.389114 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "upper_arm_R"
+						child_body = "forearm_R"
+						anchor_origin = [ 0.00004, 12.069012, -0.000103 ]
+						anchor_angles = [ 19.030602, -65.256638, -92.141113 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "forearm_R"
+						child_body = "hand_R"
+						anchor_origin = [ -0.000002, 14.186174, -0.000069 ]
+						anchor_angles = [ 21.862583, 99.597588, -86.230087 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine"
+						child_body = "thigh_L"
+						anchor_origin = [ 4.218549, 2.28796, 1.708027 ]
+						anchor_angles = [ -1.824809, -69.871536, 94.104507 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "thigh_L"
+						child_body = "shin_L"
+						anchor_origin = [ 0.000003, 15.268553, -0.000022 ]
+						anchor_angles = [ 28.185062, -66.787437, -85.85247 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.15
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "shin_L"
+						child_body = "foot_L"
+						anchor_origin = [ -0.000021, 14.596771, -0.000018 ]
+						anchor_angles = [ 65.257912, 43.292393, -136.591461 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 15.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine"
+						child_body = "thigh_R"
+						anchor_origin = [ -4.175932, 2.364805, 1.708026 ]
+						anchor_angles = [ -1.82481, -111.178062, 85.895447 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "thigh_R"
+						child_body = "shin_R"
+						anchor_origin = [ 0.000015, 15.26853, -0.000041 ]
+						anchor_angles = [ 28.185009, -113.212723, -94.147568 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.15
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "shin_R"
+						child_body = "foot_R"
+						anchor_origin = [ 0.000001, 14.596766, -0.000033 ]
+						anchor_angles = [ -65.257828, -43.292194, -136.591522 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 15.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 10.0, 0.0, 0.0 ]
+						point1 = [ -10.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine_001"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine_003"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine_005"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine_006"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "shoulder_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "upper_arm_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "forearm_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "hand_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 15.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "shoulder_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 20.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "upper_arm_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "forearm_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "hand_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 15.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "thigh_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "shin_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "foot_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "thigh_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "shin_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 15.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "foot_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 20.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "idle"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/idle.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Base_Movment"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/replicator.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "Folder"
+						name = "Walk"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "Walk_E"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = -1
+								end_frame = 30
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_N"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 32
+								end_frame = 61
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_NE"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 63
+								end_frame = 93
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_NW"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 94
+								end_frame = 124
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_S"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 125
+								end_frame = 155
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_SE"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = -143
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = -127
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 156
+								end_frame = 186
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_SW"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 12
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 28
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 187
+								end_frame = 217
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Walk_W"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = -205
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = -189
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 218
+								end_frame = 248
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Run"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "Run_E"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 249
+								end_frame = 269
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_N"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 270
+								end_frame = 290
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_NE"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 291
+								end_frame = 311
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_NW"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 312
+								end_frame = 332
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_S"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 333
+								end_frame = 353
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_SE"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 354
+								end_frame = 374
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_SW"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 375
+								end_frame = 395
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Run_W"
+								children = 
+								[
+									{
+										_class = "AnimStartLoop"
+										start_loop_frame = 30
+									},
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 7
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "0"
+											Volume = 1.0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_FOOTSTEP"
+										event_frame = 17
+										event_keys = 
+										{
+											Attachment = ""
+											Foot = "1"
+											Volume = 1.0
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/replicator/animation/replicator.fbx"
+								start_frame = 396
+								end_frame = 416
+								framerate = 30.0
+								take = 0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "AnimFile"
+						name = "Crouch"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "idle"
+								frame = 2
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = true
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/replicator.fbx"
+						start_frame = 710
+						end_frame = 713
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "idle_delta"
+						children = 
+						[
+							{
+								_class = "AnimLinearDelta"
+								spline = false
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/replicator/animation/idle.fbx"
+						start_frame = 0
+						end_frame = 10
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = "models/npc/replicator/animation/replicator.vanmgrph"
+		base_model_name = ""
+	}
+}

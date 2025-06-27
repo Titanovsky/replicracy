@@ -33,6 +33,23 @@
 						_class = "Prefab"
 						target_file = "models/npc/bolvan/prefabs/cultist.vmdl_prefab"
 					},
+					{
+						_class = "RenderMeshFile"
+						name = "Demon"
+						filename = "models/npc/bolvan/Citizen/Demon/Demon.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
 				]
 			},
 			{
@@ -75,8 +92,64 @@
 						weights = 
 						[
 							{
-								bone = "MCH_thigh_ik_target_parent_R"
-								weight = 0.0
+								bone = "DEF_shoulder_R"
+								weight = 1.0
+							},
+							{
+								bone = "DEF_upper_arm_L"
+								weight = 1.0
+							},
+							{
+								bone = "DEF_upper_arm_R"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_hand_ik_parent_L"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_hand_ik_parent_R"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_ik_target_parent_L"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_ik_target_parent_R"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_parent_L"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_parent_R"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_tweak_L"
+								weight = 1.0
+							},
+							{
+								bone = "MCH_upper_arm_tweak_R"
+								weight = 1.0
+							},
+							{
+								bone = "ORG_upper_arm_L"
+								weight = 1.0
+							},
+							{
+								bone = "ORG_upper_arm_R"
+								weight = 1.0
+							},
+							{
+								bone = "upper_arm_parent_L"
+								weight = 1.0
+							},
+							{
+								bone = "upper_arm_parent_R"
+								weight = 1.0
 							},
 						]
 						master_morph_weight = -1.0
@@ -255,6 +328,22 @@
 							{
 								from = "cultist.vmat"
 								to = "models/npc/bolvan/citizen/materials/vampire_skin.vmat"
+							},
+							{
+								from = "demon.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
+							},
+							{
+								from = "demon_armor.vmat"
+								to = "models/npc/bolvan/citizen/materials/cultist_outfit_basecolor.vmat"
+							},
+							{
+								from = "demon.002.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
+							},
+							{
+								from = "demon.001.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
 							},
 						]
 						use_global_default = false
@@ -2423,382 +2512,8 @@
 				children = 
 				[
 					{
-						_class = "BodyGroup"
-						name = "Hair"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								name = "bolvan"
-								meshes = 
-								[
-									"Bolvan_Hair",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "cop"
-								meshes = 
-								[
-									"Cop_Cap",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "army"
-								meshes = 
-								[
-									"Army_Helmet",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "alien"
-								meshes = [  ]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "vampire"
-								meshes = 
-								[
-									"Vamp_Hair",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "cultist"
-								meshes = 
-								[
-									"Cult_Mask",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								name = "none"
-								meshes = [  ]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Head"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Head",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Head",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Head",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Head",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Head",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cult_Head",
-								]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Chest"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Chest",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Chest",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Chest",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Chest",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Chest",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cult_Chest",
-								]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Arm"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Arm",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Arm",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Arm",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Arm",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Arm",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = [  ]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Hand"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Hand",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Hand",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Hand",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Hand",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Hand",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cult_Hand",
-								]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Legs"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Legs",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Legs",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Legs",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Legs",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Legs",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cult_Legs",
-								]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Feet"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Feet",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Alien_Feet",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = [  ]
-							},
-						]
-						hidden_in_tools = false
-					},
-					{
-						_class = "BodyGroup"
-						name = "Shoes"
-						children = 
-						[
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Bolvan_Shoes",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cop_Shoes",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Army_Shoes",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Vamp_Shoes",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = 
-								[
-									"Cult_Shoes",
-								]
-							},
-							{
-								_class = "BodyGroupChoice"
-								meshes = [  ]
-							},
-						]
-						hidden_in_tools = false
+						_class = "Prefab"
+						target_file = "models/npc/bolvan/prefabs/bodygroup.vmdl_prefab"
 					},
 				]
 			},

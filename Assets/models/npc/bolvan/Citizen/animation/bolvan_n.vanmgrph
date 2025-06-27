@@ -175,12 +175,12 @@
 							m_id = 4294967295
 						}
 					}
-					m_blendSpace = "BlendSpace_Parent"
+					m_blendSpace = "BlendSpace_Model_RotationOnly"
 					m_bUseBlendScale = false
 					m_blendValueSource = "Parameter"
 					m_blendParameter = 
 					{
-						m_id = 4294967295
+						m_id = 1422947903
 					}
 					m_timingBehavior = "UseChild2"
 					m_flTimingBlend = 0.5
@@ -206,7 +206,7 @@
 					}
 					m_sNote = ""
 					m_sequenceName = "SMG_2H_Pose_Standing_01"
-					m_nFrameIndex = 0
+					m_nFrameIndex = 1
 					m_tagSpans = [  ]
 				}
 			},
@@ -366,7 +366,7 @@
 					m_flYawLimit = 45.0
 					m_flPitchLimit = 45.0
 					m_bResetBase = true
-					m_bLockWhenWaning = true
+					m_bLockWhenWaning = false
 					m_bUseHysteresis = false
 					m_flHysteresisInnerAngle = 1.0
 					m_flHysteresisOuterAngle = 20.0
