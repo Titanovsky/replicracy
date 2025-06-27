@@ -6,6 +6,7 @@ public sealed class Replicant : Component, Component.IDamageable
 
     [Property][Category("Movement")] public float RotationSpeed { get;  set; } = 2.5f;
     [Property][Category("Movement")] public float MovementSpeed { get; set; } = 140;
+    [Property][Category("Movement")] public float MaxDistanceToPlayer { get; set; } = 2000;
     [Property][Category("Attack")] public float AttackDelay { get; set; } = 1f;
     [Property][Category("Attack")] public int AttackDamage { get; set; } = 5;
     [Property][Category("Health")] public float Health { get; set; } = 20;

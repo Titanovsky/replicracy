@@ -3,6 +3,8 @@ public class MoveToPoint : MovableState
     private int randomRadius = 150;
     private float _animWorkaround = .5f; //! fuck anim move_x and move_y
 
+    private Vector3 randomPoint;
+
     public MoveToPoint(Replicant replicant) : base(replicant) { }
 
     public override void Enter()
@@ -13,9 +15,28 @@ public class MoveToPoint : MovableState
             return;
         }
 
-        var randomPoint = (Vector3)Game.ActiveScene.NavMesh.GetRandomPoint(Replicant.GetTargetPoint(), randomRadius);
+        randomPoint = (Vector3)Game.ActiveScene.NavMesh.GetRandomPoint(Replicant.GetTargetPoint(), randomRadius);
 
         Replicant.MoveToPoint(randomPoint);
+    }
+
+    public override void Update()
+    {
+        AnimationPlay();
+        UpdatedRotation(Replicant.GetTargetPoint());
+
+        CheckPointDistance();
+    }
+
+    private void CheckPointDistance()
+    {
+        var distance = Replicant.WorldPosition.Distance(randomPoint);
+
+        if (distance < 100)
+        {
+            Log.Info("SetIdle");
+            Replicant.replicantFSM.SetState<Idle>();
+        }
     }
 
     private void AnimationPlay()
@@ -28,11 +49,5 @@ public class MoveToPoint : MovableState
         //Replicant.Renderer.Set("aim_head", (forward - _targetPos).Normal);
         Replicant.Renderer.Set("move_y", sideward * _animWorkaround);
         Replicant.Renderer.Set("move_x", forward * _animWorkaround);
-    }
-
-    public override void Update()
-    {
-        AnimationPlay();
-        UpdatedRotation(Replicant.GetTargetPoint());
     }
 }
