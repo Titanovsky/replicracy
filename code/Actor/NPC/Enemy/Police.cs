@@ -1,5 +1,4 @@
 using Sandbox;
-using static Vampire;
 
 public class Police : EnemyBase
 {
@@ -105,48 +104,6 @@ public class Police : EnemyBase
         Shoot();
     }
 
-    private void Shoot()
-    {
-        if (!_delayShootTimer) return;
-
-        shootCount++;
-
-        var tr = Scene.Trace.Ray(AttackPosition.WorldPosition, _attackTarget.WorldPosition).Run();
-
-        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
-        var spawnPos = AttackPosition.WorldPosition;
-        var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
-
-        var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
-        var projectile = obj.GetComponent<Bullet>();
-        projectile.Damage = BulletDamage;
-        projectile.Direction = tr.Direction;
-        projectile.Owner = Player.Instance.GameObject;
-        projectile.Weapon = AttackPosition.Parent;
-
-        Sound.Play(ShootSound, AttackPosition.WorldPosition);
-
-        if (tr.Hit)
-        {
-            Log.Info($"[Police] hit {tr.Collider.GameObject}");
-
-            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
-            if (damagable is not null)
-            {
-                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
-            }
-        }
-
-        if (shootCount >= MagazineAmount)
-        {
-            shootCount = 0;
-
-            ResetReloadTimer();
-        }
-
-        ResetShootTimer();
-    }
-
     private void CheckDistanceToTarget()
     {
         if (CurrentState != PoliceState.Attack) return;
@@ -174,6 +131,49 @@ public class Police : EnemyBase
         RotateTo(direction);
     }
 
+    SceneTraceResult tr;
+
+    private void Shoot()
+    {
+        if (!_delayShootTimer) return;
+
+        shootCount++;
+
+        tr = Scene.Trace.Ray(AttackPosition.WorldPosition, _attackTarget.WorldPosition).Run();
+
+        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
+        var spawnPos = AttackPosition.WorldPosition;
+        var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
+
+        var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
+        var projectile = obj.GetComponent<Bullet>();
+        projectile.Damage = BulletDamage;
+        projectile.Direction = tr.Direction;
+        projectile.Owner = Player.Instance.GameObject;
+        projectile.Weapon = AttackPosition.Parent;
+
+        Sound.Play(ShootSound, AttackPosition.WorldPosition);
+
+        if (tr.Hit)
+        {
+            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+
+            if (damagable is not null)
+            {
+                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+            }
+        }
+
+        if (shootCount >= MagazineAmount)
+        {
+            shootCount = 0;
+
+            ResetReloadTimer();
+        }
+
+        ResetShootTimer();
+    }
+
     private void RotateTo(Vector3 direction)
     {
         Rotation rotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0));
@@ -192,6 +192,8 @@ public class Police : EnemyBase
 
     public override void Die()
     {
+        Log.Info($"[Police] Die from {_lastAttacker}");
+
         if (_lastAttacker == Player.Instance.GameObject)
         {
             var ply = Player.Instance;
@@ -241,6 +243,18 @@ public class Police : EnemyBase
         _attackTarget = target;
 
         SetAttackState();
+    }
+
+    protected override void DrawGizmos()
+    {
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Line(tr.StartPosition, tr.HitPosition);
+
+        Gizmo.Draw.Color = Color.Blue;
+        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.StartPosition, 5));
+
+        Gizmo.Draw.Color = Color.Red;
+        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.HitPosition, 5));
     }
 
     private void ResetMovingTimer() => _delayMovingTimer = MoveDelay;

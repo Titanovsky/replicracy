@@ -93,6 +93,8 @@ public sealed class Vampire : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
+    SceneTraceResult tr;
+
     private void Attack()
     {
         if (CurrentState != VampireState.Attack) return;
@@ -100,7 +102,11 @@ public sealed class Vampire : EnemyBase
         if (!_delayAttackTimer) return;
         ResetAttackTimer();
 
-        var tr = Scene.Trace.Ray(AttackPosition.WorldPosition, _attackTarget.WorldPosition).Run();
+        var origin = AttackPosition.WorldPosition;
+        var targetPos = _attackTarget.WorldPosition;
+        var direction = (targetPos - origin).Normal;
+
+        var tr = Scene.Trace.Ray(AttackPosition.WorldRotation.Forward, direction).Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
@@ -116,8 +122,6 @@ public sealed class Vampire : EnemyBase
 
         if (tr.Hit)
         {
-            Log.Info($"[Vampire] hit {tr.Collider.GameObject}");
-
             var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
             if (damagable is not null)
             {
@@ -221,6 +225,18 @@ public sealed class Vampire : EnemyBase
     {
         _attackTarget = target;
         CurrentState = VampireState.Attack;
+    }
+
+    protected override void DrawGizmos()
+    {
+        Gizmo.Draw.Color = Color.Green;
+        Gizmo.Draw.Line(tr.StartPosition, tr.EndPosition);
+
+        Gizmo.Draw.Color = Color.Blue;
+        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.StartPosition, 5));
+
+        Gizmo.Draw.Color = Color.Red;
+        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.EndPosition, 5));
     }
 
     private void AllowMoving() => _delayMovingTimer = 0;
