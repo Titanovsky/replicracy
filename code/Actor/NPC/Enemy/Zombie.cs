@@ -200,7 +200,7 @@ public sealed class Zombie : EnemyBase
         if (target.Tags.Has("replicant"))
             return false;
 
-        if (target.Tags.Has("undead"))
+        if (target.Tags.Has("villager"))
             return false;
 
         if (target.Tags.Has("allien"))
