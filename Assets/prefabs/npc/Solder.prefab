@@ -3,7 +3,7 @@
     "__guid": "c78fdc7e-9b90-4945-84bb-14ebcf780318",
     "__version": 1,
     "Flags": 0,
-    "Name": "Solder",
+    "Name": "solder",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -141,14 +141,14 @@
             "__type": "Sandbox.SkinnedModelRenderer",
             "__guid": "f30bb3ee-0138-4c1e-a6a2-967892c839cd",
             "__enabled": true,
-            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
-            "BodyGroups": 1365,
+            "AnimationGraph": "models/npc/bolvan/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 72637032235524,
             "BoneMergeTarget": null,
-            "CreateAttachments": false,
+            "CreateAttachments": true,
             "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
-            "Model": "models/npc/example/bolvan/bolvan.vmdl",
+            "Model": "models/npc/bolvan/bolvan_n.vmdl",
             "Morphs": {},
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -159,8 +159,14 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {},
-              "vectors": {},
+              "floats": {
+                "move_y": 0,
+                "move_x": 0,
+                "duck": 0
+              },
+              "vectors": {
+                "aim_head": "0,0,0"
+              },
               "rotations": {}
             },
             "PlaybackRate": 1,
@@ -177,10 +183,146 @@
               "Blending": false
             },
             "Tint": "1,1,1,1",
-            "UseAnimGraph": false
+            "UseAnimGraph": true
           }
         ],
-        "Children": []
+        "Children": [
+          {
+            "__guid": "25c7f25d-fff5-4893-9152-063be3e9932d",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_r",
+            "Position": "1.075202,-3.029152,3.268262",
+            "Rotation": "-0.7056168,-0.5908962,0.2647885,0.2878083",
+            "Scale": "0.9999983,0.9999983,0.9999983",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "1d509fef-cd82-4346-b0b5-0a8f25dbd69e",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_l",
+            "Position": "-3.774981,2.343969,3.502081",
+            "Rotation": "-0.569709,-0.6503525,0.3651848,0.345128",
+            "Scale": "0.999999,0.999999,0.999999",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "268c8e3a-9837-418c-9bfb-b8089a7ca6b2",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "eyes",
+            "Position": "8.811636,0.01016862,61.40636",
+            "Rotation": "0.09490731,-0.01246881,0.009945139,0.9953583",
+            "Scale": "0.9999896,0.9999896,0.9999896",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": [
+              {
+                "__guid": "0e09a7b2-38af-4ab7-92f5-24e44b5535cd",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "Emotion",
+                "Position": "-4.849248,-0.211262,-1.097021",
+                "Rotation": "-0.1035661,-0.0492472,-0.009670975,0.9933556",
+                "Scale": "1.180145,1.180145,1.180145",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.Decal",
+                    "__guid": "e90c091d-4a0a-4c02-8fa5-e4c48a3c5e0d",
+                    "__enabled": true,
+                    "__version": 1,
+                    "AttenuationAngle": 0,
+                    "ColorTexture": {
+                      "$compiler": "texture",
+                      "$source": "imagefile",
+                      "data": {
+                        "FilePath": "texture/emotions/idle.png",
+                        "MaxSize": 4096,
+                        "ConvertHeightToNormals": false,
+                        "NormalScale": 1,
+                        "Rotate": 0,
+                        "FlipVertical": false,
+                        "FlipHorizontal": false,
+                        "Padding": {
+                          "Size": "0,0",
+                          "EdgeSize": "0,0"
+                        },
+                        "Sharpen": 0,
+                        "InvertColor": false,
+                        "Blur": 0,
+                        "Brightness": 1,
+                        "Contrast": 1,
+                        "Saturation": 1,
+                        "Hue": 0,
+                        "Colorize": false,
+                        "TargetColor": "0,1,0,1",
+                        "CacheToDisk": true
+                      },
+                      "compiled": "textures/generated/imagefile/c353984e97782abf.vtex"
+                    },
+                    "ColorTint": "255,255,255,255",
+                    "NormalTexture": null,
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "RMOTexture": null,
+                    "SequenceId": 0,
+                    "SheetSequence": false,
+                    "Size": "4.199995,5.2,10.6",
+                    "SortLayer": 0
+                  }
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "__guid": "d6aad08e-a17c-4e0d-9d40-c4fb8ce01034",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "hand_l",
+            "Position": "-4.039849,10.67681,25.07426",
+            "Rotation": "-0.4852186,-0.1128123,-0.6289861,0.5968357",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          }
+        ]
       },
       {
         "__guid": "65ea74bd-4678-4b27-850a-2449652c9577",
@@ -241,30 +383,13 @@
         "Children": []
       },
       {
-        "__guid": "8249f124-d8b5-4640-b8ac-ee16957c2ea7",
+        "__guid": "332e81ad-4ddb-49fb-9b36-6faaf2d62a2d",
         "__version": 1,
         "Flags": 0,
-        "Name": "AttackPosition",
-        "Position": "17.31823,0,34.63646",
-        "Rotation": "0,0,0,1",
-        "Scale": "1,1,1",
-        "Tags": "",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "NetworkOrphaned": 0,
-        "OwnerTransfer": 1,
-        "Components": [],
-        "Children": []
-      },
-      {
-        "__guid": "0e09a7b2-38af-4ab7-92f5-24e44b5535cd",
-        "__version": 1,
-        "Flags": 0,
-        "Name": "Emotion",
-        "Position": "3.200627,0,57.86422",
-        "Rotation": "0,0,0,1",
-        "Scale": "1.082389,1.082389,1.082389",
+        "Name": "m16gl",
+        "Position": "12.34125,-4.804195,37.39468",
+        "Rotation": "0.000000002269091,0.00000005956144,0.03806903,0.9992751",
+        "Scale": "0.3506911,0.3899938,0.3147217",
         "Tags": "",
         "Enabled": true,
         "NetworkMode": 2,
@@ -273,57 +398,70 @@
         "OwnerTransfer": 1,
         "Components": [
           {
-            "__type": "Sandbox.Decal",
-            "__guid": "e90c091d-4a0a-4c02-8fa5-e4c48a3c5e0d",
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "22a8c48f-7460-48b1-baaa-78cf3ccbf3cb",
             "__enabled": true,
-            "__version": 1,
-            "AttenuationAngle": 0,
-            "ColorTexture": {
-              "$compiler": "texture",
-              "$source": "imagefile",
-              "data": {
-                "FilePath": "texture/emotions/idle.png",
-                "MaxSize": 4096,
-                "ConvertHeightToNormals": false,
-                "NormalScale": 1,
-                "Rotate": 0,
-                "FlipVertical": false,
-                "FlipHorizontal": false,
-                "Padding": {
-                  "Size": "0,0",
-                  "EdgeSize": "0,0"
-                },
-                "Sharpen": 0,
-                "InvertColor": false,
-                "Blur": 0,
-                "Brightness": 1,
-                "Contrast": 1,
-                "Saturation": 1,
-                "Hue": 0,
-                "Colorize": false,
-                "TargetColor": "0,1,0,1",
-                "CacheToDisk": true
-              },
-              "compiled": "textures/generated/imagefile/c353984e97782abf.vtex"
-            },
-            "ColorTint": "255,255,255,255",
-            "NormalTexture": null,
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/guns/m16gl/m16gl.vmdl",
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "RMOTexture": null,
-            "SequenceId": 0,
-            "SheetSequence": false,
-            "Size": "4.199995,5.2,10.6",
-            "SortLayer": 0
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
           }
         ],
-        "Children": []
+        "Children": [
+          {
+            "__guid": "8249f124-d8b5-4640-b8ac-ee16957c2ea7",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "AttackPosition",
+            "Position": "69.42412,-1.24625,1.194823",
+            "Rotation": "-0.000000002269092,-0.00000005956145,-0.03806904,0.9992751",
+            "Scale": "2.851512,2.564143,3.17741",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          }
+        ]
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,
