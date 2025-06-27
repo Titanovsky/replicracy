@@ -18,10 +18,10 @@
         "__type": "Sandbox.NavMeshAgent",
         "__guid": "058fc198-2b37-4fb5-82bc-420903592ae0",
         "__enabled": true,
-        "Acceleration": 120,
+        "Acceleration": 90,
         "AutoTraverseLinks": true,
-        "Height": 70.4,
-        "MaxSpeed": 120,
+        "Height": 50.900024,
+        "MaxSpeed": 500,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -31,7 +31,7 @@
         "Radius": 15.7,
         "Separation": 0.5,
         "UpdatePosition": true,
-        "UpdateRotation": false
+        "UpdateRotation": true
       },
       {
         "__type": "Sandbox.Citizen.CitizenAnimationHelper",
