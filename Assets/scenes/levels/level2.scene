@@ -1,9 +1,3087 @@
 {
-  "__guid": "00000000-0000-0000-0000-000000000000",
-  "GameObjects": null,
-  "SceneProperties": null,
+  "__guid": "0d214b70-54c2-4112-995c-3d3175762563",
+  "GameObjects": [
+    {
+      "__guid": "efd260d0-6106-4f00-ad86-e4c47c65d54b",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "\uD83D\uDCC3 CORE",
+      "Position": "-482.34,-237.1137,52.34031",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [],
+      "Children": []
+    },
+    {
+      "__guid": "819fbc8e-2178-445b-80f9-644a3c7f0586",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Managers",
+      "Position": "-482.34,-237.1137,52.34031",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "LevelManager",
+          "__guid": "810c5e03-488d-4300-8433-bd9b8252447b",
+          "__enabled": true,
+          "CurrentLevel": {
+            "_type": "component",
+            "component_id": "ab7d4cd7-bbb7-498c-aa9a-2af1be9dceae",
+            "go": "8f632925-81b0-47b5-9785-924a916cfb6d",
+            "component_type": "LevelLaboratory"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "PickupManager",
+          "__guid": "0d633057-61e0-4fc4-94bf-8a264ed90a2d",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Pickups": []
+        },
+        {
+          "__type": "LabInfo",
+          "__guid": "07a49006-080f-415d-bc51-9067cde1804c",
+          "__enabled": true,
+          "BodyCost": 0,
+          "BodyCurrentHead": 0,
+          "BodyCurrentLeftHand": 0,
+          "BodyCurrentLeftLeg": 0,
+          "BodyCurrentRightHand": 0,
+          "BodyCurrentRightLeg": 0,
+          "BodyLabHead": 0,
+          "BodyLabLeftHand": 0,
+          "BodyLabLeftLeg": 0,
+          "BodyLabRightHand": 0,
+          "BodyLabRightLeg": 0,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "UnlockedAbitilies": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "8f632925-81b0-47b5-9785-924a916cfb6d",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Level: Laboratory",
+      "Position": "-482.34,-237.1137,52.34031",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "LevelLaboratory",
+          "__guid": "ab7d4cd7-bbb7-498c-aa9a-2af1be9dceae",
+          "__enabled": true,
+          "Class": "level2",
+          "Fuck": "das",
+          "MinDangerousZ": -310,
+          "Name": "Laboratory",
+          "NextDna": 15,
+          "NextFrags": 25,
+          "NextLevelScene": "scenes/levels/level3.scene",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "517f670c-1aa5-49f1-a278-f5006c08a013",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "9dd7da06-eb14-49de-a4a8-cd10eb158e68",
+          "__enabled": true,
+          "Author": null,
+          "Changes": "",
+          "Description": "",
+          "Group": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SceneTags": "",
+          "Title": "Level 1",
+          "Version": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "b1a58ce1-8738-4798-847f-ac0c893aadf0",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "skybox",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "2c5e2862-55fd-4531-ae05-3b6168d10f22",
+          "__enabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "0.95349,0.95349,0.95349,1"
+        },
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "9af2d7c9-d8e0-4f26-b7af-d7fbbfa7ce78",
+          "__enabled": true,
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "MultiBounce": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Projection": "Sphere",
+          "RenderDynamically": false,
+          "Resolution": "Small",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "73bc980f-d96a-4cc8-9b55-979c65989127",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "65.07842,20.14502,41.94015",
+      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Scale": "1,1,1",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "f835a668-b329-41f8-8b24-6981392064a0",
+          "__enabled": true,
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.94419,0.97767,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0.2532,0.32006,0.35349,1"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "0baf6c1e-5b22-4664-aeac-1c299c08edef",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-1.235725,-26.65848,2.912941",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "e3352038-9eb3-46e9-a59c-802928974f80",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "FovAxis": "Horizontal",
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "a096e8da-8fca-4f26-a1e4-621c7a4b23d4",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "\uD83D\uDDFA️ MAP",
+      "Position": "-482.34,-237.1137,52.34031",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [],
+      "Children": []
+    },
+    {
+      "__guid": "28ddc7f3-0845-43dc-8e9c-ee9002b040ee",
+      "__version": 1,
+      "__Prefab": "prefabs/player.prefab",
+      "__PrefabInstancePatch": {
+        "AddedObjects": [
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "b9fb3c0c-e362-4d4d-a99a-c6fbdfe0dcf3"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "e7d04219-229d-4594-905b-655c56e0c8a7"
+            },
+            "PreviousElement": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "ContainerProperty": "Children",
+            "IsContainerArray": true,
+            "Data": {
+              "__guid": "b9fb3c0c-e362-4d4d-a99a-c6fbdfe0dcf3",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Clothing - polo_shirt",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "clothing",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "232faa91-ab06-4373-b711-a1188f30b0cc"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "b9fb3c0c-e362-4d4d-a99a-c6fbdfe0dcf3"
+            },
+            "PreviousElement": null,
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "232faa91-ab06-4373-b711-a1188f30b0cc",
+              "__enabled": true,
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
+                "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen_clothes/shirt/polo_shirt/models/polo_shirt.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "PlaybackRate": 1,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null,
+                "Looping": true,
+                "Blending": false
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "b64b9c27-87fa-4ed5-ae24-449f5eac41c4"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "e7d04219-229d-4594-905b-655c56e0c8a7"
+            },
+            "PreviousElement": {
+              "Type": "GameObject",
+              "IdValue": "b9fb3c0c-e362-4d4d-a99a-c6fbdfe0dcf3"
+            },
+            "ContainerProperty": "Children",
+            "IsContainerArray": true,
+            "Data": {
+              "__guid": "b64b9c27-87fa-4ed5-ae24-449f5eac41c4",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Clothing - labcoat",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "clothing",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "18a4c7f2-b635-41b4-a7e5-dc961359ac9b"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "b64b9c27-87fa-4ed5-ae24-449f5eac41c4"
+            },
+            "PreviousElement": null,
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "18a4c7f2-b635-41b4-a7e5-dc961359ac9b",
+              "__enabled": true,
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
+                "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen_clothes/jacket/labcoat/models/labcoat.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "PlaybackRate": 1,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null,
+                "Looping": true,
+                "Blending": false
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "de4d9f79-db9b-45d0-b3f9-211e461ac691"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "e7d04219-229d-4594-905b-655c56e0c8a7"
+            },
+            "PreviousElement": {
+              "Type": "GameObject",
+              "IdValue": "b64b9c27-87fa-4ed5-ae24-449f5eac41c4"
+            },
+            "ContainerProperty": "Children",
+            "IsContainerArray": true,
+            "Data": {
+              "__guid": "de4d9f79-db9b-45d0-b3f9-211e461ac691",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Clothing - black_boots",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "clothing",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "4111cab5-5456-4d93-8280-d55f3d322f6e"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "de4d9f79-db9b-45d0-b3f9-211e461ac691"
+            },
+            "PreviousElement": null,
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "4111cab5-5456-4d93-8280-d55f3d322f6e",
+              "__enabled": true,
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
+                "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "PlaybackRate": 1,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null,
+                "Looping": true,
+                "Blending": false
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "4c5b861c-026b-41f7-9577-d3af20b96866"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "e7d04219-229d-4594-905b-655c56e0c8a7"
+            },
+            "PreviousElement": {
+              "Type": "GameObject",
+              "IdValue": "de4d9f79-db9b-45d0-b3f9-211e461ac691"
+            },
+            "ContainerProperty": "Children",
+            "IsContainerArray": true,
+            "Data": {
+              "__guid": "4c5b861c-026b-41f7-9577-d3af20b96866",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Clothing - loose_jeans",
+              "Position": "0,0,0",
+              "Rotation": "0,0,0,1",
+              "Scale": "1,1,1",
+              "Tags": "clothing",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [],
+              "Children": []
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "b741029a-e306-4b8b-8c10-ababfb9966d4"
+            },
+            "Parent": {
+              "Type": "GameObject",
+              "IdValue": "4c5b861c-026b-41f7-9577-d3af20b96866"
+            },
+            "PreviousElement": null,
+            "ContainerProperty": "Components",
+            "IsContainerArray": true,
+            "Data": {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "b741029a-e306-4b8b-8c10-ababfb9966d4",
+              "__enabled": true,
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": {
+                "_type": "component",
+                "component_id": "23f8050f-1377-434e-a1aa-2f82d6912ff8",
+                "go": "e7d04219-229d-4594-905b-655c56e0c8a7",
+                "component_type": "SkinnedModelRenderer"
+              },
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/citizen_clothes/trousers/loosejeans/models/loose_jeans.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "PlaybackRate": 1,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null,
+                "Looping": true,
+                "Blending": false
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          }
+        ],
+        "RemovedObjects": [
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "91075dcf-223c-42cc-b100-bde9a072e381"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "355e947c-4cdd-452a-8e45-4c1647b8297e"
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "b85def31-3a8c-454c-b598-8b73bac22d23"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "0479fe29-5281-4db4-a23f-79556004d1c4"
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "b53244fb-29cf-4596-9d1a-04238d43860c"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "5d878e9d-501e-42bd-967c-f28bd49407d7"
+            }
+          },
+          {
+            "Id": {
+              "Type": "GameObject",
+              "IdValue": "12375884-11e6-4d72-bff0-df0392c8e333"
+            }
+          },
+          {
+            "Id": {
+              "Type": "Component",
+              "IdValue": "ee0af8a6-ed97-469c-9d62-ddbcefa08085"
+            }
+          }
+        ],
+        "PropertyOverrides": [
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "70251006-11e7-43cf-81d9-58eab51d5fe1"
+            },
+            "Property": "Position",
+            "Value": "-39.99999,-87.99998,30.79845"
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "6d190114-246f-4adb-8db3-e18a742b20ba"
+            },
+            "Property": "_showTimer",
+            "Value": {
+              "Absolute": 0,
+              "Relative": -110061312,
+              "Passed": 110061310.3633061,
+              "Fraction": 1
+            }
+          },
+          {
+            "Target": {
+              "Type": "Component",
+              "IdValue": "a2ea6764-334d-445c-b0f8-7b5caff8d040"
+            },
+            "Property": "_showTimer",
+            "Value": {
+              "Absolute": 0,
+              "Relative": -110061312,
+              "Passed": 110061310.36332001,
+              "Fraction": 1
+            }
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
+            },
+            "Property": "Position",
+            "Value": "6.478767,0.7812424,11.81101"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
+            },
+            "Property": "Rotation",
+            "Value": "-0.00000000000000000000001629739,0.0000000000000002000654,-0.0000005323132,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
+            },
+            "Property": "Scale",
+            "Value": "0.9999989,0.9999989,0.9999989"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
+            },
+            "Property": "Position",
+            "Value": "6.478767,0.7812424,9.84251"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
+            },
+            "Property": "Rotation",
+            "Value": "-0.00000000000000000000001629739,0.0000000000000002000654,-0.0000005323132,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
+            },
+            "Property": "Scale",
+            "Value": "0.9999989,0.9999989,0.9999989"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
+            },
+            "Property": "Position",
+            "Value": "10.41576,0.7812347,9.84251"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
+            },
+            "Property": "Rotation",
+            "Value": "-0.00000000000000000000001629755,0.0000000000000002000651,-0.0000005323132,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
+            },
+            "Property": "Scale",
+            "Value": "0.9999979,0.9999979,0.9999979"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
+            },
+            "Property": "Position",
+            "Value": "9.750391,-4.987816,3.80584"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
+            },
+            "Property": "Rotation",
+            "Value": "0.6955537,0.1290387,-0.4102879,0.5755154"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
+            },
+            "Property": "Scale",
+            "Value": "0.999998,0.999998,0.999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
+            },
+            "Property": "Position",
+            "Value": "-8.846737,5.432419,3.808239"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
+            },
+            "Property": "Rotation",
+            "Value": "0.6385068,0.3045344,-0.2475613,0.6620281"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
+            },
+            "Property": "Scale",
+            "Value": "0.999999,0.999999,0.999999"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
+            },
+            "Property": "Position",
+            "Value": "16.57225,-4.114464,48.42022"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
+            },
+            "Property": "Rotation",
+            "Value": "0.3918287,-0.05674026,0.1347336,0.9083489"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
+            },
+            "Property": "Position",
+            "Value": "-10.77941,5.449097,40.71136"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
+            },
+            "Property": "Rotation",
+            "Value": "0.4436959,0.7048132,-0.2038008,0.5146237"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
+            },
+            "Property": "Scale",
+            "Value": "0.9999997,0.9999997,0.9999997"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
+            },
+            "Property": "Position",
+            "Value": "23.94949,-2.570763,50.02834"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
+            },
+            "Property": "Rotation",
+            "Value": "0.6106752,-0.1231697,-0.08755891,0.7773278"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
+            },
+            "Property": "Position",
+            "Value": "-11.36973,8.652641,33.72703"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
+            },
+            "Property": "Rotation",
+            "Value": "0.4464488,0.7316673,-0.1680063,0.4869501"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
+            },
+            "Property": "Scale",
+            "Value": "0.9999998,0.9999998,0.9999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
+            },
+            "Property": "Position",
+            "Value": "29.12638,-2.047905,52.0729"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
+            },
+            "Property": "Rotation",
+            "Value": "0.01353638,0.00003484028,0.00004110121,0.9999084"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
+            },
+            "Property": "Position",
+            "Value": "-9.633778,9.306206,27.62703"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
+            },
+            "Property": "Rotation",
+            "Value": "-0.3976143,0.631102,0.1449629,0.650076"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
+            },
+            "Property": "Scale",
+            "Value": "0.9999998,0.9999998,0.9999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
+            },
+            "Property": "Position",
+            "Value": "23.92627,-2.877831,50.25974"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
+            },
+            "Property": "Rotation",
+            "Value": "0.6106699,-0.1236188,-0.08762093,0.7772536"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
+            },
+            "Property": "Scale",
+            "Value": "0.999999,0.999999,0.999999"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
+            },
+            "Property": "Position",
+            "Value": "-11.15137,8.593765,33.76192"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
+            },
+            "Property": "Rotation",
+            "Value": "0.4595998,0.7243666,-0.159142,0.4886051"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
+            },
+            "Property": "Scale",
+            "Value": "0.9999991,0.9999991,0.9999991"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
+            },
+            "Property": "Position",
+            "Value": "10.82607,-4.072365,16.24142"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
+            },
+            "Property": "Rotation",
+            "Value": "0.4726802,0.4875653,-0.5524974,0.4833221"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
+            },
+            "Property": "Scale",
+            "Value": "0.9999993,0.9999993,0.9999993"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Position",
+            "Value": "-2.560295,5.589325,14.62928"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Rotation",
+            "Value": "0.3112953,0.6693225,-0.5505931,0.3898075"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Scale",
+            "Value": "0.9999996,0.9999996,0.9999996"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Position",
+            "Value": "8.406723,3.560745,39.88665"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Rotation",
+            "Value": "-0.07362816,0.3386539,0.1467932,0.9264687"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Scale",
+            "Value": "0.9999996,0.9999996,0.9999996"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Position",
+            "Value": "11.63582,-3.502228,49.11542"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Position",
+            "Value": "20.26087,-3.342613,49.22427"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Position",
+            "Value": "16.58531,-4.225677,48.28265"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Rotation",
+            "Value": "0.2708094,0.2584758,-0.6175568,0.6917198"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Position",
+            "Value": "-11.01886,5.26712,40.74763"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Rotation",
+            "Value": "-0.3166028,0.7639419,-0.5246386,0.2022618"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Scale",
+            "Value": "0.9999996,0.9999996,0.9999996"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Position",
+            "Value": "-8.040962,5.264061,44.91768"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999997,0.9999997,0.9999997"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Position",
+            "Value": "-11.07457,7.050873,37.21919"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Scale",
+            "Value": "0.9999997,0.9999997,0.9999997"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Position",
+            "Value": "7.322144,-3.377419,22.53329"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Position",
+            "Value": "-1.936417,5.060677,21.8181"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Position",
+            "Value": "11.67976,-4.108521,16.40324"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Rotation",
+            "Value": "0.5263246,0.4171322,-0.4715711,0.5714927"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Scale",
+            "Value": "0.9999991,0.9999991,0.9999991"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Position",
+            "Value": "-1.948154,5.717514,14.41458"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Rotation",
+            "Value": "0.7140371,0.1798971,-0.03184905,0.6758505"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999994,0.9999994,0.9999994"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Position",
+            "Value": "10.28824,-4.53009,10.02362"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Scale",
+            "Value": "0.999999,0.999999,0.999999"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
+            },
+            "Property": "Position",
+            "Value": "-5.703514,5.510872,9.218761"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
+            },
+            "Property": "Scale",
+            "Value": "0.9999992,0.9999992,0.9999992"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Position",
+            "Value": "0.0313797,0.600235,41.85098"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Scale",
+            "Value": "0.9999996,0.9999996,0.9999996"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
+            },
+            "Property": "Position",
+            "Value": "6.125305,1.349442,61.34995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
+            },
+            "Property": "Rotation",
+            "Value": "-0.0005414783,0.01465935,0.04570424,0.9988473"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
+            },
+            "Property": "Position",
+            "Value": "6.430901,-1.983017,61.34908"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
+            },
+            "Property": "Rotation",
+            "Value": "-0.0005414783,0.01465935,0.04570424,0.9988473"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
+            },
+            "Property": "Position",
+            "Value": "5.819714,4.681908,61.35081"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
+            },
+            "Property": "Rotation",
+            "Value": "-0.0005414783,0.01465935,0.04570424,0.9988473"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
+            },
+            "Property": "Position",
+            "Value": "0.633419,0.84758,54.61908"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
+            },
+            "Property": "Rotation",
+            "Value": "-0.0005414783,0.01465935,0.04570424,0.9988473"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
+            },
+            "Property": "Position",
+            "Value": "11.1302,-5.909248,0.187252"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
+            },
+            "Property": "Rotation",
+            "Value": "0.0004715025,0.00006590039,-0.2162278,0.9763429"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
+            },
+            "Property": "Scale",
+            "Value": "0.9999974,0.9999974,0.9999974"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
+            },
+            "Property": "Position",
+            "Value": "-7.239494,5.832268,1.059244"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
+            },
+            "Property": "Rotation",
+            "Value": "-0.04344057,0.999056,0.0003291667,0.00009046214"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
+            },
+            "Property": "Scale",
+            "Value": "0.9999989,0.9999989,0.9999989"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "Property": "Position",
+            "Value": "1.370441,0.9116898,69.76134"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "Property": "Rotation",
+            "Value": "-0.0005414783,0.01465935,0.04570424,0.9988473"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          }
+        ],
+        "MovedObjects": []
+      },
+      "__PrefabIdToInstanceId": {
+        "70251006-11e7-43cf-81d9-58eab51d5fe1": "28ddc7f3-0845-43dc-8e9c-ee9002b040ee",
+        "ab91d3a8-1eb1-4516-996d-1f281a699956": "f4348ce3-6a6c-49ad-92b9-f13a2ffca16f",
+        "9dbc8338-4a8f-4851-9843-090adc801f88": "7279d4cc-1462-4c1f-b1af-8b3c270953e6",
+        "8e2058ce-5d47-401b-9efd-f2a88b6a0a43": "54ee4e84-0da8-4611-8923-5dd273420ecd",
+        "dea12695-b376-4d41-abd0-c9c56a7fe1f6": "582e4207-cfae-48b7-833c-7368d453dc40",
+        "35a117ad-5a4c-4ad8-889f-641cdc811a44": "f96e4381-0216-4118-ad88-cf6c6f0161e9",
+        "5d17bda7-3c15-4fff-b1d8-b9bffcd85bbc": "062fbf5e-c60e-46ed-ba5a-ef57a6e150b6",
+        "51514ea3-f704-46b1-baea-47a314da58cc": "077de3ea-5751-4d4a-b71c-db48330b6f2c",
+        "d6cb63fa-6c93-44c7-b89f-b35515e9298b": "7c9b243f-7d0f-4e47-a096-679a111cc3b2",
+        "dcdac34c-dcba-45c8-9148-e396d09b3490": "e62405b7-6c40-427d-8b4a-f57d9d03e5ed",
+        "a63deb90-11a4-4499-a355-d1bc735d5640": "3b60c865-f48f-4d0b-9d10-6700a49a5cbf",
+        "225ba10c-9fcd-4385-8999-a61e064ca0a0": "058ef99f-607b-42ff-ad93-be5fc55602e8",
+        "bbf045c8-58e7-4339-b727-6d06c84f8899": "d7b5f97b-b65a-4d6b-8088-a23a35ab032c",
+        "3f7f9c01-dd99-44e7-9361-86e28617c315": "275fe139-3980-4550-a94e-720de859abeb",
+        "6afb651c-2a1a-4048-89f7-b8ca1c78f5c1": "2ed09608-bc6a-4d12-98bf-1ae880382923",
+        "74e238a3-9a0a-4445-a4f9-1afe8eb925a3": "7fd059b4-95ee-46d7-8ba7-290be644d6aa",
+        "297b24f8-cf39-4792-9e95-3168d9a476c2": "0f674dda-c08b-4227-a96d-edc6d8f75f5b",
+        "6d190114-246f-4adb-8db3-e18a742b20ba": "03acf04e-0175-4924-9911-a57696734528",
+        "a2ea6764-334d-445c-b0f8-7b5caff8d040": "9431aea8-6683-48cd-a549-62229cc6199c",
+        "b62de315-e099-4497-83c9-c5b01c46ead8": "07603028-8735-4644-a9c4-53a7e304057f",
+        "679868a0-454e-4ea5-b6c0-5c511fb27a77": "c832de22-09fd-467c-9599-795e3e1e3536",
+        "e7d04219-229d-4594-905b-655c56e0c8a7": "5e1d4aeb-468c-4cba-974e-4b703dff2e1f",
+        "23f8050f-1377-434e-a1aa-2f82d6912ff8": "abe0ce33-b825-4338-8810-149a8fb9bf16",
+        "7bcd8cf5-d3bc-45be-b4ec-36879635fe5e": "cd9d4e4b-c44c-4ffa-8ac8-ddb5e9c7e909",
+        "6ab2cd75-ba60-4221-a07d-00c6f6506fec": "0550c4fa-e514-428b-94ad-e8fb9b66ab32",
+        "3d208d31-ab78-4e21-9fa7-4bedadb0e345": "ec875aaf-939a-487f-b537-c84cabfe8b01",
+        "1391328b-d184-4e36-9121-e2d0742f45d7": "7d234e96-4aad-4567-a904-ac3bf68616c9",
+        "f33d5321-71dc-43b1-9d79-96f8ac956e03": "f1fdda0a-980a-4dbf-8045-6b9003f53d7f",
+        "374277cb-27bb-429b-b595-1633da7c6fe0": "ca8dc62e-77cf-4270-bdd1-3760484cbc83",
+        "4bf3c6bc-d01f-4de5-8aff-bc6d3bc96d68": "ebc87073-c04d-4896-8f98-eccc15f001fa",
+        "067d4713-4e7e-4d89-8954-0a7f940ff56d": "78c62ee6-75a7-4743-9478-42d4bc422645",
+        "6eea1345-d4e4-4c5e-ab2f-6ef13eab81f2": "313a3a00-4114-47b2-89d4-320e50e7d81f",
+        "166e41f9-c0dd-4a9a-bde2-e80346fc5a0c": "6f6fb380-4d64-49cd-9bae-8e0fa4c19469",
+        "0bd48740-2b59-4deb-b73a-15df14963475": "d937fd18-31f6-4547-be26-313a63e29e8e",
+        "ba8cd12d-a0fc-4a3a-97d3-c2c80272de97": "fa6bd574-0591-4d61-b160-6d0673a33c65",
+        "6b208bc6-4efc-4ba1-ba80-205fd116dc2c": "d6e27817-ead3-4dd8-b69a-2b96b62aff1b",
+        "e7d26d94-2605-4787-9874-d7e9258ebe70": "091432c6-09fb-4397-aa38-80ea398623d6",
+        "47607db1-8e99-42a8-b681-896d233d61f0": "ae6f3314-3de4-49d5-b326-19601b3f85aa",
+        "df63d47b-541f-42b3-be6e-f7897733a5ab": "e9223903-eea1-4251-9e1a-a29448a2f6f3",
+        "ff8eef2f-9189-4c46-8f5c-cb7bd889057b": "fdf5ab7a-a627-41bb-94da-e93d21c931e5",
+        "0dfccfa1-e9bb-4ba5-bfd7-a71152f500cc": "66028902-c3e4-486d-aa41-749cbb6b7ae5",
+        "bcfc957b-3d8c-4e0d-81be-fbf107020e23": "278062b3-a088-4de6-96a9-2c108f5c869d",
+        "5d7e1532-70c5-4d81-8dce-1836393f39f3": "fef08e7a-f997-49ac-bc77-2898ea73c366",
+        "ab2f9ead-bfff-4f5b-88bb-1b5716fdee6d": "fec73e16-3258-4e93-b1f4-1e04e0510ad0",
+        "7da2beed-4721-49ce-a801-fefd857f5a6a": "9b5853b7-b53c-492e-b255-1ecc27e338fd",
+        "52c69ffe-9e4b-4aab-b00a-87da9ad6dd33": "daac69eb-1656-4d31-a14b-869b12b70046",
+        "a06f9cfa-5ae5-4394-9a3a-e608b8ec96e1": "3737c989-2bd2-4682-a85b-efe70e14e255",
+        "647e59ae-5221-4e67-a27a-2a79753af0aa": "8ef59830-3beb-4f6f-83b0-ca13a753428f",
+        "fd046d17-7dfc-4887-9cd7-75c3bbbbe00c": "37a3e1b7-4981-4a3a-b66b-38c01fd92f76",
+        "58d19592-947f-4de0-8f91-e94271fc326f": "ef5bf540-669f-44b8-9923-f2e07da9fa74",
+        "2716e888-60ab-46e2-bf58-f947d18a329b": "b2f26857-27cf-4653-b491-ce0ba97a575a",
+        "ba8458d0-3e23-4e0f-a599-41afeb2fa74d": "9629ee3b-951d-4138-92bd-87da24e05c3d",
+        "f144b887-19cc-4884-a9f3-469d11e08da5": "50cd00c1-b861-46c7-9337-f6d00da5b189",
+        "4e2af505-46b8-473b-a8b1-9fe4becf044b": "9bbd208d-85e5-4e34-8f41-ca954038294b",
+        "6a3502cd-e0dc-4a42-924d-7e25dc562663": "b415c223-d6ea-43d8-9171-966b65aaa986",
+        "49cca13e-c33d-4fba-96b6-c612bdb233f3": "764964b0-b8a5-440b-bfc8-a8de324f3a9b",
+        "c442e8da-17df-442d-a94d-2c3c005ed63b": "28b43ae4-e8e9-41c5-82d1-7ff9a9b55e06",
+        "826113f8-cd25-4c6b-b2cf-8c13cb3d0b5b": "e79920b8-8a21-4aba-b79e-ee37fb0f7642",
+        "70f53d15-916a-4f35-ae52-e1c7a4741855": "e40b09a5-3cff-4823-88cb-b57e44fc3287",
+        "243f72c1-8fb6-45a3-a742-4033dd07de9c": "043b1031-02c0-40ae-bb43-1b578af86b95",
+        "7a3faa0d-39fe-445d-a340-9b60e5a40ed4": "da0ae0ae-514d-4b74-bb59-4d16a033d830",
+        "b46223b8-c79d-4be3-bfb2-e2c073ab294b": "ba32c2ec-256f-424c-9f7b-89818c498883",
+        "35ddc077-144a-4d10-b1b2-eb1efac823e4": "d6c35231-2a1f-4e74-abe8-f90785184a7f",
+        "fb21155c-ad45-4565-ae8e-7e526a17e342": "60ee89e2-a27f-4a23-b2df-166826b1d614",
+        "277ddb44-8914-406b-9d07-51dd52a457d5": "df67f35f-37c0-4710-9ea6-5d7e7e013c81",
+        "bcd7a3a0-31f9-46d9-bdd2-cd05503c6d9d": "dfe0405f-957c-4cd4-a5df-acd3806a07d8",
+        "cd61077a-12cb-4f38-baaa-a3482bcd5552": "6a3c0d20-6ebf-4f78-9cad-f5a10bbaf58e",
+        "548ef377-ab13-4594-83db-13d9a0b4ccc0": "12aabaf8-c92d-4afe-a7b6-d3a91f397578",
+        "addb7950-aa34-4634-a332-7a8ac6dbf3f1": "bfdfe5eb-32a5-4645-9402-76d12ffcc693",
+        "81ffcc8c-750e-4dcd-9e5f-285f4fdc47d8": "1480d3b4-7c4e-4737-b119-672b3f418221",
+        "b5319f1b-494d-4564-90c2-1bb2c08e9559": "fc2bdaeb-abdd-49e2-92a9-015205abdeb5",
+        "e4a964ba-5bf0-468e-b40c-3eb7786ec540": "f26c0d13-03cc-45c1-a502-b66b389b941c",
+        "e205e1f5-4da0-4a6a-829f-9aa4594348ff": "0a1cb860-53b5-4c4a-8c50-80cf6deae4ff",
+        "2e01b7b4-cba4-4f49-bfd4-63399d66f822": "fbadbfae-1787-4a0f-bf94-bd73b2ac3ff7",
+        "765c6e7d-d131-4f65-9050-01b6a416ba85": "b0cd850f-5564-45a6-b6a0-64f2d59f00f4",
+        "766f9dfc-cf49-4ce2-8d21-0636722e1462": "e3f37723-c5a4-473d-b01e-76e45ca908b3",
+        "28832ba0-848d-4c46-9398-e7018afaa1ab": "7aa91448-a583-4a45-a537-8eda48ee5ce1",
+        "60c342cb-d02a-4d53-b68b-616f6dfab545": "62e06dcd-4d3d-421f-baca-a22f1ed07a11",
+        "d702ea54-cb57-4916-a31f-4991e2ff01e9": "9b3e887a-5aab-4478-894b-44fb8ca4afc2",
+        "eb82d23d-faa2-4d4c-9b34-28189f6c8cc0": "c3c95c5d-edef-40ef-83a5-7cd637313c30",
+        "1ba51232-a097-47a1-8c3d-9b46f04975db": "97b691fc-391f-4511-a50d-f4b6f2852241",
+        "5410c335-448f-42e2-b984-399ae92c2c3e": "6bbc758d-cd58-463c-92f9-4999a9358d6e",
+        "d2760416-faf1-460c-b9e9-9582a8dfbaeb": "c4e401bb-ed92-4541-9f20-6e92eee7431d",
+        "bcd97a91-843f-475f-841d-2dafd7770017": "9e56fef6-9048-45a8-8882-06a5bb6f48d0",
+        "cdf4d8f4-6359-4004-a227-fe5299c64d24": "c8169193-efe6-45ce-bd94-661234e1347c",
+        "e376fa75-b028-45ba-9adf-709049301ed8": "1e493064-a809-43c2-9c51-5b9a4307620b",
+        "0138b991-3049-40bf-aae2-86947d88c64f": "35cda033-65fb-4cb0-9dce-832f62654935",
+        "d3a0ccc0-246d-4e31-afaa-e6cf8a98b271": "0f8f95ef-8210-4d17-88d7-5966bcf73406",
+        "79df8566-b495-41cf-ba7a-64b7004f9f22": "496a10f7-f3a6-43e9-8b5b-dc6d26f17d1a",
+        "afb72302-8d90-4cc5-8911-5cd40ca4c83f": "59e5cfbb-9728-4faf-a9eb-ce137b0fd28d",
+        "b95c07e2-611d-4268-b1f8-76c7ac0a7716": "25b9f034-bf52-4da4-aac2-aeaedd5056be",
+        "3d681afe-d686-4a3d-a5f9-455d7646f35a": "d083f254-8d7e-4810-a581-a4898304ee2e",
+        "a8d2d5e4-43fb-492d-8cfa-ef913e61649d": "0dc5f478-5068-4d19-8a14-6a67efceaf24",
+        "f4951a9a-2b53-4d6a-94b1-1b2dec12704f": "2a8353e6-a752-4475-972a-7edacdf636cd",
+        "f463a575-6a36-4787-b331-c684da41f671": "88416864-931f-4df7-96f9-08891e7a7194",
+        "b3285168-2b14-450c-aa71-f0685225f844": "7b766439-89fd-4085-bca9-d9d466d61ded",
+        "4f2e2c5a-73b8-43e2-a0c2-990b2d39ab4e": "552e7131-d705-47c8-b076-8af21d774bdf",
+        "82d51f42-cd4f-4ffa-bc1a-0dc629dc7981": "96b3b1f9-a31c-4d9d-80e9-d2e332d105d7",
+        "50a0a9d3-39a0-4f76-b4ac-b58ff15eaec0": "d9b0196a-7880-4157-909a-deb2c1d7ce53",
+        "91f6746a-241e-49d6-a93e-5b0610e5fb11": "b417fc4c-96c4-4c92-be68-2a10c6b2b9ce",
+        "e7869c28-2a00-465f-9253-29f5c215103a": "61575d1c-8412-4eac-a56f-54efb6673c6a",
+        "85d450bc-f376-41ec-b79c-39307b56111d": "8f6dfc30-2947-41a3-ab4b-e195230149bf",
+        "9079c52d-cd37-43fa-8481-365234d7095a": "b414cb2c-8949-4582-bdb5-59b5fa55c891",
+        "aebdea2f-b748-4cdc-800f-601a5d55c9c1": "6d07704f-123f-4c06-a95d-9f63194fe92d",
+        "5bf793fb-dafc-4e40-8d2d-a7ac82dd640c": "c3591927-553d-4210-b5e0-a5938d09b6f7",
+        "0cec7af1-78f6-4522-92b3-7732594dccd8": "b9c4ec75-0ed8-4a82-932a-78b3d745497b",
+        "ad5402b9-c56b-432b-8ae6-575c4a384388": "69b98748-7d6a-431a-95fe-6bc101219f8a",
+        "5631e568-8d20-4568-9f36-ba09a62a4ada": "a9b6594d-858c-4453-911a-df545215ff5d",
+        "b9773b86-bb3d-4260-8c73-e7a6f2a1f314": "50303ed0-b20e-431e-be6d-51eaa4841677",
+        "66162407-1e5d-4811-8ecd-7b4533554243": "d80ca471-3bf7-49ee-acec-880b9102c16a",
+        "990ce569-5c7c-4165-8a5a-1f8f97b8bd57": "6af94e9b-aebf-49af-a8b0-58ba1842eb65",
+        "ef14320d-f6b9-4a9b-85c9-1e5d728c51cd": "7d5b8d33-7cdc-4d2d-8322-bd991bdb05e1",
+        "cee26f75-2bd2-41e4-8d39-91f35ae77ce1": "493a0945-f95e-493b-a136-b6d692276c4f",
+        "8a71e60b-d4e5-4522-b34b-060ba24facee": "39613391-7706-48d5-9053-f7f8800e2fac",
+        "9834aa43-1bcf-45d5-9391-1f76ffdf63e8": "e2f09244-be61-447e-9216-07e2581cb4d4",
+        "040c5d55-30f5-4ede-8cbb-9677e88c23e5": "f362fcfa-1997-470e-a45d-1d1b57c91115",
+        "79fe98b0-2103-438a-94c9-91ec36e194fe": "96259392-7199-4926-8ad0-4d2007560196",
+        "454b3dd1-bed2-44a1-9451-acadf60b6778": "215ce19c-ddce-4dc1-b668-d8d83e38d799",
+        "f159384f-15ae-4bf3-a6cc-f4d610b08b58": "de6d1b72-d64f-41e6-9e6a-f845ce422049",
+        "275c862e-679f-45ea-a7c1-3f1bf3155193": "85a1988f-c575-48dc-ac86-b7bb90455df5",
+        "5e980db3-3f32-45dd-9b08-6e9eabac2e2f": "a4b7a4c0-735f-417c-b6bb-1a370cfeb194",
+        "c5962742-6566-492a-b08c-90e7049fdf4a": "0d4b7e3d-931c-46db-b046-55cafa1e44ac",
+        "74bdc5e1-b51e-492a-94dd-f04562c4738f": "c3cb13f8-a6dd-403e-a1d7-8299a1f18039",
+        "e454eabc-7493-4779-9b24-bcaedd9ca564": "1723d492-550b-4262-bb5a-c74af15c917c",
+        "2f2cb2c7-f936-4daa-902f-00711c7f9c96": "f73e756b-33ab-4a22-938c-46caedf3cb99",
+        "83002752-9d09-4e07-b533-dea1a4dab6b8": "3d6e1129-839d-4204-a315-4edc38efb2e3",
+        "4c478622-b5ea-4796-bee6-3e8996a29ca5": "da7538b3-5867-4899-a837-289eb1164d1d",
+        "6f0ec036-b646-466f-8020-abcc6dfc2da3": "749a1491-74a9-4dab-a328-32659fbd0919",
+        "322238e8-3503-4674-b452-bf73de65f36a": "750d9ead-3cb9-4a29-ba77-491a5eb048a4",
+        "a39ad92e-a2d0-4a69-aa15-fcb24b74062e": "40ccd856-11d8-4b0f-8d93-dfca9f9e12e9",
+        "280aa74b-d18c-43c6-85c5-5d4e330f0bd7": "12a0f85d-0774-4a65-a06f-75dff4bdc1cf",
+        "6b2059d6-fa3e-4195-8a5f-9c15124f2515": "4e1de764-abdd-4e8f-8249-ea9910194b59",
+        "e20c1e44-57bd-4ebd-82af-4425cbbfc88b": "b70b5a94-e592-4655-9ed3-949b7fc0982b",
+        "41f6a80c-2158-41c0-a867-172442915be0": "744d9526-eb94-43ae-b5a1-5cc2fda40793",
+        "03c312f5-ec95-4c41-a6e6-3cccb3a370a8": "62ca8919-d9a6-4cd9-9ad3-935c741b3549",
+        "467161da-faae-4be8-a401-e038be3a3e57": "8626112f-57b9-4ffa-8bbb-58191ab528cc",
+        "91e1ab83-7368-4c7d-9947-b636d6b5b126": "4e8fe4b0-9f27-4433-b753-c81fd30dbe83",
+        "c7803aef-fe80-45cb-ad16-de23a96c617a": "eac48b1c-dd3b-4343-9464-89c703c5b617",
+        "3d0044cd-16f2-48cc-b01b-052f9c6957da": "e332e5d8-9a76-40a1-b907-219b71060069",
+        "4fa9f1ae-631c-44da-84dc-9af49f429ad6": "3083c71c-5e9b-4f7e-b63c-615fb57f9999",
+        "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee": "a8825cdb-4098-4c40-b55f-a0e7a1de8337",
+        "ac2c9974-889f-4333-8fc3-13e8294b04c2": "75db34c6-d52e-4303-8bd1-9521a87095a1",
+        "6fa3ed6d-7268-41a0-b1ac-e25f021cb965": "ed680d1d-fa02-4cfd-bff3-8feba6e2214f",
+        "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7": "8be9e041-a3b7-44b0-94fd-9f3d819056a2",
+        "41fe0294-62aa-4d18-85fb-8adfd36276f4": "809f2a7b-e6e0-4e54-9bed-29e41d668c60",
+        "9bebe646-edc0-4627-a7f7-05641ca59908": "40c5dd6c-5c4d-42d9-ad91-7184e73a54e9",
+        "387ce088-b721-4f03-a197-57c0cca4aa4a": "c0a0734d-afe9-4cb2-9c7e-55227da37552",
+        "31656d3a-a1ce-4805-b71f-3bc25db28cc4": "36144a14-ebb1-4cc0-9806-8f26f1920a54",
+        "141c1a34-7887-4ba8-8d83-f12017d960ee": "c373c35d-c796-4e9d-b856-a4b68f5315c0",
+        "b26ad3c6-4f03-41a7-917a-86f37b68f721": "983379ad-0416-40b6-984f-525cccad6d02",
+        "76a78675-ff6c-4aaf-bc7a-df88c5ec0341": "3c578d3d-a99f-4571-b63c-abefff14c12e",
+        "c8613aab-5400-4b24-8ab9-df1936b09244": "88416fa1-d229-4c8a-a569-b8de24d0efe3",
+        "12c4f208-8f06-454e-84c7-85170b1c4061": "eccca1f4-a9d3-4aca-b3f8-e575d4054cd9",
+        "86f012fe-0550-4bc4-ae03-05dcc4caa17c": "5ea3c16c-f90f-4bf7-94f8-c93605743b7d",
+        "dff44e3d-849c-4805-813b-c1e432692977": "34b889a6-8a70-4aa9-bead-05fa9a058d80",
+        "bb69bf1b-495a-4802-b7ee-acbee4eda9b7": "a196af3a-a451-407c-a7ac-2e47070cf1a4",
+        "5b01354c-08d7-48bb-9ef9-ff928d9af133": "1c513337-59a0-4881-b02c-abfcd48a30be",
+        "9f61dcc9-637f-4e31-9243-4d58a24e054b": "d4542700-4c7c-4d52-8a3a-008ff73e4ede",
+        "6fd32e06-b57b-47a9-94e4-7559512a3780": "4f195aac-dd73-4464-84aa-f0e306b24193",
+        "945e7cd8-a053-43d7-ad9d-ef7e9c0f32a8": "36d533be-c037-4e3e-8ea6-38730a38523c",
+        "3caeae22-e4f9-457a-9253-aa945dac45a1": "d5cc5f9f-3da6-42c6-9f37-1835221da7a9",
+        "91075dcf-223c-42cc-b100-bde9a072e381": "f440df20-91a1-4305-ab53-7f38fec0dc69",
+        "355e947c-4cdd-452a-8e45-4c1647b8297e": "948954e5-7cee-4f52-9b1b-699b4e3e5038",
+        "b85def31-3a8c-454c-b598-8b73bac22d23": "0ec8b822-96cd-456d-b114-638811312237",
+        "0479fe29-5281-4db4-a23f-79556004d1c4": "04135841-de6a-4441-9d40-ec8aba0deb17",
+        "b53244fb-29cf-4596-9d1a-04238d43860c": "8a1b9945-5ba6-4095-ae6a-ad728b36bbdf",
+        "5d878e9d-501e-42bd-967c-f28bd49407d7": "a85b4bd8-a0e7-41d6-a0b7-3b93326857fb",
+        "12375884-11e6-4d72-bff0-df0392c8e333": "e0d39de2-7ca5-413c-8113-759b6c63384b",
+        "ee0af8a6-ed97-469c-9d62-ddbcefa08085": "5b480448-ee52-4de4-9e66-7d3eee0223b3",
+        "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "d805cc12-af31-47d3-8309-16214d14a7fb",
+        "b869b7df-ac57-4084-a7c4-1a89571001a4": "db054cb2-38fc-49a4-b9db-5e1b5de69da7",
+        "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "e95ef5f8-f812-457d-9827-fc305e89a783",
+        "d6c70999-d37f-4358-a198-d5a57f36960b": "cd261f58-61a1-499a-82e3-f2027a994c8f",
+        "581c4daf-0cfa-4606-8bbc-661c57b60a05": "e10a05a2-0cb2-48e1-b0b9-079ee3c95edd",
+        "9fc51ee7-b196-45e3-87ba-31a9a7bad2d8": "675c10ea-020a-43a6-ae08-2ee9e09f801c",
+        "dccbc6a1-860c-4a52-8c43-fe191ec2b6b0": "1089e289-7270-4857-8122-6ed1e6bfb41d",
+        "68b2f33d-ec10-4869-acf2-c18063ea9a82": "55d802dc-1098-4fd7-81b7-4e96b3693e36",
+        "8d06b361-0c45-4979-b779-4520a64ef930": "fa27f817-3b31-4f00-89b3-1786c702bf8e",
+        "e3fd9f72-43a8-4607-80c0-dc5ccdbaf938": "7b3fb1ff-a752-43f3-86c3-5942b170a652",
+        "2ba5f520-7526-4777-b039-9092c9e1123c": "1632f5b1-1e14-4c06-91f3-2a4f8cc853fe"
+      }
+    },
+    {
+      "__guid": "938ac9ae-cbb2-419e-a0ed-f4ef63e3f399",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "-64,-48,64.00002",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "dedb0761-2be1-4ef4-b14b-e9b5f910fbca",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "-64,-48,64.00002",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-160,-384,-48.00002",
+              "400,-384,-48.00002",
+              "400,256,-48.00002",
+              "-160,256,-48.00002",
+              "-160,256,-64",
+              "400,256,-64",
+              "400,-384,-64",
+              "-160,-384,-64"
+            ],
+            "TextureCoord": [
+              "3.125,4",
+              "-1.25,0.3750001",
+              "3.125,-0.9999999",
+              "-3,0.3750001",
+              "-1.25,-0.9999999",
+              "-2.125,0.3750001",
+              "-1.25,4",
+              "-0.9999999,0.3750001",
+              "3.125,-0.9999999",
+              "2.25,0.5",
+              "3.125,4",
+              "2,0.5",
+              "-1.25,4",
+              "3.125,0.5",
+              "-1.25,-0.9999999",
+              "4,0.5",
+              "4,0.3750001",
+              "-1.25,0.5",
+              "-0.9999999,0.5",
+              "2.25,0.3750001",
+              "-3,0.5",
+              "3.125,0.3750001",
+              "2,0.3750001",
+              "-2.125,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "256,320",
+              "256,320",
+              "320,256.0001",
+              "192,256.0001",
+              "256,256.0001",
+              "256,256.0001"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "8749aaab-04b7-45d8-ab0c-c57462d5b623",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "56,200,80.00043",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "9d845c2d-a00c-4964-b05e-5b4fcf56461a",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "56,200,80.00043",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-280,-8,127.9958",
+              "280,-8,127.9958",
+              "280,8,127.9958",
+              "-280,8,127.9958",
+              "-280,8,-64",
+              "280,8,-64",
+              "280,-8,-64",
+              "-280,-8,-64"
+            ],
+            "TextureCoord": [
+              "3.1875,-0.9375",
+              "-1.1875,-0.9999671",
+              "3.1875,-1.0625",
+              "1.9375,-0.9999671",
+              "-1.1875,-1.0625",
+              "-2.1875,-0.9999671",
+              "-1.1875,-0.9375",
+              "-1.0625,-0.9999671",
+              "3.1875,-1.0625",
+              "2.1875,0.5",
+              "3.1875,-0.9375",
+              "2.0625,0.5",
+              "-1.1875,-0.9375",
+              "3.1875,0.5",
+              "-1.1875,-1.0625",
+              "-0.9375,0.5",
+              "-0.9375,-0.9999671",
+              "-1.1875,0.5",
+              "-1.0625,0.5",
+              "2.1875,-0.9999671",
+              "1.9375,0.5",
+              "3.1875,-0.9999671",
+              "2.0625,-0.9999671",
+              "-2.1875,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "288,288",
+              "288,288",
+              "288,320.0017",
+              "224,320.0017",
+              "224,320.0017",
+              "288,320.0017"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "99cfbc20-2905-4fa7-b265-67c36a34f74f",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "56,-424,80.00842",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "d1de8e96-d3d4-4fb9-ae7b-1cf89c9e7f2f",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "56,-424,80.00842",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-280,-8,127.9958",
+              "280,-8,127.9958",
+              "280,8,127.9958",
+              "-280,8,127.9958",
+              "-280,8,-64",
+              "280,8,-64",
+              "280,-8,-64",
+              "-280,-8,-64"
+            ],
+            "TextureCoord": [
+              "3.1875,4.0625",
+              "-1.1875,-0.9999671",
+              "3.1875,3.9375",
+              "-3.0625,-0.9999671",
+              "-1.1875,3.9375",
+              "-2.1875,-0.9999671",
+              "-1.1875,4.0625",
+              "3.9375,-0.9999671",
+              "3.1875,3.9375",
+              "2.1875,0.5",
+              "3.1875,4.0625",
+              "-2.9375,0.5",
+              "-1.1875,4.0625",
+              "3.1875,0.5",
+              "-1.1875,3.9375",
+              "4.0625,0.5",
+              "4.0625,-0.9999671",
+              "-1.1875,0.5",
+              "3.9375,0.5",
+              "2.1875,-0.9999671",
+              "-3.0625,0.5",
+              "3.1875,-0.9999671",
+              "-2.9375,-0.9999671",
+              "-2.1875,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "288,352",
+              "288,352",
+              "352,320.0337",
+              "160,320.0337",
+              "224,320.0337",
+              "288,320.0337"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "8057a665-ddb4-40a1-a094-9f611bdd99f1",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "328,-248,80",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "1d65245a-c7bd-47ab-8d3d-960957e94da2",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "328,-248,80",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-8,-168,127.9958",
+              "8,-168,127.9958",
+              "8,168,127.9958",
+              "-8,168,127.9958",
+              "-8,168,-64",
+              "8,168,-64",
+              "8,-168,-64",
+              "-8,-168,-64"
+            ],
+            "TextureCoord": [
+              "3.0625,3.3125",
+              "2.9375,-0.9999671",
+              "3.0625,0.6875",
+              "-2.3125,-0.9999671",
+              "2.9375,0.6875",
+              "-2.0625,-0.9999671",
+              "2.9375,3.3125",
+              "0.6875,-0.9999671",
+              "3.0625,0.6875",
+              "-1.9375,0.5",
+              "3.0625,3.3125",
+              "0.3125,0.5",
+              "2.9375,3.3125",
+              "3.0625,0.5",
+              "2.9375,0.6875",
+              "3.3125,0.5",
+              "3.3125,-0.9999671",
+              "2.9375,0.5",
+              "0.6875,0.5",
+              "-1.9375,-0.9999671",
+              "-2.3125,0.5",
+              "3.0625,-0.9999671",
+              "0.3125,-0.9999671",
+              "-2.0625,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "224,32",
+              "224,32",
+              "32,320",
+              "480,320",
+              "288,320",
+              "224,320"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "6d49df8e-0f82-464b-aeed-ea0677829937",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "328,96,80.00232",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "5534858f-afe7-4b88-a5c4-e77dc44117fd",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "328,96,80.00232",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-8,-96,127.9967",
+              "8,-96,127.9967",
+              "8,96,127.9967",
+              "-8,96,127.9967",
+              "-8,96,-64",
+              "8,96,-64",
+              "8,-96,-64",
+              "-8,-96,-64"
+            ],
+            "TextureCoord": [
+              "3.0625,0.75",
+              "2.9375,-0.9999745",
+              "3.0625,-0.75",
+              "0.25,-0.9999745",
+              "2.9375,-0.75",
+              "-2.0625,-0.9999745",
+              "2.9375,0.75",
+              "-0.75,-0.9999745",
+              "3.0625,-0.75",
+              "-1.9375,0.5",
+              "3.0625,0.75",
+              "1.75,0.5",
+              "2.9375,0.75",
+              "3.0625,0.5",
+              "2.9375,-0.75",
+              "0.75,0.5",
+              "0.75,-0.9999745",
+              "2.9375,0.5",
+              "-0.75,0.5",
+              "-1.9375,-0.9999745",
+              "0.25,0.5",
+              "3.0625,-0.9999745",
+              "1.75,-0.9999745",
+              "-2.0625,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "224,384",
+              "224,384",
+              "384,320.0093",
+              "128,320.0093",
+              "288,320.0093",
+              "224,320.0093"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "092ba1aa-b5b2-4dca-956f-399d8d0a3198",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "-216,-112,80.00037",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "c290bac9-8f18-4cf3-a38f-2fb5bebf932d",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "-216,-112,80.00037",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-8,-304,127.9958",
+              "8,-304,127.9958",
+              "8,304,127.9958",
+              "-8,304,127.9958",
+              "-8,304,-64",
+              "8,304,-64",
+              "8,-304,-64",
+              "-8,-304,-64"
+            ],
+            "TextureCoord": [
+              "-0.9375,3.375",
+              "-1.0625,-0.999967",
+              "-0.9375,-1.375",
+              "-2.375,-0.999967",
+              "-1.0625,-1.375",
+              "1.9375,-0.999967",
+              "-1.0625,3.375",
+              "-1.375,-0.999967",
+              "-0.9375,-1.375",
+              "2.0625,0.5000001",
+              "-0.9375,3.375",
+              "2.375,0.5000001",
+              "-1.0625,3.375",
+              "-0.9375,0.5000001",
+              "-1.0625,-1.375",
+              "3.375,0.5000001",
+              "3.375,-0.999967",
+              "-1.0625,0.5000001",
+              "-1.375,0.5000001",
+              "2.0625,-0.999967",
+              "-2.375,0.5000001",
+              "-0.9375,-0.999967",
+              "2.375,-0.999967",
+              "1.9375,0.5000001"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "352,64",
+              "352,64",
+              "64,320.0015",
+              "448,320.0015",
+              "160,320.0015",
+              "352,320.0015"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "2ddcc14d-d7f8-411e-807d-61ea5fff8466",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "328,-40,152",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "b8b2cf21-51ab-467e-827e-732e7ad2935d",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "328,-40,152",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-8,-40,56.00095",
+              "8,-40,56.00095",
+              "8,40,56.00095",
+              "-8,40,56.00095",
+              "-8,40,-24",
+              "8,40,-24",
+              "8,-40,-24",
+              "-8,-40,-24"
+            ],
+            "TextureCoord": [
+              "3.0625,1.3125",
+              "2.9375,-1.437507",
+              "3.0625,0.6875",
+              "-0.3125,-1.437507",
+              "2.9375,0.6875",
+              "-2.0625,-1.437507",
+              "2.9375,1.3125",
+              "0.6875,-1.437507",
+              "3.0625,0.6875",
+              "-1.9375,-0.8125",
+              "3.0625,1.3125",
+              "0.3125,-0.8125",
+              "2.9375,1.3125",
+              "3.0625,-0.8125",
+              "2.9375,0.6875",
+              "1.3125,-0.8125",
+              "1.3125,-1.437507",
+              "2.9375,-0.8125",
+              "0.6875,-0.8125",
+              "-1.9375,-1.437507",
+              "-0.3125,-0.8125",
+              "3.0625,-1.437507",
+              "0.3125,-1.437507",
+              "-2.0625,-0.8125"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "224,352",
+              "224,352",
+              "352,96",
+              "160,96",
+              "288,96",
+              "224,96"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "34c57c70-7754-4983-b334-ca638392eed2",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "56,-112,224",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "5dbc8ab2-d830-46ba-8dbf-1925ec0db9ad",
+          "__enabled": true,
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f+laMRGsohUVbFn1+t04ANs+Z0VsM69AwfgBFyAKZ9MPXdgk3qLnsI+Um/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt+ivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Position": "56,-112,224",
+            "Rotation": "0,0,0,1",
+            "Positions": [
+              "-280,-320,16",
+              "280,-320,16",
+              "280,320,16",
+              "-280,320,16",
+              "-280,320,-16",
+              "280,320,-16",
+              "280,-320,-16",
+              "-280,-320,-16"
+            ],
+            "TextureCoord": [
+              "2.1875,2.5",
+              "-2.1875,-0.125",
+              "2.1875,-2.5",
+              "-2.5,-0.125",
+              "-2.1875,-2.5",
+              "-2.1875,-0.125",
+              "-2.1875,2.5",
+              "-2.5,-0.125",
+              "2.1875,-2.5",
+              "2.1875,0.125",
+              "2.1875,2.5",
+              "2.5,0.125",
+              "-2.1875,2.5",
+              "2.1875,0.125",
+              "-2.1875,-2.5",
+              "2.5,0.125",
+              "2.5,-0.125",
+              "-2.1875,0.125",
+              "-2.5,0.125",
+              "2.1875,-0.125",
+              "-2.5,0.125",
+              "2.1875,-0.125",
+              "2.5,-0.125",
+              "-2.1875,0.125"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "288,64",
+              "288,64",
+              "64,384",
+              "448,384",
+              "224,384",
+              "288,384"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "RenderType": "On",
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {
+      "Title": "Level 1"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
   "ResourceVersion": 3,
-  "Title": null,
+  "Title": "Level 1",
   "Description": null,
   "__references": [],
   "__version": 3
