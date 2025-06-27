@@ -7,23 +7,23 @@
 <root>
 
 	.<div class="Logo"></div>
-		
 		<div class="buttonContainer">
-
 			<div class="button" onclick="@Start">
 				<div class="text">Start</div>
 			</div>
 
-			<div class="button" onclick="@LoadSession">
+			@* <div class="button" onclick="@LoadSession">
 				<div class="text">Load session</div>
+			</div> *@
+
+			<div class="button" onclick="@ShowSettings">
+				<div class="text">Settings</div>
 			</div>
 
-			<div class="button" onclick="@BackToSbox">
-				<div class="text">Back to s&box</div>
+			<div class="button" onclick="@Exit">
+				<div class="text">Exit</div>
 			</div>
-
 		</div>
-
 </root>
 
 @code
@@ -32,6 +32,8 @@
 
 	private Angles initialRotation;
 	private Random random;
+
+	[Property] private SceneFile _startScene;
 
 	protected override void OnStart()
 	{
@@ -55,18 +57,24 @@
 		_camera.WorldRotation = new Angles(desiredPitch, desiredYaw, initialRotation.roll).ToRotation(); // Устанавливаем вращение
 	}
 
-	void Start()
+	private void Start()
 	{
-		Log.Info("Start");
+		Scene.Load(_startScene);
 	}
-	
-	void LoadSession()
+
+	private void ShowSettings()
 	{
+		Game.Overlay.ShowSettingsModal();
+	}
+
+	private void LoadSession()
+	{
+		//todo
 		Log.Info("LoadSession");
 	}
-	
-	void BackToSbox()
+
+	private void Exit()
 	{
-		Log.Info("BackToSbox");
+		Game.Close();
 	}
 }
