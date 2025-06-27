@@ -21,10 +21,16 @@ public sealed class Replicant : Component, Component.IDamageable
     private RealTimeUntil _attackTimer;
     public ReplicantFSM replicantFSM;
 
+    private SkinnedModelRenderer _modelRenderer;
+    private Collider _collder;
+
     protected override void OnAwake()
     {
         replicantFSM = new();
         _attackTimer = AttackDelay;
+
+        _modelRenderer = GameObject.GetComponentInChildren<SkinnedModelRenderer>();
+        _collder = GameObject.GetComponent<Collider>();
 
         replicantFSM.AddState(new ReturnToPlayer(this));
         replicantFSM.AddState(new MoveToPoint(this));
@@ -69,6 +75,18 @@ public sealed class Replicant : Component, Component.IDamageable
         DestroyGameObject();
     }
 
+    public void SetAttackBuilding(Vector3 targetPosition)
+    {
+        SetTargetPoint(targetPosition);
+        replicantFSM.SetState<AttackBuilding>();
+    }
+    
+    public void SetMoveToPoint(Vector3 targetPosition)
+    {
+        SetTargetPoint(targetPosition);
+        replicantFSM.SetState<MoveToPoint>();
+    }
+
     public void SetTargetPoint(Vector3 point) => _targerPoint = point;
     public void MoveToPoint(Vector3 point) => Agent.MoveTo(point);
 
@@ -77,6 +95,20 @@ public sealed class Replicant : Component, Component.IDamageable
     public Vector3 GetTargetPoint() => _targerPoint;
     public void ReseAttackTimer() => _attackTimer = AttackDelay;
     public bool IsAttackAllowed() => _attackTimer;
+
+    public void HideReplicant()
+    {
+        Agent.Enabled = false;
+        _modelRenderer.Enabled = false;
+        _collder.IsTrigger = true;
+    }
+    
+    public void ShowReplicant()
+    {
+        Agent.Enabled = true;
+        _modelRenderer.Enabled = true;
+        _collder.IsTrigger = false;
+    }
 
     public void OnDamage(in DamageInfo dmgInfo)
     {

@@ -3,6 +3,7 @@ using Sandbox;
 public sealed class Loot : Component
 {
     [Property] private int Health { get; set; } = 100;
+    [Property] private int DNA { get; set; } = 5;
     [Property] public Color DamageColor { get; set; } = Color.Red;
     public bool IsDead { get; set; }
 
@@ -34,6 +35,9 @@ public sealed class Loot : Component
         if (Health <= 0)
         {
             IsDead = true;
+
+            Player.Instance.CollectDna += DNA;
+            Player.Instance.HeaderLevel.Show();
         }
     }
 

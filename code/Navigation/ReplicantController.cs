@@ -41,6 +41,8 @@ public sealed class ReplicantController : Component
         {
             _targeObject = traceObject;
 
+            ActiveHightlights();
+
             MoveToEnemy();
             return;
         }
@@ -48,6 +50,8 @@ public sealed class ReplicantController : Component
         if (traceObject.Tags.Has("building"))
         {
             _targeObject = traceObject;
+            
+            ActiveHightlights();
 
             MoveToBuilding();
             return;
@@ -58,16 +62,27 @@ public sealed class ReplicantController : Component
 
     private void MoveToEnemy()
     {
-        ActiveHightlights();
+        if (Replicants.Count == 0) return;
 
+        foreach (var replicant in Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            //replicant.SetAttackBuilding(_targeObject.WorldPosition);
+        }
 
     }
 
     private void MoveToBuilding()
     {
-        ActiveHightlights();
+        if (Replicants.Count == 0) return;
 
-        MoveAroundBuilding();
+        foreach (var replicant in Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            replicant.SetAttackBuilding(_targeObject.WorldPosition);
+        }
     }
 
     private void MoveToPoint()
@@ -78,9 +93,7 @@ public sealed class ReplicantController : Component
         {
             if (!replicant.IsValid()) continue;
 
-            replicant.SetTargetPoint(_targetPoint);
-
-            replicant.replicantFSM.SetState<MoveToPoint>();
+            replicant.SetMoveToPoint(_targetPoint);
         }
     }
 
@@ -96,30 +109,14 @@ public sealed class ReplicantController : Component
 
         _targetObjectPosition = _targeObject.WorldPosition;
 
-        MoveAroundBuilding();
-    }
-
-    private void MoveAroundBuilding()
-    {
-        int numUnits = Replicants.Count;
-        float radius = 50.0f; // Радиус окружения
-        float angleStep = 360.0f / numUnits; // Угол между юнитами
-
-        for (int i = 0; i < numUnits; i++)
-        {
-            float angle = angleStep * i * ((float)Math.PI / 180); // Перевод в радианы
-            float x = _targeObject.WorldPosition.x + radius * (float)Math.Cos(angle);
-            float y = _targeObject.WorldPosition.y + radius * (float)Math.Sin(angle);
-
-            Vector3 targetPosition = new Vector3(x, y, _targeObject.WorldPosition.z);
-
-            Replicants[i].SetTargetPoint(targetPosition);
-            Replicants[i].replicantFSM.SetState<AttackBuilding>();
-        }
+        MoveToBuilding();
     }
 
     private void ActiveHightlights()
     {
+        if (_targeObject == null || !_targeObject.IsValid())
+            return;
+
         var targerHightlight = _targeObject.GetComponent<HighlightOutline>();
 
         if (targerHightlight != null)
@@ -157,10 +154,7 @@ public sealed class ReplicantController : Component
         Replicants.Remove(agent);
     }
 
-    public int GetCountReplicants()
-    {
-        return Replicants.Count;
-    }
+    public int GetCountReplicants() => Replicants.Count;
 
     private void Subribe()
     {

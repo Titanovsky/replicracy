@@ -3,7 +3,8 @@ public class AttackBuilding : MovableState
     public AttackBuilding(Replicant replicant) : base(replicant) { }
 
     private SceneTraceResult tr;
-    private GameObject _targetObject;
+
+    private Loot attackLoot;
 
     public override void Enter()
     {
@@ -22,32 +23,65 @@ public class AttackBuilding : MovableState
 
         DrawSpecified();
 
-        tr = Game.ActiveScene.Trace.Ray(new Ray(Replicant.GetEye().WorldPosition, Replicant.GetEye().WorldRotation.Forward), 30)
+        SearchLoot();
+
+        Attack();
+    }
+
+    public override void Exit()
+    {
+        DeleTargerLoot();
+    }
+
+    private void Attack()
+    {
+        if (attackLoot == null) return;
+
+        if (!Replicant.IsAttackAllowed()) return;
+
+        if (attackLoot.IsDead)
+        {
+            DeleTargerLoot();
+            Replicant.replicantFSM.SetState<ReturnToPlayer>();
+            return;
+        }
+
+        attackLoot.TakeDamage(Replicant.AttackDamage);
+
+        Replicant.ReseAttackTimer();
+    }
+
+    private void SearchLoot()
+    {
+        if (attackLoot != null) return;
+
+        tr = Game.ActiveScene.Trace.Ray(new Ray(Replicant.GetEye().WorldPosition, Replicant.GetEye().WorldRotation.Forward), 40)
         .IgnoreGameObject(Replicant.GameObject)
         .Run();
 
         if (!tr.Hit) return;
 
-        _targetObject = tr.GameObject;
+        var targetObject = tr.GameObject;
 
-        if (_targetObject.Tags.Has("building"))
+        if (targetObject.Tags.Has("building"))
         {
-            Attack();
+            var loot = targetObject.Components.Get<Loot>();
+
+            if (loot != null && !loot.IsDead)
+            {
+                attackLoot = loot;
+
+                Replicant.HideReplicant();
+            }
+            else
+                Replicant.replicantFSM.SetState<ReturnToPlayer>();
         }
     }
 
-    private void Attack()
+    private void DeleTargerLoot()
     {
-        if (!Replicant.IsAttackAllowed()) return;
-
-        var building = _targetObject.Components.Get<Loot>();
-
-        building.TakeDamage(Replicant.AttackDamage);
-
-        Replicant.ReseAttackTimer();
-
-        if (building.IsDead)
-            Replicant.replicantFSM.SetState<ReturnToPlayer>();
+        attackLoot = null;
+        Replicant.ShowReplicant();
     }
 
     private void DrawSpecified()
