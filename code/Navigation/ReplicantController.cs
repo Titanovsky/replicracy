@@ -171,6 +171,9 @@ public sealed class ReplicantController : Component
 
     private void Unsubscribe()
     {
+        if (!Player.Instance.IsValid()) return;
+        if (Player.Instance.OnSpecified is null) return;
+
         Player.Instance.OnSpecified -= PlayerSpecifie;
 
         Log.Info($"Unsubscribe");
