@@ -24,7 +24,7 @@ public sealed class ReplicantController : Component
 
     protected override void OnDestroy()
     {
-        Unsubscribe();
+        //Unsubscribe();
     }
 
     private void PlayerSpecifie(SceneTraceResult traceResult)

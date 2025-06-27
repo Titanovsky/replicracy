@@ -49,7 +49,6 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     private void Prepare()
     {
         Health = MaxHealth;
-        Dna = 0;
 
         if (!PlayerController.IsValid())
             PlayerController = GetComponent<PlayerController>();
