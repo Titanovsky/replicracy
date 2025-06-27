@@ -28,7 +28,7 @@ public class AttackBuilding : MovableState
 
     public override void Exit()
     {
-        DeleTargerLoot();
+        DeletTargerLoot();
     }
 
     private void Attack()
@@ -39,7 +39,7 @@ public class AttackBuilding : MovableState
 
         if (attackLoot.IsDead)
         {
-            DeleTargerLoot();
+            DeletTargerLoot();
             Replicant.replicantFSM.SetState<ReturnToPlayer>();
             return;
         }
@@ -70,15 +70,17 @@ public class AttackBuilding : MovableState
                 attackLoot = loot;
 
                 Replicant.HideReplicant();
+                Replicant.HealthBar.IsVisible = false;
             }
             else
                 Replicant.replicantFSM.SetState<ReturnToPlayer>();
         }
     }
 
-    private void DeleTargerLoot()
+    private void DeletTargerLoot()
     {
         attackLoot = null;
         Replicant.ShowReplicant();
+        Replicant.HealthBar.IsVisible = true;
     }
 }

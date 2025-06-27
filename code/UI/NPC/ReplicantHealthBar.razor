@@ -4,15 +4,15 @@
 @namespace Sandbox
 
 <root>
+	@if (!IsVisible) return;
+
 	<div class="title">💖  @Replicant.Health.ToString("F2")</div>
 </root>
 
 @code
 {
 	[Property] public Replicant Replicant { get; set; }
+	[Property] public bool IsVisible { get; set; } = true;
 
-	/// <summary>
-	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
-	/// </summary>
-	protected override int BuildHash() => System.HashCode.Combine(Replicant.Health);
+	protected override int BuildHash() => System.HashCode.Combine(Replicant.Health, IsVisible);
 }

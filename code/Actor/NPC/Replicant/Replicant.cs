@@ -14,6 +14,7 @@ public sealed class Replicant : Component, Component.IDamageable
     [Property][Category("Health")] public float MaxHealth { get; set; } = 20;
     [Property][Category("Other")] GameObject eye { get; set; }
     [Property][Category("Other")] public SkinnedModelRenderer Renderer { get; set; }
+    [Property][Category("Other")] public ReplicantHealthBar HealthBar { get; set; }
 
     [RequireComponent] public NavMeshAgent Agent { get; set; }
 
