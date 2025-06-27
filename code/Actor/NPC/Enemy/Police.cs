@@ -139,7 +139,12 @@ public class Police : EnemyBase
 
         shootCount++;
 
-        tr = Scene.Trace.Ray(AttackPosition.WorldPosition, _attackTarget.WorldPosition).Run();
+        var origin = AttackPosition.WorldPosition;
+        var endPos = _attackTarget.WorldPosition + new Vector3(0, 0, 40);
+
+        tr = Scene.Trace.Ray(origin, endPos)
+            .IgnoreGameObject(GameObject)
+            .Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
@@ -188,6 +193,8 @@ public class Police : EnemyBase
 
         if (Health <= 0)
             Die();
+
+        _delayMovingTimer = 0;
     }
 
     public override void Die()
@@ -243,18 +250,6 @@ public class Police : EnemyBase
         _attackTarget = target;
 
         SetAttackState();
-    }
-
-    protected override void DrawGizmos()
-    {
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(tr.StartPosition, tr.HitPosition);
-
-        Gizmo.Draw.Color = Color.Blue;
-        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.StartPosition, 5));
-
-        Gizmo.Draw.Color = Color.Red;
-        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.HitPosition, 5));
     }
 
     private void ResetMovingTimer() => _delayMovingTimer = MoveDelay;

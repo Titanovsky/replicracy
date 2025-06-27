@@ -103,10 +103,11 @@ public sealed class Vampire : EnemyBase
         ResetAttackTimer();
 
         var origin = AttackPosition.WorldPosition;
-        var targetPos = _attackTarget.WorldPosition;
-        var direction = (targetPos - origin).Normal;
+        var endPos = _attackTarget.WorldPosition + new Vector3(0, 0, 40);
 
-        var tr = Scene.Trace.Ray(AttackPosition.WorldRotation.Forward, direction).Run();
+        tr = Scene.Trace.Ray(origin, endPos)
+            .IgnoreGameObject(GameObject)
+            .Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
@@ -225,18 +226,6 @@ public sealed class Vampire : EnemyBase
     {
         _attackTarget = target;
         CurrentState = VampireState.Attack;
-    }
-
-    protected override void DrawGizmos()
-    {
-        Gizmo.Draw.Color = Color.Green;
-        Gizmo.Draw.Line(tr.StartPosition, tr.EndPosition);
-
-        Gizmo.Draw.Color = Color.Blue;
-        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.StartPosition, 5));
-
-        Gizmo.Draw.Color = Color.Red;
-        Gizmo.Draw.SolidBox(BBox.FromPositionAndSize(tr.EndPosition, 5));
     }
 
     private void AllowMoving() => _delayMovingTimer = 0;
