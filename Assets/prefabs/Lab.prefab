@@ -116,7 +116,7 @@
         },
         "ReplicantPrefab": {
           "_type": "gameobject",
-          "prefab": "prefabs/replicant.prefab"
+          "prefab": "prefabs/npc/replicant.prefab"
         },
         "Spawn": {
           "_type": "gameobject",
@@ -342,7 +342,7 @@
                     "Name": "Replicant",
                     "Position": "0.5346617,-2.34928,-15.13126",
                     "Rotation": "0,0,-0.7071067,0.7071068",
-                    "Scale": "0.4709584,0.5051156,0.2002178",
+                    "Scale": "0.9767473,1.075767,0.4312939",
                     "Tags": "",
                     "Enabled": true,
                     "NetworkMode": 2,
@@ -354,11 +354,11 @@
                         "__type": "Sandbox.ModelRenderer",
                         "__guid": "5ded2b6c-84fd-4855-8451-58c117667402",
                         "__enabled": true,
-                        "BodyGroups": 18446744073709551615,
+                        "BodyGroups": 4096,
                         "CreateAttachments": false,
                         "MaterialGroup": null,
                         "MaterialOverride": null,
-                        "Model": "models/npc/example/test-replicant/replicant.vmdl",
+                        "Model": "models/npc/replicator/model/replicator.vmdl",
                         "OnComponentDestroy": null,
                         "OnComponentDisabled": null,
                         "OnComponentEnabled": null,
@@ -5016,7 +5016,7 @@
                                   }
                                 }
                               },
-                              "compiled": null
+                              "compiled": "textures/generated/text/cf5a9d2b94387d08.vtex"
                             },
                             "ColorTint": "255,255,255,255",
                             "NormalTexture": null,
@@ -5200,7 +5200,7 @@
                                   }
                                 }
                               },
-                              "compiled": null
+                              "compiled": "textures/generated/text/19668c143d583c91.vtex"
                             },
                             "ColorTint": "255,255,255,255",
                             "NormalTexture": null,
@@ -5384,7 +5384,7 @@
                                   }
                                 }
                               },
-                              "compiled": null
+                              "compiled": "textures/generated/text/7f1f02078ff50f69.vtex"
                             },
                             "ColorTint": "255,255,255,255",
                             "NormalTexture": null,

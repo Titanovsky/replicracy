@@ -100,8 +100,8 @@
             "__type": "Sandbox.SkinnedModelRenderer",
             "__guid": "ec0a283b-07cd-4cf3-aebc-54063af3537d",
             "__enabled": true,
-            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
-            "BodyGroups": 1239132151937,
+            "AnimationGraph": "models/npc/bolvan/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 19808525500545,
             "BoneMergeTarget": null,
             "CreateAttachments": false,
             "CreateBoneObjects": false,
@@ -118,14 +118,8 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {
-                "duck": 0,
-                "move_x": 0,
-                "move_y": 0
-              },
-              "vectors": {
-                "aim_head": "0,0,0"
-              },
+              "floats": {},
+              "vectors": {},
               "rotations": {}
             },
             "PlaybackRate": 1,

@@ -36,7 +36,7 @@
       {
         "__type": "Sandbox.Citizen.CitizenAnimationHelper",
         "__guid": "5c02a357-4ec2-4683-8fcc-cc2daf241ff6",
-        "__enabled": true,
+        "__enabled": false,
         "BodyWeight": 1,
         "EyeSource": {
           "_type": "gameobject",
@@ -57,17 +57,12 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "Target": {
-          "_type": "component",
-          "component_id": "53a623e6-b43a-4546-835e-ee0b53212f7a",
-          "go": "3e82156c-eb77-4d32-982e-cf2636ff1d20",
-          "component_type": "SkinnedModelRenderer"
-        }
+        "Target": null
       },
       {
         "__type": "Sandbox.CharacterController",
         "__guid": "c04df881-f12f-43f4-bd0a-2419a56c9a8b",
-        "__enabled": true,
+        "__enabled": false,
         "Acceleration": 10,
         "Bounciness": 0.3,
         "GroundAngle": 45,
@@ -109,7 +104,7 @@
       {
         "__type": "Sandbox.Rigidbody",
         "__guid": "7edbbe9a-8736-4f2b-ae33-854ac7a21b74",
-        "__enabled": true,
+        "__enabled": false,
         "AngularDamping": 0,
         "Gravity": true,
         "LinearDamping": 0,
@@ -186,16 +181,16 @@
         "Components": [
           {
             "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "53a623e6-b43a-4546-835e-ee0b53212f7a",
+            "__guid": "0d2d8866-cf71-40c9-ac6b-cd1723009549",
             "__enabled": true,
-            "AnimationGraph": null,
-            "BodyGroups": 341,
+            "AnimationGraph": "models/npc/replicator/animation/replicator_n.vanmgrph",
+            "BodyGroups": 4096,
             "BoneMergeTarget": null,
             "CreateAttachments": false,
             "CreateBoneObjects": false,
-            "MaterialGroup": "default",
+            "MaterialGroup": null,
             "MaterialOverride": null,
-            "Model": "models/citizen/citizen.vmdl",
+            "Model": "models/npc/replicator/model/replicator.vmdl",
             "Morphs": {},
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -206,8 +201,14 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {},
-              "vectors": {},
+              "floats": {
+                "duck": 0,
+                "move_x": 0,
+                "move_y": 0
+              },
+              "vectors": {
+                "Aim": "0,0,0"
+              },
               "rotations": {}
             },
             "PlaybackRate": 1,
