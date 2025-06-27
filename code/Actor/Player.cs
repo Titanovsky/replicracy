@@ -1,6 +1,7 @@
 ﻿using Sandbox;
 using Sandbox.Utility;
 using System;
+using System.Linq;
 
 public sealed class Player : Component, Component.IDamageable, PlayerController.IEvents
 {
@@ -100,6 +101,13 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         _playerViewedObject.Use();
     }
 
+    public void Die()
+    {
+        Log.Info($"Restart");
+
+        Scene.Load(LevelManager.Instance.CurrentLevel.CurrentLevelScene);
+    }
+
     private void PlayerView()
     {
         var screenCenter = new Vector2(Screen.Width, Screen.Height) * .5f;
@@ -156,6 +164,19 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         //Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
+    private void TakeDamage(in DamageInfo dmgInfo)
+    {
+        var damage = dmgInfo.Damage;
+
+        Health -= damage;
+        //todo sound.player.hurt
+
+        Log.Info($"{GameObject} take damage {damage}f by {dmgInfo.Attacker}");
+
+        if (Health <= 0)
+            Die();
+    }
+
     protected override void OnAwake()
     {
         CreateSingleton();
@@ -179,8 +200,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         CheckFlyDown();
     }
 
-    public void OnDamage(in DamageInfo damage)
+    public void OnDamage(in DamageInfo dmgInfo)
     {
-        //todo TakeDamage(in dm)
+        TakeDamage(in dmgInfo);
     }
 }
