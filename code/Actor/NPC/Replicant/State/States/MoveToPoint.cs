@@ -15,9 +15,13 @@ public class MoveToPoint : MovableState
             return;
         }
 
-        randomPoint = (Vector3)Game.ActiveScene.NavMesh.GetRandomPoint(Replicant.GetTargetPoint(), randomRadius);
+        var a = Game.ActiveScene.NavMesh.GetRandomPoint(Replicant.GetTargetPoint(), randomRadius);
+        if (a.HasValue)
+        {
+            randomPoint = Game.ActiveScene.NavMesh.GetRandomPoint(Replicant.GetTargetPoint(), randomRadius).Value;
 
-        Replicant.MoveToPoint(randomPoint);
+            Replicant.MoveToPoint(randomPoint);
+        }
     }
 
     public override void Update()

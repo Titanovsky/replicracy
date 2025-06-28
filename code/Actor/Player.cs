@@ -1,4 +1,5 @@
 ﻿using Sandbox;
+using Sandbox.Services;
 using Sandbox.Utility;
 using System;
 using System.Linq;
@@ -92,6 +93,9 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         if (!_traceResult.Hit) return;
 
         OnSpecified?.Invoke(_traceResult);
+
+        if (!_traceResult.Collider.GameObject.GetComponent<Loot>().IsValid())
+            Achievements.Unlock("spermabank");
     }
 
     public void Use()

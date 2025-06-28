@@ -30,7 +30,10 @@ public class ReturnToPlayer : MovableState
 
         if (oldPlayerPos == playerPosition) return;
 
-        _returnPoint = (Vector3)Game.ActiveScene.NavMesh.GetRandomPoint(playerPosition, 300);
+        var a = Game.ActiveScene.NavMesh.GetRandomPoint(playerPosition, 300);
+        if (!a.HasValue) return;
+
+        _returnPoint = a.Value;
 
         oldPlayerPos = playerPosition;
 
