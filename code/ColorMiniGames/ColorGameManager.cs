@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 public sealed class ColorGameManager : Component
 {
     [Property][Category("Game Param")] public float StartDelayChangeColor { get; set; } = 1f;
-    [Property][Category("Game Param")] public int StartCountAnsers { get; set; } = 3;
+    [Property][Category("Game Param")] public int StartCountAnswers { get; set; } = 3;
     [Property][Category("Game Param")] public float WaitingAnswerDelay { get; set; } = 10f;
     [Property][Category("Game Param")] public float RoundCount { get; set; } = 3f;
 
@@ -22,11 +22,11 @@ public sealed class ColorGameManager : Component
     private int[] _playerAnswers;
 
     private bool _isPlaying = false;
-    private bool _isFinished { get; set; } = false;
+    private bool _isFinished  = false;
 
-    private float _currentRound { get; set; } = 0;
-    private int _currentAnswer = 0;
-    private int _countAnser;
+    [Property] private float _currentRound { get; set; } = 0;
+    [Property] private int _currentAnswer = 0;
+    [Property] private int _countRoundAnswer;
 
     private RealTimeUntil _waitingAnswerTimer { get; set; }
 
@@ -34,7 +34,7 @@ public sealed class ColorGameManager : Component
 
     protected override void OnStart()
     {
-        _countAnser = StartCountAnsers;
+        _countRoundAnswer = StartCountAnswers;
 
         rnd = new();
 
@@ -56,7 +56,6 @@ public sealed class ColorGameManager : Component
     private void CheckWaitingAnswerTimer()
     {
         if (!_isPlaying) return;
-
         if (!_waitingAnswerTimer) return;
 
         FailedRound();
@@ -65,8 +64,8 @@ public sealed class ColorGameManager : Component
     private void CheckAnsers()
     {
         if (!_isPlaying) return;
-
         if (_currentAnswer != _answers.Length) return;
+
 
         for (int i = 0; i < _answers.Length; i++)
         {
@@ -89,9 +88,9 @@ public sealed class ColorGameManager : Component
     {
         Sound.Play(GameStarted);
 
-        _isPlaying = true;
+        _waitingAnswerTimer = 10000f;
 
-        EnabledButtons(false);
+        _isPlaying = true;
 
         NextRound();
     }
@@ -118,17 +117,18 @@ public sealed class ColorGameManager : Component
     {
         _currentRound++;
         _currentAnswer = 0;
+        _waitingAnswerTimer = 10000f;
 
-        if (_currentRound != 1)
-        _countAnser++;
+        if (_currentRound > 1)
+            _countRoundAnswer++;
 
         GenerateRoundAnsers();
 
         _playerAnswers = new int[_answers.Length];
 
-        _ = ShowColor();
+        EnabledButtons(false);
 
-        ResetWaitingTimer();
+        _ = ShowColor();
     }
 
     private void GenerateRoundAnsers()
@@ -137,9 +137,9 @@ public sealed class ColorGameManager : Component
 
         int buttonCount = PlayingButtons.Count;
 
-        _answers = new int[_countAnser];
+        _answers = new int[_countRoundAnswer];
 
-        for (int i = 0; i < _countAnser; i++)
+        for (int i = 0; i < _countRoundAnswer; i++)
         {
             _answers[i] = rnd.Next(0, buttonCount);
         }
@@ -153,10 +153,11 @@ public sealed class ColorGameManager : Component
         {
             PlayingButtons[i].TurnOnLight(StartDelayChangeColor);
 
-            await Task.DelaySeconds(StartDelayChangeColor);
+            await Task.DelaySeconds(StartDelayChangeColor + 1);
         }
 
         EnabledButtons(true);
+        ResetWaitingTimer();
     }
 
     private void FailedRound()
@@ -182,7 +183,7 @@ public sealed class ColorGameManager : Component
         _isPlaying = false;
         _currentRound = 0;
         _currentAnswer = 0;
-        _countAnser = StartCountAnsers;
+        _countRoundAnswer = StartCountAnswers;
     }
 
     private void EnabledButtons(bool isEnable)
