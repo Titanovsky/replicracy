@@ -127,7 +127,8 @@ public sealed class Vampire : EnemyBase
 
         if (tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
+
             if (damagable is not null)
             {
                 damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));

@@ -115,7 +115,14 @@ public sealed class Zombie : EnemyBase
         if (hitObject == _attackTarget)
             {
             Log.Info("Attack Target");
-            }     
+
+            var damagable = hitObject.Parent.GetComponentInChildren<IDamageable>();
+
+            if (damagable is not null)
+            {
+                damagable.OnDamage(new(10, GameObject, GameObject));
+            }
+        }     
 
         ResetAttackTimer();
     }

@@ -65,9 +65,12 @@ public sealed class Demon : EnemyBase
 
         if (!_delayMovingTimer) return;
 
-        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius);
+        if (Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).HasValue)
+        {
+            _randomPointMoving = Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).Value;
 
-        NavMeshAgent.MoveTo(_randomPointMoving);
+            NavMeshAgent.MoveTo(_randomPointMoving);
+        }
 
         ResetMovingTimer();
     }
@@ -108,6 +111,7 @@ public sealed class Demon : EnemyBase
 
         tr = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
             .IgnoreGameObject(GameObject)
+            .WithoutTags("enemy")
             .Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
@@ -125,7 +129,8 @@ public sealed class Demon : EnemyBase
 
         if (tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
+
             if (damagable is not null)
             {
                 damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));

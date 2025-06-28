@@ -65,9 +65,11 @@ public class Police : EnemyBase
     {
         if (!_delayMovingTimer) return;
 
-        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingRadius);
-
-        NavMeshAgent.MoveTo(_randomPointMoving);
+        if (Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingRadius).HasValue)
+        {
+            _randomPointMoving = Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingRadius).Value;
+            NavMeshAgent.MoveTo(_randomPointMoving);
+        }
 
         ResetMovingTimer();
     }
@@ -144,6 +146,7 @@ public class Police : EnemyBase
 
         tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
+            .WithoutTags("enemy")
             .Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
@@ -161,7 +164,7 @@ public class Police : EnemyBase
 
         if (tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
 
             if (damagable is not null)
             {

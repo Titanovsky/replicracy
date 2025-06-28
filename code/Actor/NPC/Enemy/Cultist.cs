@@ -62,9 +62,12 @@ public sealed class Cultist : EnemyBase
 
         if (!_delayMovingTimer) return;
 
-        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius);
+        if (Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).HasValue)
+        {
+            _randomPointMoving = Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).Value;
 
-        NavMeshAgent.MoveTo(_randomPointMoving);
+            NavMeshAgent.MoveTo(_randomPointMoving);
+        }
 
         ResetMovingTimer();
     }
@@ -114,7 +117,12 @@ public sealed class Cultist : EnemyBase
 
         if (hitObject == _attackTarget)
         {
-            Log.Info("Attack Target");
+            var damagable = hitObject.Parent.GetComponentInChildren<IDamageable>();
+
+            if (damagable is not null)
+            {
+                damagable.OnDamage(new(10, GameObject, GameObject));
+            }
         }
 
         ResetAttackTimer();
