@@ -186,7 +186,7 @@ public sealed class Zombie : EnemyBase
     {
         Log.Info($"[Zombie] Die from {_lastAttacker}");
 
-        if (_lastAttacker == Player.Instance.GameObject)
+        if (_lastAttacker == Player.Instance.GameObject || _lastAttacker.Tags.Has("replicant"))
         {
             var ply = Player.Instance;
 

@@ -190,10 +190,12 @@ public class Police : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
+    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+        Sound.Play(TakeDamageSound, WorldPosition);
 
         if (Health <= 0)
             Die();
@@ -205,7 +207,7 @@ public class Police : EnemyBase
     {
         Log.Info($"[Police] Die from {_lastAttacker}");
 
-        if (_lastAttacker == Player.Instance.GameObject)
+        if (_lastAttacker == Player.Instance.GameObject || _lastAttacker.Tags.Has("replicant"))
         {
             var ply = Player.Instance;
 

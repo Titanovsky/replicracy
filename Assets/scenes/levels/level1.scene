@@ -120,9 +120,9 @@
           "MinDangerousZ": -210,
           "Music": "sounds/music/start.sound",
           "Name": "Downtown",
-          "NextDna": 1,
-          "NextFrags": 2,
-          "NextLevelScene": "scenes/levels/level2.scene",
+          "NextDna": 30,
+          "NextFrags": 5,
+          "NextLevelScene": "scenes/main_menu.scene",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -1849,7 +1849,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "b2f7e59e-eec9-4f99-8abb-8a7749332c3d"
+              "IdValue": "dc03eb3e-c3de-4e0c-a719-d5a857a3145f"
             },
             "Parent": {
               "Type": "GameObject",
@@ -1862,7 +1862,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "b2f7e59e-eec9-4f99-8abb-8a7749332c3d",
+              "__guid": "dc03eb3e-c3de-4e0c-a719-d5a857a3145f",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - polo_shirt",
@@ -1882,18 +1882,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "4dd74963-663d-4322-87d0-636048a81b7e"
+              "IdValue": "51501e28-48f1-4103-9505-fb99ecb1ded9"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "b2f7e59e-eec9-4f99-8abb-8a7749332c3d"
+              "IdValue": "dc03eb3e-c3de-4e0c-a719-d5a857a3145f"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "4dd74963-663d-4322-87d0-636048a81b7e",
+              "__guid": "51501e28-48f1-4103-9505-fb99ecb1ded9",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -1942,7 +1942,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "27176bff-0e6c-4880-bc4d-64c617c1ea25"
+              "IdValue": "93538ba0-b3f8-432a-9a39-a79ff361ba82"
             },
             "Parent": {
               "Type": "GameObject",
@@ -1950,12 +1950,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "b2f7e59e-eec9-4f99-8abb-8a7749332c3d"
+              "IdValue": "dc03eb3e-c3de-4e0c-a719-d5a857a3145f"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "27176bff-0e6c-4880-bc4d-64c617c1ea25",
+              "__guid": "93538ba0-b3f8-432a-9a39-a79ff361ba82",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - labcoat",
@@ -1975,18 +1975,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "1e365996-3e66-4b5d-aa10-57970f675168"
+              "IdValue": "025bc130-d321-4272-b9f6-fab67d5817f3"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "27176bff-0e6c-4880-bc4d-64c617c1ea25"
+              "IdValue": "93538ba0-b3f8-432a-9a39-a79ff361ba82"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "1e365996-3e66-4b5d-aa10-57970f675168",
+              "__guid": "025bc130-d321-4272-b9f6-fab67d5817f3",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -2035,7 +2035,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "58c4343c-82c3-40d5-a931-3829bb6fa8f2"
+              "IdValue": "0e24758d-3783-4cb5-9124-ee8aac77293b"
             },
             "Parent": {
               "Type": "GameObject",
@@ -2043,12 +2043,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "27176bff-0e6c-4880-bc4d-64c617c1ea25"
+              "IdValue": "93538ba0-b3f8-432a-9a39-a79ff361ba82"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "58c4343c-82c3-40d5-a931-3829bb6fa8f2",
+              "__guid": "0e24758d-3783-4cb5-9124-ee8aac77293b",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - black_boots",
@@ -2068,18 +2068,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "46070cb1-f456-4491-b1ca-11c09e2ae83f"
+              "IdValue": "ef4b5cfb-64a3-4e77-984a-577b21559436"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "58c4343c-82c3-40d5-a931-3829bb6fa8f2"
+              "IdValue": "0e24758d-3783-4cb5-9124-ee8aac77293b"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "46070cb1-f456-4491-b1ca-11c09e2ae83f",
+              "__guid": "ef4b5cfb-64a3-4e77-984a-577b21559436",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -2128,7 +2128,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "f96662a4-bb7f-4306-bf21-d59a70792858"
+              "IdValue": "eff969aa-d425-4be7-acd6-a44ef3ab6b94"
             },
             "Parent": {
               "Type": "GameObject",
@@ -2136,12 +2136,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "58c4343c-82c3-40d5-a931-3829bb6fa8f2"
+              "IdValue": "0e24758d-3783-4cb5-9124-ee8aac77293b"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "f96662a4-bb7f-4306-bf21-d59a70792858",
+              "__guid": "eff969aa-d425-4be7-acd6-a44ef3ab6b94",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - loose_jeans",
@@ -2161,18 +2161,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "e93d4e32-25bb-4ca0-b852-3fdba07c114d"
+              "IdValue": "c7a47aa9-cd77-46a1-883e-97d0c5d19bd2"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "f96662a4-bb7f-4306-bf21-d59a70792858"
+              "IdValue": "eff969aa-d425-4be7-acd6-a44ef3ab6b94"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "e93d4e32-25bb-4ca0-b852-3fdba07c114d",
+              "__guid": "c7a47aa9-cd77-46a1-883e-97d0c5d19bd2",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -2223,49 +2223,49 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "c0cb5c2a-173f-4f1f-bb07-176b3a9af152"
+              "IdValue": "b5f29fc4-5316-4419-b7f3-7c9c2c2b8a8c"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "72f5f333-fadb-49f8-bafb-1eee6f4b2aee"
+              "IdValue": "2b71088c-c5d2-420f-b35b-ea22c9617b98"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "99080728-b762-4480-826c-d225b5f55dd8"
+              "IdValue": "a6afc6ab-f9f6-4b22-907f-24cb87c2356d"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "b18f7470-14a4-4c8e-adbc-ff7a2a3c3cd7"
+              "IdValue": "767089bf-d38a-44b4-aa7d-b03b5b4a8f30"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "387baaaf-10b6-4e5d-ab25-0a90ec7eb97f"
+              "IdValue": "7e338814-bd7c-4f94-8517-b3befc1c2bfb"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "ae15e4cf-c988-4e3a-99c7-63a8cfca8875"
+              "IdValue": "f2d767e8-312b-4eeb-8fa6-81e890cbc0ed"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "21086ab9-916f-4a8d-9f3d-632699f46c32"
+              "IdValue": "7df6ce52-f860-4fb2-b453-38f352249ada"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "435b3d4a-8a1a-4c15-ba67-6dacaac81360"
+              "IdValue": "56a78e97-b19c-4e4a-b69a-00e4bc860b6d"
             }
           }
         ],
@@ -2286,8 +2286,8 @@
             "Property": "_showTimer",
             "Value": {
               "Absolute": 0,
-              "Relative": -110113480,
-              "Passed": 110113483.16518609,
+              "Relative": -110115648,
+              "Passed": 110115649.0457572,
               "Fraction": 1
             }
           },
@@ -2369,7 +2369,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Position",
-            "Value": "9.750244,-4.988007,3.805939"
+            "Value": "9.750244,-4.987976,3.805958"
           },
           {
             "Target": {
@@ -2377,7 +2377,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "0.6955513,0.1290413,-0.4102865,0.5755188"
+            "Value": "0.6955516,0.1290407,-0.4102866,0.5755184"
           },
           {
             "Target": {
@@ -2385,7 +2385,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Scale",
-            "Value": "0.9999986,0.9999986,0.9999986"
+            "Value": "0.9999992,0.9999992,0.9999992"
           },
           {
             "Target": {
@@ -2393,7 +2393,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Position",
-            "Value": "-8.846741,5.432465,3.808327"
+            "Value": "-8.846802,5.432587,3.808464"
           },
           {
             "Target": {
@@ -2401,7 +2401,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "0.6385074,0.3045331,-0.2475639,0.6620272"
+            "Value": "0.6385087,0.3045295,-0.2475695,0.6620256"
           },
           {
             "Target": {
@@ -2409,7 +2409,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Scale",
-            "Value": "0.9999997,0.9999997,0.9999997"
+            "Value": "0.9999996,0.9999996,0.9999996"
           },
           {
             "Target": {
@@ -2417,7 +2417,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.80319,-3.868011,48.44537"
+            "Value": "16.90546,-3.715118,48.61383"
           },
           {
             "Target": {
@@ -2425,7 +2425,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "0.391712,-0.05058918,0.1330494,0.9090106"
+            "Value": "0.390541,-0.04944056,0.1412898,0.908334"
           },
           {
             "Target": {
@@ -2433,7 +2433,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999968,0.9999968,0.9999968"
           },
           {
             "Target": {
@@ -2441,7 +2441,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.38641,5.296631,40.79051"
+            "Value": "-10.12994,5.159485,41.01212"
           },
           {
             "Target": {
@@ -2449,7 +2449,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "0.4293685,0.7071512,-0.2096982,0.5211587"
+            "Value": "0.4337619,0.7019472,-0.2021306,0.5275075"
           },
           {
             "Target": {
@@ -2457,7 +2457,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999979,0.9999979,0.9999979"
           },
           {
             "Target": {
@@ -2465,7 +2465,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "24.19757,-2.309326,49.95747"
+            "Value": "24.26672,-2.034576,50.15652"
           },
           {
             "Target": {
@@ -2473,7 +2473,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "0.6106752,-0.1231696,-0.08755892,0.7773278"
+            "Value": "0.6106752,-0.1231697,-0.08755889,0.7773278"
           },
           {
             "Target": {
@@ -2481,7 +2481,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999959,0.9999959,0.9999959"
           },
           {
             "Target": {
@@ -2489,7 +2489,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-11.06519,8.292114,33.72237"
+            "Value": "-10.64764,8.209076,33.95354"
           },
           {
             "Target": {
@@ -2497,7 +2497,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "0.4323302,0.7344678,-0.1745507,0.4931325"
+            "Value": "0.4362182,0.7294457,-0.1668454,0.4997853"
           },
           {
             "Target": {
@@ -2505,7 +2505,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "1.000002,1.000002,1.000002"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -2513,7 +2513,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.37445,-1.786469,52.00203"
+            "Value": "29.4436,-1.511688,52.20112"
           },
           {
             "Target": {
@@ -2521,7 +2521,15 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "0.01353632,0.00003484955,0.0000410937,0.9999084"
+            "Value": "0.01353624,0.0000348516,0.00004110139,0.9999084"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
+            },
+            "Property": "Scale",
+            "Value": "0.9999949,0.9999949,0.9999949"
           },
           {
             "Target": {
@@ -2529,7 +2537,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-9.366394,8.807495,27.59872"
+            "Value": "-8.809998,8.770905,27.87426"
           },
           {
             "Target": {
@@ -2537,7 +2545,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "-0.4122709,0.6306707,0.1431167,0.6417203"
+            "Value": "-0.4113735,0.6228071,0.1407869,0.6504323"
           },
           {
             "Target": {
@@ -2545,7 +2553,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "1.000002,1.000002,1.000002"
+            "Value": "0.9999973,0.9999973,0.9999973"
           },
           {
             "Target": {
@@ -2601,7 +2609,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Position",
-            "Value": "10.99481,-4.096436,16.22746"
+            "Value": "11.056,-4.133575,16.22385"
           },
           {
             "Target": {
@@ -2609,7 +2617,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Rotation",
-            "Value": "0.4686975,0.4921592,-0.5545257,0.4802116"
+            "Value": "0.4676152,0.4946688,-0.5544981,0.4787177"
           },
           {
             "Target": {
@@ -2617,7 +2625,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
+            "Value": "0.999999,0.999999,0.999999"
           },
           {
             "Target": {
@@ -2625,7 +2633,7 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Position",
-            "Value": "-2.622986,5.5448,14.66608"
+            "Value": "-2.795715,5.464325,14.76389"
           },
           {
             "Target": {
@@ -2633,15 +2641,7 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Rotation",
-            "Value": "0.3134079,0.669714,-0.5478368,0.3913229"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
+            "Value": "0.3193331,0.6684035,-0.5431203,0.395327"
           },
           {
             "Target": {
@@ -2649,7 +2649,7 @@
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Position",
-            "Value": "8.650543,3.442719,39.81632"
+            "Value": "8.945007,3.555725,40.03301"
           },
           {
             "Target": {
@@ -2657,7 +2657,7 @@
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Rotation",
-            "Value": "-0.08154419,0.3428499,0.1457174,0.92443"
+            "Value": "-0.08260671,0.3370688,0.1462147,0.9263812"
           },
           {
             "Target": {
@@ -2665,7 +2665,7 @@
               "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999968,0.9999968,0.9999968"
           },
           {
             "Target": {
@@ -2673,7 +2673,7 @@
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Position",
-            "Value": "11.85828,-3.361115,49.16481"
+            "Value": "11.95132,-3.312958,49.33569"
           },
           {
             "Target": {
@@ -2689,7 +2689,7 @@
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999973,0.9999973,0.9999973"
           },
           {
             "Target": {
@@ -2697,7 +2697,7 @@
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
             },
             "Property": "Position",
-            "Value": "20.5004,-3.088654,49.20142"
+            "Value": "20.58612,-2.874847,49.38518"
           },
           {
             "Target": {
@@ -2713,7 +2713,7 @@
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999964,0.9999964,0.9999964"
           },
           {
             "Target": {
@@ -2721,7 +2721,7 @@
               "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Position",
-            "Value": "16.81564,-3.958801,48.30875"
+            "Value": "16.91858,-3.79248,48.47398"
           },
           {
             "Target": {
@@ -2729,7 +2729,15 @@
               "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Rotation",
-            "Value": "0.2666805,0.2609867,-0.6153053,0.6943823"
+            "Value": "0.2637906,0.2612799,-0.6103997,0.6996854"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Scale",
+            "Value": "0.9999964,0.9999964,0.9999964"
           },
           {
             "Target": {
@@ -2737,7 +2745,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Position",
-            "Value": "-10.60358,5.128876,40.8257"
+            "Value": "-10.35797,4.982178,41.04458"
           },
           {
             "Target": {
@@ -2745,7 +2753,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Rotation",
-            "Value": "-0.3220763,0.7558781,-0.532527,0.2032982"
+            "Value": "-0.3178116,0.7548391,-0.5334001,0.211419"
           },
           {
             "Target": {
@@ -2753,7 +2761,7 @@
               "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999975,0.9999975,0.9999975"
           },
           {
             "Target": {
@@ -2761,36 +2769,12 @@
               "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Position",
-            "Value": "-7.714233,5.189484,45.04192"
+            "Value": "-7.508423,5.067963,45.2953"
           },
           {
             "Target": {
               "Type": "GameObject",
               "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Position",
-            "Value": "-10.72583,6.794373,37.25644"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Rotation",
             "Value": "0,0,0,1"
@@ -2798,10 +2782,34 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999979,0.9999979,0.9999979"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Position",
+            "Value": "-10.38879,6.684265,37.48283"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -2809,7 +2817,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Position",
-            "Value": "7.420135,-3.422668,22.48171"
+            "Value": "7.478333,-3.485565,22.47912"
           },
           {
             "Target": {
@@ -2833,7 +2841,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Position",
-            "Value": "-1.960693,4.998627,21.85016"
+            "Value": "-2.022949,4.909729,21.93629"
           },
           {
             "Target": {
@@ -2846,18 +2854,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
-            },
-            "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Position",
-            "Value": "11.88312,-4.131012,16.39542"
+            "Value": "11.95215,-4.167206,16.39116"
           },
           {
             "Target": {
@@ -2865,7 +2865,7 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Rotation",
-            "Value": "0.5252562,0.4187947,-0.4706959,0.5719811"
+            "Value": "0.5250569,0.4206781,-0.4701608,0.5712215"
           },
           {
             "Target": {
@@ -2881,7 +2881,7 @@
               "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Position",
-            "Value": "-2.026184,5.671356,14.45671"
+            "Value": "-2.242188,5.583099,14.56847"
           },
           {
             "Target": {
@@ -2889,7 +2889,7 @@
               "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Rotation",
-            "Value": "0.7152919,0.1803478,-0.03099469,0.6744417"
+            "Value": "0.717022,0.1806315,-0.03026494,0.6725592"
           },
           {
             "Target": {
@@ -2897,7 +2897,7 @@
               "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999997,0.9999997,0.9999997"
           },
           {
             "Target": {
@@ -2905,7 +2905,7 @@
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Position",
-            "Value": "10.37256,-4.542175,10.01668"
+            "Value": "10.40314,-4.56076,10.0149"
           },
           {
             "Target": {
@@ -2921,7 +2921,7 @@
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Scale",
-            "Value": "0.9999986,0.9999986,0.9999986"
+            "Value": "0.9999988,0.9999988,0.9999988"
           },
           {
             "Target": {
@@ -2929,7 +2929,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Position",
-            "Value": "-5.734863,5.488647,9.237206"
+            "Value": "-5.821228,5.448456,9.286163"
           },
           {
             "Target": {
@@ -2943,6 +2943,30 @@
             "Target": {
               "Type": "GameObject",
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
+            },
+            "Property": "Scale",
+            "Value": "0.9999998,0.9999998,0.9999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Position",
+            "Value": "0.2585754,0.5231628,41.85596"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Scale",
             "Value": "0.9999992,0.9999992,0.9999992"
@@ -2950,26 +2974,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
-            },
-            "Property": "Position",
-            "Value": "0.1687012,0.5907898,41.82266"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.318451,1.41098,61.36898"
+            "Value": "6.38385,1.372284,61.45296"
           },
           {
             "Target": {
@@ -2977,7 +2985,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "-0.001035661,0.01045275,0.04580975,0.998895"
+            "Value": "-0.001269519,0.006001622,0.04593784,0.9989254"
           },
           {
             "Target": {
@@ -2985,7 +2993,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999985,0.9999985,0.9999985"
           },
           {
             "Target": {
@@ -2993,7 +3001,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.624786,-1.921417,61.3727"
+            "Value": "6.69104,-1.960022,61.45961"
           },
           {
             "Target": {
@@ -3001,7 +3009,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "-0.001035661,0.01045275,0.04580975,0.998895"
+            "Value": "-0.001269519,0.006001622,0.04593784,0.9989254"
           },
           {
             "Target": {
@@ -3009,7 +3017,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999985,0.9999985,0.9999985"
           },
           {
             "Target": {
@@ -3017,7 +3025,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "6.012115,4.743378,61.36526"
+            "Value": "6.07666,4.70459,61.44633"
           },
           {
             "Target": {
@@ -3025,7 +3033,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "-0.001035661,0.01045275,0.04580975,0.998895"
+            "Value": "-0.001269519,0.006001622,0.04593784,0.9989254"
           },
           {
             "Target": {
@@ -3033,7 +3041,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999985,0.9999985,0.9999985"
           },
           {
             "Target": {
@@ -3041,7 +3049,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.8837585,0.9038391,54.59225"
+            "Value": "1.009918,0.8633118,54.62811"
           },
           {
             "Target": {
@@ -3049,7 +3057,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "-0.001035661,0.01045275,0.04580975,0.998895"
+            "Value": "-0.001269519,0.006001622,0.04593784,0.9989254"
           },
           {
             "Target": {
@@ -3057,7 +3065,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999985,0.9999985,0.9999985"
           },
           {
             "Target": {
@@ -3065,7 +3073,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.1301,-5.909485,0.1873093"
+            "Value": "11.13007,-5.909454,0.1873856"
           },
           {
             "Target": {
@@ -3073,7 +3081,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "0.0004691482,0.00006628782,-0.2162237,0.9763438"
+            "Value": "0.0004692077,0.00006651879,-0.2162244,0.9763436"
           },
           {
             "Target": {
@@ -3081,7 +3089,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Scale",
-            "Value": "0.9999971,0.9999971,0.9999971"
+            "Value": "0.9999968,0.9999968,0.9999968"
           },
           {
             "Target": {
@@ -3089,7 +3097,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239502,5.832336,1.059303"
+            "Value": "-7.239563,5.832428,1.059437"
           },
           {
             "Target": {
@@ -3097,7 +3105,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "-0.04343832,0.9990561,0.0003291667,0.00009020136"
+            "Value": "-0.04343082,0.9990564,0.0003281534,0.00008912102"
           },
           {
             "Target": {
@@ -3105,7 +3113,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.9999984,0.9999984,0.9999984"
+            "Value": "0.9999979,0.9999979,0.9999979"
           },
           {
             "Target": {
@@ -3113,7 +3121,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.492798,0.9771729,69.74016"
+            "Value": "1.483887,0.9376526,69.7808"
           },
           {
             "Target": {
@@ -3121,7 +3129,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "-0.001035661,0.01045275,0.04580975,0.998895"
+            "Value": "-0.001269519,0.006001622,0.04593784,0.9989254"
           },
           {
             "Target": {
@@ -3129,7 +3137,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Scale",
-            "Value": "1.000001,1.000001,1.000001"
+            "Value": "0.9999985,0.9999985,0.9999985"
           }
         ],
         "MovedObjects": []
@@ -3294,25 +3302,25 @@
         "6fd32e06-b57b-47a9-94e4-7559512a3780": "8585826e-5157-4afb-9799-f23939f6eeb4",
         "945e7cd8-a053-43d7-ad9d-ef7e9c0f32a8": "1d4299e0-05e7-40bf-a785-e5f96811c0ab",
         "3caeae22-e4f9-457a-9253-aa945dac45a1": "21832692-a78e-42c4-b78f-f5e522e4b859",
-        "435b3d4a-8a1a-4c15-ba67-6dacaac81360": "24ca0027-4cdf-4068-9617-cb9e6ddb33e1",
-        "b18f7470-14a4-4c8e-adbc-ff7a2a3c3cd7": "eaf5a10e-ca3b-4724-b924-ddd1503648fa",
-        "ae15e4cf-c988-4e3a-99c7-63a8cfca8875": "5b912342-a31a-4a9d-9c4d-55ad6f7dfcf4",
-        "72f5f333-fadb-49f8-bafb-1eee6f4b2aee": "16bfc4c6-2cf5-415f-8861-6151fab92f7d",
-        "d897cf0b-2acb-490d-9a2f-194f82957007": "84342b87-687b-4a39-80e4-b8894388496c",
-        "690a08be-b6f7-4d4b-9664-7d31153b2c7f": "9404396d-59db-4940-b722-8638a47ddc5b",
-        "3a4886d8-b47d-4eab-969d-3047f4c58b66": "afd614a7-e623-4653-aa31-447237d6c4b9",
-        "cf045064-4e4c-4d7f-853e-20db98254014": "826c40a6-fe08-4ccf-9ffe-6629026ec961",
+        "767089bf-d38a-44b4-aa7d-b03b5b4a8f30": "264c30e8-0b08-45a6-9891-03fbdbaea31d",
+        "f2d767e8-312b-4eeb-8fa6-81e890cbc0ed": "07014038-6afa-410c-bb26-92ceff2c1055",
+        "a056fade-8855-4637-95a5-85d144e6e018": "dc2b86b2-ab50-4fc1-879e-a5f2a975e991",
+        "d6937581-53b6-4e62-8871-8f3186dc6faa": "2b6f64d9-4449-4a0e-a1ba-988c0a4d9342",
+        "2b71088c-c5d2-420f-b35b-ea22c9617b98": "ac47dfeb-a611-4d33-b5c7-e289a0cb6c04",
+        "56a78e97-b19c-4e4a-b69a-00e4bc860b6d": "0b65900b-d38f-4b9a-b55d-6bb73c40cff0",
+        "85296c6d-b420-49a6-b27c-c2b091f5450a": "855aa5a4-5ccc-47d8-8ed4-bac0f09a98bb",
+        "18de5f76-19b3-4159-a8cc-883fd525c93c": "7f4c95dd-0ab7-43c7-8205-ce760dead868",
         "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "d6354ec5-d6f0-474e-8650-e2e2d9703c9e",
         "b869b7df-ac57-4084-a7c4-1a89571001a4": "222869e5-4f73-4b04-a473-da419bae6d8e",
         "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "22583423-53c0-49db-bf3a-917c2a44ee29",
-        "21086ab9-916f-4a8d-9f3d-632699f46c32": "261aebcf-f700-4bfb-8231-4dcd4bbff77a",
-        "387baaaf-10b6-4e5d-ab25-0a90ec7eb97f": "a85c0372-a6bc-45ee-9348-77145050600b",
-        "99080728-b762-4480-826c-d225b5f55dd8": "cd454078-927f-4f7a-ae64-316bbc839eb6",
-        "c0cb5c2a-173f-4f1f-bb07-176b3a9af152": "b51b8e6e-9710-44be-8ff9-648936c20e4a",
-        "d3ab0090-067e-41ff-ba0d-8e68295fcf9d": "ab90407d-8d11-4412-9c3f-f4e43965a0e7",
-        "ad480c8e-7edd-4d9e-864c-c04d82721951": "c530882f-5ab8-4393-b2d8-c949f9d57909",
-        "13111e53-e77d-40e1-9680-71a6fd3e0b41": "9b7a1329-7b27-4b17-8388-0d5b0cad91b7",
-        "9e4994fe-2d96-4774-a737-08394ecdfb5d": "2b15802a-aed9-4c16-b50d-593f889a1732"
+        "b5f29fc4-5316-4419-b7f3-7c9c2c2b8a8c": "26e3f6f9-9b9a-4938-b47b-906a9dc53c44",
+        "7df6ce52-f860-4fb2-b453-38f352249ada": "50236d42-65e2-4f41-8369-a90a789c4168",
+        "7e338814-bd7c-4f94-8517-b3befc1c2bfb": "0b45d9a3-0bb7-4ded-a1a1-1661a1ffdaed",
+        "a6afc6ab-f9f6-4b22-907f-24cb87c2356d": "a5711baf-99a9-484e-9217-dd2be02fe351",
+        "8a338550-516f-4e28-9227-1950a98ee9d9": "357be5bc-1750-49f8-ad36-8cc29b92ff50",
+        "c55aacf3-90c9-4b08-8b5b-450d209def84": "3007d347-506e-4666-832f-32fb654af609",
+        "d8c1cf89-662d-4756-a0a4-172656926477": "8ff53486-f98e-46cf-95fa-96407d263ffd",
+        "6f149ac7-e9b0-4bf3-92d4-5782fcb312d9": "7db92dd0-941f-4723-aa58-3fff3480f1c6"
       }
     },
     {
@@ -52697,9 +52705,9 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Cube",
-      "Position": "2607.906,-852.3625,97.32716",
-      "Rotation": "0,0,0,1",
-      "Scale": "1.60017,7.223493,2.893794",
+      "Position": "8611.837,6976.4,72.50812",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Scale": "23.62275,35.25473,5.070443",
       "Tags": "",
       "Enabled": true,
       "NetworkMode": 2,
@@ -53528,7 +53536,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACk2Uh24bMRQEh7LKSU7i9B7H6b336t67Hae3//+KYJE5gAIIiac58r3dJaeAv8Bx/n86QBfoAw0wAg4BR4CjcieB08BZ4DxwEZgEpoCrwHXgJnAbuAvcBx4Cj4GnwHPgJfAaeAu8Bz4CxZEa6s9v987zMeujYn8CE/7Xs/a6l+/Wn98D+0I+7FfgsO8O7Rn5sJ/VIOy4v5EP+8nnA9fJXsiH3ZNrrDO9IB92x30zjlVeNLJblRcn1B/5sBuulRpO6Q3yYdeqWs7oG/JhV+wltZ/TU+TDLqlFar2g38iHXVDL9HbJLCAfdqby9HLl64TsvH1nXDFDxd6TqTnfT6/XzFeRDzvr/tHmhtkr8mEXrT9a3DKXRT7ssv1HuztmtsiHXVW/aHXPPBf5sOvqH20fmPUiH3ZT/6LlI89BkQ+7rZfR/olnpMiH3dXLaP3M81Pkw+7rZbx54dkq8mEP9DJevPLcFfmwX/Qy3r3xTBb5sN/0Ml6987wW+bA/9DLefqjO8qTsL73MmNbTIh/2T+X/rBnouOeMdbb5mnffjuvNuWZ7bhbNyJg9LahTV7+XzUhXTZb0oaffq2akp6Yr+tz3e92M9PVkzXUH+r1pRgZ6umFtjftsm5HGsWVfQ/3eNSND19ixj5F97JuRkTXsWee4fh+YkczTQ+6mrJVeo2O8TkYyjwa529p7K37H62Qk82iYuzHrxIvoHq+TkczjQe7W1pv4Ha+Tkczjce7m9izH73idjLR3YO72PI9GeT95iKfJQbyMX/Ekukfb6BeNokN6TT+pOXVl76z/D/hBv3zUBgAA",
-              "Position": "1577.913,950.944,77.40562",
+              "Position": "1577.913,950.944,77.40561",
               "Rotation": "0,0,0.7071066,0.7071068",
               "Positions": [
                 "-6.122971,14.78207,160.0001",
@@ -53666,19 +53674,19 @@
                 "-0.00005601324,1,0",
                 "0.000005602952,1,0",
                 "-0.1950857,-0.9807862,0",
-                "-0.5555708,-0.8314692,0.0000006554313",
-                "-0.8314692,-0.5555708,0.0000006554313",
-                "-0.9807844,-0.1950951,0.00000001736352",
+                "-0.5555708,-0.8314692,0.0000006554314",
+                "-0.8314692,-0.5555708,0.0000006554314",
+                "-0.9807844,-0.1950951,0.00000001736353",
                 "-0.9807843,0.1950951,0",
-                "-0.8314692,0.5555708,-0.0000006554313",
-                "-0.5555708,0.8314692,0.0000001446304",
+                "-0.8314692,0.5555708,-0.0000006554314",
+                "-0.5555708,0.8314692,0.0000001446305",
                 "-0.1950857,0.9807862,0.0000001283343",
-                "0.1950857,0.9807861,0.0000002672429",
-                "0.5555708,0.8314692,-0.0000001280113",
+                "0.1950857,0.9807861,0.000000267243",
+                "0.5555708,0.8314692,-0.0000001280114",
                 "0.8314692,0.5555708,-0.00000008192713",
-                "0.9807843,0.1950951,-0.0000000694547",
+                "0.9807843,0.1950951,-0.00000006945471",
                 "0.9807843,-0.1950951,0",
-                "0.8314692,-0.5555707,0",
+                "0.8314692,-0.5555708,0",
                 "0.5555708,-0.8314692,0",
                 "0.1950838,-0.9807866,0"
               ],
@@ -53687,16 +53695,16 @@
                 "1,0.000009463286,-0",
                 "0,0,-1",
                 "-0.000000000000001222424,0.0000000000000008167988,-1",
-                "0.000000000000005645151,-0.000000000000008448554,-1",
+                "0.000000000000005645151,-0.000000000000008448553,-1",
                 "0.00000000000000002873682,-0.0000000000000001444661,-1",
                 "0,0,-1",
                 "-0.00000000000002064986,-0.00000000000003090466,-1",
-                "0.0000001258686,0.00000008410284,-1",
-                "0.00000005213527,0.0000000103701,-1",
-                "-0.00000005213528,0.0000000103701,-1",
-                "0.0000000000000007250619,-0.0000000000000004844716,-1",
+                "0.0000001258687,0.00000008410286,-1",
+                "0.00000005213528,0.0000000103701,-1",
+                "-0.00000005213529,0.0000000103701,-1",
+                "0.0000000000000007250618,-0.0000000000000004844716,-1",
                 "0.000000000000001210492,-0.000000000000001811627,-1",
-                "-0.00000000000000009658885,0.0000000000000004855725,-1",
+                "-0.00000000000000009658889,0.0000000000000004855727,-1",
                 "0,0,-1",
                 "0,0,-1",
                 "0,0,-1",
@@ -53705,42 +53713,42 @@
               "TextureScale": [
                 "0.1250036,0.1250033",
                 "0.1250027,0.1250002",
-                "0.1274497,0.125",
+                "0.1274497,0.1249999",
                 "0.1503403,0.125",
                 "0.1503403,0.125",
                 "0.1274489,0.125",
-                "0.1274499,0.125",
+                "0.1274499,0.1249999",
                 "0.1503403,0.125",
                 "0.1503365,0.125",
-                "0.1274493,0.125",
+                "0.1274493,0.1249999",
                 "0.1274472,0.125",
-                "0.1503372,0.125",
+                "0.1503372,0.1249999",
                 "0.150337,0.125",
-                "0.1274499,0.125",
-                "0.1274499,0.125",
+                "0.1274499,0.1249999",
+                "0.1274499,0.1249999",
                 "0.1503367,0.125",
                 "0.1503372,0.125",
-                "0.1274481,0.125"
+                "0.1274481,0.1249999"
               ],
               "TextureOffset": [
                 "585.364,689.1033",
                 "584.5469,688.6463",
-                "492.7676,619.2451",
+                "492.7666,619.2452",
                 "780.5814,619.2451",
                 "22.66272,619.2451",
                 "311.0187,619.2451",
                 "422.5863,619.2451",
-                "22.89148,619.2449",
+                "22.89197,619.2451",
                 "641.5411,619.2429",
-                "241.7996,619.2446",
-                "482.0566,619.2457",
+                "241.7991,619.2445",
+                "482.0576,619.2457",
                 "103.6994,619.2452",
-                "116.5632,619.2451",
-                "762.082,619.2451",
+                "116.5623,619.2451",
+                "762.083,619.2451",
                 "552.4287,619.2451",
-                "861.4932,619.2451",
-                "521.9542,619.2451",
-                "831.2544,619.2451"
+                "861.4937,619.2451",
+                "521.9541,619.2451",
+                "831.2544,619.2452"
               ],
               "MaterialIndex": [
                 1,
@@ -53874,7 +53882,7 @@
             "Property": "Mesh",
             "Value": {
               "Topology": "H4sIAAAAAAAACk2Uh24bMRQEh7LKSU7i9B7H6b336t67Hae3//+KYJE5gAIIiac58r3dJaeAv8Bx/n86QBfoAw0wAg4BR4CjcieB08BZ4DxwEZgEpoCrwHXgJnAbuAvcBx4Cj4GnwHPgJfAaeAu8Bz4CxZEa6s9v987zMeujYn8CE/7Xs/a6l+/Wn98D+0I+7FfgsO8O7Rn5sJ/VIOy4v5EP+8nnA9fJXsiH3ZNrrDO9IB92x30zjlVeNLJblRcn1B/5sBuulRpO6Q3yYdeqWs7oG/JhV+wltZ/TU+TDLqlFar2g38iHXVDL9HbJLCAfdqby9HLl64TsvH1nXDFDxd6TqTnfT6/XzFeRDzvr/tHmhtkr8mEXrT9a3DKXRT7ssv1HuztmtsiHXVW/aHXPPBf5sOvqH20fmPUiH3ZT/6LlI89BkQ+7rZfR/olnpMiH3dXLaP3M81Pkw+7rZbx54dkq8mEP9DJevPLcFfmwX/Qy3r3xTBb5sN/0Ml6987wW+bA/9DLefqjO8qTsL73MmNbTIh/2T+X/rBnouOeMdbb5mnffjuvNuWZ7bhbNyJg9LahTV7+XzUhXTZb0oaffq2akp6Yr+tz3e92M9PVkzXUH+r1pRgZ6umFtjftsm5HGsWVfQ/3eNSND19ixj5F97JuRkTXsWee4fh+YkczTQ+6mrJVeo2O8TkYyjwa529p7K37H62Qk82iYuzHrxIvoHq+TkczjQe7W1pv4Ha+Tkczjce7m9izH73idjLR3YO72PI9GeT95iKfJQbyMX/Ekukfb6BeNokN6TT+pOXVl76z/D/hBv3zUBgAA",
-              "Position": "1385.913,950.944,77.40681",
+              "Position": "1385.913,950.944,77.4068",
               "Rotation": "0,0,0.7071066,0.7071068",
               "Positions": [
                 "-6.12294,14.7821,159.9988",
@@ -54012,19 +54020,19 @@
                 "0.00001121344,1,0",
                 "0.000003732672,1,0",
                 "-0.1950857,-0.9807862,0",
-                "-0.5555708,-0.8314693,0",
-                "-0.8314737,-0.555564,0",
-                "-0.9807844,-0.1950952,0",
-                "-0.9807844,0.1950952,0",
-                "-0.8314737,0.5555641,0.00000008192703",
+                "-0.5555708,-0.8314692,0",
+                "-0.8314738,-0.555564,0",
+                "-0.9807844,-0.1950951,0",
+                "-0.9807844,0.1950951,0",
+                "-0.8314737,0.555564,0.00000008192706",
                 "-0.5555708,0.8314692,0.00000004096374",
                 "-0.1950857,0.9807862,0.00000003472736",
                 "0.1950857,0.9807861,0",
                 "0.5555709,0.8314692,0",
-                "0.8314738,0.555564,-0.0000002048182",
-                "0.9807844,0.1950951,-0.00000006945467",
-                "0.9807844,-0.1950951,-0.00000008681805",
-                "0.8314737,-0.555564,-0.00000008192738",
+                "0.8314737,0.555564,-0.0000002048182",
+                "0.9807844,0.1950951,-0.00000006945469",
+                "0.9807844,-0.1950951,-0.00000008681806",
+                "0.8314737,-0.555564,-0.0000000819274",
                 "0.5555708,-0.8314692,0",
                 "0.1950857,-0.9807862,0"
               ],
@@ -54036,57 +54044,57 @@
                 "0,0,-1",
                 "0,0,-1",
                 "0,0,-1",
-                "-0.0000000000000002356061,-0.0000000000000003526151,-1",
+                "-0.0000000000000002356061,-0.0000000000000003526152,-1",
                 "-0.000000000000001451573,-0.0000000000000009699113,-1",
                 "0.0000000000000006935127,0.0000000000000001379449,-1",
                 "-0,0,-1",
                 "-0,0,-1",
                 "0.000000000000005580002,-0.000000000000008351199,-1",
-                "0.00000000000000001755591,-0.00000000000000008825729,-1",
-                "0.0000000000000001131667,0.0000000000000005689128,-1",
-                "0.000000000000002770024,0.000000000000004145701,-1",
+                "0.00000000000000001755592,-0.00000000000000008825731,-1",
+                "0.0000000000000001131667,0.000000000000000568913,-1",
+                "0.000000000000002770024,0.000000000000004145702,-1",
                 "0,0,-1",
                 "0,0,-1"
               ],
               "TextureScale": [
                 "0.1249976,0.125",
                 "0.1250039,0.1250002",
-                "0.1274497,0.125",
-                "0.1503403,0.125",
+                "0.1274497,0.1249999",
+                "0.1503403,0.1249999",
                 "0.1503399,0.1249999",
-                "0.1274497,0.125",
-                "0.1274497,0.125",
-                "0.1503359,0.125",
-                "0.1503367,0.125",
-                "0.1274493,0.1249999",
-                "0.1274472,0.125",
+                "0.1274497,0.1249999",
+                "0.1274497,0.1249999",
+                "0.1503359,0.1249999",
                 "0.1503367,0.1249999",
-                "0.1503364,0.125",
-                "0.1274492,0.125",
-                "0.1274488,0.125",
+                "0.1274493,0.1249999",
+                "0.1274472,0.1249999",
+                "0.1503367,0.1249999",
+                "0.1503363,0.1249999",
+                "0.1274492,0.1249999",
+                "0.1274488,0.1249999",
                 "0.1503366,0.1249999",
-                "0.1503367,0.125",
-                "0.1274494,0.125"
+                "0.1503367,0.1249999",
+                "0.1274494,0.1249999"
               ],
               "TextureOffset": [
-                "584.1812,176.6964",
-                "584.6488,176.739",
-                "198.875,619.2545",
-                "71.06091,619.2545",
-                "1008.817,619.2546",
-                "881.405,619.2545",
-                "993.082,619.2545",
-                "1009.223,619.2543",
-                "956.0028,619.2545",
-                "971.9055,619.2546",
-                "775.9551,619.2545",
-                "813.2006,619.2549",
-                "154.4102,619.2545",
-                "191.5332,619.2545",
-                "1005.868,619.2545",
-                "899.3021,619.2546",
-                "207.4899,619.2545",
-                "101.0696,619.2545"
+                "584.1812,176.6974",
+                "584.6488,176.74",
+                "198.874,619.2546",
+                "71.06091,619.2546",
+                "1008.818,619.2546",
+                "881.4041,619.2544",
+                "993.0811,619.2544",
+                "1009.223,619.2546",
+                "956.0023,619.2546",
+                "971.906,619.2546",
+                "775.9541,619.2544",
+                "813.2006,619.2551",
+                "154.4102,619.2546",
+                "191.5352,619.2546",
+                "1005.869,619.2544",
+                "899.3026,619.2546",
+                "207.4903,619.2546",
+                "101.0701,619.2546"
               ],
               "MaterialIndex": [
                 1,
@@ -54226,6 +54234,268 @@
         "bfd1331c-2e7d-469f-80ca-52b5dffae069": "e2584e29-107b-46fe-81c6-b8b66aad6a13",
         "900bbf7c-0ce3-454b-9da6-83435a7d69b4": "adf6213b-c436-4592-9e30-392aca11dab8"
       }
+    },
+    {
+      "__guid": "be04df65-e29b-4ac5-95f5-27c98b03523b",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "-133.9647,115.4563,77.97295",
+      "Rotation": "0,0,0,1",
+      "Scale": "2.920887,1,2.529201",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "223e0cf8-f8fc-40df-a619-947cca1fbf51",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "5cc6bdb2-4d63-4224-ba58-f3d45853350d",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": {
+            "__version": 9,
+            "__guid": "c7738704-218d-49cf-b08c-356f1f0c87a1",
+            "__changeId": 49,
+            "UserData": {
+              "Title": "On Collider Enter",
+              "ReferencedComponentTypes": [
+                "Sandbox.Hint"
+              ]
+            },
+            "Variables": [],
+            "Nodes": [
+              {
+                "Id": 0,
+                "Type": "input",
+                "UserData": {
+                  "Position": "-168,-48"
+                }
+              },
+              {
+                "Id": 1,
+                "Type": "property",
+                "Properties": {
+                  "_name": "Instance",
+                  "_type": "Player"
+                },
+                "UserData": {
+                  "Position": "-72,132"
+                }
+              },
+              {
+                "Id": 2,
+                "Type": "op.equal",
+                "UserData": {
+                  "Position": "360,216"
+                }
+              },
+              {
+                "Id": 3,
+                "Type": "property",
+                "Properties": {
+                  "_name": "GameObject",
+                  "_type": "Sandbox.Component"
+                },
+                "UserData": {
+                  "Position": "-48,204"
+                }
+              },
+              {
+                "Id": 4,
+                "Type": "if",
+                "UserData": {
+                  "Position": "588,-36"
+                }
+              },
+              {
+                "Id": 6,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Destroy",
+                  "_type": "Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "984,24"
+                }
+              },
+              {
+                "Id": 7,
+                "Type": "scene.get",
+                "Properties": {
+                  "T": "Sandbox.Hint"
+                },
+                "UserData": {
+                  "Position": "504,48"
+                }
+              },
+              {
+                "Id": 8,
+                "Type": "call",
+                "Properties": {
+                  "_isStatic": false,
+                  "_name": "Call",
+                  "_type": "Sandbox.Hint"
+                },
+                "UserData": {
+                  "Position": "804,72"
+                }
+              },
+              {
+                "Id": 26,
+                "Type": "property",
+                "Properties": {
+                  "_name": "GameObject",
+                  "_type": "Sandbox.Component"
+                },
+                "UserData": {
+                  "Position": "-252,12"
+                }
+              },
+              {
+                "Id": 27,
+                "Type": "property",
+                "Properties": {
+                  "_name": "Parent",
+                  "_type": "Sandbox.GameObject"
+                },
+                "UserData": {
+                  "Position": "60,24"
+                }
+              }
+            ],
+            "Links": [
+              {
+                "SrcId": 27,
+                "SrcName": "_result",
+                "DstId": 2,
+                "DstName": "a"
+              },
+              {
+                "SrcId": 3,
+                "SrcName": "_result",
+                "DstId": 2,
+                "DstName": "b"
+              },
+              {
+                "SrcId": 1,
+                "SrcName": "_result",
+                "DstId": 3,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_signal",
+                "DstId": 4,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 2,
+                "SrcName": "_result",
+                "DstId": 4,
+                "DstName": "condition"
+              },
+              {
+                "SrcId": 8,
+                "SrcName": "_signal",
+                "DstId": 6,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "_target",
+                "DstId": 6,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 1,
+                "SrcName": "_result",
+                "DstId": 7,
+                "DstName": "_this"
+              },
+              {
+                "SrcId": 4,
+                "SrcName": "true",
+                "DstId": 8,
+                "DstName": "_signal"
+              },
+              {
+                "SrcId": 7,
+                "SrcName": "_result",
+                "DstId": 8,
+                "DstName": "_target"
+              },
+              {
+                "Id": 30,
+                "Value": "Create replicants, destroy enemies and collect DNA. Manage via (RMB). Then go to the next lab.",
+                "DstId": 8,
+                "DstName": "text"
+              },
+              {
+                "Id": 31,
+                "Value": 10,
+                "DstId": 8,
+                "DstName": "time"
+              },
+              {
+                "SrcId": 0,
+                "SrcName": "obj",
+                "DstId": 26,
+                "DstName": "_target"
+              },
+              {
+                "SrcId": 26,
+                "SrcName": "_result",
+                "DstId": 27,
+                "DstName": "_target"
+              }
+            ]
+          },
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {

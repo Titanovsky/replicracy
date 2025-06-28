@@ -26,6 +26,7 @@
 @code
 {
     [Property] string HintText { get; set; }
+    [Property] public SoundEvent Speech { get; set; }
     [Property] public float HintTime { get; set; } = 10f;
 
     public bool Called
@@ -79,6 +80,8 @@
         HintText = text;
         HintTime = time;
         Called = true;
+
+        Sound.Play(Speech);
     }
 
     [Button("Call")]

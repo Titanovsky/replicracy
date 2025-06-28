@@ -111,7 +111,6 @@ public sealed class Demon : EnemyBase
 
         tr = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
             .IgnoreGameObject(GameObject)
-            .WithoutTags("enemy")
             .Run();
 
         var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;

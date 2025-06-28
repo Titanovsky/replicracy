@@ -5,7 +5,11 @@
   "Decibels": 70,
   "SelectionMode": "Random",
   "Sounds": [
-    "sounds/npc/replicants/2.vsnd"
+    "sounds/npc/replicants/1.vsnd",
+    "sounds/npc/replicants/2.vsnd",
+    "sounds/npc/replicants/3.vsnd",
+    "sounds/npc/replicants/4.vsnd",
+    "sounds/npc/replicants/5.vsnd"
   ],
   "Occlusion": true,
   "AirAbsorption": true,
@@ -44,8 +48,8 @@
     }
   ],
   "DefaultMixer": {
-    "Name": "game",
-    "Id": "b4925555-f921-430a-b1fb-cfb1b8be13e4"
+    "Name": "unknown",
+    "Id": "00000000-0000-0000-0000-000000000000"
   },
   "__references": [],
   "__version": 1

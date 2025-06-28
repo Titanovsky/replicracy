@@ -157,7 +157,8 @@
           "go": "3e82156c-eb77-4d32-982e-cf2636ff1d20",
           "component_type": "SkinnedModelRenderer"
         },
-        "RotationSpeed": 2.5
+        "RotationSpeed": 2.5,
+        "TakeDamageSound": "sounds/npc/replicants/hurt1.sound"
       },
       {
         "__type": "Sandbox.ReplicantHealthBar",

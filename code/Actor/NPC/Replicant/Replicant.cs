@@ -56,11 +56,13 @@ public sealed class Replicant : Component, Component.IDamageable
         replicantFSM.CurrentState?.Update();
     }
 
+    [Property] public SoundEvent TakeDamageSound;
     public void TakeDamage(in DamageInfo dmgInfo)
     {
         var damage = dmgInfo.Damage;
 
         Health -= damage;
+        Sound.Play(TakeDamageSound, WorldPosition);
 
         Log.Info($"{GameObject} take damage {damage}f by {dmgInfo.Attacker}");
 
@@ -68,11 +70,8 @@ public sealed class Replicant : Component, Component.IDamageable
             Die();
     }
 
-    [Property] public SoundEvent DieSound;
     public void Die()
     {
-        Sound.Play(DieSound, WorldPosition);
-
         var repController = Player.Instance.ReplicantController;
         var hasLive = repController.Replicants.Contains(this);
         if (hasLive)

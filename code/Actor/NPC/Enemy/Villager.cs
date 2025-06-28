@@ -21,7 +21,7 @@ public sealed class Villager : EnemyBase
 
     public override void Die()
     {
-        if (_lastAttacker == Player.Instance.GameObject)
+        if (_lastAttacker == Player.Instance.GameObject || _lastAttacker.Tags.Has("replicant"))
         {
             var ply = Player.Instance;
 
