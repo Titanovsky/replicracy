@@ -1,3 +1,4 @@
+using Sandbox;
 using System;
 
 public sealed class Lab : Component, IDisposable
@@ -13,9 +14,10 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Buttons")] public UseBox ButtonBodyRightHand { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyLeftLeg { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyRightLeg { get; set; }
-    [Property, Feature("Buttons")] public List<UseBox> ButtonsAbilities { get; set; } = new();
 
     [Property, Feature("Prefabs")] public GameObject ReplicantPrefab { get; set; }
+
+    private int _b_head = 0;
 
     public void Dispose()
     {
@@ -43,24 +45,48 @@ public sealed class Lab : Component, IDisposable
         SetupBodygroups();
     }
 
-    private void SetupBodygroups(int head = 0, int lHand = 0, int rHand = 0, int lLeg = 0, int rLeg = 0)
+    private void SetupBodygroups(int head = 0, int arm = 0, int chest = 0, int feet = 0)
     {
         if (!Replicant.IsValid()) return;
+
+        var model = Replicant.GetComponent<SkinnedModelRenderer>();
+        if (!model.IsValid()) return;
+
+        model.SetBodyGroup("Body", 1);
+        model.SetBodyGroup("Attribute_Head", head);
+        model.SetBodyGroup("Attribute_Chest", chest);
+        model.SetBodyGroup("Attribute_Arm", arm);
+        model.SetBodyGroup("Attribute_Feet", feet);
+    }
+
+    private void ChangeHead()
+    { 
+        _b_head++;
+        if (_b_head > 3) _b_head = 0;
 
         var model = Replicant.GetComponent<ModelRenderer>();
         if (!model.IsValid()) return;
 
-        model.SetBodyGroup("head", head);
-        model.SetBodyGroup("l_hand", lHand);
-        model.SetBodyGroup("r_hand", rHand);
-        model.SetBodyGroup("l_leg", lLeg);
-        model.SetBodyGroup("r_leg", rLeg);
+        Log.Info("4");
+
+        model.SetBodyGroup("Attribute_Head", _b_head);
+
+        foreach (var replicant in Player.Instance.ReplicantController.Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            var mdl = replicant.GetComponentInChildren<SkinnedModelRenderer>();
+            if (!mdl.IsValid()) continue;
+
+            mdl.SetBodyGroup("Attribute_Head", _b_head);
+        }
     }
 
     private void Subscribe()
     {
         ButtonReplicate.OnCallback += BuyReplicate;
         ButtonHeal.OnCallback += BuyHeal;
+        ButtonBodyHead.OnCallback += ChangeHead;
         //start work
     }
 
@@ -74,7 +100,6 @@ public sealed class Lab : Component, IDisposable
     {
         var a = ButtonReplicate.IsValid();
         var b = ButtonHeal.IsValid();
-        var c = (ButtonsAbilities.Count > 0);
         var d = ReplicantPrefab.IsValid();
         var bh = ButtonBodyHead.IsValid();
         var blh = ButtonBodyLeftHand.IsValid();
@@ -82,7 +107,7 @@ public sealed class Lab : Component, IDisposable
         var bll = ButtonBodyLeftLeg.IsValid();
         var brl = ButtonBodyRightLeg.IsValid();
 
-        return (a && b && c && d && bh && blh && brh && bll && brl);
+        return (a && b && d && bh && blh && brh && bll && brl);
     }
 
     private void BuyReplicate()
@@ -90,8 +115,7 @@ public sealed class Lab : Component, IDisposable
         var ply = Player.Instance;
         if (ply.ReplicantController.GetCountReplicants() >= GlobalSettings.MaxReplicants)
         {
-            //todo Player.Error
-            //todo sound.Error
+            Player.Instance.Error();
 
             return;
         }
@@ -101,8 +125,7 @@ public sealed class Lab : Component, IDisposable
 
         if (!CanBuy(cost))
         {
-            //todo Player.Error
-            //todo sound.Error
+            Player.Instance.Error();
 
             return;
         }
@@ -128,8 +151,7 @@ public sealed class Lab : Component, IDisposable
         var ply = Player.Instance;
         if (ply.ReplicantController.GetCountReplicants() == 0)
         {
-            //todo Player.Error
-            //todo sound.Error
+            Player.Instance.Error();
 
             return;
         }
@@ -139,8 +161,7 @@ public sealed class Lab : Component, IDisposable
 
         if (!CanBuy(cost))
         {
-            //todo Player.Error
-            //todo sound.Error
+            Player.Instance.Error();
 
             return;
         }

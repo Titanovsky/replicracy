@@ -101,6 +101,12 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         _playerViewedObject.Use();
     }
 
+    [Property] public SoundEvent ErrorSound;
+    public void Error()
+    {
+        Sound.Play(ErrorSound);
+    }
+
     public void Die()
     {
         Log.Info($"Restart");
@@ -164,12 +170,13 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         //Gizmo.Draw.Line(_traceResult.EndPosition, _traceResult.EndPosition + _traceResult.Normal * 1.0f);
     }
 
+    [Property] public SoundEvent HurtsSound;
     private void TakeDamage(in DamageInfo dmgInfo)
     {
         var damage = dmgInfo.Damage;
 
         Health -= damage;
-        //todo sound.player.hurt
+        Sound.Play(HurtsSound);
 
         Log.Info($"{GameObject} take damage {damage}f by {dmgInfo.Attacker}");
 

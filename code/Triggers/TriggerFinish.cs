@@ -4,7 +4,7 @@
     {
         if (!LevelManager.Instance.CurrentLevel.CheckFinish())
         {
-            //todo sound error
+            ply.Error();
             ply.HeaderLevel.Show();
 
             return;

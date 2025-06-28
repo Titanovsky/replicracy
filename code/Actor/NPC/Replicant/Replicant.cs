@@ -68,10 +68,10 @@ public sealed class Replicant : Component, Component.IDamageable
             Die();
     }
 
+    [Property] public SoundEvent DieSound;
     public void Die()
     {
-        //todo sound.replicant.die
-        //todo particle
+        Sound.Play(DieSound, WorldPosition);
 
         var repController = Player.Instance.ReplicantController;
         var hasLive = repController.Replicants.Contains(this);
