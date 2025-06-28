@@ -24,9 +24,9 @@ public class Police : EnemyBase
     private Vector3 _spawnPosition;
     private Vector3 _randomPointMoving;
 
-    private RealTimeUntil _delayMovingTimer;
-    private RealTimeUntil _delayShootTimer;
-    private RealTimeUntil _delayReloadTimer;
+    private RealTimeUntil _delayMovingTimer = 0;
+    private RealTimeUntil _delayShootTimer = 0;
+    private RealTimeUntil _delayReloadTimer = 0;
 
     private GameObject _attackTarget;
     private GameObject _lastAttacker;

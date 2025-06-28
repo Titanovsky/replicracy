@@ -1,8 +1,8 @@
 ﻿public static class GlobalSettings
 {
-    [ConVar("rep_debug", ConVarFlags.GameSetting)] public static bool IsDebug { get; set; } = false;
+    [ConVar("rep_debug")] public static bool IsDebug { get; set; } = false;
 
-    [ConVar("rep_max_replicants", ConVarFlags.GameSetting)] public static int MaxReplicants { get; set; } = 8;
+    [ConVar("rep_max_replicants")] public static int MaxReplicants { get; set; } = 8;
 
     public static int CostReplicate { get; set; } = 5;
     public static int CostHeal { get; set; } = 2;

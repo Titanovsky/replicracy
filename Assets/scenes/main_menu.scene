@@ -516,28 +516,10 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
-        }
-      ],
-      "Children": []
-    },
-    {
-      "__guid": "aa73f499-87d1-4cca-be0a-b8af90a2047a",
-      "__version": 1,
-      "Flags": 0,
-      "Name": "MainMenu",
-      "Position": "63.42374,-120.2426,98.46533",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "NetworkOrphaned": 0,
-      "OwnerTransfer": 1,
-      "Components": [
+        },
         {
           "__type": "Sandbox.ScreenPanel",
-          "__guid": "85b34565-1cbf-4391-839a-5bb45de17097",
+          "__guid": "d157aead-e6d5-4386-a0b9-06b22a81ec74",
           "__enabled": true,
           "AutoScreenScale": true,
           "OnComponentDestroy": null,
@@ -549,17 +531,12 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
-          "TargetCamera": {
-            "_type": "component",
-            "component_id": "7861c37d-09c3-4744-b5f3-85ee71b7f93f",
-            "go": "449f2292-2f42-4579-b227-5b80d5105a94",
-            "component_type": "CameraComponent"
-          },
+          "TargetCamera": null,
           "ZIndex": 100
         },
         {
           "__type": "Sandbox.MainManu",
-          "__guid": "3455798a-acee-4938-b359-e7b5a4a4e76d",
+          "__guid": "4db8b3c4-c33c-4a39-bb11-6dc38b390026",
           "__enabled": true,
           "_music": "sounds/music/main_menu.sound",
           "_startScene": "scenes/levels/level1.scene",

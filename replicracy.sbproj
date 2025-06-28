@@ -23,12 +23,15 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/minimal.scene",
+    "StartupScene": "scenes/main_menu.scene",
     "LaunchMode": "QuickPlay",
     "ControlModes": {
       "Keyboard": true,
       "VR": false,
       "Gamepad": true
-    }
+    },
+    "MapStartupScene": "scenes/main_menu.scene",
+    "DedicatedServerStartupScene": "scenes/main_menu.scene",
+    "SystemScene": "scenes/main_menu.scene"
   }
 }
