@@ -11,7 +11,7 @@ You are a deranged scientist creating Replicants—powerful, obedient abominatio
 Made for s&box game jam #1 itch.io (Thanks Facepunch and Ape Tavern)
 
 ## Credits
-Titanovsky - Lead, Programmer (discord: titanovsky)
-Chase - Programmer (discord: chaseandtront)
-Sergey - 3D Artists of characters (discord: gunner3095)
-RED MIST - Animations & import rig/models/anims (discord: redmist_)
+* Titanovsky - Lead, Programmer (discord: titanovsky)
+* Chase - Programmer (discord: chaseandtront)
+* Sergey - 3D Artists of characters (discord: gunner3095)
+* RED MIST - Animations & import rig/models/anims (discord: redmist_)
