@@ -1,11 +1,13 @@
 using Sandbox;
 using System;
+using System.Threading.Tasks;
 
 public sealed class UseColorMiniGameButton : Component, IUsable
 {
     [Property] public string UsableText { get; set; }
     [Property] public int ButtonId { get; set; }
     [Property] public PointLight ButtonLight { get; set; }
+    [Property] public bool IsButtonActive { get; set; } = true;
 
     private float activatorDelay = 0.5f;
 
@@ -18,11 +20,12 @@ public sealed class UseColorMiniGameButton : Component, IUsable
 
     protected override void OnUpdate()
     {
-        CheckLightTimer();
+       CheckLightTimer();
     }
 
     public void Use()
     {
+        if (!IsButtonActive) return;
         if (!_activatorTimer) return;
 
         TurnOnLight(0.4f);

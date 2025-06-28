@@ -1,29 +1,41 @@
 using Sandbox;
 using System;
+using System.Threading.Tasks;
 
 public sealed class ColorGameManager : Component
 {
     [Property][Category("Game Param")] public float StartDelayChangeColor { get; set; } = 1f;
-    [Property][Category("Game Param")] public int StartCountAnsers { get; set; } = 5;
-    [Property][Category("Game Param")] public float WaitingAnswerDelay { get; set; } = 15f;
+    [Property][Category("Game Param")] public int StartCountAnsers { get; set; } = 3;
+    [Property][Category("Game Param")] public float WaitingAnswerDelay { get; set; } = 10f;
     [Property][Category("Game Param")] public float RoundCount { get; set; } = 3f;
+
     [Property][Category("Buttons")] public List<UseColorMiniGameButton> PlayingButtons { get; set; }
+
+    [Property] [Category("Sounds")] private SoundEvent GameStarted { get; set; }
+    [Property] [Category("Sounds")] private SoundEvent FailedGame { get; set; }
+    [Property] [Category("Sounds")] private SoundEvent SuccesRound { get; set; }
+    [Property] [Category("Sounds")] private SoundEvent ButtonClick { get; set; }
+
     [Property][Category("CallBack")] public Action OnSuccessFinished { get; set; }
 
     private int[] _answers;
-    
-    private float _currentRound { get; set; } = 1f;
-    private bool _isPlaying = false;
+    private int[] _playerAnswers;
 
+    private bool _isPlaying = false;
     private bool _isFinished { get; set; } = false;
 
-    private RealTimeUntil _changeColorTimer { get; set; }
+    private float _currentRound { get; set; } = 0;
+    private int _currentAnswer = 0;
+    private int _countAnser;
+
     private RealTimeUntil _waitingAnswerTimer { get; set; }
 
     private Random rnd;
 
     protected override void OnStart()
     {
+        _countAnser = StartCountAnsers;
+
         rnd = new();
 
         SubscribeToButtons();
@@ -32,6 +44,8 @@ public sealed class ColorGameManager : Component
     protected override void OnUpdate()
     {
         CheckWaitingAnswerTimer();
+
+        CheckAnsers();
     }
 
     protected override void OnDestroy()
@@ -48,19 +62,73 @@ public sealed class ColorGameManager : Component
         FailedRound();
     }
 
+    private void CheckAnsers()
+    {
+        if (!_isPlaying) return;
+
+        if (_currentAnswer != _answers.Length) return;
+
+        for (int i = 0; i < _answers.Length; i++)
+        {
+            if (_answers[i] != _playerAnswers[i])
+            {
+                FailedRound(); return;
+            }
+        }
+
+        if (_currentRound == RoundCount)
+            SuccessGame();
+        else
+        {
+            Sound.Play(SuccesRound);
+            NextRound();
+        }
+    }
+
     private void StartGame()
     {
+        Sound.Play(GameStarted);
 
+        _isPlaying = true;
+
+        EnabledButtons(false);
+
+        NextRound();
     }
 
     private void CheckButtonCallback(int answer)
     {
-        Log.Info(answer);
+        if (_isFinished) return;
 
-        if (!_isPlaying) return;
+        Sound.Play(ButtonClick);
 
-       
+        if (!_isPlaying)
+        {
+            StartGame();
+            return;
+        };
 
+        _playerAnswers[_currentAnswer] = answer;
+        _currentAnswer++;
+
+        ResetWaitingTimer();
+    }
+
+    private void NextRound()
+    {
+        _currentRound++;
+        _currentAnswer = 0;
+
+        if (_currentRound != 1)
+        _countAnser++;
+
+        GenerateRoundAnsers();
+
+        _playerAnswers = new int[_answers.Length];
+
+        _ = ShowColor();
+
+        ResetWaitingTimer();
     }
 
     private void GenerateRoundAnsers()
@@ -69,26 +137,63 @@ public sealed class ColorGameManager : Component
 
         int buttonCount = PlayingButtons.Count;
 
-        _answers = new int[StartCountAnsers];
+        _answers = new int[_countAnser];
 
-        for (int i = 0; i < StartCountAnsers; i++)
+        for (int i = 0; i < _countAnser; i++)
         {
             _answers[i] = rnd.Next(0, buttonCount);
         }
     }
 
+    private async Task ShowColor()
+    {
+        await Task.DelaySeconds(StartDelayChangeColor + 1);
+
+        foreach (int i in _answers)
+        {
+            PlayingButtons[i].TurnOnLight(StartDelayChangeColor);
+
+            await Task.DelaySeconds(StartDelayChangeColor);
+        }
+
+        EnabledButtons(true);
+    }
+
     private void FailedRound()
     {
-         _isPlaying = false;
-        _currentRound = 1f;
+        GameStop();
+
+        Sound.Play(FailedGame);
     }
-    
+
     private void SuccessGame()
     {
-         _isPlaying = false;
-        _currentRound = 1f;
+        GameStop();
+
+        Sound.Play(SuccesRound);
+
+        _isFinished = true;
 
         OnSuccessFinished?.Invoke();
+    }
+
+    private void GameStop()
+    {
+        _isPlaying = false;
+        _currentRound = 0;
+        _currentAnswer = 0;
+        _countAnser = StartCountAnsers;
+    }
+
+    private void EnabledButtons(bool isEnable)
+    {
+        foreach (var button in PlayingButtons)
+        {
+            if (button != null)
+            {
+                button.IsButtonActive = isEnable;
+            }
+        }
     }
 
     private void SubscribeToButtons()
@@ -113,4 +218,5 @@ public sealed class ColorGameManager : Component
         }
     }
 
+    public void ResetWaitingTimer() => _waitingAnswerTimer = WaitingAnswerDelay;
 }

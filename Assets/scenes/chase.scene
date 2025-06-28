@@ -38,6 +38,7 @@
           "__guid": "3bdb5734-06e4-468b-b129-5fc02da324d8",
           "__enabled": true,
           "Class": "level1",
+          "CurrentLevelScene": null,
           "Fuck": "das",
           "MinDangerousZ": -210,
           "Name": "Downtown",
@@ -5379,7 +5380,7 @@
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "enemy,demon,npc",
-      "Enabled": true,
+      "Enabled": false,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "NetworkOrphaned": 0,
@@ -7417,7 +7418,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "bdca4687-932a-451c-84e6-7c0ff139e1e1"
+              "IdValue": "9d1063b5-4bb9-49ea-af37-2937517e85d5"
             },
             "Parent": {
               "Type": "GameObject",
@@ -7430,7 +7431,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "bdca4687-932a-451c-84e6-7c0ff139e1e1",
+              "__guid": "9d1063b5-4bb9-49ea-af37-2937517e85d5",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - polo_shirt",
@@ -7450,18 +7451,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "20c5f27e-8da4-4cfa-9088-44b517622b7d"
+              "IdValue": "32f4a86d-668d-4356-86c1-7fa0cfecda9f"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "bdca4687-932a-451c-84e6-7c0ff139e1e1"
+              "IdValue": "9d1063b5-4bb9-49ea-af37-2937517e85d5"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "20c5f27e-8da4-4cfa-9088-44b517622b7d",
+              "__guid": "32f4a86d-668d-4356-86c1-7fa0cfecda9f",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -7510,7 +7511,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "d6f23054-c372-4bb0-8a56-ab234da515c1"
+              "IdValue": "28660866-1b4f-4fb2-b930-843df2243597"
             },
             "Parent": {
               "Type": "GameObject",
@@ -7518,12 +7519,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "bdca4687-932a-451c-84e6-7c0ff139e1e1"
+              "IdValue": "9d1063b5-4bb9-49ea-af37-2937517e85d5"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "d6f23054-c372-4bb0-8a56-ab234da515c1",
+              "__guid": "28660866-1b4f-4fb2-b930-843df2243597",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - labcoat",
@@ -7543,18 +7544,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "e035240e-3e00-4de2-9f3d-4e9c1234962f"
+              "IdValue": "22fce5f5-1484-4987-b31a-a15fb8fd677f"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "d6f23054-c372-4bb0-8a56-ab234da515c1"
+              "IdValue": "28660866-1b4f-4fb2-b930-843df2243597"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "e035240e-3e00-4de2-9f3d-4e9c1234962f",
+              "__guid": "22fce5f5-1484-4987-b31a-a15fb8fd677f",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -7603,7 +7604,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "3a40cb72-e024-4001-8554-27b34b81d111"
+              "IdValue": "7751256e-43e7-4627-90f9-02882a9c1ff2"
             },
             "Parent": {
               "Type": "GameObject",
@@ -7611,12 +7612,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "d6f23054-c372-4bb0-8a56-ab234da515c1"
+              "IdValue": "28660866-1b4f-4fb2-b930-843df2243597"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "3a40cb72-e024-4001-8554-27b34b81d111",
+              "__guid": "7751256e-43e7-4627-90f9-02882a9c1ff2",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - black_boots",
@@ -7636,18 +7637,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "f7e62633-680f-4d22-8140-2f0cfc29176a"
+              "IdValue": "9f939ac9-8812-4452-90df-f8f3304b5859"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "3a40cb72-e024-4001-8554-27b34b81d111"
+              "IdValue": "7751256e-43e7-4627-90f9-02882a9c1ff2"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "f7e62633-680f-4d22-8140-2f0cfc29176a",
+              "__guid": "9f939ac9-8812-4452-90df-f8f3304b5859",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -7696,7 +7697,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "bbe3b7ac-7989-4702-a845-0a4edece3bc1"
+              "IdValue": "44a95055-52d3-4e43-a71f-85066aaad90c"
             },
             "Parent": {
               "Type": "GameObject",
@@ -7704,12 +7705,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "3a40cb72-e024-4001-8554-27b34b81d111"
+              "IdValue": "7751256e-43e7-4627-90f9-02882a9c1ff2"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "bbe3b7ac-7989-4702-a845-0a4edece3bc1",
+              "__guid": "44a95055-52d3-4e43-a71f-85066aaad90c",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - loose_jeans",
@@ -7729,18 +7730,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "eac8ecad-12c3-4328-8ed4-261e82dacac8"
+              "IdValue": "6b99b5e0-deca-4aaa-8e0e-745cdf2a2d1b"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "bbe3b7ac-7989-4702-a845-0a4edece3bc1"
+              "IdValue": "44a95055-52d3-4e43-a71f-85066aaad90c"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "eac8ecad-12c3-4328-8ed4-261e82dacac8",
+              "__guid": "6b99b5e0-deca-4aaa-8e0e-745cdf2a2d1b",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -7903,8 +7904,8 @@
             "Property": "_showTimer",
             "Value": {
               "Absolute": 0,
-              "Relative": -110068536,
-              "Passed": 110068533.5737302,
+              "Relative": -110077528,
+              "Passed": 110077525.5857352,
               "Fraction": 1
             }
           },
@@ -7916,8 +7917,8 @@
             "Property": "_showTimer",
             "Value": {
               "Absolute": 0,
-              "Relative": -110068536,
-              "Passed": 110068533.5737428,
+              "Relative": -110077528,
+              "Passed": 110077525.5858926,
               "Fraction": 1
             }
           },
@@ -7999,7 +8000,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Position",
-            "Value": "9.750122,-4.987762,3.806076"
+            "Value": "9.75,-4.987701,3.805984"
           },
           {
             "Target": {
@@ -8007,7 +8008,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "-0.6955563,-0.1290363,0.4102916,-0.5755101"
+            "Value": "-0.6955556,-0.1290377,0.4102952,-0.5755081"
           },
           {
             "Target": {
@@ -8015,7 +8016,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Scale",
-            "Value": "0.9999985,0.9999985,0.9999985"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -8023,7 +8024,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Position",
-            "Value": "-8.846527,5.432388,3.808548"
+            "Value": "-8.846466,5.432266,3.808395"
           },
           {
             "Target": {
@@ -8031,7 +8032,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "-0.6385092,-0.3045299,0.247563,-0.6620272"
+            "Value": "-0.6385089,-0.3045319,0.2475567,-0.6620291"
           },
           {
             "Target": {
@@ -8039,7 +8040,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Scale",
-            "Value": "0.9999988,0.9999988,0.9999988"
+            "Value": "0.9999986,0.9999986,0.9999986"
           },
           {
             "Target": {
@@ -8047,7 +8048,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.71628,-4.202179,48.44124"
+            "Value": "16.85992,-3.702606,48.43359"
           },
           {
             "Target": {
@@ -8055,7 +8056,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "-0.3915811,0.05667558,-0.1345482,-0.9084872"
+            "Value": "-0.3916241,0.05027589,-0.132923,-0.9090844"
           },
           {
             "Target": {
@@ -8063,7 +8064,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "0.9999999,0.9999999,0.9999999"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -8071,7 +8072,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.60077,5.340973,40.65852"
+            "Value": "-10.32028,5.494446,40.82513"
           },
           {
             "Target": {
@@ -8079,7 +8080,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "-0.4427725,-0.7035712,0.2053755,-0.516489"
+            "Value": "-0.4296559,-0.7069702,0.2117111,-0.5203532"
           },
           {
             "Target": {
@@ -8087,7 +8088,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -8095,7 +8096,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "24.09442,-2.660187,50.04695"
+            "Value": "24.25531,-2.143585,49.94041"
           },
           {
             "Target": {
@@ -8103,7 +8104,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "-0.6106752,0.1231695,0.08755898,-0.7773278"
+            "Value": "-0.6106752,0.1231697,0.08755896,-0.7773278"
           },
           {
             "Target": {
@@ -8111,7 +8112,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
+            "Value": "0.9999971,0.9999971,0.9999971"
           },
           {
             "Target": {
@@ -8119,7 +8120,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-11.17407,8.507599,33.65594"
+            "Value": "-11.00821,8.478271,33.75296"
           },
           {
             "Target": {
@@ -8127,7 +8128,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "-0.4455698,-0.7305492,0.1696408,-0.4888634"
+            "Value": "-0.4327304,-0.7342803,0.1765516,-0.4923477"
           },
           {
             "Target": {
@@ -8135,7 +8136,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999977,0.9999977,0.9999977"
           },
           {
             "Target": {
@@ -8143,7 +8144,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.2713,-2.137329,52.09151"
+            "Value": "29.43219,-1.620697,51.98499"
           },
           {
             "Target": {
@@ -8151,7 +8152,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "-0.01353634,-0.0000349789,-0.00004114688,-0.9999084"
+            "Value": "-0.01353633,-0.00003491939,-0.00004108738,-0.9999084"
           },
           {
             "Target": {
@@ -8159,7 +8160,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "0.9999963,0.9999963,0.9999963"
           },
           {
             "Target": {
@@ -8167,7 +8168,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-9.424683,9.127487,27.55629"
+            "Value": "-9.323517,8.976746,27.62401"
           },
           {
             "Target": {
@@ -8175,7 +8176,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "0.3992915,-0.6309237,-0.1426407,-0.6497347"
+            "Value": "0.4117613,-0.6322461,-0.1420727,-0.6407285"
           },
           {
             "Target": {
@@ -8183,7 +8184,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "0.9999983,0.9999983,0.9999983"
+            "Value": "0.9999977,0.9999977,0.9999977"
           },
           {
             "Target": {
@@ -8239,7 +8240,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Position",
-            "Value": "10.94983,-4.232513,16.24109"
+            "Value": "10.86353,-4.190308,16.24637"
           },
           {
             "Target": {
@@ -8247,7 +8248,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Rotation",
-            "Value": "-0.4752454,-0.4909387,0.5539923,-0.475619"
+            "Value": "-0.4770324,-0.4875643,0.5538656,-0.4774454"
           },
           {
             "Target": {
@@ -8255,7 +8256,7 @@
               "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -8263,7 +8264,7 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Position",
-            "Value": "-2.424408,5.421249,14.55074"
+            "Value": "-2.246887,5.467728,14.44252"
           },
           {
             "Target": {
@@ -8271,156 +8272,12 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Rotation",
-            "Value": "-0.3150164,-0.6700196,0.5546544,-0.3797327"
+            "Value": "-0.3113183,-0.6693239,0.5618362,-0.3733987"
           },
           {
             "Target": {
               "Type": "GameObject",
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Position",
-            "Value": "8.58255,3.431931,39.85307"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Rotation",
-            "Value": "0.07489128,-0.4250608,-0.0005025684,-0.9020612"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Position",
-            "Value": "11.77942,-3.589966,49.13342"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Scale",
-            "Value": "0.9999999,0.9999999,0.9999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Position",
-            "Value": "20.40536,-3.431183,49.24409"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Position",
-            "Value": "16.72934,-4.313141,48.30428"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Rotation",
-            "Value": "-0.2819363,-0.2946101,0.6006045,-0.6877435"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Scale",
-            "Value": "0.9999997,0.9999997,0.9999997"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Position",
-            "Value": "-10.83957,5.160156,40.69495"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Rotation",
-            "Value": "0.3498617,-0.8242421,0.4180597,-0.1531271"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Position",
-            "Value": "-7.875397,5.17244,44.87402"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Scale",
             "Value": "0.9999993,0.9999993,0.9999993"
@@ -8428,10 +8285,154 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Position",
+            "Value": "8.705719,3.615387,39.82172"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Rotation",
+            "Value": "0.0829583,-0.4303336,0.00360776,-0.8988425"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Scale",
+            "Value": "0.9999973,0.9999973,0.9999973"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Position",
+            "Value": "11.91556,-3.196838,49.15747"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Scale",
+            "Value": "0.9999976,0.9999976,0.9999976"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Position",
+            "Value": "20.55762,-2.923096,49.18701"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999973,0.9999973,0.9999973"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Position",
+            "Value": "16.87228,-3.793121,48.29634"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Rotation",
+            "Value": "-0.2768058,-0.2971032,0.5984562,-0.6906217"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Scale",
+            "Value": "0.9999973,0.9999973,0.9999973"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Position",
+            "Value": "-10.53757,5.327682,40.86111"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Rotation",
+            "Value": "0.3562968,-0.8173022,0.4260184,-0.1535516"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Scale",
+            "Value": "0.9999974,0.9999974,0.9999974"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Position",
+            "Value": "-7.63913,5.38588,45.07083"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999977,0.9999977,0.9999977"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Position",
-            "Value": "-10.88742,6.924286,37.15723"
+            "Value": "-10.66425,6.986359,37.28905"
           },
           {
             "Target": {
@@ -8447,7 +8448,7 @@
               "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999976,0.9999976,0.9999976"
           },
           {
             "Target": {
@@ -8455,7 +8456,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Position",
-            "Value": "7.523163,-3.621582,22.58401"
+            "Value": "7.460907,-3.568237,22.60112"
           },
           {
             "Target": {
@@ -8471,7 +8472,7 @@
               "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
+            "Value": "0.9999987,0.9999987,0.9999987"
           },
           {
             "Target": {
@@ -8479,7 +8480,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Position",
-            "Value": "-1.712921,4.825241,21.72614"
+            "Value": "-1.635681,4.885422,21.62828"
           },
           {
             "Target": {
@@ -8495,7 +8496,7 @@
               "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
+            "Value": "0.9999993,0.9999993,0.9999993"
           },
           {
             "Target": {
@@ -8503,7 +8504,7 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Position",
-            "Value": "11.80215,-4.270111,16.39223"
+            "Value": "11.70068,-4.225281,16.39569"
           },
           {
             "Target": {
@@ -8511,12 +8512,36 @@
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Rotation",
-            "Value": "-0.5311852,-0.417827,0.4765235,-0.5623063"
+            "Value": "-0.5302888,-0.4171665,0.4762358,-0.5638843"
           },
           {
             "Target": {
               "Type": "GameObject",
               "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Scale",
+            "Value": "0.999998,0.999998,0.999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Position",
+            "Value": "-1.595184,5.592697,14.20639"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Rotation",
+            "Value": "-0.7194282,-0.1741527,0.04768501,-0.6706862"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
             },
             "Property": "Scale",
             "Value": "0.9999989,0.9999989,0.9999989"
@@ -8524,34 +8549,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Position",
-            "Value": "-1.814423,5.543564,14.32953"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Rotation",
-            "Value": "-0.7206911,-0.176606,0.04397457,-0.6689401"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999994,0.9999994,0.9999994"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Position",
-            "Value": "10.34998,-4.610138,10.02359"
+            "Value": "10.30676,-4.588989,10.02618"
           },
           {
             "Target": {
@@ -8567,7 +8568,7 @@
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.999998,0.999998,0.999998"
           },
           {
             "Target": {
@@ -8575,7 +8576,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Position",
-            "Value": "-5.635468,5.426834,9.179642"
+            "Value": "-5.546661,5.449997,9.125473"
           },
           {
             "Target": {
@@ -8589,6 +8590,30 @@
             "Target": {
               "Type": "GameObject",
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
+            },
+            "Property": "Scale",
+            "Value": "0.9999986,0.9999986,0.9999986"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Position",
+            "Value": "0.3245239,0.6007538,41.82245"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Scale",
             "Value": "0.9999991,0.9999991,0.9999991"
@@ -8596,26 +8621,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
-            },
-            "Property": "Position",
-            "Value": "0.2461548,0.4107208,41.84732"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.257935,1.285919,61.34956"
+            "Value": "6.398132,1.588425,61.36534"
           },
           {
             "Target": {
@@ -8623,7 +8632,15 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "0.00117265,-0.01421401,-0.04549924,-0.9988626"
+            "Value": "0.00120646,-0.01065281,-0.0452968,-0.9989161"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
+            },
+            "Property": "Scale",
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -8631,7 +8648,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.562225,-2.046661,61.35307"
+            "Value": "6.70105,-1.744263,61.37018"
           },
           {
             "Target": {
@@ -8639,7 +8656,15 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "0.00117265,-0.01421401,-0.04549924,-0.9988626"
+            "Value": "0.00120646,-0.01065281,-0.0452968,-0.9989161"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
+            },
+            "Property": "Scale",
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -8647,7 +8672,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "5.953644,4.6185,61.34605"
+            "Value": "6.095215,4.921127,61.3605"
           },
           {
             "Target": {
@@ -8655,7 +8680,15 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "0.00117265,-0.01421401,-0.04549924,-0.9988626"
+            "Value": "0.00120646,-0.01065281,-0.0452968,-0.9989161"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
+            },
+            "Property": "Scale",
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -8663,7 +8696,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.7722168,0.7779388,54.61411"
+            "Value": "0.9603271,1.084335,54.59088"
           },
           {
             "Target": {
@@ -8671,7 +8704,15 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "0.00117265,-0.01421401,-0.04549924,-0.9988626"
+            "Value": "0.00120646,-0.01065281,-0.0452968,-0.9989161"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -8679,7 +8720,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.12994,-5.90918,0.1874695"
+            "Value": "11.12976,-5.909119,0.1873779"
           },
           {
             "Target": {
@@ -8687,7 +8728,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "-0.0004749596,-0.00006809841,0.216234,-0.9763415"
+            "Value": "-0.0004749001,-0.00007148098,0.2162356,-0.9763411"
           },
           {
             "Target": {
@@ -8695,7 +8736,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.999997,0.999997,0.999997"
           },
           {
             "Target": {
@@ -8703,7 +8744,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239258,5.83223,1.05954"
+            "Value": "-7.239166,5.832123,1.059387"
           },
           {
             "Target": {
@@ -8711,7 +8752,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "0.04343593,-0.9990562,-0.0003296469,-0.00009334453"
+            "Value": "0.04344193,-0.9990559,-0.0003303919,-0.00009666749"
           },
           {
             "Target": {
@@ -8719,7 +8760,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.9999982,0.9999982,0.9999982"
+            "Value": "0.9999977,0.9999977,0.9999977"
           },
           {
             "Target": {
@@ -8727,7 +8768,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.494934,0.860321,69.75696"
+            "Value": "1.575226,1.162674,69.73849"
           },
           {
             "Target": {
@@ -8735,7 +8776,15 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "0.00117265,-0.01421401,-0.04549924,-0.9988626"
+            "Value": "0.00120646,-0.01065281,-0.0452968,-0.9989161"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "Property": "Scale",
+            "Value": "0.9999983,0.9999983,0.9999983"
           }
         ],
         "MovedObjects": []
@@ -9077,6 +9126,9 @@
           "__type": "ColorGameManager",
           "__guid": "dcaf481f-59c4-4589-9c79-06c6df945e11",
           "__enabled": true,
+          "ButtonClick": null,
+          "FailedGame": null,
+          "GameStarted": null,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -9111,9 +9163,10 @@
             }
           ],
           "RoundCount": 3,
-          "StartCountAnsers": 5,
+          "StartCountAnsers": 3,
           "StartDelayChangeColor": 1,
-          "WaitingAnswerDelay": 15
+          "SuccesRound": null,
+          "WaitingAnswerDelay": 10
         }
       ],
       "Children": [
@@ -9441,6 +9494,7 @@
                     "go": "ea2089b2-a76c-424f-ba37-24611ef9c78f",
                     "component_type": "PointLight"
                   },
+                  "IsButtonActive": true,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
@@ -9561,6 +9615,7 @@
                     "go": "04c120ea-b846-4867-bd2f-2b7ec3ca91bf",
                     "component_type": "PointLight"
                   },
+                  "IsButtonActive": true,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
@@ -9681,6 +9736,7 @@
                     "go": "f4bf5867-13ca-45ae-93a7-9ef65a100761",
                     "component_type": "PointLight"
                   },
+                  "IsButtonActive": true,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
@@ -9801,6 +9857,7 @@
                     "go": "0700f9cb-4c98-4112-9c3f-87ee1f6c446e",
                     "component_type": "PointLight"
                   },
+                  "IsButtonActive": true,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
