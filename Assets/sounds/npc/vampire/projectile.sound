@@ -1,11 +1,11 @@
 {
-  "UI": true,
-  "Volume": "0.4",
+  "UI": false,
+  "Volume": "1",
   "Pitch": "1",
   "Decibels": 70,
   "SelectionMode": "Random",
   "Sounds": [
-    "sounds/music/main_menu.vsnd"
+    "sounds/npc/vampire/projectile.vsnd"
   ],
   "Occlusion": true,
   "AirAbsorption": true,
@@ -44,8 +44,8 @@
     }
   ],
   "DefaultMixer": {
-    "Name": "music",
-    "Id": "3a742358-243b-477e-a56a-4a2d29345359"
+    "Name": "game",
+    "Id": "b4925555-f921-430a-b1fb-cfb1b8be13e4"
   },
   "__references": [],
   "__version": 1

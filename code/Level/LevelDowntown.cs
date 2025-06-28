@@ -4,6 +4,7 @@
     [Property, Group("Base")] public override string Name { get; set; } = "Downtown";
     [Property, Group("Base")] public override SceneFile NextLevelScene { get; set; }
     [Property, Group("Base")] public override SceneFile CurrentLevelScene { get; set; }
+    [Property, Group("Base")] public override SoundEvent Music { get; set; }
     [Property, Group("Base")] public override float MinDangerousZ { get; set; } = -210;
 
     [Property, Group("Stats")] public override int NextDna { get; set; } = 15;
@@ -34,7 +35,9 @@
 
     private void Act1()
     {
-        Log.Info($"The first act of start!");
+        Log.Info($"Play music");
+
+        Sound.Play(Music);
     }
 
     private void Act2()

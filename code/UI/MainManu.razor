@@ -34,12 +34,15 @@
 	private Random random;
 
 	[Property] private SceneFile _startScene;
+	[Property] private SoundEvent _music;
 
 	protected override void OnStart()
 	{
 		random = new();
 		_camera = Scene.Camera;
 		initialRotation = _camera.WorldRotation;
+
+		Sound.Play(_music);
 	}
 
 	protected override void OnFixedUpdate()

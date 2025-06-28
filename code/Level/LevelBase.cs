@@ -6,6 +6,7 @@ public abstract class LevelBase : Component
     [Property, Group("Base")] public virtual string Name { get; set; } = "None";
     [Property, Group("Base")] public virtual SceneFile NextLevelScene { get; set; }
     [Property, Group("Base")] public virtual SceneFile CurrentLevelScene { get; set; }
+    [Property, Group("Base")] public virtual SoundEvent Music { get; set; }
     [Property, Group("Base")] public virtual float MinDangerousZ { get; set; } = -500;
 
     [Property, Group("Stats")] public virtual int NextDna { get; set; } = 0;
