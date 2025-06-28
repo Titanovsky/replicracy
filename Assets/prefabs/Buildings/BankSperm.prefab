@@ -481,25 +481,25 @@
             0,
             0,
             0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
             0,
             0,
             0,
             0,
+            1,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
+            1,
+            1,
             0,
             0,
             0,
@@ -711,7 +711,8 @@
             0
           ],
           "Materials": [
-            "materials/dev/reflectivity_30.vmat"
+            "materials/dev/reflectivity_30.vmat",
+            "materials/zombieworld/metal01_pixel.vmat"
           ]
         },
         "OnComponentDestroy": null,
@@ -973,24 +974,24 @@
                 "39.30923,383.9999"
               ],
               "MaterialIndex": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
               ],
               "EdgeFlags": [
                 0,
@@ -1091,7 +1092,8 @@
                 0
               ],
               "Materials": [
-                "materials/dev/reflectivity_30.vmat"
+                "materials/dev/reflectivity_30.vmat",
+                "materials/zombieworld/metal01_pixel.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -1354,24 +1356,24 @@
                 "186.2593,384.0046"
               ],
               "MaterialIndex": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
               ],
               "EdgeFlags": [
                 0,
@@ -1472,7 +1474,8 @@
                 0
               ],
               "Materials": [
-                "materials/dev/reflectivity_30.vmat"
+                "materials/dev/reflectivity_30.vmat",
+                "materials/zombieworld/metal01_pixel.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -1520,6 +1523,8 @@
   "MenuPath": null,
   "MenuIcon": null,
   "DontBreakAsTemplate": false,
-  "__references": [],
+  "__references": [
+    "kvien.metal01_pixel#37069"
+  ],
   "__version": 2
 }

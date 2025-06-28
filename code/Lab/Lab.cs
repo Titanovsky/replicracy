@@ -6,8 +6,8 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Props")] public GameObject Replicant { get; set; }
     [Property, Feature("Props")] public GameObject Spawn { get; set; }
 
-    [Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
-    [Property, Feature("Buttons")] public UseBox ButtonBuy { get; set; }
+    //[Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
+    //[Property, Feature("Buttons")] public UseBox ButtonBuy { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonHeal { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyHead { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyLeftHand { get; set; }
@@ -84,7 +84,7 @@ public sealed class Lab : Component, IDisposable
 
     private void Subscribe()
     {
-        ButtonReplicate.OnCallback += BuyReplicate;
+        //ButtonReplicate.OnCallback += BuyReplicate;
         ButtonHeal.OnCallback += BuyHeal;
         ButtonBodyHead.OnCallback += ChangeHead;
         //start work
@@ -92,13 +92,13 @@ public sealed class Lab : Component, IDisposable
 
     private void Unscribe()
     {
-        ButtonReplicate.OnCallback -= BuyReplicate;
+        //ButtonReplicate.OnCallback -= BuyReplicate;
         ButtonHeal.OnCallback -= BuyHeal;
     }
 
     private bool CheckGameObjects()
     {
-        var a = ButtonReplicate.IsValid();
+        //var a = ButtonReplicate.IsValid();
         var b = ButtonHeal.IsValid();
         var d = ReplicantPrefab.IsValid();
         var bh = ButtonBodyHead.IsValid();
@@ -107,7 +107,7 @@ public sealed class Lab : Component, IDisposable
         var bll = ButtonBodyLeftLeg.IsValid();
         var brl = ButtonBodyRightLeg.IsValid();
 
-        return (a && b && d && bh && blh && brh && bll && brl);
+        return (b && d && bh && blh && brh && bll && brl);
     }
 
     private void BuyReplicate()

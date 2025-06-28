@@ -2,7 +2,6 @@ using Sandbox;
 
 public sealed class Cultist : EnemyBase
 {
-    [Property] public EmotionsController EmotionsController { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
     [Property] public NavMeshAgent NavMeshAgent { get; set; }
     [Property] public float SearchRadius { get; set; } = 500f;
@@ -218,13 +217,13 @@ public sealed class Cultist : EnemyBase
     public void SetIdleState()
     {
         CurrentState = CultistState.Idle;
-        EmotionsController.SetEmotion(EmotionsController.Emotions.Idle);
+        //EmotionsController.SetEmotion(EmotionsController.Emotions.Idle);
     }
 
     public void SetAttackState()
     {
         CurrentState = CultistState.Attack;
-        EmotionsController.SetEmotion(EmotionsController.Emotions.Angry);
+        //EmotionsController.SetEmotion(EmotionsController.Emotions.Angry);
     }
 
     public void SetTarget(GameObject target)

@@ -102,8 +102,11 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     }
 
     [Property] public SoundEvent ErrorSound;
-    public void Error()
+    public void Error(string str = "")
     {
+        if (str != "")
+            ErroreMessage.Show(str, 6f);
+
         Sound.Play(ErrorSound);
     }
 

@@ -1,13 +1,13 @@
 {
   "RootObject": {
-    "__guid": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
+    "__guid": "0b594620-be71-4de3-9821-b4f34c64deff",
     "__version": 1,
     "Flags": 0,
-    "Name": "cultist",
+    "Name": "alien",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
-    "Tags": "enemy,demon,npc",
+    "Tags": "",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -15,8 +15,19 @@
     "OwnerTransfer": 1,
     "Components": [
       {
+        "__type": "Alien",
+        "__guid": "a73c1a07-f607-44e4-8ea1-1018b60b93b7",
+        "__enabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      },
+      {
         "__type": "Sandbox.BoxCollider",
-        "__guid": "a19e44db-a30a-49a4-93ce-334b815a4a29",
+        "__guid": "af7975a1-4dec-4acd-933f-1aa74c9c1ff3",
         "__enabled": true,
         "Center": "0,0,36.49999",
         "Friction": null,
@@ -37,21 +48,8 @@
         "SurfaceVelocity": "0,0,0"
       },
       {
-        "__type": "EmotionsController",
-        "__guid": "f6958a6c-05f0-4f7d-a84f-24a252ace95a",
-        "__enabled": true,
-        "CurrentEmotion": "Idle",
-        "EmotionDecal": null,
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null
-      },
-      {
         "__type": "Sandbox.NavMeshAgent",
-        "__guid": "a2337e3c-7c3b-4d0d-b0b6-aeee278afd6f",
+        "__guid": "22971c1c-06c1-44d9-b9a4-36a3f8ac2608",
         "__enabled": true,
         "Acceleration": 120,
         "AutoTraverseLinks": false,
@@ -67,46 +65,11 @@
         "Separation": 0.25,
         "UpdatePosition": true,
         "UpdateRotation": false
-      },
-      {
-        "__type": "Cultist",
-        "__guid": "75d441d8-f35f-4f90-8f57-f4b01748e720",
-        "__enabled": true,
-        "AttackDamage": 3,
-        "AttackDelay": 1,
-        "AttackDistance": 50,
-        "AttackPosition": {
-          "_type": "gameobject",
-          "go": "fbfd3265-5492-41f2-a62a-6616ea4832d0"
-        },
-        "Health": 50,
-        "LostRadius": 700,
-        "MoveDelay": 10,
-        "MovingStartPosRadius": 150,
-        "NavMeshAgent": {
-          "_type": "component",
-          "component_id": "a2337e3c-7c3b-4d0d-b0b6-aeee278afd6f",
-          "go": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
-          "component_type": "NavMeshAgent"
-        },
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null,
-        "Renderer": {
-          "_type": "component",
-          "component_id": "2ead29f4-27ff-4d17-96a9-0485c927d5bf",
-          "go": "758e2be0-0108-487e-9bea-52761c299dd9",
-          "component_type": "SkinnedModelRenderer"
-        },
-        "SearchRadius": 500
       }
     ],
     "Children": [
       {
-        "__guid": "758e2be0-0108-487e-9bea-52761c299dd9",
+        "__guid": "1367d957-6e45-4cee-acbd-92e3de02f4b9",
         "__version": 1,
         "Flags": 0,
         "Name": "Body",
@@ -122,14 +85,14 @@
         "Components": [
           {
             "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "2ead29f4-27ff-4d17-96a9-0485c927d5bf",
+            "__guid": "44689dc3-a2af-4658-a287-5e764f806369",
             "__enabled": true,
             "AnimationGraph": "models/npc/bolvan/citizen/animation/bolvan_n.vanmgrph",
-            "BodyGroups": 568451809153056,
+            "BodyGroups": 9072061580288,
             "BoneMergeTarget": null,
             "CreateAttachments": true,
             "CreateBoneObjects": false,
-            "MaterialGroup": null,
+            "MaterialGroup": "default",
             "MaterialOverride": null,
             "Model": "models/npc/bolvan/bolvan_n.vmdl",
             "Morphs": {},
@@ -140,12 +103,15 @@
             "OnComponentStart": null,
             "OnComponentUpdate": null,
             "Parameters": {
-              "bools": {},
+              "bools": {
+                "b_attack": false
+              },
               "ints": {},
               "floats": {
                 "move_y": 0,
                 "move_x": 0,
-                "duck": 0
+                "duck": 0,
+                "type_weapons_Attack": 0
               },
               "vectors": {
                 "aim_head": "0,0,0"
@@ -171,12 +137,12 @@
         ],
         "Children": [
           {
-            "__guid": "2144c4ca-2e3d-44a7-8de4-f4b1199f8f51",
+            "__guid": "d8db7c6b-ca13-4940-8ff6-c3c9a0e4be3d",
             "__version": 1,
             "Flags": 8,
             "Name": "foot_r",
-            "Position": "-3.383934,-3.228987,3.949718",
-            "Rotation": "-0.6540402,-0.6664385,0.2554356,0.2506868",
+            "Position": "0.1611951,-2.633639,4.452428",
+            "Rotation": "-0.6985106,-0.5987151,0.2660923,0.2877812",
             "Scale": "1,1,1",
             "Tags": "",
             "Enabled": true,
@@ -188,13 +154,13 @@
             "Children": []
           },
           {
-            "__guid": "22b417bf-9c03-4bd0-8a59-4de4cdb4f18a",
+            "__guid": "6edfc735-67eb-49a4-b434-950a2b37160c",
             "__version": 1,
             "Flags": 8,
             "Name": "foot_l",
-            "Position": "-3.383939,3.229014,3.949736",
-            "Rotation": "-0.666439,-0.6540394,0.2506869,0.2554358",
-            "Scale": "1,1,1",
+            "Position": "-2.58985,2.56548,4.772045",
+            "Rotation": "-0.5663048,-0.6536243,0.3635628,0.3462604",
+            "Scale": "0.9999998,0.9999998,0.9999998",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
@@ -205,12 +171,29 @@
             "Children": []
           },
           {
-            "__guid": "9841397b-4cf0-452a-b16f-f9b09898dc1c",
+            "__guid": "7dddff4d-a43d-40ce-acd1-1c63abd67732",
             "__version": 1,
             "Flags": 8,
             "Name": "eyes",
-            "Position": "8.422145,0.124643,62.39399",
-            "Rotation": "0.1035662,0.04924734,0.009670794,0.9933556",
+            "Position": "8.81091,0.01109703,61.40655",
+            "Rotation": "0.09487935,-0.01249129,0.009900809,0.9953611",
+            "Scale": "0.9999976,0.9999976,0.9999976",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "f5595bb4-f776-43f4-a2c0-63479d985738",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "Weapons_forward",
+            "Position": "26.01782,-3.308275,52.68441",
+            "Rotation": "-0.3329155,-0.3019638,-0.7283962,0.5171308",
             "Scale": "1,1,1",
             "Tags": "",
             "Enabled": true,
@@ -222,13 +205,13 @@
             "Children": []
           },
           {
-            "__guid": "de3aa99d-7c4b-465f-a782-a295f886c863",
+            "__guid": "d17c202e-2c84-423f-81c3-9e7ee38d2467",
             "__version": 1,
-            "Flags": 8,
-            "Name": "Weapons_forward",
-            "Position": "-4.168904,-10.66726,26.67591",
-            "Rotation": "-0.5540386,0.3450517,-0.4748723,0.5903191",
-            "Scale": "1,1,1",
+            "Flags": 0,
+            "Name": "AttackPosition",
+            "Position": "5.417068,-7.278436,33.10832",
+            "Rotation": "0,0,0,1",
+            "Scale": "1.090315,1.090315,1.090315",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
@@ -241,7 +224,7 @@
         ]
       },
       {
-        "__guid": "0b7cd4a9-b403-40b1-89e6-2e99869ab7ab",
+        "__guid": "935dbc01-8878-4bdd-bbb8-794d5f4ac2d0",
         "__version": 1,
         "Flags": 0,
         "Name": "3D Text",
@@ -257,7 +240,7 @@
         "Components": [
           {
             "__type": "Sandbox.WorldPanel",
-            "__guid": "08e4e305-4bcf-49b7-b2ed-4a15443247d9",
+            "__guid": "778b353a-3fbb-45da-a0c7-e7b1326de399",
             "__enabled": true,
             "HorizontalAlign": "Center",
             "InteractionRange": 1000,
@@ -280,13 +263,13 @@
           },
           {
             "__type": "Sandbox.EnemyHealthBar",
-            "__guid": "56731dca-bc99-48ee-8eba-47fdbd1771cc",
+            "__guid": "901cc2f4-8998-4263-ac26-f35a3b0a528a",
             "__enabled": true,
             "Enemy": {
               "_type": "component",
-              "component_id": "75d441d8-f35f-4f90-8f57-f4b01748e720",
-              "go": "96db9fa8-82ef-4b25-b34f-f7ba6db0d309",
-              "component_type": "Cultist"
+              "component_id": "6ac6faec-fc5f-470f-be52-b535c739bc55",
+              "go": "58251d06-83aa-46b4-9a01-f498da1644df",
+              "component_type": "Demon"
             },
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -296,23 +279,6 @@
             "OnComponentUpdate": null
           }
         ],
-        "Children": []
-      },
-      {
-        "__guid": "fbfd3265-5492-41f2-a62a-6616ea4832d0",
-        "__version": 1,
-        "Flags": 0,
-        "Name": "AttackPosition",
-        "Position": "10.00009,0,41.95578",
-        "Rotation": "0,0,0,1",
-        "Scale": "1,1,1",
-        "Tags": "",
-        "Enabled": true,
-        "NetworkMode": 2,
-        "NetworkInterpolation": true,
-        "NetworkOrphaned": 0,
-        "OwnerTransfer": 1,
-        "Components": [],
         "Children": []
       }
     ],

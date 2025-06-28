@@ -3,7 +3,7 @@
     "__guid": "58251d06-83aa-46b4-9a01-f498da1644df",
     "__version": 1,
     "Flags": 0,
-    "Name": "Demon",
+    "Name": "demon",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -48,7 +48,7 @@
         },
         "Renderer": {
           "_type": "component",
-          "component_id": "9dc69b65-e49e-489d-aa70-cf448fa0d31a",
+          "component_id": "85a9e53d-eab0-4191-b0da-52a72a8f7dee",
           "go": "ea3a64ed-acc9-4ef6-8072-276b69dc1013",
           "component_type": "SkinnedModelRenderer"
         },
@@ -132,16 +132,16 @@
         "Components": [
           {
             "__type": "Sandbox.SkinnedModelRenderer",
-            "__guid": "9dc69b65-e49e-489d-aa70-cf448fa0d31a",
+            "__guid": "85a9e53d-eab0-4191-b0da-52a72a8f7dee",
             "__enabled": true,
-            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
-            "BodyGroups": 1365,
+            "AnimationGraph": "models/npc/bolvan/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 2251808403619840,
             "BoneMergeTarget": null,
-            "CreateAttachments": false,
+            "CreateAttachments": true,
             "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
-            "Model": "models/npc/example/bolvan/bolvan.vmdl",
+            "Model": "models/npc/bolvan/bolvan_n.vmdl",
             "Morphs": {},
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -152,8 +152,14 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {},
-              "vectors": {},
+              "floats": {
+                "move_y": 0,
+                "move_x": 0,
+                "duck": 0
+              },
+              "vectors": {
+                "aim_head": "0,0,0"
+              },
               "rotations": {}
             },
             "PlaybackRate": 1,
@@ -170,10 +176,79 @@
               "Blending": false
             },
             "Tint": "1,1,1,1",
-            "UseAnimGraph": false
+            "UseAnimGraph": true
           }
         ],
-        "Children": []
+        "Children": [
+          {
+            "__guid": "1010178f-2af9-488b-8b97-e6ff5e7ffa5f",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_r",
+            "Position": "-3.383934,-3.228987,3.949718",
+            "Rotation": "-0.6540402,-0.6664385,0.2554356,0.2506868",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "48391c67-1726-4a78-a280-3888eb90874d",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_l",
+            "Position": "-3.383939,3.229014,3.949736",
+            "Rotation": "-0.666439,-0.6540394,0.2506869,0.2554358",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "d6e9f889-6659-42d2-a05c-a445a1c5bebc",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "eyes",
+            "Position": "8.422145,0.124643,62.39399",
+            "Rotation": "0.1035662,0.04924734,0.009670794,0.9933556",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "b03d4f4d-0cd5-418b-ba7a-c9a3ae52e019",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "Weapons_forward",
+            "Position": "-4.168904,-10.66726,26.67591",
+            "Rotation": "-0.5540386,0.3450517,-0.4748723,0.5903191",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          }
+        ]
       },
       {
         "__guid": "6a9dce4f-1dcf-4d0b-9d94-086d6a663be8",
@@ -289,7 +364,26 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

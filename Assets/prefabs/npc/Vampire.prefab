@@ -108,14 +108,14 @@
             "__type": "Sandbox.SkinnedModelRenderer",
             "__guid": "e95eeb54-f84b-4294-a1e0-c3c70cc24e89",
             "__enabled": true,
-            "AnimationGraph": "bolvan1.1/citizen/animation/bolvan_n.vanmgrph",
-            "BodyGroups": 1365,
+            "AnimationGraph": "models/npc/bolvan/citizen/animation/bolvan_n.vanmgrph",
+            "BodyGroups": 286424960337936,
             "BoneMergeTarget": null,
-            "CreateAttachments": false,
+            "CreateAttachments": true,
             "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
-            "Model": "models/npc/example/bolvan/bolvan.vmdl",
+            "Model": "models/npc/bolvan/bolvan_n.vmdl",
             "Morphs": {},
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
@@ -126,8 +126,14 @@
             "Parameters": {
               "bools": {},
               "ints": {},
-              "floats": {},
-              "vectors": {},
+              "floats": {
+                "move_y": 0,
+                "move_x": 0,
+                "duck": 0
+              },
+              "vectors": {
+                "aim_head": "0,0,0"
+              },
               "rotations": {}
             },
             "PlaybackRate": 1,
@@ -144,10 +150,79 @@
               "Blending": false
             },
             "Tint": "1,1,1,1",
-            "UseAnimGraph": false
+            "UseAnimGraph": true
           }
         ],
-        "Children": []
+        "Children": [
+          {
+            "__guid": "954dfdb2-1ede-4459-b153-bc4f79c3c428",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_r",
+            "Position": "-3.383934,-3.228987,3.949718",
+            "Rotation": "-0.6540402,-0.6664385,0.2554356,0.2506868",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "a1408b87-4ca0-4ff9-b710-d38f54ef7344",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "foot_l",
+            "Position": "-3.383939,3.229014,3.949736",
+            "Rotation": "-0.666439,-0.6540394,0.2506869,0.2554358",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "58066264-9246-480e-9bd1-5ea4ce3c4614",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "eyes",
+            "Position": "8.422145,0.124643,62.39399",
+            "Rotation": "0.1035662,0.04924734,0.009670794,0.9933556",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "85c50383-6795-4452-80d8-bc66193b4486",
+            "__version": 1,
+            "Flags": 8,
+            "Name": "Weapons_forward",
+            "Position": "-4.168904,-10.66726,26.67591",
+            "Rotation": "-0.5540386,0.3450517,-0.4748723,0.5903191",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          }
+        ]
       },
       {
         "__guid": "0af1a916-5fbd-4466-8dc8-25908601e953",
@@ -229,7 +304,7 @@
         "__version": 1,
         "Flags": 0,
         "Name": "Emotion",
-        "Position": "3.200627,0,57.86422",
+        "Position": "3.200627,0,57.32333",
         "Rotation": "0,0,0,1",
         "Scale": "1.082389,1.082389,1.082389",
         "Tags": "",
