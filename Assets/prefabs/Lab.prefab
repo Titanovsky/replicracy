@@ -48,14 +48,18 @@
           "go": "4a27e0c2-2bca-4973-957a-6c692d3dbf81",
           "component_type": "UseBox"
         },
-        "ButtonBuy": null,
         "ButtonHeal": {
           "_type": "component",
           "component_id": "05059839-08eb-409b-9324-edd3bed9d3d4",
           "go": "5392127c-460c-4162-8f22-954933b1ff32",
           "component_type": "UseBox"
         },
-        "ButtonReplicate": null,
+        "ButtonReplicate": {
+          "_type": "component",
+          "component_id": "50d02f78-d3c8-41d5-8338-82cd72db370f",
+          "go": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
+          "component_type": "UseBox"
+        },
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -1591,7 +1595,7 @@
                       {
                         "__type": "Sandbox.WorldPanel",
                         "__guid": "f249c8ee-72a3-437c-8299-68993a5c81fa",
-                        "__enabled": false,
+                        "__enabled": true,
                         "HorizontalAlign": "Center",
                         "InteractionRange": 1000,
                         "LookAtCamera": false,
@@ -1684,7 +1688,174 @@
                 "NetworkOrphaned": 0,
                 "OwnerTransfer": 1,
                 "Components": [],
-                "Children": []
+                "Children": [
+                  {
+                    "__guid": "ee44dba6-2cc2-4b2e-9aaa-5da1da9e1d99",
+                    "__version": 1,
+                    "Flags": 0,
+                    "Name": "Replicate",
+                    "Position": "-4.917705,0.1860836,-2.59482",
+                    "Rotation": "-0.1014446,-0.06464067,-0.05653139,0.9911279",
+                    "Scale": "0.7907672,0.2765422,0.1",
+                    "Tags": "",
+                    "Enabled": true,
+                    "NetworkMode": 2,
+                    "NetworkInterpolation": true,
+                    "NetworkOrphaned": 0,
+                    "OwnerTransfer": 1,
+                    "Components": [
+                      {
+                        "__type": "Sandbox.ModelRenderer",
+                        "__guid": "6bb68e8b-a43a-4ce0-92b8-4bdbebe133b7",
+                        "__enabled": true,
+                        "BodyGroups": 18446744073709551615,
+                        "CreateAttachments": false,
+                        "MaterialGroup": null,
+                        "MaterialOverride": null,
+                        "Model": "models/dev/box.vmdl",
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "RenderOptions": {
+                          "GameLayer": true,
+                          "OverlayLayer": false,
+                          "BloomLayer": false,
+                          "AfterUILayer": false
+                        },
+                        "RenderType": "On",
+                        "Tint": "0.48126,0.94884,0.22949,1"
+                      },
+                      {
+                        "__type": "Sandbox.BoxCollider",
+                        "__guid": "a4c147f7-5ec7-4741-80af-ab35c7fd5638",
+                        "__enabled": true,
+                        "Center": "0,0,0",
+                        "Friction": null,
+                        "IsTrigger": false,
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "OnObjectTriggerEnter": null,
+                        "OnObjectTriggerExit": null,
+                        "OnTriggerEnter": null,
+                        "OnTriggerExit": null,
+                        "Scale": "50,50,50",
+                        "Static": true,
+                        "Surface": null,
+                        "SurfaceVelocity": "0,0,0"
+                      },
+                      {
+                        "__type": "UseBox",
+                        "__guid": "50d02f78-d3c8-41d5-8338-82cd72db370f",
+                        "__enabled": true,
+                        "boxModel": null,
+                        "Delay": 0.75,
+                        "IsUsed": false,
+                        "OnCallback": null,
+                        "OnComponentDestroy": null,
+                        "OnComponentDisabled": null,
+                        "OnComponentEnabled": null,
+                        "OnComponentFixedUpdate": null,
+                        "OnComponentStart": null,
+                        "OnComponentUpdate": null,
+                        "outline": null,
+                        "UsableText": "\uD83D\uDC9A Replicate\n\n\uD83D\uDCC3 Start process of replication new your personal monster\n\n\uD83E\uDDEC 5"
+                      }
+                    ],
+                    "Children": [
+                      {
+                        "__guid": "1c50ff3e-63d0-4a58-bd8e-df0318a4706a",
+                        "__version": 1,
+                        "Flags": 0,
+                        "Name": "Decal",
+                        "Position": "0.04936263,1.335154,9.437088",
+                        "Rotation": "-0.3626228,0.3928621,0.5815831,0.6131282",
+                        "Scale": "3.177202,2.573389,5.610993",
+                        "Tags": "",
+                        "Enabled": true,
+                        "NetworkMode": 2,
+                        "NetworkInterpolation": true,
+                        "NetworkOrphaned": 0,
+                        "OwnerTransfer": 1,
+                        "Components": [
+                          {
+                            "__type": "Sandbox.Decal",
+                            "__guid": "93c1881c-a233-4934-aa6b-4e1f74b5a9ea",
+                            "__enabled": true,
+                            "__version": 1,
+                            "AttenuationAngle": 0,
+                            "ColorTexture": {
+                              "$compiler": "texture",
+                              "$source": "text",
+                              "data": {
+                                "Size": "137,128",
+                                "Margin": {
+                                  "Size": "0,0",
+                                  "EdgeSize": "0,0"
+                                },
+                                "TextFlags": "CenterHorizontally, CenterVertically, DontClip",
+                                "TextScope": {
+                                  "Text": "Replicate",
+                                  "TextColor": "1,1,1,1",
+                                  "FontName": "Patsy Sans",
+                                  "FontSize": 29.78,
+                                  "FontWeight": 400,
+                                  "FontItalic": false,
+                                  "LineHeight": 1,
+                                  "LetterSpacing": 0,
+                                  "WordSpacing": 0,
+                                  "Outline": {
+                                    "Enabled": true,
+                                    "Size": 3,
+                                    "Color": "0,0,0,1"
+                                  },
+                                  "Shadow": {
+                                    "Enabled": false,
+                                    "Size": 4,
+                                    "Color": "0,0,0,1",
+                                    "Offset": "4,4"
+                                  },
+                                  "OutlineUnder": {
+                                    "Enabled": false,
+                                    "Size": 4,
+                                    "Color": "0,1,0,1"
+                                  },
+                                  "ShadowUnder": {
+                                    "Enabled": false,
+                                    "Size": 4,
+                                    "Color": "0,0,0,1",
+                                    "Offset": "4,4"
+                                  }
+                                }
+                              },
+                              "compiled": "textures/generated/text/cf5a9d2b94387d08.vtex"
+                            },
+                            "ColorTint": "255,255,255,255",
+                            "NormalTexture": null,
+                            "OnComponentDestroy": null,
+                            "OnComponentDisabled": null,
+                            "OnComponentEnabled": null,
+                            "OnComponentFixedUpdate": null,
+                            "OnComponentStart": null,
+                            "OnComponentUpdate": null,
+                            "RMOTexture": null,
+                            "SequenceId": 0,
+                            "SheetSequence": false,
+                            "Size": "9.600007,34,34.70001",
+                            "SortLayer": 0
+                          }
+                        ],
+                        "Children": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "__guid": "cbcd2c54-1339-49ac-bcfc-fe6a6188ba28",
@@ -1724,7 +1895,7 @@
                     "__version": 1,
                     "Flags": 0,
                     "Name": "Heal",
-                    "Position": "-1.917069,25.38371,-5.75382",
+                    "Position": "-5.047556,-0.9043348,-2.458112",
                     "Rotation": "-0.1014446,-0.06464067,-0.05653139,0.9911279",
                     "Scale": "0.7907672,0.2765422,0.1",
                     "Tags": "",

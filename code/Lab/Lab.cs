@@ -6,7 +6,7 @@ public sealed class Lab : Component, IDisposable
     [Property, Feature("Props")] public GameObject Replicant { get; set; }
     [Property, Feature("Props")] public GameObject Spawn { get; set; }
 
-    //[Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
+    [Property, Feature("Buttons")] public UseBox ButtonReplicate { get; set; }
     //[Property, Feature("Buttons")] public UseBox ButtonBuy { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonHeal { get; set; }
     [Property, Feature("Buttons")] public UseBox ButtonBodyHead { get; set; }
@@ -17,7 +17,9 @@ public sealed class Lab : Component, IDisposable
 
     [Property, Feature("Prefabs")] public GameObject ReplicantPrefab { get; set; }
 
-    private int _b_head = 0;
+    private int _bHead = 0;
+    private int _bArm = 0;
+    private int _bLeg = 0;
 
     public void Dispose()
     {
@@ -61,15 +63,13 @@ public sealed class Lab : Component, IDisposable
 
     private void ChangeHead()
     { 
-        _b_head++;
-        if (_b_head > 3) _b_head = 0;
+        _bHead++;
+        if (_bHead > 3) _bHead = 0;
 
         var model = Replicant.GetComponent<ModelRenderer>();
         if (!model.IsValid()) return;
 
-        Log.Info("4");
-
-        model.SetBodyGroup("Attribute_Head", _b_head);
+        model.SetBodyGroup("Attribute_Head", _bHead);
 
         foreach (var replicant in Player.Instance.ReplicantController.Replicants)
         {
@@ -78,27 +78,72 @@ public sealed class Lab : Component, IDisposable
             var mdl = replicant.GetComponentInChildren<SkinnedModelRenderer>();
             if (!mdl.IsValid()) continue;
 
-            mdl.SetBodyGroup("Attribute_Head", _b_head);
+            mdl.SetBodyGroup("Attribute_Head", _bHead);
+        }
+    }
+
+    private void ChangeLeg()
+    {
+        _bLeg++;
+        if (_bLeg > 3) _bLeg = 0;
+
+        var model = Replicant.GetComponent<ModelRenderer>();
+        if (!model.IsValid()) return;
+
+        model.SetBodyGroup("Attribute_Feet", _bLeg);
+
+        foreach (var replicant in Player.Instance.ReplicantController.Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            var mdl = replicant.GetComponentInChildren<SkinnedModelRenderer>();
+            if (!mdl.IsValid()) continue;
+
+            mdl.SetBodyGroup("Attribute_Feet", _bLeg);
+        }
+    }
+
+    private void ChangeArm()
+    {
+        _bArm++;
+        if (_bArm > 3) _bArm = 0;
+
+        var model = Replicant.GetComponent<ModelRenderer>();
+        if (!model.IsValid()) return;
+
+        model.SetBodyGroup("Attribute_Arm", _bArm);
+
+        foreach (var replicant in Player.Instance.ReplicantController.Replicants)
+        {
+            if (!replicant.IsValid()) continue;
+
+            var mdl = replicant.GetComponentInChildren<SkinnedModelRenderer>();
+            if (!mdl.IsValid()) continue;
+
+            mdl.SetBodyGroup("Attribute_Arm", _bArm);
         }
     }
 
     private void Subscribe()
     {
-        //ButtonReplicate.OnCallback += BuyReplicate;
+        ButtonReplicate.OnCallback += BuyReplicate;
         ButtonHeal.OnCallback += BuyHeal;
         ButtonBodyHead.OnCallback += ChangeHead;
-        //start work
+        ButtonBodyRightLeg.OnCallback += ChangeLeg;
+        ButtonBodyLeftLeg.OnCallback += ChangeLeg;
+        ButtonBodyRightHand.OnCallback += ChangeArm;
+        ButtonBodyLeftHand.OnCallback += ChangeArm;
     }
 
     private void Unscribe()
     {
-        //ButtonReplicate.OnCallback -= BuyReplicate;
+        ButtonReplicate.OnCallback -= BuyReplicate;
         ButtonHeal.OnCallback -= BuyHeal;
     }
 
     private bool CheckGameObjects()
     {
-        //var a = ButtonReplicate.IsValid();
+        var a = ButtonReplicate.IsValid();
         var b = ButtonHeal.IsValid();
         var d = ReplicantPrefab.IsValid();
         var bh = ButtonBodyHead.IsValid();
@@ -107,7 +152,7 @@ public sealed class Lab : Component, IDisposable
         var bll = ButtonBodyLeftLeg.IsValid();
         var brl = ButtonBodyRightLeg.IsValid();
 
-        return (b && d && bh && blh && brh && bll && brl);
+        return (a && b && d && bh && blh && brh && bll && brl);
     }
 
     private void BuyReplicate()
