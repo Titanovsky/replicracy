@@ -9,6 +9,8 @@ public class MoveToPoint : MovableState
 
     public override void Enter()
     {
+        if (Replicant.GetTargetPoint().IsNaN) return;
+
         if (Replicant.GetTargetPoint() == Vector3.Zero)
         {
             Replicant.replicantFSM.SetState<Idle>();
