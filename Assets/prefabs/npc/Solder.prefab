@@ -59,7 +59,8 @@
         },
         "SearchRadius": 800,
         "ShootDelay": 0.2,
-        "ShootSound": null
+        "ShootSound": "sounds/npc/soldier/shoting.sound",
+        "TakeDamageSound": "sounds/npc/soldier/hurt.sound"
       },
       {
         "__type": "Sandbox.BoxCollider",
@@ -193,7 +194,7 @@
             "Flags": 8,
             "Name": "foot_r",
             "Position": "0.1611951,-2.633639,4.452428",
-            "Rotation": "-0.6985106,-0.5987151,0.2660924,0.2877812",
+            "Rotation": "-0.6985106,-0.5987151,0.2660923,0.2877812",
             "Scale": "1,1,1",
             "Tags": "",
             "Enabled": true,
@@ -226,9 +227,9 @@
             "__version": 1,
             "Flags": 8,
             "Name": "eyes",
-            "Position": "8.810841,0.01110238,61.40663",
-            "Rotation": "0.09487922,-0.01249492,0.009901315,0.9953611",
-            "Scale": "0.9999974,0.9999974,0.9999974",
+            "Position": "8.811291,0.01109708,61.40613",
+            "Rotation": "0.09487966,-0.01246649,0.009898259,0.9953615",
+            "Scale": "0.999998,0.999998,0.999998",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,

@@ -25,7 +25,7 @@ public sealed class PickupDna : PickupBase
         if (!ply.IsValid()) return;
 
         ply.Dna += Dna;
-        ply.CollectDna += Dna;
+        ply.CollectDna += 1;
         ply.HeaderLevel.Show();
 
         PlaySound();

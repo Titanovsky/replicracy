@@ -162,10 +162,12 @@ public sealed class Vampire : EnemyBase
         WorldRotation = rotation;
     }
 
+    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+        Sound.Play(TakeDamageSound, WorldPosition);
 
         AllowMoving();
 

@@ -183,10 +183,12 @@ public sealed class Demon : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
+    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+        Sound.Play(TakeDamageSound, WorldPosition);
 
         if (Health <= 0)
             Die();

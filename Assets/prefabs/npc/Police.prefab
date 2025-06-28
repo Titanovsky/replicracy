@@ -59,7 +59,8 @@
         },
         "SearchRadius": 500,
         "ShootDelay": 0.35,
-        "ShootSound": null
+        "ShootSound": "sounds/npc/police/shoting.sound",
+        "TakeDamageSound": "sounds/npc/police/hurt.sound"
       },
       {
         "__type": "Sandbox.BoxCollider",
@@ -226,9 +227,9 @@
             "__version": 1,
             "Flags": 8,
             "Name": "eyes",
-            "Position": "8.811326,0.0110998,61.40607",
-            "Rotation": "0.09487955,-0.01246294,0.009898053,0.9953616",
-            "Scale": "0.9999973,0.9999973,0.9999973",
+            "Position": "8.811127,0.01109861,61.4063",
+            "Rotation": "0.09487944,-0.01247624,0.009899289,0.9953614",
+            "Scale": "0.9999976,0.9999976,0.9999976",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
