@@ -34,21 +34,8 @@
 						target_file = "models/npc/bolvan/prefabs/cultist.vmdl_prefab"
 					},
 					{
-						_class = "RenderMeshFile"
-						name = "Demon"
-						filename = "models/npc/bolvan/Citizen/Demon/Demon.fbx"
-						import_translation = [ 0.0, 0.0, 0.0 ]
-						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 1.0
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						parent_bone = ""
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
+						_class = "Prefab"
+						target_file = "models/npc/bolvan/prefabs/demon.vmdl_prefab"
 					},
 				]
 			},
@@ -69,16 +56,7 @@
 			},
 			{
 				_class = "BoneMarkupList"
-				children = 
-				[
-					{
-						_class = "BoneMarkup"
-						target_bone = ""
-						ignore_Translation = false
-						ignore_rotation = false
-						do_not_discard = false
-					},
-				]
+				disabled = true
 				bone_cull_type = "None"
 			},
 			{
@@ -93,7 +71,7 @@
 						[
 							{
 								bone = "DEF_shoulder_R"
-								weight = 1.0
+								weight = 0.0
 							},
 							{
 								bone = "DEF_upper_arm_L"
@@ -101,6 +79,10 @@
 							},
 							{
 								bone = "DEF_upper_arm_R"
+								weight = 1.0
+							},
+							{
+								bone = "DEF_upper_arm_R_001"
 								weight = 1.0
 							},
 							{
@@ -335,19 +317,54 @@
 							},
 							{
 								from = "demon_armor.vmat"
-								to = "models/npc/bolvan/citizen/materials/cultist_outfit_basecolor.vmat"
+								to = "models/npc/bolvan/citizen/materials/demon_outfit_v2.vmat"
 							},
 							{
 								from = "demon.002.vmat"
-								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_attributes_basecolor.vmat"
+							},
+							{
+								from = "demon_trousers.vmat"
+								to = "models/npc/bolvan/citizen/materials/demon_outfit_v2.vmat"
+							},
+							{
+								from = "demon_mantie.001.vmat"
+								to = "models/npc/bolvan/citizen/materials/demon_outfit_v2.vmat"
+							},
+							{
+								from = "demon_antie.002.vmat"
+								to = "models/npc/bolvan/citizen/materials/demon_outfit_v2.vmat"
 							},
 							{
 								from = "demon.001.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_attributes_basecolor.vmat"
+							},
+							{
+								from = "demon.003.vmat"
 								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
 							},
 						]
 						use_global_default = false
 						global_default_material = ""
+					},
+					{
+						_class = "MaterialGroup"
+						name = "Demon"
+						remaps = 
+						[
+							{
+								from = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_skin_base.vmat"
+							},
+							{
+								from = "models/npc/bolvan/citizen/materials/dem_attributes_basecolor.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_attributes_basecolor.vmat"
+							},
+							{
+								from = "demon.003.vmat"
+								to = "models/npc/bolvan/citizen/materials/dem_attributes_basecolor.vmat"
+							},
+						]
 					},
 				]
 			},
@@ -977,10 +994,10 @@
 					},
 					{
 						_class = "Attachment"
-						name = "hand_l"
-						parent_bone = "hand_ik_L"
+						name = "Weapons_forward"
+						parent_bone = "DEF_hand_R"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
-						relative_angles = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ -0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -2187,191 +2204,6 @@
 					},
 					{
 						_class = "AnimFile"
-						name = "SMG_2H_Attack_01"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Uniform"
-							},
-						]
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = true
-						disable_compression = false
-						disable_interpolation = false
-						enable_scale = false
-						source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
-						start_frame = 0
-						end_frame = 20
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "SMG_2H_Deploy_01"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Uniform"
-							},
-						]
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = true
-						disable_compression = false
-						disable_interpolation = false
-						enable_scale = false
-						source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
-						start_frame = 21
-						end_frame = 60
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "SMG_2H_Pose_Standing_01"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Uniform"
-							},
-						]
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = true
-						disable_compression = false
-						disable_interpolation = false
-						enable_scale = false
-						source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
-						start_frame = 61
-						end_frame = 87
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "SMG_2H_Pose_Standing_Idle_01"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Uniform"
-							},
-						]
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = true
-						disable_compression = false
-						disable_interpolation = false
-						enable_scale = false
-						source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
-						start_frame = 88
-						end_frame = 118
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "SMG_2H_Reload_01"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Uniform"
-							},
-						]
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = true
-						disable_compression = false
-						disable_interpolation = false
-						enable_scale = false
-						source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
-						start_frame = 119
-						end_frame = 170
-						framerate = -1.0
-						take = 0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
 						name = "idle_delta"
 						children = 
 						[
@@ -2400,6 +2232,757 @@
 						take = 0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "PistolBase"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "UnoshelenecAttack"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "idle"
+								frame = 0
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+						start_frame = 562
+						end_frame = 622
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "Folder"
+						name = "Melee"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "Melee_Punch_AimMatrix_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 334
+								end_frame = 344
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Punch_Attack_Left"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "Melee_Punch_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 345
+								end_frame = 375
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Punch_Attack_Right"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "Melee_Punch_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 376
+								end_frame = 406
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Punch_Pose_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 407
+								end_frame = 437
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Punch_Pose_Standing_Block_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 438
+								end_frame = 468
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Weapons_2H_Attack_01"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "Melee_Weapons_2H_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 469
+								end_frame = 499
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Weapons_2H_Pose_Crouching_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 500
+								end_frame = 530
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Melee_Weapons_2H_Pose_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+								start_frame = 531
+								end_frame = 561
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Smg_2H"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "SMG_2H_Attack_01"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "SMG_2H_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 0
+								end_frame = 31
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "SMG_2H_Pose_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 32
+								end_frame = 62
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Shotgun_2H_Attack_01"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "Shotgun_2H_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 63
+								end_frame = 93
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Shotgun_2H_Pose_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 94
+								end_frame = 124
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Sniper_2H_Attack_01"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "Sniper_2H_Pose_Standing_01"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 125
+								end_frame = 155
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "Sniper_2H_Pose_Standing_01"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = true
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/npc/bolvan/citizen/animation/citizen@smg_2h_.fbx"
+								start_frame = 156
+								end_frame = 186
+								framerate = -1.0
+								take = 3
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Pistol"
+						children = 
+						[
+							{
+								_class = "Folder"
+								name = "Pistol_RH"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_AimMatrix_Standing_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 163
+										end_frame = 173
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_Attack_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 174
+										end_frame = 199
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_Attack_02"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "Pistol_RH_Pose_Standing_01"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 200
+										end_frame = 225
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_Deploy_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 226
+										end_frame = 251
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_Pose_Standing_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 252
+										end_frame = 282
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_RH_Reload_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 283
+										end_frame = 333
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+								]
+							},
+							{
+								_class = "Folder"
+								name = "Pistol_2H"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_AimMatrix_Standing_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = -1
+										end_frame = 12
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_Attack_01"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "Pistol_2H_Pose_Standing_01"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 13
+										end_frame = 28
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_Attack_02"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 29
+										end_frame = 54
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_Deploy_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 55
+										end_frame = 80
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_Pose_Standing_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 81
+										end_frame = 111
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "Pistol_2H_Reload_01"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/npc/bolvan/Citizen/animation/Pistol.fbx"
+										start_frame = 112
+										end_frame = 162
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+								]
+							},
+						]
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -2421,35 +3004,7 @@
 								},
 								{
 									name = "DEF_spine_005"
-									weight = 1.0
-								},
-								{
-									name = "DEF_spine_004"
-									weight = 0.0
-								},
-								{
-									name = "DEF_hand_L"
-									weight = 0.0
-								},
-								{
-									name = "DEF_hand_R"
-									weight = 0.0
-								},
-								{
-									name = "DEF_upper_arm_L"
-									weight = 0.0
-								},
-								{
-									name = "DEF_upper_arm_R"
-									weight = 0.0
-								},
-								{
-									name = "DEF_upper_arm_L_001"
-									weight = 0.0
-								},
-								{
-									name = "DEF_upper_arm_R_001"
-									weight = 0.0
+									weight = 0.3
 								},
 							]
 						}
@@ -2487,6 +3042,7 @@
 								bone = "DEF_forearm_L"
 							},
 						]
+						disabled = true
 						m_bDoBonesOrientAlongPositiveX = true
 						"m_DefaultSolverSettings.m_nNumIterations" = 6
 						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"

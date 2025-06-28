@@ -276,6 +276,60 @@
 							{
 								_class = "Folder"
 								name = "Robot"
+								children = 
+								[
+									{
+										_class = "RenderMeshFile"
+										name = "Rob_Arms_Lamp"
+										filename = "models/npc/replicator/model/attributes/Robot/Arms_Lamp.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Rob_Head_Lamp"
+										filename = "models/npc/replicator/model/attributes/Robot/Head_Lamp.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+									{
+										_class = "RenderMeshFile"
+										name = "Rob_Legs_Lamp"
+										filename = "models/npc/replicator/model/attributes/Robot/Legs_Lamp.fbx"
+										import_translation = [ 0.0, 0.0, 0.0 ]
+										import_rotation = [ 0.0, 0.0, 0.0 ]
+										import_scale = 1.0
+										align_origin_x_type = "None"
+										align_origin_y_type = "None"
+										align_origin_z_type = "None"
+										parent_bone = ""
+										import_filter = 
+										{
+											exclude_by_default = false
+											exception_list = [  ]
+										}
+									},
+								]
 							},
 						]
 					},
@@ -440,6 +494,13 @@
 							},
 							{
 								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Rob_Head_Lamp",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
 								meshes = [  ]
 							},
 						]
@@ -492,6 +553,13 @@
 							},
 							{
 								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Rob_Arms_Lamp",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
 								meshes = [  ]
 							},
 						]
@@ -514,6 +582,13 @@
 								meshes = 
 								[
 									"Sea_Feet_Fins",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Rob_Legs_Lamp",
 								]
 							},
 							{
@@ -559,7 +634,7 @@
 						[
 							{
 								from = "material.005.vmat"
-								to = "models/npc/replicator/material/base_colarv2.vmat"
+								to = "models/npc/replicator/material/base_colar.vmat"
 							},
 							{
 								from = "demon_attributes.vmat"
@@ -568,6 +643,18 @@
 							{
 								from = "sea_attributes.vmat"
 								to = "models/npc/replicator/material/anamy_sea_attributes.vmat"
+							},
+							{
+								from = "material.vmat"
+								to = "models/npc/replicator/material/robo_replicant_attributes.vmat"
+							},
+							{
+								from = "material.004.vmat"
+								to = "models/npc/replicator/material/robo_replicant_attributes.vmat"
+							},
+							{
+								from = "material.003.vmat"
+								to = "models/npc/replicator/material/robo_replicant_attributes.vmat"
 							},
 						]
 						use_global_default = false
@@ -2161,8 +2248,8 @@
 						disable_interpolation = false
 						enable_scale = false
 						source_filename = "models/npc/replicator/animation/replicator.fbx"
-						start_frame = 710
-						end_frame = 713
+						start_frame = 670
+						end_frame = 674
 						framerate = -1.0
 						take = 0
 						reverse = false
@@ -2379,8 +2466,8 @@
 						_class = "Attachment"
 						name = "Melee_forward"
 						parent_bone = "hand_R"
-						relative_origin = [ -11.47715, 85.667503, -27.534491 ]
-						relative_angles = [ 15.703994, 67.51532, -16.889179 ]
+						relative_origin = [ -11.47716, 85.667473, -27.534491 ]
+						relative_angles = [ 30.56975, 67.651794, -16.662275 ]
 						weight = 1.0
 						ignore_rotation = false
 					},

@@ -271,6 +271,13 @@
 							},
 							{
 								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"Demon_hand",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
 								meshes = [  ]
 							},
 						]
@@ -413,6 +420,7 @@
 								meshes = 
 								[
 									"Demon",
+									"Demon_hand",
 								]
 							},
 							{
