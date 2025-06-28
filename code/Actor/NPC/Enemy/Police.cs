@@ -76,6 +76,7 @@ public class Police : EnemyBase
 
     private void SearchTarget()
     {
+        if (!GameObject.IsValid()) return;
         if (CurrentState != PoliceState.Idle) return;
 
         searchSphere = new Sphere(WorldPosition, SearchRadius);
@@ -155,7 +156,7 @@ public class Police : EnemyBase
 
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
-        projectile.Damage = BulletDamage;
+        projectile.Damage = 1;
         projectile.Direction = tr.Direction;
         projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = AttackPosition.Parent;
