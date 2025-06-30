@@ -22,6 +22,7 @@ public sealed class ColorGameManager : Component
     private int[] _playerAnswers;
 
     private bool _isPlaying = false;
+    private bool _isRoundStarted = false;
     private bool _isFinished  = false;
 
     [Property] private float _currentRound { get; set; } = 0;
@@ -55,7 +56,7 @@ public sealed class ColorGameManager : Component
 
     private void CheckWaitingAnswerTimer()
     {
-        if (!_isPlaying) return;
+        if (!_isRoundStarted) return;
         if (!_waitingAnswerTimer) return;
 
         FailedRound();
@@ -63,9 +64,8 @@ public sealed class ColorGameManager : Component
 
     private void CheckAnsers()
     {
-        if (!_isPlaying) return;
+        if (!_isRoundStarted) return;
         if (_currentAnswer != _answers.Length) return;
-
 
         for (int i = 0; i < _answers.Length; i++)
         {
@@ -80,7 +80,7 @@ public sealed class ColorGameManager : Component
         else
         {
             Sound.Play(SuccesRound);
-            NextRound();
+            _= NextRound();
         }
     }
 
@@ -88,11 +88,9 @@ public sealed class ColorGameManager : Component
     {
         Sound.Play(GameStarted);
 
-        _waitingAnswerTimer = 10000f;
-
         _isPlaying = true;
 
-        NextRound();
+        _ = NextRound();
     }
 
     private void CheckButtonCallback(int answer)
@@ -113,25 +111,30 @@ public sealed class ColorGameManager : Component
         ResetWaitingTimer();
     }
 
-    private void NextRound()
+    private async Task NextRound()
     {
+        _isRoundStarted = false;
+
         _currentRound++;
         _currentAnswer = 0;
-        _waitingAnswerTimer = 10000f;
 
         if (_currentRound > 1)
             _countRoundAnswer++;
 
-        GenerateRoundAnsers();
+        EnabledButtons(false);
+        GenerateRoundAnswers();
 
         _playerAnswers = new int[_answers.Length];
 
-        EnabledButtons(false);
+        await ShowColor();
 
-        _ = ShowColor();
+        EnabledButtons(true);
+        ResetWaitingTimer();
+
+        _isRoundStarted = true;
     }
 
-    private void GenerateRoundAnsers()
+    private void GenerateRoundAnswers()
     {
         _answers = null;
 
@@ -155,9 +158,6 @@ public sealed class ColorGameManager : Component
 
             await Task.DelaySeconds(StartDelayChangeColor + 1);
         }
-
-        EnabledButtons(true);
-        ResetWaitingTimer();
     }
 
     private void FailedRound()
@@ -180,7 +180,7 @@ public sealed class ColorGameManager : Component
 
     private void GameStop()
     {
-        _isPlaying = false;
+        _isRoundStarted = false;
         _currentRound = 0;
         _currentAnswer = 0;
         _countRoundAnswer = StartCountAnswers;
