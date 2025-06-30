@@ -7,14 +7,20 @@ public sealed class Replicant : Component, Component.IDamageable
     [Property][Category("Movement")] public float RotationSpeed { get; set; } = 2.5f;
     [Property][Category("Movement")] public float MovementSpeed { get; set; } = 140;
     [Property][Category("Movement")] public float MaxDistanceToPlayer { get; set; } = 2000;
+
     [Property][Category("Attack")] public float AttackDelay { get; set; } = 1f;
     [Property][Category("Attack")] public int AttackDamage { get; set; } = 5;
+
     [Property][Category("Health")] public float AttackDistance { get; set; } = 40f;
     [Property][Category("Health")] public float Health { get; set; } = 20;
     [Property][Category("Health")] public float MaxHealth { get; set; } = 20;
+
     [Property][Category("Other")] GameObject eye { get; set; }
     [Property][Category("Other")] public SkinnedModelRenderer Renderer { get; set; }
     [Property][Category("Other")] public ReplicantHealthBar HealthBar { get; set; }
+
+    [Property][Category("Sounds")] public SoundEvent TakeDamageSound { get; set; }
+    [Property][Category("Sounds")] public List<SoundEvent> RandomIdleSounds { get; set; }
 
     [RequireComponent] public NavMeshAgent Agent { get; set; }
 
@@ -56,7 +62,6 @@ public sealed class Replicant : Component, Component.IDamageable
         replicantFSM.CurrentState?.Update();
     }
 
-    [Property] public SoundEvent TakeDamageSound;
     public void TakeDamage(in DamageInfo dmgInfo)
     {
         var damage = dmgInfo.Damage;
