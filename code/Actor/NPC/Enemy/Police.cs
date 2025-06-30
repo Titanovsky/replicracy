@@ -1,4 +1,5 @@
 using Sandbox;
+using static System.Net.Mime.MediaTypeNames;
 
 public class Police : EnemyBase
 {
@@ -9,9 +10,11 @@ public class Police : EnemyBase
     [Property] protected float LostRadius { get; set; } = 700f;
     [Property] protected float MovingRadius { get; set; } = 150f;
     [Property] protected float MoveDelay { get; set; } = 10f;
+    [Property] protected int DNA { get; set; } = 1;
+    [Property] public SoundEvent TakeDamageSound { get; set; }
 
     [Property][Category("Weapon")] protected float BulletDamage { get; set; } = 3f;
-    [Property][Category("Weapon")] protected float MagazineAmount { get; set; } = 1f;
+    [Property][Category("Weapon")] protected int MagazineAmount { get; set; } = 1;
     [Property][Category("Weapon")] protected float ShootDelay { get; set; } = 0.25f;
     [Property][Category("Weapon")] protected float ReloadDelay { get; set; } = 5f;
     [Property][Category("Weapon")] protected SoundEvent ShootSound { get; set; }
@@ -31,10 +34,15 @@ public class Police : EnemyBase
     private GameObject _attackTarget;
     private GameObject _lastAttacker;
 
-    private Sphere searchSphere;
-    private SceneTraceResult tr;
+    private Sphere _searchSphere;
+    private SceneTraceResult _tr;
 
-    private int shootCount = 0;
+    private int _shootCount = 0;
+
+    private float _delayBlockDamage = 0.3f;
+    private Color32 _white = Color.White;
+    private Color32 _red = Color.Red;
+    private TimeUntil _delayBlockDamageTimer;
 
     public enum PoliceState
     {
@@ -59,6 +67,8 @@ public class Police : EnemyBase
 
         CheckDistanceToTarget();
         SearchTarget();
+
+        ResetColor();
     }
 
     private void Moving()
@@ -79,14 +89,15 @@ public class Police : EnemyBase
         if (!GameObject.IsValid()) return;
         if (CurrentState != PoliceState.Idle) return;
 
-        searchSphere = new Sphere(WorldPosition, SearchRadius);
+        _searchSphere = new Sphere(WorldPosition, SearchRadius);
 
-        var objectInSphere = Scene.FindInPhysics(searchSphere);
+        var objectInSphere = Scene.FindInPhysics(_searchSphere);
 
         foreach (var item in objectInSphere)
         {
             if (!IsFriend(item))
-                SetTarget(item);
+                if (IsTargetVisible(item, SearchRadius))
+                    SetTarget(item);
         }
     }
 
@@ -104,6 +115,8 @@ public class Police : EnemyBase
         if (CurrentState != PoliceState.Attack) return;
 
         if (!_delayReloadTimer) return;
+
+        if (!IsTargetVisible(_attackTarget, LostRadius)) return;
 
         Shoot();
     }
@@ -139,43 +152,42 @@ public class Police : EnemyBase
     {
         if (!_delayShootTimer) return;
 
-        shootCount++;
+        _shootCount++;
 
         var origin = AttackPosition.WorldPosition;
-        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
-        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
+        var upAttackPosition = _attackTarget.WorldPosition.WithZ(30f);
+        Vector3 direction = (upAttackPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
 
-        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
-            .WithoutTags("enemy")
             .Run();
 
-        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
+        var shootDir = (_tr.Hit ? (_tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
         var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
 
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
-        projectile.Damage = 1;
-        projectile.Direction = tr.Direction;
+        projectile.Direction = _tr.Direction;
         projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = AttackPosition.Parent;
 
         Sound.Play(ShootSound, AttackPosition.WorldPosition);
 
-        if (tr.Hit)
+        if (_tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
+            var damagable = _tr.GameObject.GetComponentInChildren<IDamageable>();
 
             if (damagable is not null)
             {
-                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+                damagable.OnDamage(new(BulletDamage, projectile.Owner, projectile.Weapon));
             }
         }
 
-        if (shootCount >= MagazineAmount)
+        if (_shootCount >= MagazineAmount)
         {
-            shootCount = 0;
+            _shootCount = 0;
 
             ResetReloadTimer();
         }
@@ -190,12 +202,17 @@ public class Police : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
-    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+
+        Renderer.Tint = _red;
+        ResetBlockDamageTimer();
+
         Sound.Play(TakeDamageSound, WorldPosition);
+
+        SetTarget(dmgInfo.Attacker);
 
         if (Health <= 0)
             Die();
@@ -212,10 +229,37 @@ public class Police : EnemyBase
             var ply = Player.Instance;
 
             ply.Frags += 1;
+            ply.Dna += DNA;
             ply.HeaderLevel.Show();
         }
 
         DestroyGameObject();
+    }
+
+    private void ResetColor()
+    {
+        if (!_delayBlockDamageTimer) return;
+
+        Renderer.Tint = _white;
+    }
+
+    private bool IsTargetVisible(GameObject target, float visibleRadius)
+    {
+        if (!target.IsValid()) return false;
+
+        var origin = AttackPosition.WorldPosition;
+        var upTargetPosition = target.WorldPosition.WithZ(30f);
+        Vector3 direction = (upTargetPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
+
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), visibleRadius)
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (_tr.GameObject == target || !IsFriend(_tr.GameObject))
+            return true;
+
+        return false;
     }
 
     public override bool IsFriend(GameObject target)
@@ -237,6 +281,8 @@ public class Police : EnemyBase
 
     public void SetIdleState()
     {
+        _attackTarget = null;
+
         CurrentState = PoliceState.Idle;
         EmotionsController.SetEmotion(EmotionsController.Emotions.Idle);
 
@@ -261,4 +307,5 @@ public class Police : EnemyBase
     private void ResetMovingTimer() => _delayMovingTimer = MoveDelay;
     private void ResetShootTimer() => _delayShootTimer = ShootDelay;
     private void ResetReloadTimer() => _delayReloadTimer = ReloadDelay;
+    private void ResetBlockDamageTimer() => _delayBlockDamageTimer = _delayBlockDamage;
 }

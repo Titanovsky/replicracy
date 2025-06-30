@@ -1,5 +1,6 @@
 using Sandbox;
 using System;
+using static Sandbox.PhysicsContact;
 
 public sealed class Vampire : EnemyBase
 {
@@ -10,7 +11,9 @@ public sealed class Vampire : EnemyBase
     [Property] public float MovingRadius { get; set; } = 150f;
     [Property] public float AttackDamage { get; set; } = 10f;
     [Property] public float AttackDelay { get; set; } = 6f;
+    [Property] public int DNA { get; set; } = 1;
     [Property] public SoundEvent AttackSound { get; set; }
+    [Property] public SoundEvent TakeDamageSound { get; set; }
     [Property] public GameObject AttackPosition { get; set; }
     [Property] public GameObject ProjectilePrefab { get; set; }
 
@@ -20,11 +23,16 @@ public sealed class Vampire : EnemyBase
     private RealTimeUntil _delayMovingTimer;
     private RealTimeUntil _delayAttackTimer;
 
-    private GameObject _attackTarget;
+    [Property] private GameObject _attackTarget;
     private GameObject _lastAttacker;
 
-    Sphere searchSphere;
-    SceneTraceResult tr;
+    private Sphere _searchSphere;
+    private SceneTraceResult _tr;
+
+    private float _delayBlockDamage = 0.3f;
+    private Color32 _white = Color.White;
+    private Color32 _red = Color.Red;
+    private TimeUntil _delayBlockDamageTimer;
 
     public enum VampireState
     {
@@ -48,6 +56,8 @@ public sealed class Vampire : EnemyBase
 
         RotateToTarget();
         Attack();
+
+        ResetColor();
     }
 
     private void Moving()
@@ -79,6 +89,8 @@ public sealed class Vampire : EnemyBase
 
         if (distance > LostRadius)
         {
+            _attackTarget = null;
+
             CurrentState = VampireState.Idle;
         }
     }
@@ -97,41 +109,40 @@ public sealed class Vampire : EnemyBase
     private void Attack()
     {
         if (CurrentState != VampireState.Attack) return;
-        
+
         if (!_delayAttackTimer) return;
         ResetAttackTimer();
 
+        if (!IsTargetVisible(_attackTarget, LostRadius)) return;
 
         var origin = AttackPosition.WorldPosition;
-        var endPos = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
+        var upAttackPosition = _attackTarget.WorldPosition.WithZ(30f);
+        Vector3 direction = (upAttackPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
 
-        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
-        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
-
-        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
             .Run();
 
-        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
+        var shootDir = (_tr.Hit ? (_tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
         var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
 
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
-        projectile.Damage = AttackDamage;
-        projectile.Direction = tr.Direction;
-        projectile.Owner = Player.Instance.GameObject;
+        projectile.Direction = _tr.Direction;
+        projectile.Owner = GameObject;
         projectile.Weapon = AttackPosition.Parent;
 
         Sound.Play(AttackSound, AttackPosition.WorldPosition);
 
-        if (tr.Hit)
+        if (_tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
+            var damagable = _tr.GameObject.GetComponentInChildren<IDamageable>();
 
             if (damagable is not null)
             {
-                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+                damagable.OnDamage(new(AttackDamage, projectile.Owner, projectile.Weapon));
             }
         }
     }
@@ -140,14 +151,15 @@ public sealed class Vampire : EnemyBase
     {
         if (CurrentState != VampireState.Idle) return;
 
-        searchSphere = new Sphere(WorldPosition, SearchRadius);
+        _searchSphere = new Sphere(WorldPosition, SearchRadius);
 
-        var objectInSphere = Scene.FindInPhysics(searchSphere);
+        var objectInSphere = Scene.FindInPhysics(_searchSphere);
 
         foreach (var item in objectInSphere)
         {
             if (!IsFriend(item))
-                SetTarget(item);
+                if (IsTargetVisible(item, SearchRadius))
+                    SetTarget(item);
         }
     }
 
@@ -162,12 +174,17 @@ public sealed class Vampire : EnemyBase
         WorldRotation = rotation;
     }
 
-    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+
+        Renderer.Tint = _red;
+        ResetBlockDamageTimer();
+
         Sound.Play(TakeDamageSound, WorldPosition);
+
+        SetTarget(dmgInfo.Attacker);
 
         AllowMoving();
 
@@ -182,10 +199,37 @@ public sealed class Vampire : EnemyBase
             var ply = Player.Instance;
 
             ply.Frags += 1;
+            ply.Dna += DNA;
             ply.HeaderLevel.Show();
         }
 
         DestroyGameObject();
+    }
+
+    private void ResetColor()
+    {
+        if (!_delayBlockDamageTimer) return;
+
+        Renderer.Tint = _white;
+    }
+
+    private bool IsTargetVisible(GameObject target, float visibleRadius)
+    {
+        if (!target.IsValid()) return false;
+
+        var origin = AttackPosition.WorldPosition;
+        var upTargetPosition = target.WorldPosition.WithZ(30f);
+        Vector3 direction = (upTargetPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
+
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), visibleRadius)
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (_tr.GameObject == target || !IsFriend(_tr.GameObject))
+            return true;
+
+        return false;
     }
 
     private Vector3 GetRandomPoint()
@@ -216,13 +260,13 @@ public sealed class Vampire : EnemyBase
     {
         if (target.Tags.Has("player"))
             return false;
-        
+
         if (target.Tags.Has("replicant"))
             return false;
-        
+
         if (target.Tags.Has("villager"))
             return false;
-        
+
         if (target.Tags.Has("allien"))
             return false;
 
@@ -238,4 +282,5 @@ public sealed class Vampire : EnemyBase
     private void AllowMoving() => _delayMovingTimer = 0;
     private void ResetMovingTimer() => _delayMovingTimer = MovingDelay;
     private void ResetAttackTimer() => _delayAttackTimer = AttackDelay;
+    private void ResetBlockDamageTimer() => _delayBlockDamageTimer = _delayBlockDamage;
 }

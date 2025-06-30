@@ -3,12 +3,12 @@
     "__guid": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
     "__version": 1,
     "Flags": 0,
-    "Name": "Zombie",
+    "Name": "zombie",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
     "Tags": "enemy,undead,npc",
-    "Enabled": false,
+    "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
@@ -41,18 +41,13 @@
         "__guid": "e1ac7854-0f07-478a-ab05-766674aa78e9",
         "__enabled": true,
         "AttackDamage": 3,
-        "AttackDelay": 5,
+        "AttackDelay": 1,
         "AttackDistance": 30,
         "AttackPosition": {
           "_type": "gameobject",
           "go": "0806e1d2-b1ec-4c63-a969-43d6d3843155"
         },
-        "EmotionsController": {
-          "_type": "component",
-          "component_id": "e540f417-3715-496c-a91b-7b5f33dfd133",
-          "go": "f26d1d3f-ce70-475d-8e91-d1d833342e5a",
-          "component_type": "EmotionsController"
-        },
+        "DNA": 1,
         "Health": 50,
         "LostRadius": 700,
         "MoveDelay": 10,
@@ -75,7 +70,8 @@
           "go": "ff5b001a-ff62-4761-87f2-f62edb98b2d9",
           "component_type": "SkinnedModelRenderer"
         },
-        "SearchRadius": 500
+        "SearchRadius": 500,
+        "TakeDamageSound": null
       },
       {
         "__type": "EmotionsController",
@@ -290,7 +286,26 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,

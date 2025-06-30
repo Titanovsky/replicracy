@@ -2,13 +2,14 @@ using Sandbox;
 
 public sealed class Zombie : EnemyBase
 {
-    [Property] public EmotionsController EmotionsController { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
     [Property] public NavMeshAgent NavMeshAgent { get; set; }
     [Property] public float SearchRadius { get; set; } = 500f;
     [Property] public float LostRadius { get; set; } = 700f;
     [Property] public float MovingStartPosRadius { get; set; } = 150f;
     [Property] public float MoveDelay { get; set; } = 10f;
+    [Property] public int DNA { get; set; } = 1;
+    [Property] public SoundEvent TakeDamageSound { get; set; }
 
     [Property][Category("Weapon")] public GameObject AttackPosition { get; set; }
     [Property][Category("Weapon")] public float AttackDamage { get; set; } = 3f;
@@ -26,9 +27,13 @@ public sealed class Zombie : EnemyBase
     private GameObject _attackTarget;
     private GameObject _lastAttacker;
 
-    private Sphere searchSphere;
-    private SceneTraceResult tr;
+    private Sphere _searchSphere;
+    private SceneTraceResult _tr;
 
+    private float _delayBlockDamage = 0.3f;
+    private Color32 _white = Color.White;
+    private Color32 _red = Color.Red;
+    private TimeUntil _delayBlockDamageTimer;
     public enum ZombieState
     {
         Idle,
@@ -54,6 +59,8 @@ public sealed class Zombie : EnemyBase
 
         CheckDistanceToTarget();
         SearchTarget();
+
+        ResetColor();
     }
 
     private void Moving()
@@ -62,9 +69,12 @@ public sealed class Zombie : EnemyBase
 
         if (!_delayMovingTimer) return;
 
-        _randomPointMoving = (Vector3)Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius);
+        if (Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).HasValue)
+        {
+            _randomPointMoving = Scene.NavMesh.GetRandomPoint(_spawnPosition, MovingStartPosRadius).Value;
 
-        NavMeshAgent.MoveTo(_randomPointMoving);
+            NavMeshAgent.MoveTo(_randomPointMoving);
+        }
 
         ResetMovingTimer();
     }
@@ -73,14 +83,15 @@ public sealed class Zombie : EnemyBase
     {
         if (CurrentState != ZombieState.Idle) return;
 
-        searchSphere = new Sphere(WorldPosition, SearchRadius);
+        _searchSphere = new Sphere(WorldPosition, SearchRadius);
 
-        var objectInSphere = Scene.FindInPhysics(searchSphere);
+        var objectInSphere = Scene.FindInPhysics(_searchSphere);
 
         foreach (var item in objectInSphere)
         {
             if (!IsFriend(item))
-                SetTarget(item);
+                if (IsTargetVisible(item, SearchRadius))
+                    SetTarget(item);
         }
     }
 
@@ -99,30 +110,27 @@ public sealed class Zombie : EnemyBase
 
         if (!_delayAttackTimer) return;
 
+        if (!IsTargetVisible(_attackTarget, LostRadius)) return;
+
         var origin = AttackPosition.WorldPosition;
         Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
         var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
 
-        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
             .IgnoreGameObject(GameObject)
             .Run();
 
-        if (!tr.Hit)       
-            return;
-        
-        var hitObject = tr.GameObject;
-
-        if (hitObject == _attackTarget)
-            {
-            Log.Info("Attack Target");
+        if (_tr.Hit)
+        {
+            var hitObject = _tr.GameObject;
 
             var damagable = hitObject.Parent.GetComponentInChildren<IDamageable>();
 
             if (damagable is not null)
             {
-                damagable.OnDamage(new(10, GameObject, GameObject));
+                damagable.OnDamage(new(AttackDamage, GameObject, GameObject));
             }
-        }     
+        }
 
         ResetAttackTimer();
     }
@@ -171,12 +179,17 @@ public sealed class Zombie : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
-    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+
+        Renderer.Tint = _red;
+        ResetBlockDamageTimer();
+
         Sound.Play(TakeDamageSound, WorldPosition);
+
+        SetTarget(dmgInfo.Attacker);
 
         if (Health <= 0)
             Die();
@@ -193,10 +206,37 @@ public sealed class Zombie : EnemyBase
             var ply = Player.Instance;
 
             ply.Frags += 1;
+            ply.Dna += DNA;
             ply.HeaderLevel.Show();
         }
 
         DestroyGameObject();
+    }
+
+    private void ResetColor()
+    {
+        if (!_delayBlockDamageTimer) return;
+
+        Renderer.Tint = _white;
+    }
+
+    private bool IsTargetVisible(GameObject target, float visibleRadius)
+    {
+        if (!target.IsValid()) return false;
+
+        var origin = AttackPosition.WorldPosition;
+        var upTargetPosition = target.WorldPosition.WithZ(30f);
+        Vector3 direction = (upTargetPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
+
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), visibleRadius)
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (_tr.GameObject == target || !IsFriend(_tr.GameObject))
+            return true;
+
+        return false;
     }
 
     public override bool IsFriend(GameObject target)
@@ -235,4 +275,5 @@ public sealed class Zombie : EnemyBase
 
     private void ResetMovingTimer() => _delayMovingTimer = MoveDelay;
     private void ResetAttackTimer() => _delayAttackTimer = AttackDelay;
+    private void ResetBlockDamageTimer() => _delayBlockDamageTimer = _delayBlockDamage;
 }

@@ -7,7 +7,7 @@
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "0.77153,0.77153,0.77153",
-    "Tags": "",
+    "Tags": "replicant",
     "Enabled": true,
     "NetworkMode": 2,
     "NetworkInterpolation": true,
@@ -141,7 +141,12 @@
           "go": "61aa38ce-53d3-400a-9ea9-7d097c38301d"
         },
         "Health": 20,
-        "HealthBar": null,
+        "HealthBar": {
+          "_type": "component",
+          "component_id": "60cc54ec-ec22-4e57-a80d-9db9e6403731",
+          "go": "e1af0604-c13e-4981-b128-e499bd064c30",
+          "component_type": "ReplicantHealthBar"
+        },
         "MaxDistanceToPlayer": 2000,
         "MaxHealth": 20,
         "MovementSpeed": 140,

@@ -10,6 +10,8 @@ public sealed class Demon : EnemyBase
     [Property] public float LostRadius { get; set; } = 700f;
     [Property] public float MovingDelay { get; set; } = 5f;
     [Property] public float MovingStartPosRadius { get; set; } = 150f;
+    [Property] public int DNA { get; set; } = 1;
+    [Property] public SoundEvent TakeDamageSound;
 
     [Property][Category("Weapon")] public float AttackDamage { get; set; } = 10f;
     [Property][Category("Weapon")] public float AttackDelay { get; set; } = 6f;
@@ -29,8 +31,13 @@ public sealed class Demon : EnemyBase
     private GameObject _attackTarget;
     private GameObject _lastAttacker;
 
-    private Sphere searchSphere;
-    private SceneTraceResult tr;
+    private Sphere _searchSphere;
+    private SceneTraceResult _tr;
+
+    private float _delayBlockDamage = 0.3f;
+    private Color32 _white = Color.White;
+    private Color32 _red = Color.Red;
+    private TimeUntil _delayBlockDamageTimer;
 
     public enum DemonState
     {
@@ -57,6 +64,8 @@ public sealed class Demon : EnemyBase
 
         CheckDistanceToTarget();
         SearchTarget();
+
+        ResetColor();
     }
 
     private void Moving()
@@ -79,9 +88,9 @@ public sealed class Demon : EnemyBase
     {
         if (CurrentState != DemonState.Idle) return;
 
-        searchSphere = new Sphere(WorldPosition, SearchRadius);
+        _searchSphere = new Sphere(WorldPosition, SearchRadius);
 
-        var objectInSphere = Scene.FindInPhysics(searchSphere);
+        var objectInSphere = Scene.FindInPhysics(_searchSphere);
 
         foreach (var item in objectInSphere)
         {
@@ -105,34 +114,36 @@ public sealed class Demon : EnemyBase
 
         if (!_delayAttackTimer) return;
 
-        var origin = AttackPosition.WorldPosition;
-        Vector3 direction = (_attackTarget.WorldPosition - AttackPosition.WorldPosition).Normal;
-        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, 0)) * Vector3.Forward;
+        if (!IsTargetVisible(_attackTarget, LostRadius)) return;
 
-        tr = Scene.Trace.Ray(new Ray(origin, directionRotate), AttackDistance)
+        var origin = AttackPosition.WorldPosition;
+        var upAttackPosition = _attackTarget.WorldPosition.WithZ(30f);
+        Vector3 direction = (upAttackPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
+
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), LostRadius)
             .IgnoreGameObject(GameObject)
             .Run();
 
-        var shootDir = (tr.Hit ? (tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
+        var shootDir = (_tr.Hit ? (_tr.EndPosition - AttackPosition.WorldPosition) : Vector3.Forward).Normal;
         var spawnPos = AttackPosition.WorldPosition;
         var spawnRot = Rotation.LookAt(_attackTarget.WorldPosition);
 
         var obj = ProjectilePrefab.Clone(spawnPos, spawnRot);
         var projectile = obj.GetComponent<Bullet>();
-        projectile.Damage = AttackDamage;
-        projectile.Direction = tr.Direction;
+        projectile.Direction = _tr.Direction;
         projectile.Owner = Player.Instance.GameObject;
         projectile.Weapon = AttackPosition.Parent;
 
         Sound.Play(AttackSound, AttackPosition.WorldPosition);
 
-        if (tr.Hit)
+        if (_tr.Hit)
         {
-            var damagable = tr.Collider.GameObject.Parent.GetComponentInChildren<IDamageable>();
+            var damagable = _tr.GameObject.GetComponentInChildren<IDamageable>();
 
             if (damagable is not null)
             {
-                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+                damagable.OnDamage(new(AttackDamage, projectile.Owner, projectile.Weapon));
             }
         }
 
@@ -143,7 +154,7 @@ public sealed class Demon : EnemyBase
     {
         if (CurrentState != DemonState.Attack) return;
 
-        var distanceForAttack = AttackDistance / 2;
+        var distanceForAttack = AttackDistance;
         var postion = _attackTarget.WorldPosition - new Vector3(distanceForAttack, distanceForAttack, 0);
 
         NavMeshAgent.MoveTo(postion);
@@ -183,12 +194,17 @@ public sealed class Demon : EnemyBase
         WorldRotation = Rotation.Lerp(WorldRotation, rotate, 5 * Time.Delta);
     }
 
-    [Property] public SoundEvent TakeDamageSound;
     public override void OnDamage(in DamageInfo dmgInfo)
     {
         Health -= dmgInfo.Damage;
         _lastAttacker = dmgInfo.Attacker;
+
+        Renderer.Tint = _red;
+        ResetBlockDamageTimer();
+
         Sound.Play(TakeDamageSound, WorldPosition);
+
+        SetTarget(dmgInfo.Attacker);
 
         if (Health <= 0)
             Die();
@@ -205,10 +221,37 @@ public sealed class Demon : EnemyBase
             var ply = Player.Instance;
 
             ply.Frags += 1;
+            ply.Dna += DNA;
             ply.HeaderLevel.Show();
         }
 
         DestroyGameObject();
+    }
+
+    private void ResetColor()
+    {
+        if (!_delayBlockDamageTimer) return;
+
+        Renderer.Tint = _white;
+    }
+
+    private bool IsTargetVisible(GameObject target, float visibleRadius)
+    {
+        if (!target.IsValid()) return false;
+
+        var origin = AttackPosition.WorldPosition;
+        var upTargetPosition = target.WorldPosition.WithZ(30f);
+        Vector3 direction = (upTargetPosition - AttackPosition.WorldPosition).Normal;
+        var directionRotate = Rotation.LookAt(new Vector3(direction.x, direction.y, direction.z)) * Vector3.Forward;
+
+        _tr = Scene.Trace.Ray(new Ray(origin, directionRotate), visibleRadius)
+            .IgnoreGameObject(GameObject)
+            .Run();
+
+        if (_tr.GameObject == target || !IsFriend(_tr.GameObject))
+            return true;
+
+        return false;
     }
 
     public override bool IsFriend(GameObject target)
@@ -247,4 +290,5 @@ public sealed class Demon : EnemyBase
 
     private void ResetMovingTimer() => _delayMovingTimer = MovingDelay;
     private void ResetAttackTimer() => _delayAttackTimer = AttackDelay;
+    private void ResetBlockDamageTimer() => _delayBlockDamageTimer = _delayBlockDamage;
 }

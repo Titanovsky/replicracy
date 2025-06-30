@@ -5,6 +5,7 @@ public sealed class Villager : EnemyBase
     [Property] public NavMeshAgent Agent { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
     [Property] public EmotionsController EmotionsController { get; set; }
+    [Property] public int DNA { get; set; } = 1;
     [Property, Category("Stats")] public override float Health { get; set; } = 10f; 
 
     private TimeUntil _delayMoving;
@@ -26,6 +27,7 @@ public sealed class Villager : EnemyBase
             var ply = Player.Instance;
 
             ply.Frags += 1;
+            ply.Dna += DNA;
             ply.HeaderLevel.Show();
         }
 

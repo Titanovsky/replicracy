@@ -23,6 +23,7 @@
           "go": "8249f124-d8b5-4640-b8ac-ee16957c2ea7"
         },
         "BulletDamage": 3,
+        "DNA": 1,
         "EmotionsController": {
           "_type": "component",
           "component_id": "abf693cb-e586-4195-8b0c-1737a994d5f8",
@@ -227,9 +228,9 @@
             "__version": 1,
             "Flags": 8,
             "Name": "eyes",
-            "Position": "8.811291,0.01109708,61.40613",
-            "Rotation": "0.09487966,-0.01246649,0.009898259,0.9953615",
-            "Scale": "0.999998,0.999998,0.999998",
+            "Position": "8.811027,0.01110686,61.4064",
+            "Rotation": "0.09487936,-0.0124811,0.009899946,0.9953613",
+            "Scale": "0.999997,0.999997,0.999997",
             "Tags": "",
             "Enabled": true,
             "NetworkMode": 2,
@@ -259,34 +260,7 @@
                     "__enabled": true,
                     "__version": 1,
                     "AttenuationAngle": 0,
-                    "ColorTexture": {
-                      "$compiler": "texture",
-                      "$source": "imagefile",
-                      "data": {
-                        "FilePath": "texture/emotions/idle.png",
-                        "MaxSize": 4096,
-                        "ConvertHeightToNormals": false,
-                        "NormalScale": 1,
-                        "Rotate": 0,
-                        "FlipVertical": false,
-                        "FlipHorizontal": false,
-                        "Padding": {
-                          "Size": "0,0",
-                          "EdgeSize": "0,0"
-                        },
-                        "Sharpen": 0,
-                        "InvertColor": false,
-                        "Blur": 0,
-                        "Brightness": 1,
-                        "Contrast": 1,
-                        "Saturation": 1,
-                        "Hue": 0,
-                        "Colorize": false,
-                        "TargetColor": "0,1,0,1",
-                        "CacheToDisk": true
-                      },
-                      "compiled": "textures/generated/imagefile/c353984e97782abf.vtex"
-                    },
+                    "ColorTexture": "texture/emotions/idle.vtex",
                     "ColorTint": "255,255,255,255",
                     "NormalTexture": null,
                     "OnComponentDestroy": null,
