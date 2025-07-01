@@ -4,6 +4,8 @@
 @namespace Sandbox
 
 <root>
+	@if (Player.Instance == null) return;
+
 	@for (int i = 0; i < Player.Instance.ReplicantController.Replicants.Count; i++)
 	{
 		<div class="title">@i - @Player.Instance.ReplicantController.Replicants[i].Health 💚</div>

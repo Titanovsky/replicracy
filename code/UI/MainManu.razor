@@ -28,21 +28,21 @@
 
 @code
 {
-	private CameraComponent _camera;
+	private CameraComponent Camera { get; set; }
 
 	private Angles initialRotation;
 	private Random random;
 
-	[Property] private SceneFile _startScene;
-	[Property] private SoundEvent _music;
+	[Property] private SceneFile StartScene { get; set; }
+	[Property] private SoundEvent Music { get; set; }
 
 	protected override void OnStart()
 	{
 		random = new();
-		_camera = Scene.Camera;
-		initialRotation = _camera.WorldRotation;
+		Camera = Scene.Camera;
+		initialRotation = Camera.WorldRotation;
 
-		Sound.Play(_music);
+		Sound.Play(Music);
 	}
 
 	protected override void OnFixedUpdate()
@@ -57,12 +57,12 @@
 		float desiredPitch = initialRotation.pitch + offset; // Желаемый pitch
 		float desiredYaw = initialRotation.yaw + offset; // Желаемый yaw
 
-		_camera.WorldRotation = new Angles(desiredPitch, desiredYaw, initialRotation.roll).ToRotation(); // Устанавливаем вращение
+		Camera.WorldRotation = new Angles(desiredPitch, desiredYaw, initialRotation.roll).ToRotation(); // Устанавливаем вращение
 	}
 
 	private void Start()
 	{
-		Scene.Load(_startScene);
+		Scene.Load(StartScene);
 	}
 
 	private void ShowSettings()

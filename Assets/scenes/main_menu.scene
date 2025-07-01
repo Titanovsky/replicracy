@@ -531,21 +531,26 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
-          "TargetCamera": null,
+          "TargetCamera": {
+            "_type": "component",
+            "component_id": "7861c37d-09c3-4744-b5f3-85ee71b7f93f",
+            "go": "449f2292-2f42-4579-b227-5b80d5105a94",
+            "component_type": "CameraComponent"
+          },
           "ZIndex": 100
         },
         {
           "__type": "Sandbox.MainManu",
           "__guid": "4db8b3c4-c33c-4a39-bb11-6dc38b390026",
           "__enabled": true,
-          "_music": "sounds/music/main_menu.sound",
-          "_startScene": "scenes/levels/level1.scene",
+          "Music": "sounds/music/main_menu.sound",
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
           "OnComponentFixedUpdate": null,
           "OnComponentStart": null,
-          "OnComponentUpdate": null
+          "OnComponentUpdate": null,
+          "StartScene": "scenes/levels/level1.scene"
         }
       ],
       "Children": []
