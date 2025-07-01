@@ -7,7 +7,7 @@ public class Idle : ReplicantState
         _rnd = new();
     }
 
-    private RealTimeUntil _idleSoundTimer = 1.5f;
+    private RealTimeUntil _idleSoundTimer = 1f;
     private Random _rnd;
 
     public override void Update()
@@ -33,7 +33,6 @@ public class Idle : ReplicantState
         if (!_idleSoundTimer) return;
 
         var randomIndex = _rnd.Next(Replicant.RandomIdleSounds.Count);
-
         var soundEvent = Replicant.RandomIdleSounds[randomIndex];
 
         if (soundEvent != null)
@@ -44,5 +43,10 @@ public class Idle : ReplicantState
         ResetSoundTimer();
     }
 
-    private void ResetSoundTimer() => _idleSoundTimer = 1.5f;
+    private void ResetSoundTimer() 
+    {
+        var randomTime = _rnd.Next(1, 3);
+
+        _idleSoundTimer = randomTime;
+    }
 }
