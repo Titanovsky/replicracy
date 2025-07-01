@@ -38,6 +38,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -5328,6 +5329,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -5357,6 +5359,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -6628,6 +6631,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -6657,6 +6661,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -13569,6 +13574,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -13598,6 +13604,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -14171,6 +14178,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -14200,6 +14208,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -14325,6 +14334,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -14351,22 +14361,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "bc14acba-de14-4bda-85fc-3e841d9bf46c",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,32,32",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14390,22 +14435,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "0b66cf93-af47-4fb6-9c0e-9ba3ced15608",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,1000,1000",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14429,22 +14509,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "13ce0ca8-235f-4b4e-820c-c088c0c91e72",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.42,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,100,100",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14468,22 +14583,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "6ef77442-9086-4b76-ba2e-7b60c23379cd",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.28,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,100,100",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14507,22 +14657,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "59692b45-058e-4142-ad0d-ab3a2a8a9a16",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,100,100",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14546,22 +14731,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "81662229-b23f-4a60-9ccd-5c2ab8ba2ec0",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,100,100",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14585,22 +14805,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "2ce003fc-5ff7-423e-bfb9-b774a039b23f",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0,
-                  "ColorTexture": "texture/lab/pentagram.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,100,100",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14624,22 +14879,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "44022abc-22b5-4581-818b-c455cec953ca",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.35,
-                  "ColorTexture": "texture/lab/dirty_1.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,577.0006,273",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14663,22 +14953,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "ce1875ee-4cf4-493c-9903-ac4c1bf40ea6",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.35,
-                  "ColorTexture": "texture/lab/dirty_1.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,579.8011,302.1002",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14702,22 +15027,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "cf2b0343-8c4f-4e2d-9832-8ff9bcd0013a",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.35,
-                  "ColorTexture": "texture/lab/dirty_1.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,579.8011,302.1002",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14741,22 +15101,57 @@
                   "__type": "Sandbox.Decal",
                   "__guid": "d67b8c3c-33aa-40dc-b7fd-752a76b43d00",
                   "__enabled": true,
-                  "__version": 1,
+                  "__version": 3,
                   "AttenuationAngle": 0.58,
-                  "ColorTexture": "texture/lab/dirty_1.vtex",
-                  "ColorTint": "255,255,255,255",
-                  "NormalTexture": null,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
                   "OnComponentDestroy": null,
                   "OnComponentDisabled": null,
                   "OnComponentEnabled": null,
                   "OnComponentFixedUpdate": null,
                   "OnComponentStart": null,
                   "OnComponentUpdate": null,
-                  "RMOTexture": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360,0,0"
+                  },
+                  "Scale": 1,
                   "SequenceId": 0,
                   "SheetSequence": false,
-                  "Size": "32,828.3018,728.4982",
-                  "SortLayer": 0
+                  "Size": "0,0",
+                  "SortLayer": 0,
+                  "Transient": false
                 }
               ],
               "Children": []
@@ -14784,6 +15179,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "1,1,1,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -15138,6 +15534,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -15167,6 +15564,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "0.99535,0.99535,0.99535,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -15522,6 +15920,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -15551,6 +15950,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "0.99535,0.99535,0.99535,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -15906,6 +16306,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -15935,6 +16336,7 @@
               "__enabled": true,
               "Collision": "Mesh",
               "Color": "0.99535,0.99535,0.99535,1",
+              "Elasticity": null,
               "Friction": null,
               "HideInGame": false,
               "IsTrigger": false,
@@ -16290,6 +16692,7 @@
               "OnTriggerEnter": null,
               "OnTriggerExit": null,
               "RenderType": "On",
+              "RollingResistance": null,
               "SmoothingAngle": 40,
               "Static": true,
               "Surface": null,
@@ -16740,7 +17143,7 @@
           "__enabled": true,
           "__version": 1,
           "EnableCollision": true,
-          "MapName": null,
+          "MapName": "maps/level2.vmap",
           "NoOrigin": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -16896,7 +17299,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "7bca420f-01f0-4e72-bf16-e7a00f522bf3"
+              "IdValue": "53703161-2ca3-4ca7-b958-204c475ad111"
             },
             "Parent": {
               "Type": "GameObject",
@@ -16909,7 +17312,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "7bca420f-01f0-4e72-bf16-e7a00f522bf3",
+              "__guid": "53703161-2ca3-4ca7-b958-204c475ad111",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - polo_shirt",
@@ -16929,18 +17332,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "c3753563-09a4-4372-a7eb-a46bf4e2c2a4"
+              "IdValue": "bec6bf62-30ad-4aae-8f91-26113d0e8277"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "7bca420f-01f0-4e72-bf16-e7a00f522bf3"
+              "IdValue": "53703161-2ca3-4ca7-b958-204c475ad111"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "c3753563-09a4-4372-a7eb-a46bf4e2c2a4",
+              "__guid": "bec6bf62-30ad-4aae-8f91-26113d0e8277",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -16954,6 +17357,7 @@
               "CreateBoneObjects": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
+              "Materials": null,
               "Model": "models/citizen_clothes/shirt/polo_shirt/models/polo_shirt.vmdl",
               "Morphs": {},
               "OnComponentDestroy": null,
@@ -16989,7 +17393,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "4cfef47b-1d16-4263-9c6b-ad35034bead6"
+              "IdValue": "72f76078-51e8-4c26-bf6f-69b2a6a7217d"
             },
             "Parent": {
               "Type": "GameObject",
@@ -16997,12 +17401,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "7bca420f-01f0-4e72-bf16-e7a00f522bf3"
+              "IdValue": "53703161-2ca3-4ca7-b958-204c475ad111"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "4cfef47b-1d16-4263-9c6b-ad35034bead6",
+              "__guid": "72f76078-51e8-4c26-bf6f-69b2a6a7217d",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - labcoat",
@@ -17022,18 +17426,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "d98de4ed-654a-4db3-bd28-f977c6dd4931"
+              "IdValue": "6b4d22e9-ec11-48be-805e-91a0fe6f02db"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "4cfef47b-1d16-4263-9c6b-ad35034bead6"
+              "IdValue": "72f76078-51e8-4c26-bf6f-69b2a6a7217d"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "d98de4ed-654a-4db3-bd28-f977c6dd4931",
+              "__guid": "6b4d22e9-ec11-48be-805e-91a0fe6f02db",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -17047,6 +17451,7 @@
               "CreateBoneObjects": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
+              "Materials": null,
               "Model": "models/citizen_clothes/jacket/labcoat/models/labcoat.vmdl",
               "Morphs": {},
               "OnComponentDestroy": null,
@@ -17082,7 +17487,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "7b444820-095d-4ba6-930f-95f13236b3bc"
+              "IdValue": "b9cc6d0f-c04c-4961-889c-02948181c751"
             },
             "Parent": {
               "Type": "GameObject",
@@ -17090,12 +17495,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "4cfef47b-1d16-4263-9c6b-ad35034bead6"
+              "IdValue": "72f76078-51e8-4c26-bf6f-69b2a6a7217d"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "7b444820-095d-4ba6-930f-95f13236b3bc",
+              "__guid": "b9cc6d0f-c04c-4961-889c-02948181c751",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - black_boots",
@@ -17115,18 +17520,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "1e6d6531-13f5-4571-baf2-c2c856af81f3"
+              "IdValue": "51286aa6-715c-49fc-96be-e6a4f213b07a"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "7b444820-095d-4ba6-930f-95f13236b3bc"
+              "IdValue": "b9cc6d0f-c04c-4961-889c-02948181c751"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "1e6d6531-13f5-4571-baf2-c2c856af81f3",
+              "__guid": "51286aa6-715c-49fc-96be-e6a4f213b07a",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -17140,6 +17545,7 @@
               "CreateBoneObjects": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
+              "Materials": null,
               "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
               "Morphs": {},
               "OnComponentDestroy": null,
@@ -17175,7 +17581,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "1a38e32c-ff14-42be-b871-dce790be91a3"
+              "IdValue": "98bd7247-7975-4cc5-9918-a02f091315d1"
             },
             "Parent": {
               "Type": "GameObject",
@@ -17183,12 +17589,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "7b444820-095d-4ba6-930f-95f13236b3bc"
+              "IdValue": "b9cc6d0f-c04c-4961-889c-02948181c751"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "1a38e32c-ff14-42be-b871-dce790be91a3",
+              "__guid": "98bd7247-7975-4cc5-9918-a02f091315d1",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - loose_jeans",
@@ -17208,18 +17614,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "da77a893-675d-45d5-8b47-ec34d397b7c0"
+              "IdValue": "37a22f2f-3e3d-41f7-b1d9-1125740ee2be"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "1a38e32c-ff14-42be-b871-dce790be91a3"
+              "IdValue": "98bd7247-7975-4cc5-9918-a02f091315d1"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "da77a893-675d-45d5-8b47-ec34d397b7c0",
+              "__guid": "37a22f2f-3e3d-41f7-b1d9-1125740ee2be",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -17233,6 +17639,7 @@
               "CreateBoneObjects": false,
               "MaterialGroup": null,
               "MaterialOverride": null,
+              "Materials": null,
               "Model": "models/citizen_clothes/trousers/loosejeans/models/loose_jeans.vmdl",
               "Morphs": {},
               "OnComponentDestroy": null,
@@ -17270,49 +17677,49 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "7d2d5606-1a79-4e3e-abc5-b7421440b70a"
+              "IdValue": "c4d37313-a853-4e57-8927-a7b8a9f32836"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "d08d4ab9-eceb-4416-a8eb-1666d6774f2b"
+              "IdValue": "e0366f69-347a-41d2-b97b-96cdf07a9182"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "42ac9056-9f98-4287-b6e9-dcfd69ce7ee4"
+              "IdValue": "fa061f71-908d-40b4-a0eb-770ba16421d4"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "1c5c508a-c582-40bc-9f7b-413aff94a86d"
+              "IdValue": "90b59737-ac21-4e5f-a5a2-dc5bff7b6672"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "d85891d1-d751-4652-9472-bed151b395ba"
+              "IdValue": "10c14a49-a332-44bb-aad6-1b4adb04e96b"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "129d70f0-9b42-489c-8629-e84637d02d97"
+              "IdValue": "c357cdf8-1f28-4870-8142-351213f3f1fa"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "5d12cc88-7c99-49d5-b8bb-63bb41c4dd31"
+              "IdValue": "0e39dbe2-f200-4173-9418-c40c4e552321"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "d1e68831-77e5-4c64-85a4-094f04bc7b5d"
+              "IdValue": "296bbc8a-96e8-4176-8149-09ebf51956a3"
             }
           }
         ],
@@ -17323,7 +17730,7 @@
               "IdValue": "70251006-11e7-43cf-81d9-58eab51d5fe1"
             },
             "Property": "Position",
-            "Value": "-266.1317,2.359356,106.0334"
+            "Value": "-306.6316,0,0"
           },
           {
             "Target": {
@@ -17333,8 +17740,8 @@
             "Property": "_showTimer",
             "Value": {
               "Absolute": 0,
-              "Relative": -110371520,
-              "Passed": 110371522.7609162,
+              "Relative": -110383864,
+              "Passed": 110383865.0455663,
               "Fraction": 1
             }
           },
@@ -17352,15 +17759,7 @@
               "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
             },
             "Property": "Rotation",
-            "Value": "-0.00000000000000000000001629739,0.0000000000000002000654,-0.0000005323132,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
-            },
-            "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "-0.0000000000000000000000162974,0.0000000000000002000654,-0.0000005323133,1"
           },
           {
             "Target": {
@@ -17376,15 +17775,7 @@
               "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
             },
             "Property": "Rotation",
-            "Value": "-0.00000000000000000000001629739,0.0000000000000002000654,-0.0000005323132,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
-            },
-            "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "-0.0000000000000000000000162974,0.0000000000000002000654,-0.0000005323133,1"
           },
           {
             "Target": {
@@ -17400,15 +17791,7 @@
               "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
             },
             "Property": "Rotation",
-            "Value": "-0.00000000000000000000001629755,0.0000000000000002000651,-0.0000005323132,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
-            },
-            "Property": "Scale",
-            "Value": "0.9999979,0.9999979,0.9999979"
+            "Value": "-0.00000000000000000000001629756,0.0000000000000002000651,-0.0000005323133,1"
           },
           {
             "Target": {
@@ -17416,7 +17799,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Position",
-            "Value": "9.750305,-4.987817,3.806099"
+            "Value": "9.750275,-4.987365,3.805781"
           },
           {
             "Target": {
@@ -17424,7 +17807,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "0.6955557,0.1290365,-0.4102881,0.5755135"
+            "Value": "0.69556,0.1290315,-0.4102965,0.5755032"
           },
           {
             "Target": {
@@ -17440,7 +17823,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Position",
-            "Value": "-8.846893,5.432767,3.808624"
+            "Value": "-8.846558,5.432436,3.808169"
           },
           {
             "Target": {
@@ -17448,7 +17831,15 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "0.6385103,0.3045235,-0.2475784,0.6620232"
+            "Value": "0.6385089,0.3045307,-0.2475597,0.6620285"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
+            },
+            "Property": "Scale",
+            "Value": "0.9999992,0.9999992,0.9999992"
           },
           {
             "Target": {
@@ -17456,7 +17847,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.64154,-4.193193,48.82343"
+            "Value": "16.51154,-3.640777,48.7398"
           },
           {
             "Target": {
@@ -17464,7 +17855,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "0.3891116,-0.06009442,0.1551933,0.906033"
+            "Value": "0.3896376,-0.0586596,0.1544418,0.9060295"
           },
           {
             "Target": {
@@ -17472,7 +17863,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -17480,7 +17871,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.51892,5.060408,41.10201"
+            "Value": "-10.69351,5.684043,41.30117"
           },
           {
             "Target": {
@@ -17488,7 +17879,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "0.4661406,0.6894528,-0.1810324,0.5240184"
+            "Value": "0.4663605,0.6928884,-0.1833718,0.5184478"
           },
           {
             "Target": {
@@ -17496,7 +17887,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -17504,7 +17895,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "23.92134,-2.386319,50.59344"
+            "Value": "23.79758,-1.836298,50.48652"
           },
           {
             "Target": {
@@ -17512,7 +17903,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "0.6106753,-0.1231696,-0.087559,0.7773277"
+            "Value": "0.6106753,-0.1231696,-0.08755896,0.7773277"
           },
           {
             "Target": {
@@ -17520,7 +17911,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "0.9999986,0.9999986,0.9999986"
+            "Value": "0.9999996,0.9999996,0.9999996"
           },
           {
             "Target": {
@@ -17528,7 +17919,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-10.6441,8.551814,34.23279"
+            "Value": "-10.90506,9.199333,34.44622"
           },
           {
             "Target": {
@@ -17536,7 +17927,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "0.4675261,0.7163454,-0.1443873,0.4974142"
+            "Value": "0.4679668,0.7195386,-0.14667,0.4916902"
           },
           {
             "Target": {
@@ -17544,7 +17935,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -17552,7 +17943,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.09822,-1.863449,52.63803"
+            "Value": "28.97449,-1.313452,52.53107"
           },
           {
             "Target": {
@@ -17560,7 +17951,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "0.01353641,0.00003494652,0.00004110127,0.9999084"
+            "Value": "0.01353635,0.00003489988,0.00004110866,0.9999084"
           },
           {
             "Target": {
@@ -17568,7 +17959,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Scale",
-            "Value": "0.9999979,0.9999979,0.9999979"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -17576,7 +17967,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-8.542145,9.415714,28.27577"
+            "Value": "-8.881592,10.08053,28.46459"
           },
           {
             "Target": {
@@ -17584,7 +17975,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "-0.3827024,0.6123301,0.1402122,0.6774448"
+            "Value": "-0.3801083,0.6169078,0.1432919,0.6740993"
           },
           {
             "Target": {
@@ -17592,7 +17983,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "0.9999983,0.9999983,0.9999983"
+            "Value": "0.9999992,0.9999992,0.9999992"
           },
           {
             "Target": {
@@ -17600,7 +17991,7 @@
               "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
             },
             "Property": "Position",
-            "Value": "23.92627,-2.877829,50.25975"
+            "Value": "23.92628,-2.877832,50.25977"
           },
           {
             "Target": {
@@ -17613,7 +18004,39 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
+              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
+            },
+            "Property": "Position",
+            "Value": "-11.15137,8.593778,33.76195"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
+            },
+            "Property": "Rotation",
+            "Value": "0.4595994,0.7243668,-0.1591418,0.4886051"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
+            },
+            "Property": "Position",
+            "Value": "10.43216,-4.078384,16.26966"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
+            },
+            "Property": "Rotation",
+            "Value": "0.4838816,0.4773299,-0.5471742,0.4884827"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
             "Value": "0.999999,0.999999,0.999999"
@@ -17621,58 +18044,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
-            },
-            "Property": "Position",
-            "Value": "-11.15137,8.593774,33.76193"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
-            },
-            "Property": "Rotation",
-            "Value": "0.4595998,0.7243666,-0.159142,0.4886051"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
-            },
-            "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Position",
-            "Value": "10.97923,-4.215384,16.23718"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Rotation",
-            "Value": "0.4713704,0.4944752,-0.551897,0.4782404"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Scale",
-            "Value": "0.9999994,0.9999994,0.9999994"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Position",
-            "Value": "-3.021179,5.341962,14.88528"
+            "Value": "-2.447388,5.556057,14.56343"
           },
           {
             "Target": {
@@ -17680,12 +18055,28 @@
               "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
             },
             "Property": "Rotation",
-            "Value": "0.3276775,0.6665139,-0.5371193,0.3998621"
+            "Value": "0.3137511,0.6653478,-0.5594277,0.3819859"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Position",
+            "Value": "8.687561,4.302472,40.52071"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Rotation",
+            "Value": "-0.06714062,0.3237383,0.1490338,0.9319199"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
             },
             "Property": "Scale",
             "Value": "0.9999995,0.9999995,0.9999995"
@@ -17693,34 +18084,10 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Position",
-            "Value": "8.906769,3.695953,40.4603"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Rotation",
-            "Value": "-0.06953489,0.3212131,0.1483965,0.9327195"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Scale",
-            "Value": "0.9999987,0.9999987,0.9999987"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Position",
-            "Value": "11.68631,-3.720693,49.49342"
+            "Value": "11.55801,-3.179938,49.43041"
           },
           {
             "Target": {
@@ -17736,7 +18103,7 @@
               "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
             },
             "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
+            "Value": "0.9999993,0.9999993,0.9999993"
           },
           {
             "Target": {
@@ -17744,7 +18111,7 @@
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
             },
             "Property": "Position",
-            "Value": "20.28145,-3.289756,49.70844"
+            "Value": "20.15457,-2.738537,49.61316"
           },
           {
             "Target": {
@@ -17758,126 +18125,6 @@
             "Target": {
               "Type": "GameObject",
               "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999988,0.9999988,0.9999988"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Position",
-            "Value": "16.65784,-4.292828,48.67894"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Rotation",
-            "Value": "0.2682703,0.2564898,-0.6084294,0.7014683"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Scale",
-            "Value": "0.9999988,0.9999988,0.9999988"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Position",
-            "Value": "-10.80435,4.844318,41.12939"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Rotation",
-            "Value": "-0.3015575,0.7678596,-0.5203568,0.2206437"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Scale",
-            "Value": "0.9999991,0.9999991,0.9999991"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Position",
-            "Value": "-7.843994,4.851201,45.34787"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Scale",
-            "Value": "0.9999992,0.9999992,0.9999992"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Position",
-            "Value": "-10.58151,6.806111,37.6674"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Position",
-            "Value": "7.505188,-3.601176,22.55397"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,0,1"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
             },
             "Property": "Scale",
             "Value": "0.9999995,0.9999995,0.9999995"
@@ -17885,23 +18132,23 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Position",
-            "Value": "-2.070068,4.775546,22.03528"
+            "Value": "16.52747,-3.738101,48.59293"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Rotation",
-            "Value": "0,0,0,1"
+            "Value": "0.2674864,0.2577959,-0.6084161,0.7013003"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
             },
             "Property": "Scale",
             "Value": "0.9999994,0.9999994,0.9999994"
@@ -17909,63 +18156,39 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Position",
-            "Value": "11.84482,-4.251661,16.3933"
+            "Value": "-10.97635,5.470691,41.33074"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Rotation",
-            "Value": "0.5268477,0.422976,-0.4707607,0.5673687"
+            "Value": "-0.3035172,0.770503,-0.5171491,0.2162388"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
             },
             "Property": "Scale",
-            "Value": "0.9999988,0.9999988,0.9999988"
+            "Value": "0.9999993,0.9999993,0.9999993"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Position",
-            "Value": "-2.53125,5.448748,14.7088"
+            "Value": "-7.974152,5.443551,45.51707"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Rotation",
-            "Value": "0.7194607,0.1816498,-0.03035881,0.66967"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999986,0.9999986,0.9999986"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
-            },
-            "Property": "Position",
-            "Value": "10.36478,-4.601601,10.02164"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
             },
             "Property": "Rotation",
             "Value": "0,0,0,1"
@@ -17973,7 +18196,95 @@
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Position",
+            "Value": "-10.79929,7.441689,37.8737"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Scale",
+            "Value": "0.9999995,0.9999995,0.9999995"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Position",
+            "Value": "7.161743,-3.396281,22.68737"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Scale",
+            "Value": "0.9999992,0.9999992,0.9999992"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Position",
+            "Value": "-1.815582,5.048024,21.75305"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Position",
+            "Value": "11.19098,-4.112639,16.40869"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Rotation",
+            "Value": "0.5279328,0.4174153,-0.4727268,0.5688418"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
             },
             "Property": "Scale",
             "Value": "0.9999987,0.9999987,0.9999987"
@@ -17981,10 +18292,58 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Position",
+            "Value": "-1.823578,5.676031,14.3408"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Rotation",
+            "Value": "0.7132118,0.1764279,-0.03961506,0.6772243"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999999,0.9999999,0.9999999"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Position",
+            "Value": "10.09122,-4.532879,10.03773"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,0,1"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
+            },
+            "Property": "Scale",
+            "Value": "0.9999985,0.9999985,0.9999985"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Position",
-            "Value": "-5.934021,5.387364,9.346954"
+            "Value": "-5.646973,5.494229,9.185806"
           },
           {
             "Target": {
@@ -18000,7 +18359,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Scale",
-            "Value": "0.9999987,0.9999987,0.9999987"
+            "Value": "0.9999999,0.9999999,0.9999999"
           },
           {
             "Target": {
@@ -18008,7 +18367,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Position",
-            "Value": "0.1746216,0.2761693,41.95097"
+            "Value": "0.08239746,0.6972358,41.95294"
           },
           {
             "Target": {
@@ -18024,7 +18383,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Scale",
-            "Value": "0.9999994,0.9999994,0.9999994"
+            "Value": "0.9999996,0.9999996,0.9999996"
           },
           {
             "Target": {
@@ -18032,7 +18391,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.11676,1.022819,61.52672"
+            "Value": "6.061127,1.528695,61.5178"
           },
           {
             "Target": {
@@ -18040,7 +18399,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "-0.0009564461,0.008055658,0.04590137,0.998913"
+            "Value": "0.00009608265,0.009258539,0.04529758,0.9989306"
           },
           {
             "Target": {
@@ -18048,7 +18407,7 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -18056,7 +18415,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.423676,-2.309517,61.53064"
+            "Value": "6.363983,-1.804017,61.51435"
           },
           {
             "Target": {
@@ -18064,7 +18423,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "-0.0009564461,0.008055658,0.04590137,0.998913"
+            "Value": "0.00009608265,0.009258539,0.04529758,0.9989306"
           },
           {
             "Target": {
@@ -18072,7 +18431,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -18080,7 +18439,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "5.809814,4.355154,61.52281"
+            "Value": "5.758301,4.861407,61.52125"
           },
           {
             "Target": {
@@ -18088,7 +18447,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "-0.0009564461,0.008055658,0.04590137,0.998913"
+            "Value": "0.00009608265,0.009258539,0.04529758,0.9989306"
           },
           {
             "Target": {
@@ -18096,7 +18455,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -18104,7 +18463,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.7145996,0.5172458,54.72391"
+            "Value": "0.6413879,1.043237,54.7275"
           },
           {
             "Target": {
@@ -18112,7 +18471,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "-0.0009564461,0.008055658,0.04590137,0.998913"
+            "Value": "0.00009608265,0.009258539,0.04529758,0.9989306"
           },
           {
             "Target": {
@@ -18120,7 +18479,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           },
           {
             "Target": {
@@ -18128,7 +18487,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.13016,-5.909241,0.1875229"
+            "Value": "11.13,-5.908787,0.1871963"
           },
           {
             "Target": {
@@ -18136,7 +18495,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "0.0004734397,0.00006444752,-0.2162308,0.9763421"
+            "Value": "0.0004793107,0.00006876141,-0.2162434,0.9763394"
           },
           {
             "Target": {
@@ -18152,7 +18511,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239594,5.832521,1.059616"
+            "Value": "-7.239258,5.832288,1.05916"
           },
           {
             "Target": {
@@ -18160,7 +18519,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "-0.04342057,0.9990568,0.0003266931,0.00008771659"
+            "Value": "-0.04343903,0.999056,0.0003296733,0.00009533853"
           },
           {
             "Target": {
@@ -18168,7 +18527,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.999999,0.999999,0.999999"
+            "Value": "0.9999986,0.9999986,0.9999986"
           },
           {
             "Target": {
@@ -18176,7 +18535,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.25119,0.5849383,69.87456"
+            "Value": "1.215881,1.080211,69.87688"
           },
           {
             "Target": {
@@ -18184,7 +18543,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "-0.0009564461,0.008055658,0.04590137,0.998913"
+            "Value": "0.00009608265,0.009258539,0.04529758,0.9989306"
           },
           {
             "Target": {
@@ -18192,7 +18551,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Scale",
-            "Value": "0.9999989,0.9999989,0.9999989"
+            "Value": "0.9999995,0.9999995,0.9999995"
           }
         ],
         "MovedObjects": []
@@ -18357,10 +18716,10 @@
         "6fd32e06-b57b-47a9-94e4-7559512a3780": "4f195aac-dd73-4464-84aa-f0e306b24193",
         "945e7cd8-a053-43d7-ad9d-ef7e9c0f32a8": "36d533be-c037-4e3e-8ea6-38730a38523c",
         "3caeae22-e4f9-457a-9253-aa945dac45a1": "d5cc5f9f-3da6-42c6-9f37-1835221da7a9",
-        "d1e68831-77e5-4c64-85a4-094f04bc7b5d": "62f08a95-42df-4492-8318-53c267f0830a",
-        "129d70f0-9b42-489c-8629-e84637d02d97": "00eddf6b-5288-416a-a595-e1f9b0208a9c",
-        "1c5c508a-c582-40bc-9f7b-413aff94a86d": "15313fde-0a3f-4746-a60b-0e29e8c4877f",
-        "d08d4ab9-eceb-4416-a8eb-1666d6774f2b": "dfea9f3b-193b-4ee8-9eb0-9450f602280e",
+        "296bbc8a-96e8-4176-8149-09ebf51956a3": "2db5e240-2e1d-4d52-acd7-5113e75575de",
+        "c357cdf8-1f28-4870-8142-351213f3f1fa": "55cbb035-9d66-4bac-8d7f-2a0e8caf17c8",
+        "90b59737-ac21-4e5f-a5a2-dc5bff7b6672": "22fd6dc3-27e8-42cf-9154-f3ee98848a3c",
+        "e0366f69-347a-41d2-b97b-96cdf07a9182": "7e8a125b-d11d-4f5c-b96b-4c128b52fcea",
         "85296c6d-b420-49a6-b27c-c2b091f5450a": "b19e3693-6b7b-4f6e-ae85-846758589cc4",
         "a056fade-8855-4637-95a5-85d144e6e018": "e7e63208-e61e-4221-8ea8-73facb597263",
         "18de5f76-19b3-4159-a8cc-883fd525c93c": "ad533229-a6b2-4aee-84b0-21cb9158dc8b",
@@ -18368,10 +18727,10 @@
         "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "d805cc12-af31-47d3-8309-16214d14a7fb",
         "b869b7df-ac57-4084-a7c4-1a89571001a4": "db054cb2-38fc-49a4-b9db-5e1b5de69da7",
         "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "e95ef5f8-f812-457d-9827-fc305e89a783",
-        "5d12cc88-7c99-49d5-b8bb-63bb41c4dd31": "245a5ffd-512c-44ac-b157-dec8373f1026",
-        "d85891d1-d751-4652-9472-bed151b395ba": "93bebc6f-150d-4e10-b0e8-14ae5feb3bb7",
-        "42ac9056-9f98-4287-b6e9-dcfd69ce7ee4": "8f54e616-23c8-4846-9ef7-b53df890f469",
-        "7d2d5606-1a79-4e3e-abc5-b7421440b70a": "aed384f6-ccb2-44df-84ae-d8fda8ce9311",
+        "0e39dbe2-f200-4173-9418-c40c4e552321": "1c33dc96-ffc3-4668-9095-c69f29529ff4",
+        "10c14a49-a332-44bb-aad6-1b4adb04e96b": "ce6c797c-db72-4ebb-b1f0-89d469d540a0",
+        "fa061f71-908d-40b4-a0eb-770ba16421d4": "5a2ef33c-bf4e-4fef-8d61-17ce8d1c43c8",
+        "c4d37313-a853-4e57-8927-a7b8a9f32836": "64d08025-661d-4104-b8c3-ce26c47bd31f",
         "8a338550-516f-4e28-9227-1950a98ee9d9": "b634a6d0-d74c-49c0-8ab0-5eb3987e83fe",
         "c55aacf3-90c9-4b08-8b5b-450d209def84": "7dbcbbdd-a3c9-4db8-92b4-e53921076c11",
         "d8c1cf89-662d-4756-a0a4-172656926477": "8f42aab9-e5e8-4e46-886c-6a5736857240",
