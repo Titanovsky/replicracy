@@ -11,6 +11,7 @@ public abstract class LevelBase : Component
 
     [Property, Group("Stats")] public virtual int NextDna { get; set; } = 0;
     [Property, Group("Stats")] public virtual int NextFrags { get; set; } = 0;
+    [Property, Group("Stats")] public virtual int MaxSecrets { get; set; } = 0;
 
 
     public virtual void Act(int act) { }

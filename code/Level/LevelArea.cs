@@ -8,6 +8,7 @@
 
     [Property, Group("Stats")] public override int NextDna { get; set; } = 0;
     [Property, Group("Stats")] public override int NextFrags { get; set; } = 5;
+    [Property, Group("Stats")] public override int MaxSecrets { get; set; } = 3;
 
     [Property, Feature("Area 69")] public string Fuck { get; set; } = "das";
 
