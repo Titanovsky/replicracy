@@ -16,6 +16,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     [Property] public int Frags { get; set; } = 0;
     [Property] public bool GodMode { get; set; } = false;
     public int CollectDna { get; set; } = 0;
+    public int CollectSecrets { get; set; } = 0;
 
     [Property] public PlayerController PlayerController { get; set; }
     [Property] public ReplicantController ReplicantController { get; set; }
@@ -25,6 +26,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     [Property] public Fade Fade { get; set; }
     [Property] public ErrorMessage ErroreMessage { get; set; }
     [Property] public Wipmessage WIPMessage { get; set; }
+    [Property] public SecretsHud SecretsHud { get; set; }
 
     private SceneTraceResult _traceResult { get; set; }
     private IUsable _playerViewedObject {  get; set; }
@@ -94,7 +96,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
         OnSpecified?.Invoke(_traceResult);
 
-        if (!_traceResult.Collider.GameObject.GetComponent<Loot>().IsValid())
+        if (_traceResult.Collider.GameObject.GetComponent<Loot>().IsValid())
             Achievements.Unlock("spermabank");
     }
 
@@ -119,6 +121,11 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
         Log.Info($"Restart");
 
         Scene.Load(LevelManager.Instance.CurrentLevel.CurrentLevelScene);
+    }
+
+    public bool CanAchievement()
+    {
+        return !Game.IsEditor;
     }
 
     private void PlayerView()
