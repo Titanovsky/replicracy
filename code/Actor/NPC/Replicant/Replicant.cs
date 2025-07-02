@@ -101,7 +101,10 @@ public sealed class Replicant : Component, Component.IDamageable
 
     public void SetMoveToPoint(Vector3 targetPosition)
     {
+        if (replicantFSM == null) return;
+
         SetTargetPoint(targetPosition);
+
         replicantFSM.SetState<MoveToPoint>();
     }
 
