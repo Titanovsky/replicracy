@@ -5,9 +5,13 @@ public sealed class Chiken : EnemyBase
     [Property] public NavMeshAgent Agent { get; set; }
     [Property] public SkinnedModelRenderer Renderer { get; set; }
     [Property] public int DNA { get; set; } = 1;
+    [Property] public SoundEvent TakeDamageSound { get; set; }
+    [Property] public int DelayMoving { get; set; } = 1;
+    [Property] public int PanicTime { get; set; } = 5;
     [Property, Category("Stats")] public override float Health { get; set; } = 10f;
 
-    private TimeUntil _delayMoving;
+    private TimeUntil _panicTimer;
+    private TimeUntil _movingTimer;
 
     private Vector3 _up = new Vector3(0, 0, 50f);
     private Vector3 _targetPos;
@@ -18,6 +22,14 @@ public sealed class Chiken : EnemyBase
     private TimeUntil _delayBlockDamage;
 
     private GameObject _lastAttacker;
+
+    private ChickenState CurrentState { get; set; }
+
+    public enum ChickenState
+    {
+        Idle,
+        Panic
+    }
 
     public override void Die()
     {
@@ -39,7 +51,7 @@ public sealed class Chiken : EnemyBase
 
         Agent = GetComponent<NavMeshAgent>();
 
-        _delayMoving = 0f;
+        _movingTimer = 0f;
 
         //Player.Instance.PlayerController.
     }
@@ -69,7 +81,7 @@ public sealed class Chiken : EnemyBase
             Gizmo.Draw.Arrow(startPos + _up, _targetPos);
         }
 
-        if (!_delayMoving) return;
+        if (!_movingTimer) return;
 
         var point = Scene.NavMesh.GetRandomPoint(startPos, 256f);
 
@@ -82,7 +94,7 @@ public sealed class Chiken : EnemyBase
             _targetPos = point.Value;
         }
 
-        _delayMoving = 1f;
+        ResetMovingTimer();
     }
 
     private void ResetColor()
@@ -101,6 +113,17 @@ public sealed class Chiken : EnemyBase
     {
         Move();
         ResetColor();
+
+        CheckPanicTimer();
+    }
+
+    private void CheckPanicTimer()
+    {
+        if (CurrentState != ChickenState.Panic) return;
+
+        if (!_panicTimer) return;
+
+        SetIdle();
     }
 
     public override void OnDamage(in DamageInfo dmgInfo)
@@ -110,15 +133,44 @@ public sealed class Chiken : EnemyBase
         _delayBlockDamage = 1f;
         _lastAttacker = dmgInfo.Attacker;
 
+        Jump();
+
+        Sound.Play(TakeDamageSound, WorldPosition);
+
+        SetPanic();
+
         if (Health <= 0)
             Die();
     }
 
+    private void Jump()
+    {
+        WorldPosition += new Vector3(0, 0, 50f);
+    }
+
+    private void SetIdle()
+    {
+        CurrentState = ChickenState.Idle;
+
+        Agent.Velocity /= 4f;
+        Agent.MaxSpeed /= 4f;
+    }
+    
+    private void SetPanic()
+    {
+        CurrentState = ChickenState.Panic;
+
+        Agent.Velocity *= 4f;
+        Agent.MaxSpeed *= 4f;
+
+        ResetPanicTimer();
+    }
+
     public override bool IsFriend(GameObject target)
     {
-        if (target.Tags.Has("chiken"))
-            return false;
-
         return base.IsFriend(target);
     }
+
+    private void ResetMovingTimer() => _movingTimer = DelayMoving;
+    private void ResetPanicTimer() => _panicTimer = PanicTime;
 }

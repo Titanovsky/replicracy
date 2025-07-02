@@ -24,6 +24,7 @@
           "go": "5dfae076-70c7-46fc-92ce-aaa3ebd9db7f",
           "component_type": "NavMeshAgent"
         },
+        "DNA": 1,
         "Health": 5,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -36,7 +37,8 @@
           "component_id": "62027e15-7d86-4531-95d7-453999788dc1",
           "go": "cacd5f9c-2e62-454b-bd96-d35779952e76",
           "component_type": "SkinnedModelRenderer"
-        }
+        },
+        "TakeDamageSound": "sounds/npc/chicken/damaged.sound"
       },
       {
         "__type": "Sandbox.NavMeshAgent",
@@ -62,6 +64,7 @@
         "__guid": "d3881e6a-1a4e-482f-abf5-787a639b7055",
         "__enabled": true,
         "Center": "0,0,36.49999",
+        "Elasticity": null,
         "Friction": null,
         "IsTrigger": false,
         "OnComponentDestroy": null,
@@ -74,6 +77,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
+        "RollingResistance": null,
         "Scale": "25.3,27.00002,67.49989",
         "Static": false,
         "Surface": null,
@@ -107,6 +111,7 @@
             "CreateBoneObjects": false,
             "MaterialGroup": null,
             "MaterialOverride": null,
+            "Materials": null,
             "Model": "models/npc/chicken/chickenv2.vmdl",
             "Morphs": {},
             "OnComponentDestroy": null,
