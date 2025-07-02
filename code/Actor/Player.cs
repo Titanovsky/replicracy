@@ -96,7 +96,7 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
         OnSpecified?.Invoke(_traceResult);
 
-        if (_traceResult.Collider.GameObject.GetComponent<Loot>().IsValid())
+        if (CanAchievement() && _traceResult.Collider.GameObject.GetComponent<Loot>().IsValid())
             Achievements.Unlock("spermabank");
     }
 

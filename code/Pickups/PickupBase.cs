@@ -1,8 +1,8 @@
 ﻿public abstract class PickupBase : Component, Component.ITriggerListener
 {
-    [Property] public float Frequency { get; set; } = 5.43f;
-    [Property] public float Amplitude { get; set; } = 6f;
-    [Property] public float SpeedRotate { get; set; } = .25f;
+    [Property] public virtual float Frequency { get; set; } = 5.43f;
+    [Property] public virtual float Amplitude { get; set; } = 6f;
+    [Property] public virtual float SpeedRotate { get; set; } = .25f;
 
     public virtual void OnTouch(Collider other)
     {

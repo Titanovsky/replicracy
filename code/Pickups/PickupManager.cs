@@ -8,7 +8,7 @@ public sealed class PickupManager : Component
 
     private List<Vector3> _cachePos = new();
 
-    public void Add(PickupDna pickup)
+    public void Add(PickupBase pickup)
     {
         if (Pickups.Contains(pickup)) return;
 
