@@ -1,0 +1,641 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "Chiken"
+						filename = "models/npc/chiken/model/Chiken.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "material.010.vmat"
+								to = "models/npc/chiken/material/chickentexture(brown)(v2).vmat"
+							},
+							{
+								from = "material.009.vmat"
+								to = "models/npc/chiken/material/chickentexture(brown)(v2).vmat"
+							},
+							{
+								from = "material.008.vmat"
+								to = "models/npc/chiken/material/chickentexture(brown)(v2).vmat"
+							},
+							{
+								from = "material.007.vmat"
+								to = "models/npc/chiken/material/chickentexture(brown)(v2).vmat"
+							},
+							{
+								from = "material.006.vmat"
+								to = "models/npc/chiken/material/chickentexture(brown)(v2).vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsJointList"
+				children = 
+				[
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "pelvis"
+						child_body = "spine0"
+						anchor_origin = [ -0.000002, -0.000004, 0.000017 ]
+						anchor_angles = [ 8.654799, -90.000008, -89.905525 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine0"
+						child_body = "neck_0"
+						anchor_origin = [ -0.001854, 17.105257, 1.135101 ]
+						anchor_angles = [ 50.031513, 89.887169, -90.147209 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "neck_0"
+						child_body = "head"
+						anchor_origin = [ 0.000043, 16.851938, -2.562462 ]
+						anchor_angles = [ 61.86557, -90.000015, -90.000008 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.2
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine0"
+						child_body = "wing_0_L"
+						anchor_origin = [ 9.461245, 17.159176, -3.62813 ]
+						anchor_angles = [ 5.671857, 119.798462, 158.156494 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 10.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "wing_0_L"
+						child_body = "wing_1_L"
+						anchor_origin = [ 0.000032, 10.703634, -0.000021 ]
+						anchor_angles = [ 22.571218, -92.31636, -92.885689 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "wing_1_L"
+						child_body = "wing_2_L"
+						anchor_origin = [ 0.000095, 11.798592, -0.000024 ]
+						anchor_angles = [ 0.000012, -89.999969, -89.999947 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "spine0"
+						child_body = "wing_0_R"
+						anchor_origin = [ -9.449106, 17.159138, -3.659309 ]
+						anchor_angles = [ 5.577857, 60.185356, 21.678623 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 10.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "wing_0_R"
+						child_body = "wing_1_R"
+						anchor_origin = [ -0.000017, 10.703605, 0.000002 ]
+						anchor_angles = [ -22.571218, 92.31636, -92.885696 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -30.0
+						max_twist_angle = 30.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "wing_1_R"
+						child_body = "wing_2_R"
+						anchor_origin = [ -0.000053, 11.798554, -0.000009 ]
+						anchor_angles = [ 0.000016, 89.999969, -89.999947 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "pelvis"
+						child_body = "leg_1_L"
+						anchor_origin = [ -7.493092, -3.094359, 2.600174 ]
+						anchor_angles = [ 74.296471, 73.452728, -79.525482 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "leg_1_L"
+						child_body = "leg_2_L"
+						anchor_origin = [ -0.000016, 13.044329, 0.000012 ]
+						anchor_angles = [ -6.465652, 93.543709, 99.732307 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.15
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "leg_2_L"
+						child_body = "foot_L"
+						anchor_origin = [ 0.308913, 8.266209, 0.357876 ]
+						anchor_angles = [ 59.122032, -108.840446, -104.226112 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 15.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "pelvis"
+						child_body = "leg_1_R"
+						anchor_origin = [ 7.493066, -3.094346, 2.600166 ]
+						anchor_angles = [ 74.296448, 106.547646, -100.474113 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "leg_1_R"
+						child_body = "leg_2_R"
+						anchor_origin = [ 0.000007, 13.044335, 0.000004 ]
+						anchor_angles = [ 6.465602, -93.543709, 99.732285 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.15
+						enable_swing_limit = true
+						swing_limit = 30.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+					{
+						_class = "PhysicsJointConical"
+						parent_body = "leg_2_R"
+						child_body = "foot_R"
+						anchor_origin = [ -0.308908, 8.266202, 0.357872 ]
+						anchor_angles = [ -59.122005, 108.840454, -104.226105 ]
+						collision_enabled = false
+						linear_strength = 0.0
+						angular_strength = 0.0
+						friction = 0.1
+						enable_swing_limit = true
+						swing_limit = 15.0
+						swing_offset_angle = [ 0.0, 0.0, 0.0 ]
+						enable_twist_limit = true
+						min_twist_angle = -15.0
+						max_twist_angle = 15.0
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "pelvis"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 0.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "spine0"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "neck_0"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "head"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 10.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_0_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_1_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_2_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_0_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_1_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "wing_2_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "leg_1_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "leg_2_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "foot_L"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 5.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "leg_1_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "leg_2_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 10.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+					{
+						_class = "PhysicsShapeCapsule"
+						parent_bone = "foot_R"
+						surface_prop = "default"
+						collision_tags = "solid"
+						radius = 5.0
+						point0 = [ 0.0, 5.0, 0.0 ]
+						point1 = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "Bunnyhop_chicken"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = "root"
+								motion_type = "Uniform"
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 1
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Chick_idle01_chicken"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 9
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Chick_idle05_chicken"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 25
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Chick_idle12_chicken"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 32
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Chick_run01_chicken"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 48
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "Chick_walk01_chicken"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/npc/chiken/model/Chiken.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 88
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = "models/npc/chiken/animation/chiken.vanmgrph"
+		base_model_name = ""
+	}
+}
