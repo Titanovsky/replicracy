@@ -1,0 +1,24 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Level 1",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "level1",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "apetavern.grass_01a#102401"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "maps/level1.vmap",
+        "ParentPackage": "titanovsky.replicracy"
+      }
+    }
+  }
+}
