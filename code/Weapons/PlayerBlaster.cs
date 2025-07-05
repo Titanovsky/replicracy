@@ -36,12 +36,15 @@
 
         if (tr.Hit)
         {
-            Log.Info($"[Blaster] hit {tr.Collider.GameObject}");
+            Log.Info($"[Blaster] hit {tr.Collider}");
 
-            var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
-            if (damagable is not null)
+            if (tr.Collider.IsValid())
             {
-                damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+                var damagable = tr.Collider.GameObject.GetComponent<IDamageable>();
+                if (damagable is not null)
+                {
+                    damagable.OnDamage(new(projectile.Damage, projectile.Owner, projectile.Weapon));
+                }
             }
         }
     }
