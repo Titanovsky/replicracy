@@ -119,6 +119,9 @@ public sealed class Replicant : Component, Component.IDamageable
     public void ReseAttackTimer() => _attackTimer = AttackDelay;
     public bool IsAttackAllowed() => _attackTimer;
 
+    public void EnabledAgent() => Agent.Enabled = true;
+    public void DisableAgent() => Agent.Enabled = false;
+
     public void HideReplicant()
     {
         Agent.Enabled = false;
