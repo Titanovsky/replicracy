@@ -17159,7 +17159,7 @@
               "__version": 1,
               "Flags": 0,
               "Name": "Blood",
-              "Position": "-991.7163,972.2542,40.82062",
+              "Position": "-2287.388,2598.055,40.82077",
               "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
               "Scale": "1,1,1",
               "Tags": "",
@@ -17199,7 +17199,7 @@
                       ],
                       "alpha": []
                     },
-                    "ConstantA": "1,1,1,0.5",
+                    "ConstantA": "1,1,1,1",
                     "ConstantB": "1,1,1,1"
                   },
                   "Decals": [
@@ -17218,7 +17218,691 @@
                   "Rotation": {
                     "Type": "Range",
                     "Evaluation": "Seed",
-                    "Constants": "0,360,0,0"
+                    "Constants": "0,181.7,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "1382c236-e687-48a7-b3a0-024d26227aaf",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-1805.388,3294.555,40.82074",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "6f582dda-6253-4615-96b6-eedf0e23d7b3",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,189.6,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "902d2f19-9e36-4591-8113-77bc2e9e6660",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-2313.388,2667.055,40.82077",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "d09e4f96-933f-47d0-a681-6cebdb1ceb2f",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,207.9,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "60b9872e-7c4d-421d-b920-926e31c059dd",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-1831.388,3363.555,40.82074",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "f5af8d11-2738-48f4-af18-9749b2ad7f4e",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,91.6,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "4f6fd68b-f3f3-43a6-a72f-23d74bcdc501",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-2318.388,2586.055,40.8208",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "afff258c-126a-427b-b988-891866780540",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,166.8,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "32fba478-d6a5-430e-853a-311ae28f3be1",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-1836.388,3282.555,40.82077",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "fcf0ea06-5080-4ca9-beb9-9918bf4c0b53",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,76.1,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "127f4055-214e-4955-92d5-aa261ba0eadd",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-2275.388,2634.055,40.8208",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "b38f2d09-0830-400e-9a76-c081a7793450",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,42.8,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "9c7739bb-ba19-4420-a456-bb3b14510b31",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-1793.388,3330.555,40.82077",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "60ca1581-cf1a-4111-aeb0-e96a2a833913",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,142.7,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "f305324a-8389-4893-8333-5b555560f100",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-2347.388,2629.055,40.82077",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "7de3a047-4bf9-43e8-9b16-b502de979a72",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,166.8,0,0"
+                  },
+                  "Scale": 1,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "410f1296-04e5-4958-b1f8-b7af571bf906",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Blood",
+              "Position": "-1865.388,3325.555,40.82074",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "2b002f99-dea1-4275-8912-7dc9c358b0df",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/bloodhand.decal"
+                  ],
+                  "Depth": 8.1,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,360.4,0,0"
                   },
                   "Scale": 1,
                   "SequenceId": 0,
@@ -17383,6 +18067,158 @@
               "Children": []
             },
             {
+              "__guid": "dacb18ee-c939-48dc-80e0-675c324fc9e2",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pentargam",
+              "Position": "-1832.388,3327.055,39.79291",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "dce69902-8ba5-4010-b4e2-57344fd4fd10",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/pentagram.decal"
+                  ],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,0,0,0"
+                  },
+                  "Scale": 3,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
+              "__guid": "531a9f8d-871a-4803-b815-a2137ce5ab1d",
+              "__version": 1,
+              "Flags": 0,
+              "Name": "Pentargam",
+              "Position": "-2314.388,2636.055,39.74289",
+              "Rotation": "-0.4999999,-0.4999999,0.4999999,-0.5",
+              "Scale": "1,1,1",
+              "Tags": "",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "NetworkOrphaned": 0,
+              "OwnerTransfer": 1,
+              "Components": [
+                {
+                  "__type": "Sandbox.Decal",
+                  "__guid": "33a901b9-af8c-48b5-b785-28c4c1a37409",
+                  "__enabled": true,
+                  "__version": 3,
+                  "AttenuationAngle": 1,
+                  "ColorMix": 1,
+                  "ColorTint": {
+                    "Type": "Constant",
+                    "Evaluation": "Life",
+                    "GradientA": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "GradientB": {
+                      "blend": "Linear",
+                      "color": [
+                        {
+                          "t": 0.5,
+                          "c": "1,1,1,1"
+                        }
+                      ],
+                      "alpha": []
+                    },
+                    "ConstantA": "1,1,1,1",
+                    "ConstantB": "1,1,1,1"
+                  },
+                  "Decals": [
+                    "texture/lab/pentagram.decal"
+                  ],
+                  "Depth": 8,
+                  "LifeTime": 0,
+                  "Looped": false,
+                  "OnComponentDestroy": null,
+                  "OnComponentDisabled": null,
+                  "OnComponentEnabled": null,
+                  "OnComponentFixedUpdate": null,
+                  "OnComponentStart": null,
+                  "OnComponentUpdate": null,
+                  "Parallax": 1,
+                  "Rotation": {
+                    "Type": "Range",
+                    "Evaluation": "Seed",
+                    "Constants": "0,0,0,0"
+                  },
+                  "Scale": 3,
+                  "SequenceId": 0,
+                  "SheetSequence": false,
+                  "Size": "10,10",
+                  "SortLayer": 0,
+                  "Transient": false
+                }
+              ],
+              "Children": []
+            },
+            {
               "__guid": "5a431049-8f2e-45af-a33f-4997171ead78",
               "__version": 1,
               "Flags": 0,
@@ -17446,7 +18282,7 @@
                   "Rotation": {
                     "Type": "Range",
                     "Evaluation": "Seed",
-                    "Constants": "0,360,0,0"
+                    "Constants": "0,434.7,0,0"
                   },
                   "Scale": 1,
                   "SequenceId": 0,
@@ -17886,7 +18722,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "8431df89-4e17-4f65-a9ed-d39008571376"
+              "IdValue": "eb094e82-5be1-4a37-8d26-fc7a745bf608"
             },
             "Parent": {
               "Type": "GameObject",
@@ -17899,7 +18735,7 @@
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "8431df89-4e17-4f65-a9ed-d39008571376",
+              "__guid": "eb094e82-5be1-4a37-8d26-fc7a745bf608",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - polo_shirt",
@@ -17919,18 +18755,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "e89469b6-dd3c-4bf8-b270-5c817e6cd076"
+              "IdValue": "3b32b950-54fb-4e57-a61a-847f271f1860"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "8431df89-4e17-4f65-a9ed-d39008571376"
+              "IdValue": "eb094e82-5be1-4a37-8d26-fc7a745bf608"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "e89469b6-dd3c-4bf8-b270-5c817e6cd076",
+              "__guid": "3b32b950-54fb-4e57-a61a-847f271f1860",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -17980,7 +18816,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "2fd5ff98-cdb2-4a7a-942b-39f5ba74f372"
+              "IdValue": "cfe4f330-83ab-4d81-b9bf-758d692a66a1"
             },
             "Parent": {
               "Type": "GameObject",
@@ -17988,12 +18824,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "8431df89-4e17-4f65-a9ed-d39008571376"
+              "IdValue": "eb094e82-5be1-4a37-8d26-fc7a745bf608"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "2fd5ff98-cdb2-4a7a-942b-39f5ba74f372",
+              "__guid": "cfe4f330-83ab-4d81-b9bf-758d692a66a1",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - labcoat",
@@ -18013,18 +18849,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "9614b7df-38dd-4cca-868b-0c0055b2493e"
+              "IdValue": "64ba263e-cf45-4a59-af29-706669861aec"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "2fd5ff98-cdb2-4a7a-942b-39f5ba74f372"
+              "IdValue": "cfe4f330-83ab-4d81-b9bf-758d692a66a1"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "9614b7df-38dd-4cca-868b-0c0055b2493e",
+              "__guid": "64ba263e-cf45-4a59-af29-706669861aec",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -18074,7 +18910,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "7168b6b3-a2a8-4541-83d7-88ad084c2506"
+              "IdValue": "6a33dda6-bac7-4779-ac06-eb1e15e581ec"
             },
             "Parent": {
               "Type": "GameObject",
@@ -18082,12 +18918,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "2fd5ff98-cdb2-4a7a-942b-39f5ba74f372"
+              "IdValue": "cfe4f330-83ab-4d81-b9bf-758d692a66a1"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "7168b6b3-a2a8-4541-83d7-88ad084c2506",
+              "__guid": "6a33dda6-bac7-4779-ac06-eb1e15e581ec",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - black_boots",
@@ -18107,18 +18943,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "5565e84d-b505-4f5b-b667-8391c8bcfe00"
+              "IdValue": "e4f19c2c-4358-4ed6-bc7a-42fee8b22217"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "7168b6b3-a2a8-4541-83d7-88ad084c2506"
+              "IdValue": "6a33dda6-bac7-4779-ac06-eb1e15e581ec"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "5565e84d-b505-4f5b-b667-8391c8bcfe00",
+              "__guid": "e4f19c2c-4358-4ed6-bc7a-42fee8b22217",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -18168,7 +19004,7 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "ef396700-fc38-4434-b7df-b26389de2b1b"
+              "IdValue": "fb514f43-4835-4b58-b352-92898a174781"
             },
             "Parent": {
               "Type": "GameObject",
@@ -18176,12 +19012,12 @@
             },
             "PreviousElement": {
               "Type": "GameObject",
-              "IdValue": "7168b6b3-a2a8-4541-83d7-88ad084c2506"
+              "IdValue": "6a33dda6-bac7-4779-ac06-eb1e15e581ec"
             },
             "ContainerProperty": "Children",
             "IsContainerArray": true,
             "Data": {
-              "__guid": "ef396700-fc38-4434-b7df-b26389de2b1b",
+              "__guid": "fb514f43-4835-4b58-b352-92898a174781",
               "__version": 1,
               "Flags": 0,
               "Name": "Clothing - loose_jeans",
@@ -18201,18 +19037,18 @@
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "f86d3afb-0dde-4bb2-9019-cfc28722738f"
+              "IdValue": "0febabcc-c56b-46a1-874c-6dec6de4ae8b"
             },
             "Parent": {
               "Type": "GameObject",
-              "IdValue": "ef396700-fc38-4434-b7df-b26389de2b1b"
+              "IdValue": "fb514f43-4835-4b58-b352-92898a174781"
             },
             "PreviousElement": null,
             "ContainerProperty": "Components",
             "IsContainerArray": true,
             "Data": {
               "__type": "Sandbox.SkinnedModelRenderer",
-              "__guid": "f86d3afb-0dde-4bb2-9019-cfc28722738f",
+              "__guid": "0febabcc-c56b-46a1-874c-6dec6de4ae8b",
               "__enabled": true,
               "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
@@ -18264,49 +19100,49 @@
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "0c5dfab5-20ea-4af6-8712-d577b3f10384"
+              "IdValue": "89930a48-0d79-49b1-8135-adef93d9eeb0"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "cee4dcef-2b6a-49db-8bf7-673ad013676d"
+              "IdValue": "9b92ac86-c6e7-4881-94d6-2983b1f4d6ff"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "f02f2c5d-4665-4289-9e94-7ecb10d45f6e"
+              "IdValue": "19cb61a7-16f3-46c6-ade6-31edfdb00ae1"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "4761cb2e-cfc4-4100-8741-c13a1103a038"
+              "IdValue": "42c3adb2-e950-4d74-9b58-27678957dd07"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "ca03894f-2d18-43e8-85ea-07b4e6e11f6a"
+              "IdValue": "933bcb6b-388e-4990-96a5-2bfb2b80d515"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "99c92413-910e-4c7a-a04a-1a147403a293"
+              "IdValue": "4b493625-e33e-4fb4-84b4-ffa24916ece5"
             }
           },
           {
             "Id": {
               "Type": "GameObject",
-              "IdValue": "bc25fd9d-147e-4914-b650-6657bddd641f"
+              "IdValue": "f6e752a6-c5d2-4ac6-a6cc-ee30aad588a1"
             }
           },
           {
             "Id": {
               "Type": "Component",
-              "IdValue": "38542fa9-a19f-46f8-bd37-3fe49a8c3a5a"
+              "IdValue": "7aa1c616-2bd4-45b9-874a-044a8cfe0522"
             }
           }
         ],
@@ -18335,8 +19171,8 @@
             "Property": "_showTimer",
             "Value": {
               "Absolute": 0,
-              "Relative": -110839624,
-              "Passed": 110839622.3341946,
+              "Relative": -111004712,
+              "Passed": 111004711.2770938,
               "Fraction": 1
             }
           },
@@ -18354,7 +19190,7 @@
               "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
             },
             "Property": "Rotation",
-            "Value": "0.00000000000000000000001777897,-0.0000000000000002182531,0.0000005807054,-1"
+            "Value": "0.0000000000000000000000162974,-0.0000000000000002000654,0.0000005323133,-1"
           },
           {
             "Target": {
@@ -18362,7 +19198,7 @@
               "IdValue": "f159384f-15ae-4bf3-a6cc-f4d610b08b58"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999989,0.9999989,0.9999989"
           },
           {
             "Target": {
@@ -18378,7 +19214,7 @@
               "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
             },
             "Property": "Rotation",
-            "Value": "0.00000000000000000000001777897,-0.0000000000000002182531,0.0000005807054,-1"
+            "Value": "0.0000000000000000000000162974,-0.0000000000000002000654,0.0000005323133,-1"
           },
           {
             "Target": {
@@ -18386,7 +19222,7 @@
               "IdValue": "275c862e-679f-45ea-a7c1-3f1bf3155193"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999989,0.9999989,0.9999989"
           },
           {
             "Target": {
@@ -18402,7 +19238,7 @@
               "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
             },
             "Property": "Rotation",
-            "Value": "0.00000000000000000000001777917,-0.0000000000000002182528,0.0000005807055,-1"
+            "Value": "0.00000000000000000000001629757,-0.0000000000000002000651,0.0000005323132,-1"
           },
           {
             "Target": {
@@ -18410,7 +19246,7 @@
               "IdValue": "5e980db3-3f32-45dd-9b08-6e9eabac2e2f"
             },
             "Property": "Scale",
-            "Value": "0.9999986,0.9999986,0.9999986"
+            "Value": "0.9999979,0.9999979,0.9999979"
           },
           {
             "Target": {
@@ -18418,7 +19254,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Position",
-            "Value": "9.750244,-4.987793,3.80603"
+            "Value": "9.750244,-4.987793,3.806122"
           },
           {
             "Target": {
@@ -18426,7 +19262,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Rotation",
-            "Value": "-0.695554,-0.1290386,0.4102876,-0.5755153"
+            "Value": "-0.6955571,-0.1290348,0.4102887,-0.5755115"
           },
           {
             "Target": {
@@ -18434,7 +19270,7 @@
               "IdValue": "c5962742-6566-492a-b08c-90e7049fdf4a"
             },
             "Property": "Scale",
-            "Value": "0.9999985,0.9999985,0.9999985"
+            "Value": "0.9999983,0.9999983,0.9999983"
           },
           {
             "Target": {
@@ -18442,7 +19278,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Position",
-            "Value": "-8.846924,5.432617,3.808594"
+            "Value": "-8.846924,5.432617,3.808685"
           },
           {
             "Target": {
@@ -18450,7 +19286,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Rotation",
-            "Value": "-0.6385099,-0.3045252,0.247575,-0.6620243"
+            "Value": "-0.6385104,-0.3045242,0.2475761,-0.6620239"
           },
           {
             "Target": {
@@ -18458,7 +19294,7 @@
               "IdValue": "74bdc5e1-b51e-492a-94dd-f04562c4738f"
             },
             "Property": "Scale",
-            "Value": "0.9999976,0.9999976,0.9999976"
+            "Value": "0.9999979,0.9999979,0.9999979"
           },
           {
             "Target": {
@@ -18466,7 +19302,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Position",
-            "Value": "16.81616,-3.83374,48.76706"
+            "Value": "16.54272,-4.461182,48.74292"
           },
           {
             "Target": {
@@ -18474,7 +19310,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Rotation",
-            "Value": "-0.389594,0.05319726,-0.1502175,-0.907095"
+            "Value": "-0.3894252,0.06360773,-0.1522633,-0.9061556"
           },
           {
             "Target": {
@@ -18482,7 +19318,7 @@
               "IdValue": "e454eabc-7493-4779-9b24-bcaedd9ca564"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -18490,7 +19326,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Position",
-            "Value": "-10.20508,5.078369,41.14987"
+            "Value": "-10.75073,5.101562,40.92865"
           },
           {
             "Target": {
@@ -18498,7 +19334,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Rotation",
-            "Value": "-0.4486367,-0.6952775,0.1901741,-0.5283448"
+            "Value": "-0.4706888,-0.6897916,0.1822701,-0.5190543"
           },
           {
             "Target": {
@@ -18506,7 +19342,7 @@
               "IdValue": "2f2cb2c7-f936-4daa-902f-00711c7f9c96"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -18514,7 +19350,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Position",
-            "Value": "24.13135,-2.052979,50.41287"
+            "Value": "23.82959,-2.716309,50.54526"
           },
           {
             "Target": {
@@ -18522,7 +19358,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Rotation",
-            "Value": "-0.6106753,0.1231695,0.0875591,-0.7773277"
+            "Value": "-0.6106752,0.1231698,0.08755894,-0.7773278"
           },
           {
             "Target": {
@@ -18530,7 +19366,7 @@
               "IdValue": "83002752-9d09-4e07-b533-dea1a4dab6b8"
             },
             "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -18538,7 +19374,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Position",
-            "Value": "-10.50684,8.337646,34.17288"
+            "Value": "-10.88989,8.647705,34.08774"
           },
           {
             "Target": {
@@ -18546,7 +19382,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Rotation",
-            "Value": "-0.4504444,-0.722582,0.1542764,-0.5011725"
+            "Value": "-0.472215,-0.7164451,0.1454052,-0.4925207"
           },
           {
             "Target": {
@@ -18554,7 +19390,7 @@
               "IdValue": "6b2059d6-fa3e-4195-8a5f-9c15124f2515"
             },
             "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -18562,7 +19398,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Position",
-            "Value": "29.30835,-1.530029,52.45746"
+            "Value": "29.00659,-2.193359,52.58984"
           },
           {
             "Target": {
@@ -18570,7 +19406,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Rotation",
-            "Value": "-0.01353647,-0.0000350348,-0.00004105748,-0.9999084"
+            "Value": "-0.01353632,-0.00003477206,-0.00004102012,-0.9999084"
           },
           {
             "Target": {
@@ -18578,7 +19414,7 @@
               "IdValue": "e20c1e44-57bd-4ebd-82af-4425cbbfc88b"
             },
             "Property": "Scale",
-            "Value": "0.9999988,0.9999988,0.9999988"
+            "Value": "1.000001,1.000001,1.000001"
           },
           {
             "Target": {
@@ -18586,7 +19422,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Position",
-            "Value": "-8.511719,9.048828,28.15921"
+            "Value": "-8.820068,9.539307,28.12357"
           },
           {
             "Target": {
@@ -18594,7 +19430,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Rotation",
-            "Value": "0.3992999,-0.6154559,-0.1402863,-0.6649011"
+            "Value": "0.3768066,-0.6157718,-0.1408181,-0.6775044"
           },
           {
             "Target": {
@@ -18602,7 +19438,7 @@
               "IdValue": "41f6a80c-2158-41c0-a867-172442915be0"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -18610,7 +19446,7 @@
               "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
             },
             "Property": "Position",
-            "Value": "23.92627,-2.87793,50.25974"
+            "Value": "23.92627,-2.87793,50.2597"
           },
           {
             "Target": {
@@ -18618,7 +19454,7 @@
               "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
             },
             "Property": "Rotation",
-            "Value": "-0.61067,0.1236187,0.08762105,-0.7772536"
+            "Value": "-0.6106699,0.1236188,0.08762094,-0.7772536"
           },
           {
             "Target": {
@@ -18626,7 +19462,7 @@
               "IdValue": "03c312f5-ec95-4c41-a6e6-3cccb3a370a8"
             },
             "Property": "Scale",
-            "Value": "0.9999994,0.9999994,0.9999994"
+            "Value": "0.999999,0.999999,0.999999"
           },
           {
             "Target": {
@@ -18642,7 +19478,7 @@
               "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
             },
             "Property": "Rotation",
-            "Value": "-0.4595998,-0.7243665,0.159142,-0.4886052"
+            "Value": "-0.4595998,-0.7243665,0.1591421,-0.4886051"
           },
           {
             "Target": {
@@ -18650,316 +19486,28 @@
               "IdValue": "467161da-faae-4be8-a401-e038be3a3e57"
             },
             "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Position",
-            "Value": "11.0354,-4.172119,16.22861"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Rotation",
-            "Value": "-0.4688057,-0.4951491,0.553323,-0.4784166"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
-            },
-            "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Position",
-            "Value": "-2.949951,5.39502,14.84778"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Rotation",
-            "Value": "-0.3245531,-0.6670898,0.5390496,-0.3988509"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
-            },
-            "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Position",
-            "Value": "9.019287,3.679199,40.30011"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Rotation",
-            "Value": "0.0781339,-0.4134117,-0.01037852,-0.9071264"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
-            },
-            "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Position",
-            "Value": "11.85791,-3.446777,49.46973"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
-            },
-            "Property": "Scale",
-            "Value": "0.9999999,0.9999999,0.9999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Position",
-            "Value": "20.47388,-2.943604,49.58997"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Position",
-            "Value": "16.83081,-3.914307,48.62396"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Rotation",
-            "Value": "-0.274459,-0.295434,0.590721,-0.6988847"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
-            },
-            "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Position",
-            "Value": "-10.46021,4.881104,41.17929"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Rotation",
-            "Value": "0.3448054,-0.8224546,0.4191956,-0.1701553"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
-            },
-            "Property": "Scale",
-            "Value": "0.9999996,0.9999996,0.9999996"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Position",
-            "Value": "-7.580566,4.941895,45.43005"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
-            },
-            "Property": "Scale",
-            "Value": "0.9999999,0.9999999,0.9999999"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Position",
-            "Value": "-10.35596,6.707764,37.66138"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
-            },
-            "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Position",
-            "Value": "7.498047,-3.542236,22.50851"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
-            },
-            "Property": "Scale",
-            "Value": "0.9999995,0.9999995,0.9999995"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
-            },
-            "Property": "Position",
-            "Value": "-2.071777,4.83667,22.00772"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
-            },
-            "Property": "Rotation",
-            "Value": "0,0,-1,0.0000001947072"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
-            },
-            "Property": "Scale",
-            "Value": "0.9999998,0.9999998,0.9999998"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
-            },
-            "Property": "Position",
-            "Value": "11.9209,-4.206787,16.39136"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
-            },
-            "Property": "Rotation",
-            "Value": "-0.5301588,-0.4164436,0.4750849,-0.5655093"
-          },
-          {
-            "Target": {
-              "Type": "GameObject",
-              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
-            },
-            "Property": "Scale",
             "Value": "0.999999,0.999999,0.999999"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Position",
-            "Value": "-2.436523,5.506592,14.66479"
+            "Value": "10.95752,-4.242188,16.24097"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Rotation",
-            "Value": "-0.7207494,-0.1787844,0.03287028,-0.6689364"
+            "Value": "-0.4731632,-0.4937369,0.5517702,-0.4773786"
           },
           {
             "Target": {
               "Type": "GameObject",
-              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+              "IdValue": "91e1ab83-7368-4c7d-9947-b636d6b5b126"
             },
             "Property": "Scale",
             "Value": "0.9999992,0.9999992,0.9999992"
@@ -18967,10 +19515,298 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Position",
+            "Value": "-2.917969,5.3396,14.83047"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Rotation",
+            "Value": "-0.3258639,-0.6675378,0.5396787,-0.3961729"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "c7803aef-fe80-45cb-ad16-de23a96c617a"
+            },
+            "Property": "Scale",
+            "Value": "0.9999998,0.9999998,0.9999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Position",
+            "Value": "8.73584,3.597412,40.37543"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Rotation",
+            "Value": "0.06322294,-0.4057513,-0.01504542,-0.9116701"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "3d0044cd-16f2-48cc-b01b-052f9c6957da"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Position",
+            "Value": "11.5957,-3.890869,49.39743"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "4fa9f1ae-631c-44da-84dc-9af49f429ad6"
+            },
+            "Property": "Scale",
+            "Value": "1.000001,1.000001,1.000001"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Position",
+            "Value": "20.18628,-3.588623,49.6441"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "806a4a2c-0f01-4c6d-b7dc-50b7b81b95ee"
+            },
+            "Property": "Scale",
+            "Value": "1.000001,1.000001,1.000001"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Position",
+            "Value": "16.55884,-4.57666,48.59988"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Rotation",
+            "Value": "-0.2829014,-0.2915303,0.5947499,-0.6937214"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "ac2c9974-889f-4333-8fc3-13e8294b04c2"
+            },
+            "Property": "Scale",
+            "Value": "1.000001,1.000001,1.000001"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Position",
+            "Value": "-11.04199,4.883789,40.95773"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Rotation",
+            "Value": "0.3340397,-0.8349453,0.4046656,-0.1659207"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fa3ed6d-7268-41a0-b1ac-e25f021cb965"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Position",
+            "Value": "-8.029785,4.855469,45.14331"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "5d431cae-79e7-47a3-b88f-b5f76ffdf3a7"
+            },
+            "Property": "Scale",
+            "Value": "1.000001,1.000001,1.000001"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Position",
+            "Value": "-10.82031,6.874512,37.50821"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "41fe0294-62aa-4d18-85fb-8adfd36276f4"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Position",
+            "Value": "7.51709,-3.63501,22.57678"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "9bebe646-edc0-4627-a7f7-05641ca59908"
+            },
+            "Property": "Scale",
+            "Value": "0.9999996,0.9999996,0.9999996"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Position",
+            "Value": "-1.989746,4.759521,21.98242"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Rotation",
+            "Value": "0,0,-1,0.0000001947072"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "387ce088-b721-4f03-a197-57c0cca4aa4a"
+            },
+            "Property": "Scale",
+            "Value": "0.9999998,0.9999998,0.9999998"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Position",
+            "Value": "11.81348,-4.280273,16.39355"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Rotation",
+            "Value": "-0.5317091,-0.4181947,0.475856,-0.562103"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "31656d3a-a1ce-4805-b71f-3bc25db28cc4"
+            },
+            "Property": "Scale",
+            "Value": "0.9999989,0.9999989,0.9999989"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Position",
+            "Value": "-2.411133,5.448975,14.64713"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Rotation",
+            "Value": "-0.7218724,-0.1795819,0.03519803,-0.6673917"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "141c1a34-7887-4ba8-8d83-f12017d960ee"
+            },
+            "Property": "Scale",
+            "Value": "0.9999993,0.9999993,0.9999993"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "b26ad3c6-4f03-41a7-917a-86f37b68f721"
             },
             "Property": "Position",
-            "Value": "10.39282,-4.579834,10.0173"
+            "Value": "10.354,-4.61499,10.02356"
           },
           {
             "Target": {
@@ -18994,7 +19830,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Position",
-            "Value": "-5.898438,5.413818,9.328125"
+            "Value": "-5.882324,5.385986,9.31958"
           },
           {
             "Target": {
@@ -19010,7 +19846,7 @@
               "IdValue": "76a78675-ff6c-4aaf-bc7a-df88c5ec0341"
             },
             "Property": "Scale",
-            "Value": "0.9999993,0.9999993,0.9999993"
+            "Value": "0.9999992,0.9999992,0.9999992"
           },
           {
             "Target": {
@@ -19018,7 +19854,7 @@
               "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
             },
             "Property": "Position",
-            "Value": "0.2431641,0.4108887,41.90692"
+            "Value": "0.1362305,0.2172852,41.94424"
           },
           {
             "Target": {
@@ -19031,10 +19867,18 @@
           {
             "Target": {
               "Type": "GameObject",
+              "IdValue": "c8613aab-5400-4b24-8ab9-df1936b09244"
+            },
+            "Property": "Scale",
+            "Value": "1.000001,1.000001,1.000001"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Position",
-            "Value": "6.281982,1.222412,61.5166"
+            "Value": "6.04248,0.9384766,61.47513"
           },
           {
             "Target": {
@@ -19042,7 +19886,15 @@
               "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
             },
             "Property": "Rotation",
-            "Value": "0.001160801,-0.005039781,-0.04596534,-0.9989297"
+            "Value": "0.0008859956,-0.01183261,-0.04580642,-0.9988798"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "12c4f208-8f06-454e-84c7-85170b1c4061"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -19050,7 +19902,7 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Position",
-            "Value": "6.589355,-2.109863,61.52283"
+            "Value": "6.348633,-2.393799,61.47742"
           },
           {
             "Target": {
@@ -19058,7 +19910,15 @@
               "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
             },
             "Property": "Rotation",
-            "Value": "0.001160801,-0.005039781,-0.04596534,-0.9989297"
+            "Value": "0.0008859956,-0.01183261,-0.04580642,-0.9988798"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "86f012fe-0550-4bc4-ae03-05dcc4caa17c"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -19066,7 +19926,7 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Position",
-            "Value": "5.974609,4.554932,61.51041"
+            "Value": "5.736084,4.270996,61.47284"
           },
           {
             "Target": {
@@ -19074,7 +19934,15 @@
               "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
             },
             "Property": "Rotation",
-            "Value": "0.001160801,-0.005039781,-0.04596534,-0.9989297"
+            "Value": "0.0008859956,-0.01183261,-0.04580642,-0.9988798"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "dff44e3d-849c-4805-813b-c1e432692977"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -19082,7 +19950,7 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Position",
-            "Value": "0.9211426,0.715332,54.6813"
+            "Value": "0.5888672,0.4326172,54.71338"
           },
           {
             "Target": {
@@ -19090,7 +19958,15 @@
               "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
             },
             "Property": "Rotation",
-            "Value": "0.001160801,-0.005039781,-0.04596534,-0.9989297"
+            "Value": "0.0008859956,-0.01183261,-0.04580642,-0.9988798"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "bb69bf1b-495a-4802-b7ee-acbee4eda9b7"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
           },
           {
             "Target": {
@@ -19098,7 +19974,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Position",
-            "Value": "11.13013,-5.90918,0.187439"
+            "Value": "11.13013,-5.90918,0.1875305"
           },
           {
             "Target": {
@@ -19106,7 +19982,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Rotation",
-            "Value": "-0.0004718304,-0.00006567696,0.2162278,-0.9763429"
+            "Value": "-0.0004748405,-0.00006413471,0.2162329,-0.9763417"
           },
           {
             "Target": {
@@ -19114,7 +19990,7 @@
               "IdValue": "5b01354c-08d7-48bb-9ef9-ff928d9af133"
             },
             "Property": "Scale",
-            "Value": "0.9999983,0.9999983,0.9999983"
+            "Value": "0.9999977,0.9999977,0.9999977"
           },
           {
             "Target": {
@@ -19122,7 +19998,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Position",
-            "Value": "-7.239746,5.83252,1.05957"
+            "Value": "-7.239746,5.83252,1.059692"
           },
           {
             "Target": {
@@ -19130,7 +20006,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Rotation",
-            "Value": "0.04342416,-0.9990567,-0.0003273521,-0.0000880062"
+            "Value": "0.04342276,-0.9990568,-0.0003272925,-0.00008846254"
           },
           {
             "Target": {
@@ -19138,7 +20014,7 @@
               "IdValue": "9f61dcc9-637f-4e31-9243-4d58a24e054b"
             },
             "Property": "Scale",
-            "Value": "0.9999963,0.9999963,0.9999963"
+            "Value": "0.9999982,0.9999982,0.9999982"
           },
           {
             "Target": {
@@ -19146,7 +20022,7 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Position",
-            "Value": "1.365967,0.7849121,69.83496"
+            "Value": "1.239746,0.503418,69.85956"
           },
           {
             "Target": {
@@ -19154,7 +20030,15 @@
               "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
             },
             "Property": "Rotation",
-            "Value": "0.001160801,-0.005039781,-0.04596534,-0.9989297"
+            "Value": "0.0008859956,-0.01183261,-0.04580642,-0.9988798"
+          },
+          {
+            "Target": {
+              "Type": "GameObject",
+              "IdValue": "6fd32e06-b57b-47a9-94e4-7559512a3780"
+            },
+            "Property": "Scale",
+            "Value": "1.000002,1.000002,1.000002"
           }
         ],
         "MovedObjects": []
@@ -19319,10 +20203,10 @@
         "6fd32e06-b57b-47a9-94e4-7559512a3780": "4f195aac-dd73-4464-84aa-f0e306b24193",
         "945e7cd8-a053-43d7-ad9d-ef7e9c0f32a8": "36d533be-c037-4e3e-8ea6-38730a38523c",
         "3caeae22-e4f9-457a-9253-aa945dac45a1": "d5cc5f9f-3da6-42c6-9f37-1835221da7a9",
-        "38542fa9-a19f-46f8-bd37-3fe49a8c3a5a": "e1f8a079-37da-4ad1-8bd1-d12b50dbd249",
-        "99c92413-910e-4c7a-a04a-1a147403a293": "c7a8f611-1a7c-4792-b620-a40370da1ced",
-        "4761cb2e-cfc4-4100-8741-c13a1103a038": "77fe0774-6d40-4f7f-a24c-7de4abd63922",
-        "cee4dcef-2b6a-49db-8bf7-673ad013676d": "d9aad546-63ba-4e03-8d1e-cb79ae46f1a2",
+        "7aa1c616-2bd4-45b9-874a-044a8cfe0522": "9a56dd6c-d2b0-4bcf-97d3-455ce6564927",
+        "4b493625-e33e-4fb4-84b4-ffa24916ece5": "b0ae3bc6-f84c-4e4b-9daa-1d0403c91745",
+        "42c3adb2-e950-4d74-9b58-27678957dd07": "d58d5a14-7088-4b53-881b-9992a3aa2c87",
+        "9b92ac86-c6e7-4881-94d6-2983b1f4d6ff": "27359606-382c-46ab-b30b-8752505a41aa",
         "ff93228a-d4b3-4273-b19c-aa622a8fab77": "0a0150fb-7ace-4bbd-a764-d98a09c97c61",
         "edbe90b3-5586-478d-b0ae-e919ff329de1": "4ff3ef52-e8c0-4ff5-b72a-88b0ac314ecc",
         "9dcefa18-f24c-4836-8144-7d75ddf2a917": "1d2bbc66-e4a0-4046-8e51-d9884b9c6b16",
@@ -19330,10 +20214,10 @@
         "b1e08582-ef25-4deb-b654-e6b18c93a0c2": "d805cc12-af31-47d3-8309-16214d14a7fb",
         "b869b7df-ac57-4084-a7c4-1a89571001a4": "db054cb2-38fc-49a4-b9db-5e1b5de69da7",
         "2aa91fdc-cb9e-43f7-bc08-63d2eade8851": "e95ef5f8-f812-457d-9827-fc305e89a783",
-        "bc25fd9d-147e-4914-b650-6657bddd641f": "28f81021-56d3-4f65-a77e-638d3f5b471c",
-        "ca03894f-2d18-43e8-85ea-07b4e6e11f6a": "79af9567-c7d8-4018-89b2-f16a2930af04",
-        "f02f2c5d-4665-4289-9e94-7ecb10d45f6e": "0a964f65-57a9-4c3c-9176-8f785e8d8f26",
-        "0c5dfab5-20ea-4af6-8712-d577b3f10384": "fc633aac-d176-4df8-971e-b05a35e766d7",
+        "f6e752a6-c5d2-4ac6-a6cc-ee30aad588a1": "7687b0a4-79df-495d-bfa3-8402935ccd82",
+        "933bcb6b-388e-4990-96a5-2bfb2b80d515": "8f8b20b0-8588-49c0-bcd9-03258a750a46",
+        "19cb61a7-16f3-46c6-ade6-31edfdb00ae1": "afbfb068-b075-4b6a-8295-b1e18d48898b",
+        "89930a48-0d79-49b1-8135-adef93d9eeb0": "e369ece4-cafa-4ed3-82f8-ea179ba184bc",
         "ae8bdb96-bdac-47c4-8990-c52cb9860789": "9405a7ad-c5bb-4421-ade0-ba9721059cb6",
         "d306d2a0-745f-4cef-913e-88975a100a93": "f06328d2-c8f8-4f7b-a205-a8e8901a1274",
         "d6475fca-ad4b-4370-a412-f1c48a8b270a": "fa75e91d-7489-4039-8241-77beb4bb59b8",
@@ -19406,6 +20290,1230 @@
           "SequenceId": 0,
           "SheetSequence": false,
           "Size": "10,10",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "259b9fc9-d288-48d5-bc66-61bdc3d8d479",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "-1664,5988.999,408",
+      "Rotation": "0,0.0000001947072,0.9999999,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "b33f09c5-33fc-4f06-87a7-eed4e3d43aa7",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 2,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "b75365ad-5c8d-4f47-9a7d-2b33c4b476cb",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "3520,2773,488",
+      "Rotation": "-0.00000008940697,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "c444488c-5c51-4061-a497-0895bf9ac11b",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "cebbe984-32c1-4867-9ea3-fb66ca8a6c9c",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "2823.111,940.9998,639.9998",
+      "Rotation": "0,0.7071067,0,-0.7071067",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "d1e2b761-3f5c-4311-a60a-3c4d96b5cb86",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 2,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "6de8507d-43ce-4079-9573-dd292a7a5ecc",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "575.9999,-432.9999,368.5721",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "70ca4279-caa0-45f4-9dfd-2473a1f0d464",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "815ce71a-8082-4820-a0b0-2e5224a96075",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "-434.9999,575.9999,372.2762",
+      "Rotation": "0.7071067,0.7071067,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "ccc066f5-da6f-4693-bbd6-e0aecc6e9fd8",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "63c3ef55-edfb-4726-a0ba-958569c6b5fc",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "2048,-814.9999,397.4731",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "18906fc1-c55a-45cd-9eeb-8785220fe903",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "b3b02951-18cf-4f7f-909d-ccf4696a304a",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "3392,332.9999,624.8117",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "375de3c4-1465-465b-8557-83b25900db66",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "b613485b-6456-4bd1-873c-3c2b7f86dfb8",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "3008,1466,492.5181",
+      "Rotation": "0,0.9999999,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "796fcf5d-b6da-4891-88b5-2cc8890e1564",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "1287d415-85bb-4ada-9a45-40ac9b508c33",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "4991.999,836.9999,641.7048",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "c6fba9b9-e6c1-4ac0-b7e9-3d2f119d6d6a",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "bb43bbac-5adf-4a07-bfe9-a021b5517bb5",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "7295.999,2035,511.8894",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "8e39fa8c-ed07-4e62-9be3-2de6758c87fa",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "3f59349c-907d-47b4-b777-5ec82acd9b49",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "7295.999,2195,509.5866",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "8e32def4-37a9-423e-8f90-3dee0f0efef2",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "50c99bdf-3a23-4b87-9c98-81e391a6ddf0",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "7295.999,2519,508.7672",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "41ad313e-dc70-4a8e-bc73-8b5566d9105d",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "9fabbdf7-9331-4d7e-933b-2864d11b9be3",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "7295.999,2323,509.5565",
+      "Rotation": "-0.9999999,0,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "49790ae4-c92d-4268-98b4-996d5daa8813",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "8d800ab8-acd3-436b-946c-46763f2eb174",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "5393.999,4303.999,660",
+      "Rotation": "0.7071067,0.7071067,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "36768021-b34d-4040-beb5-6de1eea85db9",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "24c19f90-7b1e-4ad4-a4cf-95a928d4d7a7",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "6766.999,4303.999,660",
+      "Rotation": "0.7071067,0.7071067,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "5308e8a6-701e-4892-94fd-ea3169fa2c51",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "2511151e-1dc7-4520-ba08-e3068e58f268",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "5407.999,1983.999,660",
+      "Rotation": "-0.7071067,0.7071067,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "cdc62c65-b4ad-442e-bb03-fefed4b16de5",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
+          "SortLayer": 0,
+          "Transient": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "db7bf8a1-4eec-4b16-8fd1-1083269485df",
+      "__version": 1,
+      "Flags": 0,
+      "Name": "GameObject",
+      "Position": "6761.999,1984,660",
+      "Rotation": "-0.7071067,0.7071067,0,0",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "NetworkOrphaned": 0,
+      "OwnerTransfer": 1,
+      "Components": [
+        {
+          "__type": "Sandbox.Decal",
+          "__guid": "30ed4a51-ced6-4e5b-8c32-48a81e371521",
+          "__enabled": true,
+          "__version": 3,
+          "AttenuationAngle": 1,
+          "ColorMix": 1,
+          "ColorTint": {
+            "Type": "Constant",
+            "Evaluation": "Life",
+            "GradientA": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "blend": "Linear",
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,1,1,1",
+            "ConstantB": "1,1,1,1"
+          },
+          "Decals": [
+            "texture/lab/ventilation.decal"
+          ],
+          "Depth": 8,
+          "LifeTime": 0,
+          "Looped": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parallax": 1,
+          "Rotation": 0,
+          "Scale": 1,
+          "SequenceId": 0,
+          "SheetSequence": false,
+          "Size": "1,1",
           "SortLayer": 0,
           "Transient": false
         }
