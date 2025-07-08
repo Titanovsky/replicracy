@@ -15,7 +15,7 @@ public sealed class DecalAvatar : Component
     {
         AvatarDecal = GameObject.GetComponent<Decal>();
 
-        AvatarDecal.ColorTexture = Texture.LoadAvatar(SteamId);
+        //AvatarDecal.ColorTexture = Texture.LoadAvatar(SteamId);
         AvatarDecal.SortLayer = 255;
     }
 }
