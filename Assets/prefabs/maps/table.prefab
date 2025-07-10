@@ -3,7 +3,7 @@
     "__guid": "72d7d5bb-a3a6-4e3a-a1bd-e705dc83ce0e",
     "__version": 1,
     "Flags": 0,
-    "Name": "Table",
+    "Name": "table",
     "Position": "0,0,0",
     "Rotation": "0,0,0,1",
     "Scale": "1,1,1",
@@ -113,12 +113,12 @@
                 "0,0"
               ],
               "MaterialIndex": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
               ],
               "EdgeFlags": [
                 0,
@@ -148,7 +148,9 @@
               ],
               "Materials": [
                 "materials/dev/reflectivity_30.vmat",
-                "texture/lab/plywood_diff_1k.vmat"
+                "texture/lab/plywood_diff_1k.vmat",
+                "materials/error.vmat",
+                "materials/lab/plywood_diff_1k.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -269,12 +271,12 @@
                 "947.8895,456.6694"
               ],
               "MaterialIndex": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
               ],
               "EdgeFlags": [
                 0,
@@ -305,7 +307,9 @@
               "Materials": [
                 "materials/dev/reflectivity_30.vmat",
                 "texture/lab/plywood_diff_1k.vmat",
-                "texture/lab/wood_table_001_diff_1k.vmat"
+                "texture/lab/wood_table_001_diff_1k.vmat",
+                "materials/error.vmat",
+                "materials/lab/plywood_diff_1k.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -426,12 +430,12 @@
                 "623.1447,434.2715"
               ],
               "MaterialIndex": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
               ],
               "EdgeFlags": [
                 0,
@@ -462,7 +466,9 @@
               "Materials": [
                 "materials/dev/reflectivity_30.vmat",
                 "texture/lab/plywood_diff_1k.vmat",
-                "texture/lab/wood_table_001_diff_1k.vmat"
+                "texture/lab/wood_table_001_diff_1k.vmat",
+                "materials/error.vmat",
+                "materials/lab/plywood_diff_1k.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -583,12 +589,12 @@
                 "769.1359,646.7704"
               ],
               "MaterialIndex": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
               ],
               "EdgeFlags": [
                 0,
@@ -619,7 +625,9 @@
               "Materials": [
                 "materials/dev/reflectivity_30.vmat",
                 "texture/lab/plywood_diff_1k.vmat",
-                "texture/lab/wood_table_001_diff_1k.vmat"
+                "texture/lab/wood_table_001_diff_1k.vmat",
+                "materials/error.vmat",
+                "materials/lab/plywood_diff_1k.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -740,12 +748,12 @@
                 "418.0942,413.5984"
               ],
               "MaterialIndex": [
-                1,
-                1,
-                1,
-                1,
-                1,
-                1
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
               ],
               "EdgeFlags": [
                 0,
@@ -776,7 +784,9 @@
               "Materials": [
                 "materials/dev/reflectivity_30.vmat",
                 "texture/lab/plywood_diff_1k.vmat",
-                "texture/lab/wood_table_001_diff_1k.vmat"
+                "texture/lab/wood_table_001_diff_1k.vmat",
+                "materials/error.vmat",
+                "materials/lab/plywood_diff_1k.vmat"
               ]
             },
             "OnComponentDestroy": null,
@@ -799,7 +809,26 @@
         ],
         "Children": []
       }
-    ]
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
   },
   "ResourceVersion": 2,
   "ShowInMenu": false,
