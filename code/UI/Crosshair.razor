@@ -4,11 +4,17 @@
 @namespace Sandbox
 
 <root>
+	@if (!_isShow) return;
+
 	<img class="image" src="materials/crosshairs/crosshair1.vtex" />
 </root>
 
 @code
 {
-	private bool _changed = false;
-	protected override int BuildHash() => System.HashCode.Combine(_changed);
+	private bool _isShow = true;
+
+	public void Show() => _isShow = true;
+	public void Hide() => _isShow = false;
+
+	protected override int BuildHash() => System.HashCode.Combine(_isShow);
 }

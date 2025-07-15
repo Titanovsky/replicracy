@@ -4,46 +4,46 @@
 @namespace Sandbox
 
 <root>
-	@if (_changed) 
-	{
-		<div class="title">@str</div>
-	}
+    @if (_changed)
+    {
+        <div class="title">@str</div>
+    }
 </root>
 
 @code
 {
-	[Property] public float Time { get; set; } = 4f;
+    [Property] public float Time { get; set; } = 4f;
 
-	private string str = "🧬 0/0  💀 0/0";
-	private bool _changed = false;
-	private TimeUntil _timer;
+    private string str = "🧬 0/0  💀 0/0";
+    private bool _changed = false;
+    private TimeUntil _timer;
 
-	public void Show()
-	{
-		_changed = true;
-		_timer = Time;
+    public void Show()
+    {
+        _changed = true;
+        _timer = Time;
 
-		var dna = Player.Instance.Dna;
-		var levelDna = LevelManager.Instance.CurrentLevel.NextDna;
+        var dna = Player.Instance.Dna;
+        var levelDna = LevelManager.Instance.CurrentLevel.NextDna;
 
-		var frags = Player.Instance.Frags;
-		var levelFrags = LevelManager.Instance.CurrentLevel.NextFrags;
+        var frags = Player.Instance.Frags;
+        var levelFrags = LevelManager.Instance.CurrentLevel.NextFrags;
 
-		str = $" 🧬 {dna}/{levelDna}   💀 {frags}/{levelFrags} ";
-	}
+        str = $" 🧬 {dna}/{levelDna}   💀 {frags}/{levelFrags} ";
+    }
 
-	protected override int BuildHash() => System.HashCode.Combine(_changed, str);
-	protected override void OnStart()
-	{
+    protected override int BuildHash() => System.HashCode.Combine(_changed, str);
+    protected override void OnStart()
+    {
 
-	}
-	protected override void OnUpdate()
-	{
-		if (!_changed) return;
+    }
+    protected override void OnUpdate()
+    {
+        if (!_changed) return;
 
-		if (_timer) 
-		{
-			_changed = false;
-		}
-	}
+        if (_timer)
+        {
+            _changed = false;
+        }
+    }
 }

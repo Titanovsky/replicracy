@@ -27,6 +27,8 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
     [Property] public ErrorMessage ErroreMessage { get; set; }
     [Property] public Wipmessage WIPMessage { get; set; }
     [Property] public SecretsHud SecretsHud { get; set; }
+    [Property] public Hud Hud { get; set; }
+    [Property] public Crosshair Crosshair { get; set; }
 
     private SceneTraceResult _traceResult { get; set; }
     private IUsable _playerViewedObject {  get; set; }
@@ -78,6 +80,12 @@ public sealed class Player : Component, Component.IDamageable, PlayerController.
 
         if (!WIPMessage.IsValid())
             WIPMessage = GetComponent<Wipmessage>();
+
+        if (!Hud.IsValid())
+            Hud = GetComponent<Hud>();
+
+        if (!Crosshair.IsValid())
+            Crosshair = GetComponent<Crosshair>();
     }
 
     public void Specify()

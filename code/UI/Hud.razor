@@ -4,6 +4,8 @@
 @namespace Sandbox
 
 <root>
+	@if (!_isShow) return;
+
 	<div class="bottom">💖 @_player.Health</div>
 	<div class="bottom">🧬 @_player.Dna</div>
 </root>
@@ -12,11 +14,16 @@
 {
 	[Property] private Player _player;
 
-	protected override int BuildHash() => System.HashCode.Combine(_player.Dna, _player.Health);
+    private bool _isShow = true;
+
+	protected override int BuildHash() => System.HashCode.Combine(_player.Dna, _player.Health, _isShow);
 
 	protected override void OnStart()
 	{
 		if (_player is null)
 			_player = GetComponent<Player>();
 	}
+
+	public void Show() => _isShow = true;
+	public void Hide() => _isShow = false;
 }
