@@ -1,0 +1,11 @@
+
+Layer0
+{
+	shader "shaders/complex.shader_c"
+
+	TextureColor "materials/maps/bricks/brick1/brick1_color.png"
+	TextureAmbientOcclusion "materials/maps/bricks/brick1/brick1_ao.png"
+	TextureNormal "materials/maps/bricks/brick1/brick1_normal.png"
+	TextureRoughness "materials/maps/bricks/brick1/brick1_rough.png"
+
+}
