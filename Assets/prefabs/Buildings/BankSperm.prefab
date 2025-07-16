@@ -20,6 +20,7 @@
         "__enabled": true,
         "Collision": "Mesh",
         "Color": "1,1,1,1",
+        "Elasticity": null,
         "Friction": null,
         "HideInGame": false,
         "IsTrigger": false,
@@ -727,6 +728,7 @@
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
         "RenderType": "On",
+        "RollingResistance": null,
         "SmoothingAngle": 40,
         "Static": true,
         "Surface": null,
@@ -769,6 +771,7 @@
             "__enabled": true,
             "Collision": "Mesh",
             "Color": "1,1,1,1",
+            "Elasticity": null,
             "Friction": null,
             "HideInGame": false,
             "IsTrigger": false,
@@ -1122,6 +1125,7 @@
             "OnTriggerEnter": null,
             "OnTriggerExit": null,
             "RenderType": "On",
+            "RollingResistance": null,
             "SmoothingAngle": 40,
             "Static": true,
             "Surface": null,
@@ -1151,6 +1155,7 @@
             "__enabled": true,
             "Collision": "Mesh",
             "Color": "1,1,1,1",
+            "Elasticity": null,
             "Friction": null,
             "HideInGame": false,
             "IsTrigger": false,
@@ -1504,6 +1509,7 @@
             "OnTriggerEnter": null,
             "OnTriggerExit": null,
             "RenderType": "On",
+            "RollingResistance": null,
             "SmoothingAngle": 40,
             "Static": true,
             "Surface": null,
@@ -1531,67 +1537,59 @@
             "__type": "Sandbox.Decal",
             "__guid": "900bbf7c-0ce3-454b-9da6-83435a7d69b4",
             "__enabled": true,
-            "__version": 1,
+            "__version": 3,
             "AttenuationAngle": 0,
-            "ColorTexture": {
-              "$compiler": "texture",
-              "$source": "text",
-              "data": {
-                "Size": "512,512",
-                "Margin": {
-                  "Size": "0,0",
-                  "EdgeSize": "0,0"
-                },
-                "TextFlags": "CenterHorizontally, CenterVertically, DontClip",
-                "TextScope": {
-                  "Text": "\uD83D\uDCA6 Sperma Bank",
-                  "TextColor": "1,1,1,1",
-                  "FontName": "Patsy Sans",
-                  "FontSize": 62.71,
-                  "FontWeight": 400,
-                  "FontItalic": false,
-                  "LineHeight": 1,
-                  "LetterSpacing": 0,
-                  "WordSpacing": 0,
-                  "Outline": {
-                    "Enabled": true,
-                    "Size": 4,
-                    "Color": "0,0,0,1"
-                  },
-                  "Shadow": {
-                    "Enabled": false,
-                    "Size": 4,
-                    "Color": "0,0,0,1",
-                    "Offset": "4,4"
-                  },
-                  "OutlineUnder": {
-                    "Enabled": false,
-                    "Size": 4,
-                    "Color": "0,1,0,1"
-                  },
-                  "ShadowUnder": {
-                    "Enabled": false,
-                    "Size": 4,
-                    "Color": "0,0,0,1",
-                    "Offset": "4,4"
+            "ColorMix": 1,
+            "ColorTint": {
+              "Type": "Constant",
+              "Evaluation": "Life",
+              "GradientA": {
+                "blend": "Linear",
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
                   }
-                }
+                ],
+                "alpha": []
               },
-              "compiled": null
+              "GradientB": {
+                "blend": "Linear",
+                "color": [
+                  {
+                    "t": 0.5,
+                    "c": "1,1,1,1"
+                  }
+                ],
+                "alpha": []
+              },
+              "ConstantA": "1,1,1,1",
+              "ConstantB": "1,1,1,1"
             },
-            "ColorTint": "255,255,255,255",
-            "NormalTexture": null,
+            "Decals": [
+              null
+            ],
+            "Depth": 8,
+            "LifeTime": 0,
+            "Looped": false,
             "OnComponentDestroy": null,
             "OnComponentDisabled": null,
             "OnComponentEnabled": null,
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "RMOTexture": null,
+            "Parallax": 1,
+            "Rotation": {
+              "Type": "Range",
+              "Evaluation": "Seed",
+              "Constants": "0,360,0,0"
+            },
+            "Scale": 1,
             "SequenceId": 0,
             "SheetSequence": false,
-            "Size": "59.19998,59.5,76.59998",
-            "SortLayer": 0
+            "Size": "0,0",
+            "SortLayer": 0,
+            "Transient": false
           }
         ],
         "Children": []
